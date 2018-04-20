@@ -69,6 +69,19 @@
 %%%%%%%%%% self-defined macros %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\mt}[1]{\mathrm{#1}} %%% text in math-mode get normal like you aren't in math-mode
+
+%%% braket notation in the hilbertspace of operators (Liouville space) %%%
+
+\newcommand{\oket}[1]{\big|{#1}\big)} % ket in operator space with automatic sizing
+%\newcommand{\oket*}[1]{\big|\mt{#1}\big)} % ket in operator space with no resize
+
+\newcommand{\obra}[1]{\big({#1}\big|} % bra in operator space with automatic sizing
+%\newcommand{\obra*}[1]{\big(\mt{#1}\big|} % bra in operator space with no resize
+
+\newcommand{\obraket}[2]{\big({#1}\big|{#2}\big)} % braket in operator space with automatic sizing
+\newcommand{\odyad}[2]{\oket{#1}\obra{#2}}
+
 %\newcommand{\ev}[1]{\left\langle{#1}\right\rangle} 											% expactation value
 %\newcommand{\erwartungswert}[3]{\left\langle {#1}\right|{#2}\left|{#3}\right\rangle} 		% ausführlicher erwartungswert mit zuständen
 %\newcommand{\kom}[2]{\Big[{#1},{#2}\Big]} 													% commutator

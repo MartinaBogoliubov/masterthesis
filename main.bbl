@@ -16,5 +16,33 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{Drude}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=b7c2b8d260757b72f285c54fb0fdfd68}{Drude}{D\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b7c2b8d260757b72f285c54fb0fdfd68}{Drude}{D\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b7c2b8d260757b72f285c54fb0fdfd68}
+      \strng{fullhash}{b7c2b8d260757b72f285c54fb0fdfd68}
+      \field{labelalpha}{Dru00}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Zur Elektronentheorie der Metalle}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{3}
+      \field{title}{Zur Elektronentheorie der Metalle}
+      \field{volume}{306}
+      \field{year}{1900}
+      \field{pages}{566\bibrangedash 613}
+      \verb{doi}
+      \verb 10.1002/andp.19003060312
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 

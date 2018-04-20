@@ -1,5 +1,122 @@
 \chapter{Calculation}
-\label{ch:calculation}
+\label{ch: calculation}
 
-In the last chapter the memory-matrix-formalism was introduced, which give us an exact formula for correlation functions.
+In the last chapter the memory-matrix-formalism was introduced, which give us an exact formula to calculate correlation functions.
 Now this formalism is used to determine the static conductivity of the spin-fermion-model, introduced in chapter \todo{make link to chapter spin-fermion-model}, pertubate umklapp-scattering.
+
+
+\section{Infinite conductivity in systems with unbroken translation symmetry}
+\label{sec: Infinite conductivity in a system with unbroken translation symmetry}
+%
+%
+After Drude published his theory about the electrical transport in metals \cite{Drude} in the beginning of the last century it is well known that a broken translation symmetry is needed to get a finite static conductivity.
+Because of Neother's theorem it is also well known that a unbroken symmetry always implies a conserved quantity.
+In the case of translation symmetry this quantity is the momentum.
+Phenomenas breaking the translation symmetry are for example impurity scattering, electron-electron scattering and umklapp scattering.
+Let us firstly assume the standard spin-fermion-model without a translation symmetry breaking pertubation.
+In chapter \todo{link to chapter spin-fermion-model} it is showed that in the used model the momentum is conserved but the currunt isn't conserved.
+This property is needed to calculate the static conductivity.
+
+The static conductivity is given by the conductivity taking the limit for small frequencies and the conductivity itself is given by the current-current correlation function.
+%
+\begin{align}
+	\sigma_{\mt{dc}} = \lim\limits_{z \to 0} \sigma(z) = \lim\limits_{z \to 0}\, \beta\,\mathcal{C}_{\mt{JJ}}(z)
+\end{align}
+%
+In the notation of the memory-matrix-formalism the current-current correlation function ist given by
+%
+\begin{align}
+	\mathcal{C}_{\mt{JJ}}(z) = 
+		\frac{i}{\beta} \bigg[ 
+			z \delta_{i\mt{J}} 
+			+ 
+			i \beta 
+			\obra{\dot{\mt{A}}_{i}} 
+			\hat{Q} \frac{i}{z - \hat{Q} \hat{L} \hat{Q}} \hat{Q} 
+			\oket{\dot{\mt{A}}_{k}}
+			\chi_{k\mt{J}}^{-1}
+		\bigg]^{-1}
+		\chi_{i\mt{J}},
+\end{align}
+%
+where a sum over $k$ is implied.
+%
+\begin{align}
+	\mathcal{C}_{\mt{JJ}}(z) = \frac{i}{\beta} z^{-1} \chi_{\mt{JJ}}(\omega=0) = \frac{i}{z} \mathcal{C}_{\mt{JJ}}(t=0)
+\end{align}
+%
+
+%
+\begin{align}
+	\oket{\mt{J}} = \oket{\mt{J}_{\mid\mid}} + \oket{\mt{J}_{\bot}}
+\end{align}
+%
+
+%
+\begin{align}
+	\oket{\mt{J}_{\mid\mid}} = \hat{P}\oket{\mt{J}} = \frac{\odyad{\mt{P}}{\mt{P}}}{\braket{\mt{P}}{\mt{P}}} \oket{\mt{J}} = \frac{\chi_{\mt{PJ}}}{\chi_{\mt{PP}}} \oket{\mt{P}}
+\end{align}
+%
+
+%
+\begin{align}
+	\mathcal{C}_{\mt{JJ}}(t=0) = \obraket{\mt{J}(0)}{\mt{J}(0)} = \obraket{\mt{J}_{\mid\mid}}{\mt{J}_{\mid\mid}} + \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}
+\end{align}
+%
+
+%
+\begin{align}
+	\mathcal{C}_{\mt{JJ}}(t=0) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert^{2}} \mathcal{C}_{\mt{PP}}(t=0) + \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}
+\end{align}
+%
+
+%
+\begin{align}
+	\mathcal{C}_{\mt{JJ}}(z) = \frac{i}{z \beta} \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} + \frac{i}{z} \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}
+\end{align}
+%
+
+%
+\begin{align}
+	\sigma (z) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \frac{i}{z}  + \sigma_{\mt{reg}}(z)
+\end{align}
+%
+where the regular conductivity $\sigma_{\mt{reg}}(z) = \frac{i \beta}{z} \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced.
+Setting $z = \omega + i\eta$, where the limit $\eta \to 0$ is implied.
+%
+\begin{align}
+	\sigma_{\mt{dc}} = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \bigg( \mathcal{P} \frac{i}{\omega} + \pi \delta(\omega) \bigg)
+\end{align}
+%
+where $\mathcal{P}$ sympolizied that the prinzipal value is taken.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
