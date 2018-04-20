@@ -1,0 +1,10 @@
+[0] Config.pm:321> INFO - This is Biber 1.9
+[1] Config.pm:324> INFO - Logfile is 'main.blg'
+[53] biber:277> INFO - === Mon Apr 16, 2018, 16:36:00
+[53] Biber.pm:334> INFO - Reading 'main.bcf'
+[164] Biber.pm:636> INFO - Found 0 citekeys in bib section 0
+[164] Utils.pm:144> WARN - The file 'main.bcf' does not contain any citations!
+[193] bbl.pm:517> INFO - Writing 'main.bbl' with encoding 'ascii'
+[193] bbl.pm:518> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[193] bbl.pm:606> INFO - Output to main.bbl
+[197] Biber.pm:107> INFO - WARNINGS: 1
