@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  16 APR 2018 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  20 APR 2018 11:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2103,19 +2103,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27759 strings out of 494347
- 527197 string characters out of 6168810
- 973115 words of memory out of 5000000
- 30542 multiletter control sequences out of 15000+600000
+ 27824 strings out of 494347
+ 528712 string characters out of 6168810
+ 975115 words of memory out of 5000000
+ 30607 multiletter control sequences out of 15000+600000
  20735 words of font info for 76 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
- 73i,11n,70p,10387b,2616s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,11n,76p,10387b,2616s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on main.pdf (22 pages, 108232 bytes).
+Output written on main.pdf (22 pages, 109017 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
