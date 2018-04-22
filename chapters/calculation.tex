@@ -2,7 +2,7 @@
 \label{ch: calculation}
 
 In the last chapter the memory-matrix-formalism was introduced, which give us an exact formula to calculate correlation functions.
-Now this formalism is used to determine the static conductivity of the spin-fermion-model, introduced in chapter \todo{make link to chapter spin-fermion-model}, pertubate umklapp-scattering.
+Now this formalism is used to determine the static conductivity of the spin-fermion-model, introduced in chapter (\todo{make link to chapter spin-fermion-model}), pertubate umklapp-scattering.
 
 
 \section{Infinite conductivity in systems with unbroken translation symmetry}
@@ -14,16 +14,21 @@ Because of Neother's theorem it is also well known that a unbroken symmetry alwa
 In the case of translation symmetry this quantity is the momentum.
 Phenomenas breaking the translation symmetry are for example impurity scattering, electron-electron scattering and umklapp scattering.
 Let us firstly assume the standard spin-fermion-model without a translation symmetry breaking pertubation.
-In chapter \todo{link to chapter spin-fermion-model} it is showed that in the used model the momentum is conserved but the currunt isn't conserved.
+In chapter (\todo{link to chapter spin-fermion-model}) it is showed that in the used model the momentum is conserved but the currunt isn't conserved.
 This property is needed to calculate the static conductivity.
 
-The static conductivity is given by the conductivity taking the limit for small frequencies and the conductivity itself is given by the current-current correlation function.
+In general the static conductivity is given by taking the small frequencie limit of the conductivity and the conductivity itself is given by the current-current correlation function (JJ-correlation function), which reslut directly from the linear response theory.
 %
 \begin{align}
 	\sigma_{\mt{dc}} = \lim\limits_{z \to 0} \sigma(z) = \lim\limits_{z \to 0}\, \beta\,\mathcal{C}_{\mt{JJ}}(z)
 \end{align}
 %
-In the notation of the memory-matrix-formalism the current-current correlation function ist given by
+The memory matrix formalism is used to calculate the JJ-correlation function.
+Before we can attend us to the calculation of the correlation function we have to think about the set of operators introduced by the definition of the projection operator.
+This set of operators has to be choosen for each calculation seperatly depending of the model and the quantity of interest.
+In our case we choose only a set of to operators namly the momentum and the current, because we want to figure out what influnece the unconserved momentum has on the current..
+
+
 %
 \begin{align}
 	\mathcal{C}_{\mt{JJ}}(z) = 
@@ -39,6 +44,9 @@ In the notation of the memory-matrix-formalism the current-current correlation f
 		\chi_{i\mt{J}},
 \end{align}
 %
+in the notation of the memory matrix formalismn, where the sum over $k$ is implied.
+
+
 where a sum over $k$ is implied.
 %
 \begin{align}
