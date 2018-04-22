@@ -74,13 +74,16 @@
 %%% braket notation in the hilbertspace of operators (Liouville space) %%%
 
 \newcommand{\oket}[1]{\big|{#1}\big)} % ket in operator space with automatic sizing
-%\newcommand{\oket*}[1]{\big|\mt{#1}\big)} % ket in operator space with no resize
+\newcommand{\toket}[1]{|\mt{#1})} % ket in operator space for writing inside normal text
 
 \newcommand{\obra}[1]{\big({#1}\big|} % bra in operator space with automatic sizing
-%\newcommand{\obra*}[1]{\big(\mt{#1}\big|} % bra in operator space with no resize
+\newcommand{\tobra}[1]{(\mt{#1}|} % bra in operator space for writing inside normal text
 
 \newcommand{\obraket}[2]{\big({#1}\big|{#2}\big)} % braket in operator space with automatic sizing
-\newcommand{\odyad}[2]{\oket{#1}\obra{#2}}
+\newcommand{\tobraket}[2]{({#1}|{#2})} % braket in operator space for writing inside normal text
+
+\newcommand{\odyad}[2]{\oket{#1}\obra{#2}} % dyad in operator space with autometic sizing
+\newcommand{\tdyad}[2]{\toket{#1}\tobra{#2}} % dyad in operator space for writing inside normal text
 
 %\newcommand{\ev}[1]{\left\langle{#1}\right\rangle} 											% expactation value
 %\newcommand{\erwartungswert}[3]{\left\langle {#1}\right|{#2}\left|{#3}\right\rangle} 		% ausführlicher erwartungswert mit zuständen

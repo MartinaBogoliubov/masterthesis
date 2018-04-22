@@ -17,18 +17,19 @@ Let us firstly assume the standard spin-fermion-model without a translation symm
 In chapter (\todo{link to chapter spin-fermion-model}) it is showed that in the used model the momentum is conserved but the currunt isn't conserved.
 This property is needed to calculate the static conductivity.
 
-In general the static conductivity is given by taking the small frequencie limit of the conductivity and the conductivity itself is given by the current-current correlation function (JJ-correlation function), which reslut directly from the linear response theory.
+In general the static conductivity is given by taking the small frequencie limit of the conductivity and the conductivity itself is given by the current-current correlation function (J-J correlation function), which reslut directly from the linear response theory.
 %
 \begin{align}
 	\sigma_{\mt{dc}} = \lim\limits_{z \to 0} \sigma(z) = \lim\limits_{z \to 0}\, \beta\,\mathcal{C}_{\mt{JJ}}(z)
 \end{align}
 %
-The memory matrix formalism is used to calculate the JJ-correlation function.
-Before we can attend us to the calculation of the correlation function we have to think about the set of operators introduced by the definition of the projection operator.
+The memory matrix formalism is used to calculate the J-J correlation function.
+Before we attend us to the calculation of the correlation function we have to think about the set of operators introduced by defining the projection operator.
 This set of operators has to be choosen for each calculation seperatly depending of the model and the quantity of interest.
-In our case we choose only a set of to operators namly the momentum and the current, because we want to figure out what influnece the unconserved momentum has on the current..
-
-
+In our case we choose only a set of two operators namly the momentum and the current, because we want to figure out the influnece of the momentum on the current.
+That means the projector $\mathcal{P}$ projects into the two dimensional sub-Hilbertspace, spanned P and J.
+Lets go back to the correlation function, defined by equation (\todo{reference to correlation function}), where the sum over $k$ und $l$ is implied.
+Because our interest is focused on the J-J correlation function each index $j$ and $l$ is set to $J$.
 %
 \begin{align}
 	\mathcal{C}_{\mt{JJ}}(z) = 
@@ -44,25 +45,37 @@ In our case we choose only a set of to operators namly the momentum and the curr
 		\chi_{i\mt{J}},
 \end{align}
 %
-in the notation of the memory matrix formalismn, where the sum over $k$ is implied.
-
-
-where a sum over $k$ is implied.
+Now the sum over $k$ is performed explicitly where both contriubtions for J and P vanish.
+Let us look seperatly on J and P starting with the latter case.
+In our observed model the momentum is conserved and so the time deriviative of P is zero.
+No more words are needed to see that the expactation value doesn't contribute.
+In the case of J the time derivative doesn't vanish so the two dimensional sub-Hilbertspace and the action of J in this Hilbertspace has to be consider.
+In the investigated system the whole current lives in the J-P Hilbertspace to any time, so no single part of J is transported out of the Hilbertspace.
+The appering operator $\mathcal{Q}$ is the inverse of $\mathcal{P}$ and therefore projected out of the J-P Hilbertspace.
+Combining both statements it is clear that $\mathcal{Q}\toket{\dot{\mt{J}}} = 0$.
+The only resulting term choosing $i=J$ is
 %
 \begin{align}
-	\mathcal{C}_{\mt{JJ}}(z) = \frac{i}{\beta} z^{-1} \chi_{\mt{JJ}}(\omega=0) = \frac{i}{z} \mathcal{C}_{\mt{JJ}}(t=0)
+	\mathcal{C}_{\mt{JJ}}(z) = \frac{i}{\beta} z^{-1} \chi_{\mt{JJ}}(\omega=0) = \frac{i}{z} \mathcal{C}_{\mt{JJ}}(t=0),
 \end{align}
 %
-
+where the correlation function at $t = 0$ is given by the scalar product $\tobraket{\mt{J}(0)}{\mt{J}(0)}$ defined in equation (\todo{reference to scalar product}).
+During the motivation of the previous chapter we explained that each observalbe can be split in one secular and one non-secular part.
+This is equatable with splitting a vector in a parallel and a perpendicular component, respectivily.
 %
 \begin{align}
 	\oket{\mt{J}} = \oket{\mt{J}_{\mid\mid}} + \oket{\mt{J}_{\bot}}
 \end{align}
 %
-
+What does this mean in physical language?
+In the investigated system the current isn't conserved, but a part of him is it.
+This part is represented by the secular part and has to be parallel with the momentum.
+Therfore the projection from J at P yield the parallel component of J.
+%Let us concentrate on the parallel component and bear in mind the perpendicular one for later.
+%In the language of the memory matrix formalism the secular part is the projection of P on J.
 %
 \begin{align}
-	\oket{\mt{J}_{\mid\mid}} = \hat{P}\oket{\mt{J}} = \frac{\odyad{\mt{P}}{\mt{P}}}{\braket{\mt{P}}{\mt{P}}} \oket{\mt{J}} = \frac{\chi_{\mt{PJ}}}{\chi_{\mt{PP}}} \oket{\mt{P}}
+	\oket{\mt{J}_{\mid\mid}} = \mathcal{P}\oket{\mt{J}} = \frac{\odyad{\mt{P}}{\mt{P}}}{\obraket{\mt{P}}{\mt{P}}} \oket{\mt{J}} = \frac{\chi_{\mt{PJ}}}{\chi_{\mt{PP}}} \oket{\mt{P}}
 \end{align}
 %
 
