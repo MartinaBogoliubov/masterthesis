@@ -12,14 +12,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Memory-Matrix-Formalsim}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Calculation}{7}
+\contentsline {section}{\numberline {3.1}Motivation}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{7}
+\contentsline {section}{\numberline {3.2}Linear Response Theory}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{9}
+\contentsline {subsection}{\numberline {3.2.1}Kubo formula}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{11}
+\contentsline {subsection}{\numberline {3.2.2}Kubo relaxation function}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Analysis of Matsubara-sums}{13}
+\contentsline {chapter}{\numberline {4}Calculation}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Simple poles}{13}
+\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusion}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Analysis of Matsubara-sums}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Simple poles}{15}

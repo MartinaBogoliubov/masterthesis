@@ -1,1 +1,181 @@
+%
+%
 \chapter{Memory-Matrix-Formalsim}
+\label{ch: memory-matrix-formalism}
+%
+%
+\section{Motivation}
+\label{sec: motivation}
+%
+%
+A physicist is always interested in the beaviour and time evolution of the observables of the investigates system.
+In the middle of the last century many physicists worked on the understanding and mathematical description of one physical process, the Brownian motion.
+On stochasical theory of these certain physical process is based on the Langevin equation
+%
+\begin{align}
+	\pdv{t} \mt{A}(t) -\mt{F}_{\mt{ex}}(x,t) + \gamma \cdot \mt{A}(t) = f(t),
+	\label{eq: Langevin equation}
+\end{align}
+%
+where $\mt{A}(t)$ is some dynamical observable and $f(t)$ is a random force like white noise for example.
+The origin of the second term on the left hand side is some external force result from a coupling between $\mt{A}(t)$ and some external potential.
+The third term on the left hand side is a damping or friction term.
+Now let us assume it's possible to seperate equation \eqref{eq: Langevin equation} into two parts.
+The first part, called $f_{1}$, is a functional of the dynamical observable $\mt{A}(t')$, where $t_{0} \leq t' \leq t$, so that this part is depending on the history of A.
+The second part $f_{2}$ should be depending on all other degrees of freedom.
+Now $f_{1}$ is expanded up to the linear order and all terms of higher order and the part $f_{2}$ are summerized to the quantity $F(t)$.
+The result is a linearized form of the Langevin equation
+%
+\begin{align}
+	\pdv{t} \mt{A}(t) = \int\limits_{t_{0}}^{t} \dd{t'} \mathcal{C}(t-t') \mt{A}(t') + F(t),
+	\label{eq: linearized Langevin equation}
+\end{align}
+%
+where $\mathcal{C}$ is a correlation function and $\mt{A}(t')$ is the deviation of the invariant part of the Hamiltonian.
+For large time scales the deviation should be vanish, so the time-integral over $\mt{A}(t')$ should be become zero.
+For simplification the origin of the time axis is moved to $t_{0}$.
+In general the Laplace transformation of a function is given by
+%
+\begin{align}
+	\mathcal{L}\big\{\mt{A}(t)\big\} = \mt{A}(s) = \int\limits_{0}^{\infty} \dd{t} \mt{A}(t) e^{-st}.
+	\label{eq: Laplace transformation real axis}
+\end{align}
+%
+Using the Laplace transformation equation \eqref{eq: linearized Langevin equation} becomes a algebratic equation of motion.
+The solution of this equation is 
+%
+\begin{align}
+	\mt{A}(t) = \Xi(t) \cdot \mt{A}(0) + \mt{A}'(t) \hspace{1cm} \mt{with} \hspace{1cm} \mt{A}'(t) = \int\limits_{0}^{t} \dd{t'} \Xi(t-t') F(t'),
+	\label{eq: splitted observable}
+\end{align}
+%
+where the function $\Xi(t)$ is defined by the Laplace transformation of $\Xi(s) = [s-\mathcal{C}(s)]^{-1}$ and $\mathcal{C}(s)$ is the Laplace transformtion of the correlation function $\mathcal{C}(t)$.
+The main result of equation \eqref{eq: splitted observable} and the motivation for the following introduced memory-matrix-formalism is the splitting of the dynamical observable $\mt{A}(t)$ into two parts.
+
+For the first term on the right hand side the only time-dependence is adverted through the correlation function $\mathcal{C}$, which is clear regarding the definition of $\Xi$.
+This term included the linear contributions of $\mt{A}(t)$ by construction.
+These ones are the mostly important contributions to the time evolutaion of an observable, because they are secular.
+In contrast the second term on the right hand side is the convolution between the function $\Xi(t-t')$ and the function $\mt{F}(t')$.
+The latter summerize all the non-linear effects, fluctuations and intital transient processes, which are all effects with a small lifetimes in contrast with the secular effects.
+Therefore these effects shouldn't have large influences on the time evolution of an observable, always large time scales in mind.
+
+Beside the physical interpretation a simple geometrical and mathematical one is very usefull.
+Let us assume a vector space ana the observable should be a vector in this vector space.
+Then the secular term is a projection on the A-axis and the non-secular term is aquivalent to a vector perpendicular to the A-axis.
+The memory-matrix-formalism take up this simple interpretation of equation \eqref{eq: splitted observable} and put it in a general and exact form, so that it can be used classicaly and quantum mechanicaly.
+%
+%
+\section{Linear Response Theory}
+\label{sec: linear response theory}
+%
+%
+Before the derivation of the memory-matrix-formalism can be started some ground work is to do.
+This section begins with a short reminder of the kubo formula. %also known as linear response theory.
+After that the Kubo relaxation function are introduced and some important relations between there and the retarded susceptibility $\chi$ are derivated.
+In the last section finally the splitting of $\chi$ in a real and an imaginary part are dicussed.
+%
+%
+\subsection{Kubo formula}
+\label{subsec: kubo formula}
+%
+%
+Consider a system in equilibrium represented by the Hamiltonian $H_{0}$.
+At an arbitrary time $t'$ a pertubation is switched on, where the pertubation is given by the Hamiltonian $H_{1} = - B \cdot F(t)$, so that $H(t) = H_{0} + H_{1}$ is the full Hamiltonian.
+Thereby $B$ is an operator by which the pertubation is coupled on the system and $F(t)$ is a function determining the time evolution of the pertubation.
+It is assumed that $F(t) = 0$ for $t<t'$ so that the system is in thermal equilibrium for all these times.
+
+The physical interest is existed in the question how does an observable $\mt{A}$ react on the pertubation switched on at $t'$.
+The answer is given by the thermodynamical expectation value of the operator corresponding to the observable $\mt{A}$
+%
+\begin{align}
+	\expval{\mt{A}}(t) := \Tr{\rho_{\mt{S}}(t) \mt{A}_{\mt{S}}} = \Tr{\rho_{\mt{I}}(t) \mt{A}_{\mt{I}}},
+	\label{eq: thermodynamical expectation value}
+\end{align}
+%
+where the label S and I stand for the Schrödinger and Interaction picture, respectivily.
+The equality of the expectation value in the different regarded pictures is shown by the invariance of the trace under cycle permutation.
+The transformation into the interaction picture is very usefull what we will see after the next step below.
+In quantum mechnics the time evolution of the density operator is determined by the von Neumann-equation.
+%
+\begin{align}
+	\dv{t} \rho_{\mt{S}}(t) = -\frac{i}{\hbar} \comm{H(t)}{\rho_{\mt{S}}(t)} \hspace{0.5cm}\Leftrightarrow\hspace{0.5cm} \dv{t} \rho_{\mt{I}}(t) = -\frac{i}{\hbar} \comm{H_{1}}{\rho_{\mt{I}}(t)}
+	\label{eq: von Neumann-equation}
+\end{align}
+%
+The equation is also transformed into the interaction picture, which doesn't change the structure itself but the density operator deponds only on the Hamiltonian $H_{1}$ now.
+Integrating and using the condition that the system is in thermal equilibrium at $t \to -\infty$ equation \eqref{eq: von Neumann-equation} is resulted in a integrable equation for the density operator.
+%
+\begin{align}
+	\rho_{\mt{I}}(t) = \rho_{0} + \frac{i}{\hbar} \int\limits_{-\infty}^{t} \dd{t'} \comm{B_{\mt{I}}(t')}{\rho_{\mt{I}}(t')}F(t')
+	\label{eq: integrable form of von Neumann-equation}
+\end{align}
+%
+Jet it is clear why the interection picture is used.
+The integrand depends on the Hamiltonian of the pertubation only in linear order which is a perfect starting point for a iterativ solution procedure.
+Starting with the zeroth order the density operator is trivially the density operator at thermical equilibrium.
+Inserting the zeroth order on the right hand side of equation \eqref{eq: integrable form of von Neumann-equation} yield the first order of the density operator, a.\,s.\o.
+In linear response theory the iteration is cutted off after the first order.
+Inserting this in equation \eqref{eq: thermodynamical expectation value} and defining the dynamical susceptibility 
+%
+\begin{align}
+	\chi_{\mt{AB}}(t-t') = \frac{i}{\hbar} \Theta(t-t') \expval{\comm{A_{\mt{I}}(t-t')}{B_{\mt{I}}(0)}}_{H_{0}}
+	\label{eq: dynamical susceptibilty}
+\end{align}
+%
+yield the Kubo formula
+%
+\begin{align}
+	\delta\expval{\mt{A}(t)} := \expval{\mt{A}}(t) - \expval{\mt{A}(t)}_{H_{0}} \approx \int\limits_{-\infty}^{\infty} \dd{t'} \chi_{\mt{AB}}(t-t') F(t'),
+	\label{eq: Kubo formula}
+\end{align}
+%
+where the label $H_{0}$ means that the expactation value is taken with respect to the unpertubated Hamiltonian.
+We see that the deviation of the observable A caused by the pertubation is given by the convolution of the dynamical suszeptibilty $\chi_{\mt{AB}}(t-t')$ and the time evolution function $F(t)$.\todo{noch sch\"oner schreiben}
+%
+%
+\subsection{Kubo relaxation function}
+\label{subsec: Kubo relaxation function}
+%
+%
+After a general equation for the deviation of an observable A from the equilibrium value was established, we want to investigate a certain kind of pertubation.
+Let us assume $F(t) = \Theta(-t) \cdot F \cdot e^{-s\tau}$ the time evolution function of a pertubation, which is switched on adiabatically at $t=-\infty$ and switched off at $t=0$.
+Inserting this in equation \eqref{eq: Kubo formula} and substituting $\tau = t-t'$ yield $\delta\expval{\mt{A}(t)} = \Phi_{AB}(t) \cdot F e^{st}$ with the Kubo relaxation function
+%
+\begin{align}
+	\Phi_{\mt{AB}}(t) = \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{t}^{\infty} \dd{\tau} \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{H_{0}} e^{-s\tau}.
+\end{align}
+%
+
+The arising $\Theta$-distributions determine the lower limit of the intergal to $t$.
+For a more detailed derivation of the Kubo relaxation function see \cite{Schwabl} or \cite{Schwabl2}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

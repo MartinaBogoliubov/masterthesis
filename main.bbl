@@ -19,6 +19,40 @@
 
 \refsection{0}
   \sortlist{none}{none}
+    \entry{Schwabl}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{06b4aecc4ef33989cab7b7bf99b832ad}
+      \strng{fullhash}{06b4aecc4ef33989cab7b7bf99b832ad}
+      \field{labelalpha}{Sch08}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Advanced Quantum Mechanics}
+      \field{edition}{4. ed.}
+      \field{title}{Advanced Quantum Mechanics}
+      \field{year}{2008}
+    \endentry
+    \entry{Schwabl2}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{06b4aecc4ef33989cab7b7bf99b832ad}
+      \strng{fullhash}{06b4aecc4ef33989cab7b7bf99b832ad}
+      \field{labelalpha}{Sch06}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Statistische Mechanik}
+      \field{edition}{3., aktualisierte Aufl.}
+      \field{title}{Statistische Mechanik}
+      \field{year}{2006}
+    \endentry
     \entry{Drude}{article}{}
       \name{labelname}{1}{}{%
         {{hash=b7c2b8d260757b72f285c54fb0fdfd68}{Drude}{D\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
