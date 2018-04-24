@@ -16,6 +16,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{7}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{9}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusion}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{13}
+\contentsline {chapter}{\numberline {A}Analysis of Matsubara-sums}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Simple poles}{13}
