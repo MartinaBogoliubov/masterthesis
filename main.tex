@@ -157,6 +157,8 @@
 \mainmatter							% activate	arabic numbering
 
 % includeing chapters
+\begingroup
+\allowdisplaybreaks
 \cleardoublepage
 \input{chapters/motivation}
 %
@@ -175,7 +177,9 @@
 \cleardoublepage
 \appendix							% appendix is starting
 \cleardoublepage
+\input{chapters/appendix_properties_Kubo_relaxation_function}
 \input{chapters/appendix_matsubara_sums}
+\endgroup
 %
 \cleardoublepage
 \listoftodos

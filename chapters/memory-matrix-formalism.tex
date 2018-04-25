@@ -103,7 +103,7 @@ In quantum mechnics the time evolution of the density operator is determined by 
 \end{align}
 %
 The equation is also transformed into the interaction picture, which doesn't change the structure itself but the density operator deponds only on the Hamiltonian $H_{1}$ now.
-Integrating and using the condition that the system is in thermal equilibrium at $t \to -\infty$ equation \eqref{eq: von Neumann-equation} is resulted in a integrable equation for the density operator.
+Integrating and using the boundary condition that the system is in thermal equilibrium at $t \to -\infty$ equation \eqref{eq: von Neumann-equation} is resulted in a integrable equation for the density operator.
 %
 \begin{align}
 	\rho_{\mt{I}}(t) = \rho_{0} + \frac{i}{\hbar} \int\limits_{-\infty}^{t} \dd{t'} \comm{B_{\mt{I}}(t')}{\rho_{\mt{I}}(t')}F(t')
@@ -142,18 +142,104 @@ Let us assume $F(t) = \Theta(-t) \cdot F \cdot e^{-s\tau}$ the time evolution fu
 Inserting this in equation \eqref{eq: Kubo formula} and substituting $\tau = t-t'$ yield $\delta\expval{\mt{A}(t)} = \Phi_{AB}(t) \cdot F e^{st}$ with the Kubo relaxation function
 %
 \begin{align}
-	\Phi_{\mt{AB}}(t) = \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{t}^{\infty} \dd{\tau} \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{H_{0}} e^{-s\tau}.
+	\Phi_{\mt{AB}}(t) = \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{t}^{\infty} \dd{\tau} \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{0} e^{-s\tau}.
+	\label{eq: Kubo relaxation function}
 \end{align}
 %
-
 The arising $\Theta$-distributions determine the lower limit of the intergal to $t$.
 For a more detailed derivation of the Kubo relaxation function see \cite{Schwabl} or \cite{Schwabl2}.
+It's not really surprisingly that the Kubo relaxation function and the dynamical susceptibility are closely connected, because the first is derivated out of the latter one.
+However there exist three very important relations between them both, which are 
+%
+\begin{enumerate}
+	\item $\begin{aligned}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \label{eq: relation 1 between Phi and chi} \end{aligned}$
+	\item $\begin{aligned} \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega = 0) \label{eq: relation 2 between Phi and chi} \end{aligned}$
+	\item $\begin{aligned} \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \label{eq: relation 3 between Phi and chi} \end{aligned}$
+\end{enumerate}
+%
+The evidence of these tree relations are shown in the appendix \ref{app: properties of the Kubo relaxation function}.
+For the later deviation of the memory-matrix-formalism it's more usefull to write the Kubo relaxation function in another, not so intuitivly form.
+The goal of the rewriting is to get the expectation value in a form with no commutator and to do this two identities are needed.
+The first one is
+%
+\begin{align}
+	\expval{\comm{\mt{A}(t)}{\mt{B}(t')}} &= \frac{1}{Z} \Tr{\comm{\rho}{\mt{A}(t)} \mt{B}(t')},
+	\label{eq: identity expectation value}
+\end{align}
+%
+where the invariance of the expactation value with respect to cycling permutation is used.
+The second one is the Kubo-identity.
+Thereby the main idea is to used the analogy of the exponential functions to the time evolution of an operator.
+%
+\begin{align}
+	i \comm{\rho}{\mt{A}(t)} &= i \Big[\rho \mt{A}(t) - \mt{A}(t) \rho\Big]
+	\notag \\
+	\Leftrightarrow\ i \comm{\rho}{\mt{A}(t)} &= i \Big[\rho \mt{A}(t) - e^{-\beta H} e^{\beta \mt{H}} \mt{A}(t) e^{-\beta \mt{H}}\Big]
+	\notag \\
+	\Leftrightarrow\ i \comm{\rho}{\mt{A}(t)} &= -i \rho \int\limits_{0}^{\beta} \dd{\lambda} \dv{\lambda} e^{\lambda \mt{H}} \mt{A}(t) e^{-\lambda \mt{H}}
+	\notag \\
+	\Leftrightarrow\ i \comm{\rho}{\mt{A}(t)} &= -i \rho \int\limits_{0}^{\beta} \dd{\lambda} \bigg[\mt{H} e^{i\tilde{\lambda} \mt{H}/\hbar} \mt{A}(t) e^{-i\tilde{\lambda} \mt{H}/\hbar} - e^{i\tilde{\lambda} \mt{H}/\hbar} \mt{A}(t) e^{-i\tilde{\lambda} \mt{H}/\hbar} \mt{H}\bigg]
+	\notag \\
+	\Leftrightarrow\ i \comm{\rho}{\mt{A}(t)} &= -i \rho \int\limits_{0}^{\beta} \dd{\lambda} \comm{\mt{H}}{\mt{A}(t+\tilde{\lambda})}
+	\notag \\
+	\Leftrightarrow\ \frac{i}{\hbar} \comm{\rho}{\mt{A}(t)} &= -\rho \int\limits_{0}^{\beta} \dd{\lambda} \dot{\mt{A}}(t+\tilde{\lambda}) = -\rho \int\limits_{0}^{\beta} \dd{\lambda} \dot{\mt{A}}(t-i\lambda\hbar),
+	\label{eq: Kubo-identity}
+\end{align}
+%
+where the derivation of $\mt{A}$ with respect to $t$ is symbolized with the dot above $\mt{A}$. 
+For reasons of lucidity $\tilde{\lambda} = -i\lambda\hbar$ is introduced through the computation.
+
+Now inserting equation \eqref{eq: identity expectation value} and \eqref{eq: Kubo-identity} in the Kubo relaxation function \eqref{eq: Kubo relaxation function} yield the searching form of the Kubo relaxation function, where the right hand side of the following compuation has to be integrated by parts, dedicated with PI.
+%
+\begin{align}
+	\Phi_{\mt{AB}}(t) &= \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{t}^{\infty} \dd{\tau} \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{0} e^{-s\tau}
+	\notag \\
+	\overset{\eqref{eq: identity expectation value}}{\Leftrightarrow}\ \Phi_{\mt{AB}}(t) &= \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{t}^{\infty} \dd{\tau} \frac{1}{Z_{0}} \Tr{\comm{\rho_{0}}{\mt{A}_{\mt{I}}(\tau)} \mt{B}_{\mt{I}}(0)} e^{-s\tau}
+	\notag \\
+	\overset{\eqref{eq: Kubo-identity}}{\Leftrightarrow}\ \Phi_{\mt{AB}}(t) &= -\lim\limits_{s \to 0} \int\limits_{0}^{\beta} \dd{\lambda} \int\limits_{t}^{\infty} \dd{\tau} \expval{\dot{\mt{A}}_{\mt{I}}(\tau-i\lambda\hbar) \mt{B}_{\mt{I}}(0)}_{0} e^{-s\tau}
+	\notag \\
+	\overset{\mt{PI}}{\Leftrightarrow}\ \Phi_{\mt{AB}}(t) &= -\lim\limits_{s \to 0} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\Bigg[\eval{\mt{A}_{\mt{I}}(\tau-i\lambda\hbar) e^{-s\tau}}_{t}^{\infty} + s \int\limits_{t}^{\infty} \dd{\tau} \dot{\mt{A}}_{\mt{I}}(\tau-i\lambda\hbar) e^{-s\tau} \Bigg] \mt{B}_{\mt{I}}(0)}_{0}
+	\notag \\
+	\Leftrightarrow\ \Phi_{\mt{AB}}(t) &= \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{\mt{I}}(t-i\lambda\hbar) \mt{B}_{\mt{I}}(0)}_{0} = \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{\mt{I}}(t) \mt{B}_{\mt{I}}(i\lambda\hbar)}_{0}
+\end{align}
+%
+Later we will see that the scalar product defining at the memory-matrix-formalsim has a similar structure as this form of the kubo relaxation function.
+This provide the oppertunity to transform the correlation function out of the language of the memory-matrix-formalism into the Kubo relaxation function, which in turn provide the oppertunity to compute the correlation function pertubativly.
+However the should be enough for the fist time.
+Later the transformation is discussed in more detail.
+%
+%
+\subsection{Kramer-Kronig-relation}
+%
+%
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+\subsection{spectral representation}
+%
+%
 
 
 

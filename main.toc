@@ -20,14 +20,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Kubo relaxation function}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Calculation}{9}
+\contentsline {subsection}{\numberline {3.2.3}Kramer-Kronig-relation}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{9}
+\contentsline {subsection}{\numberline {3.2.4}spectral representation}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{11}
+\contentsline {chapter}{\numberline {4}Calculation}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{13}
+\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Analysis of Matsubara-sums}{15}
+\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Simple poles}{15}
+\contentsline {chapter}{\numberline {5}Conclusion}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Simple poles}{19}

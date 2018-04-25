@@ -1,16 +1,16 @@
 [0] Config.pm:321> INFO - This is Biber 1.9
 [0] Config.pm:324> INFO - Logfile is 'main.blg'
-[49] biber:277> INFO - === Tue Apr 24, 2018, 20:46:57
-[49] Biber.pm:334> INFO - Reading 'main.bcf'
+[51] biber:277> INFO - === Wed Apr 25, 2018, 15:33:49
+[51] Biber.pm:334> INFO - Reading 'main.bcf'
 [161] Biber.pm:636> INFO - Found 3 citekeys in bib section 0
-[189] Biber.pm:3052> INFO - Processing section 0
-[217] Biber.pm:3190> INFO - Looking for bibtex format file 'bibliography/masterthesis.bib' for section 0
-[218] bibtex.pm:979> INFO - Decoding LaTeX character macros into UTF-8
-[221] bibtex.pm:853> INFO - Found BibTeX data source 'bibliography/masterthesis.bib'
-[280] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[280] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[280] Biber.pm:2929> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
-[280] Biber.pm:2933> INFO - No sort tailoring available for locale 'de-DE'
-[288] bbl.pm:517> INFO - Writing 'main.bbl' with encoding 'ascii'
-[288] bbl.pm:518> INFO - Converting UTF-8 to TeX macros on output to .bbl
-[292] bbl.pm:606> INFO - Output to main.bbl
+[190] Biber.pm:3052> INFO - Processing section 0
+[219] Biber.pm:3190> INFO - Looking for bibtex format file 'bibliography/masterthesis.bib' for section 0
+[220] bibtex.pm:979> INFO - Decoding LaTeX character macros into UTF-8
+[223] bibtex.pm:853> INFO - Found BibTeX data source 'bibliography/masterthesis.bib'
+[282] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[282] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[282] Biber.pm:2929> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
+[282] Biber.pm:2933> INFO - No sort tailoring available for locale 'de-DE'
+[290] bbl.pm:517> INFO - Writing 'main.bbl' with encoding 'ascii'
+[290] bbl.pm:518> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[294] bbl.pm:606> INFO - Output to main.bbl
