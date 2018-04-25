@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.3}Kramer-Kronig-relation}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}spectral representation}{9}
+\contentsline {subsection}{\numberline {3.2.4}spectral representation}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Calculation}{11}
 \defcounter {refsection}{0}\relax 

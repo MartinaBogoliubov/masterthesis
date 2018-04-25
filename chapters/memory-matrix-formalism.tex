@@ -212,6 +212,27 @@ Later the transformation is discussed in more detail.
 \subsection{Kramer-Kronig-relation}
 %
 %
+All experiences of a human life demonstating that an incident is always bevor the reaction of a system to it. 
+In physics this is called causality.
+Causality and the condition that the dynamical sysceptibilty $\chi_{\mt{AB}}(t-t')$ is zero for times $t$ smaller than $t'$ are aquivalent assertions.
+It's often usefull to work in the frequency space why we want to investigate what causality means in Fourier space.
+Consider the Fourier transformation $\chi_{\mt{AB}}(\omega)$ where $\omega$ is replaced by the complex number $\omega'+i\omega''$.
+For reasons of simplification the origin of the time axis is set to $t'$.
+%
+\begin{align}
+	\chi_{\mt{AB}}(\omega) = \int\limits_{-\infty}^{\infty} \dd{t} e^{i(\omega'+i\omega'')t} \chi_{\mt{AB}}(t)
+\end{align}
+%
+The integral converge if the exponential functions decay to zero.
+Causality in time space yield $t>0$ and because of that $e^{-\omega''t}$ decays only for $\omega''>0$ to zero.
+In summary causality in Fourier space means that the susceptibility is holomorph in the upper complex plane ($\Im{\omega} = \omega'' > 0$).
+
+Cauchy's integral theorem offers us the oppertunity to express the Fourier transformed susceptibility by a contour integral, where the contour $\Gamma$ has to be taken in the upper complex plane or more presicly in the regime where $\chi_{\mt{AB}}(\omega)$ is holomorph.
+%
+\begin{align}
+	\chi_{\mt{AB}}(\omega) = \frac{1}{2\pi i} \oint\limits_{\Gamma} \dd{\zeta} \frac{\chi_{\mt{AB}}(\zeta)}{\zeta-z}
+\end{align}
+%
 
 
 
