@@ -223,20 +223,56 @@ For reasons of simplification the origin of the time axis is set to $t'$.
 	\chi_{\mt{AB}}(\omega) = \int\limits_{-\infty}^{\infty} \dd{t} e^{i(\omega'+i\omega'')t} \chi_{\mt{AB}}(t)
 \end{align}
 %
-The integral converge if the exponential functions decay to zero.
-Causality in time space yield $t>0$ and because of that $e^{-\omega''t}$ decays only for $\omega''>0$ to zero.
-In summary causality in Fourier space means that the susceptibility is holomorph in the upper complex plane ($\Im{\omega} = \omega'' > 0$).
+The integral converge if the exponential functions decrease to zero.
+Causality in time space yield $t>0$ and because of that $e^{-\omega''t}$ decreases only for $\omega''>0$ to zero.
+In summary causality in Fourier space means that the susceptibility is holomorphic in the upper complex plane ($\Im{\omega} = \omega'' > 0$).
 
-Cauchy's integral theorem offers us the oppertunity to express the Fourier transformed susceptibility by a contour integral, where the contour $\Gamma$ has to be taken in the upper complex plane or more presicly in the regime where $\chi_{\mt{AB}}(\omega)$ is holomorph.
+Cauchy's integral theorem offers us the oppertunity to express the Fourier transformed susceptibility by a contour integral, where the arbitrary contour $\Gamma$ has to be taken in the upper complex plane or more presicly in the regime where $\chi_{\mt{AB}}(\omega)$ is holomorphic.
 %
 \begin{align}
-	\chi_{\mt{AB}}(\omega) = \frac{1}{2\pi i} \oint\limits_{\Gamma} \dd{\zeta} \frac{\chi_{\mt{AB}}(\zeta)}{\zeta-z}
+	\chi_{\mt{AB}}(\omega) = \frac{1}{2\pi i} \oint\limits_{\Gamma} \dd{\zeta} \frac{\chi_{\mt{AB}}(\zeta)}{\zeta-\omega}
 \end{align}
 %
+Our choice of the contour is some which goes from minus infity to infinity along the real part axis.
+Along a semi circle in the upper half plane the contour is closed, see figure \todo{link to figure of contour}.
+For reason of convergency the contour along the real part axis is moved in the upper half plane infinitesimal indicated with $i\eta$ where $\eta \to 0$ is implicated.
+
+The contribution of the semi circle vanishs because $\chi_{\mt{AB}}(\omega)$ decreasing very fast for large values of $\omega$ is assumed.
+Only a integral along the real part axis survives which can be evaluated by formally writing $\frac{1}{x+i\eta} = \mt{PV}\frac{1}{x}-i\pi\delta(x)$ where PV stands for taking the principal value.
+%
+\begin{align}
+	\chi_{\mt{AB}}(\omega) &= \frac{1}{2\pi i} \int\limits_{-\infty}^{\infty} \dd{\omega'} \frac{\chi_{\mt{AB}}(\omega')}{\omega'-\omega-i\eta} 
+	\notag \\
+	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= \frac{1}{2\pi i} \bigg[
+		\mt{PV} \int\limits_{-\infty}^{\infty} \dd{\omega'} \frac{\chi_{\mt{AB}}(\omega')}{\omega'-\omega} 
+		+ 
+		i\pi \int\limits_{-\infty}^{\infty} \dd{\omega'} \chi_{\mt{AB}}(\omega') \delta(\omega'-\omega)
+	\bigg]
+	\notag \\
+	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= -\frac{i}{\pi} \mt{PV} \int\limits_{-\infty}^{\infty} \dd{\omega'} \frac{\Re{\chi_{\mt{AB}}(\omega')} + i\Im{\chi_{\mt{AB}}(\omega')}}{\omega'-\omega} 
+	\notag \\
+	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= \frac{1}{\pi} \mt{PV} \int\limits_{-\infty}^{\infty} \dd{\omega'} \bigg[
+		\frac{\Im{\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+		-i
+		\frac{\Re{\chi_{\mt{AB}}(\omega')}}{\omega'-\omega} 
+	\bigg]
+\end{align}
+%
+In the second step one right hand side the complex susceptibility is written explicitly by her real and imaginary part.
+Nothing keep us from doing this on the left side hand too and compare the real and imaginary parts of both sides respectively.
+%
+\begin{align}
+	\Re{\chi_{\mt{AB}}(\omega)} &= \frac{1}{\pi} \mt{PV} \int\limits_{-\infty}^{\infty} \dd{\omega'} \frac{\Im{\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+	\\
+	\Im{\chi_{\mt{AB}}(\omega)} &= -\frac{1}{\pi} \mt{PV} \int\limits_{-\infty}^{\infty} \dd{\omega'} \frac{\Re{\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+\end{align}
+%
+These two relations are called Kramer-Kronig-relation.
+They take the real and imaginary part of the a function, here the susceptibility, in a very usefull relation.
 
 
 
-
+In they latter computation the Kramer-Kronig-relation is used to find the Green-function on the imaginary axis out off the Green-function on the real axis.
 
 
 
@@ -258,7 +294,7 @@ Cauchy's integral theorem offers us the oppertunity to express the Fourier trans
 
 %
 %
-\subsection{spectral representation}
+\subsection{Spectral representation}
 %
 %
 
