@@ -349,9 +349,28 @@ Defining the dyad product $\sum_{i} \dyad{i}{i}$ it's not hard to see that any l
 %
 \begin{align}
 	\mt{A} = \sum\limits_{i,j} \dyad{i}{i} \mt{A} \dyad{j}{j} = \sum\limits_{i,j} \mt{A}_{ij} \ket{i} \bra{j},
+	\label{eq: dyad product}
 \end{align}
 %
 where $\mt{A}_{ij} := \bra{i}\mt{A}\ket{j}$ is a matrix element of the linear operator.
+The dyad product of an operator is now used to introduce a new vector space of all linear operators acting on the $d$-dimensional Hilbert-space which is called the Liouville-space $\mathbb{L}$ or operator space.
+
+The Liouville-space is linear and complex vector space equally to the Hilbert-space.
+The difference between both are the vectors or elements living in the space.
+In the Liouville-space the vectors are linear operators $\mt{A}, \mt{B}, \dots$ which are acting on some Hilbert-space.
+In other words this means that the dyad decomposition of an vector in the $d$-dimensional Hilbert-space is the new vector in the Liouville-space.
+So some vector in the Liouville-space is notated as
+%
+\begin{align}
+	\oket{\mt{A}} := \sum\limits_{ij}^{d} \mt{A}_{ij} \oket{\dyad{i}{j}}
+	\label{eq: definition of a vector in Liouville-space}
+\end{align}
+%
+Similiarly to the quantum mechanic the Dirac notation is used with the difference that round brackets are used instead of angle brackets to distinghush both spaces.
+Out of the definition \eqref{eq: definition of a vector in Liouville-space} it's clear, that the basis in the Liouville-space is build by the $d^{2}$ dyads of the Hilbert-space .
+The dimension of the Liouville-space is therefore $d^{2}$.
+Equally to a Hilbert-space there are many other oppertunities to choose the basis in $\mathbb{L}$.
+
 
 
 
