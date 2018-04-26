@@ -4,8 +4,10 @@
 \label{ch: memory-matrix-formalism}
 %
 %
+%
 \section{Motivation}
 \label{sec: motivation}
+%
 %
 %
 A physicist is always interested in the beaviour and time evolution of the observables of the investigates system.
@@ -65,8 +67,10 @@ Then the secular term is a projection on the A-axis and the non-secular term is 
 The memory-matrix-formalism take up this simple interpretation of equation \eqref{eq: splitted observable} and put it in a general and exact form, so that it can be used classicaly and quantum mechanicaly.
 %
 %
+%
 \section{Linear Response Theory}
 \label{sec: linear response theory}
+%
 %
 %
 Before the derivation of the memory-matrix-formalism can be started some ground work is to do.
@@ -210,6 +214,7 @@ Later the transformation is discussed in more detail.
 %
 %
 \subsection{Kramer-Kronig-relation}
+\label{subsec: Kramer-Kronig-relation}
 %
 %
 All experiences of a human life demonstating that an incident is always bevor the reaction of a system to it. 
@@ -221,6 +226,7 @@ For reasons of simplification the origin of the time axis is set to $t'$.
 %
 \begin{align}
 	\chi_{\mt{AB}}(\omega) = \int\limits_{-\infty}^{\infty} \dd{t} e^{i(\omega'+i\omega'')t} \chi_{\mt{AB}}(t)
+	\label{eq: Fourier-transformation}
 \end{align}
 %
 The integral converge if the exponential functions decrease to zero.
@@ -271,36 +277,68 @@ These two relations are called Kramer-Kronig-relation.
 They take the real and imaginary part of the a function, here the susceptibility, in a very usefull relation.
 In the later computation them are used to compute the Green function on the real axis out off the Green function on the imaginary axis and vice versa.
 This is always needed if analytical continuation isn't possible, which is the case considering damping in the Green function.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 %
 %
 \subsection{Spectral representation}
+\label{subsec: spectral representation}
 %
 %
-
-
-
-
+In section \ref{subsec: kubo formula} the dynamical susecptibility $\chi_{\mt{AB}}$ is introduced by deviated the Kubo-formula \eqref{eq: Kubo formula}.
+The evolution of a system switching on a pertubation is described by this function.
+Now the processes starting because of the pertubation can be classified into two types one the one hand in dissipative prozesses and on the other hand in non-dissipative prozesses.
+In the following computation dissipative processes are investigated.
+For that a dissipative susceptibility of the form
+%
+\begin{align}
+	\chi''_{\mt{AB}}(t) = \frac{1}{2\hbar} \expval{\comm{\mt{A}(t)}{\mt{B}(0)}}
+	\label{eq: dissipative susceptibility}
+\end{align}
+%
+is regarded and her Fourier transformation is given by equation \eqref{eq: Fourier-transformation}.
+Notice that in the following computation the frequency $\omega$ isn't splitted into real and imaginary part like it's done in equation \eqref{eq: Fourier-transformation}.
+Starting our calculation multipling equation \eqref{eq: dynamical susceptibilty} and integrating over time $t$.
+%
+\begin{align}
+	\chi_{\mt{AB}}(t) &= \frac{i}{\hbar} \Theta(t) \expval{\comm{\mt{A}(t)}{\mt{B}(0)}} = 2i \Theta(t) \chi''_{\mt{AB}}(t)
+	\notag \\
+	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= 2i \int\limits_{-\infty}^{\infty} \dd{t} e^{i\omega t} \Theta(t) \chi''_{\mt{AB}}(t)
+	\notag \\
+	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= -\frac{1}{\pi} \lim\limits_{\eta \to 0} \int\limits_{-\infty}^{\infty} \dd{\omega'}
+ \frac{1}{\omega' + i\eta} \int\limits_{-\infty}^{\infty} \dd{t} e^{i(\omega-\omega')t} \chi''_{\mt{AB}}(t)
+ 	\notag \\
+	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= \frac{1}{\pi} \lim\limits_{\eta \to 0} \int\limits_{-\infty}^{\infty} \dd{\omega'}
+ \frac{\chi''_{\mt{AB}}(\omega')}{\omega' - \omega - i\eta} 
+ 	\notag \\
+	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= \frac{1}{\pi} \mt{PV} \int\limits_{-\infty}^{\infty} \dd{\omega'}
+ \frac{\chi''_{\mt{AB}}(\omega')}{\omega' - \omega} + i \int\limits_{-\infty}^{\infty} \dd{\omega'} \delta(\omega' - \omega) \chi''_{\mt{AB}}(\omega')
+ 	\notag \\
+	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= \chi'_{\mt{AB}}(\omega) + i \chi''_{\mt{AB}}(\omega)
+	\label{eq: splitting susceptibility into real and imaginary part}
+\end{align}
+%
+where in the second step the following definition of the $\Theta$-function is used.
+%
+\begin{align}
+	\Theta_{\eta}(t) = i \lim\limits_{\eta \to 0} \int\limits_{-\infty}^{\infty} \frac{\dd{\omega'}}{2\pi} \frac{e^{-i\omega't}}{\omega' + i\eta} 
+\end{align}
+%
+In equation \eqref{eq: splitting susceptibility into real and imaginary part} we see that the dynamical susceptibility $\chi_{\mt{AB}}(\omega)$ is seperated into two functions $\chi'_{\mt{AB}}(\omega)$ and $\chi''_{\mt{AB}}(\omega)$, where the latter is the dissipative susceptibility defined at the beginning of this section in \eqref{eq: dissipative susceptibility}.
+Equation \eqref{eq: splitting susceptibility into real and imaginary part} is general and for any susceptibility valid.
+Assuming the dissipative susceptibility is a real number, than this is also valid for $\chi'_{\mt{AB}}(\omega)$ and the both functions $\chi'_{\mt{AB}}(\omega)$ and $\chi''_{\mt{AB}}(\omega)$ are real and imaginary part of $\chi_{\mt{AB}}(\omega)$, respectivily.
+%
+%
+%
+\section{Deviation of the Memory-Matrix-Formalism}
+\label{sec: deviation of the memory-matrix-formalism}
+%
+%
+%
+After this short reminder of the linear response theorie and the investigation of the dynamical susceptibility the groundwork for the deviation of the memory-matrix-formalism is done and we want to go back.
+This chapter started by splitting a dynamical observable into two parts, a secular and a non-secular one.
+The systematical evolution of observables is determined by the secular part.
+Looking at the system after a pertubation is switched off for a long time this secular part is depended the evolution.
+Furthermore all processes with a short lifetime or small quantity compared with the linear term in pertubation series are summerized in the non-secular part.
+This result is the starting point to a simple geometrical interpretation in a vector space, which we want define in the following.
 
 
 

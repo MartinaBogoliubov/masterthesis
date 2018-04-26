@@ -1,16 +1,16 @@
 [0] Config.pm:321> INFO - This is Biber 1.9
-[0] Config.pm:324> INFO - Logfile is 'main.blg'
-[49] biber:277> INFO - === Thu Apr 26, 2018, 11:12:42
-[49] Biber.pm:334> INFO - Reading 'main.bcf'
-[159] Biber.pm:636> INFO - Found 3 citekeys in bib section 0
-[190] Biber.pm:3052> INFO - Processing section 0
-[219] Biber.pm:3190> INFO - Looking for bibtex format file 'bibliography/masterthesis.bib' for section 0
-[222] bibtex.pm:979> INFO - Decoding LaTeX character macros into UTF-8
-[224] bibtex.pm:853> INFO - Found BibTeX data source 'bibliography/masterthesis.bib'
-[288] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[288] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[288] Biber.pm:2929> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
-[288] Biber.pm:2933> INFO - No sort tailoring available for locale 'de-DE'
-[296] bbl.pm:517> INFO - Writing 'main.bbl' with encoding 'ascii'
-[296] bbl.pm:518> INFO - Converting UTF-8 to TeX macros on output to .bbl
-[300] bbl.pm:606> INFO - Output to main.bbl
+[1] Config.pm:324> INFO - Logfile is 'main.blg'
+[53] biber:277> INFO - === Thu Apr 26, 2018, 15:35:15
+[53] Biber.pm:334> INFO - Reading 'main.bcf'
+[164] Biber.pm:636> INFO - Found 3 citekeys in bib section 0
+[192] Biber.pm:3052> INFO - Processing section 0
+[220] Biber.pm:3190> INFO - Looking for bibtex format file 'bibliography/masterthesis.bib' for section 0
+[223] bibtex.pm:979> INFO - Decoding LaTeX character macros into UTF-8
+[225] bibtex.pm:853> INFO - Found BibTeX data source 'bibliography/masterthesis.bib'
+[285] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[285] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[285] Biber.pm:2929> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
+[285] Biber.pm:2933> INFO - No sort tailoring available for locale 'de-DE'
+[295] bbl.pm:517> INFO - Writing 'main.bbl' with encoding 'ascii'
+[295] bbl.pm:518> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[299] bbl.pm:606> INFO - Output to main.bbl
