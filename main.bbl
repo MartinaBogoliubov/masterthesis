@@ -53,6 +53,29 @@
       \field{title}{Statistische Mechanik}
       \field{year}{2006}
     \endentry
+    \entry{Audretsch}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=4e2721043c992be6ef9e92fd4f144a74}{Audretsch}{A\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4e2721043c992be6ef9e92fd4f144a74}{Audretsch}{A\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH}%
+      }
+      \strng{namehash}{4e2721043c992be6ef9e92fd4f144a74}
+      \strng{fullhash}{4e2721043c992be6ef9e92fd4f144a74}
+      \field{labelalpha}{Aud05}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
+      \field{isbn}{3-527-40452-X; 978-3-527-40452-0978-325-40452-0}
+      \field{title}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
+      \field{year}{2005}
+      \verb{url}
+      \verb http://swbplus.bsz-bw.de/bsz110184912cov.htm%20;%20http://www.gbv.de/dms/ilmenau/toc/371209420.PDF
+      \endverb
+    \endentry
     \entry{Drude}{article}{}
       \name{labelname}{1}{}{%
         {{hash=b7c2b8d260757b72f285c54fb0fdfd68}{Drude}{D\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%

@@ -340,7 +340,18 @@ Looking at the system after a pertubation is switched off for a long time this s
 Furthermore all processes with a short lifetime or small quantity compared with the linear term in pertubation series are summerized in the non-secular part.
 This result is the starting point to a simple geometrical interpretation in a vector space, which we want define in the following.
 
-
+Therefore the mathematical framework in quantum mechanics has to be clear, why a short review based on \cite{Audretsch} is given in the following.
+A $d$-dimensional Hilbert-space is mormaly the mathematical working area in quantum mechanics.
+This vector space is linear, complex and has a defined scalar product.
+The vectors $\ket{\phi}$, usually denoted in the Dirac-notation, are identified with all possible states for the system.
+Because the man is always interested in observables, linear operators are defined in the Hilbert-space where the eigenvalues of them conform to the observables.
+Defining the dyad product $\sum_{i} \dyad{i}{i}$ it's not hard to see that any linear operator occupies a dyad decomposition
+%
+\begin{align}
+	\mt{A} = \sum\limits_{i,j} \dyad{i}{i} \mt{A} \dyad{j}{j} = \sum\limits_{i,j} \mt{A}_{ij} \ket{i} \bra{j},
+\end{align}
+%
+where $\mt{A}_{ij} := \bra{i}\mt{A}\ket{j}$ is a matrix element of the linear operator.
 
 
 
