@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  26 APR 2018 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  27 APR 2018 12:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -242,7 +242,12 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (./physics.sty
+))
+(./packages/physics.sty
+
+LaTeX Warning: You have requested package `./packages/physics',
+               but the package provides `physics'.
+
 Package: physics 
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -1894,6 +1899,102 @@ Package csquotes Info: ... configuration file loaded successfully.
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen258
+\Hy@linkcounter=\count362
+\Hy@pagecounter=\count363
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count364
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count365
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen259
+\Fld@menulength=\count366
+\Field@Width=\dimen260
+\Fld@charsize=\dimen261
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count367
+\c@Item=\count368
+\c@Hfootnote=\count369
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count370
+\c@bookmark@seq@number=\count371
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip82
+)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
@@ -1913,31 +2014,33 @@ File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count362
-\scratchdimen=\dimen258
+\scratchcounter=\count372
+\scratchdimen=\dimen262
 \scratchbox=\box58
-\nofMPsegments=\count363
-\nofMParguments=\count364
+\nofMPsegments=\count373
+\nofMParguments=\count374
 \everyMPshowfont=\toks40
-\MPscratchCnt=\count365
-\MPscratchDim=\dimen259
-\MPnumerator=\count366
-\makeMPintoPDFobject=\count367
+\MPscratchCnt=\count375
+\MPscratchDim=\dimen263
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
 \everyMPtoPDFconversion=\toks41
 ) ABD: EveryShipout initializing macros
 Package biblatex Info: No input encoding detected.
@@ -1949,10 +2052,28 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 135.
-Package biblatex Info: Reference segment=0 on input line 135.
+Package biblatex Info: Reference section=0 on input line 151.
+Package biblatex Info: Reference segment=0 on input line 151.
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring ON on input line 151.
 
-(./misc/titlepage_german.tex
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count378
+)
+LaTeX Info: Redefining \ref on input line 151.
+LaTeX Info: Redefining \pageref on input line 151.
+LaTeX Info: Redefining \nameref on input line 151.
+
+(./main.out) (./main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+ (./misc/titlepage_german.tex
 Package epstopdf Info: Source file: <figures/logos/KITlogo_transparent.eps>
 (epstopdf)                    date: 2016-04-22 10:08:37
 (epstopdf)                    size: 40838 bytes
@@ -1965,8 +2086,8 @@ parent-eps-converted-to.pdf figures/logos/KITlogo_transparent.eps>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/logos/KITlogo_transparent-eps-converted-to.pdf, id=4, 1324.95pt x 617.
-30624pt>
+<figures/logos/KITlogo_transparent-eps-converted-to.pdf, id=75, 1324.95pt x 617
+.30624pt>
 File: figures/logos/KITlogo_transparent-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figures/logos/KITlogo_transparent-eps-converted-to.pdf>
@@ -1982,12 +2103,38 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 57.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 57.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 57.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 57.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 57.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 57.
+ [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/logos/KITlogo_tr
-ansparent-eps-converted-to.pdf>] [2
+ansparent-eps-converted-to.pdf>]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 58.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 58.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 58.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 58.
+ [2
 
 
 ]) (./misc/assertion_german.tex) [1
@@ -2006,8 +2153,8 @@ ansparent-eps-converted-to.pdf>] [2
 
 
 ] (./main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
  [5
 
@@ -2033,12 +2180,22 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-) [1
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 \cleardoublepage
+                       [1
 
 
 
 
-] [2
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 \cleardoublepage
+                       [2
 
 
 ] (./chapters/spin-fermion-model.tex
@@ -2057,76 +2214,96 @@ Chapter 3.
 ]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [6] [7]
+ [6]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 137.
+ [7]
 Overfull \hbox (0.32407pt too wide) in paragraph at lines 208--208
 [] 
  []
 
-[8] [9] [10] [11]) [12] (./chapters/calculation.tex
+[8] [9] [10] [11] [12]
+Underfull \hbox (badness 4279) in paragraph at lines 390--395
+\OT1/cmr/m/n/10.95 as our scalar prod-uct, where the nor-mal time evo-lu-tion o
+f an op-er-a-tor
+ []
+
+
+LaTeX Warning: Marginpar on page 13 moved.
+
+) [13] [14
+
+
+] (./chapters/calculation.tex
 Chapter 4.
-[13
+[15
 
 
+] [16] [17]
 
+LaTeX Warning: Marginpar on page 18 moved.
 
-] [14] [15]
-
-LaTeX Warning: Marginpar on page 16 moved.
-
-) [16] (./chapters/conclusion.tex
+) [18] (./chapters/conclusion.tex
 Chapter 5.
-) [17
+) [19
 
 
 
 
-] [18
+] [20
 
 
 ] (./chapters/appendix_properties_Kubo_relaxation_function.tex
 Appendix A.
-[19
+[21
 
 
 
 
-]) (./chapters/appendix_matsubara_sums.tex [20]
+]) (./chapters/appendix_matsubara_sums.tex [22]
 Appendix B.
-) [21
-
-
-] [22
-
-
-] (./main.tdo)
-\tf@tdo=\write6
-\openout6 = `main.tdo'.
-
- [23
+) [23
 
 
 ] [24
 
 
-] [25
+] (./main.tdo)
+\tf@tdo=\write7
+\openout7 = `main.tdo'.
+
+ [25
 
 
 ] [26
 
 
-] (./main.aux)
+] [27
+
+
+] [28
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 4FFEA88A842325B75E03AE45AFDC2475;1202.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28060 strings out of 494347
- 534150 string characters out of 6168810
- 989213 words of memory out of 5000000
- 30836 multiletter control sequences out of 15000+600000
+ 31684 strings out of 494347
+ 590654 string characters out of 6168810
+ 1069094 words of memory out of 5000000
+ 34298 multiletter control sequences out of 15000+600000
  22138 words of font info for 81 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
- 73i,15n,76p,10387b,2616s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,15n,76p,10387b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
@@ -2145,10 +2322,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (34 pages, 298298 bytes).
+Output written on main.pdf (36 pages, 309048 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

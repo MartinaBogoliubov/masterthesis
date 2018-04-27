@@ -156,7 +156,7 @@ It's not really surprisingly that the Kubo relaxation function and the dynamical
 However there exist three very important relations between them both, which are 
 %
 \begin{enumerate}
-	\item $\begin{aligned}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \label{eq: relation 1 between Phi and chi} \end{aligned}$
+	\item $\begin{aligned} \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \label{eq: relation 1 between Phi and chi} \end{aligned}$
 	\item $\begin{aligned} \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega = 0) \label{eq: relation 2 between Phi and chi} \end{aligned}$
 	\item $\begin{aligned} \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \label{eq: relation 3 between Phi and chi} \end{aligned}$
 \end{enumerate}
@@ -369,11 +369,49 @@ So some vector in the Liouville-space is notated as
 Similiarly to the quantum mechanic the Dirac notation is used with the difference that round brackets are used instead of angle brackets to distinghush both spaces.
 Out of the definition \eqref{eq: definition of a vector in Liouville-space} it's clear, that the basis in the Liouville-space is build by the $d^{2}$ dyads of the Hilbert-space .
 The dimension of the Liouville-space is therefore $d^{2}$.
-Equally to a Hilbert-space there are many other oppertunities to choose the basis in $\mathbb{L}$.
+Equally to a Hilbert-space there are many other oppertunities to choose the basis in the Liouville space $\mathbb{L}$, but the defintion in \eqref{eq: definition of a vector in Liouville-space} should be the one we are working with.
 
+In the following the basis of our Liouville space is denoted with $\{\toket{\mt{A}_{i}}\}$ where $i = 1,2,3,\dots,n$ and $\mt{A}_{i}$ is an operator.
+The corresponding basis of the dual space is given by $\{\tobra{\mt{A}_{i}}\}$, similarily to the Hilbert space.
+The last needed element of our Liouville space is a scalar product which fullfills the three condictions
+%
+\begin{enumerate}
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \obraket{\mt{A}_{j}}{\mt{A}_{i}}^{\dag} \end{aligned}$
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{B}} = c_{1} \obraket{\mt{A}_{i}}{\mt{A}_{j}} + c_{2} \obraket{\mt{A}_{i}}{\mt{A}_{k}} \qq{with} \mt{B} = c_{1} \mt{A_{j}} + c_{2} \mt{A_{k}} \qq{and} c_{1}, c_{2} \in \mathbb{C} \end{aligned}$
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{i}}\geq 0 \qq{, where equallity is fulfilled if} \mt{A}_{i} = 0. \end{aligned}$
+\end{enumerate}
+%
+Beside these the choice of the scalar product is arbitrary.
+For the moment let us choose 
+%
+\begin{align}
+	\obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} = \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(t'+i\lambda\hbar)}
+	\label{eq: scalar product Liouville space}
+\end{align}
+%
+as our scalar product, where the normal time evolution of an operator \linebreak$\mt{A}_{i}(t) = e^{i\mt{H}t/\hbar} \mt{A}_{i}(0) e^{-i\mt{H}t/\hbar}$ is valid, so that $\mt{A}_{i}(i\lambda\hbar) = e^{-\lambda\mt{H}} \mt{A}_{i}(0) e^{\lambda\mt{H}}$ can be used.
+A more detailed discussion of the choice of the sclar product is given at the end of this chapter in \todo{link to the section where the scalar product is motivated}.
+Now we have to proof if the condictions are fullfilled by the choice of our scalar product.
 
-
-
+Let's get started with the second one because it's easily shown transforming the expactation value into the trace representation and then using the properties of the trace. \todo{maybe the computation isn't needed here}
+%
+\begin{align}
+	\obraket{\mt{A}_{i}(t)}{\mt{B}(t')} &= \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \frac{1}{Z} \Tr{\rho \mt{A}_{i}^{\dag}(t) \Big[c_{1} \mt{A}_{j}(t'+i\lambda\hbar) + c_{2} \mt{A}_{k}(t'+i\lambda\hbar)\Big]}
+	\notag \\
+	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{B}(t')} &= c_{1} \obraket{\mt{A}_{i}^{\dag}(t)}{\mt{A}_{j}(t')} + c_{2} \obraket{\mt{A}_{i}^{\dag}(t)}{\mt{A}_{k}(t')}
+\end{align}
+%
+The first and third condition can be shown by transforming the scalar product in the spectral representation.
+Therefore the trace is writen explicitly as a sum over all states and the unity operator written as a sum over all projection operators are inserted between both operators $\mt{A}_{i}$ and $\mt{A}_{j}$. 
+%
+\begin{align}
+	\obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} &= \frac{1}{\beta \cdot Z} \int\limits_{0}^{\beta} \dd{\lambda} \sum\limits_{n,m} \bra{n} e^{-\beta \mt{H}} \mt{A}_{i}^{\dag}(t) \ket{m} \bra{m} e^{-\lambda \mt{H}} \mt{A}_{j}(t') e^{\lambda \mt{H}} \ket{n}
+	\notag \\
+	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} &= \frac{1}{\beta \cdot Z} \sum\limits_{n,m} \bra{n}\mt{A}_{i}^{\dag}(t)\ket{m}\bra{n}\mt{A}_{j}(t')\ket{n} e^{-\beta E_{n}} \int\limits_{0}^{\beta} \dd{\lambda} e^{\lambda (E_{n}-E_{m})} 
+	\notag \\
+	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} &= \frac{1}{\beta \cdot Z} \sum\limits_{n,m} \bra{n}\mt{A}_{i}^{\dag}(t)\ket{m}\bra{n}\mt{A}_{j}(t')\ket{n}  \frac{e^{-\beta E_{m}} - e^{-\beta E_{n}}}{E_{n}-E_{m}}
+\end{align}
+%
 
 
 

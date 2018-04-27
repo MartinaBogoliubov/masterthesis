@@ -28,7 +28,7 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{amssymb}
-\usepackage{physics} 				% Usefull package for physical and mathematical formulas. Package-documentation: http://ftp.fau.de/ctan/macros/latex/contrib/physics/physics.pdf
+\usepackage{./packages/physics} 				% Usefull package for physical and mathematical formulas. Package-documentation: http://ftp.fau.de/ctan/macros/latex/contrib/physics/physics.pdf
 
 % package for including graphics
 \usepackage{graphicx}
@@ -55,15 +55,31 @@
 ]{biblatex} 
 \addbibresource{bibliography/masterthesis.bib}
 \usepackage{csquotes}
-%\usepackage{hyperef}
-%\hypersetuo{
-	%draft,							% De-activate all hyperref settings
-	%linkcolor=red,					% Internal links are red
-	%citecolor=green,				% Citations are green
-	%urlcolor=cyan					% url-links are cyan
-	%colorlinks=true					% Links are colorfull
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue]{hyperref}
+%\usepackage{hyperref}
+%\usepackage[figure,table]{hypcap}               % to correct a problem with hyperref
+%\hypersetup{
+%	pdftitle = {},
+%	pdfsubject = {},
+%	pdfauthor = {},
+%	pdfkeywords = {},
+%	pdfcreator = {},
+%	pdfproducer = {LaTeX with hyperref},
+%	colorlinks = true,
+%	linkcolor = blue,
+%	anchorcolor = blue,
+%	citecolor = blue,
+%	filecolor = red,
+%	menucolor = red,
+%	pagecolor = red,
+%	urlcolor  = blue,
+%	breaklinks = true,
+%	pdfstartview = FitV,
+%	pdfhighlight = /I,
+%	pdfpagelayout = OneColumn,
+%	hypertexnames=true
 %}
-%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% self-defined macros %%%%%%%%%%

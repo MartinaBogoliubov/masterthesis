@@ -6,36 +6,36 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Motivation}{1}
+\contentsline {chapter}{\numberline {1}Motivation}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Spin-Fermion-Model}{3}
+\contentsline {chapter}{\numberline {2}Spin-Fermion-Model}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Memory-Matrix-Formalsim}{5}
+\contentsline {chapter}{\numberline {3}Memory-Matrix-Formalsim}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Motivation}{5}
+\contentsline {section}{\numberline {3.1}Motivation}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Linear Response Theory}{6}
+\contentsline {section}{\numberline {3.2}Linear Response Theory}{6}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Kubo formula}{6}
+\contentsline {subsection}{\numberline {3.2.1}Kubo formula}{6}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Kubo relaxation function}{7}
+\contentsline {subsection}{\numberline {3.2.2}Kubo relaxation function}{7}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Kramer-Kronig-relation}{9}
+\contentsline {subsection}{\numberline {3.2.3}Kramer-Kronig-relation}{9}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Spectral representation}{11}
+\contentsline {subsection}{\numberline {3.2.4}Spectral representation}{11}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deviation of the Memory-Matrix-Formalism}{12}
+\contentsline {section}{\numberline {3.3}Deviation of the Memory-Matrix-Formalism}{12}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Calculation}{13}
+\contentsline {chapter}{\numberline {4}Calculation}{15}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{13}
+\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{15}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{15}
+\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{17}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{17}
+\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{19}
+\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{21}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{21}
+\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{23}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Simple poles}{21}
+\contentsline {section}{\numberline {B.1}Simple poles}{23}{section.B.1}
