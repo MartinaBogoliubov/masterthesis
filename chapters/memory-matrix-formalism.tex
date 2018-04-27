@@ -205,6 +205,7 @@ Now inserting equation \eqref{eq: identity expectation value} and \eqref{eq: Kub
 	\overset{\mt{PI}}{\Leftrightarrow}\ \Phi_{\mt{AB}}(t) &= -\lim\limits_{s \to 0} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\Bigg[\eval{\mt{A}_{\mt{I}}(\tau-i\lambda\hbar) e^{-s\tau}}_{t}^{\infty} + s \int\limits_{t}^{\infty} \dd{\tau} \dot{\mt{A}}_{\mt{I}}(\tau-i\lambda\hbar) e^{-s\tau} \Bigg] \mt{B}_{\mt{I}}(0)}_{0}
 	\notag \\
 	\Leftrightarrow\ \Phi_{\mt{AB}}(t) &= \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{\mt{I}}(t-i\lambda\hbar) \mt{B}_{\mt{I}}(0)}_{0} = \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{\mt{I}}(t) \mt{B}_{\mt{I}}(i\lambda\hbar)}_{0}
+	\label{eq: Kubo relaxation function 2.0}
 \end{align}
 %
 Later we will see that the scalar product defining at the memory-matrix-formalsim has a similar structure as this form of the kubo relaxation function.
@@ -376,7 +377,7 @@ The corresponding basis of the dual space is given by $\{\tobra{\mt{A}_{i}}\}$, 
 The last needed element of our Liouville space is a scalar product which fullfills the three condictions
 %
 \begin{enumerate}
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \obraket{\mt{A}_{j}}{\mt{A}_{i}}^{\dag} \end{aligned}$
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \obraket{\mt{A}_{j}}{\mt{A}_{i}}^{*} \end{aligned}$
 	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{B}} = c_{1} \obraket{\mt{A}_{i}}{\mt{A}_{j}} + c_{2} \obraket{\mt{A}_{i}}{\mt{A}_{k}} \qq{with} \mt{B} = c_{1} \mt{A_{j}} + c_{2} \mt{A_{k}} \qq{and} c_{1}, c_{2} \in \mathbb{C} \end{aligned}$
 	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{i}}\geq 0 \qq{, where equallity is fulfilled if} \mt{A}_{i} = 0. \end{aligned}$
 \end{enumerate}
@@ -407,11 +408,123 @@ Therefore the trace is writen explicitly as a sum over all states and the unity 
 \begin{align}
 	\obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} &= \frac{1}{\beta \cdot Z} \int\limits_{0}^{\beta} \dd{\lambda} \sum\limits_{n,m} \bra{n} e^{-\beta \mt{H}} \mt{A}_{i}^{\dag}(t) \ket{m} \bra{m} e^{-\lambda \mt{H}} \mt{A}_{j}(t') e^{\lambda \mt{H}} \ket{n}
 	\notag \\
-	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} &= \frac{1}{\beta \cdot Z} \sum\limits_{n,m} \bra{n}\mt{A}_{i}^{\dag}(t)\ket{m}\bra{n}\mt{A}_{j}(t')\ket{n} e^{-\beta E_{n}} \int\limits_{0}^{\beta} \dd{\lambda} e^{\lambda (E_{n}-E_{m})} 
+	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} &= \frac{1}{\beta \cdot Z} \sum\limits_{n,m} \mel{n}{\mt{A}_{i}^{\dag}(t)}{m} \mel{m}{\mt{A}_{j}(t')}{n} e^{-\beta E_{n}} \int\limits_{0}^{\beta} \dd{\lambda} e^{\lambda (E_{n}-E_{m})} 
 	\notag \\
-	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} &= \frac{1}{\beta \cdot Z} \sum\limits_{n,m} \bra{n}\mt{A}_{i}^{\dag}(t)\ket{m}\bra{n}\mt{A}_{j}(t')\ket{n}  \frac{e^{-\beta E_{m}} - e^{-\beta E_{n}}}{E_{n}-E_{m}}
+	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} &= \frac{1}{\beta \cdot Z} \sum\limits_{n,m} \mel{n}{\mt{A}_{i}^{\dag}(t)}{m} \mel{m}{\mt{A}_{j}(t')}{n}  \frac{e^{-\beta E_{m}} - e^{-\beta E_{n}}}{E_{n}-E_{m}}
+	\label{eq: expactation value in spectral representation}
 \end{align}
 %
+Regarding the complex conjugated of the expectation value in the Liouville space and using $\mel{n}{\mt{A}_{j}^{\dag}(t)}{m}^{*} = \mel{m}{\mt{A}_{j}(t)}{n}$ let us find instantly the first condition.
+Notice that on the right hand side of equation \eqref{eq: expactation value in spectral representation} only the expactation values are complex numbers.
+For them the complex conjugation yields
+%
+\begin{align}
+	\Big(\mel{n}{\mt{A}_{i}^{\dag}(t)}{m} \mel{m}{\mt{A}_{j}(t')}{n}\Big)^{*} = \mel{n}{\mt{A}_{j}^{\dag}(t')}{m} \mel{m}{\mt{A}_{i}(t)}{n}
+\end{align}
+%
+and inserting back $\tobraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')}^{*}$ is exactly the same as \eqref{eq: expactation value in spectral representation}.
+Proofing the third condition it has to be set $\mt{A}_{j}(t') = \mt{A}_{i}(t)$ in equation \eqref{eq: expactation value in spectral representation}, which one the right hand side results in 
+%
+\begin{align}
+	\obraket{\mt{A}_{i}(t)}{\mt{A}_{i}(t)} &= \frac{1}{\beta \cdot Z} \sum\limits_{n,m} \big\vert\mel{m}{\mt{A}_{i}(t)}{n}\big\vert^{2} \frac{e^{-\beta E_{m}} - e^{-\beta E_{n}}}{E_{n}-E_{m}}.
+\end{align}
+%
+It's clear that the squared expactation value is always non-negative.
+The friction is positive too, which is easily seen by proofing the two cases $E_{n} > E_{m}$ and $E_{n} < E_{m}$.
+Therefore the expactation value $\obraket{\mt{A}_{i}(t)}{\mt{A}_{i}(t)} \geq 0$ and equallity is only possible if $\mt{A}_{i} = 0$.
+All three conditions are well proofed and the chosen scalar product is really one's.
+At this point all the mathematical ground work is done, we know how the vectors in the Liouville space looks like and we have a well defined scalar product.
+
+The goal of every physical theory is to describe the measurment results.
+Typically in statistical or quantum mechanics this is done by correlations functions.
+So our goal is it now to find a useable expression for correlation functions in our new Liouville space.
+The natural starting point describing the time evolution of an operator $\mt{A}_{i}$ is in quantum mechanics the Heisenberg equation of motion
+%
+\begin{align}
+	\dv{t} \mt{A}_{i}(t) = \dot{\mt{A}_{i}}(t) = \frac{i}{\hbar} \comm{\mt{H}}{\mt{A}_{i}(t)} = i \mt{L} \mt{A}_{i}(t)
+	\label{eq: Heisenberg equation of motion}
+\end{align}
+%
+where the operators are in the Heisenberg representation and the Hermitian Liouville operator defined by his action on an operator ${\mt{L} = \hbar^{-1} \comm{\mt{H}}{\mt{\bullet}}}$ is introduced.
+The formal solution of equation \eqref{eq: Heisenberg equation of motion} is
+%
+\begin{align}
+	\mt{A}_{i}(t) = e^{it\mt{L}} \mt{A}_{i}(0) = e^{it\mt{H}/\hbar} \mt{A}_{i}(0) e^{-it\mt{H}/\hbar}.
+\end{align}
+%
+In the second step only the definition of the Liouville operator and some algebraic transformations are used. \todo{Have to convince me that it is really so easy.}
+In this notation it is more clearly that the time evolution of an operator is given by the Liouville operator.
+The same result is obtained in the Liouville space if the Liouville operator is acting on the basis vectors.
+This isn't really surprisingly because only the dyad product has to be insert in equation \eqref{eq: Heisenberg equation of motion}, which results in
+%
+\begin{align}
+	\oket{\dot{\mt{A}}_{i}(t)} = \frac{i}{\hbar} \oket{\comm{\mt{H}}{\mt{A}_{i}(t)}} = i \mt{L} \oket{\mt{A}_{i}(t)}
+\end{align}
+%
+for the equation of motion in the Liouville space and there fromal solution
+%
+\begin{align}
+	\oket{\mt{A}_{i}(t)} = e^{it\mt{L}} \oket{\mt{A}_{i}(0)}.
+	\label{eq: formal solution of EM in L}
+\end{align}
+%
+Beside the Liouville operator one more operator has to be introduced for the deviation of the correlation function, called the projection operator.
+Therefore let us define a set of operators $\{\mt{C}_{i}\}$, where the choice of these operators are different depending on the investigated system and correlation function.
+In the later computation of a certain problem the choice of the operators is discussed in more detail.
+For the moment it's sufficient to know that the set of operators exists.
+Directly follwing out the definition of the projection operator in quantum mechanics the projection operator in the Liouville space looks like
+%
+\begin{align}
+	\mt{P} = \sum\limits_{i,j} \oket{\mt{C}_{i}} \obraket{\mt{C}_{i}}{\mt{C}_{j}}^{-1} \obra{\mt{C}_{j}}.
+	\label{eq: projection operator}
+\end{align}
+%
+The action of P on some vector $\oket{\mt{A}(t)}$ in the Liouville space yields the parallel components to the chosen operators $\mt{C}_{i}$, which is the projection from $\oket{\mt{A}(t)}$ at the vector subspace spanned by $\mt{C}_{i}$.
+The corresponding vertical component of $\oket{\mt{A}(t)}$ with respect to the operators $\mt{C}_{i}$ is given by $\mt{Q} = 1- \mt{P}$, which is the projection out of the vector subspace.
+Naturally the projection operator is fullfilled the two properties $\mt{P}^{2} = \mt{P}$ and $\mt{PQ} = \mt{QP} = 0$ of a projection operator, which follows immediately from the definition of $\mt{P}$.
+
+After the deviation of the time evolution of an operator and the projection operator in Liouville space the correlation function can be defined as
+%
+\begin{align}
+	\mathcal{C}_{ij}(t) = \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(0)} \overset{\eqref{eq: scalar product Liouville space}}{=} \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}(t) \mt{A}_{j}(i\lambda\hbar)}
+	\label{eq: correlation function Liouville space}
+\end{align}
+%
+where in the last step the definition of the scalar product is only inserted.
+Comparing equation \eqref{eq: correlation function Liouville space} with \eqref{eq: Kubo relaxation function 2.0} our choice of the correlation function is more clear.
+The defined correlation function is proportional to the Kubo relaxation function, which how we learned in section \ref{subsec: Kubo relaxation function} describes the system's reaction on a switched off pertubation. \todo{write more to the goal of the memory matrix formalsim}
+For $t=0$ the correlation function is also proportional to the Fourier transformated susebtibility
+%
+\begin{align}
+	\mathcal{C}_{ij}(t = 0) = \frac{1}{\beta} \Phi_{ij}(t = 0) = \chi_{ij}(\omega = 0),
+	\label{eq: relation between C, Phi and chi}
+\end{align}
+%
+which directly results from equation \eqref{eq: relation 2 between Phi and chi}.
+Equation \eqref{eq: formal solution of EM in L} is used to bring the time evolution of the correlation function in more suitable expression.
+%
+\begin{align}
+	\mathcal{C}_{ij}(t) = \obraket{\mt{A}_{i}(0)}{\mt{A}_{j}(-t)} = \obra{\mt{A}_{i}(0)} e^{-it\mt{L}} \oket{\mt{A}_{j}(0)}
+\end{align}
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

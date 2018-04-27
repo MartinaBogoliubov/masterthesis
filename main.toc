@@ -26,16 +26,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Deviation of the Memory-Matrix-Formalism}{12}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Calculation}{15}{chapter.4}
+\contentsline {chapter}{\numberline {4}Calculation}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{15}{section.4.1}
+\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{17}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{17}{section.4.2}
+\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{19}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{21}{appendix.A}
+\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{23}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{23}{appendix.B}
+\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{25}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Simple poles}{23}{section.B.1}
+\contentsline {section}{\numberline {B.1}Simple poles}{25}{section.B.1}

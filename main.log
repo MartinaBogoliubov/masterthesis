@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  27 APR 2018 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  27 APR 2018 19:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2218,12 +2218,12 @@ Missing character: There is no ¶ in font cmr10!
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 137.
  [7]
-Overfull \hbox (0.32407pt too wide) in paragraph at lines 208--208
+Overfull \hbox (0.32407pt too wide) in paragraph at lines 209--209
 [] 
  []
 
 [8] [9] [10] [11] [12]
-Underfull \hbox (badness 4279) in paragraph at lines 390--395
+Underfull \hbox (badness 4279) in paragraph at lines 391--396
 \OT1/cmr/m/n/10.95 as our scalar prod-uct, where the nor-mal time evo-lu-tion o
 f an op-er-a-tor
  []
@@ -2231,57 +2231,57 @@ f an op-er-a-tor
 
 LaTeX Warning: Marginpar on page 13 moved.
 
-) [13] [14
+[13] [14]) [15] [16
 
 
 ] (./chapters/calculation.tex
 Chapter 4.
-[15
+[17
 
 
-] [16] [17]
+] [18] [19]
 
-LaTeX Warning: Marginpar on page 18 moved.
+LaTeX Warning: Marginpar on page 20 moved.
 
-) [18] (./chapters/conclusion.tex
+) [20] (./chapters/conclusion.tex
 Chapter 5.
-) [19
+) [21
 
 
 
 
-] [20
+] [22
 
 
 ] (./chapters/appendix_properties_Kubo_relaxation_function.tex
 Appendix A.
-[21
+[23
 
 
 
 
-]) (./chapters/appendix_matsubara_sums.tex [22]
+]) (./chapters/appendix_matsubara_sums.tex [24]
 Appendix B.
-) [23
+) [25
 
 
-] [24
+] [26
 
 
 ] (./main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [25
-
-
-] [26
-
-
-] [27
+ [27
 
 
 ] [28
+
+
+] [29
+
+
+] [30
 
 
 ]
@@ -2297,10 +2297,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31684 strings out of 494347
- 590654 string characters out of 6168810
- 1069094 words of memory out of 5000000
- 34298 multiletter control sequences out of 15000+600000
+ 31715 strings out of 494347
+ 591375 string characters out of 6168810
+ 1070094 words of memory out of 5000000
+ 34315 multiletter control sequences out of 15000+600000
  22138 words of font info for 81 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,15n,76p,10387b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2322,10 +2322,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (36 pages, 309048 bytes).
+Output written on main.pdf (38 pages, 318863 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 536 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 137 named destinations out of 1000 (max. 500000)
  154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
