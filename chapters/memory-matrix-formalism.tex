@@ -54,7 +54,7 @@ The solution of this equation is
 where the function $\Xi(t)$ is defined by the Laplace transformation of $\Xi(s) = [s-\mathcal{C}(s)]^{-1}$ and $\mathcal{C}(s)$ is the Laplace transformtion of the correlation function $\mathcal{C}(t)$.
 The main result of equation \eqref{eq: splitted observable} and the motivation for the following introduced memory-matrix-formalism is the splitting of the dynamical observable $\mt{A}(t)$ into two parts.
 
-For the first term on the right hand side the only time-dependence is adverted through the correlation function $\mathcal{C}$, which is clear regarding the definition of $\Xi$.
+For the first term on the right hand side the only time-dependence is adverted through the correlation function $\mathcal{C}$, which is clear consider the definition of $\Xi$.
 This term included the linear contributions of $\mt{A}(t)$ by construction.
 These ones are the mostly important contributions to the time evolutaion of an observable, because they are secular.
 In contrast the second term on the right hand side is the convolution between the function $\Xi(t-t')$ and the function $\mt{F}(t')$.
@@ -97,7 +97,7 @@ The answer is given by the thermodynamical expectation value of the operator cor
 \end{align}
 %
 where the label S and I stand for the Schrödinger and Interaction picture, respectivily.
-The equality of the expectation value in the different regarded pictures is shown by the invariance of the trace under cycle permutation.
+The equality of the expectation value in the different representations is shown by the invariance of the trace with resprect to cycle permutation.
 The transformation into the interaction picture is very usefull what we will see after the next step below.
 In quantum mechnics the time evolution of the density operator is determined by the von Neumann-equation.
 %
@@ -295,7 +295,7 @@ For that a dissipative susceptibility of the form
 	\label{eq: dissipative susceptibility}
 \end{align}
 %
-is regarded and her Fourier transformation is given by equation \eqref{eq: Fourier-transformation}.
+is considered and her Fourier transformation is given by equation \eqref{eq: Fourier-transformation}.
 Notice that in the following computation the frequency $\omega$ isn't splitted into real and imaginary part like it's done in equation \eqref{eq: Fourier-transformation}.
 Starting our calculation multipling equation \eqref{eq: dynamical susceptibilty} and integrating over time $t$.
 %
@@ -414,7 +414,7 @@ Therefore the trace is writen explicitly as a sum over all states and the unity 
 	\label{eq: expactation value in spectral representation}
 \end{align}
 %
-Regarding the complex conjugated of the expectation value in the Liouville space and using $\mel{n}{\mt{A}_{j}^{\dag}(t)}{m}^{*} = \mel{m}{\mt{A}_{j}(t)}{n}$ let us find instantly the first condition.
+The complex conjugated of the expectation value in the Liouville space is considered and using $\mel{n}{\mt{A}_{j}^{\dag}(t)}{m}^{*} = \mel{m}{\mt{A}_{j}(t)}{n}$ let us find instantly the first condition.
 Notice that on the right hand side of equation \eqref{eq: expactation value in spectral representation} only the expactation values are complex numbers.
 For them the complex conjugation yields
 %
@@ -475,7 +475,7 @@ For the moment it's sufficient to know that the set of operators exists.
 Directly follwing out the definition of the projection operator in quantum mechanics the projection operator in the Liouville space looks like
 %
 \begin{align}
-	\mt{P} = \sum\limits_{i,j} \oket{\mt{C}_{i}} \obraket{\mt{C}_{i}}{\mt{C}_{j}}^{-1} \obra{\mt{C}_{j}}.
+	\mt{P} = \sum\limits_{i,j} \oket{\mt{C}_{i}(0)} \obraket{\mt{C}_{i}(0)}{\mt{C}_{j}(0)}^{-1} \obra{\mt{C}_{j}(0)}.
 	\label{eq: projection operator}
 \end{align}
 %
@@ -501,12 +501,79 @@ For $t=0$ the correlation function is also proportional to the Fourier transform
 \end{align}
 %
 which directly results from equation \eqref{eq: relation 2 between Phi and chi}.
-Equation \eqref{eq: formal solution of EM in L} is used to bring the time evolution of the correlation function in more suitable expression.
+Equation \eqref{eq: formal solution of EM in L} is used to bring the time evolution of the correlation function in more suitable expression
 %
 \begin{align}
-	\mathcal{C}_{ij}(t) = \obraket{\mt{A}_{i}(0)}{\mt{A}_{j}(-t)} = \obra{\mt{A}_{i}(0)} e^{-it\mt{L}} \oket{\mt{A}_{j}(0)}
+	\mathcal{C}_{ij}(t) = \obraket{\mt{A}_{i}(0)}{\mt{A}_{j}(-t)} = \obra{\mt{A}_{i}(0)} e^{-it\mt{L}} \oket{\mt{A}_{j}(0)},
 \end{align}
 %
+which opens the possibility for using the Laplace transformation.
+Instead of the definition in equation \eqref{eq: Laplace transformation real axis} here a form of the Laplace transformation is used where $s$ is substituted by $-i\omega$ which is nothing else a rotation of the definition regime by $\frac{\pi}{2}$.
+Multipling the last equation with $e^{i\omega t}$ and intgrate from zero to infinty with resprct to $t$ yields
+%
+\begin{align}
+	\mathcal{C}_{ij}(\omega) = \obra{\mt{A}_{i}} \int\limits_{0}^{\infty} \dd{t} e^{i(\omega-\mt{L})t} \oket{\mt{A}_{j}} = \obra{\mt{A}_{i}} \frac{i}{\omega - \mt{L}} \oket{\mt{A}_{j}},
+\end{align}
+%
+where for reasons of clarity and comprehensibility from now on the argument $t=0$ isn't anymore written at the basis vectors.
+Now the relation $\mt{L} = \mt{LQ} + \mt{LP}$ which follows immediatly by using the definition of P and Q and the identity $ (\mt{X} + \mt{Y})^{-1} = \mt{X}^{-1} - \mt{X}^{-1} \mt{Y} (\mt{X} + \mt{Y})^{-1}$ is used to simplify the correlation function, where $\mt{X} = \omega - \mt{LQ}$ and $\mt{Y} = -\mt{LP}$.
+%
+\begin{align}
+	\mathcal{C}_{ij}(\omega) &= \obra{\mt{A}_{i}} \frac{i}{\omega - \mt{LQ} - \mt{LP}} \oket{\mt{A}_{j}}
+	\notag \\
+	\Leftrightarrow\ \mathcal{C}_{ij}(\omega) &= \obra{\mt{A}_{i}} \frac{i}{\omega - \mt{LQ}} \oket{\mt{A}_{j}} + \obra{\mt{A}_{i}} \frac{1}{\omega - \mt{LQ}} \mt{LP} \frac{i}{\omega - \mt{L}} \oket{\mt{A}_{j}}
+\end{align}
+%
+The both terms on the right hand side are considered seperatly starting with the first one.
+The fraction can be written as the geometric series assuming $\frac{\mt{LQ}}{\omega} < 1$, which means that the pertubation is small compared to other quantities in the system. \todo{Ask J\"org if this explanation is correct}
+%
+\begin{align}
+	\frac{i}{\omega - \mt{LQ}} = \frac{i}{\omega} \bigg[1 + \frac{\mt{LQ}}{\omega} + \Big(\frac{\mt{LQ}}{\omega}\Big)^{2} + \dots \bigg]
+\end{align}
+%
+Each term of the series in the squard brackets acting on the operator $\oket{\mt{A}_{j}}$.
+Remember this is the operator at time $t=0$, which means that no vertical component exists and therefore $\mt{Q}\oket{\mt{A}_{j}} = 0$.
+Every term except the first one conatins an operator $Q$, so the first term of the correlation function yields
+%
+\begin{align}
+	\obra{\mt{A}_{i}} \frac{i}{\omega - \mt{LQ}} \oket{\mt{A}_{j}} = \frac{i}{\omega} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \frac{i}{\omega} \mathcal{C}_{ij}(t=0).
+\end{align}
+%
+At the second term only the back term is considered.
+Here only the explicit expression of the propagator is inserted, which yields the definition of the Laplace transformed correlation function.
+%
+\begin{align}
+	\mt{P} \frac{i}{\omega - \mt{L}} \oket{\mt{A}_{j}} = \sum\limits_{k,l} \oket{\mt{C}_{k}} \obraket{\mt{C}_{k}}{\mt{C}_{l}}^{-1} \obra{\mt{C}_{l}} \frac{i}{\omega - \mt{L}} \oket{\mt{A}_{j}} = \sum\limits_{k,l} \oket{\mt{C}_{k}} \mathcal{C}_{kl}^{-1}(0) \mathcal{C}_{lj}(\omega)
+\end{align}
+%
+Inserting back both simplifications the correlation function is get the formal expression
+%
+\begin{align}
+	\mathcal{C}_{ij}(\omega) = \frac{i}{\omega} \mathcal{C}_{ij}(t=0) + \sum\limits_{k,l} \obra{\mt{A}_{i}} \frac{1}{\omega - \mt{LQ}} \mt{L} \oket{\mt{C}_{k}} \mathcal{C}_{kl}^{-1}(0) \mathcal{C}_{lj}(\omega).
+\end{align}
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
