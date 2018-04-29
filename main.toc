@@ -26,16 +26,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Deviation of the Memory-Matrix-Formalism}{12}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Calculation}{17}{chapter.4}
+\contentsline {subsection}{\numberline {3.3.1}Time Reversal Symmetry}{18}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{17}{section.4.1}
+\contentsline {paragraph}{\nonumberline 1. case:}{20}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{19}{section.4.2}
+\contentsline {paragraph}{\nonumberline 2. case:}{20}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}
+\contentsline {subsection}{\numberline {3.3.2}Scalar Product}{21}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{23}{appendix.A}
+\contentsline {chapter}{\numberline {4}Calculation}{23}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{25}{appendix.B}
+\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{23}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Simple poles}{25}{section.B.1}
+\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{25}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{29}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{31}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Simple poles}{31}{section.B.1}

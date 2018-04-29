@@ -156,9 +156,9 @@ It's not really surprisingly that the Kubo relaxation function and the dynamical
 However there exist three very important relations between them both, which are 
 %
 \begin{enumerate}
-	\item $\begin{aligned} \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \label{eq: relation 1 between Phi and chi} \end{aligned}$
-	\item $\begin{aligned} \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega = 0) \label{eq: relation 2 between Phi and chi} \end{aligned}$
-	\item $\begin{aligned} \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \label{eq: relation 3 between Phi and chi} \end{aligned}$
+	\item $\begin{aligned}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq: relation 1 between Phi and chi}
+	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega = 0) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq: relation 2 between Phi and chi}
+	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq: relation 3 between Phi and chi}
 \end{enumerate}
 %
 The evidence of these tree relations are shown in the appendix \ref{app: properties of the Kubo relaxation function}.
@@ -288,14 +288,23 @@ In section \ref{subsec: kubo formula} the dynamical susecptibility $\chi_{\mt{AB
 The evolution of a system switching on a pertubation is described by this function.
 Now the processes starting because of the pertubation can be classified into two types one the one hand in dissipative prozesses and on the other hand in non-dissipative prozesses.
 In the following computation dissipative processes are investigated.
-For that a dissipative susceptibility of the form
+The dissipative susceptibility of the form \todo{Why do we chose this typ of $\chi''(t-t')$}
 %
 \begin{align}
-	\chi''_{\mt{AB}}(t) = \frac{1}{2\hbar} \expval{\comm{\mt{A}(t)}{\mt{B}(0)}}
+	\chi''_{\mt{AB}}(t-t') = \frac{1}{2\hbar} \expval{\comm{\mt{A}(t)}{\mt{B}(t')}}
 	\label{eq: dissipative susceptibility}
 \end{align}
 %
-is considered and her Fourier transformation is given by equation \eqref{eq: Fourier-transformation}.
+is considered, where the operators $\mt{A}$ and $\mt{B}$ are two Hermitian operators.
+The property
+%
+\begin{align}
+	\big(\chi''_{\mt{AB}}(t-t')\big)^{*} = - \chi''_{\mt{AB}}(t-t')
+	\label{eq: complex conjugated of dissipative susceptibility}
+\end{align}
+%
+is trivially shown because the commutator of two Hermitian operators is anti-Hermitian.
+The Fourier transformation of $\chi''_{\mt{AB}}(t-t')$ is given by equation \eqref{eq: Fourier-transformation}.
 Notice that in the following computation the frequency $\omega$ isn't splitted into real and imaginary part like it's done in equation \eqref{eq: Fourier-transformation}.
 Starting our calculation multipling equation \eqref{eq: dynamical susceptibilty} and integrating over time $t$.
 %
@@ -377,9 +386,10 @@ The corresponding basis of the dual space is given by $\{\tobra{\mt{A}_{i}}\}$, 
 The last needed element of our Liouville space is a scalar product which fullfills the three condictions
 %
 \begin{enumerate}
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \obraket{\mt{A}_{j}}{\mt{A}_{i}}^{*} \end{aligned}$
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{B}} = c_{1} \obraket{\mt{A}_{i}}{\mt{A}_{j}} + c_{2} \obraket{\mt{A}_{i}}{\mt{A}_{k}} \qq{with} \mt{B} = c_{1} \mt{A_{j}} + c_{2} \mt{A_{k}} \qq{and} c_{1}, c_{2} \in \mathbb{C} \end{aligned}$
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{i}}\geq 0 \qq{, where equallity is fulfilled if} \mt{A}_{i} = 0. \end{aligned}$
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \obraket{\mt{A}_{j}}{\mt{A}_{i}}^{*} \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{B}} = c_{1} \obraket{\mt{A}_{i}}{\mt{A}_{j}} + c_{2} \obraket{\mt{A}_{i}}{\mt{A}_{k}} \end{aligned}$
+	\item[] $\begin{aligned} \text{where\ \ \ } \mt{B} = c_{1} \mt{A_{j}} + c_{2} \mt{A_{k}} \qq{and} c_{1}, c_{2} \in \mathbb{C} \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{i}}\geq 0 \qq{where equallity is fulfilled if} \mt{A}_{i} = 0. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
 \end{enumerate}
 %
 Beside these the choice of the scalar product is arbitrary.
@@ -441,7 +451,7 @@ So our goal is it now to find a useable expression for correlation functions in 
 The natural starting point describing the time evolution of an operator $\mt{A}_{i}$ is in quantum mechanics the Heisenberg equation of motion
 %
 \begin{align}
-	\dv{t} \mt{A}_{i}(t) = \dot{\mt{A}_{i}}(t) = \frac{i}{\hbar} \comm{\mt{H}}{\mt{A}_{i}(t)} = i \mt{L} \mt{A}_{i}(t)
+	\dv{t} \mt{A}_{i}(t) = \dot{\mt{A}}_{i}(t) = \frac{i}{\hbar} \comm{\mt{H}}{\mt{A}_{i}(t)} = i \mt{L} \mt{A}_{i}(t)
 	\label{eq: Heisenberg equation of motion}
 \end{align}
 %
@@ -459,6 +469,7 @@ This isn't really surprisingly because only the dyad product has to be insert in
 %
 \begin{align}
 	\oket{\dot{\mt{A}}_{i}(t)} = \frac{i}{\hbar} \oket{\comm{\mt{H}}{\mt{A}_{i}(t)}} = i \mt{L} \oket{\mt{A}_{i}(t)}
+	\label{eq: Heisenberg equation of motion in Liouville space}
 \end{align}
 %
 for the equation of motion in the Liouville space and there fromal solution
@@ -536,7 +547,7 @@ Remember this is the operator at time $t=0$, which means that no vertical compon
 Every term except the first one conatins an operator $Q$, so the first term of the correlation function yields
 %
 \begin{align}
-	\obra{\mt{A}_{i}} \frac{i}{\omega - \mt{LQ}} \oket{\mt{A}_{j}} = \frac{i}{\omega} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \frac{i}{\omega} \mathcal{C}_{ij}(t=0).
+	\obra{\mt{A}_{i}} \frac{i}{\omega - \mt{LQ}} \oket{\mt{A}_{j}} = \frac{i}{\omega} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \frac{i}{\omega} \mathcal{C}_{ij}(0).
 \end{align}
 %
 At the second term only the back term is considered.
@@ -549,28 +560,221 @@ Here only the explicit expression of the propagator is inserted, which yields th
 Inserting back both simplifications the correlation function is get the formal expression
 %
 \begin{align}
-	\mathcal{C}_{ij}(\omega) = \frac{i}{\omega} \mathcal{C}_{ij}(t=0) + \sum\limits_{k,l} \obra{\mt{A}_{i}} \frac{1}{\omega - \mt{LQ}} \mt{L} \oket{\mt{C}_{k}} \mathcal{C}_{kl}^{-1}(0) \mathcal{C}_{lj}(\omega).
+	\mathcal{C}_{ij}(\omega) = \frac{i}{\omega} \mathcal{C}_{ij}(0) + \sum\limits_{k,l} \obra{\mt{A}_{i}} \frac{1}{\omega - \mt{LQ}} \mt{L} \oket{\mt{C}_{k}} \mathcal{C}_{kl}^{-1}(0) \mathcal{C}_{lj}(\omega).
 \end{align}
 %
+The form of the resulting correlation function is now much more useable beside the fraction in the expectation value, but this one can be simplified too.
+Therefore the fraction is multiplied with $\omega$ and the Null $\mt{LQ} - \mt{LQ}$ is added in the numinator.
+%
+\begin{align}
+	\frac{\omega}{\omega - \mt{LQ}} = \frac{\omega - \mt{LQ} + \mt{LQ}}{\omega - \mt{LQ}} = 1 + \frac{\mt{LQ}}{\omega - \mt{LQ}}
+\end{align}
+%
+Multipling with $\omega$ and inserting the rearrangement of the fraction yields an algebratic equation for the correlation function.
+%
+\begin{align}
+	&\omega \mathcal{C}_{ij}(\omega) = i \mathcal{C}_{ij}(0) + \sum\limits_{k,l} \obra{\mt{A}_{i}} \frac{\omega}{\omega - \mt{LQ}} \mt{L} \oket{\mt{C}_{k}} \mathcal{C}_{kl}^{-1}(0) \mathcal{C}_{lj}(\omega)
+	\notag \\
+	\Leftrightarrow\ &\omega \mathcal{C}_{ij}(\omega) = i \mathcal{C}_{ij}(0) + \sum\limits_{k,l} \obra{\mt{A}_{i}} 1 + \frac{\mt{LQ}}{\omega - \mt{LQ}} \mt{L} \oket{\mt{C}_{k}} \mathcal{C}_{kl}^{-1}(0) \mathcal{C}_{lj}(\omega)
+	\notag \\
+	\Leftrightarrow\ &\omega \sum\limits_{l} \delta_{il} \mathcal{C}_{lj}(\omega) = i \beta \chi_{ij}(0) + \sum\limits_{l} \Big[\Omega_{il} -i \Sigma_{il}(\omega)\Big]  \mathcal{C}_{lj}(\omega)
+	\notag \\
+	\Leftrightarrow\ &\sum\limits_{l} \Big[\omega \delta_{il} - \Omega_{il} + i \Sigma_{il}(\omega)\Big] \mathcal{C}_{lj}(\omega) = i \beta \chi_{ij}(0)
+	\label{eq: algebraic equation for C}
+\end{align}
+%
+where equation \eqref{eq: relation 2 between Phi and chi} is used and the abbreviations
+%
+\begin{align}
+	\Omega_{il} := \beta \sum\limits_{k} \obra{\mt{A}_{i}} \mt{L} \oket{\mt{C}_{k}} \chi_{kl}^{-1}(0)
+	\qq{and}
+	\Sigma_{il}(\omega) := i \beta \sum\limits_{k} \obra{\mt{A}_{i}} \frac{\mt{LQ}}{\omega - \mt{LQ}} \mt{L} \oket{\mt{C}_{k}} \chi_{kl}^{-1}(0)
+\end{align}
+%
+are inserted.
+Equation \eqref{eq: algebraic equation for C} is the wanted algebraic equation for the correlation function.
+The sums over $k$ and $l$ are originated from the utilization of the projection operator.
+Therefore each sum is a sum over all operators included in the set of operators $\{\mt{C}_{i}\}$.
+The indicies $i$ and $j$ have to be chosen out of this set too, so that equation \eqref{eq: algebraic equation for C} yields $n^{2}$ algebraic equations if $n$ is the number of operators in $\{\mt{C}_{i}\}$.
 
+It's useful for a our later computation to write the even defined abbreviations in another form.
+For $\Omega_{il}$ not much work is to do, because we use only equation \eqref{eq: Heisenberg equation of motion in Liouville space}, so that
+%
+\begin{align}
+	\Omega_{il} = i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} \chi_{kl}^{-1}(0).
+	\label{eq: Omega}
+\end{align}
+%
+For the rearrangement of the second abbreviation in a first step equation \eqref{eq: Heisenberg equation of motion in Liouville space} is used too and in a second step the fraction is written as the geometric series.
+Then in every term the relation $\mt{Q} = \mt{Q}^{2}$ is inserted, where the proof is an easy finger excercise.
+After factorizing one $\mt{Q}$ to each vector operator the geometric series is written back as a fraction.
+%
+\begin{align}
+	&\Sigma_{il}(\omega) = \frac{i \beta}{\omega} \sum\limits_{k} \obra{\dot{\mt{A}}_{i}} \mt{Q} \Big[1 + \frac{\mt{LQ}}{\omega} + \Big(\frac{\mt{LQ}}{\omega}\Big)^{2} + \dots\Big] \oket{\dot{\mt{C}}_{k}} \chi_{kl}^{-1}(0)
+	\notag \\
+	\Leftrightarrow\ &\Sigma_{il}(\omega) = \frac{i \beta}{\omega} \sum\limits_{k} \obra{\dot{\mt{A}}_{i}} \mt{Q}^{2} + \frac{\mt{Q^{2}LQ^{2}}}{\omega} + \frac{\mt{Q^{2}LQ^{2}LQ^{2}}}{\omega^{2}} + \dots\oket{\dot{\mt{C}}_{k}} \chi_{kl}^{-1}(0)
+	\notag \\
+	\Leftrightarrow\ &\Sigma_{il}(\omega) = \frac{i \beta}{\omega} \sum\limits_{k} \obra{\dot{\mt{A}}_{i}} \mt{Q} \Big[1 + \frac{\mt{QLQ}}{\omega} + \Big(\frac{\mt{QLQ}}{\omega}\Big)^{2} + \dots\Big] \mt{Q} \oket{\dot{\mt{C}}_{k}} \chi_{kl}^{-1}(0)
+	\notag \\
+	\Leftrightarrow\ &\Sigma_{il}(\omega) = i \beta \sum\limits_{k} \obra{\dot{\mt{A}}_{i}} \mt{Q} \frac{1}{\omega - \mt{QLQ}} \mt{Q} \oket{\dot{\mt{C}}_{k}} \chi_{kl}^{-1}(0)
+	\label{eq: Sigma(z)}
+\end{align} 
+%
+After all this exhausting mathematical and algebraical conversions the correlation function in the memory matrix formalsim is in a useful and workable form.
+In equation \eqref{eq: algebraic equation for C} the abbreviations can be combined to one function $\mt{M}_{il}(\omega) := \Sigma_{il}(\omega) +i \Omega_{il}$.
+The symbol $\Sigma$ is selected in dependence on the quantum mechanical self energy and the function $\mt{M}(\omega)$ is called the mass operator in quantum field theory and the memory function in non-equilibrium physics.
 
+Let us discuss the physical meaning of $\Omega$ and $\Sigma(\omega)$ in more detail.
+The quantity $\Omega$ always vanishs in the case if the considered Hamiltonian occupies time reversal symmetry and if the operators $\mt{A}_{i}$ and $\mt{A}_{k}$ transform with the same signature with respect to time reversal symmetry since then $\obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} = 0$.
+This assertion is proven extensivly in the section below immediatly.
+In this case the memory function is solely given by the function $\Sigma(\omega)$.
+Comparising \eqref{eq: Sigma(z)} with the definition \eqref{eq: correlation function Liouville space} of correlation functions  exhibits $\Sigma(\omega)$ has the structur of a correlation function but $\Sigma(\omega)$ occupies to differences.
+On the one hand only $\mt{Q} \oket{\dot{\mt{A}}}$ which is perpendicular to $\oket{\mt{A}}$ forms the basis vectors of the expectation value.
+On the other hand only the reduced Liouville operator $\mt{QLQ}$ contribute to the expectation value.
+Let us understand these two object better.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The latter one projects at the part of $\mt{L}$, the full Liouville operator, which causes the intrinsic fluctuations of the operator $\mt{A}$.
+This means the function $\Sigma(\omega)$ describes the dynamic of the operators what is the interesting part for us.
+In other words the operators $\mt{QLQ}$ describes the internal dynamics of all other degrees of freedom of the system excluded $\mt{A}$, called "bath".
+Then $\mt{Q} \oket{\dot{\mt{A}}}$ characterizes the coupling to the bath and it's clear, that the dynamic of the bath changes the behaviour of $\mt{A}$.
+%
+%
+\subsection{Time Reversal Symmetry}
+\label{eq: time reversal symmetry}
+%
+%
+Even above the assertion was postulated that the quantity $\Omega_{il}$ vanishs if the considered Hailtonian is symmetric and if the operators $\dot{\mt{A}}$ and $\mt{A}$ have different signature under time reversal symmetry.
+In the following section the evidence of this statement is proven.
+Our starting point is the introduction of the time reversal operator $\mt{T}$ via the following transformation prescription\todo{or instruction?}.
+%
+\begin{align}
+	\mt{A}(t) \to \mt{A}'(t) = \mt{T} \mt{A}(t) \mt{T}^{-1} = \epsilon_{\mt{A}} \mt{A}(-t)
+\end{align}
+%
+where $\epsilon_{A}$ assumes two different values, $+1$ or $-1$.
+The first one takes it if the physical quantity is something like a position or electrical field and the latter takes it if the physical quantity is a momentum, angular momentum or magnetic field.
+Now let us firstly investigate the action of $\mt{T}$ at the time evolution of an operator.
+%
+\begin{align}
+	\mt{T} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = e^{-i\mt{H}t/\hbar}
+\end{align}
+%
+Remembering the Hamiltonian is assumed as invariant under time reversal symmetry, so that the only changed quantity is the explicit time argument $t$.
+At next the time derivative of the time evolution of an operator is investigated which yields
+%
+\begin{align}
+	\mt{T} \pdv{t} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{TH} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{THT}^{-1} \mt{T} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{H} e^{-i\mt{H}t/\hbar}
+\end{align}
+%
+where in the second step the unit elememt $\mathbb{1} = \mt{TT}^{-1}$.
+Setting $t = 0$ and multipling with $\mt{T}$ from the right hand side immediatly the commutator relation between the time reversal operator and the Hamiltonian is given
+%
+\begin{align}	
+	\mt{TH} = \mt{HT} \qquad \Leftrightarrow \qquad \comm{\mt{H}}{\mt{T}} = 0
+\end{align}
+%
+This is all we need to know about the time reversal operator to prove the assertion.
+The expectation value of a Hermitain operator can be easily manipulated with the aim of the time reversal operator $\mt{T}$.
+%
+\begin{align}
+	\expval{\mt{B}} = \frac{1}{Z} \Tr{e^{-\beta \mt{H}} \mt{T} \mt{B} \mt{T}^{-1}} = \expval{\big(\mt{TBT}^{-1}\big)^{\dag}}
+	\label{eq: time reversal expectation value}
+\end{align}
+%
+where the invariance of the trace with respect to cycling permutation and the commutator relation between $\mt{T}$ and $\mt{H}$ is used in the first step.
+The anti-unitarity of the time reversal operator and the hermiticity of $\mt{B}$ is utilized in the last step.
+The same stuff is done with the commutator between two Hermitian operators.
+%
+\begin{align}
+	\bigg(\mt{T} \comm{\mt{A}(t)}{\mt{B}(t')} \mt{T}^{-1}\bigg)^{\dag} &= \epsilon_{\mt{A}} \epsilon_{\mt{B}} \bigg(\comm{\mt{A}(-t)}{\mt{B}(-t')}\bigg)^{\dag} = - \epsilon_{\mt{A}} \epsilon_{\mt{B}} \comm{\mt{A}(-t)}{\mt{B}(-t')}
+	\label{eq: time reversal commutator}
+\end{align}
+%
+Finitely coming to the quantity $\Omega_{il}$ which is proportional to the correlation function $\obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}}$ between a time derivative quantity $\dot{\mt{A}}_{i}$ and the quantity $\mt{A}_{k}$, as seen in equation \eqref{eq: Omega}.
+Using equation \eqref{eq: splitting susceptibility into real and imaginary part} yields
+%
+\begin{align}
+	i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} = i \chi_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega=0) = i\,\mt{PV} \int\limits_{-\infty}^{\infty} \frac{\dd{\omega'}}{\pi} \frac{\chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega')}{\omega'} - \lim\limits_{\omega \to 0} \chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega),
+\end{align}
+%
+where the dissipative susceptibility $\chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega)$ occurs, which differs a little but significant from the dissipative susceptibility $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)$ defined in section \ref{subsec: spectral representation}.
+To find the relation between both the derivative of \eqref{eq: dissipative susceptibility} is formed.
+%
+\begin{align}
+	\dv{t} \chi''_{\mt{A}_{i} \mt{A}_{k}}(t) = \frac{1}{2\hbar} \expval{\comm{\dot{\mt{A}}_{i}(t)}{\mt{A}_{k}(0)}} = \chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(t)
+\end{align}
+%
+Express on both sides the susceptibilities by her Fourier transform yields the wanted relation between both.
+%
+\begin{align}
+	\chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega) = - i \omega \chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)
+\end{align}
+%
+Inserting this in \eqref{eq: equation for Omega depend on Chi''} yields
+%
+\begin{align}
+	i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} = \,\mt{PV} \int\limits_{-\infty}^{\infty} \frac{\dd{\omega'}}{\pi} \chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega')
+	\label{eq: equation for Omega depend on Chi''}
+\end{align}
+%
+where the limit in the second term is taken.
+This result entails two very important advantages.
+One the one hand the physical meaning of the quantity $\Omega_{il}$ becomes clearer, because $\Omega_{il}$ is directly associated with dissipative processes via $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega')$.
+On the other hand the founded expression establishs the possibility to analyse the behaviour of $\Omega_{il}$ under time reversal symmetry.
+%
+\begin{align}
+	\chi''_{\mt{A}_{i} \mt{A}_{k}}(t-t') = \frac{1}{2\hbar} \expval{\comm{\mt{A}_{i}(t)}{\mt{A}_{k}(t')}}
+\end{align}
+% 
+The expectation value is rewriten using equation \eqref{eq: time reversal expectation value} which establishes the oppertunity to use \eqref{eq: time reversal commutator}.
+%
+\begin{align}
+	\chi''_{\mt{A}_{i} \mt{A}_{k}}(t-t') = -\epsilon_{\mt{A}_{i}} \epsilon_{\mt{A}_{k}} \chi''_{\mt{A}_{i} \mt{A}_{k}}(t'-t),
+\end{align}
+%
+where the relation \eqref{eq: complex conjugated of dissipative susceptibility} is used.
+The Laplace transformation of this equation yields
+%
+\begin{align}
+	\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = -\epsilon_{\mt{A}_{i}} \epsilon_{\mt{A}_{k}} \chi''_{\mt{A}_{i} \mt{A}_{k}}(-\omega) = \epsilon_{\mt{A}_{i}} \epsilon_{\mt{A}_{k}} \chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega),
+\end{align}
+%
+where the antisymmetry of the commutator with respect of interchanging both operators is utilized.
+Two cases has to be investigated by analyzing the analytical properties of $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)$, which are $\epsilon_{\mt{A}_{i}} = \epsilon_{\mt{A}_{k}}$ and $\epsilon_{\mt{A}_{i}} \neq \epsilon_{\mt{A}_{k}}$.
+The analysis gives us the required properties to compute the integral over the dissipative susceptibility.
+%
+\paragraph{1. case:} $\epsilon_{\mt{A}_{i}} = \epsilon_{\mt{A}_{k}}$\\
+%
+This yields $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = \chi''_{\mt{A}_{k} \mt{A}_{i}}(\omega)$ which means that the dissipative susceptibility is symmetrical under interchange of $\mt{A}_{i}$ and $\mt{A}_{k}$.
+Furthermore the dissipative sysceptibility is an antisymmetrical function, because $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = -\chi''_{\mt{A}_{i} \mt{A}_{k}}(-\omega)$.
+Consider the complex conjugated of $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)$ yields that the dynamical susceptibility is a real number.
+%
+\begin{align}
+	\Big(\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)\Big)^{*} = -\int\limits_{-\infty}^{\infty} \dd{t} e^{-i\omega(t-t')} \chi''_{\mt{A}_{i} \mt{A}_{k}}(t-t') = -\chi_{\mt{A}_{i} \mt{A}_{k}}(-\omega) = \chi_{\mt{A}_{i} \mt{A}_{k}}(\omega)
+\end{align}
+%
+where equation \eqref{eq: complex conjugated of dissipative susceptibility} is used.
+%
+\paragraph{2. case:} $\epsilon_{\mt{A}_{i}} \neq \epsilon_{\mt{A}_{k}}$\\
+%
+If the signature of $\mt{A}_{i}$ and $\mt{A}_{k}$ is differant under time reversal symmetry than the dissipative susceptibility is antisymmetric under interchange of the both operators so that this yields $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = -\chi''_{\mt{A}_{k} \mt{A}_{i}}(\omega)$.
+For the same reason $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)$ is a symmetrical function because $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = \chi''_{\mt{A}_{i} \mt{A}_{k}}(-\omega)$.
+Towards the first case the dissipative susceptibility is an imaginary number which ensures by the complex conjugation likewise.
+%
+\begin{align}
+	\Big(\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)\Big)^{*} = -\int\limits_{-\infty}^{\infty} \dd{t} e^{-i\omega(t-t')} \chi''_{\mt{A}_{i} \mt{A}_{k}}(t-t') = -\chi_{\mt{A}_{i} \mt{A}_{k}}(-\omega) = -\chi_{\mt{A}_{i} \mt{A}_{k}}(\omega)
+\end{align}
+%
+Back to equation \eqref{eq: equation for Omega depend on Chi''}.
+We see that the integral vanishs in the first case because the suscebtibility is an odd function.
+This means that $i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}}$ is always zero when the operators $\mt{A}_{i}$ and $\mt{A}_{k}$ have the same signature with respect to time reversal symmetry, assumed the Hamiltonian is invariant under time reversal symmetry.
+This is exactly the assertion which was to prove.
+%
+%
+\subsection{Scalar Product}
+\label{eq: scalar product}
+%
+%
 
 
 

@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  27 APR 2018 09:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  29 APR 2018 16:12
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **memory-matrix-formalism.tex -clean
 (./memory-matrix-formalism.tex
@@ -2453,15 +2453,14 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -4822,19 +4821,18 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -4868,11 +4866,20 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no c in font nullfont!
@@ -8005,7 +8012,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.159 ...ed}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv
-                                                  {t} \Phi_{\mt{AB}}(t) \lab...
+                                                  {t} \Phi_{\mt{AB}}(t) \end...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8014,7 +8021,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.159 ...\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt
-                                                  {AB}}(t) \label{eq: relati...
+                                                  {AB}}(t) \end{aligned}$\hf...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8028,12 +8035,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 ...tion 1 between Phi and chi} \end{aligned}
-                                                  $
+l.159 ...t) \dv{t} \Phi_{\mt{AB}}(t) \end{aligned}
+                                                  $\hfill \refstepcounter{eq...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
 
 Overfull \hbox (50.26494pt too wide) in paragraph at lines 159--160
 \/cmr/m/n/10 [\OML/cmm/m/it/10 t\/cmr/m/n/10 ]\OML/cmm/m/it/10 ^^_[]\/cmr/m/n/1
@@ -8043,7 +8054,7 @@ Overfull \hbox (50.26494pt too wide) in paragraph at lines 159--160
 
 Overfull \hbox (62.06369pt too wide) in paragraph at lines 159--160
 \OMS/cmsy/m/n/10 ^^@\/cmr/m/n/10 ^^B(\OML/cmm/m/it/10 t\/cmr/m/n/10 )\OML/cmm/m
-/it/10 t\/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\/cmr/m/n/10 )[]$ 
+/it/10 t\/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\/cmr/m/n/10 )$
  []
 
 
@@ -8054,15 +8065,15 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.160 	\item $\begin{aligned}
-                              \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega ...
+                             [t] \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\ome...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.160 	\item $\begin{aligned} \Phi_{\mt
-                                       {AB}}(t = 0) = \chi_{\mt{AB}}(\omega ...
+l.160 	\item $\begin{aligned}[t] \Phi_{\mt
+                                          {AB}}(t = 0) = \chi_{\mt{AB}}(\ome...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8070,8 +8081,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.160 ...ligned} \Phi_{\mt{AB}}(t = 0) = \chi_{\mt
-                                                  {AB}}(\omega = 0) \label{e...
+l.160 ...ned}[t] \Phi_{\mt{AB}}(t = 0) = \chi_{\mt
+                                                  {AB}}(\omega = 0) \end{ali...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8085,15 +8096,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 ...tion 2 between Phi and chi} \end{aligned}
-                                                  $
+l.160 ... \chi_{\mt{AB}}(\omega = 0) \end{aligned}
+                                                  $\hfill \refstepcounter{eq...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (38.17467pt too wide) in paragraph at lines 160--161
-\/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t \/cmr/m/n/10 =
+Overfull \hbox (47.34135pt too wide) in paragraph at lines 160--161
+\/cmr/m/n/10 [\OML/cmm/m/it/10 t\/cmr/m/n/10 ]^^H[](\OML/cmm/m/it/10 t \/cmr/m/
+n/10 =
  []
 
 
@@ -8108,7 +8124,7 @@ Overfull \hbox (40.18155pt too wide) in paragraph at lines 160--161
 
 
 Overfull \hbox (8.88892pt too wide) in paragraph at lines 160--161
-\/cmr/m/n/10 0)[]$ 
+\/cmr/m/n/10 0)$
  []
 
 
@@ -8119,15 +8135,15 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.161 	\item $\begin{aligned}
-                              \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big...
+                             [t] \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.161 	\item $\begin{aligned} \Phi_{\mt
-                                       {AB}}(\omega) = \frac{1}{i\omega}\big...
+l.161 	\item $\begin{aligned}[t] \Phi_{\mt
+                                          {AB}}(\omega) = \frac{1}{i\omega}\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8145,7 +8161,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.161 ...a}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt
-                                                  {AB}}(\omega = 0)\big]. \l...
+                                                  {AB}}(\omega = 0)\big]. \e...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8159,15 +8175,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161 ...tion 3 between Phi and chi} \end{aligned}
-                                                  $
+l.161 ...{\mt{AB}}(\omega = 0)\big]. \end{aligned}
+                                                  $\hfill \refstepcounter{eq...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (45.03577pt too wide) in paragraph at lines 161--162
-\/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 !\/cmr/m/n/10 ) =
+Overfull \hbox (54.20245pt too wide) in paragraph at lines 161--162
+\/cmr/m/n/10 [\OML/cmm/m/it/10 t\/cmr/m/n/10 ]^^H[](\OML/cmm/m/it/10 !\/cmr/m/n
+/10 ) =
  []
 
 
@@ -8183,7 +8204,7 @@ Overfull \hbox (40.18155pt too wide) in paragraph at lines 161--162
 
 
 Overfull \hbox (15.83339pt too wide) in paragraph at lines 161--162
-\/cmr/m/n/10 0)[]\OML/cmm/m/it/10 :[]$ 
+\/cmr/m/n/10 0)[]\OML/cmm/m/it/10 :$
  []
 
 Missing character: There is no T in font nullfont!
@@ -10569,7 +10590,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.208 \end{align}
+l.209 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -10578,7 +10599,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.208 \end{align}
+l.209 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -11008,7 +11029,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.216 \subsection
+l.217 \subsection
                  {Kramer-Kronig-relation}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11213,7 +11234,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
 ! Undefined control sequence.
-l.222 ...at the dynamical sysceptibilty $\chi_{\mt
+l.223 ...at the dynamical sysceptibilty $\chi_{\mt
                                                   {AB}}(t-t')$ is zero for t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11399,7 +11420,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.224 ...der the Fourier transformation $\chi_{\mt
+l.225 ...der the Fourier transformation $\chi_{\mt
                                                   {AB}}(\omega)$ where $\ome...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11504,7 +11525,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 \begin{align}
+l.228 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -11513,13 +11534,13 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.228 	\chi
+l.229 	\chi
            _{\mt{AB}}(\omega) = \int\limits_{-\infty}^{\infty} \dd{t} e^{i(\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.228 	\chi_{\mt
+l.229 	\chi_{\mt
                 {AB}}(\omega) = \int\limits_{-\infty}^{\infty} \dd{t} e^{i(\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11528,7 +11549,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.228 ...ega) = \int\limits_{-\infty}^{\infty} \dd
+l.229 ...ega) = \int\limits_{-\infty}^{\infty} \dd
                                                   {t} e^{i(\omega'+i\omega''...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11537,7 +11558,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.228 ...dd{t} e^{i(\omega'+i\omega'')t} \chi_{\mt
+l.229 ...dd{t} e^{i(\omega'+i\omega'')t} \chi_{\mt
                                                   {AB}}(t)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11552,7 +11573,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 \end{align}
+l.231 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -11561,7 +11582,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.230 \end{align}
+l.231 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -11789,162 +11810,162 @@ Missing character: There is no ( in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 196--235
+Overfull \hbox (20.0pt too wide) in paragraph at lines 196--236
 []
  []
 
 
-Overfull \hbox (42.06357pt too wide) in paragraph at lines 196--235
+Overfull \hbox (42.06357pt too wide) in paragraph at lines 196--236
 \/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (115.66321pt too wide) in paragraph at lines 196--235
+Overfull \hbox (115.66321pt too wide) in paragraph at lines 196--236
 [] [] [] \OML/cmm/m/it/10 ^^\[][]e[][] 
  []
 
 
-Overfull \hbox (180.35628pt too wide) in paragraph at lines 196--235
+Overfull \hbox (180.35628pt too wide) in paragraph at lines 196--236
 [][] \/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (132.58481pt too wide) in paragraph at lines 196--235
+Overfull \hbox (132.58481pt too wide) in paragraph at lines 196--236
 [] [] [] \OML/cmm/m/it/10 ^^\[][]e[][] 
  []
 
 
-Overfull \hbox (141.40746pt too wide) in paragraph at lines 196--235
+Overfull \hbox (141.40746pt too wide) in paragraph at lines 196--236
 [][] \/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (159.56598pt too wide) in paragraph at lines 196--235
+Overfull \hbox (159.56598pt too wide) in paragraph at lines 196--236
 \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 ^^U [] ^^\[][]e[][] 
  []
 
 
-Overfull \hbox (65.05316pt too wide) in paragraph at lines 196--235
+Overfull \hbox (65.05316pt too wide) in paragraph at lines 196--236
 [][] \/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (268.92393pt too wide) in paragraph at lines 196--235
+Overfull \hbox (268.92393pt too wide) in paragraph at lines 196--236
 \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 ^^U[][][] 
  []
 
 
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 196--235
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 196--236
 \OMS/cmsy/m/n/10 ,
  []
 
 
-Overfull \hbox (42.06357pt too wide) in paragraph at lines 196--235
+Overfull \hbox (42.06357pt too wide) in paragraph at lines 196--236
 \/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (104.8989pt too wide) in paragraph at lines 196--235
+Overfull \hbox (104.8989pt too wide) in paragraph at lines 196--236
 [] \OML/cmm/m/it/10 ^^U[][] \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (77.12123pt too wide) in paragraph at lines 196--235
-[] \OML/cmm/m/it/10 ^^U[][]$
+Overfull \hbox (77.12123pt too wide) in paragraph at lines 196--236
+[] \OML/cmm/m/it/10 ^^U[][][]$
  []
 
 
-Overfull \hbox (34.43164pt too wide) in paragraph at lines 196--235
+Overfull \hbox (34.43164pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 ^^_[]\/cmr/m/n/10 (\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (10.30557pt too wide) in paragraph at lines 196--235
+Overfull \hbox (10.30557pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 t[]\/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (3.61111pt too wide) in paragraph at lines 196--235
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 t$
  []
 
 
-Overfull \hbox (6.41667pt too wide) in paragraph at lines 196--235
+Overfull \hbox (6.41667pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 t[]$
  []
 
 
-Overfull \hbox (33.51494pt too wide) in paragraph at lines 196--235
+Overfull \hbox (33.51494pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 ^^_[]\/cmr/m/n/10 (\OML/cmm/m/it/10 !\/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (6.58331pt too wide) in paragraph at lines 196--235
+Overfull \hbox (6.58331pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 !$
  []
 
 
-Overfull \hbox (17.16667pt too wide) in paragraph at lines 196--235
+Overfull \hbox (17.16667pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 ![] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (15.13956pt too wide) in paragraph at lines 196--235
+Overfull \hbox (15.13956pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 i![]$
  []
 
 
-Overfull \hbox (6.41667pt too wide) in paragraph at lines 196--235
+Overfull \hbox (6.41667pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 t[]$
  []
 
 
-Overfull \hbox (44.07045pt too wide) in paragraph at lines 196--235
+Overfull \hbox (44.07045pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 ^^_[]\/cmr/m/n/10 (\OML/cmm/m/it/10 !\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (94.45985pt too wide) in paragraph at lines 196--235
+Overfull \hbox (94.45985pt too wide) in paragraph at lines 196--236
 [] \OML/cmm/m/it/10 te[]^^_[]\/cmr/m/n/10 (\OML/cmm/m/it/10 t\/cmr/m/n/10 )[]$
  []
 
 
-Overfull \hbox (14.16663pt too wide) in paragraph at lines 196--235
+Overfull \hbox (14.16663pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 t >
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 196--235
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 196--236
 \/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (24.62581pt too wide) in paragraph at lines 196--235
+Overfull \hbox (24.62581pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 e[]$
  []
 
 
-Overfull \hbox (22.24994pt too wide) in paragraph at lines 196--235
+Overfull \hbox (22.24994pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 ![] >
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 196--235
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 196--236
 \/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (24.36105pt too wide) in paragraph at lines 196--235
+Overfull \hbox (24.36105pt too wide) in paragraph at lines 196--236
 \OMS/cmsy/m/n/10 =\OML/cmm/m/it/10 ! \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (22.24994pt too wide) in paragraph at lines 196--235
+Overfull \hbox (22.24994pt too wide) in paragraph at lines 196--236
 \OML/cmm/m/it/10 ![] >
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 196--235
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 196--236
 \/cmr/m/n/10 0$ 
  []
 
@@ -12145,7 +12166,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.236 ...e presicly in the regime where $\chi_{\mt
+l.237 ...e presicly in the regime where $\chi_{\mt
                                                   {AB}}(\omega)$ is holomorp...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12174,7 +12195,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.238 \begin{align}
+l.239 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -12183,13 +12204,13 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.239 	\chi
+l.240 	\chi
            _{\mt{AB}}(\omega) = \frac{1}{2\pi i} \oint\limits_{\Gamma} \dd{\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.239 	\chi_{\mt
+l.240 	\chi_{\mt
                 {AB}}(\omega) = \frac{1}{2\pi i} \oint\limits_{\Gamma} \dd{\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12198,7 +12219,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.239 ...frac{1}{2\pi i} \oint\limits_{\Gamma} \dd
+l.240 ...frac{1}{2\pi i} \oint\limits_{\Gamma} \dd
                                                   {\zeta} \frac{\chi_{\mt{AB...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12209,7 +12230,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \chi _{\mt 
                       {AB}}(\zeta )
-l.239 ...frac{\chi_{\mt{AB}}(\zeta)}{\zeta-\omega}
+l.240 ...frac{\chi_{\mt{AB}}(\zeta)}{\zeta-\omega}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12224,7 +12245,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240 \end{align}
+l.241 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -12233,7 +12254,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.240 \end{align}
+l.241 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -12387,7 +12408,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.243 ...e the contour is closed, see figure \todo
+l.244 ...e the contour is closed, see figure \todo
                                                   {link to figure of contour}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12540,42 +12561,42 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 236--245
+Overfull \hbox (20.0pt too wide) in paragraph at lines 237--246
 []
  []
 
 
-Overfull \hbox (6.25002pt too wide) in paragraph at lines 236--245
+Overfull \hbox (6.25002pt too wide) in paragraph at lines 237--246
 \/cmr/m/n/10 ^^@$
  []
 
 
-Overfull \hbox (33.51494pt too wide) in paragraph at lines 236--245
+Overfull \hbox (33.51494pt too wide) in paragraph at lines 237--246
 \OML/cmm/m/it/10 ^^_[]\/cmr/m/n/10 (\OML/cmm/m/it/10 !\/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (44.07045pt too wide) in paragraph at lines 236--245
+Overfull \hbox (44.07045pt too wide) in paragraph at lines 237--246
 \OML/cmm/m/it/10 ^^_[]\/cmr/m/n/10 (\OML/cmm/m/it/10 !\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (58.0942pt too wide) in paragraph at lines 236--245
+Overfull \hbox (58.0942pt too wide) in paragraph at lines 237--246
 [] [] \OML/cmm/m/it/10 ^^P[]$
  []
 
 
-Overfull \hbox (8.76921pt too wide) in paragraph at lines 236--245
+Overfull \hbox (8.76921pt too wide) in paragraph at lines 237--246
 \OML/cmm/m/it/10 i^^Q$
  []
 
 
-Overfull \hbox (18.1018pt too wide) in paragraph at lines 236--245
+Overfull \hbox (18.1018pt too wide) in paragraph at lines 237--246
 \OML/cmm/m/it/10 ^^Q \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 236--245
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 237--246
 \/cmr/m/n/10 0$
  []
 
@@ -12624,7 +12645,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.246 ...he semi circle vanishs because $\chi_{\mt
+l.247 ...he semi circle vanishs because $\chi_{\mt
                                                   {AB}}(\omega)$ decreasing ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12754,7 +12775,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 ! Undefined control sequence.
-l.247 ...formally writing $\frac{1}{x+i\eta} = \mt
+l.248 ...formally writing $\frac{1}{x+i\eta} = \mt
                                                   {PV}\frac{1}{x}-i\pi\delta...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12809,7 +12830,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.249 \begin{align}
+l.250 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -12818,13 +12839,13 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.250 	\chi
+l.251 	\chi
            _{\mt{AB}}(\omega) &= \frac{1}{2\pi i} \int\limits_{-\infty}^{\in...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.250 	\chi_{\mt
+l.251 	\chi_{\mt
                 {AB}}(\omega) &= \frac{1}{2\pi i} \int\limits_{-\infty}^{\in...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12833,7 +12854,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.250 	\chi_{\mt{AB}}(\omega) &
+l.251 	\chi_{\mt{AB}}(\omega) &
                                = \frac{1}{2\pi i} \int\limits_{-\infty}^{\in...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -12843,7 +12864,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.250 ...\pi i} \int\limits_{-\infty}^{\infty} \dd
+l.251 ...\pi i} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'} \frac{\chi_{\mt{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12854,7 +12875,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \chi _{\mt 
                       {AB}}(\omega ')
-l.250 ...{\mt{AB}}(\omega')}{\omega'-\omega-i\eta}
+l.251 ...{\mt{AB}}(\omega')}{\omega'-\omega-i\eta}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12863,7 +12884,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.251 	\notag
+l.252 	\notag
               \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12872,7 +12893,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.252 	\Leftrightarrow\ \chi_{\mt
+l.253 	\Leftrightarrow\ \chi_{\mt
                                  {AB}}(\omega) &= \frac{1}{2\pi i} \bigg[
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12881,7 +12902,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.252 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
+l.253 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
                                                 = \frac{1}{2\pi i} \bigg[
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -12891,7 +12912,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.253 		\mt
+l.254 		\mt
            {PV} \int\limits_{-\infty}^{\infty} \dd{\omega'} \frac{\chi_{\mt{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12900,7 +12921,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.253 		\mt{PV} \int\limits_{-\infty}^{\infty} \dd
+l.254 		\mt{PV} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'} \frac{\chi_{\mt{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12911,7 +12932,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \chi _{\mt 
                       {AB}}(\omega ')
-l.253 ...{\chi_{\mt{AB}}(\omega')}{\omega'-\omega}
+l.254 ...{\chi_{\mt{AB}}(\omega')}{\omega'-\omega}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12920,7 +12941,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.255 		i\pi \int\limits_{-\infty}^{\infty} \dd
+l.256 		i\pi \int\limits_{-\infty}^{\infty} \dd
                                                {\omega'} \chi_{\mt{AB}}(\ome...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12929,7 +12950,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.255 ...{-\infty}^{\infty} \dd{\omega'} \chi_{\mt
+l.256 ...{-\infty}^{\infty} \dd{\omega'} \chi_{\mt
                                                   {AB}}(\omega') \delta(\ome...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12938,7 +12959,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.257 	\notag
+l.258 	\notag
               \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12947,7 +12968,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.258 	\Leftrightarrow\ \chi_{\mt
+l.259 	\Leftrightarrow\ \chi_{\mt
                                  {AB}}(\omega) &= -\frac{i}{\pi} \mt{PV} \in...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12956,7 +12977,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.258 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
+l.259 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
                                                 = -\frac{i}{\pi} \mt{PV} \in...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -12966,7 +12987,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.258 ...i_{\mt{AB}}(\omega) &= -\frac{i}{\pi} \mt
+l.259 ...i_{\mt{AB}}(\omega) &= -\frac{i}{\pi} \mt
                                                   {PV} \int\limits_{-\infty}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12975,7 +12996,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.258 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
+l.259 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'} \frac{\Re{\chi_{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12986,7 +13007,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \Re {\chi _{\mt 
                            {AB}}(\omega ')} + i\Im {\chi _{\mt {AB}}(\omega ')}
-l.258 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+l.259 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12997,7 +13018,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...{AB}}(\omega ')} + i\Im {\chi _{\mt 
                                                   {AB}}(\omega ')}
-l.258 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+l.259 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13006,7 +13027,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.259 	\notag
+l.260 	\notag
               \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13015,7 +13036,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.260 	\Leftrightarrow\ \chi_{\mt
+l.261 	\Leftrightarrow\ \chi_{\mt
                                  {AB}}(\omega) &= \frac{1}{\pi} \mt{PV} \int...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13024,7 +13045,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.260 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
+l.261 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
                                                 = \frac{1}{\pi} \mt{PV} \int...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -13034,7 +13055,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.260 ...hi_{\mt{AB}}(\omega) &= \frac{1}{\pi} \mt
+l.261 ...hi_{\mt{AB}}(\omega) &= \frac{1}{\pi} \mt
                                                   {PV} \int\limits_{-\infty}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13043,7 +13064,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.260 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
+l.261 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'} \bigg[
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13054,7 +13075,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \Im {\chi _{\mt 
                            {AB}}(\omega ')}
-l.261 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+l.262 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13065,7 +13086,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \Re {\chi _{\mt 
                            {AB}}(\omega ')}
-l.263 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+l.264 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13080,7 +13101,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.265 \end{align}
+l.266 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -13089,7 +13110,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.265 \end{align}
+l.266 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -13308,7 +13329,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.270 \begin{align}
+l.271 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -13317,13 +13338,13 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.271 	\Re
+l.272 	\Re
           {\chi_{\mt{AB}}(\omega)} &= \frac{1}{\pi} \mt{PV} \int\limits_{-\i...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.271 	\Re{\chi_{\mt
+l.272 	\Re{\chi_{\mt
                     {AB}}(\omega)} &= \frac{1}{\pi} \mt{PV} \int\limits_{-\i...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13332,7 +13353,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.271 	\Re{\chi_{\mt{AB}}(\omega)} &
+l.272 	\Re{\chi_{\mt{AB}}(\omega)} &
                                     = \frac{1}{\pi} \mt{PV} \int\limits_{-\i...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -13342,7 +13363,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.271 ...i_{\mt{AB}}(\omega)} &= \frac{1}{\pi} \mt
+l.272 ...i_{\mt{AB}}(\omega)} &= \frac{1}{\pi} \mt
                                                   {PV} \int\limits_{-\infty}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13351,7 +13372,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.271 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
+l.272 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'} \frac{\Im{\chi_{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13362,7 +13383,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \Im {\chi _{\mt 
                            {AB}}(\omega ')}
-l.271 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+l.272 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13371,7 +13392,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.273 	\Im{\chi_{\mt
+l.274 	\Im{\chi_{\mt
                     {AB}}(\omega)} &= -\frac{1}{\pi} \mt{PV} \int\limits_{-\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13380,7 +13401,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.273 	\Im{\chi_{\mt{AB}}(\omega)} &
+l.274 	\Im{\chi_{\mt{AB}}(\omega)} &
                                     = -\frac{1}{\pi} \mt{PV} \int\limits_{-\...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -13390,7 +13411,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.273 ..._{\mt{AB}}(\omega)} &= -\frac{1}{\pi} \mt
+l.274 ..._{\mt{AB}}(\omega)} &= -\frac{1}{\pi} \mt
                                                   {PV} \int\limits_{-\infty}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13399,7 +13420,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.273 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
+l.274 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'} \frac{\Re{\chi_{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13410,7 +13431,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \Re {\chi _{\mt 
                            {AB}}(\omega ')}
-l.273 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
+l.274 ...\chi_{\mt{AB}}(\omega')}}{\omega'-\omega}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13425,7 +13446,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.274 \end{align}
+l.275 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -13434,7 +13455,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.274 \end{align}
+l.275 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -13813,7 +13834,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.282 \subsection
+l.283 \subsection
                  {Spectral representation}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13855,7 +13876,7 @@ Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 <write> ...subsec: kubo formula' on page \thepage 
                                                   \space undefined\on@line .
-l.286 In section \ref{subsec: kubo formula}
+l.287 In section \ref{subsec: kubo formula}
                                             the dynamical susecptibility $\c...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13865,7 +13886,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `subsec: kubo formula' on page  undefined on input lin
-e 286.
+e 287.
 
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -13894,7 +13915,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
 ! Undefined control sequence.
-l.286 ...} the dynamical susecptibility $\chi_{\mt
+l.287 ...} the dynamical susecptibility $\chi_{\mt
                                                   {AB}}$ is introduced by de...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13940,7 +13961,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
-l.286 ...duced by deviated the Kubo-formula \eqref
+l.287 ...duced by deviated the Kubo-formula \eqref
                                                   {eq: Kubo formula}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14295,7 +14316,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.292 \begin{align}
+l.293 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -14304,13 +14325,13 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.293 	\chi
+l.294 	\chi
            ''_{\mt{AB}}(t) = \frac{1}{2\hbar} \expval{\comm{\mt{A}(t)}{\mt{B...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.293 	\chi''_{\mt
+l.294 	\chi''_{\mt
                   {AB}}(t) = \frac{1}{2\hbar} \expval{\comm{\mt{A}(t)}{\mt{B...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14319,7 +14340,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.293 ...'_{\mt{AB}}(t) = \frac{1}{2\hbar} \expval
+l.294 ...'_{\mt{AB}}(t) = \frac{1}{2\hbar} \expval
                                                   {\comm{\mt{A}(t)}{\mt{B}(0)}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14328,7 +14349,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.293 ...{AB}}(t) = \frac{1}{2\hbar} \expval{\comm
+l.294 ...{AB}}(t) = \frac{1}{2\hbar} \expval{\comm
                                                   {\mt{A}(t)}{\mt{B}(0)}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14337,7 +14358,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.293 ...}(t) = \frac{1}{2\hbar} \expval{\comm{\mt
+l.294 ...}(t) = \frac{1}{2\hbar} \expval{\comm{\mt
                                                   {A}(t)}{\mt{B}(0)}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14346,7 +14367,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.293 ...c{1}{2\hbar} \expval{\comm{\mt{A}(t)}{\mt
+l.294 ...c{1}{2\hbar} \expval{\comm{\mt{A}(t)}{\mt
                                                   {B}(0)}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14361,7 +14382,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 \end{align}
+l.296 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -14370,7 +14391,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.295 \end{align}
+l.296 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -14380,12 +14401,14 @@ my insertion and my current dilemma will both disappear.
 
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -14433,7 +14456,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.297 ...ransformation is given by equation \eqref
+l.298 ...ransformation is given by equation \eqref
                                                   {eq: Fourier-transformation}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14574,7 +14597,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.298 ...ry part like it's done in equation \eqref
+l.299 ...ry part like it's done in equation \eqref
                                                   {eq: Fourier-transformation}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14649,7 +14672,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.299 ...ur calculation multipling equation \eqref
+l.300 ...ur calculation multipling equation \eqref
                                                   {eq: dynamical susceptibil...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14712,7 +14735,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.301 \begin{align}
+l.302 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -14721,13 +14744,13 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.302 	\chi
+l.303 	\chi
            _{\mt{AB}}(t) &= \frac{i}{\hbar} \Theta(t) \expval{\comm{\mt{A}(t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.302 	\chi_{\mt
+l.303 	\chi_{\mt
                 {AB}}(t) &= \frac{i}{\hbar} \Theta(t) \expval{\comm{\mt{A}(t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14736,7 +14759,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.302 	\chi_{\mt{AB}}(t) &
+l.303 	\chi_{\mt{AB}}(t) &
                           = \frac{i}{\hbar} \Theta(t) \expval{\comm{\mt{A}(t...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -14746,7 +14769,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.302 ...}(t) &= \frac{i}{\hbar} \Theta(t) \expval
+l.303 ...}(t) &= \frac{i}{\hbar} \Theta(t) \expval
                                                   {\comm{\mt{A}(t)}{\mt{B}(0...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14755,7 +14778,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.302 ...= \frac{i}{\hbar} \Theta(t) \expval{\comm
+l.303 ...= \frac{i}{\hbar} \Theta(t) \expval{\comm
                                                   {\mt{A}(t)}{\mt{B}(0)}} = ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14764,7 +14787,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.302 ...rac{i}{\hbar} \Theta(t) \expval{\comm{\mt
+l.303 ...rac{i}{\hbar} \Theta(t) \expval{\comm{\mt
                                                   {A}(t)}{\mt{B}(0)}} = 2i \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14773,7 +14796,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.302 ...r} \Theta(t) \expval{\comm{\mt{A}(t)}{\mt
+l.303 ...r} \Theta(t) \expval{\comm{\mt{A}(t)}{\mt
                                                   {B}(0)}} = 2i \Theta(t) \c...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14782,7 +14805,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.302 ...)}{\mt{B}(0)}} = 2i \Theta(t) \chi''_{\mt
+l.303 ...)}{\mt{B}(0)}} = 2i \Theta(t) \chi''_{\mt
                                                   {AB}}(t)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14791,7 +14814,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.303 	\notag
+l.304 	\notag
               \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14800,7 +14823,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.304 	\Leftrightarrow\ \chi_{\mt
+l.305 	\Leftrightarrow\ \chi_{\mt
                                  {AB}}(\omega) &= 2i \int\limits_{-\infty}^{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14809,7 +14832,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.304 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
+l.305 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
                                                 = 2i \int\limits_{-\infty}^{...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -14819,7 +14842,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.304 ... &= 2i \int\limits_{-\infty}^{\infty} \dd
+l.305 ... &= 2i \int\limits_{-\infty}^{\infty} \dd
                                                   {t} e^{i\omega t} \Theta(t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14828,7 +14851,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.304 ...dd{t} e^{i\omega t} \Theta(t) \chi''_{\mt
+l.305 ...dd{t} e^{i\omega t} \Theta(t) \chi''_{\mt
                                                   {AB}}(t)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14837,7 +14860,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.305 	\notag
+l.306 	\notag
               \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14846,7 +14869,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.306 	\Leftrightarrow\ \chi_{\mt
+l.307 	\Leftrightarrow\ \chi_{\mt
                                  {AB}}(\omega) &= -\frac{1}{\pi} \lim\limits...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14855,7 +14878,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.306 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
+l.307 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
                                                 = -\frac{1}{\pi} \lim\limits...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -14865,7 +14888,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.306 ...\to 0} \int\limits_{-\infty}^{\infty} \dd
+l.307 ...\to 0} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14874,7 +14897,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.307 ...i\eta} \int\limits_{-\infty}^{\infty} \dd
+l.308 ...i\eta} \int\limits_{-\infty}^{\infty} \dd
                                                   {t} e^{i(\omega-\omega')t}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14883,7 +14906,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.307 ...\dd{t} e^{i(\omega-\omega')t} \chi''_{\mt
+l.308 ...\dd{t} e^{i(\omega-\omega')t} \chi''_{\mt
                                                   {AB}}(t)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14892,7 +14915,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.308  	\notag
+l.309  	\notag
                \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14901,7 +14924,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.309 	\Leftrightarrow\ \chi_{\mt
+l.310 	\Leftrightarrow\ \chi_{\mt
                                  {AB}}(\omega) &= \frac{1}{\pi} \lim\limits_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14910,7 +14933,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.309 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
+l.310 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
                                                 = \frac{1}{\pi} \lim\limits_...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -14920,7 +14943,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.309 ...\to 0} \int\limits_{-\infty}^{\infty} \dd
+l.310 ...\to 0} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14931,7 +14954,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \chi ''_{\mt 
                         {AB}}(\omega ')
-l.310 ...{AB}}(\omega')}{\omega' - \omega - i\eta}
+l.311 ...{AB}}(\omega')}{\omega' - \omega - i\eta}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14940,7 +14963,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.311  	\notag
+l.312  	\notag
                \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14949,7 +14972,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.312 	\Leftrightarrow\ \chi_{\mt
+l.313 	\Leftrightarrow\ \chi_{\mt
                                  {AB}}(\omega) &= \frac{1}{\pi} \mt{PV} \int...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14958,7 +14981,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.312 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
+l.313 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
                                                 = \frac{1}{\pi} \mt{PV} \int...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -14968,7 +14991,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.312 ...hi_{\mt{AB}}(\omega) &= \frac{1}{\pi} \mt
+l.313 ...hi_{\mt{AB}}(\omega) &= \frac{1}{\pi} \mt
                                                   {PV} \int\limits_{-\infty}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14977,7 +15000,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.312 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
+l.313 ...mt{PV} \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14988,7 +15011,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \chi ''_{\mt 
                         {AB}}(\omega ')
-l.313 ...i''_{\mt{AB}}(\omega')}{\omega' - \omega}
+l.314 ...i''_{\mt{AB}}(\omega')}{\omega' - \omega}
                                                    + i \int\limits_{-\infty}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14997,7 +15020,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.313 ...a} + i \int\limits_{-\infty}^{\infty} \dd
+l.314 ...a} + i \int\limits_{-\infty}^{\infty} \dd
                                                   {\omega'} \delta(\omega' -...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15006,7 +15029,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.313 ...ga'} \delta(\omega' - \omega) \chi''_{\mt
+l.314 ...ga'} \delta(\omega' - \omega) \chi''_{\mt
                                                   {AB}}(\omega')
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15015,7 +15038,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.314  	\notag
+l.315  	\notag
                \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15024,7 +15047,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.315 	\Leftrightarrow\ \chi_{\mt
+l.316 	\Leftrightarrow\ \chi_{\mt
                                  {AB}}(\omega) &= \chi'_{\mt{AB}}(\omega) + ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15033,7 +15056,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.315 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
+l.316 	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &
                                                 = \chi'_{\mt{AB}}(\omega) + ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -15043,7 +15066,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.315 ...row\ \chi_{\mt{AB}}(\omega) &= \chi'_{\mt
+l.316 ...row\ \chi_{\mt{AB}}(\omega) &= \chi'_{\mt
                                                   {AB}}(\omega) + i \chi''_{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15052,7 +15075,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.315 ...= \chi'_{\mt{AB}}(\omega) + i \chi''_{\mt
+l.316 ...= \chi'_{\mt{AB}}(\omega) + i \chi''_{\mt
                                                   {AB}}(\omega)
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
