@@ -2,7 +2,7 @@
 \label{ch: calculation}
 
 In the last chapter the memory-matrix-formalism was introduced, which give us an exact formula to calculate correlation functions.
-Now this formalism is used to determine the static conductivity of the spin-fermion-model, introduced in chapter (\todo{make link to chapter spin-fermion-model}), pertubate umklapp-scattering.
+Now this formalism is used to determine the static conductivity of the spin-fermion-model, see chapter (\todo{make link to chapter spin-fermion-model}), pertubated by umklapp-scattering.
 
 
 \section{Infinite conductivity in systems with unbroken translation symmetry}
@@ -13,82 +13,97 @@ After Drude published his theory about the electrical transport in metals \cite{
 Because of Neother's theorem it is also well known that a unbroken symmetry always implies a conserved quantity.
 In the case of translation symmetry this quantity is the momentum.
 Phenomenas breaking the translation symmetry are for example impurity scattering, electron-electron scattering and umklapp scattering.
-Let us firstly assume the standard spin-fermion-model without a translation symmetry breaking pertubation.
-In chapter (\todo{link to chapter spin-fermion-model}) it is showed that in the used model the momentum is conserved but the currunt isn't conserved.
-This property is needed to calculate the static conductivity.
+Let us firstly investigate the standard spin-fermion-model without a translation symmetry breaking pertubation.
+In chapter \ref{ch: spin fermion model} it is showed that the unpertubated Hamiltonian conserves the momentum but dosen't conserves the current.
+This property is utilized to calculate the static conductivity.
 
-In general the static conductivity is given by taking the small frequencie limit of the conductivity and the conductivity itself is given by the current-current correlation function (J-J correlation function), which reslut directly from the linear response theory.
+In general the static conductivity is given by taking the small frequency limit of the conductivity and the conductivity itself is given by the current-current correlation function (J-J correlation function). This can be proven by assuming a oscillating electrical field and compute the expactaion value of the current via linear response theory, which is done in \cite{Chycholl2}.
 %
 \begin{align}
-	\sigma_{\mt{dc}} = \lim\limits_{z \to 0} \sigma(z) = \lim\limits_{z \to 0}\, \beta\,\mathcal{C}_{\mt{JJ}}(z)
+	\sigma_{\mt{dc}} = \lim\limits_{\omega \to 0} \sigma(\omega) = \lim\limits_{\omega \to 0}\, \beta\,\mathcal{C}_{\mt{JJ}}(\omega)
+	\label{eq: general static condictivity}
 \end{align}
 %
-The memory matrix formalism is used to calculate the J-J correlation function.
-Before we attend us to the calculation of the correlation function we have to think about the set of operators introduced by defining the projection operator.
-This set of operators has to be choosen for each calculation seperatly depending of the model and the quantity of interest.
-In our case we choose only a set of two operators namly the momentum and the current, because we want to figure out the influnece of the momentum on the current.
-That means the projector $\mathcal{P}$ projects into the two dimensional sub-Hilbertspace, spanned P and J.
-Lets go back to the correlation function, defined by equation (\todo{reference to correlation function}), where the sum over $k$ und $l$ is implied.
-Because our interest is focused on the J-J correlation function each index $j$ and $l$ is set to $J$.
+In chapter \ref{ch: memory matrix formalism} above the memory matrix formalism is introduced. 
+Our main goal was to establish equation \eqref{eq: algebraic equation for C} which is an algebraic matrix equation for the correlation function.
+Before the computation of $\mathcal{C}_{\mt{JJ}}(\omega)$ can be started we have to clarify the set of operators over which we sum up.
+The sums over $k$ and $l$ arise from the projection operator which means we have to discuss the Liouville subspace into the projection operator projects.
+In general to choice of these operators has to be done for each calculation seperatly depending on the working model and the quantity of interest.
+In this case the electrical conductivity and the induction of umklapp scattering at its is computated.
+As it is said above the electrical conductivity is proportional to the current operator, why this should be the first operator of our sought set of operators.
+If an electrical field is applied the electrons accelareate because of the potential difference which increase the momentum of the electrons.
+Thus the momentum is an inevitable quantity speaking about current and electrical conductivity this should be the second operator.
+Beside these two operators now more operators are necessary.
+
+The current and momentum have the same signature with respect to time reversal symmetry which simplifies the computation a lot.
+Considering a invariant Hamiltonian under time reversal symmetrie.
+Than in equation \eqref{eq: algebraic equation for C} $\Omega_{il}$ vanishes if both operators have the same signature under time reversal symmetry.
+This assertion is proven in section \ref{subsec: time reversal symmetry} in detail.
+In addition let do the investigation of $\Sigma_{il}$.
+The expactation value is generated with respect to the derivative of an operator at each side. \todo{bessere Formulierung finden}
+On the right hand side the sum over $k$ has to be carried out which produces $\toket{\dot{\mt{P}}}$ and $\toket{\dot{\mt{J}}}$.
+The first one is trivially zero, because the momentum is a conserved quantity.
+The latter has to be investigated under the action of the operator $\mt{Q}$, which projected out off the J-P-subspace.
+$\mt{Q}\toket{\dot{\mt{J}}}$ describes the coupling on all the outher degrees of freedom in the system which is zero in the considered system.\todo{besser formulieren}
+With all these simplifications equation \eqref{eq: algebraic equation for C} yields
 %
 \begin{align}
-	\mathcal{C}_{\mt{JJ}}(z) = 
-		\frac{i}{\beta} \bigg[ 
-			z \delta_{i\mt{J}} 
-			+ 
-			i \beta 
-			\obra{\dot{\mt{A}}_{i}} 
-			\hat{Q} \frac{i}{z - \hat{Q} \hat{L} \hat{Q}} \hat{Q} 
-			\oket{\dot{\mt{A}}_{k}}
-			\chi_{k\mt{J}}^{-1}
-		\bigg]^{-1}
-		\chi_{i\mt{J}},
+	\begin{pmatrix}
+	\mathcal{C}_{\mt{JJ}}(\omega) &  \mathcal{C}_{\mt{JP}}(\omega) \\
+	\mathcal{C}_{\mt{PJ}}(\omega) &  \mathcal{C}_{\mt{PP}}(\omega)
+	\end{pmatrix}
+	=
+	\frac{i}{\beta}
+	\begin{pmatrix}
+	\omega^{-1} & 0 \\
+	0 & \omega^{-1} 
+	\end{pmatrix}
+	\cdot
+	\begin{pmatrix}
+	\chi_{\mt{JJ}}(\omega) &  \chi_{\mt{JP}}(\omega) \\
+	\chi_{\mt{PJ}}(\omega) &  \chi_{\mt{PP}}(\omega)
+	\end{pmatrix}
 \end{align}
 %
-Now the sum over $k$ is performed explicitly where both contriubtions for J and P vanish.
-Let us look seperatly on J and P starting with the latter case.
-In our observed model the momentum is conserved and so the time deriviative of P is zero.
-No more words are needed to see that the expactation value doesn't contribute.
-In the case of J the time derivative doesn't vanish so the two dimensional sub-Hilbertspace and the action of J in this Hilbertspace has to be consider.
-In the investigated system the whole current lives in the J-P Hilbertspace to any time, so no single part of J is transported out of the Hilbertspace.
-The appering operator $\mathcal{Q}$ is the inverse of $\mathcal{P}$ and therefore projected out of the J-P Hilbertspace.
-Combining both statements it is clear that $\mathcal{Q}\toket{\dot{\mt{J}}} = 0$.
-The only resulting term choosing $i=J$ is
+where the current current correlation function is given by
 %
 \begin{align}
-	\mathcal{C}_{\mt{JJ}}(z) = \frac{i}{\beta} z^{-1} \chi_{\mt{JJ}}(\omega=0) = \frac{i}{z} \mathcal{C}_{\mt{JJ}}(t=0),
+	\mathcal{C}_{\mt{JJ}}(z) = \frac{i}{\beta} \omega^{-1} \chi_{\mt{JJ}}(\omega=0) = \frac{i}{\omega} \mathcal{C}_{\mt{JJ}}(t=0),
 	\label{eq: correlation function unpertubated system}
 \end{align}
 %
-where the correlation function at $t = 0$ is given by the scalar product $\tobraket{\mt{J}(0)}{\mt{J}(0)}$ defined in equation (\todo{reference to scalar product}).
-During the motivation of the previous chapter we explained that each observalbe can be split in one secular and one non-secular part.
-This is equatable with splitting a vector in a parallel and a perpendicular component, respectivily.
+using relation \eqref{eq: relation between C, Phi and chi}.
+The correlation function at $t = 0$ is given by the scalar product $\tobraket{\mt{J}(0)}{\mt{J}(0)}$, see equation \eqref{eq: correlation function Liouville space}.
+Nothing or nobody bars us from splitting the vector operator $toket{\mt{J}(0)}$ into to pieces one parallel and one vertical part, which corresponds to the secular and non-secular part of the observable, respectivily.
+Formaly this look like
 %
 \begin{align}
-	\oket{\mt{J}} = \oket{\mt{J}_{\mid\mid}} + \oket{\mt{J}_{\bot}}
+	\oket{\mt{J}} = \oket{\mt{J}_{\mid\mid}} + \oket{\mt{J}_{\bot}}.
 	\label{eq: splitting current}
 \end{align}
 %
-What does this mean in physical language?
-In the investigated system the current isn't conserved, but nevertheless a part of him is it.
-This part is represented by the secular part and has to be parallel with the momentum.
-Therfore the projection from J at P yield the parallel component of J.
-%Let us concentrate on the parallel component and bear in mind the perpendicular one for later.
-%In the language of the memory matrix formalism the secular part is the projection of P on J.
+In general every observable can be consist of a conserved and a non-conserved part, what shouldn't mean that both parts exist in every investigated system.
+Dissipative prozesses like fluctuations or initial transient processes for example are included in the non-conserved part.
+These non-secular effects are visible as noise in the experiement and the vertical part of the vector is indetified with these kinds of prozesses.
+Apart from this the secular conserved part of the observable is represented by the parallel part of $toket{\mt{J}}$.
+In Drude's theory of conductivity the current is proportional to the momentum in the way that $j = -\frac{en}{m}p$.
+In the spin fermion model, see \ref{ch: spin fermion model}, the momentum is conserved and the current isn't it, which means that the conductivity can't given by Drude's theory at all.
+Nevertheless because the momentum is conserved the conserved part of the current has to be in the direction of the momentum.
+In mathematical language the parallel part of the current $\toket{\mt{J}_{\mid\mid}}$ is the projection from $\toket{\mt{J}}$ on $\toket{\mt{P}}$.
 %
 \begin{align}
 	\oket{\mt{J}_{\mid\mid}} = \mathcal{P}\oket{\mt{J}} = \frac{\odyad{\mt{P}}{\mt{P}}}{\obraket{\mt{P}}{\mt{P}}} \oket{\mt{J}} = \frac{\chi_{\mt{PJ}}}{\chi_{\mt{PP}}} \oket{\mt{P}}
 	\label{eq: parallel current as projection}
 \end{align}
 %
-Firstly this give us the oppertunity to write the J-J correlation function into two parts one parrallel and one perpendicular correlation function using equation \eqref{eq: splitting current}.
-The mixed correlation functions are zero by construction because $\toket{\mt{J}_{\mid\mid}}$ and $\toket{\mt{J}_{\bot}}$ are orthogonal and therfore the scalar product of both is zero.
+This give us the oppertunity to write the J-J correlation function into two parts one parrallel and one perpendicular correlation function using equation \eqref{eq: splitting current}.
+The mixed correlation functions are zero by construction because $\toket{\mt{J}_{\mid\mid}}$ and $\toket{\mt{J}_{\bot}}$ are orthogonal and therfore the terms vanish.
 %
 \begin{align}
 	\mathcal{C}_{\mt{JJ}}(t=0) = \obraket{\mt{J}(0)}{\mt{J}(0)} = \obraket{\mt{J}_{\mid\mid}}{\mt{J}_{\mid\mid}} + \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}
 \end{align}
 %
-In a next step equation \eqref{eq: parallel current as projection} is used to write the parallel J-J correlation function in a expression depending on the P-P correlation function which is nothing else $\tobraket{\mt{P}}{\mt{P}}$.
+Equation \eqref{eq: parallel current as projection} is used to express the parallel J-J correlation function as a momentum-momentum correlation function (P-P correlation) formaly given by $\tobraket{\mt{P}}{\mt{P}}$.
 %
 \begin{align}
 	\mathcal{C}_{\mt{JJ}}(t=0) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert^{2}} \mathcal{C}_{\mt{PP}}(t=0) + \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}
@@ -97,66 +112,52 @@ In a next step equation \eqref{eq: parallel current as projection} is used to wr
 Now let us insert back this expression into equation \eqref{eq: correlation function unpertubated system} which give us multipling by $\beta$ the conductivity
 %
 \begin{align}
-	\sigma (z) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \frac{i}{z}  + \sigma_{\mt{reg}}(z)
+	\sigma (z) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \frac{i}{\omega}  + \sigma_{\mt{reg}}(\omega)
 \end{align}
 %
-where the regular conductivity $\sigma_{\mt{reg}}(z) = \frac{i \beta}{z} \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced.
-The physical meaning of $\sigma_{\mt{reg}}(z)$ is discussed in a view steps, if we have the final expression for the conductivity.
-In the whole calculation there wasn't made a condition on $z$, so the equation for the conductivity is valid for each $z$ in the complex plane.
-In reality the conductivity isn't depending on an complex frequency.
-Physical quantities are always real.
-Therefore we have to set $z = \omega + i \eta$, where $\omega \in \mathbb{R}$ and the limit $\eta \to 0$ is implied.
+where the regular conductivity $\sigma_{\mt{reg}}(z) = \frac{i \beta}{\omega} \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced.
+The physical meaning of $\sigma_{\mt{reg}}(\omega)$ is directly connected to the vertical component of $\toket{\mt{J}}$.
+Thus the regular conductivity includes fluctuations and other effects influenced by random forces called noise.
+Figure \todo{referenz zu bild mit delta peak und rauschen} shows this continuously over all frequencies never disappearing background.
+
+In the whole calculation never a condiction on $\omega$ is made, so the equation for the conductivity is valid for each $\omega$ in the complex plane.
+In reality the conductivity isn't depending on a complex frequency, because physical quantities are always real.
+Therefore we have to set $\omega = \omega + i \eta$, where now $\omega \in \mathbb{R}$ and the limit $\eta \to 0$ is implied.
 Using $\frac{1}{\omega + i\eta} = \mathcal{P}\frac{1}{\omega} - i\pi\delta(\omega)$ the conductivity is given by
 %
 \begin{align}
-	\sigma(\omega) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \bigg( \mathcal{P} \frac{i}{\omega} + \pi \delta(\omega) \bigg) + \sigma_{\mt{reg}}(\omega)
+	\sigma(\omega) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \bigg( \mathcal{PV} \frac{i}{\omega} + \pi \delta(\omega) \bigg) + \sigma_{\mt{reg}}(\omega)
 	\label{eq: conductivity unpertubed system}
 \end{align}
 %
-where in this special case $\mathcal{P}$ sympolizied that the prinzipal value is taken.
+where $\mathcal{PV}$ sympolizied that the prinzipal value is taken.
 Equation \eqref{eq: conductivity unpertubed system} yield us exactly the expected result.
 For small frequencies the main contribution is generated by the $\delta$-distribution, so the conductivity becomes infinity.
 This isn't really surprising because the translation symmetry isn't broken in the investigated system.
-If voltage is applied on a system like ours the electrons accelerate infinite long.
-There is nothing they can scatter on and loss some momentum.
+If voltage is applied on a system with unbroken translational symmetry the electrons accelerate infinite long.
+There is nothing they can scatter on and loss momentum.
 The electrons accelerate more and more and this results in an infinite conductivity.
 Only in a system with broken translation symmetry it's possible for the electrons to loss some momentum by scattering with the lattice for example.
-This results in a finite conductivity, so the $\delta$-peak becomes smaller.
-The factor in front of the $\delta$-distribution is the so called Drude-wight.
-
-Let us now talk about the regular part of the conductivity.
-We don't want here to calculate some explicite expression, a small physical discussion about this part should be enough at this point.
-In every physical system there are some kind of effects which are always there and it's nearly impossible to suppress them.
-These effects are noise, fluctuations and other effects influenced by random forces.
-All of them are summarized in the regular conductivity.
+This results in a finite conductivity, thus the $\delta$-peak becomes smaller.
+The factor in front of the $\delta$-distribution is the so called Drude weight.
+The Drude peak and the effect of breaking translation symmetry is visualizied in figure \todo{link to figure} too.
 %
 %
-\section{Finite conductivity because of breaking the translation symmetry by umklapp scattering}
+\section{Finite conductivity because of breaking the translation symmetry via umklapp scattering}
+\label{sec: finite conductivity because of breaking the translation symmetry via umklapp scattering}
 %
 %
-After we saw that the conductivity is infinite in a system with conserved momentum, we consider now a system with broken translation symmetrie resulting in unconserved momentum.
-The regarded translation symmetry breaking pertubation considers umklapp scattering introduced by the Hamiltonian
-%
-\begin{align}
-	H_{\mt{U}} = \sum\limits_{\vb{G}} \mt{J}_{\vb{G}} \int\limits_{\mt{BZ}} \frac{\dd{\vb{k}}}{(2\pi)^{2}}\, \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k} + \vb{G},\tau)
-\end{align}
-% 
-in chapter (\todo{link to umklapp scattering}).
-The electrical conductivity is like in the above section directly given by the current-current correlation function multiplied with $\beta$.
-In the previous chapter a general valid and exact expression for correlation functions was established.
-%
-\begin{align}
-	\mathcal{C}_{lj}(z) = i \bigg[ z\delta_{il} - \Omega_{il} + i\Sigma_{il}(z) \bigg]^ {-1} \mathcal{C}_{ij}(t=0)
-\end{align}
-%
-with $\Omega_{il}$ and $\Sigma_{il}(z)$ given by equation (\todo{link to equation}).
-Setting $l=j=J$ yield us the needed J-J correlation function.
-Now we have to look the squared brackets.
-In the definition of the functions $\Omega_{il}$ and $\Sigma_{il}(z)$ a sum over the set of operators defined by the 
+The conservation of momentum connected with an unbroken translation symmetry yields a infinite electrical conductivity, which is computated in the section above.
+In the next calculation a system with broken translation symmetry is considered.
+The assumed symmetry breaking pertubation is umklapp scattering, where the Hamiltonian is given by equation (\todo{link zu umklapp hamiltonian}).
+In \dots\todo{link zum abschnitt in dem gezeigt wird das P nicht mehr erhalten ist} it is shown that this pertubation is the reason for an unconserved momentum.
+Thus the above disscusion about the Drude weight and conductivity let us expect that the conductivity is lessened to a finite value.
+The static electrical conductivity is given by equation \eqref{eq: general static condictivity} in general.
 
 
 
-The equilibrium-Hamiltonian and the umklapp-Hamiltonian are both symmetrical under time reversal and the operators 
+
+
 
 
 

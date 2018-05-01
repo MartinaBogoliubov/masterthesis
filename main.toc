@@ -30,15 +30,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline 1. case:}{20}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{20}{section*.13}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Scalar Product}{21}{subsection.3.3.2}
+\contentsline {paragraph}{\nonumberline 2. case:}{21}{section*.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Calculation}{23}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{23}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry by umklapp scattering}{25}{section.4.2}
+\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry via umklapp scattering}{26}{section.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}
 \defcounter {refsection}{0}\relax 

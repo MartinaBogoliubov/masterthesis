@@ -1,7 +1,7 @@
 %
 %
 \chapter{Memory-Matrix-Formalsim}
-\label{ch: memory-matrix-formalism}
+\label{ch: memory matrix formalism}
 %
 %
 %
@@ -507,7 +507,7 @@ The defined correlation function is proportional to the Kubo relaxation function
 For $t=0$ the correlation function is also proportional to the Fourier transformated susebtibility
 %
 \begin{align}
-	\mathcal{C}_{ij}(t = 0) = \frac{1}{\beta} \Phi_{ij}(t = 0) = \chi_{ij}(\omega = 0),
+	\mathcal{C}_{ij}(t = 0) = \frac{1}{\beta} \Phi_{ij}(t = 0) = \frac{1}{\beta} \chi_{ij}(\omega = 0),
 	\label{eq: relation between C, Phi and chi}
 \end{align}
 %
@@ -577,9 +577,9 @@ Multipling with $\omega$ and inserting the rearrangement of the fraction yields 
 	\notag \\
 	\Leftrightarrow\ &\omega \mathcal{C}_{ij}(\omega) = i \mathcal{C}_{ij}(0) + \sum\limits_{k,l} \obra{\mt{A}_{i}} 1 + \frac{\mt{LQ}}{\omega - \mt{LQ}} \mt{L} \oket{\mt{C}_{k}} \mathcal{C}_{kl}^{-1}(0) \mathcal{C}_{lj}(\omega)
 	\notag \\
-	\Leftrightarrow\ &\omega \sum\limits_{l} \delta_{il} \mathcal{C}_{lj}(\omega) = i \beta \chi_{ij}(0) + \sum\limits_{l} \Big[\Omega_{il} -i \Sigma_{il}(\omega)\Big]  \mathcal{C}_{lj}(\omega)
+	\Leftrightarrow\ &\omega \sum\limits_{l} \delta_{il} \mathcal{C}_{lj}(\omega) = i \frac{1}{\beta} \chi_{ij}(0) + \sum\limits_{l} \Big[\Omega_{il} -i \Sigma_{il}(\omega)\Big]  \mathcal{C}_{lj}(\omega)
 	\notag \\
-	\Leftrightarrow\ &\sum\limits_{l} \Big[\omega \delta_{il} - \Omega_{il} + i \Sigma_{il}(\omega)\Big] \mathcal{C}_{lj}(\omega) = i \beta \chi_{ij}(0)
+	\Leftrightarrow\ &\sum\limits_{l} \Big[\omega \delta_{il} - \Omega_{il} + i \Sigma_{il}(\omega)\Big] \mathcal{C}_{lj}(\omega) = i \frac{1}{\beta} \chi_{ij}(0)
 	\label{eq: algebraic equation for C}
 \end{align}
 %
@@ -601,7 +601,7 @@ It's useful for a our later computation to write the even defined abbreviations 
 For $\Omega_{il}$ not much work is to do, because we use only equation \eqref{eq: Heisenberg equation of motion in Liouville space}, so that
 %
 \begin{align}
-	\Omega_{il} = i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} \chi_{kl}^{-1}(0).
+	\Omega_{il} = i \beta \sum\limits_{k} \obraket{\dot{\mt{A}}_{i}}{\mt{C}_{k}} \chi_{kl}^{-1}(0).
 	\label{eq: Omega}
 \end{align}
 %
@@ -640,7 +640,7 @@ Then $\mt{Q} \oket{\dot{\mt{A}}}$ characterizes the coupling to the bath and it'
 %
 %
 \subsection{Time Reversal Symmetry}
-\label{eq: time reversal symmetry}
+\label{subsec: time reversal symmetry}
 %
 %
 Even above the assertion was postulated that the quantity $\Omega_{il}$ vanishs if the considered Hailtonian is symmetric and if the operators $\dot{\mt{A}}$ and $\mt{A}$ have different signature under time reversal symmetry.
@@ -771,8 +771,8 @@ This means that $i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}}$ is always zero 
 This is exactly the assertion which was to prove.
 %
 %
-\subsection{Scalar Product}
-\label{eq: scalar product}
+%\subsection{Scalar Product}
+%\label{eq: scalar product}
 %
 %
 
