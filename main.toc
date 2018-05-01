@@ -38,10 +38,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry via umklapp scattering}{26}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{29}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{29}{appendix.A}
+\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{31}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{31}{appendix.B}
+\contentsline {chapter}{\numberline {B}Analysis of Matsubara-sums}{33}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Simple poles}{31}{section.B.1}
+\contentsline {section}{\numberline {B.1}Simple poles}{33}{section.B.1}
