@@ -409,7 +409,7 @@ Let's get started with the second one because it's easily shown transforming the
 \begin{align}
 	\obraket{\mt{A}_{i}(t)}{\mt{B}(t')} &= \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \frac{1}{Z} \Tr{\rho \mt{A}_{i}^{\dag}(t) \Big[c_{1} \mt{A}_{j}(t'+i\lambda\hbar) + c_{2} \mt{A}_{k}(t'+i\lambda\hbar)\Big]}
 	\notag \\
-	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{B}(t')} &= c_{1} \obraket{\mt{A}_{i}^{\dag}(t)}{\mt{A}_{j}(t')} + c_{2} \obraket{\mt{A}_{i}^{\dag}(t)}{\mt{A}_{k}(t')}
+	\Leftrightarrow\ \obraket{\mt{A}_{i}(t)}{\mt{B}(t')} &= c_{1} \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} + c_{2} \obraket{\mt{A}_{i}(t)}{\mt{A}_{k}(t')}
 \end{align}
 %
 The first and third condition can be shown by transforming the scalar product in the spectral representation.
@@ -497,7 +497,7 @@ Naturally the projection operator is fullfilled the two properties $\mt{P}^{2} =
 After the deviation of the time evolution of an operator and the projection operator in Liouville space the correlation function can be defined as
 %
 \begin{align}
-	\mathcal{C}_{ij}(t) = \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(0)} \overset{\eqref{eq: scalar product Liouville space}}{=} \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}(t) \mt{A}_{j}(i\lambda\hbar)}
+	\mathcal{C}_{ij}(t) = \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(0)} \overset{\eqref{eq: scalar product Liouville space}}{=} \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(i\lambda\hbar)}
 	\label{eq: correlation function Liouville space}
 \end{align}
 %
