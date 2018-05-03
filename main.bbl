@@ -137,6 +137,29 @@
       \field{type}{dissertation}
       \field{year}{2007}
     \endentry
+    \entry{Bruus&Flensberg}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=a31baedb6f1a266da6533a6842618b2d}{Bruus}{B\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=c4db376c08b023e0a8897cc1fa4b8ebd}{Flensberg}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=a31baedb6f1a266da6533a6842618b2d}{Bruus}{B\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=c4db376c08b023e0a8897cc1fa4b8ebd}{Flensberg}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Univ. Press}%
+      }
+      \strng{namehash}{34eef7d628da507ddc594ea73d2a0715}
+      \strng{fullhash}{34eef7d628da507ddc594ea73d2a0715}
+      \field{labelalpha}{BF10}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Many-body quantum theory in condensed matter physics: an introduction}
+      \field{edition}{Repr.}
+      \field{isbn}{978-0-19-856633-5}
+      \field{title}{Many-body quantum theory in condensed matter physics: an introduction}
+      \field{year}{2010}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

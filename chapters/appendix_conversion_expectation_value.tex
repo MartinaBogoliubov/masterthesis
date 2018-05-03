@@ -1,0 +1,28 @@
+%
+%
+\chapter{Conversion of $\obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}}$}
+\label{app: conversion expval}
+%
+%
+In this appendix the short conversion of the expectation value $\obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}}$ is done.
+Therefore only realtions are used which we find in chapter \ref{ch: memory matrix formalism}.
+Firstly the expectation value is writen as the correlation function in the frequency space using equation \eqref{eq: correlation function frequency space}.
+%
+\begin{align}
+	\obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}} &= -i \mathcal{C}_{\dot{\mt{P}} \dot{\mt{P}}}(\omega)
+	\notag \\
+	\overset{\eqref{appeq: Laplace transformation imaginary axis}}{\Leftrightarrow}\ \obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}} &= -i \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \mathcal{C}_{\dot{\mt{P}} \dot{\mt{P}}}(t)
+	\notag \\
+	\overset{\eqref{eq: correlation function Liouville space}}{\Leftrightarrow}\ \obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}} &= -\frac{i}{\beta} \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\dot{\mt{P}}^{\dag}(t) \dot{\mt{P}}(0)}
+	\notag \\
+	\overset{\eqref{eq: Kubo relaxation function 2.0}}{\Leftrightarrow}\ \obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}} &= -\frac{i}{\beta} \Phi_{\dot{\mt{P}} \dot{\mt{P}}}(\omega)
+	\notag \\
+	\overset{\eqref{eq: relation 2 between Phi and chi}}{\Leftrightarrow}\ \obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}} &= -\frac{\omega^{-1}}{\beta} \bigg[\chi_{\dot{\mt{P}} \dot{\mt{P}}}(\omega) - \underbrace{\chi_{\dot{\mt{P}} \dot{\mt{P}}}(\omega=0)}_{=0}\bigg]
+	\notag \\
+	\Leftrightarrow\ \obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}} &= -\frac{\omega^{-1}}{\beta} \int\limits_{-\infty}^{\infty} \dd{t} e^{i\omega t} \chi_{\dot{\mt{P}} \dot{\mt{P}}}(t)
+	\notag \\
+	\overset{\eqref{eq: dynamical susceptibilty}}{\Leftrightarrow}\ \obra{\dot{\mt{P}}} \big(\omega - \mt{L}_{0}\big)^{-1} \oket{\dot{\mt{P}}} &= -\frac{i \omega^{-1}}{\hbar\beta} \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{0}
+\end{align}
+% 
+In line 5 the susceptibility at frequency $\omega = 0$ is set to zero, because at $\omega = 0$ the susceptibility corresponds to the Kubo relaxation function at $t=0$.
+This function is zero because $\dot{\mt{P}} = 0$  at $t=0$.

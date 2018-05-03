@@ -247,7 +247,7 @@ Therefore the invers of the memory matrix has to be multiplied from the left han
 The P-P correlation function is given by
 %
 \begin{align}
-	\mathcal{C}_{\mt{PP}}(\omega) = \frac{i \Sigma_{\mt{PJ}}(\omega)  \chi_{\mt{JP}}(0)}{\omega\big(\omega - i\Sigma_{\mt{PP}}(\omega)\big)} + \frac{\chi_{\mt{PP}}(0)}{\omega - i\Sigma_{\mt{PP}}(\omega)} \approx \frac{i \chi_{\mt{PP}}(0)}{\Sigma_{\mt{PP}}(\omega)}
+	\mathcal{C}_{\mt{PP}}(\omega) = \frac{i}{\beta} \cdot \frac{i \Sigma_{\mt{PJ}}(\omega)  \chi_{\mt{JP}}(0)}{\omega\big(\omega - i\Sigma_{\mt{PP}}(\omega)\big)} + \frac{i}{\beta} \cdot \frac{\chi_{\mt{PP}}(0)}{\omega - i\Sigma_{\mt{PP}}(\omega)} \approx \frac{i}{\beta} \cdot \frac{i \chi_{\mt{PP}}(0)}{\Sigma_{\mt{PP}}(\omega)}
 \end{align}
 %
 where in the last step the limit of small frequencies is taken.
@@ -257,24 +257,64 @@ Thus in the second term $\omega$ is neglectable against $\Sigma_{\mt{PP}}(\omega
 In summary the static conductivity is given by
 %
 \begin{align}
-	\sigma_{\mt{dc}} = \lim\limits_{\omega \to 0} \beta \mathcal{C}_{\mt{JJ}}(\omega) = \lim\limits_{\omega \to 0} \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\chi_{\mt{PP}}} \frac{i \beta}{\Sigma_{\mt{PP}}(\omega)}
+	\sigma_{\mt{dc}} = \lim\limits_{\omega \to 0} \beta \mathcal{C}_{\mt{JJ}}(\omega) = \frac{i}{\beta} \lim\limits_{\omega \to 0} \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\chi_{\mt{PP}}} \frac{i \beta}{\Sigma_{\mt{PP}}(\omega)}
 \end{align}
 %
 The memory function $\Sigma_{\mt{PP}}(\omega)$ is definied in equation \eqref{eq: Sigma(z)}.
 Because of the considered Hamiltonian only the term included $\dot{P}$ yields a non-zero contribution.
-Further the operator $\tm{QLQ}$ can be approximated by $\mt{L}_{0}$ the Liouville operator of the unpertubated system. \todo{Warum darf QLQ mit $L_{0}$ approximiert werden?}
+Further the operator $\mt{QLQ}$ can be approximated by $\mt{L}_{0}$ the Liouville operator of the unpertubated system. \todo{Warum darf QLQ mit $L_{0}$ approximiert werden?}
 The final expression for the dc-conductivity is given by
 %
 \begin{align}
-	\sigma_{\mt{dc}} \approx \lim\limits_{\omega \to 0} \vert\chi_{\mt{PJ}}\vert^{2} \obra{\dot{\mt{P}}} \frac{1}{\omega - \mt{L_{0}}} \oket{\dot{\mt{P}}}^{-1}
+	\sigma_{\mt{dc}} \approx \frac{i}{\beta} \lim\limits_{\omega \to 0} \vert\chi_{\mt{PJ}}\vert^{2} \obra{\dot{\mt{P}}} \frac{1}{\omega - \mt{L_{0}}} \oket{\dot{\mt{P}}}^{-1}
 \end{align}
 %
-
-
-
-
-
-
+In a short conversion the expectation value can be expressed as a time integral over the $\dot{\mt{P}}$-$\dot{\mt{P}}$ susceptibility.
+This expression is more usefull for explicite computations, because its allow us to use the Matsubara formalism.
+For the detailed conversion see appendix \ref{app: conversion expval}.
+%
+\begin{align}
+	\sigma_{\mt{dc}} \approx -\hbar \lim\limits_{\omega \to 0} \frac{\omega \vert \chi_{\mt{JP}}(\omega = 0) \vert^{2}}{\int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{0}}
+\end{align}
+%
+This formula of the static conductivity is the final expression which is used in the compuation below.
+The calculation is splitted into two parts.
+At first the computation of the denominator is perfermed, which gives us the temperature dependence of the conductivity.
+Further the J-P susceptibility has to be calculated.
+In first order form this quantity no temperature dependence is expected, but we have to convience us from this.
+%
+%
+\subsection{Temperature dependence of the dc-conductivity}
+\label{subsec: temperature dependence of the dc-conductivity}
+%
+%
+Our starting point is the integral in the denominator of the last equation above.
+The index $0$ at the expectation value means that it has to be computed with respect to the Hamiltonian $\mt{H}_{1} = \mt{H}_{\Psi} + \mt{H}_{\Phi} + \mt{H}_{\Psi\Phi}$.
+The considered umklapp scattering is only entered in the time derivative of the momentum.
+Commonly the sort of this calculation is done in the Matsubara time $\tau = it$, see e.\,g. \cite{Bruus&Flensberg} for an introduction or a review.
+%
+\begin{align}
+	\mt{I}(z) :=  -\int\limits_{0}^{\infty} \dd{t} e^{iz t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{\mt{H}_{1}} = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\comm{\dot{\mt{P}}(\tau)}{\dot{\mt{P}}(0)}}_{\mt{H}_{1}}
+\end{align}
+%
+To symbolisied clearly that the frequency is an arbitrary complex number the variable $z$ is used instead $\omega$ at this point.
+Like it is done every time in pertubation theory the operators are transformed into the Matsubara interaction representation.
+The transformation's aim is that the expectation value is only taken with respect to the free Hamiltonians $\mt{H}_{0} = \mt{H}_{\Psi} + \mt{H}_{\Phi}$ and the interation $\mt{H}_{\Psi\Phi}$ is only entered in the time evolution operator $\mt{U}(\beta,0)$.
+A series expansion of the time evolution operator up to the first non-disappearing order yields
+%
+\begin{align}
+	\mt{I}(z) = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\comm{\dot{\mt{P}}(\tau)}{\dot{\mt{P}}(0)}}_{\mt{H}_{0}}
+\end{align}
+%
+In chapter \ref{ch: spin fermion model} umklapp scattering is introduced as a pertubation of the spin fermion system described by $\mt{H}_{1}$.
+On the basis of this pertubation the momentum isn't anymore conserved, thus the time derivative of the momentum doesn't vanish.
+The time derivative of an operator is given via the Heisenberg equation of motion, which yields for the momentum
+%
+\begin{align}
+	\dot{\mt{P}}_{x} = \frac{i}{\hbar} \sum\limits_{\vb{K}} \mt{J}_{\vb{K}} \int_{\vb{k}} K_{x} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k} - \vb{K},\tau)
+\end{align}
+%
+where the direction of the momentum is set to the $x$-direction without loss of generality.
 
 
 

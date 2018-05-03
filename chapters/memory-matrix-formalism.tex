@@ -142,7 +142,7 @@ We see that the deviation of the observable A caused by the pertubation is given
 %
 %
 After a general equation for the deviation of an observable A from the equilibrium value was established, we want to investigate a certain kind of pertubation.
-Let us assume $F(t) = \Theta(-t) \cdot F \cdot e^{-s\tau}$ the time evolution function of a pertubation, which is switched on adiabatically at $t=-\infty$ and switched off at $t=0$.
+Let us assume $F(t) = \Theta(-t) \cdot F \cdot e^{-s\tau}$ the time evolution function of a pertubation, which is switched on adiabatically at $t=-\infty$ and switched off at $t$.
 Inserting this in equation \eqref{eq: Kubo formula} and substituting $\tau = t-t'$ yield $\delta\expval{\mt{A}(t)} = \Phi_{AB}(t) \cdot F e^{st}$ with the Kubo relaxation function
 %
 \begin{align}
@@ -524,6 +524,7 @@ Multipling the last equation with $e^{i\omega t}$ and intgrate from zero to infi
 %
 \begin{align}
 	\mathcal{C}_{ij}(\omega) = \obra{\mt{A}_{i}} \int\limits_{0}^{\infty} \dd{t} e^{i(\omega-\mt{L})t} \oket{\mt{A}_{j}} = \obra{\mt{A}_{i}} \frac{i}{\omega - \mt{L}} \oket{\mt{A}_{j}},
+	\label{eq: correlation function frequency space}
 \end{align}
 %
 where for reasons of clarity and comprehensibility from now on the argument $t=0$ isn't anymore written at the basis vectors.
