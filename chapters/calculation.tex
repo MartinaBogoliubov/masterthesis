@@ -190,12 +190,18 @@ This means the complete unconserved part of the momentum is coupled to the cryst
 This is the reason why $\mt{Q} \toket{\dot{\mt{P}}} = \toket{\dot{\mt{P}}}$.
 Further the pertubation doesn't change the quantity $\toket{\dot{\mt{J}}}$.
 The unconserved current yields from the interaction between the electrons lives on differant Fermi spaces coupeld via spin density waves.
-This process is included by construction in the J-P subspace and therefore $\mt{Q} \toket{\dot{\mt{J}}} = 0$
+This process is included in the J-P subspace and therefore $\mt{Q} \toket{\dot{\mt{J}}} = 0$.
+This signifies for the memory function that $\Sigma_{il}$ doesn't vanish if $i=\mt{P}$ and vanish if $i=\mt{J}$.
 
-In summary umklapp scattering yields a contribution to the memory function $\Sigma_{il}(\omega)$ and is therefore a correction of the correlation function instead of the unpertubated case where the memory function is zero.
-Equation \eqref{eq: algebraic equation for C} yields 4 equations for the J-P subspace.
+In summary umklapp scattering yields a non-zero contribution to the memory function $\Sigma_{il}(\omega)$ and is therefore a correction of the correlation function instead of the unpertubated case where the memory function is zero.
+Equation \eqref{eq: algebraic equation for C} yields 4 equations in the J-P subspace, which can be writen as a matrix equation.
 %
 \begin{align}
+	\begin{pmatrix}
+	\omega & 0 \\
+	-i\Sigma_{\mt{PJ}}(\omega) & \omega - i\Sigma_{\mt{PP}}(\omega)
+	\end{pmatrix}
+	\cdot
 	\begin{pmatrix}
 	\mathcal{C}_{\mt{JJ}}(\omega) &  \mathcal{C}_{\mt{JP}}(\omega) \\
 	\mathcal{C}_{\mt{PJ}}(\omega) &  \mathcal{C}_{\mt{PP}}(\omega)
@@ -203,15 +209,9 @@ Equation \eqref{eq: algebraic equation for C} yields 4 equations for the J-P sub
 	=
 	\frac{i}{\beta}
 	\begin{pmatrix}
-	\frac{1}{\omega} & 0 \\
-	0 & \frac{1}{\omega + i\Sigma_{\mt{PJ}}(\omega) + i\Sigma_{\mt{PP}}(\omega)}
-	\end{pmatrix}
-	\cdot
-	\begin{pmatrix}
 	\chi_{\mt{JJ}}(0) &  \chi_{\mt{JP}}(0) \\
 	\chi_{\mt{PJ}}(0) &  \chi_{\mt{PP}}(0)
 	\end{pmatrix}
-	.
 	\label{eq: matric equation correlation function unconserved momentum}
 \end{align}
 %
@@ -228,32 +228,47 @@ The electrical conductivity is given by the J-J correlation function, which has 
 %
 in frequenzy space.
 Equally to the case of conserved momentum nothing bars us to split the current into one parallel and one vertical part, where the parallel part is pointed in the direction of the secular component of J.
-The appearing mixed correlation functions vanishes because $\toket{\mt{J}_{\mid\mid}}$ and $\toket{\mt{J}_{\bot}}$ are orthogonal by construction.
-The correlation function of the vertical current component is labeled with $\mathcal{C}_{reg}(\omega)$ because this part of the current are responsible for the regular part of the conductivity, see section above.
-The parallel component of the current is given by the projection of J onto P, see equation \eqref{eq: parallel current as projection}.
-Thus the J-J correlation function is given by
+The appearing mixed correlation functions vanishes because $\toket{\mt{J}_{\mid\mid}}$ and $\toket{\mt{J}_{\bot}}$ are orthogonal.
+How we have seen in the previous section the background or noise originated by fluctuation and other random processes is represented by the correlation function of the vertical component.
+This term isn't necessary to write it every time down.
+A theoretical phyisicist would say that the origin is always taken arbitrary.
+A experimental phyisicist would say that he calibrates the measurement.
+For a discussion in more detail the work of Jung \cite{Jung} is suggested.
+However the only important part for us is the parallel component of the correlation function.
+On the other hand the parallel componend of the correlation function is given by the projection of J onto P, see equation \eqref{eq: parallel current as projection}.
+Thus the J-J correlation function is rewriten in a momentum -momentum correlation function mutiplied with a fraction of some susceptibilities.
 %
 \begin{align}
-	\mathcal{C}_{\mt{JJ}}(\omega) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert^{2}} \mathcal{C}_{\mt{PP}}(\omega) + \mathcal{C}_{\mt{reg}}(\omega)
+	\mathcal{C}_{\mt{JJ}}(\omega) = \obra{\mt{J}_{\mid\mid}} \frac{i}{\omega - \mt{L}} \oket{\mt{J}_{\mid\mid}} = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert^{2}} \mathcal{C}_{\mt{PP}}(\omega)
 \end{align}
 %
-Equation \eqref{eq: matric equation correlation function unconserved momentum} yields  an expression for the P-P correlation function which is directly readed out as 
+The P-P correlation function can be readed out of equation \eqref{eq: matric equation correlation function unconserved momentum}.
+Therefore the invers of the memory matrix has to be multiplied from the left hand side.
+The P-P correlation function is given by
 %
 \begin{align}
-	\mathcal{C}_{\mt{PP}}(\omega) = \chi_{\mt{PP}} \Big[\omega + i\Sigma_{\mt{PJ}}(\omega) + i\Sigma_{\mt{PP}}(\omega)\Big]^{-1},
+	\mathcal{C}_{\mt{PP}}(\omega) = \frac{i \Sigma_{\mt{PJ}}(\omega)  \chi_{\mt{JP}}(0)}{\omega\big(\omega - i\Sigma_{\mt{PP}}(\omega)\big)} + \frac{\chi_{\mt{PP}}(0)}{\omega - i\Sigma_{\mt{PP}}(\omega)} \approx \frac{i \chi_{\mt{PP}}(0)}{\Sigma_{\mt{PP}}(\omega)}
 \end{align}
 %
-where $i\Sigma_{\mt{P}l}(\omega) = -\beta \sum_{l} \tobra{\dot{\mt{P}}}(\omega - \mt{QLQ})^{-1} \toket{\dot{\mt{P}}} \chi_{\mt{P}l}^{-1}$ with $l \in \{\mt{J}, \mt{P}\}$.
-The expectation value can be simplified.
-Therefore let us investigate the operator $\mt{QLQ}$, which describes the internal dynamics of all other degrees of freedom not included in the J-P subspace.
-In our case this is approximativly the unpertubated Liouville operator. \todo{warum darf QLQ = L gesetzt werden?}
-Then the J-J correlation function is given by
+where in the last step the limit of small frequencies is taken.
+Then on the one hand the first term is neglectable compared to the second term. \todo{Warum ist der erste Term vernachl\"assigbar. Begr\"undung?}
+On the other hand is $\omega \ll \Sigma_{\mt{PP}}(\omega)$.
+Thus in the second term $\omega$ is neglectable against $\Sigma_{\mt{PP}}(\omega)$.
+In summary the static conductivity is given by
 %
 \begin{align}
-	\mathcal{C}_{\mt{JJ}}(\omega) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\chi_{\mt{PP}}} \Big[\omega +i\beta \tobra{\dot{\mt{P}}} \frac{i}{\omega - \mt{L})} \toket{\dot{\mt{P}}} \Big(\chi_{\mt{PJ}}^{-1} + \chi_{\mt{PP}}^{-1}\Big)\Big]^{-1} + \mathcal{C}_{\mt{reg}}(\omega)
+	\sigma_{\mt{dc}} = \lim\limits_{\omega \to 0} \beta \mathcal{C}_{\mt{JJ}}(\omega) = \lim\limits_{\omega \to 0} \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\chi_{\mt{PP}}} \frac{i \beta}{\Sigma_{\mt{PP}}(\omega)}
 \end{align}
 %
-
+The memory function $\Sigma_{\mt{PP}}(\omega)$ is definied in equation \eqref{eq: Sigma(z)}.
+Because of the considered Hamiltonian only the term included $\dot{P}$ yields a non-zero contribution.
+Further the operator $\tm{QLQ}$ can be approximated by $\mt{L}_{0}$ the Liouville operator of the unpertubated system. \todo{Warum darf QLQ mit $L_{0}$ approximiert werden?}
+The final expression for the dc-conductivity is given by
+%
+\begin{align}
+	\sigma_{\mt{dc}} \approx \lim\limits_{\omega \to 0} \vert\chi_{\mt{PJ}}\vert^{2} \obra{\dot{\mt{P}}} \frac{1}{\omega - \mt{L_{0}}} \oket{\dot{\mt{P}}}^{-1}
+\end{align}
+%
 
 
 

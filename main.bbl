@@ -117,6 +117,26 @@
       \field{title}{Theoretische Festk\"{o}rperphysik Band 2 : Anwendungen: Nichtgleichgewicht, Verhalten in \"{a}u{\ss}eren Feldern, kollektive Ph\"{a}nomene}
       \field{year}{2017}
     \endentry
+    \entry{Jung}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{hash=e6d88a5667a1c9c7e5c5cd83e5e8910f}{Jung}{J\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e6d88a5667a1c9c7e5c5cd83e5e8910f}{Jung}{J\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Universit\"{a}t zu K\"{o}n}%
+      }
+      \strng{namehash}{e6d88a5667a1c9c7e5c5cd83e5e8910f}
+      \strng{fullhash}{e6d88a5667a1c9c7e5c5cd83e5e8910f}
+      \field{labelalpha}{Jun07}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Transport and Approximate Conservation Laws in Low Dimensional Systems}
+      \field{title}{Transport and Approximate Conservation Laws in Low Dimensional Systems}
+      \field{type}{dissertation}
+      \field{year}{2007}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput
