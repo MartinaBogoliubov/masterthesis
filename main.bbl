@@ -19,6 +19,27 @@
 
 \refsection{0}
   \sortlist{none}{none}
+    \entry{Elk&Gasser}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=07b20eb10d098b1c89438f0d3b0d22ed}{Gasser}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=07b20eb10d098b1c89438f0d3b0d22ed}{Gasser}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Akademie-Verl.}%
+      }
+      \strng{namehash}{8c0bea4fb94c7c1fb42aa6ceedb2bd5c}
+      \strng{fullhash}{8c0bea4fb94c7c1fb42aa6ceedb2bd5c}
+      \field{labelalpha}{EG79}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Die Methode der Greenschen Funktionen in der Festk\"{o}rperphysik}
+      \field{title}{Die Methode der Greenschen Funktionen in der Festk\"{o}rperphysik}
+      \field{year}{1979}
+    \endentry
     \entry{Schwabl}{book}{}
       \name{labelname}{1}{}{%
         {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%

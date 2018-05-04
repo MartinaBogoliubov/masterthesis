@@ -1,0 +1,239 @@
+%
+%
+%
+\chapter{Computation of the spin density wave propagator}
+\label{ch: propagator}
+%
+%
+%
+\todo{Einleitung zum Kapitel schreiben}
+%
+%
+\section{The free propagator of spin density waves}
+\label{sec: free propagator}
+%
+%
+The dynamic of spin density waves without interaction is described by the Hamiltonian $\mt{H}_{\Phi}$, introduced in chapter \ref{ch: spin fermion model}.
+The equation of motion of the Green's functions are one naturally, simple and elegant method to compute a free propagtor of an aribtrary typ of particle.
+The equation of motion in frequency spce is the first item of an infinte algebraic equation chain.
+Mostly the initial Green function appears lately in the second item of the chain which is resulting in an solvable algebraic equtaion system.
+For a detailed deviation the book of Elk and Gasser \cite{Elk&Gasser} is recommended.
+In the case of the free spin density waves the first item of the chain is
+%
+\begin{align}
+	\omega \green{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega} &= 
+		\expval{\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}}
+		\notag \\ &+
+		\green{\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}}}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega},
+	\label{eq: first item of equation chain}
+\end{align}
+%
+where the double angle brackets denotes the Green function of spin density waves and the index $\omega$ means that the Green function has to be considered in the frequency space.
+The simplicity and advantage of the method instead of other ones is that only the commutator relations of the (field) operators are needed.
+The bosonic commutator relations are given in equation (\dots\todo{link zu bosonischen Vertauschungsrelationen}) and the Hamiltonian is given by equation (\dots\todo{Link zu $H_{\Phi}$}).
+The inhomogeneity is trivially zero and the commutator in the second term yields
+%
+\begin{align}
+	\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
+		-\frac{1}{2\epsilon} 
+		\sum\limits_{\vb{P}} 
+		\int_{\vb{p}}
+		\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\nu}(\vb{p}+\vb{P},t_{1}) \pi_{\nu}(-\vb{p}-\vb{P},t_{1})}
+	\notag \\
+	\Leftrightarrow\ \comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
+		-\frac{1}{2\epsilon} 
+		\sum\limits_{\vb{P}} 
+		\int_{\vb{p}} \bigg[
+			\pi_{\nu}(\vb{p}+\vb{P},t_{1}) \comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\nu}(-\vb{p}-\vb{P},t_{1})}
+			\notag \\& \hspace{2cm}
+			+
+			\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\nu}(\vb{p}+\vb{P},t_{1})} \pi_{\nu}(-\vb{p}-\vb{P},t_{1})
+		\bigg]
+	\notag \\
+	\Leftrightarrow\ \comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
+		-\frac{i}{\epsilon} \pi_{\mu}(\vb{k}+\vb{G},t)
+\end{align}
+%
+where in the beginning the sum over $\lambda$ is implied.
+Equation \eqref{eq: first item of equation chain} yields
+%
+\begin{align}
+	\omega \green{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega} &= 
+		-\frac{i}{\epsilon} \green{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega}
+\end{align}
+%
+where on the right hand side a new Green function appears.
+Nobody bars us doing the exactly same procedure for this one as for the initial Green function.
+%
+\begin{align}
+	\omega \green{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega} &= 
+		\expval{\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}}
+		\notag \\ &+
+		\green{\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}}}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega}
+	\label{eq: second item of equation chain}
+\end{align}
+%
+The inhomogeneity of the equations is trivially, too, but in this case yields something differant to zero.
+%
+\begin{align}
+	\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')} = -i (2\pi)^{2} \sum\limits_{\vb{G}} \delta(\vb{k}'+\vb{k}) \delta_{-\vb{G}',\vb{G}} \delta_{\mu,\lambda}
+\end{align}
+%
+Equally the commutator can be computed with the same method.
+%
+\begin{align}
+	\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
+		-\sum\limits_{\vb{P}} 
+		\int_{\vb{p}}
+		\frac{(\vb{p}+\vb{P})^{2} + r}{2}
+		\notag \\ &\times
+		\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\nu}(\vb{p}+\vb{P},t_{1}) \Phi_{\nu}(-\vb{p}-\vb{P},t_{1})}
+	\notag \\
+	\Leftrightarrow\ \comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
+		i(2\pi)^{2} \sum\limits_{\vb{P}} 
+		\int_{\vb{p}}
+		\frac{(\vb{p}+\vb{P})^{2} + r}{2} 
+		\notag \\ &\times\bigg[
+			\Phi_{\mu}(\vb{p}+\vb{P},t) \delta(\vb{k}-\vb{p}) \delta_{\vb{G},\vb{P}}
+			\notag \\& 
+			+
+			\Phi_{\mu}(-\vb{p}-\vb{P},t) \delta(\vb{k}+\vb{p}) \delta_{-\vb{G},\vb{P}}
+		\bigg]
+	\notag \\
+	\Leftrightarrow\ \comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
+		i \Big( (\vb{k}+\vb{G})^{2} + r \Big) \Phi_{\mu}(\vb{k}+\vb{G},t)
+\end{align}
+%
+Inserting both commutator resuls in equation \eqref{eq: second item of equation chain} yields
+%
+\begin{align}
+	\omega \green{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\mu'}(\vb{k}'+\vb{G}',t')}_{\omega} = 
+		-i (2\pi)^{2} \delta(\vb{k}'+\vb{k}) \delta_{-\vb{G}',\vb{G}} \delta_{\mu,\lambda} \delta_{t,t'} 
+		\notag \\  \hspace{2cm} + 
+		i\Big( (\vb{k}+\vb{G})^{2} + r \Big) \green{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\mu'}(\vb{k}'+\vb{G}',t')}_{\omega}
+\end{align}
+%
+where on the right hand side the initial wanted Green function appears.
+Puting all together we get an algebraic equation for the spin density wave propagator.
+Solving this equation yields
+%
+\begin{align}
+	\green{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega} = (2\pi)^{2} \delta(\vb{k}'+\vb{k}) \delta_{-\vb{G}',\vb{G}} \delta_{\mu,\lambda} \mathcal{D}_{\mu\lambda}^{(0)}(\vb{k},\omega)
+\end{align}
+%
+where for resons of simplicity the free spin density propagator $\mathcal{D}^{(0)}$ is introduced.
+%
+\begin{align}
+	\mathcal{D}_{\mu\lambda}^{(0)}(\vb{k},\omega) := \sum\limits_{\vb{G}} \frac{1}{(\vb{k}+\vb{G})^{2} + r - \epsilon \omega^{2}}
+\end{align}
+%
+In computation of the conductivity below the free Propagator isn't only needed.
+The damping of the spin density waves has to be taken into account in the considered model, which is ususally done via pertubation theory.
+The pertubation of the spin density waves is caused by the interaction with the electrons living on differant Fermi suffaces.
+Therefore the free electron propagator is needed.
+In the same way as the free spin density propagator is calculated the free electron propagator can be calculated.
+This handwork isn't done here explicitly.
+The result should be enough for the moment, which is
+%
+\begin{align}
+	 \green{\Psi_{\alpha}(\vb{k}+\vb{G},t)}{\Psi_{\beta}^{\dag}(\vb{k}'+\vb{G}',t')}_{\omega} = (2\pi)^{2} \delta(\vb{k}'-\vb{k}) \delta_{\vb{G}',\vb{G}} \delta_{\alpha,\beta} \mathcal{G}_{\alpha\beta}^{(0)}(\vb{k},\omega)
+\end{align}
+%
+with
+%
+\begin{align}
+	\mathcal{G}_{\alpha\beta}^{(0)}(\vb{k},\omega) = \sum\limits_{\vb{G}} \frac{1}{\omega - \epsilon_{\alpha}(\vb{k}+\vb{G})},
+\end{align}
+%
+where $\alpha, \beta = \mt{a,b}$ and denotes the typ of electron with respect to the Fermi surfaces.
+%
+%
+\section{The damped spin density wave propagator}
+\label{sec: damped propagator}
+%
+%
+The full Green function of spin density waves is given by
+%
+\begin{align}
+	\mathcal{D}_{\mu\lambda}(\vb{k}, \omega) = -i \frac{\expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{0}}{\expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty)}_{0}}
+\end{align}
+%
+where the index $0$ means that the expectation value is taken with respect to the unpertubated Hamiltonian.
+Thus the whole pertubation is only going into account throught the time evolution operator $\mt{U}$, defined by
+%
+\begin{align}
+	\mt{U}(t,t') = \exp\bigg(-i\int_{t'}^{t} \dd{t_{1}} \mt{H}_{\mt{int}}(t_{1})\bigg)
+\end{align}
+%
+The time evolution operator is expanded into a series up to the second order.
+Like it is known from lectures about quantum field theory the denominator denotes the vacuum energy and can be canceled out with terms of the numerator.
+In quantum field theory language this means that only connected diagrams have to be investigated.
+%
+\begin{align}
+	\mathcal{D}_{\mu\lambda}^{(1)}(\vb{k}, \omega) &= 
+		-i \expval{\mathcal{T}_{t} \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{0}
+		\notag \\&+
+		(-i)^{2} \int\limits_{-\infty}^{\infty} \dd{t_{1}} \expval{\mathcal{T}_{t} \mt{H}_{\Phi}(t_{1}) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{0}
+		\notag \\&+
+		(-i)^{3} \int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}} \expval{\mathcal{T}_{t} \mt{H}_{\Phi}(t_{2}) \mt{H}_{\Phi}(t_{1}) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{0}
+\end{align}
+%
+The expectation value in the first row correspondes to the free propagator.
+The term in the second row vanishes, which is easily seen by regarding the Hamiltonian.
+At first the expectation value of the fermionic and bosonic operators can be seperated.
+Doing this an expectation value with three bosonic operators appear, which is zero.
+The term in the last row is the first non-disapearing contribution.
+Let us investigate this beast at first seperatly.
+%
+\begin{align}
+	\tm{E}^{(2)} :&= 
+		(-i)^{3} \lambda^{2} \int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}} 
+		\sum\limits_{\vb{P}_{1} \vb{P}_{2}} \int_{\vb{p}_{1}} \int_{\vb{p}_{2}}
+		\sum\limits_{\vb{P}_{3} \vb{P}_{4}} \int_{\vb{p}_{3}} \int_{\vb{p}_{4}}
+		\notag \\ &\times
+		\expval{
+			\mathcal{T}_{t} 
+			\Phi_{\nu'} (\vb{p}_{3}-\vb{p}_{4}+\vb{P}_{3}-\vb{P}_{4},t_{2}) 
+			\Phi_{\nu} (\vb{p}_{1}-\vb{p}_{2}+\vb{P}_{1}-\vb{P}_{2},t_{1}) 
+			\Phi_{\mu}(\vb{k}+\vb{G},t) 
+			\Phi_{\lambda}(\vb{k}'+\vb{G}',t')
+		}_{0}
+		\notag \\ &\times
+		\expval{
+			\mathcal{T}_{t} 
+			\bigg(
+				\Psi_{\mt{a}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
+				\cdot \sigma_{\nu'} \cdot 
+				\Psi_{\mt{b}}(\vb{p}_{4}+\vb{P}_{4},t_{2}) 
+				+
+				\Psi_{\mt{b}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
+				\cdot \sigma_{\nu'} \cdot 
+				\Psi_{\mt{a}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
+			\bigg)
+		\notag \\ &\times
+			\bigg(
+				\Psi_{\mt{a}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
+				\cdot \sigma_{\nu'} \cdot 
+				\Psi_{\mt{b}}(\vb{p}_{2}+\vb{P}_{2},t_{1}) 
+				+
+				\Psi_{\mt{b}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
+				\cdot \sigma_{\nu'} \cdot 
+				\Psi_{\mt{a}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
+			\bigg)
+		}_{0}
+\end{align}
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,10 +1,15 @@
+%
+%
+%
 \chapter{Calculation}
 \label{ch: calculation}
-
+%
+%
+%
 In the last chapter the memory-matrix-formalism was introduced, which give us an exact formula to calculate correlation functions.
 Now this formalism is used to determine the static conductivity of the spin-fermion-model, see chapter (\todo{make link to chapter spin-fermion-model}), pertubated by umklapp-scattering.
-
-
+%
+%
 \section{Infinite conductivity in systems with unbroken translation symmetry}
 \label{sec: Infinite conductivity in a system with unbroken translation symmetry}
 %
@@ -294,16 +299,18 @@ The considered umklapp scattering is only entered in the time derivative of the 
 Commonly the sort of this calculation is done in the Matsubara time $\tau = it$, see e.\,g. \cite{Bruus&Flensberg} for an introduction or a review.
 %
 \begin{align}
-	\mt{I}(z) :=  -\int\limits_{0}^{\infty} \dd{t} e^{iz t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{\mt{H}_{1}} = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\comm{\dot{\mt{P}}(\tau)}{\dot{\mt{P}}(0)}}_{\mt{H}_{1}}
+	\mt{I}(z) :=  -\int\limits_{0}^{\infty} \dd{t} e^{iz t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{\mt{H}_{1}} = \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}(\tau) \dot{\mt{P}}(0)}_{\mt{H}_{1}}
 \end{align}
 %
-To symbolisied clearly that the frequency is an arbitrary complex number the variable $z$ is used instead $\omega$ at this point.
+The norm of the Jacobi determinate is $1$.
+Further each derivative yields an $i$ which gives us in total one minus.
+To symbolisied clearly that the frequency is an arbitrary complex number the variable $z$ is used instead of $\omega$ at this point.
 Like it is done every time in pertubation theory the operators are transformed into the Matsubara interaction representation.
 The transformation's aim is that the expectation value is only taken with respect to the free Hamiltonians $\mt{H}_{0} = \mt{H}_{\Psi} + \mt{H}_{\Phi}$ and the interation $\mt{H}_{\Psi\Phi}$ is only entered in the time evolution operator $\mt{U}(\beta,0)$.
 A series expansion of the time evolution operator up to the first non-disappearing order yields
 %
 \begin{align}
-	\mt{I}(z) = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\comm{\dot{\mt{P}}(\tau)}{\dot{\mt{P}}(0)}}_{\mt{H}_{0}}
+	\mt{I}(z) = \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}(\tau) \dot{\mt{P}}(0)}_{\mt{H}_{0}}
 \end{align}
 %
 In chapter \ref{ch: spin fermion model} umklapp scattering is introduced as a pertubation of the spin fermion system described by $\mt{H}_{1}$.
@@ -311,10 +318,25 @@ On the basis of this pertubation the momentum isn't anymore conserved, thus the 
 The time derivative of an operator is given via the Heisenberg equation of motion, which yields for the momentum
 %
 \begin{align}
-	\dot{\mt{P}}_{x} = \frac{i}{\hbar} \sum\limits_{\vb{K}} \mt{J}_{\vb{K}} \int_{\vb{k}} K_{x} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k} - \vb{K},\tau)
+	\dot{\mt{P}}_{x}(\tau) = \frac{i}{\hbar} \sum\limits_{\vb{K}} \mt{J}_{\vb{K}} \int_{\vb{k}} K_{x} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k} - \vb{K},\tau)
 \end{align}
 %
-where the direction of the momentum is set to the $x$-direction without loss of generality.
+where the direction of the momentum is chosen to the $x$-direction without loss of generality.
+The sum over $\mu$ should be implied.
+Inserting the time derivative of the momentum in $\mt{I}(z)$ yields
+%
+\begin{align}
+	\mt{I}_{xx}(z) &= 
+		-\frac{1}{\hbar^{2}} 
+		\sum\limits_{\vb{K}_{1}, \vb{K}_{2}} 
+		\mt{J}_{\vb{K}_{1}} \mt{J}_{\vb{K}_{2}} 
+		\int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} 
+		\int_{\vb{k}_{1}}\int_{\vb{k}_{2}} K_{1,x}  K_{2,x} 
+		\notag \\
+		&\times
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\mu}(\vb{k}_{2},0) \Phi_{\mu}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
+\end{align}
+%
 
 
 

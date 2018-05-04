@@ -10,42 +10,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Spin-Fermion-Model}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Memory-Matrix-Formalsim}{5}{chapter.3}
+\contentsline {chapter}{\numberline {3}Computation of the spin density wave propagator}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Motivation}{5}{section.3.1}
+\contentsline {section}{\numberline {3.1}The free propagator of spin density waves}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Linear Response Theory}{6}{section.3.2}
+\contentsline {section}{\numberline {3.2}The damped spin density wave propagator}{7}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Kubo formula}{6}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Memory-Matrix-Formalsim}{9}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Kubo relaxation function}{7}{subsection.3.2.2}
+\contentsline {section}{\numberline {4.1}Motivation}{9}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Kramer-Kronig-relation}{9}{subsection.3.2.3}
+\contentsline {section}{\numberline {4.2}Linear Response Theory}{10}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Spectral representation}{11}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {4.2.1}Kubo formula}{10}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deviation of the Memory-Matrix-Formalism}{12}{section.3.3}
+\contentsline {subsection}{\numberline {4.2.2}Kubo relaxation function}{11}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Time Reversal Symmetry}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {4.2.3}Kramer-Kronig-relation}{13}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{20}{section*.12}
+\contentsline {subsection}{\numberline {4.2.4}Spectral representation}{15}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{21}{section*.13}
+\contentsline {section}{\numberline {4.3}Deviation of the Memory-Matrix-Formalism}{16}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Calculation}{23}{chapter.4}
+\contentsline {subsection}{\numberline {4.3.1}Time Reversal Symmetry}{22}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Infinite conductivity in systems with unbroken translation symmetry}{23}{section.4.1}
+\contentsline {paragraph}{\nonumberline 1. case:}{24}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Finite conductivity because of breaking the translation symmetry via umklapp scattering}{26}{section.4.2}
+\contentsline {paragraph}{\nonumberline 2. case:}{25}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Temperature dependence of the dc-conductivity}{28}{subsection.4.2.1}
+\contentsline {chapter}{\numberline {5}Calculation}{27}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Infinite conductivity in systems with unbroken translation symmetry}{27}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{33}{appendix.A}
+\contentsline {section}{\numberline {5.2}Finite conductivity because of breaking the translation symmetry via umklapp scattering}{30}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Conversion of ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ } {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }\omega - \mathrm {L}_{0}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }^{-1} {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$}{35}{appendix.B}
+\contentsline {subsection}{\numberline {5.2.1}Temperature dependence of the dc-conductivity}{32}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Analysis of Matsubara-sums}{37}{appendix.C}
+\contentsline {chapter}{\numberline {6}Conclusion}{35}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C.1}Simple poles}{37}{section.C.1}
+\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{37}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Conversion of ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ } {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }\omega - \mathrm {L}_{0}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }^{-1} {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$}{39}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Analysis of Matsubara-sums}{41}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.1}Simple poles}{41}{section.C.1}
