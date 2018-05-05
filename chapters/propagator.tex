@@ -186,7 +186,7 @@ The term in the last row is the first non-disapearing contribution.
 Let us investigate this beast at first seperatly.
 %
 \begin{align}
-	\tm{E}^{(2)} :&= 
+	\mt{E}^{(2)} :&= 
 		(-i)^{3} \lambda^{2} \int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}} 
 		\sum\limits_{\vb{P}_{1} \vb{P}_{2}} \int_{\vb{p}_{1}} \int_{\vb{p}_{2}}
 		\sum\limits_{\vb{P}_{3} \vb{P}_{4}} \int_{\vb{p}_{3}} \int_{\vb{p}_{4}}
@@ -198,29 +198,47 @@ Let us investigate this beast at first seperatly.
 			\Phi_{\mu}(\vb{k}+\vb{G},t) 
 			\Phi_{\lambda}(\vb{k}'+\vb{G}',t')
 		}_{0}
-		\notag \\ &\times
+		\notag \\ &\times \bigg(
 		\expval{
 			\mathcal{T}_{t} 
-			\bigg(
-				\Psi_{\mt{a}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
-				\cdot \sigma_{\nu'} \cdot 
-				\Psi_{\mt{b}}(\vb{p}_{4}+\vb{P}_{4},t_{2}) 
-				+
-				\Psi_{\mt{b}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
-				\cdot \sigma_{\nu'} \cdot 
-				\Psi_{\mt{a}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
-			\bigg)
-		\notag \\ &\times
-			\bigg(
-				\Psi_{\mt{a}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
-				\cdot \sigma_{\nu'} \cdot 
-				\Psi_{\mt{b}}(\vb{p}_{2}+\vb{P}_{2},t_{1}) 
-				+
-				\Psi_{\mt{b}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
-				\cdot \sigma_{\nu'} \cdot 
-				\Psi_{\mt{a}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
-			\bigg)
+			\Psi_{\mt{a}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
+			\cdot \sigma_{\nu'} \cdot 
+			\Psi_{\mt{b}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
+			\Psi_{\mt{a}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
+			\cdot \sigma_{\nu'} \cdot 
+			\Psi_{\mt{b}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
 		}_{0}
+		\notag \\ &+
+		\expval{
+			\mathcal{T}_{t}
+			\Psi_{\mt{a}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
+			\cdot \sigma_{\nu'} \cdot 
+			\Psi_{\mt{b}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
+			\Psi_{\mt{b}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
+			\cdot \sigma_{\nu'} \cdot 
+			\Psi_{\mt{a}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
+		}_{0}
+		\notag \\ &+
+		\expval{
+			\mathcal{T}_{t}
+			\Psi_{\mt{b}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
+			\cdot \sigma_{\nu'} \cdot 
+			\Psi_{\mt{a}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
+			\Psi_{\mt{a}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
+			\cdot \sigma_{\nu'} \cdot 
+			\Psi_{\mt{b}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
+		}_{0}
+		\notag \\ &+
+		\expval{
+			\mathcal{T}_{t} 
+			\Psi_{\mt{b}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
+			\cdot \sigma_{\nu'} \cdot 
+			\Psi_{\mt{a}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
+			\Psi_{\mt{b}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
+			\cdot \sigma_{\nu'} \cdot 
+			\Psi_{\mt{a}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
+		}_{0}
+		\bigg)
 \end{align}
 %
 

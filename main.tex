@@ -28,7 +28,7 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{amssymb}
-\usepackage{./packages/physics} 	% Usefull package for physical and mathematical formulas. Package-documentation: http://ftp.fau.de/ctan/macros/latex/contrib/physics/physics.pdf
+\usepackage{physics} 				% Usefull package for physical and mathematical formulas. Package-documentation: http://ftp.fau.de/ctan/macros/latex/contrib/physics/physics.pdf
 \usepackage{bbold}					% to write the unit element like lettes with \mathbb
 
 % package for including graphics
@@ -44,6 +44,9 @@
 \usepackage{enumitem} 				% change the level in enumerate-envirement
 
 \usepackage[draft]{todonotes}   	% draft: notes showed, disable: not showed
+
+% feynman and wick stuff
+\usepackage{simplewick}				% drawing wick contractions above or below a set of operators. See http://ftp.riken.jp/tex-archive/macros/latex/contrib/simplewick/simplewick.pdf
 
 % bibiography package and stylesetting
 \usepackage[
@@ -101,6 +104,8 @@
 
 \newcommand{\odyad}[2]{\oket{#1}\obra{#2}} % dyad in operator space with autometic sizing
 \newcommand{\tdyad}[2]{\toket{#1}\tobra{#2}} % dyad in operator space for writing inside normal text
+
+\newcommand{\ie}{i.\,e.}
 
 %\newcommand{\ev}[1]{\left\langle{#1}\right\rangle} 											% expactation value
 %\newcommand{\erwartungswert}[3]{\left\langle {#1}\right|{#2}\left|{#3}\right\rangle} 		% ausführlicher erwartungswert mit zuständen

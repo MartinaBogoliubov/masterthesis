@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  4 MAY 2018 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  5 MAY 2018 19:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -243,12 +243,9 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(./packages/physics.sty
-
-LaTeX Warning: You have requested package `./packages/physics',
-               but the package provides `physics'.
-
+(/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
+
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2014/09/15 v5423 L3 programming layer (loader) 
@@ -1676,7 +1673,17 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
 \c@@todonotes@numberoftodonotes=\count162
 )
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/simplewick/simplewick.sty
+Package: simplewick 2007/11/23 v1.2a
+
+Package: simplewick v1.2a (2007/11/23)
+\swb@xone=\box58
+\swb@xtwo=\box59
+\swb@xthree=\box60
+\swb@xfour=\box61
+\swdimen@ne=\dimen258
+\swdimentw@=\dimen259
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex2.sty
@@ -1945,7 +1952,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen258
+\@linkdim=\dimen260
 \Hy@linkcounter=\count362
 \Hy@pagecounter=\count363
 
@@ -1967,10 +1974,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count365
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen259
+\XeTeXLinkMargin=\dimen261
 \Fld@menulength=\count366
-\Field@Width=\dimen260
-\Fld@charsize=\dimen261
+\Field@Width=\dimen262
+\Fld@charsize=\dimen263
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -2018,31 +2025,31 @@ File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count372
-\scratchdimen=\dimen262
-\scratchbox=\box58
+\scratchdimen=\dimen264
+\scratchbox=\box62
 \nofMPsegments=\count373
 \nofMParguments=\count374
 \everyMPshowfont=\toks40
 \MPscratchCnt=\count375
-\MPscratchDim=\dimen263
+\MPscratchDim=\dimen265
 \MPnumerator=\count376
 \makeMPintoPDFobject=\count377
 \everyMPtoPDFconversion=\toks41
@@ -2056,10 +2063,10 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 152.
-Package biblatex Info: Reference segment=0 on input line 152.
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 152.
+Package biblatex Info: Reference section=0 on input line 157.
+Package biblatex Info: Reference segment=0 on input line 157.
+\AtBeginShipoutBox=\box63
+Package hyperref Info: Link coloring ON on input line 157.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2069,9 +2076,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count378
 )
-LaTeX Info: Redefining \ref on input line 152.
-LaTeX Info: Redefining \pageref on input line 152.
-LaTeX Info: Redefining \nameref on input line 152.
+LaTeX Info: Redefining \ref on input line 157.
+LaTeX Info: Redefining \pageref on input line 157.
+LaTeX Info: Redefining \nameref on input line 157.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -2090,8 +2097,8 @@ parent-eps-converted-to.pdf figures/logos/KITlogo_transparent.eps>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/logos/KITlogo_transparent-eps-converted-to.pdf, id=99, 1324.95pt x 617
-.30624pt>
+<figures/logos/KITlogo_transparent-eps-converted-to.pdf, id=103, 1324.95pt x 61
+7.30624pt>
 File: figures/logos/KITlogo_transparent-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figures/logos/KITlogo_transparent-eps-converted-to.pdf>
@@ -2188,7 +2195,7 @@ Class scrbook Warning: \float@addtolists detected!
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.182 \cleardoublepage
+l.187 \cleardoublepage
                        [1
 
 
@@ -2198,7 +2205,7 @@ l.182 \cleardoublepage
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.182 \cleardoublepage
+l.187 \cleardoublepage
                        [2
 
 
@@ -2221,157 +2228,7 @@ LaTeX Warning: Marginpar on page 5 moved.
 
 
 ] [6]
-! Undefined control sequence.
-<argument>  \tm 
-                {E}^{(2)} :&= (-i)^{3} \lambda ^{2} \int \limits _{-\infty }...
-l.224 \end{align}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.224 \end{align}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \hfil \endtempl...
-l.224 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.224 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.224 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \right.
-\rangle ->\delimiter "526930B 
-                              
-l.224 \end{align}
-                 
-I'm ignoring a \right that had no matching \left.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.224 \end{align}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Undefined control sequence.
-<argument>  \tm 
-                {E}^{(2)} :&= (-i)^{3} \lambda ^{2} \int \limits _{-\infty }...
-l.224 \end{align}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.224 \end{align}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \right.
-<template> }
-            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \hfil \endtempl...
-l.224 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.224 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.224 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \right.
-\rangle ->\delimiter "526930B 
-                              
-l.224 \end{align}
-                 
-I'm ignoring a \right that had no matching \left.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.224 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.224 \end{align}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Overfull \hbox (39.514pt too wide) in paragraph at lines 224--224
+Overfull \hbox (38.25172pt too wide) in paragraph at lines 242--242
 [] 
  []
 
@@ -2423,25 +2280,29 @@ LaTeX Warning: Marginpar on page 30 moved.
 
 LaTeX Warning: Marginpar on page 30 moved.
 
-[30] [31] [32]) [33] [34
+[30] [31] [32] [33]
+
+LaTeX Warning: Marginpar on page 34 moved.
+
+[34]) [35] [36
 
 
 ] (./chapters/conclusion.tex
 Chapter 6.
-) [35
+) [37
 
 
-] [36
+] [38
 
 
 ] (./chapters/appendix_properties_Kubo_relaxation_function.tex
 Appendix A.
-[37
+[39
 
 
 
 
-]) (./chapters/appendix_conversion_expectation_value.tex [38]
+]) (./chapters/appendix_conversion_expectation_value.tex [40]
 Appendix B.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2895,50 +2756,50 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
-) (./chapters/appendix_matsubara_sums.tex [39
+) (./chapters/appendix_matsubara_sums.tex [41
 
 
-] [40
+] [42
 
 
 ]
 Appendix C.
-) [41] [42
+) [43] [44
 
 
 ] (./main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [43
-
-
-] [44
-
-
-] [45
+ [45
 
 
 ] [46
 
 
+] [47
+
+
+] [48
+
+
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CC69A956F03A46A815096129C2B7A494;1722.
+(rerunfilecheck)             Checksum: 20B440FC90E8794AF3445024678A6160;1816.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31974 strings out of 494347
- 596845 string characters out of 6168810
- 1074195 words of memory out of 5000000
- 34451 multiletter control sequences out of 15000+600000
+ 32056 strings out of 494347
+ 598534 string characters out of 6168810
+ 1076091 words of memory out of 5000000
+ 34513 multiletter control sequences out of 15000+600000
  25711 words of font info for 96 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,18n,76p,10462b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2963,10 +2824,10 @@ ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on main.pdf (54 pages, 403694 bytes).
+Output written on main.pdf (56 pages, 412944 bytes).
 PDF statistics:
- 850 PDF objects out of 1000 (max. 8388607)
- 706 compressed objects within 8 object streams
- 241 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 889 PDF objects out of 1000 (max. 8388607)
+ 743 compressed objects within 8 object streams
+ 257 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

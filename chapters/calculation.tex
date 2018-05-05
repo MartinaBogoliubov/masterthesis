@@ -280,6 +280,7 @@ For the detailed conversion see appendix \ref{app: conversion expval}.
 %
 \begin{align}
 	\sigma_{\mt{dc}} \approx -\hbar \lim\limits_{\omega \to 0} \frac{\omega \vert \chi_{\mt{JP}}(\omega = 0) \vert^{2}}{\int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{0}}
+	\label{eq: formula static conductivity}
 \end{align}
 %
 This formula of the static conductivity is the final expression which is used in the compuation below.
@@ -337,6 +338,188 @@ Inserting the time derivative of the momentum in $\mt{I}(z)$ yields
 		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\mu}(\vb{k}_{2},0) \Phi_{\mu}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
 \end{align}
 %
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+\subsection{Computation of the static susceptibility}
+\label{subsec: static susceptibility}
+%
+%
+Equation \eqref{eq: formula static conductivity} contains two possibile temperature dependent quantities.
+Beside the integral, which is calculated in the section above, the static susceptibility is the second quantity.
+Our expectation is that the static susceptibility dosen't depend on temperature in leading order, but we have to prove it.
+With the aid of equation \eqref{eq: relation between C, Phi and chi} the static susceptibility is obviously connected with the Kubo relaxation function \eqref{eq: Kubo relaxation function} at $t=0$.
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) = \Phi_{\mt{PJ}}(t = 0) = \frac{i}{\hbar} \int\limits_{0}^{\infty} \dd{t'} \expval{\comm{\mt{P}_{j}(t')}{\mt{J}_{j}(0)}}
+\end{align}
+%
+In the formula above the limit $s\to0$ is tropped, because we will see that the integral is convegent.
+The index $j$ signifies the spatial direction of P and J.
+Like allways the integral is transformed into Matsubara time $\tau = it$.
+The Jacobi determinate is $-i$ and the integral's limits have to be set to $0$ and $\beta$.
+In Matsubara interaction representation the normal treatment of pertubation theory is done, where in the case at hand only the leading order of pertubation series is observed.
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) = \frac{1}{\hbar} \int\limits_{0}^{\beta} \dd{\tau} \expval{\mathcal{T}_{\tau} \mt{P}_{j}(\tau) \mt{J}_{j}(0)}_{0}
+\end{align}
+%
+The momentum and current operator are given by equation \dots\todo{link zu impuls im k-raum} and \dots\todo{link zum strom im k-raum}, respetivily.
+Before the operators are inserted into the expectation value let us thinking about the possible combinations in the diagrammatic language.
+Firstly remember that the numerator and denominator have to be expand in a series. 
+Doing this completly general the appearing diagrams in the denominator can be factorized in the numerator and thus their cancel each other.
+Making a long story short only connected diagrams have to be taken into account.
+
+In the investigated order only one pair of bosonic operators, \ie one propagator, and no interaction between the spin density waves and the electrons are observed.
+Therefore the bosonic propagator yields always one disconnected diagram.
+Furthermore pairing electrons of differant Fermi sufaces isn't allowed, which means that the expactation value of mixed fermionic operators also yields disconnected diagrams.
+Thus many diagrams of the investigated are disconnected.
+Only two ones aren't disconnected.
+These two bubble diagrams are depicted in figure \dots\todo{Bild von den Bubblediagrammen}.
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) = 
+		-\frac{1}{\hbar} 
+		\int\limits_{0}^{\beta} \dd{\tau} 
+		\int_{\vb{k}}
+		\bigg[
+			&\frac{k_{j}^{2}}{m_{1}}
+			\expval{
+				\mathcal{T}_{\tau}
+				\Psi_{\mt{a}}^{\dag}(\vb{k},\tau)
+				\Psi_{\mt{a}}(\vb{k},\tau)
+				\Psi_{\mt{a}}^{\dag}(\vb{k},0)
+				\Psi_{\mt{a}}(\vb{k},0)
+			}_{0}
+			\notag \\ +
+			&\frac{k_{j}^{2}}{m_{2}}
+			\expval{
+				\mathcal{T}_{\tau}
+				\Psi_{\mt{b}}^{\dag}(\vb{k},\tau)
+				\Psi_{\mt{b}}(\vb{k},\tau)
+				\Psi_{\mt{b}}^{\dag}(\vb{k},0)
+				\Psi_{\mt{b}}(\vb{k},0)
+			}_{0}
+		\bigg]
+\end{align}
+%
+\todo{Vielleicht noch etwas zu der delta-Distribution und so schreiben, damit klar is warum die Operatoren alle beim gleichen Impuls sind.}
+These two expectation value of four fermionic operators can't be solved directly.
+Wick's theorem offers the oppertunity to write these expectation values into a product of expectation values contained only two operators, which are nothing else free propagators.
+Two contraction are possible for each expectation value in the case above, where one of them vanishes, if the time argument of the contracted operator is the same.
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) &= 
+		\frac{1}{\hbar} 
+		\int\limits_{0}^{\beta} \dd{\tau} 
+		\int_{\vb{k}} 
+		k_{j}^{2}
+		\bigg[
+			\frac{1}{m_{1}}
+			\mathcal{G}_{\mt{a}}^{(0)}(\vb{k},-\tau)
+			\mathcal{G}_{\mt{a}}^{(0)}(\vb{k},\tau)
+			+
+			\frac{1}{m_{2}}
+			\mathcal{G}_{\mt{b}}^{(0)}(\vb{k},-\tau)
+			\mathcal{G}_{\mt{b}}^{(0)}(\vb{k},\tau)
+		\bigg]
+\end{align}
+%
+where the free fermionic propagator $\mathcal{G}_{\alpha}^{(0)}(\vb{k},\tau) = -\expval*{\mathcal{T}_{\tau} \Psi_{\alpha}(\vb{k},\tau) \Psi_{\alpha}^{\dag}(\vb{k},0)}$ with $\alpha \in \{\mt{a},\mt{b}\}$ is introduced.
+The Green functions of electrons are transformed into the Matsubara frequency space, thus the only time dependence is at the exponential functions.
+The $\tau$-integral yields a $\delta$-distrubution $\delta(\omega_{m} - \omega_{n})$ and then one sum over the Matsubara frequencies can be taken.
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) &= 
+		\frac{1}{\hbar} 
+		\int_{\vb{k}} 
+		k_{j}^{2}
+		\bigg[
+			\frac{1}{m_{1}}
+			S_{\mt{a}}(\omega_{n})
+			+
+			\frac{1}{m_{2}}
+			S_{\mt{b}}(\omega_{n})
+		\bigg]
+\end{align}
+%
+where the Matsubara sum $S_{\alpha}(\omega_{n}) = \beta^{-1} \sum_{\omega_{n}} \mathcal{G}_{\alpha}^{(0)}(\vb{k},\omega_{n}) \mathcal{G}_{\alpha}^{(0)}(\vb{k},\omega_{n})$ is introduced.
+The Matsubara theory exhibits that these kinds of sums can be evaluated by rewriting the sum as a contour integral in the complex plane, integrating over the Green function multiplied with the Fermi or Bose distribution caused by the nature of the Green function.
+This transformation yields
+%
+\begin{align}
+	S = \frac{1}{\beta} \sum\limits_{\omega_{n}} \mathcal{G}(\omega_{n}) = \frac{1}{2\pi i} \oint_{\Gamma} \dd{z} n_{\mt{F}}(z) \mathcal{G}(z)
+\end{align}
+%
+in the case of a fermionic Green function
+Thereby the contour is arbitrary.
+The only important fact is that all singularities of the Green function has to be included by the contour.
+The electronic Green function
+%
+\begin{align}
+	\mathcal{G}_{\alpha}(\vb{k},\omega_{n}) = \frac{1}{i\omega_{n} - \epsilon_{\alpha}(\vb{k})},
+\end{align}
+%
+where $\epsilon_{\alpha}(\vb{k})$  is the electron's dispersion relation with respect to the corresponding Fermi suface denoted with a and b (see equation \dots \todo{Link zu den Dispersionsrelationen}), has only simple poles in the complex plane, which means the function is continously in the whole complex plane.
+Therefore the well known residuum theorem can be used to evaluate the contour integral.
+Consider that the integrand has a singularity of second order at $z_{0} = \epsilon_{\alpha}(\vb{k})$.
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) &= 
+		\frac{1}{\hbar} 
+		\int_{\vb{k}} 
+		k_{j}^{2}
+		\bigg[
+			\frac{1}{m_{1}}
+			\dv{n_{\mt{F}}(\epsilon_{\mt{a}}(\vb{k}))}{\epsilon_{\mt{a}}(\vb{k})}
+			+
+			\frac{1}{m_{2}}
+			\dv{n_{\mt{F}}(\epsilon_{\mt{b}}(\vb{k}))}{\epsilon_{\mt{b}}(\vb{k})}
+		\bigg]
+\end{align}
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
