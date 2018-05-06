@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  5 MAY 2018 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  6 MAY 2018 16:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2284,12 +2284,11 @@ LaTeX Warning: Marginpar on page 30 moved.
 
 LaTeX Warning: Marginpar on page 34 moved.
 
-[34]) [35] [36
-
-
-] (./chapters/conclusion.tex
+[34] [35]) [36] (./chapters/conclusion.tex
 Chapter 6.
 ) [37
+
+
 
 
 ] [38
@@ -2796,10 +2795,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32056 strings out of 494347
- 598534 string characters out of 6168810
+ 32078 strings out of 494347
+ 599062 string characters out of 6168810
  1076091 words of memory out of 5000000
- 34513 multiletter control sequences out of 15000+600000
+ 34528 multiletter control sequences out of 15000+600000
  25711 words of font info for 96 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,18n,76p,10462b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2824,10 +2823,10 @@ ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on main.pdf (56 pages, 412944 bytes).
+Output written on main.pdf (56 pages, 420311 bytes).
 PDF statistics:
- 889 PDF objects out of 1000 (max. 8388607)
- 743 compressed objects within 8 object streams
- 257 named destinations out of 1000 (max. 500000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 754 compressed objects within 8 object streams
+ 264 named destinations out of 1000 (max. 500000)
  210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -295,47 +295,77 @@ In first order form this quantity no temperature dependence is expected, but we 
 %
 %
 Our starting point is the integral in the denominator of the last equation above.
-The index $0$ at the expectation value means that it has to be computed with respect to the Hamiltonian $\mt{H}_{1} = \mt{H}_{\Psi} + \mt{H}_{\Phi} + \mt{H}_{\Psi\Phi}$.
+The index $0$ at the expectation value means that it has to be computed with respect to the equilibrium Hamiltonian $\mt{H}_{1} = \mt{H}_{\Psi} + \mt{H}_{\Phi} + \mt{H}_{\Psi\Phi}$.
 The considered umklapp scattering is only entered in the time derivative of the momentum.
 Commonly the sort of this calculation is done in the Matsubara time $\tau = it$, see e.\,g. \cite{Bruus&Flensberg} for an introduction or a review.
 %
 \begin{align}
-	\mt{I}(z) :=  -\int\limits_{0}^{\infty} \dd{t} e^{iz t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{\mt{H}_{1}} = \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}(\tau) \dot{\mt{P}}(0)}_{\mt{H}_{1}}
+	\mt{I}_{jj}(z) :=  \int\limits_{0}^{\infty} \dd{t} e^{iz t} \expval{\comm{\dot{\mt{P}}_{j}(t)}{\dot{\mt{P}}_{j}(0)}}_{\mt{H}_{1}} = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}_{j}(\tau) \dot{\mt{P}}_{j}(0)}_{\mt{H}_{1}}
 \end{align}
 %
-The norm of the Jacobi determinate is $1$.
-Further each derivative yields an $i$ which gives us in total one minus.
-To symbolisied clearly that the frequency is an arbitrary complex number the variable $z$ is used instead of $\omega$ at this point.
+The norm of the Jacobi determinate is $-i$ and the upper integral limit changes from infinity to $\beta$.
+Further each time derivative yields an $i$.
+Totally the factor $i$ is multiplied to the integral.
+The direction of the momentum is denoted with the index $j$ and to symbolisied clearly that the frequency is an arbitrary number in the complex plane the variable $z$ is used instead of $\omega$ at this point.
 Like it is done every time in pertubation theory the operators are transformed into the Matsubara interaction representation.
-The transformation's aim is that the expectation value is only taken with respect to the free Hamiltonians $\mt{H}_{0} = \mt{H}_{\Psi} + \mt{H}_{\Phi}$ and the interation $\mt{H}_{\Psi\Phi}$ is only entered in the time evolution operator $\mt{U}(\beta,0)$.
-A series expansion of the time evolution operator up to the first non-disappearing order yields
+The transformation's aim is that the expectation value is only taken with respect to the free Hamiltonian $\mt{H}_{0} = \mt{H}_{\Psi} + \mt{H}_{\Phi}$ and the interation $\mt{H}_{\Psi\Phi}$ is only entered in the time evolution operator $\mt{U}(\beta,0)$.
+A series expansion of this one up to the first non-disappearing order yields
 %
 \begin{align}
-	\mt{I}(z) = \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}(\tau) \dot{\mt{P}}(0)}_{\mt{H}_{0}}
+	\mt{I}_{jj}(z) = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}_{j}(\tau) \dot{\mt{P}}_{j}(0)}_{\mt{H}_{0}}^{\mt{con}}
 \end{align}
 %
+where it has to be remarked that in quantum field pertubation theory only connected diagrams are considered, which is indicated with "con" at the expectation value.
+All disconnected diagrams can be factorizied in the numerator.
+These diagrams are exactly the same one as in the denominator, so both cancel each other.
+
 In chapter \ref{ch: spin fermion model} umklapp scattering is introduced as a pertubation of the spin fermion system described by $\mt{H}_{1}$.
 On the basis of this pertubation the momentum isn't anymore conserved, thus the time derivative of the momentum doesn't vanish.
 The time derivative of an operator is given via the Heisenberg equation of motion, which yields for the momentum
 %
 \begin{align}
-	\dot{\mt{P}}_{x}(\tau) = \frac{i}{\hbar} \sum\limits_{\vb{K}} \mt{J}_{\vb{K}} \int_{\vb{k}} K_{x} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k} - \vb{K},\tau)
+	\dot{\mt{P}}_{j}(\tau) = \frac{i}{\hbar} \sum\limits_{\vb{K}} \mt{J}_{\vb{K}} \int_{\vb{k}} K_{j} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k} - \vb{K},\tau)
 \end{align}
 %
-where the direction of the momentum is chosen to the $x$-direction without loss of generality.
-The sum over $\mu$ should be implied.
-Inserting the time derivative of the momentum in $\mt{I}(z)$ yields
+where $j$ indicated the direction of the momentum like above.
+The sum over $\mu$ is implied.
+Inserting the time derivative of the momentum in $\mt{I}_{jj}(z)$ yields
 %
 \begin{align}
 	\mt{I}_{xx}(z) &= 
-		-\frac{1}{\hbar^{2}} 
+		-\frac{i}{\hbar^{2}} 
 		\sum\limits_{\vb{K}_{1}, \vb{K}_{2}} 
 		\mt{J}_{\vb{K}_{1}} \mt{J}_{\vb{K}_{2}} 
 		\int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} 
 		\int_{\vb{k}_{1}}\int_{\vb{k}_{2}} K_{1,x}  K_{2,x} 
 		\notag \\
 		&\times
-		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\mu}(\vb{k}_{2},0) \Phi_{\mu}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\lambda}(\vb{k}_{2},0) \Phi_{\lambda}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
+\end{align}
+%
+Two contractions are yielded of connected diagrams and one contraction is yielded a disconnected diagram, using Wick's theorem.
+The disconnected is canceled like discusses above.
+Both connected diagrams are bubble diagrams, which are depicted in figure \dots \todo{Bild mit bubble diagram und link}.
+It is plausible that momentum is conserved in the case of a free propagator.
+Otherwise this would mean that momentum is lost without any interaction.
+This is clearly unphysical and would be disagreed with all of our observations in nature.
+Therefore the factor $i(2\pi)^{2} \delta_{\mu,\lambda} \delta_{\vb{K}_{1},-\vb{K}_{2}} \delta(\vb{k}_{1}+\vb{k}_{2})$ and $i(2\pi)^{2} \delta_{\mu,\lambda} \delta_{\vb{K}_{1},\vb{K}_{2}} \delta(\vb{k}_{1}-\vb{k}_{2})$ is inserted.
+%
+\begin{align}
+	\mt{I}_{xx}(z) &= 
+		\frac{1}{\hbar^{2}} 
+		\sum\limits_{\vb{K}} 
+		\mt{J}_{\vb{K}_{1}} \mt{J}_{\vb{K}_{2}} 
+		\int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} 
+		\int_{\vb{k}_{1}}\int_{\vb{k}_{2}} K_{1,x}  K_{2,x} 
+		\notag \\
+		&\times \bigg[
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(\vb{k}_{2},0)}_{\mt{H}_{0}} 
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\mu}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
+		\notag \\&+
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\mu}(\vb{k}_{2},0)}_{\mt{H}_{0}} 
+		\bigg]
 \end{align}
 %
 
@@ -366,7 +396,7 @@ Inserting the time derivative of the momentum in $\mt{I}(z)$ yields
 %
 %
 Equation \eqref{eq: formula static conductivity} contains two possibile temperature dependent quantities.
-Beside the integral, which is calculated in the section above, the static susceptibility is the second quantity.
+Beside the integral, which is calculated in the section above, the static susceptibility is the second one.
 Our expectation is that the static susceptibility dosen't depend on temperature in leading order, but we have to prove it.
 With the aid of equation \eqref{eq: relation between C, Phi and chi} the static susceptibility is obviously connected with the Kubo relaxation function \eqref{eq: Kubo relaxation function} at $t=0$.
 %
@@ -385,16 +415,15 @@ In Matsubara interaction representation the normal treatment of pertubation theo
 \end{align}
 %
 The momentum and current operator are given by equation \dots\todo{link zu impuls im k-raum} and \dots\todo{link zum strom im k-raum}, respetivily.
-Before the operators are inserted into the expectation value let us thinking about the possible combinations in the diagrammatic language.
+Before the operators are inserted into the expectation value let us think about the possible combinations in diagrammatic language.
 Firstly remember that the numerator and denominator have to be expand in a series. 
 Doing this completly general the appearing diagrams in the denominator can be factorized in the numerator and thus their cancel each other.
 Making a long story short only connected diagrams have to be taken into account.
 
-In the investigated order only one pair of bosonic operators, \ie one propagator, and no interaction between the spin density waves and the electrons are observed.
-Therefore the bosonic propagator yields always one disconnected diagram.
+In the investigated order only one pair of bosonic operators, \ie\, one propagator, and no interaction between the spin density waves and the electrons are observed.
+Therefore the bosonic propagator yields always a disconnected diagram.
 Furthermore pairing electrons of differant Fermi sufaces isn't allowed, which means that the expactation value of mixed fermionic operators also yields disconnected diagrams.
-Thus many diagrams of the investigated are disconnected.
-Only two ones aren't disconnected.
+Thus many diagrams of the investigated ones are disconnected, beside of two one.
 These two bubble diagrams are depicted in figure \dots\todo{Bild von den Bubblediagrammen}.
 %
 \begin{align}
@@ -424,9 +453,9 @@ These two bubble diagrams are depicted in figure \dots\todo{Bild von den Bubbled
 \end{align}
 %
 \todo{Vielleicht noch etwas zu der delta-Distribution und so schreiben, damit klar is warum die Operatoren alle beim gleichen Impuls sind.}
-These two expectation value of four fermionic operators can't be solved directly.
+The two expectation value of four fermionic operators can't be solved directly.
 Wick's theorem offers the oppertunity to write these expectation values into a product of expectation values contained only two operators, which are nothing else free propagators.
-Two contraction are possible for each expectation value in the case above, where one of them vanishes, if the time argument of the contracted operator is the same.
+Two contraction are possible for each expectation value in the investigated case above, where one of them vanishes, because the time argument of the contracted operator is the same.
 %
 \begin{align}
 	\chi_{\mt{PJ}}(\omega = 0) &= 
@@ -468,12 +497,14 @@ The Matsubara theory exhibits that these kinds of sums can be evaluated by rewri
 This transformation yields
 %
 \begin{align}
-	S = \frac{1}{\beta} \sum\limits_{\omega_{n}} \mathcal{G}(\omega_{n}) = \frac{1}{2\pi i} \oint_{\Gamma} \dd{z} n_{\mt{F}}(z) \mathcal{G}(z)
+	S = \frac{1}{\beta} \sum\limits_{\omega_{n}} \mathcal{G}(\omega_{n}) = -\frac{1}{2\pi i} \oint_{\Gamma} \dd{z} n_{\mt{F}}(z) \mathcal{G}(z)
 \end{align}
 %
 in the case of a fermionic Green function
 Thereby the contour is arbitrary.
-The only important fact is that all singularities of the Green function has to be included by the contour.
+The only important fact is that all singularities of the Green function has to be included in the contour.
+The singularity of the distribution function isn't included in the contour.
+In figure \dots \todo{Bild mit Kontour und verlinken} a examplar contour is given.
 The electronic Green function
 %
 \begin{align}
@@ -482,11 +513,10 @@ The electronic Green function
 %
 where $\epsilon_{\alpha}(\vb{k})$  is the electron's dispersion relation with respect to the corresponding Fermi suface denoted with a and b (see equation \dots \todo{Link zu den Dispersionsrelationen}), has only simple poles in the complex plane, which means the function is continously in the whole complex plane.
 Therefore the well known residuum theorem can be used to evaluate the contour integral.
-Consider that the integrand has a singularity of second order at $z_{0} = \epsilon_{\alpha}(\vb{k})$.
 %
 \begin{align}
 	\chi_{\mt{PJ}}(\omega = 0) &= 
-		\frac{1}{\hbar} 
+		-\frac{1}{\hbar} 
 		\int_{\vb{k}} 
 		k_{j}^{2}
 		\bigg[
@@ -498,14 +528,37 @@ Consider that the integrand has a singularity of second order at $z_{0} = \epsil
 		\bigg]
 \end{align}
 %
-
-
-
-
-
-
-
-
+The derivatives of the distribution function with respect to the dispersion relation appears because the singularity of the Green function at $z_{0} = \epsilon_{\alpha}(\vb{k})$ is a singularity of second order.
+These two integrals are exactly solvable.
+Therefore them are transformed into polar coordinates $(k_{x}, k_{y}) = (q\sqrt{2m_{1,2}}\cos(\phi), q\sqrt{2m_{2,1}}\sin(\phi))$, where two forms are used, because of the differant dispersion relation.
+The $k_{j}^{2}$ is originated the only angular dependence, which yields $\cos[2](\phi)$ or $\sin[2](\phi)$ for the $x$- or $y$-direction, respectivily.
+Because the limits of the integral are $0$ and $2\pi$ the integral yields the same result in both cases.
+The upper limit of the $q$-integral can be set to infity, because the integrand is decreased very fast to zero for large values of $q$.
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) = 
+		\frac{8 \beta \pi}{(2\pi)^{2} \hbar} \sqrt{m_{1} m_{2}}
+		\int\limits_{0}^{\infty} \dd{q}
+		q^{3} \frac{e^{\beta(q^{2} - \mu)}}{(e^{\beta(q^{2} - \mu)} + 1)^{2}}
+\end{align}
+%
+The resulted integral can be solved by substituting $x = \beta(q^{2} - \mu)$.
+Thereby the first of the two integrals is evaluated with integration by parts and the integrand of second one is equally to the derivative of Fermi distributation.
+All in one the static susceptibility between P and J is given by
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) = \frac{\sqrt{m_{1} m_{2}}}{\pi \beta \hbar}\ln(e^{\beta \mu} + 1)
+\end{align}
+%
+in first order of pertubation theory. \todo{Heisst es nullte oder erste Ordnung St\"orungstheorie?}
+The chemical potential $\mu$ is much much larger than $\beta$ in the limit of small temperature $T$.
+Therefore the argument of the exponential function is large and $\ln(e^{\beta\mu} + 1) = \beta\mu$ in the limit of $\mu \ll k_{\mt{B}} T$.
+%
+\begin{align}
+	\chi_{\mt{PJ}}(\omega = 0) \to \frac{\mu \sqrt{m_{1} m_{2}}}{\pi \hbar} 
+\end{align}
+%
+The static susceptibility between P and J is temperature independent in the limit of $\mu \ll k_{\mt{B}} T$, like exactly we have expected.
 
 
 
