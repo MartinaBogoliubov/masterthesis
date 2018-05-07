@@ -332,55 +332,154 @@ The sum over $\mu$ is implied.
 Inserting the time derivative of the momentum in $\mt{I}_{jj}(z)$ yields
 %
 \begin{align}
-	\mt{I}_{xx}(z) &= 
+	\mt{I}_{jj}(z) &= 
 		-\frac{i}{\hbar^{2}} 
 		\sum\limits_{\vb{K}_{1}, \vb{K}_{2}} 
 		\mt{J}_{\vb{K}_{1}} \mt{J}_{\vb{K}_{2}} 
 		\int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} 
-		\int_{\vb{k}_{1}}\int_{\vb{k}_{2}} K_{1,x}  K_{2,x} 
+		\int_{\vb{k}_{1}}\int_{\vb{k}_{2}} K_{1,j}  K_{2,j} 
 		\notag \\
 		&\times
 		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\lambda}(\vb{k}_{2},0) \Phi_{\lambda}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
 \end{align}
 %
-Two contractions are yielded of connected diagrams and one contraction is yielded a disconnected diagram, using Wick's theorem.
-The disconnected is canceled like discusses above.
-Both connected diagrams are bubble diagrams, which are depicted in figure \dots \todo{Bild mit bubble diagram und link}.
-It is plausible that momentum is conserved in the case of a free propagator.
-Otherwise this would mean that momentum is lost without any interaction.
-This is clearly unphysical and would be disagreed with all of our observations in nature.
-Therefore the factor $i(2\pi)^{2} \delta_{\mu,\lambda} \delta_{\vb{K}_{1},-\vb{K}_{2}} \delta(\vb{k}_{1}+\vb{k}_{2})$ and $i(2\pi)^{2} \delta_{\mu,\lambda} \delta_{\vb{K}_{1},\vb{K}_{2}} \delta(\vb{k}_{1}-\vb{k}_{2})$ is inserted.
+The expactation value is evaluated by using Wick's theorem, where the expactation value is related to the ground state of the system.
+Therefore all normal products are zero and only the sum survives, where all operators are contracted.
+The sum yields three differant possible contraction of the operators, where one of them is a disconnected diagram.
+The diagram is originated by contracting the operators with the same time argument.
+This diagram is canceled with the vacuum diagrams like discussed above, why it must not considered in the following computation.
+In total Wick's theorem yields two contributing diagrams, which are depicted in figure \dots \todo{Bild mit bubble diagram und link}.
+
+Because the used operators are in momentum space each expactation value of two operators becomes a $\delta$-distribution, originated from the commutator relations in momentum space.
+The $\delta$-distributions signify the conservation of momentum.
+In the investigated case the commutator relations \dots \todo{Link zu kommutator relationen} have to be used.
+Then one momentum integral and one sum over reziprocal lattive vectors is performed.
+The remaining momentum and reziprocal lattice vector is renamed into $\vb{k}$ and $\vb{K}$ respectivily.
+Further one sum over the spactial direction of $\Phi$, denoted with the greek letter, is performed.
 %
 \begin{align}
-	\mt{I}_{xx}(z) &= 
-		\frac{1}{\hbar^{2}} 
+	\mt{I}_{jj}(z) &= 
+		-\frac{2}{\hbar^{2}} 
 		\sum\limits_{\vb{K}} 
-		\mt{J}_{\vb{K}_{1}} \mt{J}_{\vb{K}_{2}} 
+		\vert \mt{J}_{\vb{K}} \vert^{2}
 		\int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} 
-		\int_{\vb{k}_{1}}\int_{\vb{k}_{2}} K_{1,x}  K_{2,x} 
+		\int_{\vb{k}} K_{j}^{2}
 		\notag \\
-		&\times \bigg[
-		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(\vb{k}_{2},0)}_{\mt{H}_{0}} 
-		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\mu}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
-		\notag \\&+
-		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k}_{1},\tau) \Phi_{\mu}(-\vb{k}_{2} - \vb{K}_{2},0)}_{\mt{H}_{0}}
-		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(-\vb{k}_{1} - \vb{K}_{1},\tau) \Phi_{\mu}(\vb{k}_{2},0)}_{\mt{H}_{0}} 
-		\bigg]
+		&\times
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},0)}_{\mt{H}_{0}} 
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(-\vb{k} - \vb{K},\tau) \Phi_{\mu}(\vb{k}+\vb{K},0)}_{\mt{H}_{0}}
 \end{align}
 %
+where $\mt{J}_{-\vb{K}} = \mt{J}_{\vb{K}}^{*}$ is used. 
+The asterisk denotes the complex conjugated.
+Every single expectation value correspond to thr free propagator of spin density waves.
+The free propagator is defined by $\mathcal{D}_{\mu}^{(0)}(\vb{k},\tau) := \expval*{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},0)}_{\mt{H}_{0}}$.
+Both are speratly transformed into Matsubara frequency space via
+%
+\begin{align}
+	\mathcal{D}_{\mu}^{(0)}(\vb{k},\tau) = \frac{1}{\beta} \sum\limits_{\omega_{n}} e^{-i\omega_{n}\tau} \mathcal{D}_{\mu}^{(0)}(\vb{k},\omega_{n})
+\end{align}
+%
+where the summation runs over all Matsubara frequencies.
+Because the transformation rotates our investigated function onto the imaginary frequency axis, the complex frequency $z$ has to be set to $i\omega_{l}$.
+After transforming the propagators into Matsubara frequency space the imaginary time dependence is solely originated from the exponential functions.
+This offers us to perform the $\tau$-integral easily, where relation 
+%
+\begin{align}
+	\int_{0}^{\beta} \dd{\tau} e^{-i(\omega_{m}+\omega_{n}-\omega_{l})\tau} = \beta \delta_{\omega_{m},\omega_{l}-\omega_{n}}
+\end{align}
+%
+is used and then one of the two sums over Matsubara frequencies can be performed as well.
+After all these steps the integral has the form
+%
+\begin{align}
+	\mt{I}_{jj}(\omega_{l}) &= 
+		-\frac{2}{\hbar^{2}} 
+		\sum\limits_{\vb{K}} 
+		\vert \mt{J}_{\vb{K}} \vert^{2}
+		\int_{\vb{k}} K_{j}^{2}
+		\frac{1}{\beta} \sum\limits_{\omega_{n}}
+		\mathcal{D}_{\mu}(\vb{k},\omega_{n}) \,
+		\mathcal{D}_{\mu}(-\vb{k}-\vb{K},\omega_{l}-\omega_{n})
+\end{align}
+%
+In the following the Matsubara sum is evaluated.
+Therefore we have to check the singularities of both propgators.
+Regarding equation \dots \todo{Link zum freien Propagator in expliziter Form}, illustrates that the propagator has a discontinuity if the absoulte value of the Matsubara frequency is zero. 
+This kind of singularity is called branch cut, because the whole horizontal line at the singularity is forbidden in the complex plane.
+Branch cuts are the reason why the Matsubara sum isn't so easily transformed into a contour integral in the complex plane like it is done usually, if the propagators have simple poles.
+In the investigated case the propagators have to singularity of this kind, one at $\omega_{n} = 0$ and one at $\omega_{n} = \omega_{l}$, which correspond to $n=0$ and $n=l$.
+The strategy to evaluate those Matsubara sums is to seperate the singularities from the sum.
+For reasons of simplizity the momentum argument of the second propagator is abbreviatied as $\vb{k}'=-\vb{k}-\vb{K}$.
+%
+\begin{align}
+	S(i\omega_{l}) :&= \frac{1}{\beta} \sum\limits_{\omega_{n}} \mathcal{D}_{\mu}(\vb{k},i\omega_{n}) \, \mathcal{D}_{\mu}(\vb{k}',i\omega_{l}-i\omega_{n})
+	\notag \\
+	\Leftrightarrow\ S(\omega_{l}) :&= 
+		\frac{1}{\beta} \mathcal{D}_{\mu}(\vb{k},0) \, \mathcal{D}_{\mu}(\vb{k}',i\omega_{l})
+		+
+		\frac{1}{\beta} \mathcal{D}_{\mu}(\vb{k},i\omega_{l}) \, \mathcal{D}_{\mu}(\vb{k}',0)
+		\notag \\
+		&+
+		\frac{1}{\beta} \sum\limits_{\substack{n \neq 0 \\ n \neq l}} \mathcal{D}_{\mu}(\vb{k},i\omega_{n}) \, \mathcal{D}_{\mu}(\vb{k}',i\omega_{l}-i\omega_{n})
+\end{align}
+%
+Now the remaining sum can be transformed into a complex contour integral.
+Thereby the contour $\Gamma$ includes all Matsubara frequencies $\omega_{n}$ on the inaginary axis, beside the two splitted off, and is taken counterclockwise.
+The contour $\Gamma$ is depicted in figure \dots \todo{Link zum Bild der Kontour}.
+%
+\begin{align}
+	\mt{I}_{MS}(\omega_{l}) := 
+		\frac{1}{\beta} \sum\limits_{\substack{n \neq 0 \\ n \neq l}} \mathcal{D}_{\mu,\vb{k}}(\omega_{n}) \, \mathcal{D}_{\mu,\vb{k}'}(\omega_{l}-\omega_{n})
+		=
+		\oint\limits_{\Gamma} \frac{\dd{z}}{2\pi i} n_{\mt{B}}(z) \mathcal{D}_{\mu,\vb{k}}(z) \, \mathcal{D}_{\mu,\vb{k}'}(\omega_{l}-z)
+\end{align}
+%
+where the momentum index is writen as an index until the Matsubara sum is evaluated and $n_{\mt{B}}(z)$ is the Bose distribution.
+Like it is shown in \dots \todo{Link zum Kontourbild} $\Gamma$ consists of three single contours which are denoted as $\Gamma_{1}$, $\Gamma_{2}$ and $\Gamma_{3}$.
+These three contours are expanded to infity where the contour line is never allow to cross the horizontal line at $\omega_{l}$ and $0$, see figure \todo{link to figure}.
 
+The contour $\Gamma_{1}$ is taken along the real axis in negative direction and is closed by a semicircle with infinite radius in the lower complex plane.
+$\Gamma_{2}$ is the contour between both branch cuts.
+Starting the contour along the real axis in positive direction.
+At infinity the contour is going up to the branch cut at $\omega_{n}$, along this axis back to minus infinity and finally back down to the starting point.
+The last contour $\Gamma_{3}$ is going along the $\omega_{n}$-axis in positive direction and is closed by a semicircle with infinite radius in the upper complex plane.
+The contour along the real and $\omega_{n}$-axis has to be set infinitesimal beside the axis, which is indicated with the term $\pm i\eta$.
+The sign has to be chosen according to the contour.
 
-
-
-
-
-
-
-
-
-
-
-
+Each one of these three contour integrals can be splitted in parts.
+$\Gamma_{1}$ and $\Gamma_{3}$ the contour is seperated into the path along the real and $\omega_{n}$-axis, respectivily, and the semicircle.
+In both cases the contribution of the semicircles vanish, because the integrand decreases faster than $\flatfrac{1}{z}$.
+In total $\Gamma_{2}$ is seperated into four parts.
+Two parts are the paths along the real and $\omega_{n}$-axis.
+The other both paths are the connecting path between them.
+Equally to the case of the semicircles these two path vanish.
+In summary only the paths along the two branch cuts survive.
+%
+\begin{align}
+	\mt{I}_{MS}(\omega_{l}) &= 
+		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{2\pi i} 
+			\mathcal{D}_{\mu,\vb{k}'}(\omega_{l}-\epsilon)
+			\bigg[
+				n_{\mt{B}}(\epsilon - i\eta) 
+				\mathcal{D}_{\mu,\vb{k}}(\epsilon - i\eta) 
+				- 
+				n_{\mt{B}}(\epsilon + i\eta) 
+				\mathcal{D}_{\mu,\vb{k}}(\epsilon + i\eta)
+			\bigg]
+		\notag \\ &+
+		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{2\pi i} 
+			\mathcal{D}_{\mu,\vb{k}}(\epsilon + i\omega_{l})
+			\bigg[
+				n_{\mt{B}}(i\omega_{l} + \epsilon - i\eta)  
+				\mathcal{D}_{\mu,\vb{k}'}(\epsilon + i\eta) 
+				\notag \\& \hspace{3.6cm}- 
+				n_{\mt{B}}(i\omega_{l} + \epsilon + i\eta)
+				\mathcal{D}_{\mu,\vb{k}'}(\epsilon - i\eta)
+			\bigg]
+\end{align}
+%
+where the limit $\eta \to 0^{+}$ is implied.
 
 
 
