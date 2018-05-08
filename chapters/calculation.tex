@@ -300,7 +300,7 @@ The considered umklapp scattering is only entered in the time derivative of the 
 Commonly the sort of this calculation is done in the Matsubara time $\tau = it$, see e.\,g. \cite{Bruus&Flensberg} for an introduction or a review.
 %
 \begin{align}
-	\mt{I}_{jj}(z) :=  \int\limits_{0}^{\infty} \dd{t} e^{iz t} \expval{\comm{\dot{\mt{P}}_{j}(t)}{\dot{\mt{P}}_{j}(0)}}_{\mt{H}_{1}} = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}_{j}(\tau) \dot{\mt{P}}_{j}(0)}_{\mt{H}_{1}}
+	\mathcal{G}_{jj}(z) :=  \int\limits_{0}^{\infty} \dd{t} e^{iz t} \expval{\comm{\dot{\mt{P}}_{j}(t)}{\dot{\mt{P}}_{j}(0)}}_{\mt{H}_{1}} = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}_{j}(\tau) \dot{\mt{P}}_{j}(0)}_{\mt{H}_{1}}
 \end{align}
 %
 The norm of the Jacobi determinate is $-i$ and the upper integral limit changes from infinity to $\beta$.
@@ -312,7 +312,7 @@ The transformation's aim is that the expectation value is only taken with respec
 A series expansion of this one up to the first non-disappearing order yields
 %
 \begin{align}
-	\mt{I}_{jj}(z) = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}_{j}(\tau) \dot{\mt{P}}_{j}(0)}_{\mt{H}_{0}}^{\mt{con}}
+	\mathcal{G}_{jj}(z) = i \int\limits_{0}^{\beta} \dd{\tau} e^{z \tau} \expval{\mathcal{T}_{\tau} \dot{\mt{P}}_{j}(\tau) \dot{\mt{P}}_{j}(0)}_{\mt{H}_{0}}^{\mt{con}}
 \end{align}
 %
 where it has to be remarked that in quantum field pertubation theory only connected diagrams are considered, which is indicated with "con" at the expectation value.
@@ -332,7 +332,7 @@ The sum over $\mu$ is implied.
 Inserting the time derivative of the momentum in $\mt{I}_{jj}(z)$ yields
 %
 \begin{align}
-	\mt{I}_{jj}(z) &= 
+	\mathcal{G}_{jj}(z) &= 
 		-\frac{i}{\hbar^{2}} 
 		\sum\limits_{\vb{K}_{1}, \vb{K}_{2}} 
 		\mt{J}_{\vb{K}_{1}} \mt{J}_{\vb{K}_{2}} 
@@ -358,7 +358,7 @@ The remaining momentum and reziprocal lattice vector is renamed into $\vb{k}$ an
 Further one sum over the spactial direction of $\Phi$, denoted with the greek letter, is performed.
 %
 \begin{align}
-	\mt{I}_{jj}(z) &= 
+	\mathcal{G}_{jj}(z) &= 
 		-\frac{2}{\hbar^{2}} 
 		\sum\limits_{\vb{K}} 
 		\vert \mt{J}_{\vb{K}} \vert^{2}
@@ -393,7 +393,7 @@ is used and then one of the two sums over Matsubara frequencies can be performed
 After all these steps the integral has the form
 %
 \begin{align}
-	\mt{I}_{jj}(\omega_{l}) &= 
+	\mathcal{G}_{jj}(i\omega_{l}) &= 
 		-\frac{2}{\hbar^{2}} 
 		\sum\limits_{\vb{K}} 
 		\vert \mt{J}_{\vb{K}} \vert^{2}
@@ -401,6 +401,7 @@ After all these steps the integral has the form
 		\frac{1}{\beta} \sum\limits_{\omega_{n}}
 		\mathcal{D}_{\mu}(\vb{k},\omega_{n}) \,
 		\mathcal{D}_{\mu}(-\vb{k}-\vb{K},\omega_{l}-\omega_{n})
+		\label{eq: Green function on the imaginary axis}
 \end{align}
 %
 In the following the Matsubara sum is evaluated.
@@ -413,29 +414,31 @@ The strategy to evaluate those Matsubara sums is to seperate the singularities f
 For reasons of simplizity the momentum argument of the second propagator is abbreviatied as $\vb{k}'=-\vb{k}-\vb{K}$.
 %
 \begin{align}
-	S(i\omega_{l}) :&= \frac{1}{\beta} \sum\limits_{\omega_{n}} \mathcal{D}_{\mu}(\vb{k},i\omega_{n}) \, \mathcal{D}_{\mu}(\vb{k}',i\omega_{l}-i\omega_{n})
+	S(i\omega_{l}) :&= \frac{1}{\beta} \sum\limits_{\omega_{n}} \mathcal{D}_{\mu,\vb{k}}(i\omega_{n}) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-i\omega_{n})
 	\notag \\
-	\Leftrightarrow\ S(\omega_{l}) :&= 
-		\frac{1}{\beta} \mathcal{D}_{\mu}(\vb{k},0) \, \mathcal{D}_{\mu}(\vb{k}',i\omega_{l})
+	\Leftrightarrow\ S(i\omega_{l}) :&= 
+		\frac{1}{\beta} \mathcal{D}_{\mu,\vb{k}}(0) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l})
 		+
-		\frac{1}{\beta} \mathcal{D}_{\mu}(\vb{k},i\omega_{l}) \, \mathcal{D}_{\mu}(\vb{k}',0)
+		\frac{1}{\beta} \mathcal{D}_{\mu,\vb{k}}(i\omega_{l}) \, \mathcal{D}_{\mu,\vb{k}'}(0)
 		\notag \\
 		&+
-		\frac{1}{\beta} \sum\limits_{\substack{n \neq 0 \\ n \neq l}} \mathcal{D}_{\mu}(\vb{k},i\omega_{n}) \, \mathcal{D}_{\mu}(\vb{k}',i\omega_{l}-i\omega_{n})
+		\frac{1}{\beta} \sum\limits_{\substack{n \neq 0 \\ n \neq l}} \mathcal{D}_{\mu,\vb{k}}(i\omega_{n}) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-i\omega_{n})
+	\label{eq: seperated Matsubara sum}
 \end{align}
 %
+where the momentum argument is writen as an index until the Matsubara sum is evaluated.
 Now the remaining sum can be transformed into a complex contour integral.
 Thereby the contour $\Gamma$ includes all Matsubara frequencies $\omega_{n}$ on the inaginary axis, beside the two splitted off, and is taken counterclockwise.
 The contour $\Gamma$ is depicted in figure \dots \todo{Link zum Bild der Kontour}.
 %
 \begin{align}
 	\mt{I}_{MS}(\omega_{l}) := 
-		\frac{1}{\beta} \sum\limits_{\substack{n \neq 0 \\ n \neq l}} \mathcal{D}_{\mu,\vb{k}}(\omega_{n}) \, \mathcal{D}_{\mu,\vb{k}'}(\omega_{l}-\omega_{n})
+		\frac{1}{\beta} \sum\limits_{\substack{n \neq 0 \\ n \neq l}} \mathcal{D}_{\mu,\vb{k}}(i\omega_{n}) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-i\omega_{n})
 		=
-		\oint\limits_{\Gamma} \frac{\dd{z}}{2\pi i} n_{\mt{B}}(z) \mathcal{D}_{\mu,\vb{k}}(z) \, \mathcal{D}_{\mu,\vb{k}'}(\omega_{l}-z)
+		\oint\limits_{\Gamma} \frac{\dd{z}}{2\pi i} n_{\mt{B}}(z) \mathcal{D}_{\mu,\vb{k}}(z) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-z)
 \end{align}
 %
-where the momentum index is writen as an index until the Matsubara sum is evaluated and $n_{\mt{B}}(z)$ is the Bose distribution.
+where $n_{\mt{B}}(z)$ is the Bose distribution.
 Like it is shown in \dots \todo{Link zum Kontourbild} $\Gamma$ consists of three single contours which are denoted as $\Gamma_{1}$, $\Gamma_{2}$ and $\Gamma_{3}$.
 These three contours are expanded to infity where the contour line is never allow to cross the horizontal line at $\omega_{l}$ and $0$, see figure \todo{link to figure}.
 
@@ -459,7 +462,7 @@ In summary only the paths along the two branch cuts survive.
 \begin{align}
 	\mt{I}_{MS}(\omega_{l}) &= 
 		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{2\pi i} 
-			\mathcal{D}_{\mu,\vb{k}'}(\omega_{l}-\epsilon)
+			\mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-\epsilon)
 			\bigg[
 				n_{\mt{B}}(\epsilon - i\eta) 
 				\mathcal{D}_{\mu,\vb{k}}(\epsilon - i\eta) 
@@ -469,17 +472,141 @@ In summary only the paths along the two branch cuts survive.
 			\bigg]
 		\notag \\ &+
 		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{2\pi i} 
-			\mathcal{D}_{\mu,\vb{k}}(\epsilon + i\omega_{l})
+			\mathcal{D}_{\mu,\vb{k}}(i\omega_{l} + \epsilon)
 			\bigg[
 				n_{\mt{B}}(i\omega_{l} + \epsilon - i\eta)  
-				\mathcal{D}_{\mu,\vb{k}'}(\epsilon + i\eta) 
+				\mathcal{D}_{\mu,\vb{k}'}(\epsilon - i\eta) 
 				\notag \\& \hspace{3.6cm}- 
 				n_{\mt{B}}(i\omega_{l} + \epsilon + i\eta)
-				\mathcal{D}_{\mu,\vb{k}'}(\epsilon - i\eta)
+				\mathcal{D}_{\mu,\vb{k}'}(\epsilon + i\eta)
+			\bigg]
+	\label{eq: Matsubara sum along axes parallel to real axis}
+\end{align}
+%
+where the limit $\eta \to 0^{+}$ is implied and we used that the propagator $\mathcal{D}$ is symmetric with respect to the frequency argument.
+It is easy to prove that $n_{\mt{B}}(z+i\omega_{l}) = n_{\mt{B}}(z)$, which means that the Bose distribution is invariant with respect to Matsubara frequencies.
+Thereby is $z \in \mathbb{C}$ and $\omega_{l} = \flatfrac{2\pi l}{\beta}$ with $l \in \mathbb{Z}$ is a bosonic Matsubara frequency and therefore $\exp(i\omega_{l}) = 1$.
+Now we set $z = \epsilon \pm i\eta$ and investigate the Bose distribution with respect to the limit $\epsilon \to 0$.
+We expand the exponential function up to the second non disappearing order, because of the singularity of the Bose distribution at $\epsilon = 0$.
+%
+\begin{align}
+	n_{\mt{B}}(\epsilon \pm i\eta) \approx \frac{\beta^{-1}}{\epsilon \pm i\eta} = \beta^{-1} \Big( \PV{\frac{1}{\epsilon}} \mp i\pi\delta(\epsilon) \Big) = n_{\mt{B}}(\epsilon) \mp i\pi \beta^{-1} \delta(\epsilon),
+	\label{eq: Bose distribution in real and imaginary part}
+\end{align}
+%
+where the last equality is only valid for small frequencies.
+Going back to equation \eqref{eq: Matsubara sum along axes parallel to real axis}.
+The Bose distributions in both squared brackets become equally, because the Bose distribution is invariant with respect to Matsubara frequencies.
+Thus the only difference between the terms in the brackets exist in the momentum argument of the propagators.
+Writing the Bose distribution and the propagators by real and imaginary parts, using that the real parts of $n_{\mt{B}}$ and $\mathcal{D}$ are symmetric and that the imaginary parts are antisymmetric under changing $\eta \to -\eta$ \todo{nachvollziehen, dass die Symmetrieaussage stimmt}, yield
+%
+\begin{align}
+	2i\Big[ \Re{n_{\mt{B}}(\epsilon+i\eta)} \Im{\mathcal{D}_{\mu, \vb{k}}(\epsilon+i\eta)} + \Im{n_{\mt{B}}(\epsilon+i\eta)} \Re{\mathcal{D}_{\mu, \vb{k}}(\epsilon+i\eta)} \Big]
+	\label{eq: conversion of squared brackets}
+\end{align}
+%
+for the squared brackets in the first line of equation \eqref{eq: Matsubara sum along axes parallel to real axis} and the analogical expression for the squared brackets in the second line, changing $\vb{k} \to \vb{k}'$.
+Firstly the second term of \eqref{eq: conversion of squared brackets} should be investigated.
+The imaginary part of the Bose distribution is given by equation \eqref{eq: Bose distribution in real and imaginary part}, where the $\delta$-distribution makes life easy for us.
+Evaluating both integrals over the second terms in \eqref{eq: conversion of squared brackets} yield
+%
+\begin{align}
+	-\frac{1}{\beta} \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}) \Re{\mathcal{D}_{\mu,\vb{k}}(0)} - \frac{1}{\beta} \mathcal{D}_{\mu,,\vb{k}}(i\omega_{l}) \Re{\mathcal{D}_{\mu,\vb{k}'}(0)}
+\end{align}
+%
+where the obviously relation $\Re{\mathcal{D}_{\mu,\vb{k}}(0)} = \mathcal{D}_{\mu,\vb{k}}(0)$ is used, which is independently of the momentum.
+Comparing this result with the both first terms in \eqref{eq: seperated Matsubara sum} we see that both expressions are equally beside a global sign and thus both cancel each other.
+Therefore the only contribution of the Matsubara sum is originated by the first term of the squared brackets in \eqref{eq: conversion of squared brackets}.
+The real part of $n_{\mt{B}}(\epsilon + i\eta)$ is $n_{\mt{B}}(\epsilon)$, see equation \eqref{eq: Bose distribution in real and imaginary part}.
+Further the imaginary part of the propagator is independent of the additional part $i\eta$. % and the propagator is symmetric with respect to the frequency in the representation on the imaginary axis.
+%
+\begin{align}
+	S(i\omega_{l}) = \int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{\pi} 
+			n_{\mt{B}}(\epsilon) 
+			\bigg[
+				\mathcal{D}_{\mu,\vb{k}'}(i\omega_{l} - \epsilon) \Im{\mathcal{D}_{\mu, \vb{k}}(\epsilon)}
+				+ 
+				\mathcal{D}_{\mu,\vb{k}}(i\omega_{l} + \epsilon) \Im{\mathcal{D}_{\mu, \vb{k}'}(\epsilon)}
 			\bigg]
 \end{align}
 %
-where the limit $\eta \to 0^{+}$ is implied.
+Now we are at the point that $S(i\omega_{l})$ can be analytical continuated on the real axis of $\omega$, which is a physical quantity beside $i\omega_{l}$.
+Therefore we have to set $i\omega_{l} = \omega + i\eta =: \tilde{\omega}$, where the limit $\eta \to 0^{+}$ is implied.
+Regarding equation \dots \todo{link to propagator function on real axis} we see that $\mathcal{D}_{\mu,\vb{k}'}(\epsilon - \omega) = \mathcal{D}_{\mu,\vb{k}'}^{*}(\omega - \epsilon)$, where the asterisk means the complex conjugated.
+%
+\begin{align}
+	S(\omega) = \int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{\pi} 
+			n_{\mt{B}}(\epsilon) 
+			\bigg[
+				\mathcal{D}_{\mu,\vb{k}'}^{*}(\epsilon - \omega) \Im{\mathcal{D}_{\mu, \vb{k}}(\epsilon)}
+				+ 
+				\mathcal{D}_{\mu,\vb{k}}(\epsilon + \omega) \Im{\mathcal{D}_{\mu, \vb{k}'}(\epsilon)}
+			\bigg]
+\end{align}
+%
+In the first term the frequency argument is shifted from $\epsilon - \omega \to \epsilon$, so that the propagators with the same momentum argument have the same frequency argument.
+The last step is to take the imaginary part of $S(\omega)$.
+This approach is valid, because the resitivity is defined by the imaginary part of the retarted Green function which corresponds to \eqref{eq: Green function on the imaginary axis}.
+The only possible complex quantity in \eqref{eq: Green function on the imaginary axis} is the Matsubara sum, defined in \eqref{eq: seperated Matsubara sum}.
+Thus the imaginary part of the Matsubara sum is given by
+%
+\begin{align}
+	\Im{S(\omega)} = 
+		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{\pi} 
+		\bigg[ n_{\mt{B}}(\epsilon) - n_{\mt{B}}(\epsilon + \omega)\bigg] 
+		\Im{\mathcal{D}_{\mu}(-\vb{k}-\vb{K},\epsilon)} 
+		\Im{\mathcal{D}_{\mu}(\vb{k}, \epsilon + \omega)}
+\end{align}
+%
+where we used that the imaginary part of the propagator $\mathcal{D}$ and his complex conjugated one $\mathcal{D}^{*}$ are equal beside a minus.
+$\Im{S(\omega)}$ is inserted in equation \eqref{eq: Green function on the imaginary axis}, where the analytical continuation, which was done for the Matsubara sum, have similarly to do for the Green function.
+%
+\begin{align}
+	\mt{G}_{jj}(\omega) &= 
+		-\frac{2}{\hbar^{2}} 
+		\sum\limits_{\vb{K}} 
+		\vert \mt{J}_{\vb{K}} \vert^{2}
+		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{\pi} 
+		\bigg[ n_{\mt{B}}(\epsilon) - n_{\mt{B}}(\epsilon + \omega)\bigg]
+		\notag \\
+		&\times
+		\int_{\vb{k}} K_{j}^{2}
+		\Im{\mathcal{D}_{\mu}(-\vb{k}-\vb{K},\epsilon)} 
+		\Im{\mathcal{D}_{\mu}(\vb{k}, \epsilon + \omega)},
+		\label{eq: Green function on the real axis}
+\end{align}
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
