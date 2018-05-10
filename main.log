@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  10 MAY 2018 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  10 MAY 2018 21:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2283,28 +2283,63 @@ LaTeX Warning: Marginpar on page 30 moved.
 
 LaTeX Warning: Marginpar on page 30 moved.
 
-[30] [31] [32] [33] [34] [35] [36] [37] [38] [39]
+[30] [31] [32] [33] [34] [35] [36] [37] [38]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+ [39]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+ [40]
 
-LaTeX Warning: Marginpar on page 40 moved.
+LaTeX Warning: Marginpar on page 41 moved.
 
-[40] [41]) [42] (./chapters/conclusion.tex
+[41] [42]) [43] [44
+
+
+] (./chapters/conclusion.tex
 Chapter 6.
-) [43
+) [45
 
 
-
-
-] [44
+] [46
 
 
 ] (./chapters/appendix_properties_Kubo_relaxation_function.tex
 Appendix A.
-[45
+[47
 
 
 
 
-]) (./chapters/appendix_conversion_expectation_value.tex [46]
+]) (./chapters/appendix_conversion_expectation_value.tex [48]
 Appendix B.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2758,30 +2793,39 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
-) (./chapters/appendix_matsubara_sums.tex [47
+) (./chapters/appendix_matsubara_sums.tex [49
 
 
-] [48
+] [50
 
 
 ]
 Appendix C.
-) [49] [50
+) [51] [52
 
 
-] (./main.tdo [51
+] (./main.tdo
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+ [53
 
 
 ])
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [52] [53
+ [54] [55
 
 
 
 
-] [54
+] [56
 
 
 ]
@@ -2797,10 +2841,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32177 strings out of 494347
- 601373 string characters out of 6168810
+ 32208 strings out of 494347
+ 602126 string characters out of 6168810
  1076102 words of memory out of 5000000
- 34590 multiletter control sequences out of 15000+600000
+ 34611 multiletter control sequences out of 15000+600000
  25180 words of font info for 96 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,18n,76p,10534b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2825,10 +2869,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
 /public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on main.pdf (62 pages, 451673 bytes).
+Output written on main.pdf (64 pages, 459238 bytes).
 PDF statistics:
- 991 PDF objects out of 1000 (max. 8388607)
- 838 compressed objects within 9 object streams
- 303 named destinations out of 1000 (max. 500000)
+ 1016 PDF objects out of 1200 (max. 8388607)
+ 861 compressed objects within 9 object streams
+ 313 named destinations out of 1000 (max. 500000)
  210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

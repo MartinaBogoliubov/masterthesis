@@ -620,6 +620,7 @@ Consider the case $\vb{K} - \vb{Q}_{1} = 0$ and $\vb{Q}_{2} = 0$, which is the m
 		\frac{\epsilon^{2} e^{\beta \epsilon}}{(e^{\beta \epsilon} - 1)^{2}}
 		\int_{\vb{k}}
 		\frac{1}{\big(\vb{k}^{4} + \gamma^{2} \epsilon^{2}\big)^{2}}
+	\label{eq: Green function most divergent case}
 \end{align}
 %
 It's more convenient for the further computation to transform the variables into dimensionless ones.
@@ -636,7 +637,6 @@ For reasons of simplicity the constant parameters are combined to the constant $
 		\frac{x^{2} e^{x}}{(e^{x} - 1)^{2}}
 		\int_{\vb{y}}
 		\frac{1}{\big(\vb{y}^{4} + x^{2}\big)^{2}}
-	\label{eq: Green function most divergent case}
 \end{align}
 %
 The following strategy is the transform the two dimensional $\vb{y}$-integral into plane polar coordinates.
@@ -683,62 +683,134 @@ Our new starting point is equation \eqref{eq: Green function most divergent case
 %
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
-		C \cdot \beta \omega
+		-\frac{4 \gamma^{2} \beta \omega}{\pi \hbar^{2}}
 		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
-		\int\limits_{0}^{\infty} \dd{x}
-		\frac{x^{2} e^{x}}{(e^{x} - 1)^{2}}
-		\int_{\vb{y}}
-		\frac{1}{\big((\vb{y}^{2}+r)^{2} + x^{2}\big)^{2}}
+		\int\limits_{0}^{\infty} \dd{\epsilon}
+		\frac{\epsilon^{2} e^{\beta \epsilon}}{(e^{\beta \epsilon} - 1)^{2}}
+		\int_{\vb{k}}
+		\frac{1}{\big((\vb{k}^{2}+r)^{2} + \gamma^{2} \epsilon^{2}\big)^{2}}
 	\label{eq: Green function with renormalization factor}
 \end{align}
 %
-The procedure to compute the integrals are equally to the previous case.
-In a first step the momentum $\vb{k}$ is transformed into plane polar coordinates ($y_{x} = y\cos\phi, \linebreak y_{y} = y\sin\phi$).
-The integrand is again angular independent, which yields the factor $2\pi$ by integrating the $\phi$-integral.
-Similarly to the case above the upper limit of the radius integral is set to infinity, because the renormalization factor dosen't changed the behaviour of the integrand respective to large value of $y$.
-It is still decreasing fast to zero for $y\to\infty$.
-Then the factor $x^{2}$ is factorized in the denominator and substituting the resulting term in the brackets.
-The transformation is $z = \flatfrac{(r + y^{2})}{x}$, where the loxer limit is set to be $\flatfrac{r}{x}$ and the upper limit isn't changed.
-Further the new differential $\dd{z}$ is given by $\flatfrac{2y\dd{y}}{x}$.
+The computing procedure for the integrals are similar to the previous case.
+In comparison to the computation above the integral isn't transformed into dimensionless variables at this point, it's done later.
+Firstly the momentum integral is transformed into plane polar coordinates via the transformation $\vb{k} = (y\cos\phi, y\sin\phi)$.
+Again the integrand is angular independent, why the $\phi$-integral yields the factor $2\pi$.
+Furthermore the integrand is proportional to $\flatfrac{1}{k^{4}}$ and decrease therefor very fast to zero in the limit $k \to \infty$, because of the upper limit of the $k$-integral is set to infinity.
+
+Subsequently the factor $\gamma^{2} \epsilon^{2}$ is factorizied in the denominator.
+After that the integral is substituted again, this time with $z = \flatfrac{(r + k^{2})}{\gamma\epsilon}$.
+Now it is obvious why the renormaliziation factor is introduced at this place.
+Bacause of the factor $r$ the lower limit of the integral is now $\flatfrac{r}{\gamma\epsilon}$ instead of zero, which makes sure that the integral is convergent.
 %
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
-		\frac{C}{4\pi} \cdot \beta \omega
+		-\frac{\beta \omega}{\gamma \pi^{2} \hbar^{2}} 
 		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
-		\int\limits_{0}^{\infty} \dd{x}
-		\frac{x^{-1} e^{x}}{(e^{x} - 1)^{2}}
-		\int\limits_{\flatfrac{r}{x}}^{\infty} \dd{z}
+		\int\limits_{0}^{\infty} \dd{\epsilon}
+		\frac{\epsilon^{-1} e^{\beta \epsilon}}{(e^{\beta \epsilon} - 1)^{2}}
+		\int\limits_{\flatfrac{r}{\gamma \epsilon}}^{\infty} \dd{z}
 		\frac{1}{\big(z^{2} + 1\big)^{2}}
 \end{align}
 %
-In difference to the previous calculation the lower limit isn't anymore zero, so that the divergence of the integral is eliminated.
-The $z$-integral yields therefor
-%
-\begin{align}
-	\int\limits_{\flatfrac{r}{x}}^{\infty} \dd{z}	\frac{1}{\big(z^{2} + 1\big)^{2}} 
-	= 
-	\frac{1}{4} \bigg[\pi - \frac{\flatfrac{r}{x}}{1+(\flatfrac{r}{x})^{2}} -2\arctan(\frac{r}{x})\bigg]
-\end{align}
-%
-where the antiderivative is given by equation \eqref{eq: z-intgeral}.
-The Green function is then
+The antiderivative of the $z$-integral is given by equation \eqref{eq: z-intgeral} and the expression of the Green function is
 %
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
-		\frac{C}{16\pi} \cdot \beta \omega
+		-\frac{\beta \omega}{4 \gamma \pi^{2} \hbar^{2}}
 		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
-		\int\limits_{0}^{\infty} \dd{x}
-		\frac{x^{-1} e^{x}}{(e^{x} - 1)^{2}}
-		\bigg[\pi - \frac{2\flatfrac{r}{x}}{1+(\flatfrac{r}{x})^{2}} -2\arctan(\frac{r}{x})\bigg]
+		\int\limits_{0}^{\infty} \dd{\epsilon}
+		\frac{\epsilon^{-1} e^{\beta \epsilon}}{(e^{\beta \epsilon} - 1)^{2}}
+		\bigg[\pi - \frac{2\flatfrac{r}{\gamma \epsilon}}{1+(\flatfrac{r}{\gamma \epsilon})^{2}} -2\tan[-1](\frac{r}{\gamma \epsilon})\bigg]
+		\label{eq: Green function after evaluating momentum integral}
 \end{align}
 %
+Now the time is come, where the integral is tansformed with $x=\beta \epsilon$ into dimensionless variables.
+The integrand is a function which decrease fast to zero for large values of $x$, which is depicted in figure \dots \todo{Grafik die zeigt dass der Integrand schnell gegen Null strebt für große Werte}.
+In good approximation the upper limit can be set to an arbitrary value $\Lambda$.
+So the important contribution is originated in the small values of $x$ why the expression in squared brackets is expanded up to leading order.
+The difference of the original and the approximated function are exhibited in figure \dots \todo{Grafik die den Unterschied der Näherung zum Original zeigt}.
+Furter the fraction of the exponential functions can be approximated.
+In total the intgerand is independent of the variable $x$ so the integral yields the factor $\Lambda$
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &\approx 
+		-\frac{\gamma^{2} \Lambda}{3 \pi^{2} \hbar^{2}} \cdot
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2} \cdot
+		\frac{1}{\beta^{2} r^{3}} \cdot
+		\omega
+\end{align}
+%
+The single tempurature depending factors are $\beta$ and $r$.
+The renormaliziation factor is derelated to the tempurature on $r = T^{\flatfrac{2}{z}}$.
+Thus the temperature dependence of the Green function is given by
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) \sim \frac{1}{\beta^{2} r^{3}} \sim T^{2-\flatfrac{6}{z}},
+\end{align}
+%
+which means that $z$ has to be three that the Green function and therefor the resistance is a constant function.
+For $z=6$ the the Green function or resistance are proportional to $T$.
+These values are two much to large.
+Normally $z$ takes on values of $z=1$ or $z=2$.
+Figure \dots \todo{Link zum Bild der die Näherung zeigt} shows that the agreement of the original and approximated function are only in a small regime valid.
+If the variable $x$ increases the value of 1 the agreement is miserable.
+Therefore we want to find another much better approximation for the expression in the squared brackets in equation \eqref{eq: Green function after evaluating momentum integral}.
 
-
-
-
-
-
-
+For a better approximation again equation \eqref{eq: Green function with renormalization factor} and let's do the treatment of power counting for the momentum integral.
+The denominator yields $k^{8}$ and the numerator yields $k^{2}$, because of the differential $\dd[2]{\vb{k}}$.
+In total the power of $k^{-6}$.
+Beside that the integrand has two possible divergencies $\gamma\epsilon$ and $r$, where both of them are proportional to $k^{2}$.
+Because of the structur of the integrand we determine the following expression for the Green function.
+The function is multiplied by $\pi$ to get the same upper bound.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		-\frac{4 \gamma^{2} \beta \omega}{\pi \hbar^{2}}
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+		\int\limits_{0}^{\infty} \dd{\epsilon}
+		\frac{\epsilon^{2} e^{\beta \epsilon}}{(e^{\beta \epsilon} - 1)^{2}}
+		\frac{\pi}{(r^{2} + \gamma^{2} \epsilon^{2})^{\flatfrac{3}{2}}}
+\end{align}
+%
+In figure \dots \todo{Graph f\"ur power counting function} the exact solution of the momentum integral and the approximation given by power counting are contrasted.
+Comparing with our previous approximation this new approximation is much better.
+Similar to the exact function our approximation is convergent vor large values of $\epsilon$.
+Nevertheless let us factrizing $\gamma^{2} \epsilon^{2}$ in the denominator and transform into dimensionless variables with $x=\beta \epsilon$.
+Further the dimensionless integral is cupped by an arbitrary value $\Lambda$ again.
+Then the exponential functions can be expanded with respect to small $x$.
+The resulting integral is exactly solvable.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) 
+	= 
+	-\frac{4 \beta \omega}{\gamma\hbar^{2}}
+	\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+	\int\limits_{0}^{\Lambda} \dd{x}
+	\frac{1}{\Big(\big(\frac{\beta r}{\gamma}\big)^{2} + x^{2}\Big)^{\frac{3}{2}}}
+	\sim
+	\frac{\Lambda}{\big(\frac{\beta r}{\gamma}\big)^{2} \sqrt{\big(\frac{\beta r}{\gamma}\big)^{2} + \Lambda^{2}}}
+\end{align}
+%
+These expression can be expanded for small values of $\flatfrac{\beta r}{\gamma \Lambda}$.
+Now we can insert the tempurature depended renormalization factor $r = T^{\flatfrac{2}{z}}$.
+Therefore the Green function is given by
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) 
+	= 
+	-\frac{4 \gamma \Lambda^{-1}}{\hbar^{2}}
+	\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2} 
+	\frac{1}{\beta r^{2}} \cdot \omega
+	\sim
+	T^{1-\flatfrac{4}{z}}
+\end{align}
+%
+In comparison to the first investigation of the Green function above, once the term in the squared brackets was expanded in \eqref{eq: Green function after evaluating momentum integral}, this result is a little bit better.
+Nevertheless the value of $z$ has to be $z=4$ that the Green function and therefor the resitance is proportional $T^{0}$.
+Normaly the value of $z$ is $1$ or $2$.
+If we consider this the resitance would be proportional to $T^{-3}$ and $T^{-1}$.
+These results for the temprature dependence are highly divengent.
 
 
 
