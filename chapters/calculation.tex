@@ -562,7 +562,7 @@ where we used that the imaginary part of the propagator $\mathcal{D}$ and his co
 $\Im{S(\omega)}$ is inserted in equation \eqref{eq: Green function on the imaginary axis}, where the analytical continuation, which was done for the Matsubara sum, have similarly to do for the Green function.
 %
 \begin{align}
-	\mt{G}_{jj}(\omega) &= 
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
 		-\frac{2}{\hbar^{2}} 
 		\sum\limits_{\vb{K}} 
 		\vert \mt{J}_{\vb{K}} \vert^{2}
@@ -576,22 +576,162 @@ $\Im{S(\omega)}$ is inserted in equation \eqref{eq: Green function on the imagin
 		\label{eq: Green function on the real axis}
 \end{align}
 %
+The spin density wave propagator is given by equation \dots \todo{link to spin fermion propagator for real omega} and the imaginary part is obtained by expanding with the complex conjugated denominator.
+Further the limit of small frequncies $\omega$ is considered.
+On that account the Bose distribution has to be approximated up to the second order, otherwise the expression would be zero.
+The expression of the propagators is friendly in the limit of small frequencies thus $\omega$ can be set to zero.
+Additional the integrand is an even function with respect to $\epsilon$, which is easy to see.
+Beside the exponential functions the expression is only depended on $\epsilon^{2}$-terms, which are obviously even.
+The eponential expression is even as well, which is easily shown by factorizied the exponential function in the denominator.
+Therefore the lower limit of the integral is set to zero and the complete expression is multiplied with two.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		-\frac{4 \gamma^{2} \beta \omega}{\pi \hbar^{2}}
+		\sum\limits_{\vb{Q}_{1}, \vb{Q}_{2}}
+		\sum\limits_{\vb{K}}
+		\vert \mt{J}_{\vb{K}} \vert^{2}
+		\int\limits_{0}^{\infty} \dd{\epsilon}
+		\frac{\epsilon^{2} e^{\beta \epsilon}}{(e^{\beta \epsilon} - 1)^{2}}
+		\notag \\
+		&\times
+		\int_{\vb{k}} K_{j}^{2} \cdot
+		\frac{1}{(\vb{k}+\vb{K}-\vb{Q}_{1})^{4} + \gamma^{2} \epsilon^{2}} \cdot
+		\frac{1}{(\vb{k} + \vb{Q}_{2})^{4} + \gamma^{2} \epsilon^{2}}
+\end{align}
+%
+The Green function has to be investigated in differant cases to prove the convergence.
+For large values of the mometum vector the function is clearly convergent because of two reasons.
+Firstly the function is proportional to $\flatfrac{1}{\vb{k}^{4}}$ which is a fastly decreasing function with respect to large values of $\vb{k}$.
+Secondly the momentum vector is restricted to the first Brillouin zone, so even if there would be a devergence for large $\vb{k}$ the values didn't reach these values.
+Nevertheless there can be a devergence if the reciprocal lattice vector component $K_{j}$ is large.
+It's imaginable that $K_{j}$ is compensated by the respective component of $\vb{Q}_{1}$ and thus the denominater is small compared to the numerator.
+The convergence of the Green function is ensured by the coupling constant $\mt{J}_{\vb{K}}$, which is decreasing fast to zero how longer the coupling distance is.
+This assumption isn't contradicted to any physical observation.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In the case of small values of the momentum vector the situation is slightly differant.
+Consider the case $\vb{K} - \vb{Q}_{1} = 0$ and $\vb{Q}_{2} = 0$, which is the most divergent and hence the most dangerous case.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		-\frac{4 \gamma^{2} \beta \omega}{\pi \hbar^{2}}
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+		\int\limits_{0}^{\infty} \dd{\epsilon}
+		\frac{\epsilon^{2} e^{\beta \epsilon}}{(e^{\beta \epsilon} - 1)^{2}}
+		\int_{\vb{k}}
+		\frac{1}{\big(\vb{k}^{4} + \gamma^{2} \epsilon^{2}\big)^{2}}
+\end{align}
+%
+It's more convenient for the further computation to transform the variables into dimensionless ones.
+The transformation instruction for the frequancy and momentum is $x = \beta \epsilon$ and $\vb{y} = \sqrt{\flatfrac{\beta}{\gamma}}\vb{k}$, respectivily.
+The limits of the $\vb{y}$-integral are changed to $\pm \pi\sqrt{\flatfrac{\beta}{\gamma}}$.
+Further the Jacobi determinate yields in total $\flatfrac{\gamma}{\beta^{2}}$.
+For reasons of simplicity the constant parameters are combined to the constant $C$.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		C \cdot \beta \omega
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+		\int\limits_{0}^{\infty} \dd{x}
+		\frac{x^{2} e^{x}}{(e^{x} - 1)^{2}}
+		\int_{\vb{y}}
+		\frac{1}{\big(\vb{y}^{4} + x^{2}\big)^{2}}
+	\label{eq: Green function most divergent case}
+\end{align}
+%
+The following strategy is the transform the two dimensional $\vb{y}$-integral into plane polar coordinates.
+Considering the integrand decrease very fast to zero with respect to large values of $\vb{y}$, thus the upper boundary of the integral can be set to infinity. \todo{picture of the function which shows the decreasing condition}
+Further the angle integral yields the value $2\pi$, because the integrand is angular independent.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		\frac{C}{2\pi} \cdot \beta \omega
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+		\int\limits_{0}^{\infty} \dd{x}
+		\frac{x^{2} e^{x}}{(e^{x} - 1)^{2}}
+		\int\limits_{0}^{\infty} \dd{y}
+		\frac{y}{\big(y^{4} + x^{2}\big)^{2}}
+\end{align}
+%
+Factorizing $x^{2}$ in the fraction and again substituting $z = \flatfrac{y^{2}}{x}$.
+The limits of the integral dosen't changed during this transformation.
+Besides the new differential is given by $x\dd{z} = 2 y \dd{y}$.
+The resulting $z$-integral is exactly solvable and yields
+%
+\begin{align}
+	\int\limits_{0}^{\infty} \dd{z}	\frac{1}{\big(z^{2} + 1\big)^{2}} = \eval{\frac{1}{2} \bigg[\frac{z}{z^{2} + 1} + \arctan(z)\bigg]}_{0}^{\infty} = \frac{\pi}{4}
+	\label{eq: z-intgeral}
+\end{align}
+%
+Thus only one last integral is left.
+The integrand is decreasing very fast to zero for large values of $x$, so that we haven't to consider all these values and the upper limit is set to $1$.
+In this integration area the exponential functions can be expanded for small values of $x$.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		\frac{C}{16} \cdot \beta \omega
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+		\int\limits_{0}^{1} \dd{x}
+		\frac{1}{x^{3}}
+\end{align}
+%
+In the lower limit the integrand is highly divergent, which is an unphysical solution.
+Hence the Green function has an infinite value which correspond to an infinite resistance, because of umklapp scattering. \todo{\"Ubergang schreiben}
+Let us consider our problem with an additional renormalization factor $r$.
+The renormaliziation factor is connected with the temperature through the relation $r \sim T^{\flatfrac{2}{z}}$ where $z$ is some factor which has to be chosen depending on the problem and temperature regime.
+Our new starting point is equation \eqref{eq: Green function most divergent case} with the difference that we add $r$ to $\vb{k}^{2}$.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		C \cdot \beta \omega
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+		\int\limits_{0}^{\infty} \dd{x}
+		\frac{x^{2} e^{x}}{(e^{x} - 1)^{2}}
+		\int_{\vb{y}}
+		\frac{1}{\big((\vb{y}^{2}+r)^{2} + x^{2}\big)^{2}}
+	\label{eq: Green function with renormalization factor}
+\end{align}
+%
+The procedure to compute the integrals are equally to the previous case.
+In a first step the momentum $\vb{k}$ is transformed into plane polar coordinates ($y_{x} = y\cos\phi, \linebreak y_{y} = y\sin\phi$).
+The integrand is again angular independent, which yields the factor $2\pi$ by integrating the $\phi$-integral.
+Similarly to the case above the upper limit of the radius integral is set to infinity, because the renormalization factor dosen't changed the behaviour of the integrand respective to large value of $y$.
+It is still decreasing fast to zero for $y\to\infty$.
+Then the factor $x^{2}$ is factorized in the denominator and substituting the resulting term in the brackets.
+The transformation is $z = \flatfrac{(r + y^{2})}{x}$, where the loxer limit is set to be $\flatfrac{r}{x}$ and the upper limit isn't changed.
+Further the new differential $\dd{z}$ is given by $\flatfrac{2y\dd{y}}{x}$.
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		\frac{C}{4\pi} \cdot \beta \omega
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+		\int\limits_{0}^{\infty} \dd{x}
+		\frac{x^{-1} e^{x}}{(e^{x} - 1)^{2}}
+		\int\limits_{\flatfrac{r}{x}}^{\infty} \dd{z}
+		\frac{1}{\big(z^{2} + 1\big)^{2}}
+\end{align}
+%
+In difference to the previous calculation the lower limit isn't anymore zero, so that the divergence of the integral is eliminated.
+The $z$-integral yields therefor
+%
+\begin{align}
+	\int\limits_{\flatfrac{r}{x}}^{\infty} \dd{z}	\frac{1}{\big(z^{2} + 1\big)^{2}} 
+	= 
+	\frac{1}{4} \bigg[\pi - \frac{\flatfrac{r}{x}}{1+(\flatfrac{r}{x})^{2}} -2\arctan(\frac{r}{x})\bigg]
+\end{align}
+%
+where the antiderivative is given by equation \eqref{eq: z-intgeral}.
+The Green function is then
+%
+\begin{align}
+	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
+		\frac{C}{16\pi} \cdot \beta \omega
+		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
+		\int\limits_{0}^{\infty} \dd{x}
+		\frac{x^{-1} e^{x}}{(e^{x} - 1)^{2}}
+		\bigg[\pi - \frac{2\flatfrac{r}{x}}{1+(\flatfrac{r}{x})^{2}} -2\arctan(\frac{r}{x})\bigg]
+\end{align}
+%
 
 
 
