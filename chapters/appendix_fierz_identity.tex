@@ -1,0 +1,126 @@
+%
+%
+\chapter{Fierz identity}
+\label{app: Fierz identity}
+%
+%
+This appendix shows the use of the Fierz identity in realation to computing products of field operators connected via Pauli matricies.
+Lets signify the generators of the fundamental representation $\mt{SU}(N)$ as $T^{a}$, where those have the form
+%
+\begin{align}
+	T_{ij}^{a} \qq{mit} a = 1,2,3,\dots,N^{2}-1 \qq{and} i,j=1,2,3,\dots,N
+\end{align}
+%
+The Fierz identity yields the connection between the product of two generators and the Kronecker symbols.
+In general the Fierz identity is given by
+%
+\begin{align}
+	\sum\limits_{a=1}^{N^{2}-1} T_{ij}^{a} T_{kl}^{a} = \frac{1}{2}\Big[\delta_{il} \delta_{jk} - \frac{1}{N} \delta_{ij} \delta_{kl}\Big]
+\end{align}
+%
+In the case of Pauli matricies the fundamental representation is $\mt{SU}(2)$ and the generator of $\mt{SU}(2)$ are connected with the Pauli matricies with the realation $T^{a} = \frac{1}{2} \sigma^{a}$.
+Therefore the Fierz identity for the fundamental representation is given by
+%
+\begin{align}
+	4 \sum\limits_{a=1}^{3} T_{ij}^{a} T_{kl}^{a} = \sum\limits_{a=1}^{3} \sigma_{ij}^{a} \sigma_{kl}^{a} = 2 \delta_{il} \delta_{jk} - \delta_{ij} \delta_{kl}
+\end{align}
+%
+Now this identity can be used for computing the fermionic expectation value obtained in section \ref{sec: damped propagator}.
+In equation \eqref{eq: second order correction of propagator} the product of fermionic operators yields four terms of the structure
+%
+\begin{align}
+	\mt{EV}_{\mt{F}} := \expval{\Psi_{\alpha}^{\dag}(\nu_{1}) \cdot \sigma^{\mu} \cdot \Psi_{\beta}(\nu_{2}) \cdot \Psi_{\gamma}^{\dag}(\nu_{3}) \cdot \sigma^{\mu} \cdot \Psi_{\delta}(\nu_{4})},
+\end{align}
+%
+where $\alpha, \beta, \gamma, \delta \in \{a,b\}$ and has to be chosen with respect to the Fermi surface of the electrons.
+The explicite quantum numbers of the respected operators aren't important for the use of the Fierz identity, why the dummy quantity $\nu_{i}$ with $i = 1,2,3,4$ is introduced.
+Firstly the product is writen in component representation, which allows us to use the Fierz identity.
+In the expectation value above the sum over $\mu$ should be implied.
+%
+\begin{align}
+	\mt{EV}_{\mt{F}} &= \expval{\Big(\Psi_{\alpha}^{\dag}(\nu_{1})\Big)_{i} \cdot \sigma_{ij}^{\mu} \cdot \Big(\Psi_{\beta}(\nu_{2})\Big)_{j} \cdot \Big(\Psi_{\gamma}^{\dag}(\nu_{3})\Big)_{k} \cdot \sigma_{kl}^{\mu} \cdot \Big(\Psi_{\delta}(\nu_{4})\Big)_{l}}
+	\notag \\ 
+	\Leftrightarrow\ \mt{EV}_{\mt{F}} &= \sigma_{ij}^{\mu} \sigma_{kl}^{\mu} \expval{\Big(\Psi_{\alpha}^{\dag}(\nu_{1})\Big)_{i} \Big(\Psi_{\beta}(\nu_{2})\Big)_{j} \Big(\Psi_{\gamma}^{\dag}(\nu_{3})\Big)_{k} \Big(\Psi_{\delta}(\nu_{4})\Big)_{l}}
+	\notag \\ 
+	\Leftrightarrow\ \mt{EV}_{\mt{F}} &= \big(2 \delta_{il} \delta_{jk} - \delta_{ij} \delta_{kl}\big) \expval{\Big(\Psi_{\alpha}^{\dag}(\nu_{1})\Big)_{i} \Big(\Psi_{\beta}(\nu_{2})\Big)_{j} \Big(\Psi_{\gamma}^{\dag}(\nu_{3})\Big)_{k} \Big(\Psi_{\delta}(\nu_{4})\Big)_{l}}
+	\notag \\ 
+	\Leftrightarrow\ \mt{EV}_{\mt{F}} &= 
+		2 \expval{
+			\Big(\Psi_{\alpha}^{\dag}(\nu_{1})\Big)_{i} 
+			\delta_{il} 
+			\Big(\Psi_{\delta}(\nu_{4})\Big)_{l} 
+			\Big(\Psi_{\beta}(\nu_{2})\Big)_{j} 
+			\delta_{jk}
+			\Big(\Psi_{\gamma}^{\dag}(\nu_{3})\Big)_{k}
+		}
+		\delta_{\nu_{3},\nu_{4}}
+		\notag \\ &\,\,\enspace -
+		\expval{
+			\Big(\Psi_{\alpha}^{\dag}(\nu_{1})\Big)_{i} 
+			\delta_{ij}
+			\Big(\Psi_{\beta}(\nu_{2})\Big)_{j} 
+			\Big(\Psi_{\gamma}^{\dag}(\nu_{3})\Big)_{k} 
+			\delta_{kl}
+			\Big(\Psi_{\delta}(\nu_{4})\Big)_{l}
+		}
+		\notag \\ 
+	\Leftrightarrow\ \mt{EV}_{\mt{F}} &= 
+		2 \expval{
+			\Psi_{\alpha}^{\dag}(\nu_{1}) 
+			\Psi_{\delta}(\nu_{4})
+			\Psi_{\beta}(\nu_{2})
+			\Psi_{\gamma}^{\dag}(\nu_{3})
+		}
+		\delta_{\nu_{3},\nu_{4}}
+		-
+		\expval{
+			\Psi_{\alpha}^{\dag}(\nu_{1})
+			\Psi_{\beta}(\nu_{2})
+			\Psi_{\gamma}^{\dag}(\nu_{3})
+			\Psi_{\delta}(\nu_{4})
+		}
+	\label{eq: general expectation value after Fierz identity}
+\end{align}
+%
+The use of the Fierz identity has eliminated the Pauli matrizies in our expression of the expectation value.
+Instead we get two expectation values with a different order of the field operators.
+Now let us investigate what happens with the fermionic expectation values in equation \eqref{eq: second order correction of propagator}.
+In the corresponding expectation values are always two fermionic operators of the same electron family a or b.
+This means that always two greek letters have to be set to a and the other two ones to b in equation \eqref{eq: general expectation value after Fierz identity}.
+The expectation values of different electron families can be seperated without any doubt, because them Hilbert spaces are disconnected.
+For this reason many combinations of chosing the greek letters are zero.
+Let us demonstrate this with an example.
+If we choose $\alpha = \gamma = a$ and the other two ones respectively to b, than an expectation value emerge with two fermionic creation operators and another one emerge with two fermionic annihilation operators, which is always zero.
+For the fermionic expectation value $\mt{EV}(\mathcal{D})$ in equation \eqref{eq: second order correction of propagator} this procedure yields
+%
+\begin{align}
+	\mt{EV}(\mathcal{D}) &= 
+		\expval{
+			\mathcal{T}_{t}
+			\Psi_{\mt{a}}(\tilde{\vb{p}}_{2},t_{1})
+			\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{3},t_{2})
+		}
+		\expval{
+			\mathcal{T}_{t}
+			\Psi_{\mt{b}}(\tilde{\vb{p}}_{4},t_{2})
+			\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})
+		}
+		\delta_{\tilde{\vb{p}}_{2}-\tilde{\vb{p}}_{3}}
+		\delta_{\tilde{\vb{p}}_{4}-\tilde{\vb{p}}_{1}}
+		\notag \\
+		&+
+		\expval{
+			\mathcal{T}_{t}
+			\Psi_{\mt{b}}(\tilde{\vb{p}}_{2},t_{1})
+			\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{3},t_{2})
+		}
+		\expval{
+			\mathcal{T}_{t}
+			\Psi_{\mt{a}}(\tilde{\vb{p}}_{4},t_{2})
+			\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})
+		}
+		\delta_{\tilde{\vb{p}}_{2}-\tilde{\vb{p}}_{3}}
+		\delta_{\tilde{\vb{p}}_{4}-\tilde{\vb{p}}_{1}}
+		\label{eq: expectation value of second order correction}
+\end{align}
+%

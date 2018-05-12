@@ -6,48 +6,87 @@
 %
 %
 %
-\todo{Einleitung zum Kapitel schreiben}
+In the present chapter the propagator of spin density waves should be computed up to the first order in pertubation theory.
+The main goal of this masterthesis is the determination of the conductivity in the spin fermion model pertubated via umklapp scattering.
+These processes are determined by spin density waves, see section \dots \todo{link to umklapp scattering}, why in the calculation of the conductivity the propagator of them is needed.
+
+Firstly the free spin density wave propagtor is computed.
+For that the equation of motion of Green functions is used. 
+An good introduction of this method can be find in every textbook about quantum field theory in many body physics, but we want to recommended the book by Elk and Gasser \cite{Elk&Gasser}.
+Afterwards the propagator is calculated up the first order using the pertubation theory in quantum field theory.
+Finally the obtained propagator is transformed into the Matsubara frequency space.
+An easy way to do this is using the Kramer-Kronig relations \eqref{eq:Kramer-Kronig relation}.
 %
 %
 \section{The free propagator of spin density waves}
 \label{sec: free propagator}
 %
 %
-The dynamic of spin density waves without interaction is described by the Hamiltonian $\mt{H}_{\Phi}$, introduced in chapter \ref{ch: spin fermion model}.
-The equation of motion of the Green's functions are one naturally, simple and elegant method to compute a free propagtor of an aribtrary typ of particle.
-The equation of motion in frequency spce is the first item of an infinte algebraic equation chain.
-Mostly the initial Green function appears lately in the second item of the chain which is resulting in an solvable algebraic equtaion system.
-For a detailed deviation the book of Elk and Gasser \cite{Elk&Gasser} is recommended.
-In the case of the free spin density waves the first item of the chain is
+In \ref{sec: linear response theory} the linear response theory is established and the retarded susceptibility is introduced on this way.
+A susceptibility describes the response of an operator because of an external pertubation.
+This quantity is close related with the Green function or propagator of particles.
+The only difference is that the operators and the expectation value of the Green function are represented in the Heisenberg picture comparing to the susceptibility, where them are represented with respect to the unpertubated system.
+
+The equation of motion of Green functions is easy to get.
+Therefore the Green function has only to be derivated with respect to the time.
+The amazing result is that the equation of motion is equally for all typs (retarded, advanced and causal) of Green functions.
+Only the boundary conditions are different.
+The obtained equation of motion and the boundary conditions are transformed in Fourier space.
 %
 \begin{align}
-	\omega \green{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega} &= 
-		\expval{\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}}
-		\notag \\ &+
-		\green{\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}}}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega},
-	\label{eq: first item of equation chain}
+	\omega \green{\mt{A}}{\mt{B}}_{\omega}^{j} = \expval*{\comm{\mt{A}}{\mt{B}}_{\eta}} + \green{\comm{\mt{A}}{\mt{H}}_{-}}{\mt{B}}_{\omega}^{j}
+	\label{eq: algebraic equation chain}
 \end{align}
 %
-where the double angle brackets denotes the Green function of spin density waves and the index $\omega$ means that the Green function has to be considered in the frequency space.
-The simplicity and advantage of the method instead of other ones is that only the commutator relations of the (field) operators are needed.
-The bosonic commutator relations are given in equation (\dots\todo{link zu bosonischen Vertauschungsrelationen}) and the Hamiltonian is given by equation (\dots\todo{Link zu $H_{\Phi}$}).
-The inhomogeneity is trivially zero and the commutator in the second term yields
+where $j$ denotes the investigated Green function (retarded, advanced and causal) and $\omega$ represented that the Green function is in frequency space.
+The double angle brackets symbolized the Green function of the operators A and B.
+This equation is an algebraic equation or more precisely an infinite algebraic equation chain for the green function.
+On the right hand side a new in general more complicated Green function appears.
+For this one exists a new equation chain with a more complicted Green function on the right hand side and so on.
+In the case of free propagators we are lucky.
+The appearing Green function isn't really complicated, so that the initial Green function appears after one or two steps.
+The same procedure can be done for the Green function in Matsubara time representation.
+The result is similar to the one above, so that the frequency $\omega$ can be replaced with the Matsubara frequancy $i\omega_{n}$.
+The simplicity and advantage of this method instead of other ones is that only the commutator relations of the (field) operators are needed.
+Equation \eqref{eq: algebraic equation chain} is all we need to compute the free propagator of spin density waves.
+
+The dynamic of free spin density waves is described by the Hamiltonian $\mt{H}_{\Phi}$, introduced in chapter \ref{ch: spin fermion model}.
+Inserting $\mt{H}_{\Phi}$ in equation \eqref{eq: algebraic equation chain} yields the starting point of the following calculation.
+Therefore the abbreviation $\green{\Phi_{\mu}}{\Phi_{\mu}}_{\omega}$ is introduced
+The first operator is readed with the momentum argument $\vb{k}+\vb{G}$ 
+In comparison the second operator is readed with the opposite one, $-\vb{k}-\vb{G}$.
+The time argument is equal in both cases.
+%
+\begin{align}
+	\omega \green{\Phi_{\mu}}{\Phi_{\mu}}_{\omega} &= 
+		\expval{\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\mu}(-\vb{k}-\vb{G},t)}}
+		+
+		\green{\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}}}{\Phi_{\mu}}_{\omega}
+		\label{eq: equation chain SDW}
+\end{align}
+%
+
+The bosonic commutator relations are given in equation (\dots\todo{link zu bosonischen Vertauschungsrelationen}).
+Like it is shown the only non-vanishing commutator relation is this one between the bosonic field operator and them canonical momentum operator.
+Therefore on the right hand side of \eqref{eq: first item of equation chain} the inhomogeneity is vanished.
+For computing the Green function on the same side the Hamiltonian $\mt{H}_{\Phi}$ in equation \todo{link zu $H_{\Phi}$} is used.
+The commutator is given by
 %
 \begin{align}
 	\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
 		-\frac{1}{2\epsilon} 
 		\sum\limits_{\vb{P}} 
 		\int_{\vb{p}}
-		\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\nu}(\vb{p}+\vb{P},t_{1}) \pi_{\nu}(-\vb{p}-\vb{P},t_{1})}
+		\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\lambda}(\vb{p}+\vb{P},t_{1}) \pi_{\lambda}(-\vb{p}-\vb{P},t_{1})}
 	\notag \\
 	\Leftrightarrow\ \comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
 		-\frac{1}{2\epsilon} 
 		\sum\limits_{\vb{P}} 
 		\int_{\vb{p}} \bigg[
-			\pi_{\nu}(\vb{p}+\vb{P},t_{1}) \comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\nu}(-\vb{p}-\vb{P},t_{1})}
+			\pi_{\lambda}(\vb{p}+\vb{P},t_{1}) \comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\lambda}(-\vb{p}-\vb{P},t_{1})}
 			\notag \\& \hspace{2cm}
 			+
-			\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\nu}(\vb{p}+\vb{P},t_{1})} \pi_{\nu}(-\vb{p}-\vb{P},t_{1})
+			\comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\pi_{\lambda}(\vb{p}+\vb{P},t_{1})} \pi_{\lambda}(-\vb{p}-\vb{P},t_{1})
 		\bigg]
 	\notag \\
 	\Leftrightarrow\ \comm{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
@@ -55,198 +94,239 @@ The inhomogeneity is trivially zero and the commutator in the second term yields
 \end{align}
 %
 where in the beginning the sum over $\lambda$ is implied.
-Equation \eqref{eq: first item of equation chain} yields
+Inserting the obtained result of the commutator in equation \eqref{eq: equation chain SDW} yields the connection between the initial and the new Green function.
 %
 \begin{align}
-	\omega \green{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega} &= 
-		-\frac{i}{\epsilon} \green{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega}
+	\omega \green{\Phi_{\mu}}{\Phi_{\mu}}_{\omega} &= 
+		-\frac{i}{\epsilon} \green{\pi_{\mu}}{\Phi_{\mu}}_{\omega}
+	\label{eq: first item of the chain}
 \end{align}
 %
-where on the right hand side a new Green function appears.
-Nobody bars us doing the exactly same procedure for this one as for the initial Green function.
+Equally to the initial Green function an algebraic equation chain can be established for the new Green function.
 %
 \begin{align}
-	\omega \green{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega} &= 
-		\expval{\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}}
-		\notag \\ &+
-		\green{\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}}}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega}
-	\label{eq: second item of equation chain}
+	\omega \green{\pi_{\mu}}{\Phi_{\mu}}_{\omega} &= 
+		\expval{\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(-\vb{k}-\vb{G},t)}}
+		+
+		\green{\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}}}{\Phi_{\mu}}_{\omega}
 \end{align}
 %
-The inhomogeneity of the equations is trivially, too, but in this case yields something differant to zero.
+Now the same things like above are to do.
+The inhomogeneity is given by the commutator relations \todo{link to commutator relations}.
+Incomparison to the case above this time the commutator dosen't vanish but yields $-i$.
+For the Green function on the right hand side again the commutator has to be calculated, which yields $\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} = i \big((\vb{k}+\vb{G})^{2} + r\big) \Phi_{\mu}(\vb{k}+\vb{G},t)$.
+In total we obtain the relation
 %
 \begin{align}
-	\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')} = -i (2\pi)^{2} \sum\limits_{\vb{G}} \delta(\vb{k}'+\vb{k}) \delta_{-\vb{G}',\vb{G}} \delta_{\mu,\lambda}
+	\omega \green{\pi_{\mu}}{\Phi_{\mu}}_{\omega} = 
+		-i + i\Big((\vb{k}+\vb{G})^{2} + r \Big) \green{\Phi_{\mu}}{\Phi_{\mu}}_{\omega}.
+		\label{eq: second item of the chain}
 \end{align}
 %
-Equally the commutator can be computed with the same method.
+Again on the right hand side a new Green function appears.
+This time the new Green function is well known, because it's the initial one.
+Both equations, \eqref{eq: first item of the chain} and \eqref{eq: second item of the chain}, are an equation system, where the Green function of $\pi$ and $\Phi$ can be eliminated.
+The easiest way doing this is to multiply equation \eqref{eq: first item of the chain} with $\omega$ and inserting \eqref{eq: second item of the chain} in the obtained relation.
 %
 \begin{align}
-	\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
-		-\sum\limits_{\vb{P}} 
-		\int_{\vb{p}}
-		\frac{(\vb{p}+\vb{P})^{2} + r}{2}
-		\notag \\ &\times
-		\comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\nu}(\vb{p}+\vb{P},t_{1}) \Phi_{\nu}(-\vb{p}-\vb{P},t_{1})}
-	\notag \\
-	\Leftrightarrow\ \comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
-		i(2\pi)^{2} \sum\limits_{\vb{P}} 
-		\int_{\vb{p}}
-		\frac{(\vb{p}+\vb{P})^{2} + r}{2} 
-		\notag \\ &\times\bigg[
-			\Phi_{\mu}(\vb{p}+\vb{P},t) \delta(\vb{k}-\vb{p}) \delta_{\vb{G},\vb{P}}
-			\notag \\& 
-			+
-			\Phi_{\mu}(-\vb{p}-\vb{P},t) \delta(\vb{k}+\vb{p}) \delta_{-\vb{G},\vb{P}}
-		\bigg]
-	\notag \\
-	\Leftrightarrow\ \comm{\pi_{\mu}(\vb{k}+\vb{G},t)}{\mt{H}_{\Phi}} &= 
-		i \Big( (\vb{k}+\vb{G})^{2} + r \Big) \Phi_{\mu}(\vb{k}+\vb{G},t)
+	\green{\Phi_{\mu}}{\Phi_{\lambda}}_{\omega} = \sum\limits_{\vb{G}} \frac{1}{(\vb{k}+\vb{G})^{2} + r - \xi^{-2}} =: \mathcal{D}_{\mu}^{(0)}(\vb{k},\omega)
+	\label{eq: free spin density wave propagator}
 \end{align}
 %
-Inserting both commutator resuls in equation \eqref{eq: second item of equation chain} yields
-%
-\begin{align}
-	\omega \green{\pi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\mu'}(\vb{k}'+\vb{G}',t')}_{\omega} = 
-		-i (2\pi)^{2} \delta(\vb{k}'+\vb{k}) \delta_{-\vb{G}',\vb{G}} \delta_{\mu,\lambda} \delta_{t,t'} 
-		\notag \\  \hspace{2cm} + 
-		i\Big( (\vb{k}+\vb{G})^{2} + r \Big) \green{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\mu'}(\vb{k}'+\vb{G}',t')}_{\omega}
-\end{align}
-%
-where on the right hand side the initial wanted Green function appears.
-Puting all together we get an algebraic equation for the spin density wave propagator.
-Solving this equation yields
-%
-\begin{align}
-	\green{\Phi_{\mu}(\vb{k}+\vb{G},t)}{\Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{\omega} = (2\pi)^{2} \delta(\vb{k}'+\vb{k}) \delta_{-\vb{G}',\vb{G}} \delta_{\mu,\lambda} \mathcal{D}_{\mu\lambda}^{(0)}(\vb{k},\omega)
-\end{align}
-%
-where for resons of simplicity the free spin density propagator $\mathcal{D}^{(0)}$ is introduced.
-%
-\begin{align}
-	\mathcal{D}_{\mu\lambda}^{(0)}(\vb{k},\omega) := \sum\limits_{\vb{G}} \frac{1}{(\vb{k}+\vb{G})^{2} + r - \epsilon \omega^{2}}
-\end{align}
-%
-In computation of the conductivity below the free Propagator isn't only needed.
-The damping of the spin density waves has to be taken into account in the considered model, which is ususally done via pertubation theory.
-The pertubation of the spin density waves is caused by the interaction with the electrons living on differant Fermi suffaces.
-Therefore the free electron propagator is needed.
-In the same way as the free spin density propagator is calculated the free electron propagator can be calculated.
-This handwork isn't done here explicitly.
-The result should be enough for the moment, which is
-%
-\begin{align}
-	 \green{\Psi_{\alpha}(\vb{k}+\vb{G},t)}{\Psi_{\beta}^{\dag}(\vb{k}'+\vb{G}',t')}_{\omega} = (2\pi)^{2} \delta(\vb{k}'-\vb{k}) \delta_{\vb{G}',\vb{G}} \delta_{\alpha,\beta} \mathcal{G}_{\alpha\beta}^{(0)}(\vb{k},\omega)
-\end{align}
-%
-with
-%
-\begin{align}
-	\mathcal{G}_{\alpha\beta}^{(0)}(\vb{k},\omega) = \sum\limits_{\vb{G}} \frac{1}{\omega - \epsilon_{\alpha}(\vb{k}+\vb{G})},
-\end{align}
-%
-where $\alpha, \beta = \mt{a,b}$ and denotes the typ of electron with respect to the Fermi surfaces.
+where the invers squared correlation length $\xi^{-2} = \epsilon \omega^{2}$ is introduced.
+The free propagator exhibits a periodicity respective to the Brillouin zone.
+This condition is used in the calculation of the conductivity below. \todo{say a little bit more about that}
 %
 %
 \section{The damped spin density wave propagator}
 \label{sec: damped propagator}
 %
 %
-The full Green function of spin density waves is given by
+In the previous section the free propagator of spin density waves is computed.
+Beside the free dynamics the spin fermion model considers an interaction between electrons living on different Fermi sufaces, where the interaction is originated by the spin density waves.
+Therefore the propagation of the spin density waves is damped.
+This damping should be considered in the propagator, which is done by doing pertubation theory.
+
+Because the damping is originated by the interaction between electrons the free electron propagator is needed.
+The free electron propagator can be calculated in the same way as the free spin density propagator is calculated.
+This handwork shouldn't be done here explicitly.
 %
 \begin{align}
-	\mathcal{D}_{\mu\lambda}(\vb{k}, \omega) = -i \frac{\expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{0}}{\expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty)}_{0}}
+	 \green{\Psi_{\alpha}}{\Psi_{\alpha}^{\dag}}_{\omega} = \sum\limits_{\vb{G}} \frac{1}{\omega - \epsilon_{\alpha}(\vb{k}+\vb{G})} =: \mathcal{G}_{\alpha}^{(0)}(\vb{k},\omega)
 \end{align}
 %
-where the index $0$ means that the expectation value is taken with respect to the unpertubated Hamiltonian.
-Thus the whole pertubation is only going into account throught the time evolution operator $\mt{U}$, defined by
+where $\alpha = \mt{a,b}$ which denotes the Fermi surface of the respective electrons.
+For the computation of the damped spin density wave propagator the usually used method of pertubation theory is utilized.
+The investigated Green function is transformed into the interaction representation because than the pertubation is only occured in the time evolution operator $\mt{U}$, which is defined by
 %
 \begin{align}
 	\mt{U}(t,t') = \exp\bigg(-i\int_{t'}^{t} \dd{t_{1}} \mt{H}_{\mt{int}}(t_{1})\bigg)
 \end{align}
 %
-The time evolution operator is expanded into a series up to the second order.
-Like it is known from lectures about quantum field theory the denominator denotes the vacuum energy and can be canceled out with terms of the numerator.
-In quantum field theory language this means that only connected diagrams have to be investigated.
+Further the expectation value is taken with respect to the unpertubated Hamiltonian which is denoted with an index $0$.
 %
 \begin{align}
-	\mathcal{D}_{\mu\lambda}^{(1)}(\vb{k}, \omega) &= 
-		-i \expval{\mathcal{T}_{t} \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{0}
-		\notag \\&+
-		(-i)^{2} \int\limits_{-\infty}^{\infty} \dd{t_{1}} \expval{\mathcal{T}_{t} \mt{H}_{\Phi}(t_{1}) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{0}
-		\notag \\&+
-		(-i)^{3} \int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}} \expval{\mathcal{T}_{t} \mt{H}_{\Phi}(t_{2}) \mt{H}_{\Phi}(t_{1}) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\lambda}(\vb{k}'+\vb{G}',t')}_{0}
+	\mathcal{D}_{\mu}(\vb{k}, \omega) = -i \frac{\expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}}{\expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty)}_{0}}
 \end{align}
 %
-The expectation value in the first row correspondes to the free propagator.
-The term in the second row vanishes, which is easily seen by regarding the Hamiltonian.
-At first the expectation value of the fermionic and bosonic operators can be seperated.
-Doing this an expectation value with three bosonic operators appear, which is zero.
-The term in the last row is the first non-disapearing contribution.
-Let us investigate this beast at first seperatly.
+where $\mathcal{T}_{t}$ means the time ordering operator.
+The time evoluation operator is now expanded in a series in both cases the denominator and numerator.
+Like it is known from lectures or books about quantum field theory the contibutions from the denominator appears in the numerator too.
+There all these term can be factorizied so that them cancel each other.
+This is called the linked cluster theorem or linked cluster expansion.
+In words of the diagrammatic thechnique we would say, that only connected diagrams contribute.
+
+In the investigated case the evaluation operator has to be expanded up to the second order.
+The zeroth order yields the free propagator which is calculated in the previous section.
+Further the first order vanishs, because the expactation value of an odd number of field operators is always zero.
+Let us understand this a little bit in more detail.
+Because of the expansion the expectation value contains three bosonic operators, one from the Hamiltonian $H_{\Psi\Phi}$ and two from them definition, and two fermionic operator, both from $H_{\Psi\Phi}$.
+The expectation value of bosonic and fermionic operators can be seperated, because the Hilbert spaces don't overlap.
+Therefore an expectation value of three bosonic operators appears, which can be computed by using Wick's theorem.
+In the case of an odd number of operators each obtained term occupies an normal product, which is per definition zero, if an expectation value act on it.
+Hence the expectation value of three or another odd number of operators is zero.
+
+In second order of the expansion the Hamiltonian $H_{\Psi\Phi}$ is contributed twice, thus the number of bosonic and fermionic operators is even.
+Similiar to the first order the bosonic and fermionic operators are seperated.
 %
 \begin{align}
-	\mt{E}^{(2)} :&= 
-		(-i)^{3} \lambda^{2} \int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}} 
+	\mathcal{D}_{\mu}^{(2)}(\vb{k}, \omega) &= 
+		(-i)^{3} \lambda^{2}
+		\int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}}
 		\sum\limits_{\vb{P}_{1} \vb{P}_{2}} \int_{\vb{p}_{1}} \int_{\vb{p}_{2}}
 		\sum\limits_{\vb{P}_{3} \vb{P}_{4}} \int_{\vb{p}_{3}} \int_{\vb{p}_{4}}
-		\notag \\ &\times
+		\notag \\ &\times		
 		\expval{
 			\mathcal{T}_{t} 
-			\Phi_{\nu'} (\vb{p}_{3}-\vb{p}_{4}+\vb{P}_{3}-\vb{P}_{4},t_{2}) 
-			\Phi_{\nu} (\vb{p}_{1}-\vb{p}_{2}+\vb{P}_{1}-\vb{P}_{2},t_{1}) 
+			\Phi_{\lambda'} (\tilde{\vb{p}}_{3}-\tilde{\vb{p}}_{4},t_{2}) 
+			\Phi_{\lambda} (\tilde{\vb{p}}_{1}-\tilde{\vb{p}}_{2},t_{1}) 
 			\Phi_{\mu}(\vb{k}+\vb{G},t) 
-			\Phi_{\lambda}(\vb{k}'+\vb{G}',t')
+			\Phi_{\mu}(-\vb{k}-\vb{G},t)
 		}_{0}
-		\notag \\ &\times \bigg(
+		\notag \\ &\times
+		\Big\langle
+			\mathcal{T}_{t}
+			\Big(
+				\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{3},t_{2})		
+				\cdot \sigma_{\lambda'} \cdot
+				\Psi_{\mt{b}}(\tilde{\vb{p}}_{4},t_{2})
+				+
+				\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{3},t_{2})		
+				\cdot \sigma_{\lambda'} \cdot
+				\Psi_{\mt{a}}(\tilde{\vb{p}}_{4},t_{2})
+			\Big)
+			\notag \\ & \hspace{0.75cm} \cdot
+			\Big(
+				\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})		
+				\cdot \sigma_{\lambda} \cdot
+				\Psi_{\mt{b}}(\tilde{\vb{p}}_{2},t_{1})
+				+
+				\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})		
+				\cdot \sigma_{\lambda} \cdot
+				\Psi_{\mt{a}}(\tilde{\vb{p}}_{2},t_{1})
+			\Big)
+		\Big\rangle
+	\label{eq: second order correction of propagator}
+\end{align}
+%
+where the abbreviations $\tilde{\vb{p}}_{i} = \vb{p}_{i}+\vb{P}_{i}$ with $i=1,2,3,4$ are established for reasons of clarity.
+Firstly the expactation value of the fermionic operators has to be investigated.
+Wick's theorem can't be done so easily in this matter because of the Pauli matrizies between two fermionic field operators.
+With the aid of Fierz identity a product of the components of two Pauli matricies can be rewriten as a relation with Kronecker symbols.
+%
+\begin{align}
+	\sum\limits_{\mu = 1}^{3} \sigma_{ij}^{\mu} \sigma_{kl}^{\mu} = 2 \delta_{il} \delta_{jk} - \delta_{ij} \delta_{kl}
+\end{align}
+%
+For acting with Fierz identity the product of field operators and Pauli matrix has to be writen in component representation.
+Equation \eqref{eq: second order correction of propagator} yields four different fermionic expectation values but all of them have the same structure.
+In the appendix \ref{app: Fierz identity} the computation of those expectation values is explicitly and generaly done.
+The use of the Fierz identity eliminates the Pauli matricies, where two expectation values of four fermionic field operators emerge instead of them.
+How we see in equation \eqref{eq: second order correction of propagator} always two operators are counted among the electron family a or b.
+The expectation value can be seperated with respect to different electron families.
+Some of those expectation values contained two creation or annihilation operators, which are zero by definition.
+Further one last remark has to be done.
+On the one hand a $\delta$-distribution appears using the Fierz identity, because the field operators has to be commute.
+On the other hand $\delta$-distributions appear be sorting the field operators so that creation operators are always on the right of the annihilation operators.
+These eliminate two of the four momentum integrals and sums.
+Therefore equation \eqref{eq: second order correction of propagator} becomes much more easier.
+%
+\begin{align}
+	\mathcal{D}_{\mu}^{(2)}(\vb{k}, \omega) &= 
+		(-i)^{3} \lambda^{2}
+		\int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}}
+		\sum\limits_{\vb{P}_{1} \vb{P}_{2}} \int_{\vb{p}_{1}} \int_{\vb{p}_{2}}
+		\notag \\ &\times		
 		\expval{
 			\mathcal{T}_{t} 
-			\Psi_{\mt{a}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
-			\cdot \sigma_{\nu'} \cdot 
-			\Psi_{\mt{b}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
-			\Psi_{\mt{a}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
-			\cdot \sigma_{\nu'} \cdot 
-			\Psi_{\mt{b}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
+			\Phi_{\lambda'} (\tilde{\vb{p}}_{2}-\tilde{\vb{p}}_{1},t_{2}) 
+			\Phi_{\lambda} (\tilde{\vb{p}}_{1}-\tilde{\vb{p}}_{2},t_{1}) 
+			\Phi_{\mu}(\vb{k}+\vb{G},t) 
+			\Phi_{\mu}(-\vb{k}-\vb{G},t)
 		}_{0}
-		\notag \\ &+
+		\notag \\
+		&\times
+		\bigg(
 		\expval{
 			\mathcal{T}_{t}
-			\Psi_{\mt{a}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
-			\cdot \sigma_{\nu'} \cdot 
-			\Psi_{\mt{b}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
-			\Psi_{\mt{b}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
-			\cdot \sigma_{\nu'} \cdot 
-			\Psi_{\mt{a}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
+			\Psi_{\mt{a}}(\tilde{\vb{p}}_{2},t_{1})
+			\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{2},t_{2})
 		}_{0}
-		\notag \\ &+
 		\expval{
 			\mathcal{T}_{t}
-			\Psi_{\mt{b}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
-			\cdot \sigma_{\nu'} \cdot 
-			\Psi_{\mt{a}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
-			\Psi_{\mt{a}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
-			\cdot \sigma_{\nu'} \cdot 
-			\Psi_{\mt{b}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
+			\Psi_{\mt{b}}(\tilde{\vb{p}}_{1},t_{2})
+			\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})
 		}_{0}
-		\notag \\ &+
+		\notag \\
+		&+
 		\expval{
-			\mathcal{T}_{t} 
-			\Psi_{\mt{b}}^{\dag}(\vb{p}_{3}+\vb{P}_{3},t_{2}) 
-			\cdot \sigma_{\nu'} \cdot 
-			\Psi_{\mt{a}}(\vb{p}_{4}+\vb{P}_{4},t_{2})
-			\Psi_{\mt{b}}^{\dag}(\vb{p}_{1}+\vb{P}_{1},t_{1}) 
-			\cdot \sigma_{\nu'} \cdot 
-			\Psi_{\mt{a}}(\vb{p}_{2}+\vb{P}_{2},t_{1})
+			\mathcal{T}_{t}
+			\Psi_{\mt{b}}(\tilde{\vb{p}}_{2},t_{1})
+			\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{2},t_{2})
+		}_{0}
+		\expval{
+			\mathcal{T}_{t}
+			\Psi_{\mt{a}}(\tilde{\vb{p}}_{1},t_{2})
+			\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})
 		}_{0}
 		\bigg)
 \end{align}
 %
-
-
-
-
-
-
+In the case of the bosonic expectation value the usually used Wick theorem can be utilized.
+Wick's theorem yields three possibile contractions in the corresponding case, where one of them isn't contributed because it is a disconnected diagram.
+%
+\begin{align}
+	\mathcal{D}_{\mu}^{(2)}(\vb{k}, \omega) &= 
+		(-i)^{3} \lambda^{2}
+		\int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}}
+		\sum\limits_{\vb{P}_{1}} \int_{\vb{p}_{1}} \Bigg[
+			\notag \\ &\times
+			\expval{\mathcal{T}_{t} \Phi_{\mu} (-\vb{k}-\vb{G},t_{2}) \Phi_{\mu}(\vb{k}+\vb{G},t)}_{0}	
+			\expval{\mathcal{T}_{t} \Phi_{\mu} (\vb{k}+\vb{G},t_{1}) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}
+			\notag \\ &\times
+			\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{1}+\vb{k}+\vb{G},t_{1}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1}+\vb{k}+\vb{G},t_{2})}_{0}
+			\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1},t_{2}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
+			\notag \\ &+
+			\expval{\mathcal{T}_{t} \Phi_{\mu} (-\vb{k}-\vb{G},t_{2}) \Phi_{\mu}(\vb{k}+\vb{G},t)}_{0}	
+			\expval{\mathcal{T}_{t} \Phi_{\mu} (\vb{k}+\vb{G},t_{1}) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}
+			\notag \\ &\times
+			\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1}+\vb{k}+\vb{G},t_{1}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1}+\vb{k}+\vb{G},t_{2})}_{0}
+			\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{1},t_{2}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
+			\notag \\ &+
+			\expval{\mathcal{T}_{t} \Phi_{\mu} (\vb{k}+\vb{G},t_{2}) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}	
+			\expval{\mathcal{T}_{t} \Phi_{\mu} (-\vb{k}-\vb{G},t_{1}) \Phi_{\mu}(\vb{k}+\vb{G},t)}_{0}
+			\notag \\ &\times
+			\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{1}-\vb{k}-\vb{G},t_{1}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1}-\vb{k}-\vb{G},t_{2})}_{0}
+			\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1},t_{2}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
+			\notag \\ &+
+			\expval{\mathcal{T}_{t} \Phi_{\mu} (\vb{k}+\vb{G},t_{2}) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}	
+			\expval{\mathcal{T}_{t} \Phi_{\mu} (-\vb{k}-\vb{G},t_{1}) \Phi_{\mu}(\vb{k}+\vb{G},t)}_{0}
+			\notag \\ &\times
+			\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1}-\vb{k}-\vb{G},t_{1}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1}-\vb{k}-\vb{G},t_{2})}_{0}
+			\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{1},t_{2}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
+		\Bigg]
+\end{align}
+%
 
 
 
