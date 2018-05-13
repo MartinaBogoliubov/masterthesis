@@ -40,6 +40,26 @@
       \field{title}{Die Methode der Greenschen Funktionen in der Festk\"{o}rperphysik}
       \field{year}{1979}
     \endentry
+    \entry{Nolting}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=2d783319c73287a266d2bc0cb2929f91}{Nolting}{N\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2d783319c73287a266d2bc0cb2929f91}{Nolting}{N\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2d783319c73287a266d2bc0cb2929f91}
+      \strng{fullhash}{2d783319c73287a266d2bc0cb2929f91}
+      \field{labelalpha}{Nol09}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Fundamentals of many-body physics : principles and methods}
+      \field{isbn}{978-3-540-71930-4}
+      \field{title}{Fundamentals of many-body physics : principles and methods}
+      \field{year}{2009}
+    \endentry
     \entry{Schwabl}{book}{}
       \name{labelname}{1}{}{%
         {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%

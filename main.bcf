@@ -1946,13 +1946,14 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Elk&amp;Gasser</bcf:citekey>
-    <bcf:citekey order="2">Schwabl</bcf:citekey>
-    <bcf:citekey order="3">Schwabl2</bcf:citekey>
-    <bcf:citekey order="4">Audretsch</bcf:citekey>
-    <bcf:citekey order="5">Drude</bcf:citekey>
-    <bcf:citekey order="6">Chycholl2</bcf:citekey>
-    <bcf:citekey order="7">Jung</bcf:citekey>
-    <bcf:citekey order="8">Bruus&amp;Flensberg</bcf:citekey>
+    <bcf:citekey order="2">Nolting</bcf:citekey>
+    <bcf:citekey order="3">Schwabl</bcf:citekey>
+    <bcf:citekey order="4">Schwabl2</bcf:citekey>
+    <bcf:citekey order="5">Audretsch</bcf:citekey>
+    <bcf:citekey order="6">Drude</bcf:citekey>
+    <bcf:citekey order="7">Chycholl2</bcf:citekey>
+    <bcf:citekey order="8">Jung</bcf:citekey>
+    <bcf:citekey order="9">Bruus&amp;Flensberg</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

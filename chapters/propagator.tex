@@ -143,113 +143,103 @@ This condition is used in the calculation of the conductivity below. \todo{say a
 %
 %
 In the previous section the free propagator of spin density waves is computed.
-Beside the free dynamics the spin fermion model considers an interaction between electrons living on different Fermi sufaces, where the interaction is originated by the spin density waves.
+Beside the free dynamics the spin fermion model considers an interaction between electrons living on different Fermi surfaces, where the interaction is originated by the spin density waves.
 Therefore the propagation of the spin density waves is damped.
 This damping should be considered in the propagator, which is done by doing pertubation theory.
 
-Because the damping is originated by the interaction between electrons the free electron propagator is needed.
-The free electron propagator can be calculated in the same way as the free spin density propagator is calculated.
+Because the damping is originated by the interaction between electrons the free electron propagator is needed, which can be calculated in the same way as the free spin density propagator.
 This handwork shouldn't be done here explicitly.
+The free electron propagator is given by
 %
 \begin{align}
-	 \green{\Psi_{\alpha}}{\Psi_{\alpha}^{\dag}}_{\omega} = \sum\limits_{\vb{G}} \frac{1}{\omega - \epsilon_{\alpha}(\vb{k}+\vb{G})} =: \mathcal{G}_{\alpha}^{(0)}(\vb{k},\omega)
+	 \green{\Psi_{\alpha}}{\Psi_{\alpha}^{\dag}}_{\omega} = \sum\limits_{\vb{G}} \frac{1}{\omega - \epsilon_{\alpha}(\vb{k}+\vb{G})} =: \mathcal{G}_{\alpha}^{(0)}(\vb{k},\omega), 
+	 \label{eq: free electron propagator}
 \end{align}
 %
 where $\alpha = \mt{a,b}$ which denotes the Fermi surface of the respective electrons.
-For the computation of the damped spin density wave propagator the usually used method of pertubation theory is utilized.
-The investigated Green function is transformed into the interaction representation because than the pertubation is only occured in the time evolution operator $\mt{U}$, which is defined by
+The damped spin density wave propagator is computed using the usually method of pertubation theory in quantum field theory.
+The full spin density wave propagator is given by
 %
 \begin{align}
-	\mt{U}(t,t') = \exp\bigg(-i\int_{t'}^{t} \dd{t_{1}} \mt{H}_{\mt{int}}(t_{1})\bigg)
+	\mathcal{D}_{\mu}(\vb{k}, t-t') = -i \expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\mu}(-\vb{k}-\vb{G},t')}_{0}^{\mt{con}}
+	\label{eq: full spin density wave propagator}
 \end{align}
 %
-Further the expectation value is taken with respect to the unpertubated Hamiltonian which is denoted with an index $0$.
+where $\mathcal{T}_{t}$ is the time ordering operator, which orders all contained operators in the right time order.
+The index $0$ denotes that the expectation value is performed with respect to the unpertubated Hamiltonian.
+The interaction is only incorporated through the time evolution operator $\mt{U}$ which is given by
 %
 \begin{align}
-	\mathcal{D}_{\mu}(\vb{k}, \omega) = -i \frac{\expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty) \Phi_{\mu}(\vb{k}+\vb{G},t) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}}{\expval{\mathcal{T}_{t} \mt{U}(\infty, -\infty)}_{0}}
+	\mt{U}(t,t') = \exp\bigg(-i\int_{t'}^{t} \dd{t_{1}} \mt{H}_{\mt{int}}(t_{1})\bigg).
+	\label{eq: time evolution operator}
 \end{align}
 %
-where $\mathcal{T}_{t}$ means the time ordering operator.
-The time evoluation operator is now expanded in a series in both cases the denominator and numerator.
-Like it is known from lectures or books about quantum field theory the contibutions from the denominator appears in the numerator too.
-There all these term can be factorizied so that them cancel each other.
-This is called the linked cluster theorem or linked cluster expansion.
-In words of the diagrammatic thechnique we would say, that only connected diagrams contribute.
+The second index "con" at the expectation value denotes that only connected diagrams are considered.
+In the so called link cluster theorem it is proven that all disconnected diagrams are canceled with the vacuum diagrams, see \cite{Nolting} for it.
+All these connected diagrams can be simplified a little bit more.
+There exist diagrams which are contained only diagrams of a lower order in a specific way.
+It is possible to build these diagrams by multipling diagrams of lower orders.
+Therefore a new object is introduced, called self energy $\Pi$, which contains all irreducible connected diagrams.
+The self energy offers the oppertunity to write the full Green function as a Dyson equation.
+%
+\begin{align}
+	\mathcal{D}_{\mu} = \mathcal{D}_{\mu}^{(0)} + \mathcal{D}_{\mu}^{(0)} \Pi_{\mu} \mathcal{D}_{\mu}
+	\qquad \Rightarrow\ \qquad
+	\mathcal{D}_{\mu} = \frac{1}{\big(\mathcal{D}_{\mu}^{(0)}\big)^{-1} - \Pi_{\mu}}
+	\label{eq: Dyson equation}
+\end{align}
+%
+The self energy is a complex quantity in general.
+Splitting them in a real and imaginary part the real part is a correction to the energy and the imaginary part is interpreted as a life time.
+A life time means nothing else that the partile is damped.
+The goal of the following calculation is to compute the imaginary part of the self energy.
+To get a feeling how the self energy looks like or in other words which diagrams has to be considered the full propagator in \eqref{eq: full spin density wave propagator} is investigated.
 
-In the investigated case the evaluation operator has to be expanded up to the second order.
+The time evolution operator is expanded up to the second order.
 The zeroth order yields the free propagator which is calculated in the previous section.
-Further the first order vanishs, because the expactation value of an odd number of field operators is always zero.
-Let us understand this a little bit in more detail.
-Because of the expansion the expectation value contains three bosonic operators, one from the Hamiltonian $H_{\Psi\Phi}$ and two from them definition, and two fermionic operator, both from $H_{\Psi\Phi}$.
-The expectation value of bosonic and fermionic operators can be seperated, because the Hilbert spaces don't overlap.
-Therefore an expectation value of three bosonic operators appears, which can be computed by using Wick's theorem.
-In the case of an odd number of operators each obtained term occupies an normal product, which is per definition zero, if an expectation value act on it.
-Hence the expectation value of three or another odd number of operators is zero.
+Further the first order vanishes.
+The interaction Hamiltonian $H_{\Psi\Phi}$ contains one bosonic field operator and therefore combining with the two other bosonic operators this yields an expectation value of three bosonic operators.
+Wick's theorem says that the expectation value of an odd number of operators is always zero.
+The reason is that it's impossible to get an term where only contractions are contained.
+Having an odd number of operators a normal product exist in every term.
+Taking the equillibrium expectation value of a normal product, it's zero by definition.
 
-In second order of the expansion the Hamiltonian $H_{\Psi\Phi}$ is contributed twice, thus the number of bosonic and fermionic operators is even.
-Similiar to the first order the bosonic and fermionic operators are seperated.
+The first not vanishing contribution appears at the second order, because the interaction Hamiltonian $H_{\Psi\Phi}$ contributes twice, thus the number of operators is even in both cases, fermionic and bosonic.
+In the fermonic case four expectation values appear, where those ones have a little bit different structure like the usually known expectation values of fermionic operators.
+The feature of them is that two fermionic operators are connected by a Pauli matrix, which prohibit the use of Wick's theorem or any rearrange of the operators.
+The expectation values looks like
 %
 \begin{align}
-	\mathcal{D}_{\mu}^{(2)}(\vb{k}, \omega) &= 
-		(-i)^{3} \lambda^{2}
-		\int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}}
-		\sum\limits_{\vb{P}_{1} \vb{P}_{2}} \int_{\vb{p}_{1}} \int_{\vb{p}_{2}}
-		\sum\limits_{\vb{P}_{3} \vb{P}_{4}} \int_{\vb{p}_{3}} \int_{\vb{p}_{4}}
-		\notag \\ &\times		
-		\expval{
-			\mathcal{T}_{t} 
-			\Phi_{\lambda'} (\tilde{\vb{p}}_{3}-\tilde{\vb{p}}_{4},t_{2}) 
-			\Phi_{\lambda} (\tilde{\vb{p}}_{1}-\tilde{\vb{p}}_{2},t_{1}) 
-			\Phi_{\mu}(\vb{k}+\vb{G},t) 
-			\Phi_{\mu}(-\vb{k}-\vb{G},t)
-		}_{0}
-		\notag \\ &\times
-		\Big\langle
-			\mathcal{T}_{t}
-			\Big(
-				\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{3},t_{2})		
-				\cdot \sigma_{\lambda'} \cdot
-				\Psi_{\mt{b}}(\tilde{\vb{p}}_{4},t_{2})
-				+
-				\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{3},t_{2})		
-				\cdot \sigma_{\lambda'} \cdot
-				\Psi_{\mt{a}}(\tilde{\vb{p}}_{4},t_{2})
-			\Big)
-			\notag \\ & \hspace{0.75cm} \cdot
-			\Big(
-				\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})		
-				\cdot \sigma_{\lambda} \cdot
-				\Psi_{\mt{b}}(\tilde{\vb{p}}_{2},t_{1})
-				+
-				\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})		
-				\cdot \sigma_{\lambda} \cdot
-				\Psi_{\mt{a}}(\tilde{\vb{p}}_{2},t_{1})
-			\Big)
-		\Big\rangle
-	\label{eq: second order correction of propagator}
+	\expval{\mathcal{T}_{t}\ \Psi_{\alpha}^{\dag}(\vb{p}_{4},t_{2}) \cdot \sigma_{\lambda'} \cdot \Psi_{\beta}(\vb{p}_{3},t_{2}) \cdot \Psi_{\gamma}^{\dag}(\vb{p}_{2},t_{1}) \cdot \sigma_{\lambda} \cdot \Psi_{\beta}(\vb{p}_{1},t_{1})}_{0},
+	\label{eq: structure of fermionic expval}
 \end{align}
 %
-where the abbreviations $\tilde{\vb{p}}_{i} = \vb{p}_{i}+\vb{P}_{i}$ with $i=1,2,3,4$ are established for reasons of clarity.
-Firstly the expactation value of the fermionic operators has to be investigated.
-Wick's theorem can't be done so easily in this matter because of the Pauli matrizies between two fermionic field operators.
-With the aid of Fierz identity a product of the components of two Pauli matricies can be rewriten as a relation with Kronecker symbols.
+where $\alpha,\beta,\gamma,\delta \in \{\mt{a},\mt{b}\}$ with the property that always two greek letters have to be an "a" and the other two ones a "b".
+Fierz identity offers an oppertunity to eliminate the Pauli matricies.
+With the aid of Fierz identity a product of the components of two Pauli matricies can be rewriten as a relation of Kronecker symbols.
 %
 \begin{align}
 	\sum\limits_{\mu = 1}^{3} \sigma_{ij}^{\mu} \sigma_{kl}^{\mu} = 2 \delta_{il} \delta_{jk} - \delta_{ij} \delta_{kl}
+	\label{eq: Fierz identity}
 \end{align}
 %
-For acting with Fierz identity the product of field operators and Pauli matrix has to be writen in component representation.
-Equation \eqref{eq: second order correction of propagator} yields four different fermionic expectation values but all of them have the same structure.
-In the appendix \ref{app: Fierz identity} the computation of those expectation values is explicitly and generaly done.
-The use of the Fierz identity eliminates the Pauli matricies, where two expectation values of four fermionic field operators emerge instead of them.
-How we see in equation \eqref{eq: second order correction of propagator} always two operators are counted among the electron family a or b.
-The expectation value can be seperated with respect to different electron families.
-Some of those expectation values contained two creation or annihilation operators, which are zero by definition.
-Further one last remark has to be done.
-On the one hand a $\delta$-distribution appears using the Fierz identity, because the field operators has to be commute.
-On the other hand $\delta$-distributions appear be sorting the field operators so that creation operators are always on the right of the annihilation operators.
-These eliminate two of the four momentum integrals and sums.
-Therefore equation \eqref{eq: second order correction of propagator} becomes much more easier.
+For acting the Fierz identity the product of field operators and Pauli matrix has to be writen in component representation.
+Then the identity can be use without any doubt and the Kronecker symbols allows us to rewrite the operators without component representation.
+Doing this we have to rivet on the first term in \eqref{eq: Fierz identity}, because the order of the operators is rearranged.
+Therefore the operators has to be commuted  with yields a $\delta$-distribution with respect to the momentum, see \eqref{appeq: general expectation value after Fierz identity}.
+The exact calculation is done in the appendix \ref{app: Fierz identity}.
+
+Each obtained expectation values contains two operators of a-electrons\footnote{a-electrons denotes electrons living on the Fermi surface labeled with a. In comparison b-electrons are electrons on the Fermi surface labeled with b. Both Fermi surfaces are rotated by $\flatfrac{\pi}{2}$ and shifted by $(\pm\pi,\pm\pi)$.} and two operators of b-electrons, so that the expectation value can be seperated.
+One half of them is so constructed that both annihiliation operators are acting on a-electrons, for example.
+These kinds of expectation values are surely zero
+The other half is "normaly" constructed so that one annihiliation and creation operator is acting on a-electrons.
+The same is surely valid for b-electrons.
+
+Bringing the remained operators in the order that all annihilaition operators stands on the left side of the creation operators yields a $\delta$-distribution for each commutation, so that in total each term containts two $\delta$-distributions.
+The obtained expectation value is shown in equation \eqref{appeq: expectation value of second order correction} in the appendix.
+
+Inserting equation \eqref{appeq: expectation value of second order correction} for each of the four expectation values two of the four momentum integrals and sums can be performed.
+The remaining expression for $\mathcal{D}$ in second order pertubation theory have the form
 %
 \begin{align}
 	\mathcal{D}_{\mu}^{(2)}(\vb{k}, \omega) &= 
@@ -261,72 +251,171 @@ Therefore equation \eqref{eq: second order correction of propagator} becomes muc
 			\mathcal{T}_{t} 
 			\Phi_{\lambda'} (\tilde{\vb{p}}_{2}-\tilde{\vb{p}}_{1},t_{2}) 
 			\Phi_{\lambda} (\tilde{\vb{p}}_{1}-\tilde{\vb{p}}_{2},t_{1}) 
-			\Phi_{\mu}(\vb{k}+\vb{G},t) 
-			\Phi_{\mu}(-\vb{k}-\vb{G},t)
+			\Phi_{\mu}(\tilde{\vb{k}},t) 
+			\Phi_{\mu}(-\tilde{\vb{k}},t')
 		}_{0}
 		\notag \\
 		&\times
 		\bigg(
-		\expval{
-			\mathcal{T}_{t}
-			\Psi_{\mt{a}}(\tilde{\vb{p}}_{2},t_{1})
-			\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{2},t_{2})
-		}_{0}
-		\expval{
-			\mathcal{T}_{t}
-			\Psi_{\mt{b}}(\tilde{\vb{p}}_{1},t_{2})
-			\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})
-		}_{0}
+		\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{2},t_{1}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{2},t_{2})}_{0}
+		\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1},t_{2})	\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
 		\notag \\
 		&+
-		\expval{
-			\mathcal{T}_{t}
-			\Psi_{\mt{b}}(\tilde{\vb{p}}_{2},t_{1})
-			\Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{2},t_{2})
-		}_{0}
-		\expval{
-			\mathcal{T}_{t}
-			\Psi_{\mt{a}}(\tilde{\vb{p}}_{1},t_{2})
-			\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})
-		}_{0}
+		\expval{\mathcal{T}_{t}	\Psi_{\mt{b}}(\tilde{\vb{p}}_{2},t_{1}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{2},t_{2})}_{0}
+		\expval{\mathcal{T}_{t}	\Psi_{\mt{a}}(\tilde{\vb{p}}_{1},t_{2})	\Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
 		\bigg)
 \end{align}
 %
-In the case of the bosonic expectation value the usually used Wick theorem can be utilized.
-Wick's theorem yields three possibile contractions in the corresponding case, where one of them isn't contributed because it is a disconnected diagram.
+where the abbreviation $\tilde{\vb{k}} = \vb{k}+\vb{G}$ and $\tilde{\vb{p}}_{i} = \vb{p}_{i} + \vb{P}_{i}$ with $i=1,2$ is introduced.
+In the case of the bosonic expectation value the usually used Wick theorem is utilized.
+Wick's theorem yields three possibile contractions in the corresponding case, where one of them isn't contributed, because it's yielded disconnected diagrams.
+The remaining two contractions generate four diagrams in total, which are depicted in figure \dots \todo{picture of the diagrams}.
+These diagrams differentiate only in two points.
+
+On the one hand the acting point of the bosonic lines is changed comparing the first two and last two diagrams.
+On the other hand the direction of the fermionic lines is interchanged between the first two diagrams.
+In the first diagram an a-electron is annihiliated and a b-electron is created at $t_{1}$.
+Comparing the second diagram, where an a-electron is created and a b-electron is annihilated at $t_{1}$.
+This is valid for the last two diagrams too.
+All four diagrams are closly connected with each other, because all other diagrams can be generated out of one diagram by interchanging the acting point of the bosonic lines or the direction of the fermionic lines.
+Therefore all four diagrams yield the same contribution, where it is enough to compute one of them an multiply by four.
 %
 \begin{align}
-	\mathcal{D}_{\mu}^{(2)}(\vb{k}, \omega) &= 
-		(-i)^{3} \lambda^{2}
+	\mathcal{D}_{\mu}^{(2)}(\vb{k}, t-t') &= 
+		(-i)^{3} 4 \lambda^{2}
 		\int\limits_{-\infty}^{\infty} \dd{t_{1}} \dd{t_{2}}
-		\sum\limits_{\vb{P}_{1}} \int_{\vb{p}_{1}} \Bigg[
-			\notag \\ &\times
-			\expval{\mathcal{T}_{t} \Phi_{\mu} (-\vb{k}-\vb{G},t_{2}) \Phi_{\mu}(\vb{k}+\vb{G},t)}_{0}	
-			\expval{\mathcal{T}_{t} \Phi_{\mu} (\vb{k}+\vb{G},t_{1}) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}
-			\notag \\ &\times
-			\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{1}+\vb{k}+\vb{G},t_{1}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1}+\vb{k}+\vb{G},t_{2})}_{0}
-			\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1},t_{2}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
-			\notag \\ &+
-			\expval{\mathcal{T}_{t} \Phi_{\mu} (-\vb{k}-\vb{G},t_{2}) \Phi_{\mu}(\vb{k}+\vb{G},t)}_{0}	
-			\expval{\mathcal{T}_{t} \Phi_{\mu} (\vb{k}+\vb{G},t_{1}) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}
-			\notag \\ &\times
-			\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1}+\vb{k}+\vb{G},t_{1}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1}+\vb{k}+\vb{G},t_{2})}_{0}
-			\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{1},t_{2}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
-			\notag \\ &+
-			\expval{\mathcal{T}_{t} \Phi_{\mu} (\vb{k}+\vb{G},t_{2}) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}	
-			\expval{\mathcal{T}_{t} \Phi_{\mu} (-\vb{k}-\vb{G},t_{1}) \Phi_{\mu}(\vb{k}+\vb{G},t)}_{0}
-			\notag \\ &\times
-			\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{1}-\vb{k}-\vb{G},t_{1}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1}-\vb{k}-\vb{G},t_{2})}_{0}
-			\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1},t_{2}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
-			\notag \\ &+
-			\expval{\mathcal{T}_{t} \Phi_{\mu} (\vb{k}+\vb{G},t_{2}) \Phi_{\mu}(-\vb{k}-\vb{G},t)}_{0}	
-			\expval{\mathcal{T}_{t} \Phi_{\mu} (-\vb{k}-\vb{G},t_{1}) \Phi_{\mu}(\vb{k}+\vb{G},t)}_{0}
-			\notag \\ &\times
-			\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}}_{1}-\vb{k}-\vb{G},t_{1}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}}_{1}-\vb{k}-\vb{G},t_{2})}_{0}
-			\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}_{1},t_{2}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}_{1},t_{1})}_{0}
-		\Bigg]
+		\sum\limits_{\vb{P}} \int_{\vb{p}}
+		\notag \\ &\times
+		\expval{\mathcal{T}_{t} \Phi_{\mu} (\tilde{\vb{k}},t_{2}) \Phi_{\mu}(-\tilde{\vb{k}},t')}_{0}	
+		\expval{\mathcal{T}_{t} \Phi_{\mu} (-\tilde{\vb{k}},t_{1}) \Phi_{\mu}(\tilde{\vb{k}},t)}_{0}
+		\notag \\ &\times
+		\expval{\mathcal{T}_{t} \Psi_{\mt{a}}(\tilde{\vb{p}}-\tilde{\vb{k}},t_{1}) \Psi_{\mt{a}}^{\dag}(\tilde{\vb{p}}-\tilde{\vb{k}},t_{2})}_{0}
+		\expval{\mathcal{T}_{t} \Psi_{\mt{b}}(\tilde{\vb{p}},t_{2}) \Psi_{\mt{b}}^{\dag}(\tilde{\vb{p}},t_{1})}_{0}
+		\label{eq: spin density wave propagator second order correction}
 \end{align}
 %
+
+where the momentum $\vb{p}_{1}$ and $\vb{P}_{1}$ is relabeled with $\vb{p}$ and $\vb{P}$, respectivily.
+Accordingly we write $\tilde{\vb{p}}$ instead of $\tilde{\vb{p}}_{1}$.
+In comparison to the Dyson equation \eqref{eq: Dyson equation} the fermionic bubble is identified with the self energy $\Pi_{\mu}$, where the bubble diagram surely only represented the zeroth order of the self energy.
+The self energy in zeroth order is given by
+%
+\begin{align}
+	\Pi_{\mu}^{(0)}(\vb{k}, \omega) = 
+		i 
+		\sum\limits_{\vb{P}}
+		\int\limits_{|p| \leq |p_{\mt{F}}} \frac{\dd[2]{\vb{p}}}{(2\pi)^{2}} 
+		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{2\pi}\,
+		\mathcal{G}_{\mt{a}}^{(0)}(\vb{p}+\frac{\vb{k}}{2}, \epsilon+\frac{\omega}{2})
+		\mathcal{G}_{\mt{b}}^{(0)}(\vb{p}-\frac{\vb{k}}{2}, \epsilon-\frac{\omega}{2}).
+\end{align}
+%
+In comparison to equation \eqref{eq: spin density wave propagator second order correction} the self energy is represented in frequency space.
+Further the outer momentum and frequency is shifted by the half of itself, so that both arguments of the fermionic propagators are symmetricly.
+How we see in equation \eqref{eq: free electron propagator} the free electron propagator contains the dispersion relation $\epsilon_{\alpha}(\vb{p}+\vb{P})$ of the respective electrons.
+In our considered spin fermion model only electrons near the Fermi surface interacte with each other interfered by spin density waves, which means that the momentum transfer is small.
+Under this condition the dispersion relation can be expanded near the Fermi surface.
+%
+\begin{align}
+	\epsilon_{\mt{a}}(\vb{p} + \vb{P} + \frac{\vb{k} + \vb{G}}{2}) &= 
+		\frac{\big(p_{x} + P_{x} + \frac{k_{x} + G_{x}}{2}\big)^{2}}{2m_{1}} 
+		+ 
+		\frac{\big(p_{y} + P_{y} + \frac{k_{y} + G_{y}}{2}\big)^{2}}{2m_{2}} 
+		\notag \\ 
+	\Leftrightarrow\ \epsilon_{\mt{a}}(\vb{p} + \vb{P} + \frac{\vb{k} + \vb{G}}{2}) &=
+		\frac{(p_{x} + P_{x})^{2}}{2m_{1}} + \frac{1}{2} \frac{p_{x}+P_{x}}{m_{1}}(k_{x}+G_{x}) + \frac{(k_{x}+G_{x})^{2}}{8m_{1}}
+		\notag \\ &+
+		\frac{(p_{y} + P_{y})^{2}}{2m_{2}} + \frac{1}{2} \frac{p_{y}+P_{y}}{m_{2}}(k_{y}+G_{y}) + \frac{(k_{y}+G_{y})^{2}}{8m_{2}}
+		\notag \\
+	\Leftrightarrow\ \epsilon_{\mt{a}}(\vb{p} + \vb{P} + \frac{\vb{k} + \vb{G}}{2}) &\approx
+		\xi_{\mt{a}} + \frac{1}{2} \vb{v}_{\mt{a,F}}(\vb{k} + \vb{G}) + \mu
+\end{align} 
+%
+where the quadratic term with respect to $\vb{k}$ is negatable, because the bosonic transfered momentum is small.
+Further the velocity $\vb{v}_{a}$ of the a-electrons is indrofuced, where the elelctron velocity can be approximated with the Fermi velocity of the corresponing Fermi surface, because only electrons near the Fermi surface are considered.
+Besides the dispersion relation \dots \todo{link zur dispersion im spin fermion model} of the a-electrons is used.
+The same procedure is done for the b-electrons.
+Finally the normalized momentum vector $\vb{n} = \frac{\vb{p}+\vb{P}}{|\vb{p}+\vb{P}|}$ is introduced.
+The Fermi velocity of the a-electrons is then given by $\vb{v}_{\mt{a,F}} = v_{\mt{a,F}} \vb{n}$ for example.
+The scalar product between the normalized momentum vector $\vb{n}$ and the bosonic spin density wave vector $\vb{k} + \vb{G}$ is rewriten as the magnitude of them multiplied with $\cos(\vartheta)$, where $\vartheta$ is the angle between both.
+
+In the investigated spin fermion model the electrons on different Fermi surfaces only interacte on so called hot spots like we have it introduced in chapter \ref{ch: spin fermion model}.
+The energy on the hot spots is equal and the the magnitudes of the Fermi velocities are equal too.
+%
+\begin{align}
+	\xi := \xi_{\mt{a}} = \xi_{\mt{b}} \qquad v_{\mt{F}} := v_{\mt{a,F}} = v_{\mt{b,F}}
+\end{align}
+%
+Consider that the direction of the velocities haven't been equal, otherwise the angle $0$ or $\pi$ and the imaginary part of $\Pi_{\mu}$ is zero.
+Using these assumptions the self energy is given by
+%
+\begin{align}
+	\Pi_{\mu}^{(0)}(\vb{k}, \omega) &= 
+		i \nu_{\mt{F}}
+		\sum\limits_{\vb{G}}
+		\int\limits_{0}^{\pi} \dd{\vartheta}
+		\int\limits_{\xi \leq \xi_{\mt{F}}} \dd{\xi}
+		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{2\pi}
+		\notag \\ &\times
+		\frac{1}{\epsilon + \frac{\omega}{2} - \xi - \frac{1}{2} v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta) + i \eta \sign(\epsilon + \frac{\omega}{2})}
+		\notag \\ &\times
+		\frac{1}{\epsilon - \frac{\omega}{2} - \xi + \frac{1}{2} v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta) + i \eta \sign(\epsilon - \frac{\omega}{2})},
+\end{align}
+%
+where the two dimensional momentum integral is firstly transformed in plane polar coordinates and than in an energy integral over the density of states.
+Because only electrons near the Fermi surface are considered the density of states can be approximated with the constant one $\nu_{\mt{F}} := \nu(\xi_{\mt{F}})$ at the Fermi surface.
+The energy integral is certainly limited by the Fermi energy $\xi_{\mt{F}}$.
+
+The further investigation is been starting with the computation of the frequency integral.
+Therefore the integral over $\epsilon$ is transformed into a complex contour integral.
+The contour $\Gamma$ is chosen in two different ways.
+In both case the contour starts along the real axis.
+According to the singularities of the integrand the countour is closed in the upper or lower half plane via a semicircle with radius infinity.
+In both cases the contribution of the semicircle is zero because the integrand goes like $\flatfrac{1}{\epsilon}$.
+The non-contributing of the semicircle ensures the equality between the integral along the real axis and the complex contour integral.
+The investigated integrand occupies two singularities at
+%
+\begin{align}
+	\epsilon_{1} := \xi - \frac{1}{2}\big(\omega - v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta)\big) 
+	\qq{and}
+	\epsilon_{2} := \xi + \frac{1}{2}\big(\omega - v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta)\big),
+\end{align}
+%
+where both singularities are of first order which allows us to use Cauchy's integral formula.
+According to the signum function in both denominators the poles are located in the upper or lower plane.
+So in total there are four different possible constitutions.
+On the one hand both singularities can be located in the lower or upper complex plane
+On the other hand one pole can be in the upper plane and the other one can be in the lower plane, and vice versa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
