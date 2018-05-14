@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  13 MAY 2018 21:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  14 MAY 2018 16:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2096,8 +2096,8 @@ parent-eps-converted-to.pdf figures/logos/KITlogo_transparent.eps>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/logos/KITlogo_transparent-eps-converted-to.pdf, id=99, 1324.95pt x 617
-.30624pt>
+<figures/logos/KITlogo_transparent-eps-converted-to.pdf, id=103, 1324.95pt x 61
+7.30624pt>
 File: figures/logos/KITlogo_transparent-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figures/logos/KITlogo_transparent-eps-converted-to.pdf>
@@ -2220,6 +2220,10 @@ Chapter 2.
 Chapter 3.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 11.
+
+LaTeX Warning: Reference `eq:Kramer-Kronig relation' on page 5 undefined on inp
+ut line 18.
+
 [5
 
 
@@ -2231,59 +2235,61 @@ LaTeX Warning: Reference `eq: first item of equation chain' on page 6 undefined
 
 LaTeX Warning: Marginpar on page 6 moved.
 
-[6] [7] [8] [9] [10] [11]) [12] (./chapters/memory-matrix-formalism.tex
+[6] [7] [8] [9] [10] [11] [12] [13] [14]) [15] [16
+
+
+]
+(./chapters/memory-matrix-formalism.tex
 Chapter 4.
-[13
-
-
+[17
 
 
 ]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [14] [15]
+ [18] [19]
 Overfull \hbox (0.32407pt too wide) in paragraph at lines 209--209
 [] 
  []
 
-[16] [17] [18]
+[20] [21] [22]
 Overfull \hbox (3.4234pt too wide) in paragraph at lines 305--312
 \OT1/cmr/m/n/10.95 is triv-ially shown be-cause the com-mu-ta-tor of two Her-mi
 -tian op-er-a-tors is anti-Hermitian.
  []
 
-[19] [20]
+[23] [24]
 Underfull \hbox (badness 4279) in paragraph at lines 402--407
 \OT1/cmr/m/n/10.95 as our scalar prod-uct, where the nor-mal time evo-lu-tion o
 f an op-er-a-tor
  []
 
 
-LaTeX Warning: Marginpar on page 21 moved.
+LaTeX Warning: Marginpar on page 25 moved.
 
-[21] [22] [23] [24] [25] [26]
+[25] [26] [27] [28] [29] [30]
 LaTeX Font Info:    Try loading font information for U+dsrom on input line 671.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [27] [28])
-[29] [30
+) [31] [32])
+[33] [34
 
 
 ] (./chapters/calculation.tex
 Chapter 5.
-[31
+[35
 
 
-] [32] [33]
+] [36] [37]
 
-LaTeX Warning: Marginpar on page 34 moved.
+LaTeX Warning: Marginpar on page 38 moved.
 
 
-LaTeX Warning: Marginpar on page 34 moved.
+LaTeX Warning: Marginpar on page 38 moved.
 
-[34] [35] [36] [37] [38] [39] [40] [41] [42]
+[38] [39] [40] [41] [42] [43] [44] [45] [46]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -2308,7 +2314,7 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
- [43]
+ [47]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -2317,29 +2323,29 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
- [44]
+ [48]
 
-LaTeX Warning: Marginpar on page 45 moved.
+LaTeX Warning: Marginpar on page 49 moved.
 
-[45] [46]) [47] [48
+[49] [50]) [51] [52
 
 
 ] (./chapters/conclusion.tex
 Chapter 6.
-) [49
+) [53
 
 
-] [50
+] [54
 
 
 ] (./chapters/appendix_properties_Kubo_relaxation_function.tex
 Appendix A.
-[51
+[55
 
 
 
 
-]) (./chapters/appendix_conversion_expectation_value.tex [52]
+]) (./chapters/appendix_conversion_expectation_value.tex [56]
 Appendix B.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2793,24 +2799,24 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
-) (./chapters/appendix_fierz_identity.tex [53
+) (./chapters/appendix_fierz_identity.tex [57
 
 
-] [54
+] [58
 
 
 ]
 Appendix C.
 
-LaTeX Warning: Reference `eq: second order correction of propagator' on page 55
+LaTeX Warning: Reference `eq: second order correction of propagator' on page 59
  undefined on input line 29.
 
-[55]
+[59]
 
-LaTeX Warning: Reference `eq: second order correction of propagator' on page 56
+LaTeX Warning: Reference `eq: second order correction of propagator' on page 60
  undefined on input line 94.
 
-) [56] (./main.tdo [57
+) [60] (./main.tdo [61
 
 
 
@@ -2828,12 +2834,12 @@ Missing character: There is no ¤ in font cmr10!
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [58] [59
+ [62] [63
 
 
 
 
-] [60
+] [64
 
 
 ]
@@ -2843,7 +2849,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8723CF4A8AEA8A9A8C6DFA89E9D75AC0;1744.
+(rerunfilecheck)             Checksum: D38E43096BE6A2A3CE3AF8CBC92C9739;1845.
 
 
 LaTeX Warning: There were undefined references.
@@ -2853,10 +2859,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32289 strings out of 494347
- 603706 string characters out of 6168810
+ 32315 strings out of 494347
+ 604259 string characters out of 6168810
  1074102 words of memory out of 5000000
- 34661 multiletter control sequences out of 15000+600000
+ 34668 multiletter control sequences out of 15000+600000
  29207 words of font info for 111 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,18n,76p,10534b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2884,10 +2890,10 @@ msfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb>
-Output written on main.pdf (68 pages, 514408 bytes).
+Output written on main.pdf (72 pages, 526857 bytes).
 PDF statistics:
- 1086 PDF objects out of 1200 (max. 8388607)
- 923 compressed objects within 10 object streams
- 332 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1132 PDF objects out of 1200 (max. 8388607)
+ 965 compressed objects within 10 object streams
+ 351 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

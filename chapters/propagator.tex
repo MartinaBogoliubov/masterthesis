@@ -352,7 +352,6 @@ Using these assumptions the self energy is given by
 \begin{align}
 	\Pi_{\mu}^{(0)}(\vb{k}, \omega) &= 
 		i \nu_{\mt{F}}
-		\sum\limits_{\vb{G}}
 		\int\limits_{0}^{\pi} \dd{\vartheta}
 		\int\limits_{\xi \leq \xi_{\mt{F}}} \dd{\xi}
 		\int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{2\pi}
@@ -360,6 +359,7 @@ Using these assumptions the self energy is given by
 		\frac{1}{\epsilon + \frac{\omega}{2} - \xi - \frac{1}{2} v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta) + i \eta \sign(\epsilon + \frac{\omega}{2})}
 		\notag \\ &\times
 		\frac{1}{\epsilon - \frac{\omega}{2} - \xi + \frac{1}{2} v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta) + i \eta \sign(\epsilon - \frac{\omega}{2})},
+	\label{eq: self energy before epsilon integration}
 \end{align}
 %
 where the two dimensional momentum integral is firstly transformed in plane polar coordinates and than in an energy integral over the density of states.
@@ -384,28 +384,182 @@ The investigated integrand occupies two singularities at
 where both singularities are of first order which allows us to use Cauchy's integral formula.
 According to the signum function in both denominators the poles are located in the upper or lower plane.
 So in total there are four different possible constitutions.
-On the one hand both singularities can be located in the lower or upper complex plane
+On the one hand both singularities can be located in the lower or upper complex plane, which yield in both cases zero.
 On the other hand one pole can be in the upper plane and the other one can be in the lower plane, and vice versa.
+Equally both constitutions yields the same contribution.
+%
+\paragraph{1. case:} $\sign(\epsilon + \frac{\omega}{2}) = \sign(\epsilon - \frac{\omega}{2})$\\
+%
+Both singularities are located in the upper or in the lower complex half plane.
+The contour is therefore closed in the upper or lower plane, respectivily, so that both poles are enclosed.
+In the first case the winding number is $1$, because the pole is enclosed counterclockwise.
+Accordingly the winding number is $-1$ in the second case.
+%
+\begin{align}
+	&\mt{I}_{\omega}^{\mt{e}} := i \oint_{\Gamma} \frac{\dd{\omega}}{2\pi i}\, \frac{1}{\omega - \omega_{1} \mp i\eta} \cdot \frac{1}{\omega - \omega_{2} \mp i\eta}
+	\notag \\
+	\Leftrightarrow\ &\mt{I}_{\omega}^{\mt{e}} = \pm i \bigg[ \frac{1}{\omega_{2} - \omega_{1}} + \frac{1}{\omega_{1} - \omega_{2}}\bigg] = 0,
+\end{align}
+%
+where the index "e" stands for even and should mean that both poles are located at the same half planes.
+%
+\paragraph{2. case:} $\sign(\epsilon + \frac{\omega}{2}) \neq \sign(\epsilon - \frac{\omega}{2})$\\
+%
+The singularities are located in different complex half planes, one in the upper and accordingly the other in the lower half plane.
+In both cases it's arbitrary how the contour is closed.
+It's only important that one of the two poles is located inside the contour.
+In the following compuation the contour is closed in the upper half plane, so the winding number is always $1$.
+%
+\begin{align}
+	&\mt{I}_{\omega}^{\mt{o}} := i \oint_{\Gamma} \frac{\dd{\omega}}{2\pi i}\, \frac{1}{\omega - \omega_{1} \mp i\eta} \cdot \frac{1}{\omega - \omega_{2} \pm i\eta}
+	\notag \\
+	\Leftrightarrow\ &\mt{I}_{\omega}^{\mt{o}} = \frac{\pm i}{\omega_{2} - \omega_{1} \pm i\eta}
+\end{align}
+%
+where the index "o" stands accordingly for odd and should mean that both poles are located in different half planes.
+Inserting both singularities $\omega_{1}$ and $\omega_{2}$ causes that the integrand is independent with respect to the energy $\xi$.
+The frequency depending signum functions in \eqref{eq: self energy before epsilon integration} is aquivalent to the signum function $\sign(\xi \pm \frac{1}{2} v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta))$ in energy representation.
+The energy $\xi$ is neglectable because the integrand is independent of $\xi$.
+Further the constant factors are also neglectable because them are always positive. 
+The case of sign in the integand depends therefore only on the sign of $|\vb{k} + \vb{G}| \cos(\vartheta)$.
+Finally the integrals limits has to be set to $\pm \frac{1}{2} v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta)$.
+This follows directly out the location of the poles.
+For example if $\omega_{1}$ in the lower and $\omega_{2}$ in the upper half plane than $\epsilon + \frac{\omega}{2} > 0$ and $\epsilon - \frac{\omega}{2} < 0$, respectivily.
+Transforming both into energy representation the corresponded expressions are $\xi - \frac{1}{2} v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta) < 0$ and $\xi + \frac{1}{2} v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta) > 0$, which yields directly the definition interval of $\xi$.
+%
+\begin{align}
+	\Pi_{\mu}^{(0)}(\vb{k}, \omega) &= 
+		i \nu_{\mt{F}}
+		\int\limits_{0}^{\pi} \dd{\vartheta} 
+		\int\limits_{-\xi_{0}}^{\xi_{0}} \dd{\xi}
+		\frac{i \sign(|\vb{k} + \vb{G}| \cos(\vartheta))}{\omega - v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta) + i\eta \sign(|\vb{k} + \vb{G}| \cos(\vartheta))}
+\end{align}
+%
+where the abbreviation $\xi_{0} = \flatfrac{v_{\mt{F}}|\vb{k}+\vb{G}|\cos(\vartheta)}{2}$ is introduced.
+The integration over $\xi$ yields the factor $v_{\mt{F}}|\vb{k}+\vb{G}|\cos(\vartheta)$.
+Subsequently the signum function is reexpressed in frequency representation which corresponds to $\sign(\omega)$.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Like it is shown above the damping of the spin density wave occurs of the imaginary part of the self energy, why we take the imaginary part of the above expression in the further computation.
+Formally the real part is absorbed into the mass term $r_{0}$.
+The imaginary part of the serlf energy is given by
+%
+\begin{align}
+	\Im{\Pi_{\mu}^{(0)}(\vb{k}, \omega)} &= 
+		\nu_{\mt{F}} \pi
+		\int\limits_{0}^{\pi} \dd{\vartheta}
+		v_{\mt{F}} |\vb{k}+\vb{G}| \cos(\vartheta) \delta(\omega - v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta)),
+	\label{eq: imaginary part of self energy before theta integration}
+\end{align}
+%
+where the formula $\frac{1}{x \pm i\eta} = \PV{\frac{1}{x}} \mp i \pi \delta(x)$ is used.
+To perform the last remaining intgeral over $\vartheta$ the $\delta$-distribution has to be writen in a different form.
+The argument is a $\vartheta$ depending function with in general infinite zeros.
+In the integrating area, between $0$ and $\pi$, the cosine only have one zero.
+The formula
+%
+\begin{align}
+	\delta(g(x)) = \sum\limits_{i=1} \frac{\delta(x-x_{0,i})}{|g'(x_{0,i})|}
+\end{align}
+%
+states how a $\delta$-distribution with a functional argument can be writen as a sum over $\delta$-distributions with zeros of $g(x)$ as argument.
+The prime denotes the derivative with respect to $x$ which has to be evaluated at the corresponding zero $x_{0,i}$.
+The argument of the $\delta$-distribution in \eqref{eq: imaginary part of self energy before theta integration} has a single zero at $\vartheta_{0} = \cos[-1](\flatfrac{\omega}{(v_{\mt{F}} |\vb{k} + \vb{G}|)})$.
+Thereby the $\delta$-distribution is rewriten as
+%
+\begin{align}
+	&\delta(\omega - v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta)) = \Big(v_{\mt{F}} |\vb{k} + \vb{G}| \cdot |\sin(\vartheta_{0})|\Big)^{-1} \delta(\vartheta - \vartheta_{0})
+	\notag \\
+	\Rightarrow\ &\delta(\omega - v_{\mt{F}} |\vb{k} + \vb{G}| \cos(\vartheta)) \approx \Big(v_{\mt{F}} |\vb{k} + \vb{G}|\Big)^{-1} \delta(\vartheta - \vartheta_{0})
+\end{align}
+%
+where in the second line the limit of small frequancies $\omega$ is assumed.
+This is valid because of our investigated low energy theory.
+In other words the interaction is assumed as small and thereby the frequency and momentum transfer is small too.
+Now the integration over $\vartheta$ can be perform easily.
+The imaginary part of the self energy is given by
+%
+\begin{align}
+	\Im{\Pi_{\mu}^{(0)}(\vb{k}, \omega)} &= \frac{\nu_{\mt{F}} \pi}{v_{\mt{F}} |\vb{k} + \vb{G}|} \cdot \omega = \gamma \omega		 
+\end{align}
+%
+where in the last step the damping constant $\gamma$ is introduced.
+In equation \eqref{eq: Dyson equation} we see that the full propagator is given by the free propagator and the self energy.
+In general the self energy is a complex quantity why they is splitted into real and imaginary part.
+With the free propagator in equation \eqref{eq: free spin density wave propagator} the damped spin fermion propagator is given by
+%
+\begin{align}
+	\mathcal{D}_{\mu}(\vb{k}, \omega) = \sum\limits_{\vb{G}} \frac{1}{(\vb{k}+\vb{G})^{2} + r - \xi^{-2} - i \gamma \omega}
+	\label{eq: damped spin density propagator with real omega}
+\end{align}
+%
+where the abbreviation $r = r_{0} - \Re{\Pi_{\mu}(\vb{k}, \omega)}$ is used.
+Remember that $\xi$ represents the correlation length in this formula instead of the energy like it's used in the previous computation.
+At the quantum critical point the even intriduced quantity $r$ can be set to zero in the first approximation.
+The real part of self energy is canceled with $r_{0}$.
+Further the investigated model is a low energy theory, why the correlation length $\xi$, which is proportional to $\omega^{2}$ is neglectable.
+%
+%
+\section{Transformation of the propagator on the imaginary axis}
+\label{sec: transformation of the propagator on the imaginary axis}
+%
+%
+The spin density wave propagator obtained in the previous section is a complex function of the real quantity $\omega$.
+In the following the quantity $\omega$ should be transformed into an imaginary quantity $i\omega_{n}$, which we know as Matsubara frequancies.
+In this representation the computations in chapter \ref{ch: calculation} are much more comfortable.
+The aim is now to find the real and imaginary part of the propagator with respect to the imaginary quantity $i\omega_{n}$.
+The Kramers-Kronig relations yield a relationship between the real part of a function and the imaginary part of the same function, and vice versa, where the argument of both parts is rotated by an arbitrary angle.
+In section \ref{subsec: Kramer-Kronig-relation} these relations are established, see \eqref{eq: Kramer-Kronig relation} for the explicite form.
+The propagator in \eqref{eq: damped spin density propagator with real omega} can be easily seperated into real and imaginary part
+%
+\begin{align}
+	\mathcal{D}_{\mu}(\vb{k}, \omega) = \sum\limits_{\vb{G}} \bigg[\frac{(\vb{k}+\vb{G})^{2}}{(\vb{k}+\vb{G})^{4} + (\gamma\omega)^{2}} + i \frac{\gamma \omega}{(\vb{k}+\vb{G})^{4} + (\gamma\omega)^{2}}\bigg],
+\end{align}
+%
+where $r = \xi = 0$ is set.
+It is trivially seen that the real part is a symmetric function and the imaginary part is an antiysmmetric funtion with respect to $\omega$.
+Similiar to \eqref{eq: damped spin density propagator with real omega} the propagator $\mathcal{D}_{\mu}(\vb{k}, i\omega_{n})$ can be seperated into a real and imaginary part.
+The imaginary part is zero, because the integrand is an antisymmetric function with respect to $\omega$.
+So the propagator with respect to Matsubara frequencies is given by
+%
+\begin{align}
+	\mathcal{D}_{\mu}(\vb{k}, i\omega_{n}) = \frac{1}{\pi} \PV{\int\limits_{-\infty}^{\infty} \dd{\omega} \frac{\Im{\mathcal{D}_{\mu}(\vb{k}, \omega)}}{\omega - i\omega_{n}}}
+\end{align}
+%
+where the limit $\eta \to 0^{+}$ is implied.
+In the following computation the momentum argument is tropped on the right hand side, until the imaginary part of the propagator is explicitly inserted.
+The integral is splitted into two parts and in the first term we substitute with $\omega = -\omega$, where the antismmetry of $\Im{\mathcal{D}_{\mu}(\vb{k}, \omega)}$ is utilizied.
+%
+\begin{align}
+	%&\mathcal{D}_{\mu}(\vb{k}, i\omega_{n}) = \frac{1}{\pi} \Bigg[
+	%	\int\limits_{-\infty}^{0} \dd{\omega} \frac{\Im{\mathcal{D}_{\mu}(\vb{k}, \omega)}}{\omega - i\omega_{n}}
+	%	+
+	%	\int\limits_{0}^{\infty} \dd{\omega} \frac{\Im{\mathcal{D}_{\mu}(\vb{k}, \omega)}}{\omega - i\omega_{n}}
+	%\Bigg]
+	%\notag \\
+	%\Leftrightarrow\ 
+	&\mathcal{D}_{\mu}(\vb{k}, i\omega_{n}) = \frac{1}{\pi} \int\limits_{0}^{\infty} \dd{\omega} \Im{\mathcal{D}_{\mu}(\vb{k}, \omega)} \Bigg[
+		\frac{1}{\omega + i\omega_{n}}
+		+
+		\frac{1}{\omega - i\omega_{n}}
+	\Bigg]
+	\notag \\
+	\Leftrightarrow\ &\mathcal{D}_{\mu}(\vb{k}, i\omega_{n}) = 
+		\frac{2}{\pi} \sum\limits_{\vb{G}} \int\limits_{0}^{\infty} \dd{\omega} 
+		\frac{\gamma \omega}{(\vb{k}+\vb{G})^{4} + (\gamma\omega)^{2}} \cdot
+		\frac{\omega}{\omega^{2} + \omega_{n}^{2}}
+	\notag \\
+	\Leftrightarrow\ &\mathcal{D}_{\mu}(\vb{k}, i\omega_{n}) = 
+		\sum\limits_{\vb{G}} \frac{1}{(\vb{k}+\vb{G})^{2} + \gamma|\omega_{n}|}
+	\label{eq: spin density propagator Matsubara representation}
+\end{align}
+%
+In the last step the integral formula
+%
+\begin{align}
+	\int\limits_{0}^{\infty} \dd{x} \frac{x}{a^{2} + x^{2}} \cdot \frac{x}{y^{2} + x^{2}} = \frac{\pi}{2} \frac{1}{a + |y|}
+\end{align}
+%
+is used, which can be shown by transforming into a complex contour integral.
 
 
 

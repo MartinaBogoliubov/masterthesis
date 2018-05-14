@@ -3,21 +3,22 @@
 \BOOKMARK [0][-]{chapter.3}{Computation of the spin density wave propagator}{}% 3
 \BOOKMARK [1][-]{section.3.1}{The free propagator of spin density waves}{chapter.3}% 4
 \BOOKMARK [1][-]{section.3.2}{The damped spin density wave propagator}{chapter.3}% 5
-\BOOKMARK [0][-]{chapter.4}{Memory-Matrix-Formalsim}{}% 6
-\BOOKMARK [1][-]{section.4.1}{Motivation}{chapter.4}% 7
-\BOOKMARK [1][-]{section.4.2}{Linear Response Theory}{chapter.4}% 8
-\BOOKMARK [2][-]{subsection.4.2.1}{Kubo formula}{section.4.2}% 9
-\BOOKMARK [2][-]{subsection.4.2.2}{Kubo relaxation function}{section.4.2}% 10
-\BOOKMARK [2][-]{subsection.4.2.3}{Kramer-Kronig-relation}{section.4.2}% 11
-\BOOKMARK [2][-]{subsection.4.2.4}{Spectral representation}{section.4.2}% 12
-\BOOKMARK [1][-]{section.4.3}{Deviation of the Memory-Matrix-Formalism}{chapter.4}% 13
-\BOOKMARK [2][-]{subsection.4.3.1}{Time Reversal Symmetry}{section.4.3}% 14
-\BOOKMARK [0][-]{chapter.5}{Calculation}{}% 15
-\BOOKMARK [1][-]{section.5.1}{Infinite conductivity in systems with unbroken translation symmetry}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.2}{Finite conductivity because of breaking the translation symmetry via umklapp scattering}{chapter.5}% 17
-\BOOKMARK [2][-]{subsection.5.2.1}{Temperature dependence of the dc-conductivity}{section.5.2}% 18
-\BOOKMARK [2][-]{subsection.5.2.2}{Computation of the static susceptibility}{section.5.2}% 19
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 20
-\BOOKMARK [0][-]{appendix.A}{Properties of the Kubo relaxation function}{}% 21
-\BOOKMARK [0][-]{appendix.B}{Conversion of \(to.|to. \(to.- L0\)to.-1 |to.\)to.}{}% 22
-\BOOKMARK [0][-]{appendix.C}{Fierz identity}{}% 23
+\BOOKMARK [1][-]{section.3.3}{Transformation of the propagator on the imaginary axis}{chapter.3}% 6
+\BOOKMARK [0][-]{chapter.4}{Memory-Matrix-Formalsim}{}% 7
+\BOOKMARK [1][-]{section.4.1}{Motivation}{chapter.4}% 8
+\BOOKMARK [1][-]{section.4.2}{Linear Response Theory}{chapter.4}% 9
+\BOOKMARK [2][-]{subsection.4.2.1}{Kubo formula}{section.4.2}% 10
+\BOOKMARK [2][-]{subsection.4.2.2}{Kubo relaxation function}{section.4.2}% 11
+\BOOKMARK [2][-]{subsection.4.2.3}{Kramer-Kronig-relation}{section.4.2}% 12
+\BOOKMARK [2][-]{subsection.4.2.4}{Spectral representation}{section.4.2}% 13
+\BOOKMARK [1][-]{section.4.3}{Deviation of the Memory-Matrix-Formalism}{chapter.4}% 14
+\BOOKMARK [2][-]{subsection.4.3.1}{Time Reversal Symmetry}{section.4.3}% 15
+\BOOKMARK [0][-]{chapter.5}{Calculation}{}% 16
+\BOOKMARK [1][-]{section.5.1}{Infinite conductivity in systems with unbroken translation symmetry}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.2}{Finite conductivity because of breaking the translation symmetry via umklapp scattering}{chapter.5}% 18
+\BOOKMARK [2][-]{subsection.5.2.1}{Temperature dependence of the dc-conductivity}{section.5.2}% 19
+\BOOKMARK [2][-]{subsection.5.2.2}{Computation of the static susceptibility}{section.5.2}% 20
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 21
+\BOOKMARK [0][-]{appendix.A}{Properties of the Kubo relaxation function}{}% 22
+\BOOKMARK [0][-]{appendix.B}{Conversion of \(to.|to. \(to.- L0\)to.-1 |to.\)to.}{}% 23
+\BOOKMARK [0][-]{appendix.C}{Fierz identity}{}% 24
