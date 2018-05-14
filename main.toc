@@ -10,7 +10,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Spin-Fermion-Model}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Computation of the spin density wave propagator}{5}{chapter.3}
+\contentsline {chapter}{\numberline {3}The damped propagator of spin density waves}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}The free propagator of spin density waves}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Transformation of the propagator on the imaginary axis}{14}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Memory-Matrix-Formalsim}{17}{chapter.4}
+\contentsline {chapter}{\numberline {4}Memory-Matrix-Formalism}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Motivation}{17}{section.4.1}
 \defcounter {refsection}{0}\relax 
@@ -30,9 +30,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}Kubo formula}{18}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Kubo relaxation function}{19}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Kubo relaxation function}{20}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Kramer-Kronig-relation}{21}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Kramer-Kronig-relation}{22}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.4}Spectral representation}{23}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
@@ -40,9 +40,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Time Reversal Symmetry}{30}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{32}{section*.21}
+\contentsline {paragraph}{\nonumberline 1. case:}{32}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{33}{section*.22}
+\contentsline {paragraph}{\nonumberline 2. case:}{33}{section*.21}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Calculation}{35}{chapter.5}
 \defcounter {refsection}{0}\relax 
