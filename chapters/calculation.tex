@@ -122,10 +122,18 @@ Using \eqref{eq: relation between C, Phi and chi} and insert back this expressio
 	\sigma (z) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \frac{i}{\omega}  + \sigma_{\mt{reg}}(\omega)
 \end{align}
 %
+%
+\begin{figure}[t]
+	\subfigure[conductivity in a system with unbroken translation symmetry]{\includegraphics[width=0.45\textwidth]{conductivity_delta_peak.pdf}}
+	\subfigure[conductivity in a system with broken translation symmetry]{\includegraphics[width=0.45\textwidth]{conductivity_drude_peak.pdf}}
+	\caption{caption}
+	\label{fig: conductivity broken and unbroken translation symmetry}
+\end{figure}
+%
 where the regular conductivity $\sigma_{\mt{reg}}(z) = \frac{i \beta}{\omega} \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced.
 The physical meaning of $\sigma_{\mt{reg}}(\omega)$ is directly connected to the vertical component of $\toket{\mt{J}}$.
 Thus the regular conductivity includes fluctuations and other effects influenced by random forces called noise.
-Figure \todo{figure of delta peak and noisy background} shows this continuously over all frequencies never disappearing background.
+Figure \ref{fig: conductivity broken and unbroken translation symmetry} shows this continuously over all frequencies never disappearing background.
 
 In the whole calculation never a condiction on $\omega$ is made, so the equation for the conductivity is valid for each $\omega$ in the complex plane.
 In reality the conductivity isn't depending on a complex frequency, because physical quantities are always real.
@@ -147,7 +155,7 @@ The electrons accelerate more and more and this eventuates in an infinite conduc
 Only in a system with broken translation symmetry it's possible for the electrons to lose momentum by scattering with the lattice or impurities for example.
 This eventuates in a finite conductivity, thus the amplitude of the $\delta$-peak becomes smaller or more precisely finite.
 The factor in front of the $\delta$-distribution is the so called Drude weight.
-The Drude peak and the effect of breaking translation symmetry is visualizied in figure \todo{link to figure} too.
+The Drude peak and the effect of breaking translation symmetry is visualizied in figure \ref{fig: conductivity broken and unbroken translation symmetry} too.
 %
 %
 \section{Finite conductivity because of breaking the translation symmetry via umklapp scattering}
@@ -352,8 +360,8 @@ Therefore all normal products are zero and only the sum survives, where all oper
 The sum yields three possible contraction of the operators, where one of them is a disconnected diagram.
 The diagram is originated by contracting the operators with the same time argument.
 This diagram is canceled with the vacuum diagrams like discussed above, because it isn't considered in the following computation.
-In total Wick's theorem yields two contributing diagrams, where both are equally
-The diagram is depicted in figure \dots \todo{Bild mit bubble diagram und link} and correspond to the bubble diagram.
+In total Wick's theorem yields two contributing diagrams, where both are equally.
+The diagram is depicted in figure \ref{fig: spin wave bubble} and corresponds to the bubble diagram.
 
 Because the used operators are in momentum space each expactation value of two operators becomes a $\delta$-distribution, originated from the commutator relations in momentum space.
 The $\delta$-distributions signify the conservation of momentum.
@@ -361,6 +369,14 @@ In the investigated case the commutator relations \dots \todo{Link zu kommutator
 Then one momentum integral and one sum over reziprocal lattice vectors is performed.
 The remaining momentum and reziprocal lattice vector is renamed into $\vb{k}$ and $\vb{K}$ respectivily.
 Further one sum over the spactial direction of $\Phi$ is performed.
+%
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{spin_wave_bubble.eps}
+	\caption{caption}
+	\label{fig: spin wave bubble}
+\end{figure}
+%
 %
 \begin{align}
 	\mathcal{G}_{jj}(z) &= 
@@ -382,7 +398,7 @@ The free propagator is defined by $\mathcal{D}_{\mu}^{(0)}(\vb{k},\tau) := \expv
 Both are seperatly transformed into Matsubara frequency space via
 %
 \begin{align}
-	\mathcal{D}_{\mu}^{(0)}(\vb{k},\tau) = \frac{1}{\beta} \sum\limits_{\omega_{n}} e^{-i\omega_{n}\tau} \mathcal{D}_{\mu}^{(0)}(\vb{k},\omega_{n})
+	\mathcal{D}_{\mu}^{(0)}(\vb{k},\tau) = \frac{1}{\beta} \sum\limits_{\omega_{n}} e^{-i\omega_{n}\tau} \mathcal{D}_{\mu}^{(0)}(\vb{k},i\omega_{n})
 \end{align}
 %
 where the summation runs over all Matsubara frequencies $\omega_{n}$.
@@ -391,7 +407,7 @@ After transforming the propagators into Matsubara frequency space the imaginary 
 This offers us to perform the $\tau$-integral easily, where relation 
 %
 \begin{align}
-	\int_{0}^{\beta} \dd{\tau} e^{-i(\omega_{m}+\omega_{n}-\omega_{l})\tau} = \beta \delta_{\omega_{m},\omega_{l}-\omega_{n}}
+	\int_{0}^{\beta} \dd{\tau} e^{-i(\omega_{m}+\omega_{n}-\omega_{l})\tau} = \beta \delta_{\omega_{m}+\omega_{l}-\omega_{n}}
 \end{align}
 %
 is used and then one of the two sums over Matsubara frequencies can be performed as well.
@@ -404,14 +420,22 @@ After all these steps the integral has the form
 		\vert \mt{J}_{\vb{K}} \vert^{2}
 		\int_{\vb{k}} K_{j}^{2}
 		\frac{1}{\beta} \sum\limits_{\omega_{n}}
-		\mathcal{D}_{\mu}(\vb{k},\omega_{n}) \,
-		\mathcal{D}_{\mu}(-\vb{k}-\vb{K},\omega_{l}-\omega_{n})
+		\mathcal{D}_{\mu}(\vb{k},i\omega_{n}) \,
+		\mathcal{D}_{\mu}(-\vb{k}-\vb{K},i\omega_{l}-i\omega_{n})
 		\label{eq: Green function on the imaginary axis}
 \end{align}
 %
 In the following the Matsubara sum is evaluated.
 Therefore we have to check the singularities of both propgators.
-Regarding equation \eqref{eq: damped propagator Matsubara representation}, illustrates that the propagator has a discontinuity if the absoulte value of the Matsubara frequency is zero. 
+Regarding equation \eqref{eq: damped propagator Matsubara representation}, illustrates that the propagator has a discontinuity if the absoulte value of the Matsubara frequency is zero.
+%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=\textwidth]{contour_branch_cut.pdf}
+	\caption{caption}
+	\label{fig: contour branch cut}
+\end{figure}
+%
 This kind of singularity is called branch cut, because the whole horizontal line at the singularity is forbidden in the complex plane.
 Branch cuts are the reason why the Matsubara sum isn't so easily transformed into a complex contour integral like it is done usually, if the propagators have simple poles.
 In the investigated case the propagators have two singularity of this kind, one at $\omega_{n} = 0$ and one at $\omega_{n} = \omega_{l}$, which correspond to $n=0$ and $n=l$.
@@ -433,7 +457,7 @@ For reasons of simplizity the momentum argument of the second propagator is abbr
 %
 Now the remaining sum can be transformed into a complex contour integral.
 Thereby the contour $\Gamma$ includes all Matsubara frequencies $\omega_{n}$ onto the imaginary axis, beside the two ones splitted off, and is taken counterclockwise.
-The contour $\Gamma$ is depicted in figure \dots \todo{Link zum Bild der Kontour}.
+The contour $\Gamma$ is depicted in figure \ref{fig: contour branch cut}.
 The transformed Matsubara sum is given by
 %
 \begin{align}
@@ -444,8 +468,8 @@ The transformed Matsubara sum is given by
 \end{align}
 %
 where $n_{\mt{B}}(z)$ is the Bose distribution.
-Like it is shown in \dots \todo{Link zum Kontourbild} $\Gamma$ consists of three single contours which are denoted as $\Gamma_{1}$, $\Gamma_{2}$ and $\Gamma_{3}$.
-These three contours are expanded to infity where the contour line is never allow to cross the horizontal line at $\omega_{l}$ and $0$, see figure \todo{link to figure}.
+Like it is shown in \ref{fig: contour branch cut} $\Gamma$ consists of three single contours which are denoted as $\Gamma_{1}$, $\Gamma_{2}$ and $\Gamma_{3}$.
+These three contours are expanded to infity where the contour line is never allow to cross the horizontal line at $\omega_{l}$ and $0$.
 
 The contour $\Gamma_{1}$ is taken along the real axis in negative direction and is closed by a semi-circle with infinite radius in the lower complex plane.
 $\Gamma_{2}$ is the contour between both branch cuts.
@@ -856,7 +880,15 @@ In the investigated order only one pair of bosonic operators, \ie\, one propagat
 Therefore the bosonic propagator yields always a disconnected diagram.
 Furthermore pairing electrons of different Fermi sufaces isn't allowed, which means that the expactation value of mixed fermionic operators also yields disconnected diagrams.
 Thus many diagrams of the investigated ones are disconnected, beside of two.
-These two bubble diagrams are depicted in figure \dots\todo{Bild von den Bubblediagrammen}.
+These two bubble diagrams are depicted in figure \ref{fig: static susceptibility}.
+%
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{static_susceptibility.eps}
+	\caption{caption}
+	\label{fig: static susceptibility}
+\end{figure}
+%
 %
 \begin{align}
 	\chi_{\mt{PJ}}(\omega = 0) = 
@@ -932,12 +964,24 @@ This transformation yields
 	S = \frac{1}{\beta} \sum\limits_{\omega_{n}} \mathcal{G}(\omega_{n}) = -\frac{1}{2\pi i} \oint_{\Gamma} \dd{z} n_{\mt{F}}(z) \mathcal{G}(z)
 \end{align}
 %
+%
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{contour_simple_poles.pdf}
+	\caption{caption}
+	\label{fig: contour simple poles}
+\end{figure}
+%
 in the case of a fermionic Green function.
 Thereby the contour is arbitrary.
-The only important fact is that all singularities of the Green function has to be included in the contour.
-The singularity of the distribution function isn't included in the contour.
-In figure \dots \todo{Bild mit Kontour und verlinken} the taken contour is depicted.
-The electronic Green function
+The only important fact is that all singularities of the Green function has to be excluded of the contour.
+Only the singularities of the distribution function are included in the contour.
+The contour $\Gamma$ is expanded to infinity, where always the singularities of the Green function has to be excluded.
+This procedure is depicted in figure \ref{fig: contour simple poles}.
+The paths from infinity to the poles and back yield the same contribution beside the sign, why both cancel each outher.
+The contour is therefore deformed to circles around the poles running clockwise and an infinite circle running counterclockwise.
+The latter is zero, because the Green function is proportional to $\flatfrac{1}{z}$.
+The electronic Green function is given by
 %
 \begin{align}
 	\mathcal{G}_{\alpha}(\vb{k},\omega_{n}) = \frac{1}{i\omega_{n} - \epsilon_{\alpha}(\vb{k})},

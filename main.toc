@@ -52,12 +52,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Temperature dependence of the dc-conductivity}{41}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Computation of the static susceptibility}{49}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Computation of the static susceptibility}{50}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{53}{chapter.6}
+\contentsline {chapter}{\numberline {6}Conclusion}{55}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{55}{appendix.A}
+\contentsline {chapter}{\numberline {A}Properties of the Kubo relaxation function}{57}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Conversion of ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ } {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }\omega - \mathrm {L}_{0}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }^{-1} {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$}{57}{appendix.B}
+\contentsline {chapter}{\numberline {B}Conversion of ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ } {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }\omega - \mathrm {L}_{0}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }^{-1} {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$}{59}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Fierz identity}{59}{appendix.C}
+\contentsline {chapter}{\numberline {C}Fierz identity}{61}{appendix.C}
