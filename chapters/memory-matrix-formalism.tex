@@ -66,6 +66,7 @@ Beside the physical interpretation a simple geometrical and mathematical one is 
 Let us assume a vector space and the observable should be a vector in this vector space.
 Then the secular term is a projection on the A-axis and the non-secular term is aquivalent to a vector perpendicular to the A-axis.
 The memory-matrix-formalism take up this simple interpretation of equation \eqref{eq: splitted observable} and put it in a general and exact form, so that it can be used classicaly and quantum mechanicaly.
+\todo{figure to visualize to splitting of A(t)}
 %
 %
 %
@@ -351,17 +352,17 @@ Assuming the dissipative susceptibility is a real number, than this is also vali
 %
 %
 %
-After this short reminder of the linear response theorie and the investigation of the dynamical susceptibility the groundwork for the deviation of the memory-matrix-formalism is done and we want to go back.
-This chapter started by splitting a dynamical observable into two parts, a secular and a non-secular one.
+After this short reminder of the linear response theorie and the investigation of the dynamical susceptibility the groundwork for the deviation of the memory-matrix-formalism is done.
+This chapter started splitting an arbitrary dynamical observable into two parts, a secular and a non-secular one.
 The systematical evolution of observables is determined by the secular part.
-Looking at the system after a pertubation is switched off for a long time this secular part is depended the evolution.
-Furthermore all processes with a short lifetime or small quantity compared with the linear term in pertubation series are summerized in the non-secular part.
+Looking at a system after a pertubation is switched off for a long time the secular part depending the evolution.
+Furthermore all processes with a short lifetime or small magnitudes compared with the linear term in pertubation series are summerized in the non-secular part.
 This result is the starting point to a simple geometrical interpretation in a vector space, which we want define in the following.
 
 Therefore the mathematical framework in quantum mechanics has to be clear, why a short review based on \cite{Audretsch} is given in the following.
 A $d$-dimensional Hilbert-space is mormaly the mathematical working area in quantum mechanics.
 This vector space is linear, complex and has a defined scalar product.
-The vectors $\ket{\phi}$, usually denoted in the Dirac-notation, are identified with all possible states for the system.
+The vectors $\ket{\phi}$, usually denoted in the Dirac-notation, are identified with all possible states for a system.
 Because the man is always interested in observables, linear operators are defined in the Hilbert-space where the eigenvalues of them conform to the observables.
 Defining the dyad product $\sum_{i} \dyad{i}{i}$ it's not hard to see that any linear operator occupies a dyad decomposition
 %
@@ -371,16 +372,16 @@ Defining the dyad product $\sum_{i} \dyad{i}{i}$ it's not hard to see that any l
 \end{align}
 %
 where $\mt{A}_{ij} := \bra{i}\mt{A}\ket{j}$ is a matrix element of the linear operator.
-The dyad product of an operator is now used to introduce a new vector space of all linear operators acting on the $d$-dimensional Hilbert-space which is called the Liouville-space $\mathbb{L}$ or operator space.
+The dyad product of an operator is now used to introduce a new vector space of all linear operators acting on the $d$-dimensional Hilbert-space which is called the Liouville-space $\mathbb{L}$ or also operator space.
 
-The Liouville-space is linear and complex vector space equally to the Hilbert-space.
+The Liouville-space is a linear and complex vector space equally to the Hilbert-space.
 The difference between both are the vectors or elements living in the space.
 In the Liouville-space the vectors are linear operators $\mt{A}, \mt{B}, \dots$ which are acting on some Hilbert-space.
 In other words this means that the dyad decomposition of an vector in the $d$-dimensional Hilbert-space is the new vector in the Liouville-space.
 So some vector in the Liouville-space is notated as
 %
 \begin{align}
-	\oket{\mt{A}} := \sum\limits_{ij}^{d} \mt{A}_{ij} \oket{\dyad{i}{j}}
+	\oket{\mt{A}} := \sum\limits_{ij}^{d} \mt{A}_{ij} \oket{\dyad{i}{j}}.
 	\label{eq: definition of a vector in Liouville-space}
 \end{align}
 %
@@ -391,13 +392,13 @@ Equally to a Hilbert-space there are many other oppertunities to choose the basi
 
 In the following the basis of our Liouville space is denoted with $\{\toket{\mt{A}_{i}}\}$ where $i = 1,2,3,\dots,n$ and $\mt{A}_{i}$ is an operator.
 The corresponding basis of the dual space is given by $\{\tobra{\mt{A}_{i}}\}$, similarily to the Hilbert space.
-The last needed element of our Liouville space is a scalar product which fullfills the three condictions
+The last needed element of our Liouville space is a scalar product which has to fullfill the following three condictions.
 %
 \begin{enumerate}
 	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \obraket{\mt{A}_{j}}{\mt{A}_{i}}^{*} \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{B}} = c_{1} \obraket{\mt{A}_{i}}{\mt{A}_{j}} + c_{2} \obraket{\mt{A}_{i}}{\mt{A}_{k}} \end{aligned}$
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{B}} = c_{1} \obraket{\mt{A}_{i}}{\mt{A}_{j}} + c_{2} \obraket{\mt{A}_{i}}{\mt{A}_{k}}, \end{aligned}$
 	\item[] $\begin{aligned} \text{where\ \ \ } \mt{B} = c_{1} \mt{A_{j}} + c_{2} \mt{A_{k}} \qq{and} c_{1}, c_{2} \in \mathbb{C} \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{i}}\geq 0 \qq{where equallity is fulfilled if} \mt{A}_{i} = 0. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
+	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{i}}\geq 0 \qq{, where equallity is fulfilled if} \mt{A}_{i} = 0. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
 \end{enumerate}
 %
 Beside these the choice of the scalar product is arbitrary.
@@ -409,7 +410,7 @@ For the moment let us choose
 \end{align}
 %
 as our scalar product, where the normal time evolution of an operator \linebreak$\mt{A}_{i}(t) = e^{i\mt{H}t/\hbar} \mt{A}_{i}(0) e^{-i\mt{H}t/\hbar}$ is valid, so that $\mt{A}_{i}(i\lambda\hbar) = e^{-\lambda\mt{H}} \mt{A}_{i}(0) e^{\lambda\mt{H}}$ can be used.
-A more detailed discussion of the choice of the sclar product is given at the end of this chapter in \todo{link to the section where the scalar product is motivated}.
+\todo{Motivation why we choose this kind of a scalar product}
 Now we have to proof if the condictions are fullfilled by the choice of our scalar product.
 
 Let's get started with the second one because it's easily shown transforming the expactation value into the trace representation and then using the properties of the trace. \todo{maybe the computation isn't needed here}
@@ -432,8 +433,8 @@ Therefore the trace is writen explicitly as a sum over all states and the unity 
 	\label{eq: expactation value in spectral representation}
 \end{align}
 %
-The complex conjugated of the expectation value in the Liouville space is considered and using $\mel{n}{\mt{A}_{j}^{\dag}(t)}{m}^{*} = \mel{m}{\mt{A}_{j}(t)}{n}$ let us find instantly the first condition.
-Notice that on the right hand side of equation \eqref{eq: expactation value in spectral representation} only the expactation values are complex numbers.
+The complex conjugated of the expectation value is considered in the Liouville space and using $\mel{n}{\mt{A}_{j}^{\dag}(t)}{m}^{*} = \mel{m}{\mt{A}_{j}(t)}{n}$ let us find instantly the first condition.
+Notice that on the right hand side of equation \eqref{eq: expactation value in spectral representation} only the expactation values are complex quantities.
 For them the complex conjugation yields
 %
 \begin{align}
@@ -441,21 +442,21 @@ For them the complex conjugation yields
 \end{align}
 %
 and inserting back $\tobraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')}^{*}$ is exactly the same as \eqref{eq: expactation value in spectral representation}.
-Proofing the third condition it has to be set $\mt{A}_{j}(t') = \mt{A}_{i}(t)$ in equation \eqref{eq: expactation value in spectral representation}, which one the right hand side results in 
+Proofing the third condition it has to be set $\mt{A}_{j}(t') = \mt{A}_{i}(t)$ in equation \eqref{eq: expactation value in spectral representation}, which one the right hand side yields
 %
 \begin{align}
-	\obraket{\mt{A}_{i}(t)}{\mt{A}_{i}(t)} &= \frac{1}{\beta \cdot Z} \sum\limits_{n,m} \big\vert\mel{m}{\mt{A}_{i}(t)}{n}\big\vert^{2} \frac{e^{-\beta E_{m}} - e^{-\beta E_{n}}}{E_{n}-E_{m}}.
+	\frac{1}{\beta \cdot Z} \sum\limits_{n,m} \big\vert\mel{m}{\mt{A}_{i}(t)}{n}\big\vert^{2} \frac{e^{-\beta E_{m}} - e^{-\beta E_{n}}}{E_{n}-E_{m}}.
 \end{align}
 %
 It's clear that the squared expactation value is always non-negative.
-The friction is positive too, which is easily seen by proofing the two cases $E_{n} > E_{m}$ and $E_{n} < E_{m}$.
-Therefore the expactation value $\obraket{\mt{A}_{i}(t)}{\mt{A}_{i}(t)} \geq 0$ and equallity is only possible if $\mt{A}_{i} = 0$.
-All three conditions are well proofed and the chosen scalar product is really one's.
-At this point all the mathematical ground work is done, we know how the vectors in the Liouville space looks like and we have a well defined scalar product.
+The fraction is positive too, which is easily seen by proofing the two cases $E_{n} > E_{m}$ and $E_{n} < E_{m}$.
+Therefore the expactation value $\obraket{\mt{A}_{i}(t)}{\mt{A}_{i}(t)} \geq 0$ and equality is only possible if $\mt{A}_{i} = 0$.
+All three conditions are well proven and the chosen scalar product is really one's.
+At this point all the mathematical ground work is done, we know how the vectors look in the Liouville space and we have a well defined scalar product.
 
 The goal of every physical theory is to describe the measurment results.
-Typically in statistical or quantum mechanics this is done by correlations functions.
-So our goal is it now to find a useable expression for correlation functions in our new Liouville space.
+Typically in statistical or quantum mechanics this is done via correlation functions.
+So our goal is now to find a useable expression for correlation functions in our new Liouville space.
 The natural starting point describing the time evolution of an operator $\mt{A}_{i}$ is in quantum mechanics the Heisenberg equation of motion
 %
 \begin{align}
@@ -463,8 +464,8 @@ The natural starting point describing the time evolution of an operator $\mt{A}_
 	\label{eq: Heisenberg equation of motion}
 \end{align}
 %
-where the operators are in the Heisenberg representation and the Hermitian Liouville operator defined by his action on an operator ${\mt{L} = \hbar^{-1} \comm{\mt{H}}{\mt{\bullet}}}$ is introduced.
-The formal solution of equation \eqref{eq: Heisenberg equation of motion} is
+where the operators are in the Heisenberg representation and the Hermitian Liouville operator ${\mt{L} = \hbar^{-1} \comm{\mt{H}}{\mt{\bullet}}}$ is introduced, defined by his action on an arbitrary operator.
+The formal solution of equation \eqref{eq: Heisenberg equation of motion} is given by
 %
 \begin{align}
 	\mt{A}_{i}(t) = e^{it\mt{L}} \mt{A}_{i}(0) = e^{it\mt{H}/\hbar} \mt{A}_{i}(0) e^{-it\mt{H}/\hbar}.
@@ -480,7 +481,7 @@ This isn't really surprisingly because only the dyad product has to be insert in
 	\label{eq: Heisenberg equation of motion in Liouville space}
 \end{align}
 %
-for the equation of motion in the Liouville space and there fromal solution
+for the equation of motion in the Liouville space and there formal solution is given by
 %
 \begin{align}
 	\oket{\mt{A}_{i}(t)} = e^{it\mt{L}} \oket{\mt{A}_{i}(0)}.
@@ -488,7 +489,7 @@ for the equation of motion in the Liouville space and there fromal solution
 \end{align}
 %
 Beside the Liouville operator one more operator has to be introduced for the deviation of the correlation function, called the projection operator.
-Therefore let us define a set of operators $\{\mt{C}_{i}\}$, where the choice of these operators are different depending on the investigated system and correlation function.
+Therefore let us define a set of operators $\{\mt{C}_{i}\}$, where the choice of these operators are differently depending on the investigated system and correlation function.
 In the later computation of a certain problem the choice of the operators is discussed in more detail.
 For the moment it's sufficient to know that the set of operators exists.
 Directly follwing out the definition of the projection operator in quantum mechanics the projection operator in the Liouville space looks like
@@ -498,20 +499,21 @@ Directly follwing out the definition of the projection operator in quantum mecha
 	\label{eq: projection operator}
 \end{align}
 %
-The action of P on some vector $\oket{\mt{A}(t)}$ in the Liouville space yields the parallel components to the chosen operators $\mt{C}_{i}$, which is the projection from $\oket{\mt{A}(t)}$ at the vector subspace spanned by $\mt{C}_{i}$.
+The action of P on some vector $\oket{\mt{A}(t)}$ in the Liouville space yields the parallel components to the chosen operators $\mt{C}_{i}$, which is the projection from $\oket{\mt{A}(t)}$ at the vector subspace spanned by $\mt{C}_{i}$. 
+\todo{figure of the projector's acting}
 The corresponding vertical component of $\oket{\mt{A}(t)}$ with respect to the operators $\mt{C}_{i}$ is given by $\mt{Q} = 1- \mt{P}$, which is the projection out of the vector subspace.
 Naturally the projection operator is fullfilled the two properties $\mt{P}^{2} = \mt{P}$ and $\mt{PQ} = \mt{QP} = 0$ of a projection operator, which follows immediately from the definition of $\mt{P}$.
 
 After the deviation of the time evolution of an operator and the projection operator in Liouville space the correlation function can be defined as
 %
 \begin{align}
-	\mathcal{C}_{ij}(t) = \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(0)} \overset{\eqref{eq: scalar product Liouville space}}{=} \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(i\lambda\hbar)}
+	\mathcal{C}_{ij}(t) = \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(0)} \overset{\eqref{eq: scalar product Liouville space}}{=} \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(i\lambda\hbar)},
 	\label{eq: correlation function Liouville space}
 \end{align}
 %
 where in the last step the definition of the scalar product is only inserted.
 Comparing equation \eqref{eq: correlation function Liouville space} with \eqref{eq: Kubo relaxation function 2.0} our choice of the correlation function is more clear.
-The defined correlation function is proportional to the Kubo relaxation function, which how we learned in section \ref{subsec: Kubo relaxation function} describes the system's reaction on a switched off pertubation. \todo{write more to the goal of the memory matrix formalsim}
+The defined correlation function is proportional to the Kubo relaxation function, which describes the system's reaction on a switched off pertubation, how we learned in section \ref{subsec: Kubo relaxation function}. \todo{write more to the goal of the memory matrix formalsim}
 For $t=0$ the correlation function is also proportional to the Fourier transformated susebtibility
 %
 \begin{align}
@@ -527,7 +529,7 @@ Equation \eqref{eq: formal solution of EM in L} is used to bring the time evolut
 \end{align}
 %
 which opens the possibility for using the Laplace transformation.
-Instead of the definition in equation \eqref{eq: Laplace transformation real axis} here a form of the Laplace transformation is used where $s$ is substituted by $-i\omega$ which is nothing else a rotation of the definition regime by $\frac{\pi}{2}$.
+Instead of the definition in equation \eqref{eq: Laplace transformation real axis} here a form of the Laplace transformation is used where $s$ is substituted by $-i\omega$ which is nothing else as a rotation of the definition area by $\flatfrac{\pi}{2}$.
 Multipling the last equation with $e^{i\omega t}$ and intgrate from zero to infinty with resprct to $t$ yields
 %
 \begin{align}
@@ -544,7 +546,8 @@ Now the relation $\mt{L} = \mt{LQ} + \mt{LP}$ which follows immediatly by using 
 	\Leftrightarrow\ \mathcal{C}_{ij}(\omega) &= \obra{\mt{A}_{i}} \frac{i}{\omega - \mt{LQ}} \oket{\mt{A}_{j}} + \obra{\mt{A}_{i}} \frac{1}{\omega - \mt{LQ}} \mt{LP} \frac{i}{\omega - \mt{L}} \oket{\mt{A}_{j}}
 \end{align}
 %
-The both terms on the right hand side are considered seperatly starting with the first one.
+The both terms on the right hand side are considered seperatly.
+Lez us starting with the first one.
 The fraction can be written as the geometric series assuming $\frac{\mt{LQ}}{\omega} < 1$, which means that the pertubation is small compared to other quantities in the system. \todo{Ask J\"org if this explanation is correct}
 %
 \begin{align}
@@ -559,7 +562,7 @@ Every term except the first one conatins an operator $Q$, so the first term of t
 	\obra{\mt{A}_{i}} \frac{i}{\omega - \mt{LQ}} \oket{\mt{A}_{j}} = \frac{i}{\omega} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \frac{i}{\omega} \mathcal{C}_{ij}(0).
 \end{align}
 %
-At the second term only the back term is considered.
+At the second term only the back is considered.
 Here only the explicit expression of the propagator is inserted, which yields the definition of the Laplace transformed correlation function.
 %
 \begin{align}
@@ -573,7 +576,7 @@ Inserting back both simplifications the correlation function is get the formal e
 \end{align}
 %
 The form of the resulting correlation function is now much more useable beside the fraction in the expectation value, but this one can be simplified too.
-Therefore the fraction is multiplied with $\omega$ and the Null $\mt{LQ} - \mt{LQ}$ is added in the numinator.
+Therefore a null $\mt{LQ} - \mt{LQ}$ is added in the nominator.
 %
 \begin{align}
 	\frac{\omega}{\omega - \mt{LQ}} = \frac{\omega - \mt{LQ} + \mt{LQ}}{\omega - \mt{LQ}} = 1 + \frac{\mt{LQ}}{\omega - \mt{LQ}}
@@ -603,10 +606,12 @@ where equation \eqref{eq: relation 2 between Phi and chi} is used and the abbrev
 are inserted.
 Equation \eqref{eq: algebraic equation for C} is the wanted algebraic equation for the correlation function.
 The sums over $k$ and $l$ are originated from the utilization of the projection operator.
-Therefore each sum is a sum over all operators included in the set of operators $\{\mt{C}_{i}\}$.
+Therefore each sum is summarized over all operators included in the set $\{\mt{C}_{i}\}$ of selected operators.
 The indicies $i$ and $j$ have to be chosen out of this set too, so that equation \eqref{eq: algebraic equation for C} yields $n^{2}$ algebraic equations if $n$ is the number of operators in $\{\mt{C}_{i}\}$.
 
-It's useful for a our later computation to write the even defined abbreviations in another form.
+\todo{write that the founded expression is an exact one}
+
+It's useful for later computations to write the even defined abbreviations in another form.
 For $\Omega_{il}$ not much work is to do, because we use only equation \eqref{eq: Heisenberg equation of motion in Liouville space}, so that
 %
 \begin{align}
@@ -614,7 +619,7 @@ For $\Omega_{il}$ not much work is to do, because we use only equation \eqref{eq
 	\label{eq: Omega}
 \end{align}
 %
-For the rearrangement of the second abbreviation in a first step equation \eqref{eq: Heisenberg equation of motion in Liouville space} is used too and in a second step the fraction is written as the geometric series.
+For the rearrangement of the second abbreviation equation \eqref{eq: Heisenberg equation of motion in Liouville space} is used at the first step too and the fraction is written as the geometric series at the second step.
 Then in every term the relation $\mt{Q} = \mt{Q}^{2}$ is inserted, where the proof is an easy finger excercise.
 After factorizing one $\mt{Q}$ to each vector operator the geometric series is written back as a fraction.
 %
@@ -631,11 +636,12 @@ After factorizing one $\mt{Q}$ to each vector operator the geometric series is w
 %
 After all this exhausting mathematical and algebraical conversions the correlation function in the memory matrix formalsim is in a useful and workable form.
 In equation \eqref{eq: algebraic equation for C} the abbreviations can be combined to one function $\mt{M}_{il}(\omega) := \Sigma_{il}(\omega) +i \Omega_{il}$.
-The symbol $\Sigma$ is selected in dependence on the quantum mechanical self energy and the function $\mt{M}(\omega)$ is called the mass operator in quantum field theory and the memory function in non-equilibrium physics.
+The symbol $\Sigma$ is selected in dependence on the quantum mechanical self energy.
+The function $\mt{M}(\omega)$ is called the mass operator in quantum field theory and the memory function in non-equilibrium physics.
 
 Let us discuss the physical meaning of $\Omega$ and $\Sigma(\omega)$ in more detail.
 The quantity $\Omega$ always vanishs in the case if the considered Hamiltonian occupies time reversal symmetry and if the operators $\mt{A}_{i}$ and $\mt{A}_{k}$ transform with the same signature with respect to time reversal symmetry since then $\obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} = 0$.
-This assertion is proven extensivly in the section below immediatly.
+This assertion is immediatly proven extensivly in the section below.
 In this case the memory function is solely given by the function $\Sigma(\omega)$.
 Comparising \eqref{eq: Sigma(z)} with the definition \eqref{eq: correlation function Liouville space} of correlation functions  exhibits $\Sigma(\omega)$ has the structur of a correlation function but $\Sigma(\omega)$ occupies to differences.
 On the one hand only $\mt{Q} \oket{\dot{\mt{A}}}$ which is perpendicular to $\oket{\mt{A}}$ forms the basis vectors of the expectation value.
@@ -643,8 +649,8 @@ On the other hand only the reduced Liouville operator $\mt{QLQ}$ contribute to t
 Let us understand these two object better.
 
 The latter one projects at the part of $\mt{L}$, the full Liouville operator, which causes the intrinsic fluctuations of the operator $\mt{A}$.
-This means the function $\Sigma(\omega)$ describes the dynamic of the operators what is the interesting part for us.
-In other words the operators $\mt{QLQ}$ describes the internal dynamics of all other degrees of freedom of the system excluded $\mt{A}$, called "bath".
+This means that the function $\Sigma(\omega)$ describes the dynamic of the operators, which is the interesting part for us.
+In other words the operators $\mt{QLQ}$ describes the internal dynamics of all other degrees of freedom of the system excluded $\mt{A}$, called the "bath".
 Then $\mt{Q} \oket{\dot{\mt{A}}}$ characterizes the coupling to the bath and it's clear, that the dynamic of the bath changes the behaviour of $\mt{A}$.
 %
 %
@@ -652,16 +658,16 @@ Then $\mt{Q} \oket{\dot{\mt{A}}}$ characterizes the coupling to the bath and it'
 \label{subsec: time reversal symmetry}
 %
 %
-Even above the assertion was postulated that the quantity $\Omega_{il}$ vanishs if the considered Hailtonian is symmetric and if the operators $\dot{\mt{A}}$ and $\mt{A}$ have different signature under time reversal symmetry.
+Even above the assertion was postulated that the quantity $\Omega_{il}$ vanishs if the considered Hamiltonian is symmetric and if the operators $\dot{\mt{A}}$ and $\mt{A}$ have different signature under time reversal symmetry.
 In the following section the evidence of this statement is proven.
-Our starting point is the introduction of the time reversal operator $\mt{T}$ via the following transformation prescription\todo{or instruction?}.
+Our starting point is the introduction of the time reversal operator $\mt{T}$ via the transformation rule
 %
 \begin{align}
-	\mt{A}(t) \to \mt{A}'(t) = \mt{T} \mt{A}(t) \mt{T}^{-1} = \epsilon_{\mt{A}} \mt{A}(-t)
+	\mt{A}(t) \to \mt{A}'(t) = \mt{T} \mt{A}(t) \mt{T}^{-1} = \epsilon_{\mt{A}} \mt{A}(-t),
 \end{align}
 %
-where $\epsilon_{A}$ assumes two different values, $+1$ or $-1$.
-The first one takes it if the physical quantity is something like a position or electrical field and the latter takes it if the physical quantity is a momentum, angular momentum or magnetic field.
+where $\epsilon_{A}$ supposees two different values, $+1$ or $-1$.
+The first one is taken if the physical quantity is something like a position or electrical field and the latter is taken if the physical quantity is a momentum, angular momentum or magnetic field.
 Now let us firstly investigate the action of $\mt{T}$ at the time evolution of an operator.
 %
 \begin{align}
@@ -672,16 +678,17 @@ Remembering the Hamiltonian is assumed as invariant under time reversal symmetry
 At next the time derivative of the time evolution of an operator is investigated which yields
 %
 \begin{align}
-	\mt{T} \pdv{t} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{TH} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{THT}^{-1} \mt{T} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{H} e^{-i\mt{H}t/\hbar}
+	\mt{T} \pdv{t} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{TH} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{THT}^{-1} \mt{T} e^{i\mt{H}t/\hbar} \mt{T}^{-1} = \frac{i}{\hbar} \mt{H} e^{-i\mt{H}t/\hbar},
 \end{align}
 %
-where in the second step the unit elememt $\mathds{1} = \mt{TT}^{-1}$.
-Setting $t = 0$ and multipling with $\mt{T}$ from the right hand side immediatly the commutator relation between the time reversal operator and the Hamiltonian is given
+where in the second step the unit elememt $\mathds{1} = \mt{TT}^{-1}$ is inserted.
+Setting $t = 0$ and multipling with $\mt{T}$ from the right hand side immediatly the commutator relation between the time reversal operator and the Hamiltonian is given by
 %
 \begin{align}	
-	\mt{TH} = \mt{HT} \qquad \Leftrightarrow \qquad \comm{\mt{H}}{\mt{T}} = 0
+	\mt{TH} = \mt{HT} \qquad \Leftrightarrow \qquad \comm{\mt{H}}{\mt{T}} = 0.
 \end{align}
 %
+This is aquivalent to the assumption that the Hamiltonian is invariant with respect to time reversal symmetry.
 This is all we need to know about the time reversal operator to prove the assertion.
 The expectation value of a Hermitain operator can be easily manipulated with the aim of the time reversal operator $\mt{T}$.
 %
@@ -703,7 +710,7 @@ Finitely coming to the quantity $\Omega_{il}$ which is proportional to the corre
 Using equation \eqref{eq: splitting susceptibility into real and imaginary part} yields
 %
 \begin{align}
-	i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} = i \chi_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega=0) = i\,\mt{PV} \int\limits_{-\infty}^{\infty} \frac{\dd{\omega'}}{\pi} \frac{\chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega')}{\omega'} - \lim\limits_{\omega \to 0} \chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega),
+	i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} = i \chi_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega=0) = i\ \PV{\int\limits_{-\infty}^{\infty}} \frac{\dd{\omega'}}{\pi} \frac{\chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega')}{\omega'} - \lim\limits_{\omega \to 0} \chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega),
 \end{align}
 %
 where the dissipative susceptibility $\chi''_{\dot{\mt{A}}_{i} \mt{A}_{k}}(\omega)$ occurs, which differs a little but significant from the dissipative susceptibility $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)$ defined in section \ref{subsec: spectral representation}.
@@ -722,7 +729,7 @@ Express on both sides the susceptibilities by her Fourier transform yields the w
 Inserting this in \eqref{eq: equation for Omega depend on Chi''} yields
 %
 \begin{align}
-	i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} = \,\mt{PV} \int\limits_{-\infty}^{\infty} \frac{\dd{\omega'}}{\pi} \chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega')
+	i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}} = \PV{\int\limits_{-\infty}^{\infty}} \frac{\dd{\omega'}}{\pi} \chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega')
 	\label{eq: equation for Omega depend on Chi''}
 \end{align}
 %
@@ -754,8 +761,8 @@ The analysis gives us the required properties to compute the integral over the d
 %
 \paragraph{1. case:} $\epsilon_{\mt{A}_{i}} = \epsilon_{\mt{A}_{k}}$\\
 %
-This yields $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = \chi''_{\mt{A}_{k} \mt{A}_{i}}(\omega)$ which means that the dissipative susceptibility is symmetrical under interchange of $\mt{A}_{i}$ and $\mt{A}_{k}$.
-Furthermore the dissipative sysceptibility is an antisymmetrical function, because $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = -\chi''_{\mt{A}_{i} \mt{A}_{k}}(-\omega)$.
+This yields $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = \chi''_{\mt{A}_{k} \mt{A}_{i}}(\omega)$ which means that the dissipative susceptibility is symmetrical under interchanging $\mt{A}_{i}$ and $\mt{A}_{k}$.
+Further the dissipative sysceptibility is an antisymmetrical function, because $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = -\chi''_{\mt{A}_{i} \mt{A}_{k}}(-\omega)$.
 Consider the complex conjugated of $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)$ yields that the dynamical susceptibility is a real number.
 %
 \begin{align}
@@ -766,7 +773,7 @@ where equation \eqref{eq: complex conjugated of dissipative susceptibility} is u
 %
 \paragraph{2. case:} $\epsilon_{\mt{A}_{i}} \neq \epsilon_{\mt{A}_{k}}$\\
 %
-If the signature of $\mt{A}_{i}$ and $\mt{A}_{k}$ is different under time reversal symmetry than the dissipative susceptibility is antisymmetric under interchange of the both operators so that this yields $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = -\chi''_{\mt{A}_{k} \mt{A}_{i}}(\omega)$.
+If the signature of $\mt{A}_{i}$ and $\mt{A}_{k}$ is different under time reversal symmetry than the dissipative susceptibility is antisymmetric under the interchange of the both operators so that this yields $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = -\chi''_{\mt{A}_{k} \mt{A}_{i}}(\omega)$.
 For the same reason $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega)$ is a symmetrical function because $\chi''_{\mt{A}_{i} \mt{A}_{k}}(\omega) = \chi''_{\mt{A}_{i} \mt{A}_{k}}(-\omega)$.
 Towards the first case the dissipative susceptibility is an imaginary number which ensures by the complex conjugation likewise.
 %
@@ -777,13 +784,9 @@ Towards the first case the dissipative susceptibility is an imaginary number whi
 Back to equation \eqref{eq: equation for Omega depend on Chi''}.
 We see that the integral vanishs in the first case because the suscebtibility is an odd function.
 This means that $i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}}$ is always zero when the operators $\mt{A}_{i}$ and $\mt{A}_{k}$ have the same signature with respect to time reversal symmetry, assumed the Hamiltonian is invariant under time reversal symmetry.
-This is exactly the assertion which was to prove.
-%
-%
-%\subsection{Scalar Product}
-%\label{eq: scalar product}
-%
-%
+This assertion is aquivalent to the one that $\dot{\mt{A}}_{i}$ and $\mt{A}_{k}$ have opposite signature with respect to time reversal symmetry.
+This is exactly the assertion which we want to prove.
+
 
 
 

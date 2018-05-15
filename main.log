@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  14 MAY 2018 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  15 MAY 2018 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2252,7 +2252,7 @@ le_diagrams-eps-converted-to.pdf figures/all_contained_bubble_diagrams.eps>
 (epstopdf)             \includegraphics on input line 278.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/all_contained_bubble_diagrams-eps-converted-to.pdf, id=255, 939.51pt x
+<figures/all_contained_bubble_diagrams-eps-converted-to.pdf, id=256, 939.51pt x
  155.58125pt>
 File: figures/all_contained_bubble_diagrams-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -2274,7 +2274,7 @@ f>
 (epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/bubble_diagram-eps-converted-to.pdf, id=273, 337.26pt x 234.8775pt>
+<figures/bubble_diagram-eps-converted-to.pdf, id=274, 337.26pt x 234.8775pt>
 File: figures/bubble_diagram-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/bubble_diagram-eps-converted-to.pdf>
@@ -2290,7 +2290,7 @@ nput line 526.
 [14]
 
 LaTeX Warning: Reference `eq: Kramer-Kronig relation' on page 15 undefined on i
-nput line 536.
+nput line 537.
 
 ) [15] [16
 
@@ -2308,13 +2308,13 @@ Underfull \vbox (badness 4193) has occurred while \output is active []
 
  [21]
 [22]
-Overfull \hbox (3.4234pt too wide) in paragraph at lines 312--319
+Overfull \hbox (3.4234pt too wide) in paragraph at lines 313--320
 \OT1/cmr/m/n/10.95 is triv-ially shown be-cause the com-mu-ta-tor of two Her-mi
 -tian op-er-a-tors is anti-Hermitian.
  []
 
 [23] [24]
-Underfull \hbox (badness 4279) in paragraph at lines 409--414
+Underfull \hbox (badness 4279) in paragraph at lines 410--415
 \OT1/cmr/m/n/10.95 as our scalar prod-uct, where the nor-mal time evo-lu-tion o
 f an op-er-a-tor
  []
@@ -2323,7 +2323,7 @@ f an op-er-a-tor
 LaTeX Warning: Marginpar on page 25 moved.
 
 [25] [26] [27] [28] [29] [30]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 678.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 684.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
@@ -2341,10 +2341,11 @@ Chapter 5.
 
 LaTeX Warning: Marginpar on page 38 moved.
 
+[38]
 
-LaTeX Warning: Marginpar on page 38 moved.
+LaTeX Warning: Marginpar on page 39 moved.
 
-[38] [39] [40] [41] [42] [43] [44] [45] [46]
+[39] [40] [41] [42] [43] [44] [45] [46] [47]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -2369,7 +2370,10 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
- [47]
+
+
+LaTeX Warning: Marginpar on page 48 moved.
+
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -2378,16 +2382,15 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
- [48]
+[48] [49]
 
-LaTeX Warning: Marginpar on page 49 moved.
+LaTeX Warning: Marginpar on page 50 moved.
 
-[49] [50]) [51] [52
-
-
-] (./chapters/conclusion.tex
+[50] [51]) [52] (./chapters/conclusion.tex
 Chapter 6.
 ) [53
+
+
 
 
 ] [54
@@ -2871,12 +2874,7 @@ LaTeX Warning: Reference `eq: second order correction of propagator' on page 59
 LaTeX Warning: Reference `eq: second order correction of propagator' on page 60
  undefined on input line 94.
 
-) [60] (./main.tdo [61
-
-
-
-
-]
+) [60] (./main.tdo
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -2885,11 +2883,28 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
-)
+ [61
+
+
+
+
+])
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [62] [63
+ [62]
+Overfull \hbox (29.62483pt too wide) in paragraph at lines 217--217
+[]\OT1/cmr/m/n/10.95 E. Noether. []  In-vari-ante Vari-a-tion-sproibleme\. In: 
+\OT1/cmr/m/it/10.95 Nachrichten von der Gesellschaft
+ []
+
+
+Overfull \hbox (4.34724pt too wide) in paragraph at lines 217--217
+\OT1/cmr/m/it/10.95 der Wis-senschaften zu G^^?ottin-gen, Mathematisch-Physikal
+ische Klasse \OT1/cmr/m/n/10.95 (1918),
+ []
+
+[63
 
 
 
@@ -2904,7 +2919,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 24B7ACB1A26E72E2032BDA29209C569E;1841.
+(rerunfilecheck)             Checksum: 2EFE23C56EC78137C27B8574FEDEAB4F;1912.
 
 
 LaTeX Warning: There were undefined references.
@@ -2914,10 +2929,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32352 strings out of 494347
- 605106 string characters out of 6168810
+ 32337 strings out of 494347
+ 604706 string characters out of 6168810
  1076103 words of memory out of 5000000
- 34696 multiletter control sequences out of 15000+600000
+ 34683 multiletter control sequences out of 15000+600000
  29207 words of font info for 111 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,18n,76p,10534b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2946,10 +2961,10 @@ tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pf
 b>
-Output written on main.pdf (72 pages, 543971 bytes).
+Output written on main.pdf (72 pages, 548256 bytes).
 PDF statistics:
- 1178 PDF objects out of 1200 (max. 8388607)
- 1006 compressed objects within 11 object streams
- 354 named destinations out of 1000 (max. 500000)
+ 1180 PDF objects out of 1200 (max. 8388607)
+ 1008 compressed objects within 11 object streams
+ 352 named destinations out of 1000 (max. 500000)
  220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

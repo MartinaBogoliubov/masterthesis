@@ -137,6 +137,27 @@
       \verb 10.1002/andp.19003060312
       \endverb
     \endentry
+    \entry{Noether1}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=362ab728cace89bdb55eceac011da38c}{Noether}{N\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=362ab728cace89bdb55eceac011da38c}{Noether}{N\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{362ab728cace89bdb55eceac011da38c}
+      \strng{fullhash}{362ab728cace89bdb55eceac011da38c}
+      \field{labelalpha}{Noe18}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Invariante Variationsproibleme}
+      \field{journaltitle}{Nachrichten von der Gesellschaft der Wissenschaften zu G\"{o}ttingen, Mathematisch-Physikalische Klasse}
+      \field{title}{Invariante Variationsproibleme}
+      \field{year}{1918}
+      \field{pages}{235\bibrangedash 257}
+      \verb{url}
+      \verb http://www.digizeitschriften.de/dms/img/?PID=GDZPPN00250510X
+      \endverb
+    \endentry
     \entry{Chycholl2}{book}{}
       \name{labelname}{1}{}{%
         {{hash=d3bf62c400d4f3290d70a5facc5f2f14}{Czycholl}{C\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%

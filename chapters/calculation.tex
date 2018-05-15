@@ -1,13 +1,15 @@
 %
 %
 %
-\chapter{Calculation}
+\chapter{The static conductivity in the spin fermion model pertubated by umklapp scattering}
 \label{ch: calculation}
 %
 %
 %
 In the last chapter the memory-matrix-formalism was introduced, which give us an exact formula to calculate correlation functions.
-Now this formalism is used to determine the static conductivity of the spin-fermion-model, see chapter (\todo{make link to chapter spin-fermion-model}), pertubated by umklapp-scattering.
+Now this formalism is used to determine the static conductivity of the spin-fermion-model, see chapter \ref{ch: spin fermion model}, pertubated by umklapp-scattering.
+Firstly the static conductivity of the unpertubated spin-fermion-model is computed to remind and convience us that the conductivity is infinite in the case of unbroken translation symmetry.
+Afterwards the translational symmetry is broken under consideration of umklapp scattering and the conductivity is calculated for this special case.
 %
 %
 \section{Infinite conductivity in systems with unbroken translation symmetry}
@@ -15,12 +17,12 @@ Now this formalism is used to determine the static conductivity of the spin-ferm
 %
 %
 After Drude published his theory about the electrical transport in metals \cite{Drude} in the beginning of the last century it is well known that a broken translation symmetry is needed to get a finite static conductivity.
-Because of Neother's theorem it is also well known that a unbroken symmetry always implies a conserved quantity.
+Because of Neother's theorem \cite{Noether1} it is also well known that a unbroken symmetry always implies a conserved quantity.
 In the case of translation symmetry this quantity is the momentum.
 Phenomenas breaking the translation symmetry are for example impurity scattering, electron-electron scattering and umklapp scattering.
 Let us firstly investigate the standard spin-fermion-model without a translation symmetry breaking pertubation.
 In chapter \ref{ch: spin fermion model} it is showed that the unpertubated Hamiltonian conserves the momentum but dosen't conserves the current.
-This property is utilized to calculate the static conductivity.
+This property is utilized in the following calculation of the static conductivity.
 
 In general the static conductivity is given by taking the small frequency limit of the conductivity and the conductivity itself is given by the current-current correlation function (J-J correlation function). This can be proven by assuming a oscillating electrical field and compute the expactaion value of the current via linear response theory, which is done in \cite{Chycholl2}.
 %
@@ -29,12 +31,12 @@ In general the static conductivity is given by taking the small frequency limit 
 	\label{eq: general static condictivity}
 \end{align}
 %
-In chapter \ref{ch: memory matrix formalism} above the memory matrix formalism is introduced. 
-Our main goal was to establish equation \eqref{eq: algebraic equation for C} which is an algebraic matrix equation for the correlation function.
-Before the computation of $\mathcal{C}_{\mt{JJ}}(\omega)$ can be started we have to clarify the set of operators over which we sum up.
+Above in chapter \ref{ch: memory matrix formalism} the memory matrix formalism is derivated. 
+Our main goal is to establish equation \eqref{eq: algebraic equation for C} which is an algebraic matrix equation for the correlation function.
+Before the computation of $\mathcal{C}_{\mt{JJ}}(\omega)$ can be started we have to clarify the set of operators over which we sumarized.
 The sums over $k$ and $l$ arise from the projection operator which means we have to discuss the Liouville subspace into the projection operator projects.
 In general to choice of these operators has to be done for each calculation seperatly depending on the working model and the quantity of interest.
-In this case the electrical conductivity and the induction of umklapp scattering at its is computated.
+In the investigated case the electrical conductivity and the induction of umklapp scattering at the conductivity is computated.
 As it is said above the electrical conductivity is proportional to the current operator, why this should be the first operator of our sought set of operators.
 If an electrical field is applied the electrons accelareate because of the potential difference which increase the momentum of the electrons.
 Thus the momentum is an inevitable quantity speaking about current and electrical conductivity this should be the second operator.
@@ -45,11 +47,11 @@ Considering a invariant Hamiltonian under time reversal symmetrie.
 Than in equation \eqref{eq: algebraic equation for C} $\Omega_{il}$ vanishes if both operators have the same signature under time reversal symmetry.
 This assertion is proven in section \ref{subsec: time reversal symmetry} in detail.
 In addition let do the investigation of $\Sigma_{il}$.
-The expactation value is generated with respect to the derivative of an operator at each side. \todo{bessere Formulierung finden}
+The expactation value is generated with respect to the derivative of an operator at each side.
 On the right hand side the sum over $k$ has to be carried out which produces $\toket{\dot{\mt{P}}}$ and $\toket{\dot{\mt{J}}}$.
 The first one is trivially zero, because the momentum is a conserved quantity.
 The latter has to be investigated under the action of the operator $\mt{Q}$, which projected out off the J-P-subspace.
-$\mt{Q}\toket{\dot{\mt{J}}}$ describes the coupling on all the outher degrees of freedom in the system which is zero in the considered system.\todo{besser formulieren}
+$\mt{Q}\toket{\dot{\mt{J}}}$ describes the coupling on all the other degrees of freedom in the system, which is zero in the considered system.
 With all these simplifications equation \eqref{eq: algebraic equation for C} yields
 %
 \begin{align}
@@ -67,17 +69,17 @@ With all these simplifications equation \eqref{eq: algebraic equation for C} yie
 	\begin{pmatrix}
 	\chi_{\mt{JJ}}(\omega) &  \chi_{\mt{JP}}(\omega) \\
 	\chi_{\mt{PJ}}(\omega) &  \chi_{\mt{PP}}(\omega)
-	\end{pmatrix}
+	\end{pmatrix}.
 \end{align}
 %
-where the current current correlation function is given by
+The current current correlation function is given by
 %
 \begin{align}
 	\mathcal{C}_{\mt{JJ}}(z) = \frac{i}{\beta} \omega^{-1} \chi_{\mt{JJ}}(\omega=0) = \frac{i}{\omega} \mathcal{C}_{\mt{JJ}}(t=0),
 	\label{eq: correlation function unpertubated system}
 \end{align}
 %
-using relation \eqref{eq: relation between C, Phi and chi}.
+where relation \eqref{eq: relation between C, Phi and chi} is used.
 The correlation function at $t = 0$ is given by the scalar product $\tobraket{\mt{J}(0)}{\mt{J}(0)}$, see equation \eqref{eq: correlation function Liouville space}.
 Nothing or nobody bars us from splitting the vector operator $\toket{\mt{J}(0)}$ into two pieces, one parallel and one vertical part, which corresponds to the secular and non-secular part of the observable, respectivily.
 Formaly this look like
@@ -92,17 +94,17 @@ Dissipative prozesses like fluctuations or initial transient processes for examp
 These non-secular effects are visible as noise in the experiement and the vertical part of the vector is indetified with these kinds of prozesses.
 Apart from this the secular conserved part of the observable is represented by the parallel part of $\toket{\mt{J}}$.
 In Drude's theory of conductivity the current is proportional to the momentum in the way that $j = -\frac{en}{m}p$.
-In the spin fermion model, see chapter \ref{ch: spin fermion model}, the momentum is conserved and the current isn't it, which means that the conductivity can't given by Drude's theory at all.
+In the spin fermion model, see chapter \ref{ch: spin fermion model}, the momentum is conserved but the current isn't conserved, which means that the conductivity can't given by Drude's theory at all.
 Nevertheless because the momentum is conserved the conserved part of the current has to be in the direction of the momentum.
-In mathematical language the parallel part of the current $\toket{\mt{J}_{\mid\mid}}$ is the projection from $\toket{\mt{J}}$ on $\toket{\mt{P}}$.
+In mathematical language this means that the parallel part of the current $\toket{\mt{J}_{\mid\mid}}$ is the projection from $\toket{\mt{J}}$ onto $\toket{\mt{P}}$.
 %
 \begin{align}
 	\oket{\mt{J}_{\mid\mid}} = \mathcal{P}\oket{\mt{J}} = \frac{\odyad{\mt{P}}{\mt{P}}}{\obraket{\mt{P}}{\mt{P}}} \oket{\mt{J}} = \frac{\chi_{\mt{PJ}}}{\chi_{\mt{PP}}} \oket{\mt{P}}
 	\label{eq: parallel current as projection}
 \end{align}
 %
-This give us the oppertunity to write the J-J correlation function into two parts one parrallel and one perpendicular correlation function using equation \eqref{eq: splitting current}.
-The mixed correlation functions are zero by construction because $\toket{\mt{J}_{\mid\mid}}$ and $\toket{\mt{J}_{\bot}}$ are orthogonal and therfore the terms vanish.
+This give us the oppertunity to write the J-J correlation function into two parts one parrallel and one perpendicular correlation function where equation \eqref{eq: splitting current} is used.
+The mixed correlation functions are zero by construction, because $\toket{\mt{J}_{\mid\mid}}$ and $\toket{\mt{J}_{\bot}}$ are orthogonal and therfore the terms vanish.
 %
 \begin{align}
 	\mathcal{C}_{\mt{JJ}}(t=0) = \obraket{\mt{J}(0)}{\mt{J}(0)} = \obraket{\mt{J}_{\mid\mid}}{\mt{J}_{\mid\mid}} + \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}
@@ -114,7 +116,7 @@ Equation \eqref{eq: parallel current as projection} is used to express the paral
 	\mathcal{C}_{\mt{JJ}}(t=0) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert^{2}} \mathcal{C}_{\mt{PP}}(t=0) + \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}
 \end{align}
 %
-Using \eqref{eq: relation between C, Phi and chi} and insert back this expression into equation \eqref{eq: correlation function unpertubated system} which give us multipling with $\beta$ the conductivity
+Using \eqref{eq: relation between C, Phi and chi} and insert back this expression in equation \eqref{eq: correlation function unpertubated system} which give us multipled with $\beta$ the conductivity
 %
 \begin{align}
 	\sigma (z) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \frac{i}{\omega}  + \sigma_{\mt{reg}}(\omega)
@@ -123,27 +125,27 @@ Using \eqref{eq: relation between C, Phi and chi} and insert back this expressio
 where the regular conductivity $\sigma_{\mt{reg}}(z) = \frac{i \beta}{\omega} \obraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced.
 The physical meaning of $\sigma_{\mt{reg}}(\omega)$ is directly connected to the vertical component of $\toket{\mt{J}}$.
 Thus the regular conductivity includes fluctuations and other effects influenced by random forces called noise.
-Figure \todo{referenz zu bild mit delta peak und rauschen} shows this continuously over all frequencies never disappearing background.
+Figure \todo{figure of delta peak and noisy background} shows this continuously over all frequencies never disappearing background.
 
 In the whole calculation never a condiction on $\omega$ is made, so the equation for the conductivity is valid for each $\omega$ in the complex plane.
 In reality the conductivity isn't depending on a complex frequency, because physical quantities are always real.
 Therefore we have to set $\omega = \omega + i \eta$, where now $\omega \in \mathbb{R}$ and the limit $\eta \to 0$ is implied.
-Using $\frac{1}{\omega + i\eta} = \mt{PV}\frac{1}{\omega} - i\pi\delta(\omega)$ the conductivity is given by
+Using $\frac{1}{\omega + i\eta} = \PV{\frac{1}{\omega}} - i\pi\delta(\omega)$ the conductivity is given by
 %
 \begin{align}
-	\sigma(\omega) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \bigg(\mt{PV} \frac{i}{\omega} + \pi \delta(\omega) \bigg) + \sigma_{\mt{reg}}(\omega)
+	\sigma(\omega) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \bigg(\PV{\frac{i}{\omega}} + \pi \delta(\omega) \bigg) + \sigma_{\mt{reg}}(\omega)
 	\label{eq: conductivity unpertubed system}
 \end{align}
 %
-where $\mt{PV}$ sympolizied that the prinzipal value is taken.
-Equation \eqref{eq: conductivity unpertubed system} yield us exactly the expected result.
-For small frequencies the main contribution is generated by the $\delta$-distribution, so the conductivity becomes infinity.
-This isn't really surprising because the translation symmetry isn't broken in the investigated system.
+where $\PV$ sympolizied that the prinzipal value is taken.
+Equation \eqref{eq: conductivity unpertubed system} yields exactly the expected result.
+For small frequencies the main contribution is generated by the $\delta$-distribution, so the conductivity becomes infinite.
+This is the expected result, because the translation symmetry isn't broken in the investigated system.
 If voltage is applied on a system with unbroken translational symmetry the electrons accelerate infinite long.
-There is nothing they can scatter on and loss momentum.
-The electrons accelerate more and more and this results in an infinite conductivity.
-Only in a system with broken translation symmetry it's possible for the electrons to loss some momentum by scattering with the lattice for example.
-This results in a finite conductivity, thus the $\delta$-peak becomes smaller.
+There is nothing they can scatter on and therefore nothing to lose momentum.
+The electrons accelerate more and more and this eventuates in an infinite conductivity.
+Only in a system with broken translation symmetry it's possible for the electrons to lose momentum by scattering with the lattice or impurities for example.
+This eventuates in a finite conductivity, thus the amplitude of the $\delta$-peak becomes smaller or more precisely finite.
 The factor in front of the $\delta$-distribution is the so called Drude weight.
 The Drude peak and the effect of breaking translation symmetry is visualizied in figure \todo{link to figure} too.
 %
@@ -152,7 +154,7 @@ The Drude peak and the effect of breaking translation symmetry is visualizied in
 \label{sec: finite conductivity because of breaking the translation symmetry via umklapp scattering}
 %
 %
-The conservation of momentum connected with an unbroken translation symmetry yields a infinite electrical conductivity, which is computated in the section above.
+The conservation of momentum connected with an unbroken translation symmetry yields a infinite electrical conductivity, which is computated in the previous section.
 In the next calculation a system with broken translation symmetry is considered.
 The assumed symmetry breaking pertubation is umklapp scattering, where the Hamiltonian is given by equation (\todo{link zu umklapp hamiltonian}).
 In \dots\todo{link zum abschnitt in dem gezeigt wird das P nicht mehr erhalten ist} it is shown that this pertubation is the reason for an unconserved momentum.
@@ -173,7 +175,7 @@ where $\Omega_{il}$ and $\Sigma_{il}(\omega)$ are given by
 %
 Always the first step is to think about the vector subspace, generated by the vectors of the projection operator.
 Computing the electrical conductivity the current and the momentum operator are usually the operators of interest. \todo{vllt noch etwas ausf\"uhrlicher schreiben}
-Therefore our decision is make and our subspace should be generated by these two operators.
+Therefore our decision is made and our subspace is generated by these two operators.
 What does this choice of operators mean for the quantities $\Omega_{il}$ and $\Sigma_{il}(\omega)$?
 Starting with the first one.
 $\Omega_{il}$ vanishs if two properties are valid.
@@ -184,9 +186,9 @@ Both operators can be either $\mt{J}$ or $\mt{P}$, where both have the same sign
 Therefore in all cases the quantity $\Omega_{il}$ is zero.
 In $\Sigma_{il}(\omega)$ the expecation value is formed with respect of the derivative of vector operators, which are $\toket{\dot{\mt{J}}}$ and $\toket{\dot{\mt{P}}}$.
 In the discussion above a translation invariant system is assumed why the derivative of the momentum vanishes.
-Now the momentum isn't conserved anymore and the derivative yields a finite value.
+Now the momentum isn't anymore conserved and therefore the derivative yields a finite value.
 
-For further assertions the action of the operator $\mt{Q}$ on both vector operator has to be investigated.
+For further assertions the action of the operator $\mt{Q}$ has to be investigated on both vector operator.
 $\mt{Q} \toket{\dot{\mt{C}}_{k}}$ describes the coupling to all other degrees of freedom which aren't included in the subspace.
 Firstly remember that umklapp scattering is the considered pertubation.
 What does this pertubation change in our system?
@@ -194,7 +196,7 @@ It breaks translation symmetry which yields some finite value for $\dot{\mt{P}}$
 This means the complete unconserved part of the momentum is coupled to the crystal lattice which is clearly a degree of freedom out off the J-P subspace.
 This is the reason why $\mt{Q} \toket{\dot{\mt{P}}} = \toket{\dot{\mt{P}}}$.
 Further the pertubation doesn't change the quantity $\toket{\dot{\mt{J}}}$.
-The unconserved current yields from the interaction between the electrons lives on different Fermi spaces coupeld via spin density waves.
+The unconserved current yields from the interaction between the electrons lives on different Fermi surfaces coupeld via spin density waves.
 This process is included in the J-P subspace and therefore $\mt{Q} \toket{\dot{\mt{J}}} = 0$.
 This signifies for the memory function that $\Sigma_{il}$ doesn't vanish if $i=\mt{P}$ and vanish if $i=\mt{J}$.
 
@@ -234,29 +236,29 @@ The electrical conductivity is given by the J-J correlation function, which has 
 in frequenzy space.
 Equally to the case of conserved momentum nothing bars us to split the current into one parallel and one vertical part, where the parallel part is pointed in the direction of the secular component of J.
 The appearing mixed correlation functions vanishes because $\toket{\mt{J}_{\mid\mid}}$ and $\toket{\mt{J}_{\bot}}$ are orthogonal.
-How we have seen in the previous section the background or noise originated by fluctuation and other random processes is represented by the correlation function of the vertical component.
-This term isn't necessary to write it every time down.
-A theoretical phyisicist would say that the origin is always taken arbitrary.
-A experimental phyisicist would say that he calibrates the measurement.
+How we have seen in the previous section the background or noise originated by fluctuation and other random processes, which is represented by the correlation function of the vertical component.
+This term isn't necessary to write it down every time why we drop it.
+%A theoretical phyisicist would say that the origin is always taken arbitrary.
+%A experimental phyisicist would say that he calibrates the measurement.
 For a discussion in more detail the work of Jung \cite{Jung} is suggested.
 However the only important part for us is the parallel component of the correlation function.
 On the other hand the parallel componend of the correlation function is given by the projection of J onto P, see equation \eqref{eq: parallel current as projection}.
-Thus the J-J correlation function is rewriten in a momentum -momentum correlation function mutiplied with a fraction of some susceptibilities.
+Thus the J-J correlation function is rewriten in a P-P correlation function mutiplied with a fraction of susceptibilities.
 %
 \begin{align}
 	\mathcal{C}_{\mt{JJ}}(\omega) = \obra{\mt{J}_{\mid\mid}} \frac{i}{\omega - \mt{L}} \oket{\mt{J}_{\mid\mid}} = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert^{2}} \mathcal{C}_{\mt{PP}}(\omega)
 \end{align}
 %
 The P-P correlation function can be readed out of equation \eqref{eq: matric equation correlation function unconserved momentum}.
-Therefore the invers of the memory matrix has to be multiplied from the left hand side.
-The P-P correlation function is given by
+Therefore the inverse of the memory matrix has to be multiplied from the left hand side.
+The P-P correlation function is then given by
 %
 \begin{align}
 	\mathcal{C}_{\mt{PP}}(\omega) = \frac{i}{\beta} \cdot \frac{i \Sigma_{\mt{PJ}}(\omega)  \chi_{\mt{JP}}(0)}{\omega\big(\omega - i\Sigma_{\mt{PP}}(\omega)\big)} + \frac{i}{\beta} \cdot \frac{\chi_{\mt{PP}}(0)}{\omega - i\Sigma_{\mt{PP}}(\omega)} \approx \frac{i}{\beta} \cdot \frac{i \chi_{\mt{PP}}(0)}{\Sigma_{\mt{PP}}(\omega)}
 \end{align}
 %
 where in the last step the limit of small frequencies is taken.
-Then on the one hand the first term is neglectable compared to the second term. \todo{Warum ist der erste Term vernachl\"assigbar. Begr\"undung?}
+Then on the one hand the first term is neglectable compared to the second one. \todo{Why?}
 On the other hand is $\omega \ll \Sigma_{\mt{PP}}(\omega)$.
 Thus in the second term $\omega$ is neglectable against $\Sigma_{\mt{PP}}(\omega)$.
 In summary the static conductivity is given by
@@ -266,7 +268,7 @@ In summary the static conductivity is given by
 \end{align}
 %
 The memory function $\Sigma_{\mt{PP}}(\omega)$ is definied in equation \eqref{eq: Sigma(z)}.
-Because of the considered Hamiltonian only the term included $\dot{P}$ yields a non-zero contribution.
+Because of the considered Hamiltonian only the term included $\dot{\mt{P}}$ yields a non-zero contribution.
 Further the operator $\mt{QLQ}$ can be approximated by $\mt{L}_{0}$ the Liouville operator of the unpertubated system. \todo{Warum darf QLQ mit $L_{0}$ approximiert werden?}
 The final expression for the dc-conductivity is given by
 %
@@ -275,19 +277,21 @@ The final expression for the dc-conductivity is given by
 \end{align}
 %
 In a short conversion the expectation value can be expressed as a time integral over the $\dot{\mt{P}}$-$\dot{\mt{P}}$ susceptibility.
-This expression is more usefull for explicite computations, because its allow us to use the Matsubara formalism.
+This expression is more usefull for explicite computations, because it allows us using pertubation theory.
 For the detailed conversion see appendix \ref{app: conversion expval}.
+The static electrical conductivity is finaly given by
+\todo{$-\hbar$???}
 %
 \begin{align}
-	\sigma_{\mt{dc}} \approx -\hbar \lim\limits_{\omega \to 0} \frac{\omega \vert \chi_{\mt{JP}}(\omega = 0) \vert^{2}}{\int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{0}}
+	\sigma_{\mt{dc}} \approx -\hbar \lim\limits_{\omega \to 0} \frac{\omega \vert \chi_{\mt{JP}}(\omega = 0) \vert^{2}}{\int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{0}},
 	\label{eq: formula static conductivity}
 \end{align}
 %
-This formula of the static conductivity is the final expression which is used in the compuation below.
+which is used in the compuation below.
 The calculation is splitted into two parts.
 At first the computation of the denominator is perfermed, which gives us the temperature dependence of the conductivity.
 Further the J-P susceptibility has to be calculated.
-In first order form this quantity no temperature dependence is expected, but we have to convience us from this.
+In first order for this quantity is expected no temperature dependence, but we have to convience us from this.
 %
 %
 \subsection{Temperature dependence of the dc-conductivity}
@@ -306,7 +310,7 @@ Commonly the sort of this calculation is done in the Matsubara time $\tau = it$,
 The norm of the Jacobi determinate is $-i$ and the upper integral limit changes from infinity to $\beta$.
 Further each time derivative yields an $i$.
 Totally the factor $i$ is multiplied to the integral.
-The direction of the momentum is denoted with the index $j$ and to symbolisied clearly that the frequency is an arbitrary number in the complex plane the variable $z$ is used instead of $\omega$ at this point.
+The direction of the momentum is denoted with the index $j$ and to symbolisied clearly that the frequency is an arbitrary number in the complex plane the variable $z$ is used instead of $\omega$.
 Like it is done every time in pertubation theory the operators are transformed into the Matsubara interaction representation.
 The transformation's aim is that the expectation value is only taken with respect to the free Hamiltonian $\mt{H}_{0} = \mt{H}_{\Psi} + \mt{H}_{\Phi}$ and the interation $\mt{H}_{\Psi\Phi}$ is only entered in the time evolution operator $\mt{U}(\beta,0)$.
 A series expansion of this one up to the first non-disappearing order yields
@@ -316,18 +320,18 @@ A series expansion of this one up to the first non-disappearing order yields
 \end{align}
 %
 where it has to be remarked that in quantum field pertubation theory only connected diagrams are considered, which is indicated with "con" at the expectation value.
-All disconnected diagrams can be factorizied in the numerator.
+At the numerator all disconnected diagrams can be factorizied.
 These diagrams are exactly the same one as in the denominator, so both cancel each other.
 
 In chapter \ref{ch: spin fermion model} umklapp scattering is introduced as a pertubation of the spin fermion system described by $\mt{H}_{1}$.
 On the basis of this pertubation the momentum isn't anymore conserved, thus the time derivative of the momentum doesn't vanish.
-The time derivative of an operator is given via the Heisenberg equation of motion, which yields for the momentum
+The time derivative of an operator is given via the Heisenberg equation of motion, which yields in case of momentum
 %
 \begin{align}
 	\dot{\mt{P}}_{j}(\tau) = \frac{i}{\hbar} \sum\limits_{\vb{K}} \mt{J}_{\vb{K}} \int_{\vb{k}} K_{j} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k} - \vb{K},\tau)
 \end{align}
 %
-where $j$ indicated the direction of the momentum like above.
+where $j$ indicated the direction of the momentum.
 The sum over $\mu$ is implied.
 Inserting the time derivative of the momentum in $\mt{I}_{jj}(z)$ yields
 %
@@ -345,17 +349,18 @@ Inserting the time derivative of the momentum in $\mt{I}_{jj}(z)$ yields
 %
 The expactation value is evaluated by using Wick's theorem, where the expactation value is related to the ground state of the system.
 Therefore all normal products are zero and only the sum survives, where all operators are contracted.
-The sum yields three different possible contraction of the operators, where one of them is a disconnected diagram.
+The sum yields three possible contraction of the operators, where one of them is a disconnected diagram.
 The diagram is originated by contracting the operators with the same time argument.
-This diagram is canceled with the vacuum diagrams like discussed above, why it must not considered in the following computation.
-In total Wick's theorem yields two contributing diagrams, which are depicted in figure \dots \todo{Bild mit bubble diagram und link}.
+This diagram is canceled with the vacuum diagrams like discussed above, because it isn't considered in the following computation.
+In total Wick's theorem yields two contributing diagrams, where both are equally
+The diagram is depicted in figure \dots \todo{Bild mit bubble diagram und link} and correspond to the bubble diagram.
 
 Because the used operators are in momentum space each expactation value of two operators becomes a $\delta$-distribution, originated from the commutator relations in momentum space.
 The $\delta$-distributions signify the conservation of momentum.
 In the investigated case the commutator relations \dots \todo{Link zu kommutator relationen} have to be used.
-Then one momentum integral and one sum over reziprocal lattive vectors is performed.
+Then one momentum integral and one sum over reziprocal lattice vectors is performed.
 The remaining momentum and reziprocal lattice vector is renamed into $\vb{k}$ and $\vb{K}$ respectivily.
-Further one sum over the spactial direction of $\Phi$, denoted with the greek letter, is performed.
+Further one sum over the spactial direction of $\Phi$ is performed.
 %
 \begin{align}
 	\mathcal{G}_{jj}(z) &= 
@@ -367,20 +372,20 @@ Further one sum over the spactial direction of $\Phi$, denoted with the greek le
 		\notag \\
 		&\times
 		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},0)}_{\mt{H}_{0}} 
-		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(-\vb{k} - \vb{K},\tau) \Phi_{\mu}(\vb{k}+\vb{K},0)}_{\mt{H}_{0}}
+		\expval{\mathcal{T}_{\tau} \Phi_{\mu}(-\vb{k} - \vb{K},\tau) \Phi_{\mu}(\vb{k}+\vb{K},0)}_{\mt{H}_{0}},
 \end{align}
 %
 where $\mt{J}_{-\vb{K}} = \mt{J}_{\vb{K}}^{*}$ is used. 
 The asterisk denotes the complex conjugated.
-Every single expectation value correspond to thr free propagator of spin density waves.
+Every single expectation value corresponds to the free propagator of spin density waves.
 The free propagator is defined by $\mathcal{D}_{\mu}^{(0)}(\vb{k},\tau) := \expval*{\mathcal{T}_{\tau} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},0)}_{\mt{H}_{0}}$.
-Both are speratly transformed into Matsubara frequency space via
+Both are seperatly transformed into Matsubara frequency space via
 %
 \begin{align}
 	\mathcal{D}_{\mu}^{(0)}(\vb{k},\tau) = \frac{1}{\beta} \sum\limits_{\omega_{n}} e^{-i\omega_{n}\tau} \mathcal{D}_{\mu}^{(0)}(\vb{k},\omega_{n})
 \end{align}
 %
-where the summation runs over all Matsubara frequencies.
+where the summation runs over all Matsubara frequencies $\omega_{n}$.
 Because the transformation rotates our investigated function onto the imaginary frequency axis, the complex frequency $z$ has to be set to $i\omega_{l}$.
 After transforming the propagators into Matsubara frequency space the imaginary time dependence is solely originated from the exponential functions.
 This offers us to perform the $\tau$-integral easily, where relation 
@@ -406,12 +411,12 @@ After all these steps the integral has the form
 %
 In the following the Matsubara sum is evaluated.
 Therefore we have to check the singularities of both propgators.
-Regarding equation \dots \todo{Link zum freien Propagator in expliziter Form}, illustrates that the propagator has a discontinuity if the absoulte value of the Matsubara frequency is zero. 
+Regarding equation \eqref{eq: damped propagator Matsubara representation}, illustrates that the propagator has a discontinuity if the absoulte value of the Matsubara frequency is zero. 
 This kind of singularity is called branch cut, because the whole horizontal line at the singularity is forbidden in the complex plane.
-Branch cuts are the reason why the Matsubara sum isn't so easily transformed into a contour integral in the complex plane like it is done usually, if the propagators have simple poles.
-In the investigated case the propagators have to singularity of this kind, one at $\omega_{n} = 0$ and one at $\omega_{n} = \omega_{l}$, which correspond to $n=0$ and $n=l$.
+Branch cuts are the reason why the Matsubara sum isn't so easily transformed into a complex contour integral like it is done usually, if the propagators have simple poles.
+In the investigated case the propagators have two singularity of this kind, one at $\omega_{n} = 0$ and one at $\omega_{n} = \omega_{l}$, which correspond to $n=0$ and $n=l$.
 The strategy to evaluate those Matsubara sums is to seperate the singularities from the sum.
-For reasons of simplizity the momentum argument of the second propagator is abbreviatied as $\vb{k}'=-\vb{k}-\vb{K}$.
+For reasons of simplizity the momentum argument of the second propagator is abbreviatied as $\vb{k}'=-\vb{k}-\vb{K}$ and the momentum argument is written in both cases as an index until the Matsubara sum is evaluated.
 %
 \begin{align}
 	S(i\omega_{l}) :&= \frac{1}{\beta} \sum\limits_{\omega_{n}} \mathcal{D}_{\mu,\vb{k}}(i\omega_{n}) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-i\omega_{n})
@@ -426,37 +431,37 @@ For reasons of simplizity the momentum argument of the second propagator is abbr
 	\label{eq: seperated Matsubara sum}
 \end{align}
 %
-where the momentum argument is writen as an index until the Matsubara sum is evaluated.
 Now the remaining sum can be transformed into a complex contour integral.
-Thereby the contour $\Gamma$ includes all Matsubara frequencies $\omega_{n}$ on the inaginary axis, beside the two splitted off, and is taken counterclockwise.
+Thereby the contour $\Gamma$ includes all Matsubara frequencies $\omega_{n}$ onto the imaginary axis, beside the two ones splitted off, and is taken counterclockwise.
 The contour $\Gamma$ is depicted in figure \dots \todo{Link zum Bild der Kontour}.
+The transformed Matsubara sum is given by
 %
 \begin{align}
 	\mt{I}_{MS}(\omega_{l}) := 
 		\frac{1}{\beta} \sum\limits_{\substack{n \neq 0 \\ n \neq l}} \mathcal{D}_{\mu,\vb{k}}(i\omega_{n}) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-i\omega_{n})
 		=
-		\oint\limits_{\Gamma} \frac{\dd{z}}{2\pi i} n_{\mt{B}}(z) \mathcal{D}_{\mu,\vb{k}}(z) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-z)
+		\oint\limits_{\Gamma} \frac{\dd{z}}{2\pi i} n_{\mt{B}}(z) \mathcal{D}_{\mu,\vb{k}}(z) \, \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}-z),
 \end{align}
 %
 where $n_{\mt{B}}(z)$ is the Bose distribution.
 Like it is shown in \dots \todo{Link zum Kontourbild} $\Gamma$ consists of three single contours which are denoted as $\Gamma_{1}$, $\Gamma_{2}$ and $\Gamma_{3}$.
 These three contours are expanded to infity where the contour line is never allow to cross the horizontal line at $\omega_{l}$ and $0$, see figure \todo{link to figure}.
 
-The contour $\Gamma_{1}$ is taken along the real axis in negative direction and is closed by a semicircle with infinite radius in the lower complex plane.
+The contour $\Gamma_{1}$ is taken along the real axis in negative direction and is closed by a semi-circle with infinite radius in the lower complex plane.
 $\Gamma_{2}$ is the contour between both branch cuts.
 Starting the contour along the real axis in positive direction.
 At infinity the contour is going up to the branch cut at $\omega_{n}$, along this axis back to minus infinity and finally back down to the starting point.
-The last contour $\Gamma_{3}$ is going along the $\omega_{n}$-axis in positive direction and is closed by a semicircle with infinite radius in the upper complex plane.
+The last contour $\Gamma_{3}$ is going along the $\omega_{n}$-axis in positive direction and is closed by a semi-circle with infinite radius in the upper complex plane.
 The contour along the real and $\omega_{n}$-axis has to be set infinitesimal beside the axis, which is indicated with the term $\pm i\eta$.
 The sign has to be chosen according to the contour.
 
 Each one of these three contour integrals can be splitted in parts.
-$\Gamma_{1}$ and $\Gamma_{3}$ the contour is seperated into the path along the real and $\omega_{n}$-axis, respectivily, and the semicircle.
-In both cases the contribution of the semicircles vanish, because the integrand decreases faster than $\flatfrac{1}{z}$.
+The contours $\Gamma_{1}$ and $\Gamma_{3}$ is seperated into the path along the real or $\omega_{l}$-axis, respectivily, and the corresponding semi-circle.
+In both cases the contribution of the semi-circles vanish, because the integrand decreases faster than $\flatfrac{1}{z}$.
 In total $\Gamma_{2}$ is seperated into four parts.
-Two parts are the paths along the real and $\omega_{n}$-axis.
+Two parts are the paths along the real and $\omega_{l}$-axis.
 The other both paths are the connecting path between them.
-Equally to the case of the semicircles these two path vanish.
+Equally to the case of the semi-circles these two path vanish.
 In summary only the paths along the two branch cuts survive.
 %
 \begin{align}
@@ -483,11 +488,12 @@ In summary only the paths along the two branch cuts survive.
 	\label{eq: Matsubara sum along axes parallel to real axis}
 \end{align}
 %
-where the limit $\eta \to 0^{+}$ is implied and we used that the propagator $\mathcal{D}$ is symmetric with respect to the frequency argument.
+where the limit $\eta \to 0^{+}$ is implied.
+Further we used that the propagator $\mathcal{D}$ is symmetric with respect to the frequency argument.
 It is easy to prove that $n_{\mt{B}}(z+i\omega_{l}) = n_{\mt{B}}(z)$, which means that the Bose distribution is invariant with respect to Matsubara frequencies.
 Thereby is $z \in \mathbb{C}$ and $\omega_{l} = \flatfrac{2\pi l}{\beta}$ with $l \in \mathbb{Z}$ is a bosonic Matsubara frequency and therefore $\exp(i\omega_{l}) = 1$.
 Now we set $z = \epsilon \pm i\eta$ and investigate the Bose distribution with respect to the limit $\epsilon \to 0$.
-We expand the exponential function up to the second non disappearing order, because of the singularity of the Bose distribution at $\epsilon = 0$.
+We expand the exponential function up to the second non-disappearing order, because the singularity of the Bose distribution at $\epsilon = 0$.
 %
 \begin{align}
 	n_{\mt{B}}(\epsilon \pm i\eta) \approx \frac{\beta^{-1}}{\epsilon \pm i\eta} = \beta^{-1} \Big( \PV{\frac{1}{\epsilon}} \mp i\pi\delta(\epsilon) \Big) = n_{\mt{B}}(\epsilon) \mp i\pi \beta^{-1} \delta(\epsilon),
@@ -505,16 +511,18 @@ Writing the Bose distribution and the propagators by real and imaginary parts, u
 	\label{eq: conversion of squared brackets}
 \end{align}
 %
-for the squared brackets in the first line of equation \eqref{eq: Matsubara sum along axes parallel to real axis} and the analogical expression for the squared brackets in the second line, changing $\vb{k} \to \vb{k}'$.
+for the squared brackets in the first line of equation \eqref{eq: Matsubara sum along axes parallel to real axis}.
+An analogical expression is obtained for the squared brackets in the second line changing $\vb{k} \to \vb{k}'$.
 Firstly the second term of \eqref{eq: conversion of squared brackets} should be investigated.
-The imaginary part of the Bose distribution is given by equation \eqref{eq: Bose distribution in real and imaginary part}, where the $\delta$-distribution makes life easy for us.
-Evaluating both integrals over the second terms in \eqref{eq: conversion of squared brackets} yield
+The imaginary part of the Bose distribution is given by equation \eqref{eq: Bose distribution in real and imaginary part}, where the $\delta$-distribution makes our life easy.
+Evaluating the obtained relation by integrating with respect to $\epsilon$ yields
 %
 \begin{align}
 	-\frac{1}{\beta} \mathcal{D}_{\mu,\vb{k}'}(i\omega_{l}) \Re{\mathcal{D}_{\mu,\vb{k}}(0)} - \frac{1}{\beta} \mathcal{D}_{\mu,,\vb{k}}(i\omega_{l}) \Re{\mathcal{D}_{\mu,\vb{k}'}(0)}
 \end{align}
 %
-where the obviously relation $\Re{\mathcal{D}_{\mu,\vb{k}}(0)} = \mathcal{D}_{\mu,\vb{k}}(0)$ is used, which is independently of the momentum.
+where the obviously relation $\Re{\mathcal{D}_{\mu,\vb{k}}(0)} = \mathcal{D}_{\mu,\vb{k}}(0)$ is used.
+This relation is obviously momentum independent.
 Comparing this result with the both first terms in \eqref{eq: seperated Matsubara sum} we see that both expressions are equally beside a global sign and thus both cancel each other.
 Therefore the only contribution of the Matsubara sum is originated by the first term of the squared brackets in \eqref{eq: conversion of squared brackets}.
 The real part of $n_{\mt{B}}(\epsilon + i\eta)$ is $n_{\mt{B}}(\epsilon)$, see equation \eqref{eq: Bose distribution in real and imaginary part}.
@@ -530,9 +538,9 @@ Further the imaginary part of the propagator is independent of the additional pa
 			\bigg]
 \end{align}
 %
-Now we are at the point that $S(i\omega_{l})$ can be analytical continuated on the real axis of $\omega$, which is a physical quantity beside $i\omega_{l}$.
+Now we are at the point that $S(i\omega_{l})$ can be analytical continuated on the real axis.
 Therefore we have to set $i\omega_{l} = \omega + i\eta =: \tilde{\omega}$, where the limit $\eta \to 0^{+}$ is implied.
-Regarding equation \dots \todo{link to propagator function on real axis} we see that $\mathcal{D}_{\mu,\vb{k}'}(\epsilon - \omega) = \mathcal{D}_{\mu,\vb{k}'}^{*}(\omega - \epsilon)$, where the asterisk means the complex conjugated.
+Regarding equation \eqref{eq: damped spin density propagator with real omega} we see that $\mathcal{D}_{\mu,\vb{k}'}(\omega - \epsilon) = \mathcal{D}_{\mu,\vb{k}'}^{*}(\epsilon - \omega)$, where the asterisk means the complex conjugated.
 %
 \begin{align}
 	S(\omega) = \int\limits_{-\infty}^{\infty} \frac{\dd{\epsilon}}{\pi} 
@@ -546,7 +554,7 @@ Regarding equation \dots \todo{link to propagator function on real axis} we see 
 %
 In the first term the frequency argument is shifted from $\epsilon - \omega \to \epsilon$, so that the propagators with the same momentum argument have the same frequency argument.
 The last step is to take the imaginary part of $S(\omega)$.
-This approach is valid, because the resitivity is defined by the imaginary part of the retarted Green function which corresponds to \eqref{eq: Green function on the imaginary axis}.
+This approach is valid, because the resitivity is defined by the imaginary part of the retarded Green function, which corresponds to \eqref{eq: Green function on the imaginary axis}.
 The only possible complex quantity in \eqref{eq: Green function on the imaginary axis} is the Matsubara sum, defined in \eqref{eq: seperated Matsubara sum}.
 Thus the imaginary part of the Matsubara sum is given by
 %
@@ -558,7 +566,7 @@ Thus the imaginary part of the Matsubara sum is given by
 		\Im{\mathcal{D}_{\mu}(\vb{k}, \epsilon + \omega)}
 \end{align}
 %
-where we used that the imaginary part of the propagator $\mathcal{D}$ and his complex conjugated one $\mathcal{D}^{*}$ are equal beside a minus.
+where we used that the imaginary part of the propagator $\mathcal{D}$ and his complex conjugated one $\mathcal{D}^{*}$ are equal beside one minus.
 $\Im{S(\omega)}$ is inserted in equation \eqref{eq: Green function on the imaginary axis}, where the analytical continuation, which was done for the Matsubara sum, have similarly to do for the Green function.
 %
 \begin{align}
@@ -576,14 +584,14 @@ $\Im{S(\omega)}$ is inserted in equation \eqref{eq: Green function on the imagin
 		\label{eq: Green function on the real axis}
 \end{align}
 %
-The spin density wave propagator is given by equation \dots \todo{link to spin fermion propagator for real omega} and the imaginary part is obtained by expanding with the complex conjugated denominator.
+The spin density wave propagator is given by equation \eqref{eq: real and imaginary part of D}, where the second term corresponds to the propagator's imaginary part.
 Further the limit of small frequncies $\omega$ is considered.
 On that account the Bose distribution has to be approximated up to the second order, otherwise the expression would be zero.
 The expression of the propagators is friendly in the limit of small frequencies thus $\omega$ can be set to zero.
 Additional the integrand is an even function with respect to $\epsilon$, which is easy to see.
-Beside the exponential functions the expression is only depended on $\epsilon^{2}$-terms, which are obviously even.
-The eponential expression is even as well, which is easily shown by factorizied the exponential function in the denominator.
-Therefore the lower limit of the integral is set to zero and the complete expression is multiplied with two.
+Beside the exponential functions the expression is only depending on $\epsilon^{2}$-terms, which are obviously even.
+The exponential expression is even as well, which is easily shown by factorizied the exponential function in the denominator.
+Therefore the lower limit of the integral is set to zero and is multiplied by two.
 %
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
@@ -603,13 +611,13 @@ Therefore the lower limit of the integral is set to zero and the complete expres
 The Green function has to be investigated in different cases to prove the convergence.
 For large values of the mometum vector the function is clearly convergent because of two reasons.
 Firstly the function is proportional to $\flatfrac{1}{\vb{k}^{4}}$ which is a fastly decreasing function with respect to large values of $\vb{k}$.
-Secondly the momentum vector is restricted to the first Brillouin zone, so even if there would be a devergence for large $\vb{k}$ the values didn't reach these values.
+Secondly the momentum vector is restricted to the first Brillouin zone, so even if there would be a devergence for large $\vb{k}$ the values didn't reach these ones.
 Nevertheless there can be a devergence if the reciprocal lattice vector component $K_{j}$ is large.
 It's imaginable that $K_{j}$ is compensated by the respective component of $\vb{Q}_{1}$ and thus the denominater is small compared to the numerator.
 The convergence of the Green function is ensured by the coupling constant $\mt{J}_{\vb{K}}$, which is decreasing fast to zero how longer the coupling distance is.
 This assumption isn't contradicted to any physical observation.
 
-In the case of small values of the momentum vector the situation is slightly different.
+The situation is slightly different in the case of small values of momentum vectors
 Consider the case $\vb{K} - \vb{Q}_{1} = 0$ and $\vb{Q}_{2} = 0$, which is the most divergent and hence the most dangerous case.
 %
 \begin{align}
@@ -624,10 +632,10 @@ Consider the case $\vb{K} - \vb{Q}_{1} = 0$ and $\vb{Q}_{2} = 0$, which is the m
 \end{align}
 %
 It's more convenient for the further computation to transform the variables into dimensionless ones.
-The transformation instruction for the frequancy and momentum is $x = \beta \epsilon$ and $\vb{y} = \sqrt{\flatfrac{\beta}{\gamma}}\vb{k}$, respectivily.
+The transformation instruction for the frequency and momentum is $x = \beta \epsilon$ and $\vb{y} = \vb{k}\sqrt{\flatfrac{\beta}{\gamma}}$, respectivily.
 The limits of the $\vb{y}$-integral are changed to $\pm \pi\sqrt{\flatfrac{\beta}{\gamma}}$.
 Further the Jacobi determinate yields in total $\flatfrac{\gamma}{\beta^{2}}$.
-For reasons of simplicity the constant parameters are combined to the constant $C$.
+For reasons of simplicity the constant parameters are combined to $C$.
 %
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
@@ -640,7 +648,7 @@ For reasons of simplicity the constant parameters are combined to the constant $
 \end{align}
 %
 The following strategy is the transform the two dimensional $\vb{y}$-integral into plane polar coordinates.
-Considering the integrand decrease very fast to zero with respect to large values of $\vb{y}$, thus the upper boundary of the integral can be set to infinity. \todo{picture of the function which shows the decreasing condition}
+The integrand decreases very fast to zero in the limit of large values of $\vb{y}$, thus the upper boundary of the integral can be set to infinity. \todo{picture of the function which shows the decreasing condition}
 Further the angle integral yields the value $2\pi$, because the integrand is angular independent.
 %
 \begin{align}
@@ -653,7 +661,7 @@ Further the angle integral yields the value $2\pi$, because the integrand is ang
 		\frac{y}{\big(y^{4} + x^{2}\big)^{2}}
 \end{align}
 %
-Factorizing $x^{2}$ in the fraction and again substituting $z = \flatfrac{y^{2}}{x}$.
+Factorizing $x^{2}$ at the fraction and substituting $z = \flatfrac{y^{2}}{x}$.
 The limits of the integral dosen't changed during this transformation.
 Besides the new differential is given by $x\dd{z} = 2 y \dd{y}$.
 The resulting $z$-integral is exactly solvable and yields
@@ -664,7 +672,7 @@ The resulting $z$-integral is exactly solvable and yields
 \end{align}
 %
 Thus only one last integral is left.
-The integrand is decreasing very fast to zero for large values of $x$, so that we haven't to consider all these values and the upper limit is set to $1$.
+The integrand is decreasing very fast to zero for large values of $x$, so that the upper limit is set to $1$.
 In this integration area the exponential functions can be expanded for small values of $x$.
 %
 \begin{align}
@@ -677,6 +685,7 @@ In this integration area the exponential functions can be expanded for small val
 %
 In the lower limit the integrand is highly divergent, which is an unphysical solution.
 Hence the Green function has an infinite value which correspond to an infinite resistance, because of umklapp scattering. \todo{\"Ubergang schreiben}
+
 Let us consider our problem with an additional renormalization factor $r$.
 The renormaliziation factor is connected with the temperature through the relation $r \sim T^{\flatfrac{2}{z}}$ where $z$ is some factor which has to be chosen depending on the problem and temperature regime.
 Our new starting point is equation \eqref{eq: Green function most divergent case} with the difference that we add $r$ to $\vb{k}^{2}$.
@@ -693,10 +702,11 @@ Our new starting point is equation \eqref{eq: Green function most divergent case
 \end{align}
 %
 The computing procedure for the integrals are similar to the previous case.
-In comparison to the computation above the integral isn't transformed into dimensionless variables at this point, it's done later.
-Firstly the momentum integral is transformed into plane polar coordinates via the transformation $\vb{k} = (y\cos\phi, y\sin\phi)$.
+In comparison to the computation above the integral isn't transformed into dimensionless variables at this point.
+Firstly the momentum integral is transformed into plane polar coordinates via the transformation rule $\vb{k} = (y\cos\phi, y\sin\phi)$.
 Again the integrand is angular independent, why the $\phi$-integral yields the factor $2\pi$.
-Furthermore the integrand is proportional to $\flatfrac{1}{k^{4}}$ and decrease therefor very fast to zero in the limit $k \to \infty$, because of the upper limit of the $k$-integral is set to infinity.
+Furthermore the integrand is proportional to $\flatfrac{1}{k^{4}}$ and decrease therefore very fast to zero in the limit $k \to \infty$.
+The upper limit of the $k$-integral is set to infinity without any doubt.
 
 Subsequently the factor $\gamma^{2} \epsilon^{2}$ is factorizied in the denominator.
 After that the integral is substituted again, this time with $z = \flatfrac{(r + k^{2})}{\gamma\epsilon}$.

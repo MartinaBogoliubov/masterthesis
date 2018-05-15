@@ -1951,9 +1951,10 @@
     <bcf:citekey order="4">Schwabl2</bcf:citekey>
     <bcf:citekey order="5">Audretsch</bcf:citekey>
     <bcf:citekey order="6">Drude</bcf:citekey>
-    <bcf:citekey order="7">Chycholl2</bcf:citekey>
-    <bcf:citekey order="8">Jung</bcf:citekey>
-    <bcf:citekey order="9">Bruus&amp;Flensberg</bcf:citekey>
+    <bcf:citekey order="7">Noether1</bcf:citekey>
+    <bcf:citekey order="8">Chycholl2</bcf:citekey>
+    <bcf:citekey order="9">Jung</bcf:citekey>
+    <bcf:citekey order="10">Bruus&amp;Flensberg</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

@@ -38,19 +38,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Deviation of the Memory-Matrix-Formalism}{24}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Time Reversal Symmetry}{30}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Time Reversal Symmetry}{31}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{32}{section*.20}
+\contentsline {paragraph}{\nonumberline 1. case:}{33}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{33}{section*.21}
+\contentsline {paragraph}{\nonumberline 2. case:}{33}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Calculation}{35}{chapter.5}
+\contentsline {chapter}{\numberline {5}The static conductivity in the spin fermion model pertubated by umklapp scattering}{35}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Infinite conductivity in systems with unbroken translation symmetry}{35}{section.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Finite conductivity because of breaking the translation symmetry via umklapp scattering}{38}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Temperature dependence of the dc-conductivity}{40}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Temperature dependence of the dc-conductivity}{41}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.2}Computation of the static susceptibility}{49}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
