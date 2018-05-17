@@ -1,7 +1,7 @@
 %
 %
 %
-\chapter{The static conductivity in the spin fermion model pertubated by umklapp scattering}
+\chapter{The Static Conductivity in the Spin Fermion Model Pertubated by Umklapp Scattering}
 \label{ch: calculation}
 %
 %
@@ -12,7 +12,7 @@ Firstly the static conductivity of the unpertubated spin-fermion-model is comput
 Afterwards the translational symmetry is broken under consideration of umklapp scattering and the conductivity is calculated for this special case.
 %
 %
-\section{Infinite conductivity in systems with unbroken translation symmetry}
+\section{Infinite Conductivity in Systems with Unbroken Translation Symmetry}
 \label{sec: Infinite conductivity in a system with unbroken translation symmetry}
 %
 %
@@ -158,7 +158,7 @@ The factor in front of the $\delta$-distribution is the so called Drude weight.
 The Drude peak and the effect of breaking translation symmetry is visualizied in figure \ref{fig: conductivity broken and unbroken translation symmetry} too.
 %
 %
-\section{Finite conductivity because of breaking the translation symmetry via umklapp scattering}
+\section{Finite Conductivity because of Breaking the Translation Symmetry via Umklapp Scattering}
 \label{sec: finite conductivity because of breaking the translation symmetry via umklapp scattering}
 %
 %
@@ -302,7 +302,7 @@ Further the J-P susceptibility has to be calculated.
 In first order for this quantity is expected no temperature dependence, but we have to convience us from this.
 %
 %
-\subsection{Temperature dependence of the dc-conductivity}
+\subsection{Temperature Dependence of the dc-Conductivity}
 \label{subsec: temperature dependence of the dc-conductivity}
 %
 %
@@ -672,8 +672,16 @@ For reasons of simplicity the constant parameters are combined to $C$.
 \end{align}
 %
 The following strategy is the transform the two dimensional $\vb{y}$-integral into plane polar coordinates.
-The integrand decreases very fast to zero in the limit of large values of $\vb{y}$, thus the upper boundary of the integral can be set to infinity. \todo{picture of the function which shows the decreasing condition}
+The integrand decreases very fast to zero in the limit of large values of $\vb{y}$, thus the upper boundary of the integral can be set to infinity. 
 Further the angle integral yields the value $2\pi$, because the integrand is angular independent.
+%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{x-dependence.pdf}
+	\caption{caption}
+	\label{fig: x-dependence}
+\end{figure}
+%
 %
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
@@ -725,6 +733,14 @@ Our new starting point is equation \eqref{eq: Green function most divergent case
 	\label{eq: Green function with renormalization factor}
 \end{align}
 %
+%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{original_vs_approx1.pdf}
+	\caption{caption}
+	\label{fig: original_vs_approx1}
+\end{figure}
+%
 The computing procedure for the integrals are similar to the previous case.
 In comparison to the computation above the integral isn't transformed into dimensionless variables at this point.
 Firstly the momentum integral is transformed into plane polar coordinates via the transformation rule $\vb{k} = (y\cos\phi, y\sin\phi)$.
@@ -759,13 +775,21 @@ The antiderivative of the $z$-integral is given by equation \eqref{eq: z-intgera
 		\label{eq: Green function after evaluating momentum integral}
 \end{align}
 %
+%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{original_vs_powercounting.pdf}
+	\caption{caption}
+	\label{fig: original vs powercounting}
+\end{figure}
+%
 Now the integral is tansformed with $x=\beta \epsilon$ into dimensionless variables.
-The integrand is a function which decrease fast to zero for large values of $x$, which is depicted in figure \dots \todo{Grafik die zeigt dass der Integrand schnell gegen Null strebt für große Werte}.
+The integrand is a function which decrease fast to zero for large values of $x$, which is depicted in figure \ref{fig: x-dependence}.
 In good approximation the upper limit can be set to an arbitrary value $\Lambda$.
 So the important contribution is originated in the small values of $x$ why the expression in squared brackets is expanded up to leading order.
-The difference of the original and the approximated function are exhibited in figure \dots \todo{Grafik die den Unterschied der Näherung zum Original zeigt}.
+The difference of the original and the approximated function are exhibited in figure \ref{fig: original_vs_approx1}.
 Furter the fraction of the exponential functions can be approximated.
-In total the intgerand is independent of the variable $x$ so the integral yields the factor $\Lambda$
+In total the intgerand is independent of the variable $x$ so the integral yields the factor $\Lambda$.
 %
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) &\approx 
@@ -787,8 +811,8 @@ which means that $z$ has to be three that the Green function and therefore the r
 For $z=6$ the Green function or resistance are proportional to $T$.
 These values are much to large.
 Normally $z$ takes on values of $z=1$ or $z=2$.
-Figure \dots \todo{Link zum Bild der die Näherung zeigt} shows that the agreement of the original and approximated function are only in a small regime valid.
-If the variable $x$ increases the value of 1 the agreement is miserable.
+Figure \ref{fig: original_vs_approx1} shows that the agreement of the original and approximated function are only in a small regime valid.
+If the variable $x$ increases the value of $0.1$ the agreement is miserable, which is cleary depending on the choice of parameters, but in all cases the approximation is only in a small regime good, which should be shown in this comparison.
 Therefore we want to find another much better approximation for the expression in the squared brackets in equation \eqref{eq: Green function after evaluating momentum integral}.
 
 For a better approximation equation \eqref{eq: Green function with renormalization factor} is considered again. 
@@ -797,7 +821,15 @@ The denominator yields $k^{8}$ and the numerator yields $k^{2}$, because of the 
 In total this yield the power of $k^{-6}$.
 Beside that the integrand has two possible divergencies $\gamma\epsilon$ and $r$, where both of them are proportional to $k^{2}$.
 Because of the structur of the integrand we determine the following expression for the Green function.
-The function is multiplied by $\pi$ to get the same upper bound.
+\todo{discussion that this is good. link to figure}
+%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{dependence_integrand.pdf}
+	\caption{caption}
+	\label{fig: dependence integrand}
+\end{figure}
+%
 %
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) &= 
@@ -805,10 +837,10 @@ The function is multiplied by $\pi$ to get the same upper bound.
 		\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
 		\int\limits_{0}^{\infty} \dd{\epsilon}
 		\frac{\epsilon^{2} e^{\beta \epsilon}}{(e^{\beta \epsilon} - 1)^{2}}
-		\frac{\pi}{(r^{2} + \gamma^{2} \epsilon^{2})^{\flatfrac{3}{2}}}
+		\frac{1}{(r^{2} + \gamma^{2} \epsilon^{2})^{\flatfrac{3}{2}}}
 \end{align}
 %
-In figure \dots \todo{Graph f\"ur power counting function} the exact solution of the momentum integral and the approximation given by power counting are contrasted.
+In figure \ref{fig: original vs powercounting} the exact solution of the momentum integral and the approximation given by power counting are contrasted.
 Comparing with our previous approximation this new approximation is much better.
 Similar to the exact function our approximation is convergent vor large values of $\epsilon$.
 Nevertheless let us factrizing $\gamma^{2} \epsilon^{2}$ in the denominator and transform into dimensionless variables with $x=\beta \epsilon$.
@@ -819,7 +851,7 @@ The resulting integral is exactly solvable.
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) 
 	= 
-	-\frac{4 \beta \omega}{\gamma\hbar^{2}}
+	-\frac{4 \beta \omega}{\gamma \pi \hbar^{2}}
 	\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2}
 	\int\limits_{0}^{\Lambda} \dd{x}
 	\frac{1}{\Big(\big(\frac{\beta r}{\gamma}\big)^{2} + x^{2}\Big)^{\frac{3}{2}}}
@@ -834,7 +866,7 @@ Therefore the Green function is given by
 \begin{align}
 	\mt{G}_{jj}^{\mt{ret}}(\omega) 
 	= 
-	-\frac{4 \gamma \Lambda^{-1}}{\hbar^{2}}
+	-\frac{4 \gamma \Lambda^{-1}}{\pi \hbar^{2}}
 	\vert \mt{J}_{\vb{K}} \vert^{2} \cdot K_{j}^{2} 
 	\frac{1}{\beta r^{2}} \cdot \omega
 	\sim
@@ -847,7 +879,7 @@ If we consider $z=1$ or $z=2$ the resitance would be proportional to $T^{-3}$ an
 These results for the temprature dependence are highly divengent.
 %
 %
-\subsection{Computation of the static susceptibility}
+\subsection{Computation of the Static Susceptibility}
 \label{subsec: static susceptibility}
 %
 %
