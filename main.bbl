@@ -19,6 +19,52 @@
 
 \refsection{0}
   \sortlist{none}{none}
+    \entry{Drude}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=b7c2b8d260757b72f285c54fb0fdfd68}{Drude}{D\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b7c2b8d260757b72f285c54fb0fdfd68}{Drude}{D\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b7c2b8d260757b72f285c54fb0fdfd68}
+      \strng{fullhash}{b7c2b8d260757b72f285c54fb0fdfd68}
+      \field{labelalpha}{Dru00}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Zur Elektronentheorie der Metalle}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{3}
+      \field{title}{Zur Elektronentheorie der Metalle}
+      \field{volume}{306}
+      \field{year}{1900}
+      \field{pages}{566\bibrangedash 613}
+      \verb{doi}
+      \verb 10.1002/andp.19003060312
+      \endverb
+    \endentry
+    \entry{Mori}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=08384e01dbbdf087ca5ba2fc6b231aa4}{Mori}{M\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=08384e01dbbdf087ca5ba2fc6b231aa4}{Mori}{M\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{08384e01dbbdf087ca5ba2fc6b231aa4}
+      \strng{fullhash}{08384e01dbbdf087ca5ba2fc6b231aa4}
+      \field{labelalpha}{Mor65}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Transport, Collective Motion, and Brownian Motion}
+      \field{journaltitle}{Progress of Theoretical Physics}
+      \field{number}{3}
+      \field{title}{Transport, Collective Motion, and Brownian Motion}
+      \field{volume}{33}
+      \field{year}{1965}
+      \field{pages}{423\bibrangedash 455}
+      \verb{doi}
+      \verb 10.1143/PTP.33.423
+      \endverb
+    \endentry
     \entry{Elk&Gasser}{book}{}
       \name{labelname}{2}{}{%
         {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
@@ -113,29 +159,6 @@
       \field{isbn}{3-527-40452-X; 978-3-527-40452-0978-325-40452-0}
       \field{title}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
       \field{year}{2005}
-    \endentry
-    \entry{Drude}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=b7c2b8d260757b72f285c54fb0fdfd68}{Drude}{D\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=b7c2b8d260757b72f285c54fb0fdfd68}{Drude}{D\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{b7c2b8d260757b72f285c54fb0fdfd68}
-      \strng{fullhash}{b7c2b8d260757b72f285c54fb0fdfd68}
-      \field{labelalpha}{Dru00}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Zur Elektronentheorie der Metalle}
-      \field{journaltitle}{Annalen der Physik}
-      \field{number}{3}
-      \field{title}{Zur Elektronentheorie der Metalle}
-      \field{volume}{306}
-      \field{year}{1900}
-      \field{pages}{566\bibrangedash 613}
-      \verb{doi}
-      \verb 10.1002/andp.19003060312
-      \endverb
     \endentry
     \entry{Noether1}{article}{}
       \name{labelname}{1}{}{%

@@ -1,0 +1,148 @@
+%
+%
+%
+\chapter{Infinite Conductivity in Translation Invariant Systems}
+\label{ch:infinite conductivity}
+%
+%
+%
+Ever since Drude published his theory about the electrical conductivity in metals \cite{Drude} at the beginning of the last century it is well known that non-conversation of electron momentum in a system is required for finite electrical conductivity.
+In Drude's model the electrons possess a mean scattering time $\tau_{\mt{el}}$, which represent the mean time between two scattering events of an electron and a lattice atom.
+At each scattering event the electrons transfer momentum to the lattice atoms, which is the reason electron momentum isn't a conserved quantity.
+In the case of conserved momentum an applied electrical field, for example, would accelarates the electrons up to an infinite velocity, by what an infinite conductivity is eventuated.
+
+In the following we want to prove the case of infinite conductivity by using the memory-matrix-formalism.
+Therfore firstly a short overview over the memory-matrix-formalism is given, where a detailed and explicite deviations follows in chapter \ref{ch: memory matrix formalism}.
+Then the electrical conductivity is generally computed for a system with conserved momentum.
+%
+%
+\section{An Overview over the Memory-Matrix-Formalsim}
+\label{sec:overview MMF}
+%
+%
+Let us assume a physical dynamical variable $\mt{A}(t)$ in an arbitrary system and an arbitrary pertubation too	.
+Our interest is now the time evolution of $\mt{A}(t)$ depending on the pertubation.
+Completely general, a physical dynamical variable can be splitted into two parts, a secular one and a non-secular one, which is shown in \cite{Mori}.
+The latter represent processes like fluctuations or initial transient processes, which have in common a short lifetime comparing to the secular processes.
+The dynamic and time evolution of $\mt{A}(t)$ is therefore dominated by secular processes.
+
+This seperation enables a simple but clever and intelligent geometrical interpretation, where dynamical variables are considered as vectors in a vector space.
+Thereby the variables of the unpertubated system represent the basis vectors of this vector space, denoting in the case of the variable $\mt{A}(t)$ as A-axis.
+Due to pertubation the direction of the variabel $\mt{A}(t)$ changes with respect to the A-axis.
+The projection of $\mt{A}(t)$ onto the A-axis corresponds to the secular part, where the perpendicular component represents accordingly the non-secular parts.
+
+First of all the mathematical framework has to be considered.
+In quantum mechanics the Liouville space, also called as operator space, is the respective vector space of the memory-matrix-formalism.
+Like the name operator space should supposed the vectors of the Liouville space are operators, which are certainly Hermitian.
+The basis of the Liouville space is signified as $\{\toket{\mt{A}_{i}}\}$, where $i = 1,2,3,\dots,n$, and the corresponding dual space basis is denoted as $\{\tobra{\mt{A}_{i}}\}$.
+To make the definition of any vector space complete a scalar product is required, where the following one is chosen.
+%
+\begin{align}
+	\obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} = \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(t'+i\lambda)}
+	\label{eq:scalar product Liouville space}
+\end{align}
+%
+The normal time evolution $\mt{A}_{i}(t) = e^{i\mt{H}t/\hbar} \mt{A}_{i}(0) e^{-i\mt{H}t/\hbar}$ of an operator should be valid so that $\mt{A}_{i}(i\lambda) = e^{-\lambda\mt{H}} \mt{A}_{i}(0) e^{\lambda\mt{H}}$ can be used.
+The choice of the scalar product is determined under the aspect that as a consequence the time evolution of $\mt{A}(t)$ given the most probably path, if secular processes are neglected, see \cite{Mori}.
+In quantum mechanics the dynamic of an operator is ususally described by the Heisenberg equation of motion, which is transformed using the dyad product into the Liouville space.
+%
+\begin{align}
+	\oket{\dot{\mt{A}}_{i}(t)} = \frac{i}{\hbar} \oket{\comm{\mt{H}}{\mt{A}_{i}(t)}} = i \mt{L} \oket{\mt{A}_{i}(t)}
+	\label{eq:HEM in LS}
+\end{align}
+%
+where the Hermitian Liouville operator, ${\mt{L} = \hbar^{-1} \comm{\mt{H}}{\mt{\bullet}}}$, is introduced, which is defined by acting onto an arbitrary operator.
+The formal solution of this equation is given by $\toket{\mt{A}_{i}(t)} = \exp(it\mt{L}) \cdot \toket{\mt{A}_{i}(0)}$, where the time evolution of an operator is therefore given by the Liouville operator.
+In reference to the secular part in a pertubated system a projection operator is defined in the Liouville space.
+Starting therefore with a set of arbitrary operators $\{\mt{C}_{i}\}$. 
+The choice of the operators is different for each investigated problem and unimportant at the moment.
+The definition of the projection operator in Liouville space follows directly from the projection operator defined in the usually used Hilbert space in quantum mechanics.
+%
+\begin{align}
+	\mt{P} = \sum\limits_{i,j} \frac{\oket{\mt{C}_{i}(0)} \obra{\mt{C}_{j}(0)}}{\obraket{\mt{C}_{i}(0)}{\mt{C}_{j}(0)}} 
+	\label{eq:projection operator}
+\end{align}
+%
+If the projection operator acting on some vector in Liouville space yields the projection onto the subspace spanned by the operator $\mt{C}_{i}$ and thus the operator $\mt{Q} = 1 - \mt{P}$ yields the corresponding part projected out of the subspace.
+Further the projection operator is Hermitian and fullfills the two properties $\mt{P}^{2} = \mt{P}$ and $\mt{PQ} = \mt{QP} = 0$.
+This completes the required mathematical basis of the memory-matrix formalism.
+
+Correlation functions are the natural approach describing the reaction of a dynamic variable on a pertubation.
+In quantum mechanics the correlation function is defined in Kubo's linear response theory as an integral over an expectation value of two operators, where one of them is certainly the investigated operator and the other one is the coupling operator from the pertubation Hamiltonian.
+In the Liouville space the correlation function is defined as
+%
+\begin{align}
+	\mathcal{C}_{ij}(t) := \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(0)} = \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(i\lambda\hbar)},
+	\label{eq:correlation function in LS}
+\end{align}
+%
+where in the second step the definition of the scalar product \eqref{eq:scalar product Liouville space} is only used.
+Expressing the time evolution of $\mt{A}_{i}(t)$ with the Liouville operator, using the Laplace transformation and a few conversions yield a algebraic matrix equation of the correlation function, which has the form
+%
+\begin{align}
+	\sum\limits_{l} \Big[\omega \delta_{il} - \Omega_{il} + i \Sigma_{il}(\omega)\Big] \mathcal{C}_{lj}(\omega) = \frac{i}{\beta} \chi_{ij}(0),
+	\label{eq:algebraic equation correlation function}
+\end{align}
+%
+where the abbreviations 
+%
+\begin{align}
+	\Omega_{il} := i \beta \sum\limits_{k} \obraket{\dot{\mt{A}}_{i}}{\mt{C}_{k}} \chi_{kl}^{-1}(0)
+	\qq{and}
+	\Sigma_{il}(\omega) := i \beta \sum\limits_{k} \obra{\dot{\mt{A}}_{i}} \mt{Q} \frac{1}{\omega - \mt{QLQ}} \mt{Q} \oket{\dot{\mt{C}}_{k}} \chi_{kl}^{-1}(0)
+	\label{eq:Omega&Sigma}
+\end{align}
+%
+are introduced.
+Both sums over $l$ and $k$ runs over the set of operators, defined by the projection operator.
+Similiarly the indices $i$ and $j$ has to be chosen out of this set of operators, so that \eqref{eq:algebraic equation correlation function} yields $n^{2}$ equations, if $n$ is the number of operators in the set.
+Both abbreviations can be combine to a function $M_{il}(\omega) := \Sigma_{il}(\omega) +i \Omega_{il}$, called the memory function.
+Thereby $\Sigma_{il}(\omega)$ takes the role of the quantum mechanical self energy and on the other hand $\Omega_{il}$ represents dissipative effects.
+In the case of an invariant Hamiltonian with respect to time reversal symmetry and that the operators $\mt{A}_{i}$ and $\mt{C}_{k}$ of the expectation value in $\Omega_{il}$ have same signature under time reversal symmetry $\Omega_{il}$ vanishes.
+This assertion is proven in great detail in \ref{subsec: time reversal symmetry}.
+Thus the memory function is solely determined by $\Sigma_{il}(\omega)$.
+
+The structur of $\Sigma_{il}(\omega)$ remembers to the one of the Laplace transformed correlation function, comparing equation \eqref{eq: correlation function frequency space}.
+Two things are different.
+The expectation value is performed with respect to the operators like $\mt{Q}\toket{\dot{\mt{A}}_{i}}$ instead of $\toket{\mt{A}_{i}}$ and on the other hand only the reduced Liouville operator $\mt{QLQ}$ is considered.
+The latter projects at the part of the full Liouville operator, which causes the intrinsic fluctuations of the operator $\mt{A}$.
+In other words the operator QLQ describes the internal dynamics of all other degrees of freedom of the system, called the "bath", excluded A.
+The coupling to the bath is characterizied by the vector $\mt{Q}\toket{\dot{\mt{A}}_{i}}$.
+The coupling to the bath is clearly changing the dynamic behaviour of A.
+%
+%
+\section{Electrical Conductivity in a Momentum Conserving System}
+\label{sec:conductivity conserved momentum}
+%
+%
+In the following with the aim of the memory-matrix-formalism the electrical conductivity is computed for a system, where momentum is conserved.
+Therefore an infinite conductivity is expected due to the fact that electrons does not transfer any momentum to other degrees of freedom.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

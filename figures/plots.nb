@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     62651,       1287]
-NotebookOptionsPosition[     61504,       1243]
-NotebookOutlinePosition[     61842,       1258]
-CellTagsIndexPosition[     61799,       1255]
+NotebookDataLength[     65069,       1369]
+NotebookOptionsPosition[     63803,       1321]
+NotebookOutlinePosition[     64141,       1336]
+CellTagsIndexPosition[     64098,       1333]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1239,10 +1239,88 @@ zCFL6tXLJLg6EBHoQ04A6e9nP0StkcAjvORvxGYl6FD7HjXZJIGO5dlG4b+V
    3.735475341010828*^9}, {3.735475427043001*^9, 3.735475441773443*^9}, {
    3.735475481837317*^9, 3.735475497176723*^9}, 3.735475533343561*^9, 
    3.735475573270472*^9, 3.735476091424099*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"$Assumptions", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Element]", "Reals"}], ",", 
+     RowBox[{"x", "\[GreaterEqual]", "0"}], ",", 
+     RowBox[{"r", "\[GreaterEqual]", "0"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f1", "[", "x_", "]"}], ":=", 
+  FractionBox[
+   RowBox[{"Exp", "[", "x", "]"}], 
+   RowBox[{"x", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Exp", "[", "x", "]"}], "-", "1"}], ")"}], 
+     "2"]}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f2", "[", "x_", "]"}], ":=", 
+  RowBox[{"(", 
+   RowBox[{"\[Pi]", "-", 
+    FractionBox[
+     FractionBox[
+      RowBox[{"2", "*", "r"}], "x"], 
+     RowBox[{"1", "+", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox["r", "x"], ")"}], "2"]}]], "-", 
+    RowBox[{"2", 
+     RowBox[{"ArcTan", "[", 
+      FractionBox["r", "x"], "]"}]}]}], ")"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f1", "[", "x", "]"}], "*", 
+    RowBox[{"f2", "[", "x", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "r", ",", "\[Infinity]"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7355306345121202`*^9, 3.735530698123622*^9}, 
+   3.735539802856792*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "r", "\[Infinity]"], 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", "x"], " ", 
+     RowBox[{"(", 
+      RowBox[{"\[Pi]", "-", 
+       FractionBox[
+        RowBox[{"2", " ", "r"}], 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           FractionBox[
+            SuperscriptBox["r", "2"], 
+            SuperscriptBox["x", "2"]]}], ")"}], " ", "x"}]], "-", 
+       RowBox[{"2", " ", 
+        RowBox[{"ArcTan", "[", 
+         FractionBox["r", "x"], "]"}]}]}], ")"}]}], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", 
+        SuperscriptBox["\[ExponentialE]", "x"]}], ")"}], "2"], " ", "x"}]], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Output",
+ CellChangeTimes->{3.7355308215394373`*^9, 3.73553999176928*^9}]
 }, Open  ]]
 },
 WindowSize->{808, 1132},
-WindowMargins->{{4, Automatic}, {1, Automatic}},
+WindowMargins->{{5, Automatic}, {1, Automatic}},
 FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1280,7 +1358,11 @@ Cell[43962, 911, 147, 2, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[44146, 918, 1634, 46, 162, "Input"],
-Cell[45783, 966, 15705, 274, 266, "Output"]
+Cell[45783, 966, 15705, 274, 233, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[61525, 1245, 1377, 44, 194, "Input"],
+Cell[62905, 1291, 882, 27, 119, "Output"]
 }, Open  ]]
 }
 ]
