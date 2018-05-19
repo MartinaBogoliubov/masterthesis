@@ -65,6 +65,50 @@
       \verb 10.1143/PTP.33.423
       \endverb
     \endentry
+    \entry{Chycholl2}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=d3bf62c400d4f3290d70a5facc5f2f14}{Czycholl}{C\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d3bf62c400d4f3290d70a5facc5f2f14}{Czycholl}{C\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {SpringerLink : B\"{u}cher}%
+      }
+      \strng{namehash}{d3bf62c400d4f3290d70a5facc5f2f14}
+      \strng{fullhash}{d3bf62c400d4f3290d70a5facc5f2f14}
+      \field{labelalpha}{Czy17}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Theoretische Festk\"{o}rperphysik Band 2 : Anwendungen: Nichtgleichgewicht, Verhalten in \"{a}u{\ss}eren Feldern, kollektive Ph\"{a}nomene}
+      \field{edition}{4. Aufl. 2017}
+      \field{isbn}{978-3-662-53701-5}
+      \field{title}{Theoretische Festk\"{o}rperphysik Band 2 : Anwendungen: Nichtgleichgewicht, Verhalten in \"{a}u{\ss}eren Feldern, kollektive Ph\"{a}nomene}
+      \field{year}{2017}
+    \endentry
+    \entry{Gross&Marx}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=41b97a39c030cc168693462450b432fc}{Gross}{G\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=b3cc84124140f820a17772cabf5c699b}{Marx}{M\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=41b97a39c030cc168693462450b432fc}{Gross}{G\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=b3cc84124140f820a17772cabf5c699b}{Marx}{M\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Oldenbourg}%
+      }
+      \strng{namehash}{7e7ceccf499d95ee7c21f6685219a922}
+      \strng{fullhash}{7e7ceccf499d95ee7c21f6685219a922}
+      \field{labelalpha}{GM14}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Festk\"{o}rperphysik}
+      \field{edition}{2., aktualisierte Aufl.}
+      \field{isbn}{978-3-11-035870-4; 978-3-11-039687-4}
+      \field{title}{Festk\"{o}rperphysik}
+      \field{year}{2014}
+    \endentry
     \entry{Elk&Gasser}{book}{}
       \name{labelname}{2}{}{%
         {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
@@ -180,27 +224,6 @@
       \verb{url}
       \verb http://www.digizeitschriften.de/dms/img/?PID=GDZPPN00250510X
       \endverb
-    \endentry
-    \entry{Chycholl2}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=d3bf62c400d4f3290d70a5facc5f2f14}{Czycholl}{C\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=d3bf62c400d4f3290d70a5facc5f2f14}{Czycholl}{C\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {SpringerLink : B\"{u}cher}%
-      }
-      \strng{namehash}{d3bf62c400d4f3290d70a5facc5f2f14}
-      \strng{fullhash}{d3bf62c400d4f3290d70a5facc5f2f14}
-      \field{labelalpha}{Czy17}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Theoretische Festk\"{o}rperphysik Band 2 : Anwendungen: Nichtgleichgewicht, Verhalten in \"{a}u{\ss}eren Feldern, kollektive Ph\"{a}nomene}
-      \field{edition}{4. Aufl. 2017}
-      \field{isbn}{978-3-662-53701-5}
-      \field{title}{Theoretische Festk\"{o}rperphysik Band 2 : Anwendungen: Nichtgleichgewicht, Verhalten in \"{a}u{\ss}eren Feldern, kollektive Ph\"{a}nomene}
-      \field{year}{2017}
     \endentry
     \entry{Jung}{thesis}{}
       \name{labelname}{1}{}{%
