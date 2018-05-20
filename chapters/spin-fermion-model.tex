@@ -9,9 +9,10 @@
 In the following chapter the spin-fermion-model for a metal exhibiting a antiferromagnetic quantum phase transition is introduced as presented in \cite{Abanov&Chubukov&Schmalian}.
 Beside fermionic particle-hole-exitetaions in the vicinity of the quantum critical point bosonic spin fluctuations arise in this low energy theory, which enable a attractive interaction between electrons.
 This chapter isn't displayed a detailed mathematical or microscopic derivation of the spin-fermion-model, but rather it is based on a qualitative description to justified its form.
+For that a shortly overview over quantum phase transitions are established as suggested in \cite{SachdevQCP}.
 In particular, we focus one's attention on the arising spin fluctuations, agrue them carry large momenta and introduced the damped spin density propagator and their perodicity.
-Further we present the basic concepts of hot-spot theory, which are points on the Fermi surface in 2D cutting by the magnetic Brillouin zone.
-Besides we review excplicitly the conservation of momentum and non-conservation of current for the observing Hamiltonian.
+Further we present the basic concepts of hot-spot theory, which are points on the Fermi surface in 2D emerged since the magnetic Brillouin zone cutting the Fermi surface.
+Besides we review explicitly the conservation of momentum and non-conservation of current for the observing Hamiltonian.
 For breaking translation symmetry umklapp scattering is introduced and we prove that this is unconserving momentum.
 %
 %
@@ -19,12 +20,16 @@ For breaking translation symmetry umklapp scattering is introduced and we prove 
 \label{sec:spin-fermion-model}
 %
 %
+Many metals exhibit an antiferromagnetic phase transition at a characteristic temperature $\mt{T}_{\mt{N}}$, called N\'eel-temperature.
+The random ordered spins of lattice atoms ordering in consequence of thermal fluctuations along one axis, where the nearest neighbors are always aligned in opposite direction.
+This temperature can be changed by tuning a certain parameter like pressure or doping, for example.
+A schematic and simplified phase diagram is depicted in figure \ref{fig:phase diagram}.
 %
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.7\textwidth]{phase_diagram.pdf}
 	\caption{
-This figure shows a shematic and simplified phase diagram for metals transition from a paramagnetic (PM) into an antiferrmagnetic (AFM) phase depending on a tunung parameter g.
+This figure shows a schematic and simplified phase diagram for metals transition from a paramagnetic (PM) into an antiferrmagnetic (AFM) phase depending on a tunung parameter g.
 The phase line of the AFM phase ends decreasing temperature down to $T = 0$ in a quantum critical point (QCP) at $\mt{g} = \mt{g}_{\mt{c}}$.
 At this point the phase transition is only caused by quantum fluctuations.
 At $T > 0$ thermal fluctuactions more and more dominates the phase transition.
@@ -32,14 +37,103 @@ Nevertheless quantum fluctuations influences the physical behaviour in a lagre r
 	}
 	\label{fig:phase diagram}
 \end{figure}
+%
+Decreasing tempearutre the phase line between both magnetic phases reach a certain value for the tuning parameter g at $T = 0$, labeled with $\mt{g}_{\mt{c}}$.
+This point is called quantum critical point and in comparsion with the phase transition at finite temperature quantum fluctuations are the origin of this phase transition.
+
+Before starting with a qualitative derivation of the spin-fermion-model a short and rudimentary describtion of quantum phase transition is given.
+This overview is required for the analytical discussion of our computation later.
+However, the reason for phase transitions is always level crossing between the ground and an excited state.
+Due to the fact that level crossing is forbidden a band gap $\Delta$ arises.
+This band gap is therefore a characteristic energy scale of the quantum phase transition.
+Considering only phase transitions of second order the characteristic energy scale $\Delta$ is proportional to the tuning parameter as
+%
+\begin{align}
+	\Delta \sim \mt{J} |\mt{g} - \mt{g}_{\mt{c}}|^{z \nu},
+	\label{eq:energy scale Delta}
+\end{align}
+%
+where $z\nu$ is a critical exponent and J a energy scale of a microscopic coupling \cite{SachdevQCP}.
+Beside a characteristic energy scale quantum phase transitions also possesses a characteristic length scale $\xi$, called correlation length, which diverges right at the quantum critical point.
+%
+\begin{align}
+	\xi^{-1} \sim \Lambda |\mt{g} - \mt{g}_{\mt{c}}|^{\nu},
+	\label{eq:correlation length xi}
+\end{align}
+%
+where $\nu$ is again a critical exponent and $\Lambda$ an arbitrary inverse length scale like a momentum cut-off, for example.
+Inserting \eqref{eq:correlation length xi} in \eqref{eq:energy scale Delta} yields a directly relation between both characteristic quantities.
+For finite temperatures, $T > 0$, a second energy scale is given by $k_{\mt{B}} T$, where $k_{\mt{B}}$ is the Botzmann constant.
+Comparing both energy scales yields a proportionality between temperatur and correlation length as
+%
+\begin{align}
+	T \sim \xi^{-z}.
+	\label{relation temperature and correlation length}
+\end{align}
+%
+Further this explaines the curved conical boundary phase lines of the quantum critical phase in figure \ref{fig:phase diagram}.
+In the case of small temperatures the critical exponent $z$ attains the value $z = 2$, so that the phase lines are shaped like a square root.
+Increasing temperature the phase boundary lines are linear, since the critical exponent changing to $z = 1$ \cite{Patel&Sachdev}.
+Inside this regime the physical behaviour of the metals is determined by quantum fluctions.
+
+Knowing the physical origin of quantum phase transitions the spin-fermion-model can be introduced.
+Instead of an microscopic and detailed mathematical describtion we want focus our introduction on qualitative arguments motivating the model.
+The spin-fermion-model describes metals in the vicinity of a magnetic quantum critical point considering fermionic quasiparticles and bosonic spin density waves.
+Thereby, the propagator is determined by the usual free fermionic Green function.
+Spin fluctuations are constituted as collective modes and their propagator is characterized by the dynamical magnetic susceptibility.
+%
+\begin{align}
+	\mathcal{D}_{\mu}(\vb{q}, \omega) = \sum\limits_{\vb{Q}} \frac{1}{(\vb{q}+\vb{Q})^{2} + \xi^{-2} - (\flatfrac{\omega}{v_{\mt{S}}})^{2}},
+	\label{eq:undamped spin propagator}
+\end{align}
+%
+where $\mu$ is the spatial direction of the spin density wave, $\xi$ the magnetic correlation length and $v_{\mt{S}}$ the spin wave velocity.
+The spin wave velocity is of the same order as the Fermi velocity since spin fluctuations originate due to fermions in the vicinity of the Fermi surface.
+Furthermore, the magnetic susceptibility possesses a peak at the momentum vector $\vb{Q} = (\pi, \pi)$.
+This implicates a strong coupling interaction between momentum vectors $\vb{k}$ and $\vb{k} + \vb{Q}$.
+
+Phase transitions are always associated by an order parameter equally the investigated antiferromagnetic phase transition, where the local magnetization measured by the spin expectation value $\expval{\mt{S}_{\mu}}$ is the corresponded one.
+Similar to the propagator the index $\mu$ indicated the spatial direction.
+The order parameter is finite in the antiferromagnetic ordered phase and reaches zero in the paramagnetic disordered phase.
+Further, the expectation value of the spin operator is spatially modulated according to $\expval{\mt{S}_{\mu}} \sim e^{i\vb{Q}\vb{R}}$, where $\vb{R}$ is some lattice vector \cite{Weiss}, and therefore the order parameter and equally the propagator are periodical quantities.
+In reciprocal space this is reflected in the periodicity  of the magnetic Brillouin zone spanned by the vector $\vb{Q}$.
+
+Our describtion of the antiferromagnetic quantum phase transition in the spin-fermion-model is based on a few fundamental assumptions, comparatively to \cite{Abanov&Chubukov&Schmalian}.
+We assume spin fluctuations arise over a large range of the tuning parameter and other low-energy collective degrees of freedom, independent on spin excitations, are neglectable.
+Starting by large values of the tuning parameter g, where the metal is in the paramagnetic phase, the physical behaviour is described by Landau's Fermi liquid theory.
+Decreasing the tuning parameter and getting closer to the quantum critical point changes the behaviour of the Fermi liquid.
+Assuming only one type of fermions the arising collective modes are originated due to permanent interaction between particles and holes.
+These bosonic spin excitations determine the physics in the vicinity of the quantum critical point and turning into smooth modes.
+Therefore, we assume that only one dominant channel exist for fermion-fermion interaction with energies smaller than an energy cut-off $\Lambda$.
+Further we introduce on collective spin mode which containts this interaction.
+\todo{Diesen Abschnitt nochmal \"uberarbeiten}
+The obtained effective Hamiltonian for the spin fluctuations in the low-energy theory is given by
+%
+\begin{align}
+	\mt{H}_{\Phi} &= 
+	 	\int_{\vb{k}}\, \Big[-\frac{\vb{k}^{2}}{2} - \frac{r}{2}\Big] \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},\tau)
+		+
+		\frac{v_{\mt{S}}^{2}}{2} \pi_{\mu}(\vb{k},\tau) \pi_{\mu}(-\vb{k},\tau)
+	\label{eq:Hamiltonian spin fluctuation}
+\end{align}
+%
+
+In two dimensions the dimensionless coupling constant $\lambda$ is proportional to the inverse magnetic correlation length $\xi$ and diverges at the quantum critical point.
 
 
 
-\begin{itemize}
-	\item explain the quantum critical point theory
-	\item introduced the spin fermion model in detail used by Sachdev and me
-	\item difference two other spin fermion models and why these changes are important
-	\item show that the momentum is conserved and the current dosen't
-	\item introduced the pertubation Hamiltonian which included umklapp scattering
-	\item show that the current doesn't change and the momentum isn't anymore conserved
-\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

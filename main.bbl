@@ -136,6 +136,75 @@
       \verb 10.1080/0001873021000057123
       \endverb
     \endentry
+    \entry{SachdevQCP}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge Univ. Press}%
+      }
+      \strng{namehash}{b6799630f7921f86ddc2b77f5c832a12}
+      \strng{fullhash}{b6799630f7921f86ddc2b77f5c832a12}
+      \field{labelalpha}{Sac11}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Quantum phase transitions}
+      \field{edition}{2. ed., 1. publ.}
+      \field{isbn}{978-0-521-51468-2; 0-521-51468-1}
+      \field{title}{Quantum phase transitions}
+      \field{year}{2011}
+    \endentry
+    \entry{Patel&Sachdev}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=03540a578795a12264fe94142888d3c6}{Patel}{P\bibinitperiod}{A.\bibnamedelimi A.}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=03540a578795a12264fe94142888d3c6}{Patel}{P\bibinitperiod}{A.\bibnamedelimi A.}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{d46eef80478249dae98d298e10058c70}
+      \strng{fullhash}{d46eef80478249dae98d298e10058c70}
+      \field{labelalpha}{PS14}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{DC Resistivity at the Onset of Spin Density Wave Order in Two-Dimensional Metals}
+      \field{issue}{16}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{title}{DC Resistivity at the Onset of Spin Density Wave Order in Two-Dimensional Metals}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{pages}{165146}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.90.165146
+      \endverb
+    \endentry
+    \entry{Weiss}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{hash=49d97f994e53acc009ccc245f84283a4}{Wei{\ss}}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=49d97f994e53acc009ccc245f84283a4}{Wei{\ss}}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Karlsruhe institut of technology (KIT)}%
+      }
+      \strng{namehash}{49d97f994e53acc009ccc245f84283a4}
+      \strng{fullhash}{49d97f994e53acc009ccc245f84283a4}
+      \field{labelalpha}{Wei15}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Interference of quantum critical excitations and soft diffusive modes in a disordered antiferromagnetic metal}
+      \field{title}{Interference of quantum critical excitations and soft diffusive modes in a disordered antiferromagnetic metal}
+      \field{type}{masterthesis}
+      \field{year}{2015}
+    \endentry
     \entry{Elk&Gasser}{book}{}
       \name{labelname}{2}{}{%
         {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
