@@ -109,6 +109,33 @@
       \field{title}{Festk\"{o}rperphysik}
       \field{year}{2014}
     \endentry
+    \entry{Abanov&Chubukov&Schmalian}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=b93b300629b923a44364565d3a18fe9c}{Abanov}{A\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=afd8f5b22baa593b7ce24af456969c8e}{Chubukov}{C\bibinitperiod}{A.\bibnamedelimi V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=b93b300629b923a44364565d3a18fe9c}{Abanov}{A\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=afd8f5b22baa593b7ce24af456969c8e}{Chubukov}{C\bibinitperiod}{A.\bibnamedelimi V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c887a9ac97257b261b7bde11861c6738}
+      \strng{fullhash}{c887a9ac97257b261b7bde11861c6738}
+      \field{labelalpha}{ACS03}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Quantum-Critical Theory of the Spin-Fermion Model and its Application to Cuprates: Normal State Analysis}
+      \field{journaltitle}{Advances in Physics}
+      \field{number}{3}
+      \field{title}{Quantum-Critical Theory of the Spin-Fermion Model and its Application to Cuprates: Normal State Analysis}
+      \field{volume}{52}
+      \field{year}{2003}
+      \field{pages}{119\bibrangedash 218}
+      \verb{doi}
+      \verb 10.1080/0001873021000057123
+      \endverb
+    \endentry
     \entry{Elk&Gasser}{book}{}
       \name{labelname}{2}{}{%
         {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%

@@ -16,6 +16,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Spin-Fermion-Model}{9}{chapter.3}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Spin-Fermion-Model}{9}{section.3.1}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}The Damped Propagator of Spin Density Waves}{11}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}The Free Spin Density Wave Propagator}{11}{section.4.1}
