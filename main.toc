@@ -18,56 +18,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}The Spin-Fermion-Model at the Onset of the Antiferromagnetic Quantum Phase Transition}{9}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Prove of Momentum Conservation and Breaking Translation Symmetry by Umklapp Scattering}{14}{section.3.2}
+\contentsline {section}{\numberline {3.2}Momentum Conservation in the Spin-Fermion-Model and the Consequence of Umklapp Scattering}{14}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}The Damped Propagator of Spin Density Waves}{15}{chapter.4}
+\contentsline {chapter}{\numberline {4}The Static Conductivity in the Spin Fermion Model Pertubated by Umklapp Scattering}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}The Free Spin Density Wave Propagator}{15}{section.4.1}
+\contentsline {section}{\numberline {4.1}Infinite Conductivity in Systems with Unbroken Translation Symmetry}{17}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}The Damped Spin Density Wave Propagator}{17}{section.4.2}
+\contentsline {section}{\numberline {4.2}Finite Conductivity because of Breaking the Translation Symmetry via Umklapp Scattering}{20}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{22}{section*.11}
+\contentsline {subsection}{\numberline {4.2.1}Temperature Dependence of the dc-Conductivity}{23}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{23}{section*.12}
+\contentsline {subsection}{\numberline {4.2.2}Computation of the Static Susceptibility}{34}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Transformation of the Propagator on the Imaginary Axis}{24}{section.4.3}
+\contentsline {chapter}{\numberline {5}Memory-Matrix-Formalism}{39}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Memory-Matrix-Formalism}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Motivation}{39}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Motivation}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Linear Response Theory}{40}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Linear Response Theory}{28}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Kubo formula}{40}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Kubo formula}{28}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Kubo relaxation function}{42}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Kubo relaxation function}{30}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Kramer-Kronig-relation}{44}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Kramer-Kronig-relation}{32}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Spectral representation}{45}{subsection.5.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Spectral representation}{33}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Deviation of the Memory-Matrix-Formalism}{46}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Deviation of the Memory-Matrix-Formalism}{34}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Time Reversal Symmetry}{53}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Time Reversal Symmetry}{41}{subsection.5.3.1}
+\contentsline {paragraph}{\nonumberline 1. case:}{55}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{43}{section*.23}
+\contentsline {paragraph}{\nonumberline 2. case:}{55}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{43}{section*.24}
+\contentsline {chapter}{\numberline {6}The Damped Propagator of Spin Density Waves}{57}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}The Static Conductivity in the Spin Fermion Model Pertubated by Umklapp Scattering}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}The Free Spin Density Wave Propagator}{57}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Infinite Conductivity in Systems with Unbroken Translation Symmetry}{45}{section.6.1}
+\contentsline {section}{\numberline {6.2}The Damped Spin Density Wave Propagator}{59}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Finite Conductivity because of Breaking the Translation Symmetry via Umklapp Scattering}{48}{section.6.2}
+\contentsline {paragraph}{\nonumberline 1. case:}{64}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Temperature Dependence of the dc-Conductivity}{51}{subsection.6.2.1}
+\contentsline {paragraph}{\nonumberline 2. case:}{65}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Computation of the Static Susceptibility}{62}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Transformation of the Propagator on the Imaginary Axis}{66}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{67}{chapter.7}
+\contentsline {chapter}{\numberline {7}Conclusion}{69}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Properties of the Kubo Relaxation Function}{69}{appendix.A}
+\contentsline {chapter}{\numberline {A}Properties of the Kubo Relaxation Function}{71}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Conversion of ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ } {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }\omega - \mathrm {L}_{0}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }^{-1} {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$}{71}{appendix.B}
+\contentsline {chapter}{\numberline {B}Conversion of ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ } {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }\omega - \mathrm {L}_{0}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }^{-1} {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$}{73}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Fierz Identity}{73}{appendix.C}
+\contentsline {chapter}{\numberline {C}Fierz Identity}{75}{appendix.C}

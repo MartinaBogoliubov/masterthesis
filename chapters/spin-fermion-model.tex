@@ -112,7 +112,7 @@ Therefore the correlation length is much larger than the lattice constant, $\xi 
 In the limit of large distance and small energies/temperatures a mircoscopic consideration of the lattice Hamiltonian is unnecessary.
 In this low-energy theory spin fluctuations are described as a three component bosonic field $\Phi_{\mu}(\vb{x}, \tau)$ befined as a sum over all spin oparators analysed in the neighbourhood of the spin's site $i$, $\Phi_{\mu}(\vb{x}, \tau) \sim \sum_{i \in \Gamma(\vb{r}_{i})} \mt{S}_{\mu}(\vb{r}_{i})$, where $\mu$ is the spatial direction of the field and $\Gamma(\vb{r}_{i})$ represent the neighbourhood around the spin position $\vb{r}_{i}$ \cite{SachdevQCP}.
 The magnitude of the bosnic field is chosen arbitrary and the field itself is considered as a real field.
-The obtained effective Hamiltonian for the spin fluctuations in the low-energy theory is then given by
+The obtained effective Hamiltonian for spin fluctuations in the low-energy theory is then given by
 %
 \begin{align}
 	\mt{H}_{\Phi} &= 
@@ -124,7 +124,7 @@ The obtained effective Hamiltonian for the spin fluctuations in the low-energy t
 \end{align}
 %
 where $r$ is a control parameter and corresponds to the squared inverse correlation length, $r = \xi^{-2}$.
-The integral extends over the first Brillouin zone and the sum runs over the spatial direction of the bosonic field.
+The integral is extended over the first Brillouin zone and the sum runs over the spatial direction of the bosonic field.
 
 Further we have to take into account that the spin densiy waves are damped in consequence of the interaction with fermions.
 The spin itself doesn't possess an own damping source.
@@ -143,8 +143,8 @@ The interation Hamiltonian between spin density waves and fermions is given by
 	\label{eq:Hamiltonian interaction}
 \end{align}
 %
-where $\lambda$ is the coupling constant, both integrals extend over the first Brillouin zone and the sum runs over all spatial directions of the bosonic field.
-The index a and b at the fermionic fields $\Psi$ represent the two different Fermi surfaces in the obtained model which is explained below presently.
+where $\lambda$ is the coupling constant, both integrals are extended over the first Brillouin zone and the sum runs over all spatial directions of the bosonic field.
+$\sigma_{\mu}$ is the Pauli matrix with respect to the spatial direction and the index a and b at the fermionic fields $\Psi$ represent the two different Fermi surfaces in the obtained model which is explained below presently.
 The imaginary part of the susceptibility has to be computed in the low-energy limit with the tools of the quantum field pertubation theory.
 An explicite calculation is presented in the appendix \ref{app:particel-hole-bubble}.
 Further, assuming the dynamic of the spin fluctuations is governed by the low-energy fermions the $\omega^{2}$-term in the susceptibility \eqref{eq:undamped spin propagator} is neglectable \cite{Abanov&Chubukov&Schmalian} and at the vicinity of the quantum critical point the correlation length diverges, so $\xi^{-2} \to 0$.
@@ -152,7 +152,7 @@ Then the damped magnetic susceptibility is then given by
 %
 \begin{align}
 	\mathcal{D}_{\mu}(\vb{q}, i\omega_{n}) = \sum\limits_{\vb{Q}} \frac{1}{(\vb{q}+\vb{Q})^{2} + \gamma|\omega_{n}|},
-	\label{eq:undamped spin propagator}
+	\label{eq:damped spin propagator}
 \end{align}
 %
 where $\omega_{n}$ represent the bosonic Matsubara frequency.
@@ -206,10 +206,10 @@ In reciprocal space, the free continuum Hamiltonian of the fermions $\Psi_{\mt{a
 	 		\psi_{\mt{b}}^{\dag}(\vb{k},\tau)
 	 		\psi_{\mt{b}}(\vb{k},\tau)
 	 	\bigg],
-	 \label{eqHamiltonian electrons}
+	 \label{eq:Hamiltonian electrons}
 \end{align}
 %
-where the intergal extends over the first Brillouin zone and $\epsilon_{\mt{a}}(\vb{k})$ and $\epsilon_{\mt{b}}(\vb{k})$ are the anisotropic parabolical dispersions, corresponding to the fermion species a and b, given by
+where the intergal is extendsed over the first Brillouin zone and $\epsilon_{\mt{a}}(\vb{k})$ and $\epsilon_{\mt{b}}(\vb{k})$ are the anisotropic parabolical dispersions, corresponding to the fermion species a and b, given by
 %
 \begin{align}
 	\epsilon_{\mt{a}}(\vb{k}) = \frac{k_{x}^{2}}{2m_{1}} + \frac{k_{y}^{2}}{2m_{2}} - \mu_{0}
@@ -221,15 +221,104 @@ where the intergal extends over the first Brillouin zone and $\epsilon_{\mt{a}}(
 where $\mu_{0}$ is the chemical potential.
 %
 %
-\section{Prove of Momentum Conservation and Breaking Translation Symmetry by Umklapp Scattering}
+\section{Momentum Conservation in the Spin-Fermion-Model and the Consequence of Umklapp Scattering}
 \label{sec:umklapp scattering}
 %
 %
+In a low-energy theory, our investigated 2D-model is described by the continuum Hamiltonian $\mt{H}_{\Psi}$ for free fermions on the Fermi surface, the effective Hamiltonian $\mt{H}_{\Phi}$ for spin fluctuations and by the interaction Hamiltonian $\mt{H}_{\Psi\Phi}$ between both.
+At the quantum phase transition the control parameter $r$ in \eqref{eq:Hamiltonian spin fluctuation} is zero, due to $r = \xi^{-2}$ and the correlation length $\xi$ diverges.
+Thus we set $r = 0$ in the Hamiltonian $\mt{H}_{\Phi}$.
+The obtained model Hamiltonian is therefore given by $\mt{H} = \mt{H}_{\Psi} + \mt{H}_{\Phi} + \mt{H}_{\Psi\Phi}$.
+Our further appraoch is to prove the conservation of momentum and current for this model Hamiltonian.
+After we introduce a pertubation Hamiltonian for considering umklapp scattering.
+Because of this pertubation the momentum isn't anymore a conserved quantity. 
+This and the consequences for the current are discussed.
 
-
-
-
-
+A physical quantity is conserved, if its time derivative vanishes.
+In quantum mechanics the time derivative is given by Heisenberg equation of motion, $\dot{\mt{A}}(t) = i\comm{\mt{H}}{\mt{A}(t)}_{-}$, where $\mt{A}(t)$ is an arbitrary operator and its partial time derivative is assumed to be zero.
+The momentum operator is given by 
+%
+\begin{align}
+	\mt{P}_{j} &= \int_{\vb{k}}\, 
+		k_{j}\bigg[
+	 		\Psi_{\mt{a}}^{\dag}(\vb{k},\tau) \Psi_{\mt{a}}(\vb{k},\tau)
+	 		+
+	 		\Psi_{\mt{b}}^{\dag}(\vb{k},\tau) \Psi_{\mt{b}}(\vb{k},\tau)
+	 		-
+	 		\pi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},\tau)
+		\bigg],
+		\label{eq:momentum operator}
+\end{align}
+%
+where the spatial direction is indicated by $j$, the integral is extended over the first Brillouin zone and the sum over $\mu$ is implied in the last term.
+The energy-momentum-tensor, as suggested in \cite{Iliev}, is used for the computation.
+Further the x-component of current operator is given by
+%
+\begin{align}
+	\mt{J}_{\mt{x}} &= - \int_{\vb{k}}\, \bigg[
+		\frac{k_{\mt{x}}}{m_{1}} \Psi_{\mt{a}}^{\dag}(\vb{k},\tau) \Psi_{\mt{a}}(\vb{k},\tau)
+		+ 
+		\frac{k_{\mt{x}}}{m_{2}} \Psi_{\mt{b}}^{\dag}(\vb{k},\tau) \Psi_{\mt{b}}(\vb{k},\tau)
+	\bigg],
+	\label{eq:current operator}
+\end{align}
+%
+where the integral is extended over the first Brillouin zone
+The y-component of the current operator is yielded by changing the index x to y and interchanging the index a and b of the fermionic field operators.
+Now, the time derivative of both quantities is computed by using the basic bosonic and fermionic commutator relations.
+An explicite calculation is represented in the appendix \ref{app:conservation calculation}.
+This yields a vanishing time derivative for the the momentum,
+%
+\begin{align}
+	\dot{\mt{P}}_{j} = 0,
+	\label{eq:time derivative momentum}
+\end{align}
+%
+and the following expression for the x-component of the current
+%
+\begin{align}
+	\dot{\mt{J}}_{x} = \lambda
+		\sum\limits_{\mu} \int_{\vb{k}} \int_{\vb{q}}\,
+		\Phi_{\mu}(\vb{k}-\vb{q},\tau)
+		\Big[
+			&\Big(\frac{q_{\mt{x}}}{m_{1}} - \frac{k_{\mt{x}}}{m_{2}}\Big)
+			\Psi_{\mt{b}}^{\dag}(\vb{k},\tau) \cdot \sigma_{\mu} \cdot \Psi_{\mt{a}}(\vb{q},\tau)
+			\notag \\+
+			&\Big(\frac{q_{\mt{x}}}{m_{2}} - \frac{k_{\mt{x}}}{m_{1}}\Big)
+			\Psi_{\mt{a}}^{\dag}(\vb{k},\tau) \cdot \sigma_{\mu} \cdot \Psi_{\mt{b}}(\vb{q},\tau)
+		\Big].
+		\label{eq:time derivative current}
+\end{align}
+%
+The y-component of the current is obtained by changing again the index x to y and interchanging the index a and b of the fermionic field operators.
+The physical interpretation of the obtained results is that momentum is a conserved quantity and current is an unconserved quantity in the spin-fermion-model, described by the Hamiltonian H.
+The Hamiltonian is further invariant with respect to time reversal symmtry and a finite overlap is possessed between both quantities.
+Infinity is obtained for the static electrical conductivity in comparsion with the discussion of the previous chapter.
+A finite conductivity is only obtained by broken translation symmetry.
+This is equivalent to an unconserved momentum.
+Therefore, the model Hamiltonian H is pertubated by umklapp scattering via the Hamiltonian
+%
+\begin{align}
+	\mt{H}_{\mt{umklapp}} = \sum\limits_{\mu, \vb{G}} \mt{J}_{\vb{G}}
+		\int_{\vb{k}}\, \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k}+\vb{G},\tau),
+	\label{eq:Hamiltonian umklapp scattering}
+\end{align}
+%
+where the integral extends over the first Brillouin zone and the sum over $\vb{G}$ included all reciprocal lattice vectors.
+The quantity $\mt{J}_{\vb{G}}$ is a coupling constant depending on reciprocal lattice vectors.
+It is assumed that the coupling constant is decreasing fast to zero in the limit $|\vb{G}| \to \infty$.
+The time derivative of the momentum is given by
+%
+\begin{align}
+	\dot{\mt{P}}_{j}(\tau) = i \sum\limits_{\vb{G}} \mt{J}_{\vb{G}} \int_{\vb{k}} G_{j} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k} - \vb{G},\tau)
+	\label{eq:time derivative momentum finite}
+\end{align}
+%
+with respect to the new model Hamiltonian $\mt{H}' = \mt{H} + \mt{H}_{\mt{umklapp}}$.
+The time derivative of the current is persisted, since the current and pertubation Hamiltonian depends on fermionic and on bosonic field operators, respectivily.
+The commutator is trivially zero between both field operators.
+The static electrical conductivity is become finite due to the unconserved momentum.
+In the next chapter, the static electrical conductivity is explicitely computed using diagrammatic pertubation theory.
 
 
 

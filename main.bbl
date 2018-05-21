@@ -205,100 +205,25 @@
       \field{type}{masterthesis}
       \field{year}{2015}
     \endentry
-    \entry{Elk&Gasser}{book}{}
-      \name{labelname}{2}{}{%
-        {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
-        {{hash=07b20eb10d098b1c89438f0d3b0d22ed}{Gasser}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
-        {{hash=07b20eb10d098b1c89438f0d3b0d22ed}{Gasser}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Akademie-Verl.}%
-      }
-      \strng{namehash}{8c0bea4fb94c7c1fb42aa6ceedb2bd5c}
-      \strng{fullhash}{8c0bea4fb94c7c1fb42aa6ceedb2bd5c}
-      \field{labelalpha}{EG79}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Die Methode der Greenschen Funktionen in der Festk\"{o}rperphysik}
-      \field{title}{Die Methode der Greenschen Funktionen in der Festk\"{o}rperphysik}
-      \field{year}{1979}
-    \endentry
-    \entry{Nolting}{book}{}
+    \entry{Iliev}{article}{}
       \name{labelname}{1}{}{%
-        {{hash=2d783319c73287a266d2bc0cb2929f91}{Nolting}{N\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=7b0556eba138aef20d319de4814b80b8}{Iliev}{I\bibinitperiod}{B.\bibnamedelimi Z.}{B\bibinitperiod\bibinitdelim Z\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=2d783319c73287a266d2bc0cb2929f91}{Nolting}{N\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=7b0556eba138aef20d319de4814b80b8}{Iliev}{I\bibinitperiod}{B.\bibnamedelimi Z.}{B\bibinitperiod\bibinitdelim Z\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{2d783319c73287a266d2bc0cb2929f91}
-      \strng{fullhash}{2d783319c73287a266d2bc0cb2929f91}
-      \field{labelalpha}{Nol09}
+      \strng{namehash}{7b0556eba138aef20d319de4814b80b8}
+      \strng{fullhash}{7b0556eba138aef20d319de4814b80b8}
+      \field{labelalpha}{Ili02}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Fundamentals of many-body physics : principles and methods}
-      \field{isbn}{978-3-540-71930-4}
-      \field{title}{Fundamentals of many-body physics : principles and methods}
-      \field{year}{2009}
-    \endentry
-    \entry{Schwabl}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{06b4aecc4ef33989cab7b7bf99b832ad}
-      \strng{fullhash}{06b4aecc4ef33989cab7b7bf99b832ad}
-      \field{labelalpha}{Sch08}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Advanced Quantum Mechanics}
-      \field{edition}{4. ed.}
-      \field{title}{Advanced Quantum Mechanics}
-      \field{year}{2008}
-    \endentry
-    \entry{Schwabl2}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{06b4aecc4ef33989cab7b7bf99b832ad}
-      \strng{fullhash}{06b4aecc4ef33989cab7b7bf99b832ad}
-      \field{labelalpha}{Sch06}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Statistische Mechanik}
-      \field{edition}{3., aktualisierte Aufl.}
-      \field{title}{Statistische Mechanik}
-      \field{year}{2006}
-    \endentry
-    \entry{Audretsch}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=4e2721043c992be6ef9e92fd4f144a74}{Audretsch}{A\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=4e2721043c992be6ef9e92fd4f144a74}{Audretsch}{A\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley-VCH}%
-      }
-      \strng{namehash}{4e2721043c992be6ef9e92fd4f144a74}
-      \strng{fullhash}{4e2721043c992be6ef9e92fd4f144a74}
-      \field{labelalpha}{Aud05}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
-      \field{isbn}{3-527-40452-X; 978-3-527-40452-0978-325-40452-0}
-      \field{title}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
-      \field{year}{2005}
+      \field{labeltitle}{On the Action Principle in Quantum Field Theory}
+      \field{journaltitle}{ArXiv High Energy Physics - Theory e-prints}
+      \field{title}{On the Action Principle in Quantum Field Theory}
+      \field{year}{2002}
+      \verb{url}
+      \verb arXiv:hep-th/0204003
+      \endverb
     \endentry
     \entry{Noether1}{article}{}
       \name{labelname}{1}{}{%
@@ -363,6 +288,101 @@
       \field{isbn}{978-0-19-856633-5}
       \field{title}{Many-body quantum theory in condensed matter physics: an introduction}
       \field{year}{2010}
+    \endentry
+    \entry{Schwabl}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{06b4aecc4ef33989cab7b7bf99b832ad}
+      \strng{fullhash}{06b4aecc4ef33989cab7b7bf99b832ad}
+      \field{labelalpha}{Sch08}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Advanced Quantum Mechanics}
+      \field{edition}{4. ed.}
+      \field{title}{Advanced Quantum Mechanics}
+      \field{year}{2008}
+    \endentry
+    \entry{Schwabl2}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{06b4aecc4ef33989cab7b7bf99b832ad}
+      \strng{fullhash}{06b4aecc4ef33989cab7b7bf99b832ad}
+      \field{labelalpha}{Sch06}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Statistische Mechanik}
+      \field{edition}{3., aktualisierte Aufl.}
+      \field{title}{Statistische Mechanik}
+      \field{year}{2006}
+    \endentry
+    \entry{Audretsch}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=4e2721043c992be6ef9e92fd4f144a74}{Audretsch}{A\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4e2721043c992be6ef9e92fd4f144a74}{Audretsch}{A\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH}%
+      }
+      \strng{namehash}{4e2721043c992be6ef9e92fd4f144a74}
+      \strng{fullhash}{4e2721043c992be6ef9e92fd4f144a74}
+      \field{labelalpha}{Aud05}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
+      \field{isbn}{3-527-40452-X; 978-3-527-40452-0978-325-40452-0}
+      \field{title}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
+      \field{year}{2005}
+    \endentry
+    \entry{Elk&Gasser}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=07b20eb10d098b1c89438f0d3b0d22ed}{Gasser}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=07b20eb10d098b1c89438f0d3b0d22ed}{Gasser}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Akademie-Verl.}%
+      }
+      \strng{namehash}{8c0bea4fb94c7c1fb42aa6ceedb2bd5c}
+      \strng{fullhash}{8c0bea4fb94c7c1fb42aa6ceedb2bd5c}
+      \field{labelalpha}{EG79}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Die Methode der Greenschen Funktionen in der Festk\"{o}rperphysik}
+      \field{title}{Die Methode der Greenschen Funktionen in der Festk\"{o}rperphysik}
+      \field{year}{1979}
+    \endentry
+    \entry{Nolting}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=2d783319c73287a266d2bc0cb2929f91}{Nolting}{N\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2d783319c73287a266d2bc0cb2929f91}{Nolting}{N\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2d783319c73287a266d2bc0cb2929f91}
+      \strng{fullhash}{2d783319c73287a266d2bc0cb2929f91}
+      \field{labelalpha}{Nol09}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Fundamentals of many-body physics : principles and methods}
+      \field{isbn}{978-3-540-71930-4}
+      \field{title}{Fundamentals of many-body physics : principles and methods}
+      \field{year}{2009}
     \endentry
   \endsortlist
 \endrefsection
