@@ -2,7 +2,7 @@
 %
 %
 \chapter{Spin-Fermion-Model}
-\label{ch: spin fermion model}
+\label{ch:spin fermion model}
 %
 %
 %
@@ -16,7 +16,7 @@ Besides we review explicitly the conservation of momentum and non-conservation o
 For breaking translation symmetry umklapp scattering is introduced and we prove that this is unconserving momentum.
 %
 %
-\section{Spin-Fermion-Model}
+\section{The Spin-Fermion-Model at the Onset of the Antiferromagnetic Quantum Phase Transition}
 \label{sec:spin-fermion-model}
 %
 %
@@ -92,33 +92,140 @@ The spin wave velocity is of the same order as the Fermi velocity since spin flu
 Furthermore, the magnetic susceptibility possesses a peak at the momentum vector $\vb{Q} = (\pi, \pi)$.
 This implicates a strong coupling interaction between momentum vectors $\vb{k}$ and $\vb{k} + \vb{Q}$.
 
-Phase transitions are always associated by an order parameter equally the investigated antiferromagnetic phase transition, where the local magnetization measured by the spin expectation value $\expval{\mt{S}_{\mu}}$ is the corresponded one.
-Similar to the propagator the index $\mu$ indicated the spatial direction.
+Phase transitions are always associated by an order parameter equally the investigated antiferromagnetic phase transition, where the local magnetization measured by the spin expectation value $\expval{\vb{S}(\vb{r}_{i})}$ is the corresponding order parameter.
+Naturally, we have to summerarize over all spins located at a certain position $\vb{r}_{i}$.
 The order parameter is finite in the antiferromagnetic ordered phase and reaches zero in the paramagnetic disordered phase.
-Further, the expectation value of the spin operator is spatially modulated according to $\expval{\mt{S}_{\mu}} \sim e^{i\vb{Q}\vb{R}}$, where $\vb{R}$ is some lattice vector \cite{Weiss}, and therefore the order parameter and equally the propagator are periodical quantities.
+Further, the expectation value of the spin operator is spatially modulated according to $\expval{\mt{S}_{\mu}} \sim \exp({i\vb{Q}\vb{R}})$, where $\vb{R}$ is some lattice vector \cite{Weiss}, and therefore the order parameter and equally the propagator are periodical quantities.
 In reciprocal space this is reflected in the periodicity  of the magnetic Brillouin zone spanned by the vector $\vb{Q}$.
 
 Our describtion of the antiferromagnetic quantum phase transition in the spin-fermion-model is based on a few fundamental assumptions, comparatively to \cite{Abanov&Chubukov&Schmalian}.
-We assume spin fluctuations arise over a large range of the tuning parameter and other low-energy collective degrees of freedom, independent on spin excitations, are neglectable.
-Starting by large values of the tuning parameter g, where the metal is in the paramagnetic phase, the physical behaviour is described by Landau's Fermi liquid theory.
-Decreasing the tuning parameter and getting closer to the quantum critical point changes the behaviour of the Fermi liquid.
+We assume spin fluctuations arise over a large range of the tuning parameter and, futhermore, other low-energy collective degrees of freedom, independent on spin excitations, are neglectable.
+Starting by large values of the tuning parameter g in the paramagnetic phase, the physical behaviour is described by Landau's Fermi liquid theory.
+Decreasing the tuning parameter and getting closer to the quantum critical point changes the behaviour to a the Non-Fermi liquid.
 Assuming only one type of fermions the arising collective modes are originated due to permanent interaction between particles and holes.
 These bosonic spin excitations determine the physics in the vicinity of the quantum critical point and turning into smooth modes.
-Therefore, we assume that only one dominant channel exist for fermion-fermion interaction with energies smaller than an energy cut-off $\Lambda$.
+Therefore, we assume that only one dominant channel exist for fermion-fermion interaction with energies smaller than a certain energy cut-off $\Lambda$.
 Further we introduce on collective spin mode which containts this interaction.
-\todo{Diesen Abschnitt nochmal \"uberarbeiten}
-The obtained effective Hamiltonian for the spin fluctuations in the low-energy theory is given by
+
+In the vicinity of the quantum critical point the (magnetic) correlation length $\xi$ and the coupling constant $\lambda$ diverges
+Therefore the correlation length is much larger than the lattice constant, $\xi \gg a$, and the coupling constant is much larger than the band gap, $\lambda gg \Delta$, where the band gap as associated with the energy of spin excitations.
+In the limit of large distance and small energies/temperatures a mircoscopic consideration of the lattice Hamiltonian is unnecessary.
+In this low-energy theory spin fluctuations are described as a three component bosonic field $\Phi_{\mu}(\vb{x}, \tau)$ befined as a sum over all spin oparators analysed in the neighbourhood of the spin's site $i$, $\Phi_{\mu}(\vb{x}, \tau) \sim \sum_{i \in \Gamma(\vb{r}_{i})} \mt{S}_{\mu}(\vb{r}_{i})$, where $\mu$ is the spatial direction of the field and $\Gamma(\vb{r}_{i})$ represent the neighbourhood around the spin position $\vb{r}_{i}$ \cite{SachdevQCP}.
+The magnitude of the bosnic field is chosen arbitrary and the field itself is considered as a real field.
+The obtained effective Hamiltonian for the spin fluctuations in the low-energy theory is then given by
 %
 \begin{align}
 	\mt{H}_{\Phi} &= 
-	 	\int_{\vb{k}}\, \Big[-\frac{\vb{k}^{2}}{2} - \frac{r}{2}\Big] \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},\tau)
+	 	\sum\limits_{\mu} \int_{\vb{k}}\, \Big[
+	 	-\frac{\vb{k}^{2}}{2} - \frac{r}{2}\Big] \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},\tau)
 		+
-		\frac{v_{\mt{S}}^{2}}{2} \pi_{\mu}(\vb{k},\tau) \pi_{\mu}(-\vb{k},\tau)
+		\frac{v_{\mt{S}}^{2}}{2} \pi_{\mu}(\vb{k},\tau) \pi_{\mu}(-\vb{k},\tau),
 	\label{eq:Hamiltonian spin fluctuation}
 \end{align}
 %
+where $r$ is a control parameter and corresponds to the squared inverse correlation length, $r = \xi^{-2}$.
+The integral extends over the first Brillouin zone and the sum runs over the spatial direction of the bosonic field.
 
-In two dimensions the dimensionless coupling constant $\lambda$ is proportional to the inverse magnetic correlation length $\xi$ and diverges at the quantum critical point.
+Further we have to take into account that the spin densiy waves are damped in consequence of the interaction with fermions.
+The spin itself doesn't possess an own damping source.
+The whole damping is governed by decaying of particel-holes-pairs and the full renormalized particel-hole bubble corresponds to the inverse lifetime of spin fluctuations.
+The interation Hamiltonian between spin density waves and fermions is given by
+%
+\begin{align}
+	\mt{H}_{\Psi\Phi} &= 
+		-\lambda \sum\limits_{\mu} \int_{\vb{k}} \int_{\vb{q}}\,
+		\Phi_{\mu}(\vb{k}-\vb{q}, \tau)
+		\bigg[
+			\Psi_{\mt{a}}^{\dag}(\vb{k},\tau) \cdot \sigma_{\mu} \cdot \Psi_{\mt{b}}(\vb{q},\tau)
+			+
+			\Psi_{\mt{b}}^{\dag}(\vb{k},\tau) \cdot \sigma_{\mu} \cdot \Psi_{\mt{a}}(\vb{q},\tau)
+		\bigg],
+	\label{eq:Hamiltonian interaction}
+\end{align}
+%
+where $\lambda$ is the coupling constant, both integrals extend over the first Brillouin zone and the sum runs over all spatial directions of the bosonic field.
+The index a and b at the fermionic fields $\Psi$ represent the two different Fermi surfaces in the obtained model which is explained below presently.
+The imaginary part of the susceptibility has to be computed in the low-energy limit with the tools of the quantum field pertubation theory.
+An explicite calculation is presented in the appendix \ref{app:particel-hole-bubble}.
+Further, assuming the dynamic of the spin fluctuations is governed by the low-energy fermions the $\omega^{2}$-term in the susceptibility \eqref{eq:undamped spin propagator} is neglectable \cite{Abanov&Chubukov&Schmalian} and at the vicinity of the quantum critical point the correlation length diverges, so $\xi^{-2} \to 0$.
+Then the damped magnetic susceptibility is then given by
+%
+\begin{align}
+	\mathcal{D}_{\mu}(\vb{q}, i\omega_{n}) = \sum\limits_{\vb{Q}} \frac{1}{(\vb{q}+\vb{Q})^{2} + \gamma|\omega_{n}|},
+	\label{eq:undamped spin propagator}
+\end{align}
+%
+where $\omega_{n}$ represent the bosonic Matsubara frequency.
+Due to the fact that damping of spin fluctuations is strongly connected to fermions their are no independent degrees of freedom.
+The damped susceptibility constitutes the interaction between fermions on the Fermi surface seperated by the large vector $\vb{Q}$.
+These points on the Fermi surface are labeled as hot-spots in two dimensions, which we want to discuss next.
+%
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{hotspots.pdf}
+	\caption{
+One the left hand side the Brillouin zone is depicted containing the Fermi surface of both species of fermions, $\tilde{\Psi}_{\mt{a}}$ and $\tilde{\Psi}_{\mt{b}}$.
+While the fermions $\tilde{\Psi}_{\mt{a}}$ are located with an anisotropic parapolical dispersion at the origin $(0,0)$, the fermions $\tilde{\Psi}_{\mt{b}}$ are located with a $\flatfrac{\pi}{2}$-rotated anisotropic parapolical dispersion at the corners of the Brillouin zone, $(\pi,\pi)$ for example.
+The vector $\vb{Q}$ connects certain points on the Fermi surface, called hotspots and represented with dots. 
+As a result of this an attraction between these fermions occurs.
+On the right hand side the fermions $\tilde{\Psi}_{\mt{a}}$ are shifted to the corner at $(\pi,\pi)$.
+The convienence of this represantation is that the coupling between fermions and spin fluctuations is local and independent of the position.
+	}
+	\label{fig:hotspots}
+\end{figure}
+%
+In comparison to a normal metals these new interaction of spin fluctuations seperates the Fermi surface in "hot" and "cold" manifolds.
+Considering a point $\vb{k}$ on the Fermi surface of a $d$-dimensional system, so the fermion has zero energy.
+The spin density wace connects this point to another point $\vb{k}+\vb{Q}$.
+We require that this point has to be also on the Fermi surface, which is our second constraints.
+Both contraints yield a $d-2$-dimension manifold for a $d$-dimensional system.
+In the case of $d=2$ the "hot" manifold is called a hot-spot.
+Another visualization of "hot" manifolds offers the magnetic Brillouin zone spanned by the vector $\vb{Q}$.
+The intersections of the magnetic Brilouin zone and the Fermi surface are eauivalent to the "hot" manifolds.
+
+In our investigated model the fermions are considered as free up to the interaction with the spin fluctuations.
+We assume two species of fermions, $\tilde{\Psi}_{\mt{a}}$ and $\tilde{\Psi}_{\mt{b}}$, with an anisotropic parabolic dispersion, as suggested in \cite{Patel&Sachdev} and depicted on the left hand side in figure \ref{fig:hotspots}.
+This isn't a discrepancy to our previous constraint, assuming one fermion since both species of fermions are electrons and differ only in their dispersion.
+The fermions $\tilde{\Psi}_{\mt{a}}$ and $\tilde{\Psi}_{\mt{b}}$ are located on an ellipse around the origin $(0,0)$ and $(\pi,\pi)$, respectivily.
+Both ellipses are seperated by the vector $\vb{Q} = (\pi,\pi)$ and rotated by $\flatfrac{\pi}{2}$ to each other.
+For achieving a continuum theory the ellipse centered around $(\pi,\pi)$ is shifted by the vector $\vb{Q}$ to the origin.
+Therefore new fermionic fields, $\tilde{\Psi}_{\mt{a}}(\vb{r}) = \Psi_{\mt{a}}(\vb{r})$ and $\tilde{\Psi}_{\mt{b}}(\vb{r}) = \Psi_{\mt{b}}(\vb{r}) \exp(i\vb{Q}\vb{r})$, are introduced.
+The new dispersion of the fermions $\Psi_{\mt{a}}(\vb{r})$ and $\Psi_{\mt{b}}(\vb{r})$ is depicted on the right hand side in figure \ref{fig:hotspots}
+The enormous advantage is that the coupling between the fermions caused by spin density waves is local and indipendent of the position.
+In reciprocal space, the free continuum Hamiltonian of the fermions $\Psi_{\mt{a}}(\vb{r})$ and $\Psi_{\mt{b}}(\vb{r})$ is given by
+%
+\begin{align}
+	\mt{H}_{\Psi} &= 
+	 	\int_{\vb{k}}\,
+	 	\bigg[
+	 		\epsilon_{\mt{a}}(\vb{k})
+	 		\psi_{\mt{a}}^{\dag}(\vb{k},\tau)
+	 		\psi_{\mt{a}}(\vb{k},\tau)
+	 		+
+	 		\epsilon_{\mt{b}}(\vb{k})
+	 		\psi_{\mt{b}}^{\dag}(\vb{k},\tau)
+	 		\psi_{\mt{b}}(\vb{k},\tau)
+	 	\bigg],
+	 \label{eqHamiltonian electrons}
+\end{align}
+%
+where the intergal extends over the first Brillouin zone and $\epsilon_{\mt{a}}(\vb{k})$ and $\epsilon_{\mt{b}}(\vb{k})$ are the anisotropic parabolical dispersions, corresponding to the fermion species a and b, given by
+%
+\begin{align}
+	\epsilon_{\mt{a}}(\vb{k}) = \frac{k_{x}^{2}}{2m_{1}} + \frac{k_{y}^{2}}{2m_{2}} - \mu_{0}
+	\qq{and}
+	\epsilon_{\mt{a}}(\vb{k}) = \frac{p_{x}^{2}}{2m_{2}} + \frac{p_{y}^{2}}{2m_{1}} - \mu_{0},
+	\label{eq:dispersion relations}
+\end{align}
+%
+where $\mu_{0}$ is the chemical potential.
+%
+%
+\section{Prove of Momentum Conservation and Breaking Translation Symmetry by Umklapp Scattering}
+\label{sec:umklapp scattering}
+%
+%
+
 
 
 

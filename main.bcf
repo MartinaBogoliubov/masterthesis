@@ -1956,16 +1956,19 @@
     <bcf:citekey order="9">Patel&amp;Sachdev</bcf:citekey>
     <bcf:citekey order="10">Weiss</bcf:citekey>
     <bcf:citekey order="11">Abanov&amp;Chubukov&amp;Schmalian</bcf:citekey>
-    <bcf:citekey order="12">Elk&amp;Gasser</bcf:citekey>
-    <bcf:citekey order="13">Nolting</bcf:citekey>
-    <bcf:citekey order="14">Schwabl</bcf:citekey>
-    <bcf:citekey order="15">Schwabl2</bcf:citekey>
-    <bcf:citekey order="16">Audretsch</bcf:citekey>
-    <bcf:citekey order="17">Drude</bcf:citekey>
-    <bcf:citekey order="18">Noether1</bcf:citekey>
-    <bcf:citekey order="19">Chycholl2</bcf:citekey>
-    <bcf:citekey order="20">Jung</bcf:citekey>
-    <bcf:citekey order="21">Bruus&amp;Flensberg</bcf:citekey>
+    <bcf:citekey order="12">SachdevQCP</bcf:citekey>
+    <bcf:citekey order="13">Abanov&amp;Chubukov&amp;Schmalian</bcf:citekey>
+    <bcf:citekey order="14">Patel&amp;Sachdev</bcf:citekey>
+    <bcf:citekey order="15">Elk&amp;Gasser</bcf:citekey>
+    <bcf:citekey order="16">Nolting</bcf:citekey>
+    <bcf:citekey order="17">Schwabl</bcf:citekey>
+    <bcf:citekey order="18">Schwabl2</bcf:citekey>
+    <bcf:citekey order="19">Audretsch</bcf:citekey>
+    <bcf:citekey order="20">Drude</bcf:citekey>
+    <bcf:citekey order="21">Noether1</bcf:citekey>
+    <bcf:citekey order="22">Chycholl2</bcf:citekey>
+    <bcf:citekey order="23">Jung</bcf:citekey>
+    <bcf:citekey order="24">Bruus&amp;Flensberg</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
