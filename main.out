@@ -5,25 +5,26 @@
 \BOOKMARK [0][-]{chapter.3}{Spin-Fermion-Model}{}% 5
 \BOOKMARK [1][-]{section.3.1}{The Spin-Fermion-Model at the Onset of the Antiferromagnetic Quantum Phase Transition}{chapter.3}% 6
 \BOOKMARK [1][-]{section.3.2}{Momentum Conservation in the Spin-Fermion-Model and the Consequence of Umklapp Scattering}{chapter.3}% 7
-\BOOKMARK [0][-]{chapter.4}{The Static Conductivity in the Spin Fermion Model Pertubated by Umklapp Scattering}{}% 8
-\BOOKMARK [1][-]{section.4.1}{Infinite Conductivity in Systems with Unbroken Translation Symmetry}{chapter.4}% 9
-\BOOKMARK [1][-]{section.4.2}{Finite Conductivity because of Breaking the Translation Symmetry via Umklapp Scattering}{chapter.4}% 10
-\BOOKMARK [2][-]{subsection.4.2.1}{Temperature Dependence of the dc-Conductivity}{section.4.2}% 11
-\BOOKMARK [2][-]{subsection.4.2.2}{Computation of the Static Susceptibility}{section.4.2}% 12
-\BOOKMARK [0][-]{chapter.5}{Memory-Matrix-Formalism}{}% 13
-\BOOKMARK [1][-]{section.5.1}{Motivation}{chapter.5}% 14
-\BOOKMARK [1][-]{section.5.2}{Linear Response Theory}{chapter.5}% 15
-\BOOKMARK [2][-]{subsection.5.2.1}{Kubo formula}{section.5.2}% 16
-\BOOKMARK [2][-]{subsection.5.2.2}{Kubo relaxation function}{section.5.2}% 17
-\BOOKMARK [2][-]{subsection.5.2.3}{Kramer-Kronig-relation}{section.5.2}% 18
-\BOOKMARK [2][-]{subsection.5.2.4}{Spectral representation}{section.5.2}% 19
-\BOOKMARK [1][-]{section.5.3}{Deviation of the Memory-Matrix-Formalism}{chapter.5}% 20
-\BOOKMARK [2][-]{subsection.5.3.1}{Time Reversal Symmetry}{section.5.3}% 21
-\BOOKMARK [0][-]{chapter.6}{The Damped Propagator of Spin Density Waves}{}% 22
-\BOOKMARK [1][-]{section.6.1}{The Free Spin Density Wave Propagator}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.2}{The Damped Spin Density Wave Propagator}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.3}{Transformation of the Propagator on the Imaginary Axis}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 26
-\BOOKMARK [0][-]{appendix.A}{Properties of the Kubo Relaxation Function}{}% 27
-\BOOKMARK [0][-]{appendix.B}{Conversion of \(to.|to. \(to.- L0\)to.-1 |to.\)to.}{}% 28
-\BOOKMARK [0][-]{appendix.C}{Fierz Identity}{}% 29
+\BOOKMARK [0][-]{chapter.4}{The Static Conductivity in the Spin Fermion Model including Umklapp Scattering}{}% 8
+\BOOKMARK [0][-]{chapter.5}{Memory-Matrix-Formalism}{}% 9
+\BOOKMARK [1][-]{section.5.1}{Motivation}{chapter.5}% 10
+\BOOKMARK [1][-]{section.5.2}{Linear Response Theory}{chapter.5}% 11
+\BOOKMARK [2][-]{subsection.5.2.1}{Kubo formula}{section.5.2}% 12
+\BOOKMARK [2][-]{subsection.5.2.2}{Kubo relaxation function}{section.5.2}% 13
+\BOOKMARK [2][-]{subsection.5.2.3}{Kramer-Kronig-relation}{section.5.2}% 14
+\BOOKMARK [2][-]{subsection.5.2.4}{Spectral representation}{section.5.2}% 15
+\BOOKMARK [1][-]{section.5.3}{Deviation of the Memory-Matrix-Formalism}{chapter.5}% 16
+\BOOKMARK [2][-]{subsection.5.3.1}{Time Reversal Symmetry}{section.5.3}% 17
+\BOOKMARK [0][-]{chapter.6}{The Damped Propagator of Spin Density Waves}{}% 18
+\BOOKMARK [1][-]{section.6.1}{The Free Spin Density Wave Propagator}{chapter.6}% 19
+\BOOKMARK [1][-]{section.6.2}{The Damped Spin Density Wave Propagator}{chapter.6}% 20
+\BOOKMARK [1][-]{section.6.3}{Transformation of the Propagator on the Imaginary Axis}{chapter.6}% 21
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 22
+\BOOKMARK [0][-]{appendix.A}{calculation}{}% 23
+\BOOKMARK [1][-]{section.A.1}{Infinite Conductivity in Systems with Unbroken Translation Symmetry}{appendix.A}% 24
+\BOOKMARK [1][-]{section.A.2}{Finite Conductivity because of Breaking the Translation Symmetry via Umklapp Scattering}{appendix.A}% 25
+\BOOKMARK [2][-]{subsection.A.2.1}{Temperature Dependence of the dc-Conductivity}{section.A.2}% 26
+\BOOKMARK [2][-]{subsection.A.2.2}{Computation of the Static Susceptibility}{section.A.2}% 27
+\BOOKMARK [0][-]{appendix.B}{Properties of the Kubo Relaxation Function}{}% 28
+\BOOKMARK [0][-]{appendix.C}{Conversion of \(to.|to. \(to.- L0\)to.-1 |to.\)to.}{}% 29
+\BOOKMARK [0][-]{appendix.D}{Fierz Identity}{}% 30

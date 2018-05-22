@@ -20,54 +20,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Momentum Conservation in the Spin-Fermion-Model and the Consequence of Umklapp Scattering}{14}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}The Static Conductivity in the Spin Fermion Model Pertubated by Umklapp Scattering}{17}{chapter.4}
+\contentsline {chapter}{\numberline {4}The Static Conductivity in the Spin Fermion Model including Umklapp Scattering}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Infinite Conductivity in Systems with Unbroken Translation Symmetry}{17}{section.4.1}
+\contentsline {chapter}{\numberline {5}Memory-Matrix-Formalism}{21}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Finite Conductivity because of Breaking the Translation Symmetry via Umklapp Scattering}{20}{section.4.2}
+\contentsline {section}{\numberline {5.1}Motivation}{21}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Temperature Dependence of the dc-Conductivity}{23}{subsection.4.2.1}
+\contentsline {section}{\numberline {5.2}Linear Response Theory}{22}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Computation of the Static Susceptibility}{34}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {5.2.1}Kubo formula}{22}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Memory-Matrix-Formalism}{39}{chapter.5}
+\contentsline {subsection}{\numberline {5.2.2}Kubo relaxation function}{24}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Motivation}{39}{section.5.1}
+\contentsline {subsection}{\numberline {5.2.3}Kramer-Kronig-relation}{26}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Linear Response Theory}{40}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.4}Spectral representation}{27}{subsection.5.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Kubo formula}{40}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Deviation of the Memory-Matrix-Formalism}{28}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Kubo relaxation function}{42}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3.1}Time Reversal Symmetry}{35}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Kramer-Kronig-relation}{44}{subsection.5.2.3}
+\contentsline {paragraph}{\nonumberline 1. case:}{37}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Spectral representation}{45}{subsection.5.2.4}
+\contentsline {paragraph}{\nonumberline 2. case:}{37}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Deviation of the Memory-Matrix-Formalism}{46}{section.5.3}
+\contentsline {chapter}{\numberline {6}The Damped Propagator of Spin Density Waves}{39}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Time Reversal Symmetry}{53}{subsection.5.3.1}
+\contentsline {section}{\numberline {6.1}The Free Spin Density Wave Propagator}{39}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{55}{section*.33}
+\contentsline {section}{\numberline {6.2}The Damped Spin Density Wave Propagator}{41}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{55}{section*.34}
+\contentsline {paragraph}{\nonumberline 1. case:}{46}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}The Damped Propagator of Spin Density Waves}{57}{chapter.6}
+\contentsline {paragraph}{\nonumberline 2. case:}{47}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}The Free Spin Density Wave Propagator}{57}{section.6.1}
+\contentsline {section}{\numberline {6.3}Transformation of the Propagator on the Imaginary Axis}{48}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The Damped Spin Density Wave Propagator}{59}{section.6.2}
+\contentsline {chapter}{\numberline {7}Conclusion}{51}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{64}{section*.42}
+\contentsline {chapter}{\numberline {A}calculation}{53}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{65}{section*.43}
+\contentsline {section}{\numberline {A.1}Infinite Conductivity in Systems with Unbroken Translation Symmetry}{53}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Transformation of the Propagator on the Imaginary Axis}{66}{section.6.3}
+\contentsline {section}{\numberline {A.2}Finite Conductivity because of Breaking the Translation Symmetry via Umklapp Scattering}{56}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{69}{chapter.7}
+\contentsline {subsection}{\numberline {A.2.1}Temperature Dependence of the dc-Conductivity}{59}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Properties of the Kubo Relaxation Function}{71}{appendix.A}
+\contentsline {subsection}{\numberline {A.2.2}Computation of the Static Susceptibility}{69}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Conversion of ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ } {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }\omega - \mathrm {L}_{0}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }^{-1} {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$}{73}{appendix.B}
+\contentsline {chapter}{\numberline {B}Properties of the Kubo Relaxation Function}{75}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Fierz Identity}{75}{appendix.C}
+\contentsline {chapter}{\numberline {C}Conversion of ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ } {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }\omega - \mathrm {L}_{0}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }^{-1} {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left |\vcenter to\@ne \big@size {}\right .$}\box \z@ }{\mathaccentV {dot}05F{\mathrm {P}}}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$}{77}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}Fierz Identity}{79}{appendix.D}
