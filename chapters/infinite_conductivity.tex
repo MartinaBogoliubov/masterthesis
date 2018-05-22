@@ -6,13 +6,13 @@
 %
 %
 %
-Ever since Drude published his theory about the electrical conductivity in metals \cite{Drude} at the beginning of the last century it is well known that non-conversion of electron momentum in a system is required for finite electrical conductivity.
-In Drude's model the electrons possess a mean scattering time $\tau_{\mt{el}}$, which represent the mean time between two scattering events of an electron and a lattice atom.
-At each scattering event the electrons transfer momentum to the lattice atoms, which is the reason electron momentum isn't a conserved quantity.
-In the case of conserved momentum an applied electrical field, for example, is accelerated the electrons up to an infinite velocity, by what an infinite conductivity is eventuated.
+Ever since Drude published his theory about the electrical conductivity in metals \cite{Drude} at the beginning of the last century, it is well known that non-conversion of electron momentum in a system is required for finite electrical conductivity.
+In Drude's model, the electrons possess a mean scattering time $\tau_{\mt{el}}$ representing the mean time between two scattering events of an electron and a lattice atom.
+At each scattering event, the electrons transfer momentum to the lattice atoms, which is the reason electron momentum is not a conserved quantity.
+In the case of conserved momentum, if an electrical field is exemplary applied, it accelerates electrons up to an infinite velocity, causing infinite conductivity.
 
-In the following a momentum conserving system is considered and the electrical conductivity is computed using the memory-matrix-formalism, where an infinite conductivity is expected.
-Therfore firstly a short overview over the memory-matrix-formalism is given, where a detailed and explicite deviations follows in chapter \ref{ch: memory matrix formalism}.
+In the following section, a momentum conserving system is considered and the electrical conductivity is computed using the memory-matrix-formalism, where an infinite conductivity is expected.
+Beforehand, a short overview\todo{overview oder review?} over the memory-matrix-formalism is given, followed by detailed and explicite deviations in chapter \ref{ch: memory matrix formalism}.
 %
 %
 \section{An Overview over the Memory-Matrix-Formalsim}
@@ -25,58 +25,60 @@ Completely general, a physical dynamical variable can be splitted into two parts
 The latter represent processes like fluctuations or initial transient processes, which have in common a short lifetime comparing to the secular processes.
 The dynamic and time evolution of $\mt{A}(t)$ is therefore dominated by secular processes.
 
-This seperation enables a simple but clever and intelligent geometrical interpretation, where dynamical variables are considered as vectors in a vector space.
-Thereby the variables of the unpertubated system represent the basis vectors of this vector space, denoting in the case of the variable $\mt{A}(t)$ as A-axis.
-Due to pertubation the direction of the variabel $\mt{A}(t)$ changes with respect to the A-axis.
-The projection of $\mt{A}(t)$ onto the A-axis corresponds to the secular part, where the perpendicular component represents accordingly the non-secular parts.
+This seperation enables a simple but clever geometrical interpretation, where dynamical variables are considered to be vectors in a vector space.
+The variables of the unpertubated system represent the basis vectors of this vector space, denoting in the case of the variable $\mt{A}(t)$ as A-axis.\todo{besser formulieren}
+Due to pertubation the direction of the variable $\mt{A}(t)$ changes with respect to the A-axis.
+The projection of $\mt{A}(t)$ onto the A-axis corresponds to the secular part, whereas the perpendicular component represents the non-secular parts.
 
-First of all the mathematical framework has to be considered.
-In quantum mechanics the Liouville space, also called as operator space, is the respective vector space of the memory-matrix-formalism.
-Like the name operator space should supposed the vectors of the Liouville space are operators, which are certainly Hermitian.
+First of all, the mathematical framework for this vector space has to be established.
+In quantum mechanics, the Liouville space, also called as operator space, is the respective vector space of the memory-matrix-formalism.
+As indicated by the name \emph{operator space}, the vectors of the Liouville space are operators, all of which being Hermitian.
 The basis of the Liouville space is signified as $\{\toket{\mt{A}_{i}}\}$, where $i = 1,2,3,\dots,n$, and the corresponding dual space basis is denoted as $\{\tobra{\mt{A}_{i}}\}$.
-To make the definition of any vector space complete a scalar product is required, where the following one is chosen.
+To complete the definition of any vector space, a scalar product is required.
+The following one is chosen:
 %
 \begin{align}
-	\obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} = \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(t'+i\lambda)}
+	\obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(t')} = \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(t'+i\lambda)}.
 	\label{eq:scalar product Liouville space}
 \end{align}
 %
 The normal time evolution $\mt{A}_{i}(t) = e^{i\mt{H}t/\hbar} \mt{A}_{i}(0) e^{-i\mt{H}t/\hbar}$ of an operator should be valid so that $\mt{A}_{i}(i\lambda) = e^{-\lambda\mt{H}} \mt{A}_{i}(0) e^{\lambda\mt{H}}$ can be used.
-The choice of the scalar product is determined under the aspect that as a consequence the time evolution of $\mt{A}(t)$ given the most probably path, if secular processes are neglected, see \cite{Mori}.
-In quantum mechanics the dynamic of an operator is ususally described by the Heisenberg equation of motion, which is transformed using the dyad product into the Liouville space.
+If secular processes are neglected, the choice of the scalar product is determined under the aspect that as a consequence the time evolution of $\mt{A}(t)$ given the most probably path, see \cite{Mori}.
+In quantum mechanics, the dynamic of an operator is ususally described by the Heisenberg equation of motion, which is transformed using the dyad product into the Liouville space
 %
 \begin{align}
-	\oket{\dot{\mt{A}}_{i}(t)} = \frac{i}{\hbar} \oket{\comm{\mt{H}}{\mt{A}_{i}(t)}} = i \mt{L} \oket{\mt{A}_{i}(t)}
+	\oket{\dot{\mt{A}}_{i}(t)} = \frac{i}{\hbar} \oket{\comm{\mt{H}}{\mt{A}_{i}(t)}} = i \mt{L} \oket{\mt{A}_{i}(t)}.
 	\label{eq:HEM in LS}
 \end{align}
 %
-where the Hermitian Liouville operator, ${\mt{L} = \hbar^{-1} \comm{\mt{H}}{\mt{\bullet}}}$, is introduced, which is defined by acting onto an arbitrary operator.
+Here the Hermitian Liouville operator, ${\mt{L} = \hbar^{-1} \comm{\mt{H}}{\mt{\bullet}}}$, is introduced, which is defined by acting onto an arbitrary operator. \todo{zweiter Hauptsatz verbessern}
 The formal solution of this equation is given by $\toket{\mt{A}_{i}(t)} = \exp(it\mt{L}) \cdot \toket{\mt{A}_{i}(0)}$, where the time evolution of an operator is therefore given by the Liouville operator.
-In reference to the secular part in a pertubated system a projection operator is defined in the Liouville space.
-Starting therefore with a set of arbitrary operators $\{\mt{C}_{i}\}$. 
-The choice of the operators is different for each investigated problem and unimportant at the moment.
-The definition of the projection operator in Liouville space follows directly from the projection operator defined in the usually used Hilbert space in quantum mechanics.
+For our approach a further operator is required in the Liouville space, namely the projection operator.
+A set of arbitrary operators $\{\mt{C}_{i}\}$ is therefore defined.
+The choice of them is different for each observed problem and unimportant at the moment.
+The definition of the projection operator in Liouville space follows directly from the projection operator defined in the commonly used Hilbert space in quantum mechanics.
 %
 \begin{align}
 	\mt{P} = \sum\limits_{i,j} \frac{\oket{\mt{C}_{i}(0)} \obra{\mt{C}_{j}(0)}}{\obraket{\mt{C}_{i}(0)}{\mt{C}_{j}(0)}} 
 	\label{eq:projection operator}
 \end{align}
 %
-If the projection operator acting on some vector in Liouville space yields the projection onto the subspace spanned by the operator $\mt{C}_{i}$ and thus the operator $\mt{Q} = 1 - \mt{P}$ yields the corresponding part projected out of the subspace.
-Further the projection operator is Hermitian and fullfills the two properties $\mt{P}^{2} = \mt{P}$ and $\mt{PQ} = \mt{QP} = 0$.
+The projection operator acting on some vector in Liouville space yields the projection onto the subspace spanned by the operator $\mt{C}_{i}$.
+Thus, the operator $\mt{Q} = 1 - \mt{P}$ yields the corresponding part projected out of the subspace.
+Furthermore, the projection operator is Hermitian and fullfills the two properties $\mt{P}^{2} = \mt{P}$ and $\mt{PQ} = \mt{QP} = 0$.
 This completes the required mathematical basis of the memory-matrix formalism.
 
-Correlation functions are the natural approach describing the reaction of a dynamic variable on a pertubation.
-In quantum mechanics the correlation function is defined in Kubo's linear response theory as an integral over an expectation value of two operators, where one of them is certainly the investigated operator and the other one is the coupling operator from the pertubation Hamiltonian.
-In the Liouville space the correlation function is defined as
+Correlation functions are the natural approach to describe the reaction of a dynamic variable on a pertubation.
+In quantum mechanics, the correlation function is defined in Kubo's linear response theory as an integral over an expectation value of two operators, one of them being the investigated operator, and the other one being the coupling operator from the pertubation Hamiltonian.
+In the Liouville space, the correlation function is defined as
 %
 \begin{align}
 	\mathcal{C}_{ij}(t) := \obraket{\mt{A}_{i}(t)}{\mt{A}_{j}(0)} = \frac{1}{\beta} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\mt{A}_{i}^{\dag}(t) \mt{A}_{j}(i\lambda\hbar)},
 	\label{eq:correlation function in LS}
 \end{align}
 %
-where in the second step the definition of the scalar product \eqref{eq:scalar product Liouville space} is only used.
-Expressing the time evolution of $\mt{A}_{i}(t)$ with the Liouville operator, using the Laplace transformation and a few conversions yield a algebraic matrix equation of the correlation function, which has the form
+using the definition of the scalar product \eqref{eq:scalar product Liouville space}  in the second step.
+Expressing the time evolution of $\mt{A}_{i}(t)$ with the Liouville operator, using the Laplace transformation and a few conversions yields an algebraic matrix equation of the correlation function, which has the form
 %
 \begin{align}
 	\sum\limits_{l} \Big[\omega \delta_{il} - \Omega_{il} + i \Sigma_{il}(\omega)\Big] \mathcal{C}_{lj}(\omega) = \frac{i}{\beta} \chi_{ij}(0),
@@ -93,44 +95,44 @@ where the abbreviations
 \end{align}
 %
 are introduced.
-Both sums over $l$ and $k$ runs over the set of operators, defined by the projection operator.
-Similiarly the indices $i$ and $j$ has to be chosen out of this set of operators, so that \eqref{eq:algebraic equation correlation function} yields $n^{2}$ equations, if $n$ is the number of operators in the set.
-Both abbreviations can be combine to a function $M_{il}(\omega) := \Sigma_{il}(\omega) +i \Omega_{il}$, called the memory function.
-Thereby $\Sigma_{il}(\omega)$ takes the role of the quantum mechanical self energy and on the other hand $\Omega_{il}$ represents dissipative effects.
-In the case of an invariant Hamiltonian with respect to time reversal symmetry and that the operators $\mt{A}_{i}$ and $\mt{C}_{k}$ of the expectation value in $\Omega_{il}$ have same signature under time reversal symmetry $\Omega_{il}$ vanishes.
+Both sums over $l$ and $k$ run over the set of operators, defined by the projection operator.
+Similiarly, the indices $i$ and $j$ have to be chosen from this set of operators so that \eqref{eq:algebraic equation correlation function} yields $n^{2}$ equations, if $n$ is the number of operators in the set.
+Both abbreviations can be combined to a function $M_{il}(\omega) := \Sigma_{il}(\omega) +i \Omega_{il}$, called the memory function.
+In this function, $\Sigma_{il}(\omega)$ takes the role of the quantum mechanical self energy, while $\Omega_{il}$ represents dissipative effects.
+$\Omega_{il}$ vanishes under to condictions.
+The model Hamiltonian has to be invariant under time reversal symmetry.
+Furthermore, both operators, $\mt{A}_{i}$ and $\mt{C}_{k}$, have to be the same sign with respect to time reversal symmetry.
 This assertion is proven in great detail in \ref{subsec: time reversal symmetry}.
-Thus the memory function is solely determined by $\Sigma_{il}(\omega)$.
+In folloes that the memory function is solely determined by $\Sigma_{il}(\omega)$.
 
-The structur of $\Sigma_{il}(\omega)$ remembers to the one of the Laplace transformed correlation function, comparing equation \eqref{eq: correlation function frequency space}.
-Two things are different.
-The expectation value is performed with respect to the operators like $\mt{Q}\toket{\dot{\mt{A}}_{i}}$ instead of $\toket{\mt{A}_{i}}$ and on the other hand only the reduced Liouville operator QLQ is considered.
+The structur of $\Sigma_{il}(\omega)$ resembles the one of the Laplace transformed correlation function, comparing equation \eqref{eq:correlation function frequency space}, with two differences.
+The expectation value is performed with respect to the operators like $\mt{Q}\toket{\dot{\mt{A}}_{i}}$ instead of $\toket{\mt{A}_{i}}$, while only the reduced Liouville operator QLQ is considered.
 The latter projects at the part of the full Liouville operator, which causes the intrinsic fluctuations of the operator $\mt{A}$.
-In other words the operator QLQ describes the internal dynamics of all other degrees of freedom of the system, called the "bath", excluded A.
-The coupling to the bath is characterizied by the vector $\mt{Q}\toket{\dot{\mt{A}}_{i}}$.
-The coupling to the bath is clearly changing the dynamic behaviour of A.
+In other words, the operator QLQ describes the internal dynamics of all other degrees of freedom of the system, called the \emph{bath}, excluded A.
+The coupling to the bath is characterizied by the vector $\mt{Q}\toket{\dot{\mt{A}}_{i}}$ and is clearly changing the dynamic behaviour of A.
 %
 %
 \section{Electrical Conductivity in a Momentum Conserving System}
 \label{sec:conductivity conserved momentum}
 %
 %
-In the following with the aim of the memory-matrix-formalism the electrical conductivity is computed for a system, where momentum is conserved.
-Therefore an infinite conductivity is expected due to the fact that electrons does not transfer any momentum to other degrees of freedom.
-Besides conserving momentum the observed system has to statisfy some additional requirements.
-Firstly the current has to be an unconserved quantitiy.
-Further the scalar product $\tobraket{\mt{J}}{\mt{P}}$ between current and momentum has to be non-zero.
-In other words both quantities possess a finite overlap.
-These two quantities should also generated the subspace into the projection operator projects.
-Remember the sum in \eqref{eq:projection operator} summerizes over all operators $\mt{C}_{i}$, where the choice of them is different to each propblem and has to be done with respect to the investigated quantity, which is in our case the electrical conductivity.
-The electrical conductivity is determined by momentum and current, why we chosen them as our operators.
-Additionally the Hamiltonian has to be invariant under time reversal symmetry, which is our last requirement.
+In the following section, the electrical conductivity is computed for a system, where momentum is conserved, using the memory-matrix-formalism.
+An infinite conductivity is expected due to the fact that electrons do not transfer any momentum to other degrees of freedom.
+Besides conserving momentum, the observed system has to satisfy some additional requirements.
+Firstly, the current has to be an unconserved quantitiy.
+Furthermore, the scalar product $\tobraket{\mt{J}}{\mt{P}}$ of current and momentum has to be non-zero.
+In other words, both quantities possess a finite overlap.
+These two quantities should also generate the subspace into the projection operator projects.
+The sum in \eqref{eq:projection operator} summerizes over all operators $\mt{C}_{i}$, where the choice has now to be done with respect to the electrical conductivity.
+As electrical conductivity is determined by momentum and current, these are chosen as operators.
+The last requirement is for the Hamiltonian to be invariant under time reversal symmetry, which is our last requirement.
 
-Nevertheless one remerk has to be done for computing the conductivity.
+Nevertheless, one remark has to be made for computing the conductivity.
 Due to the fact that the Hamiltonian is invariant under time reversal symmetry and the subspace is generated by J and P, which have same signature under time reversal symmetry, no dissipative effects exist.
 The quantity $\Omega$, defined in \eqref{eq:Omega&Sigma}, is therefore zero.
 
-Purely general the electrical conductivity is given by the current-current correlation function $\mathcal{C}_{\mt{JJ}}(\omega)$, see \cite{Chycholl2}.
-The static case is obtained by taking the small freuqency limit, $\omega \to 0$, of the conductivity.
+In the strictly general sense, the electrical conductivity is given by the current-current correlation function $\mathcal{C}_{\mt{JJ}}(\omega)$ (see \cite{Chycholl2}).
+The static case is obtained by taking the small frequency limit, $\omega \to 0$, of the conductivity.
 %
 \begin{align}
 	\sigma_{\mt{dc}} = \lim\limits_{\omega \to 0} \sigma(\omega) = \lim\limits_{\omega \to 0}\, \beta\,\mathcal{C}_{\mt{JJ}}(\omega)
@@ -139,30 +141,31 @@ The static case is obtained by taking the small freuqency limit, $\omega \to 0$,
 %
 The current-current correlation function is given by equation \eqref{eq:algebraic equation correlation function}, which is in the case of the J-P subspace a $2\times2$ matrix equation.
 The quantity $\Sigma$ is simplified by two aspects.
-Firstly the momentum is conserved, which means the time derivative of P is zero and therefore all expectation values are trivially zero where $\dot{\mt{P}}$ is a taken vector.
-The remaining expectation values of $\Sigma$ contains only the current J, but these ones vanishing too.
+Firstly, the momentum is conserved, which means the time derivative of P is zero and therefore all expectation values are trivially zero where $\dot{\mt{P}}$ is a taken vector.
+The remaining expectation values of $\Sigma$ contains only the current J, but these ones are vanishing as well.
 The operator QLQ describes the intrinsic fluctuation of $\toket{\mt{J}}$, which are assumed to be zero.
-Further the operator Q acting on $\toket{\mt{J}}$ yields the coupling to these intrinsic fluctuation and therefore $\mt{Q}\toket{\mt{J}} = 0$.
-The obtained matrix equation has a very simple form and the current-current correlation function can be directly readed out as
+Furthermore, the operator Q acting on $\toket{\mt{J}}$ yields the coupling to these intrinsic fluctuation and, leading to $\mt{Q}\toket{\mt{J}} = 0$.
+The obtained matrix equation has a very simple form and the current-current correlation function can be directly read out as
 %
 \begin{align}
 	\mathcal{C}_{\mt{JJ}}(z) = \frac{i}{\omega} \beta^{-1} \chi_{\mt{JJ}}(\omega=0) = \frac{i}{\omega} \mathcal{C}_{\mt{JJ}}(t=0),
 	\label{eq:correlation function unpertubated system}
 \end{align}
 %
-where relation \eqref{eq: relation between C, Phi and chi} is used.
-The correlation function at time $t = 0$ is given by the scalar product $\tobraket{\mt{J}(0)}{\mt{J}(0)}$, see \eqref{eq:correlation function in LS}.
-Due to the fact that current and momentum are two closely connected quantities this is also valid for their correlation functions, why the current-current correlation function is expresed with respect to the momentum-momentum correlation function as next.
+where relation \eqref{eq: relation between C, Phi and chi} is being used.
+The correlation function at time $t = 0$ is given by the scalar product $\tobraket{\mt{J}(0)}{\mt{J}(0)}$ (see \eqref{eq:correlation function in LS}).
+Due to the fact that current and momentum are two closely connected quantities, this is also valid for their correlation functions
+For this reason, the current-current correlation function is expresed with respect to the momentum-momentum correlation function.
 
-Nothing or nobody bars us seperating the vector operator $\toket{\mt{J}(0)}$ into two pieces, one parallel and one perpendicular part, which are labeled as $\oket{\mt{J}_{\mid\mid}}$ and $\oket{\mt{J}_{\bot}}$, respectivily.
-How we learned above every variable generally consists of a secular and non-secular part, which doesn't mean that both parts actually exist in the observing model.
+The vector operator $\toket{\mt{J}(0)}$ is seperated into two pieces, one parallel and one perpendicular part, which are labeled as $\oket{\mt{J}_{\mid\mid}}$ and $\oket{\mt{J}_{\bot}}$, respectivily.
+As discussed above, every variable generally consists of a secular and non-secular part, which does not mean that both parts need to exist in the observing model.
 The non-secular part is represented by the perpendicular component of $\toket{J}$.
-In the experiement these processes are obseved as a constant slowly fluctuating background, known as noise.
-Apart from this the secular part is represented by the parallel component of $\toket{J}$ which is responsible for the electrical condictivity and is visable as the peak in the measurement, see \ref{fig:conductivity broken and unbroken translation symmetry}.
+In the experiement, these processes are obseved as a constant slowly fluctuating background, known as noise.
+The secular part is represented by the parallel component of $\toket{J}$, which is responsible for the electrical condictivity and is visable as a peak in the measurement, depicted in figure \ref{fig:conductivity broken and unbroken translation symmetry}.
 
-Drude's theory of conductivity yields a direct proportionality between J and P, see \cite{Gross&Marx} for example.
-Since momentum is conserved and current is unconserved in the investigated system this proportionality can't be valid.
-Nevertheless, remember, both quantities possess a finite overlap, which means that a part of the current is conserved and therefore parallel to the momentum.
+Drude's theory of conductivity yields a direct proportionality between J and P (see for example \cite{Gross&Marx}).
+Since momentum is conserved and current is unconserved, in the investigated system this proportionality can't be valid.
+Nevertheless, both quantities possess a finite overlap, which means that a part of the current is conserved and therefore parallel to the momentum.
 This part is the parallel component of J and given by the projection von $\toket{\mt{J}}$ onto $\toket{\mt{P}}$.
 %
 \begin{align}
@@ -171,15 +174,15 @@ This part is the parallel component of J and given by the projection von $\toket
 \end{align}
 %
 Seperating both current operator in $\tobraket{\mt{J}(0)}{\mt{J}(0)}$ yields four new correlation functions, where the mixed ones are zero, since $\oket{\mt{J}_{\mid\mid}}$ and $\oket{\mt{J}_{\bot}}$ are perpendicular to each other by construction.
-For the operators in the parallel correlation function $\tobraket{\mt{J}_{\mid\mid}(0)}{\mt{J}_{\mid\mid}(0)}$ equation \eqref{eq:parallel current as projection} is used.
-Thereby the correlation function of the parallel components is represented as a momentum-momentum correlation function.
-Inserting the obatined expression for the current-current correlation function in \eqref{eq:correlation function unpertubated system} the conductivity is given by 
+For the operators in the parallel correlation function, $\tobraket{\mt{J}_{\mid\mid}(0)}{\mt{J}_{\mid\mid}(0)}$ equation \eqref{eq:parallel current as projection} is used.
+In this equation, the correlation function of the parallel components is represented as a momentum-momentum correlation function.
+Inserting the obtained expression for the current-current correlation function in \eqref{eq:correlation function unpertubated system} the conductivity is given by 
 %
 \begin{align}
 	\sigma (\omega) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \frac{i}{\omega}  + \sigma_{\mt{reg}}(\omega),
 \end{align}
 %
-where the momentum-momentum correlation function is expressed as static susceptibility, see \eqref{eq: relation between C, Phi and chi}, and the regular conductivity $\sigma_{\mt{reg}}(\omega) = i(\omega \beta)^{-1} \tobraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced, which representes the noise, see \ref{fig:conductivity broken and unbroken translation symmetry}.
+where the momentum-momentum correlation function is expressed as static susceptibility (see \eqref{eq: relation between C, Phi and chi}), and the regular conductivity $\sigma_{\mt{reg}}(\omega) = i(\omega \beta)^{-1} \tobraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced, which representes the noise (see figure \ref{fig:conductivity broken and unbroken translation symmetry}).
 
 %
 \begin{figure}[t]
@@ -190,7 +193,7 @@ where the momentum-momentum correlation function is expressed as static suscepti
 \end{figure}
 %
 In the above equation the quantity $\omega$ is a complex number.
-For a physical interpetation $\omega$ has to be a real number, why it is transformed on the real axis using analytical continuation, which means $\omega \to \omega + i\eta$, where $\omega$ is real and the limit $\eta \to 0^{+}$ is implied.
+Since $\omega$ has to be a real number for a physical interpetation, it is transformed on the real axis using analytical continuation.
 The conductivity is then given by
 %
 \begin{align}
@@ -200,11 +203,14 @@ The conductivity is then given by
 %
 where $\frac{1}{\omega + i\eta} = \PV{\frac{1}{\omega}} - i\pi\delta(\omega)$ is used and $\PV$ symbolizies the prinzipel value.
 Taking now the small frequency limit $\omega \to 0$ the $\delta$-distribution is the dominant term and the static conductivity becomes infinite, which is the exactly expected result.
-The static electrical conductivity is infinite in a momentum conserving system, thus conductivity is getting finite if the momentum isn't anymore a conserved quantity.
-The respertive underlying symmetry is translation symmetry.
-For breaking this symmerty many possibilities are available, but in the following computation only one of them, namely umklapp scattering, is considered.
-In the next chapter the observed spin-fermion model and the pertubation is introduced.
-\todo{\"Uberleitung schreiben}
+The static electrical conductivity is infinite in a momentum conserving system, thus conductivity is getting finite if the momentum is not a conserved quantity any more.
+The respective underlying symmetry is translation symmetry.
+For breaking this symmerty, many possibilities are available, but in the following computation only one of them, namely umklapp scattering, is considered.
+
+In the next chapter, the observed spin-fermion model is introduced.
+Beforehand, quantum phase transitions are reviewed.
+The conservation of momentum and non-conversation of current is further constituted.
+Finally, umklapp scattering is introduced for breaking translation symmetry and unconserving momentum.
 
 
 

@@ -48,9 +48,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.1}Time Reversal Symmetry}{53}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{55}{section*.31}
+\contentsline {paragraph}{\nonumberline 1. case:}{55}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{55}{section*.32}
+\contentsline {paragraph}{\nonumberline 2. case:}{55}{section*.34}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}The Damped Propagator of Spin Density Waves}{57}{chapter.6}
 \defcounter {refsection}{0}\relax 
@@ -58,9 +58,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}The Damped Spin Density Wave Propagator}{59}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{64}{section*.40}
+\contentsline {paragraph}{\nonumberline 1. case:}{64}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{65}{section*.41}
+\contentsline {paragraph}{\nonumberline 2. case:}{65}{section*.43}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}Transformation of the Propagator on the Imaginary Axis}{66}{section.6.3}
 \defcounter {refsection}{0}\relax 
