@@ -225,6 +225,42 @@
       \verb arXiv:hep-th/0204003
       \endverb
     \endentry
+    \entry{Loehneysen}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=cb718db18a0b2906208ebdfdd3f4f118}{L\"{o}hneysen}{L\bibinitperiod}{H.}{H\bibinitperiod}{v.}{v\bibinitperiod}{}{}}%
+        {{hash=4ea4ce4335d7ef5e69d5dab02c372a25}{Rosch}{R\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d9d57a544c3ae22211561335677e0e67}{Vojta}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=cb718db18a0b2906208ebdfdd3f4f118}{L\"{o}hneysen}{L\bibinitperiod}{H.}{H\bibinitperiod}{v.}{v\bibinitperiod}{}{}}%
+        {{hash=4ea4ce4335d7ef5e69d5dab02c372a25}{Rosch}{R\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d9d57a544c3ae22211561335677e0e67}{Vojta}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{4e51ef24a3b66c8060a313b565e30aa5}
+      \strng{fullhash}{83928ac0fef0db3e7eae1e8da18af454}
+      \field{labelalpha}{L\"{o}h+07}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Fermi-liquid instabilities at magnetic quantum phase transitions}
+      \field{issue}{3}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{month}{08}
+      \field{title}{Fermi-liquid instabilities at magnetic quantum phase transitions}
+      \field{volume}{79}
+      \field{year}{2007}
+      \field{pages}{1015\bibrangedash 1075}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.79.1015
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.79.1015
+      \endverb
+    \endentry
     \entry{Schwabl}{book}{}
       \name{labelname}{1}{}{%
         {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%

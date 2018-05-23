@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  22 MAY 2018 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  23 MAY 2018 18:16
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex -clean
 (./main.tex
@@ -2091,12 +2091,12 @@ Package epstopdf Info: Source file: <figures/logos/KITlogo_transparent.eps>
 erted-to.pdf>
 (epstopdf)                    date: 2017-12-18 11:20:03
 (epstopdf)                    size: 33816 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/logos/KITlogo_trans
-parent-eps-converted-to.pdf figures/logos/KITlogo_transparent.eps>
+(epstopdf)             Command: <repstopdf --outfile=figures/logos/KITlogo_tran
+sparent-eps-converted-to.pdf figures/logos/KITlogo_transparent.eps>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/logos/KITlogo_transparent-eps-converted-to.pdf, id=127, 1324.95pt x 61
+<figures/logos/KITlogo_transparent-eps-converted-to.pdf, id=107, 1324.95pt x 61
 7.30624pt>
 File: figures/logos/KITlogo_transparent-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2162,14 +2162,17 @@ Package babel Info: Redefining german shorthand "~
 ] [4
 
 
-] (./main.toc [5
-
-
-])
+] (./main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [6]
+ [5
+
+
+] [6
+
+
+]
 (./chapters/motivation.tex
 Chapter 1.
 
@@ -2197,8 +2200,6 @@ l.188 \cleardoublepage
 
 
 
-
-
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -2220,7 +2221,7 @@ LaTeX Warning: Reference `eq:correlation function frequency space' on page 5 un
 defined on input line 108.
 
 [5] [6]
-<figures/conductivity_delta_peak.pdf, id=274, 247.14236pt x 171.25497pt>
+<figures/conductivity_delta_peak.pdf, id=248, 247.14236pt x 171.25497pt>
 File: figures/conductivity_delta_peak.pdf Graphic file (type pdf)
 
 <use figures/conductivity_delta_peak.pdf>
@@ -2228,7 +2229,7 @@ Package pdftex.def Info: figures/conductivity_delta_peak.pdf used on input line
  189.
 (pdftex.def)             Requested size: 183.73244pt x 127.31464pt.
 
-<figures/conductivity_drude_peak.pdf, id=275, 247.14236pt x 171.25497pt>
+<figures/conductivity_drude_peak.pdf, id=249, 247.14236pt x 171.25497pt>
 File: figures/conductivity_drude_peak.pdf Graphic file (type pdf)
 
 <use figures/conductivity_drude_peak.pdf>
@@ -2242,7 +2243,7 @@ pdfTeX warning: pdflatex (file ./figures/conductivity_drude_peak.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]) [8] (./chapters/spin-fermion-model.tex
 Chapter 3.
-<figures/phase_diagram.pdf, id=296, 394.12627pt x 285.72058pt>
+<figures/phase_diagram.pdf, id=270, 394.12627pt x 285.72058pt>
 File: figures/phase_diagram.pdf Graphic file (type pdf)
 
 <use figures/phase_diagram.pdf>
@@ -2258,7 +2259,7 @@ Package pdftex.def Info: figures/phase_diagram.pdf used on input line 30.
 LaTeX Warning: Reference `app:particel-hole-bubble' on page 12 undefined on inp
 ut line 157.
 
-<figures/hotspots.pdf, id=333, 565.43503pt x 298.75392pt>
+<figures/hotspots.pdf, id=307, 565.43503pt x 298.75392pt>
 File: figures/hotspots.pdf Graphic file (type pdf)
 
 <use figures/hotspots.pdf>
@@ -2277,12 +2278,20 @@ LaTeX Warning: Reference `app:commutator' on page 15 undefined on input line 27
 [15]) [16] (./chapters/calculation.tex
 Chapter 4.
 
+LaTeX Warning: Reference `app:calculation' on page 17 undefined on input line 1
+2.
+
+
 LaTeX Warning: Reference `ch:memory matrix formalism' on page 17 undefined on i
 nput line 27.
 
 
+LaTeX Warning: Reference `app:calculation' on page 17 undefined on input line 5
+0.
+
+
 LaTeX Warning: Reference `fig:bubble electrons' on page 17 undefined on input l
-ine 49.
+ine 51.
 
 [17
 
@@ -2297,90 +2306,135 @@ Package epstopdf Info: Source file: <figures/spin_wave_bubble.eps>
 pdf>
 (epstopdf)                    date: 2018-05-15 17:03:19
 (epstopdf)                    size: 10373 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/spin_wave_bubble-ep
-s-converted-to.pdf figures/spin_wave_bubble.eps>
-(epstopdf)             \includegraphics on input line 64.
+(epstopdf)             Command: <repstopdf --outfile=figures/spin_wave_bubble-e
+ps-converted-to.pdf figures/spin_wave_bubble.eps>
+(epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/spin_wave_bubble-eps-converted-to.pdf, id=387, 229.85875pt x 168.63pt>
+<figures/spin_wave_bubble-eps-converted-to.pdf, id=359, 229.85875pt x 168.63pt>
 File: figures/spin_wave_bubble-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/spin_wave_bubble-eps-converted-to.pdf>
 Package pdftex.def Info: figures/spin_wave_bubble-eps-converted-to.pdf used on 
-input line 64.
+input line 67.
 (pdftex.def)             Requested size: 163.31635pt x 119.81818pt.
 
 
+LaTeX Warning: Reference `app:calculation' on page 18 undefined on input line 7
+8.
+
+
 LaTeX Warning: Reference `eq:damped spin propagator real axis' on page 18 undef
-ined on input line 92.
+ined on input line 95.
 
 [18 <./figures/spin_wave_bubble-eps-converted-to.pdf>]
 
-LaTeX Warning: Reference `eq:integral1' on page 19 undefined on input line 132.
+LaTeX Warning: Reference `eq:integral1' on page 19 undefined on input line 135.
 
 
-) [19] [20
+[19]
 
+LaTeX Warning: Reference `integral1' on page 20 undefined on input line 194.
 
-] (./chapters/memory-matrix-formalism.tex
+<figures/behaviour_integrand.pdf, id=403, 361.35pt x 217.81375pt>
+File: figures/behaviour_integrand.pdf Graphic file (type pdf)
+
+<use figures/behaviour_integrand.pdf>
+Package pdftex.def Info: figures/behaviour_integrand.pdf used on input line 218
+.
+(pdftex.def)             Requested size: 200.06781pt x 120.59558pt.
+
+<figures/dependence_integrand.pdf, id=404, 289.06915pt x 171.80968pt>
+File: figures/dependence_integrand.pdf Graphic file (type pdf)
+
+<use figures/dependence_integrand.pdf>
+Package pdftex.def Info: figures/dependence_integrand.pdf used on input line 21
+9.
+(pdftex.def)             Requested size: 200.06781pt x 118.9132pt.
+ [20]
+<figures/original_vs_powercounting.pdf, id=416, 322.2444pt x 190.79704pt>
+File: figures/original_vs_powercounting.pdf Graphic file (type pdf)
+
+<use figures/original_vs_powercounting.pdf>
+Package pdftex.def Info: figures/original_vs_powercounting.pdf used on input li
+ne 252.
+(pdftex.def)             Requested size: 244.98074pt x 145.05382pt.
+ [21 <./figures/behaviour_integrand.pdf> <./figures/dependence_integrand.pdf
+
+pdfTeX warning: pdflatex (file ./figures/dependence_integrand.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]) [22 <./figures/original_vs_powercounting.pdf>]
+(./chapters/memory-matrix-formalism.tex
 Chapter 5.
-[21
+[23
 
 
-] [22]
+
+
+] [24]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [23] [24]
+ [25]
+
+LaTeX Warning: Reference `app: properties of the Kubo relaxation function' on p
+age 26 undefined on input line 166.
+
+[26]
 Underfull \vbox (badness 4193) has occurred while \output is active []
 
- [25]
-[26]
+ [27]
+[28]
 Overfull \hbox (3.4234pt too wide) in paragraph at lines 313--320
 \OT1/cmr/m/n/10.95 is triv-ially shown be-cause the com-mu-ta-tor of two Her-mi
 -tian op-er-a-tors is anti-Hermitian.
  []
 
-[27] [28]
+[29] [30]
 Underfull \hbox (badness 4279) in paragraph at lines 410--415
 \OT1/cmr/m/n/10.95 as our scalar prod-uct, where the nor-mal time evo-lu-tion o
 f an op-er-a-tor
  []
 
 
-LaTeX Warning: Marginpar on page 29 moved.
+LaTeX Warning: Marginpar on page 31 moved.
 
-[29] [30] [31] [32] [33] [34]
+[31] [32] [33] [34] [35] [36]
 LaTeX Font Info:    Try loading font information for U+dsrom on input line 684.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [35] [36])
-[37] [38
+) [37] [38])
+[39] [40
 
 
-] (./chapters/propagator.tex
+] (./chapters/conclusion.tex
 Chapter 6.
+) [41
 
-LaTeX Warning: Reference `eq: Kramer-Kronig relation' on page 39 undefined on i
-nput line 18.
 
-[39
+] [42
+
+
+] (./chapters/appendix_propagator.tex
+Appendix A.
+
+LaTeX Warning: Reference `ch: spin fermion model' on page 43 undefined on input
+ line 36.
+
+
+LaTeX Warning: Marginpar on page 43 moved.
+
+[43
+
+
 
 
 ]
 
-LaTeX Warning: Reference `ch: spin fermion model' on page 40 undefined on input
- line 53.
+LaTeX Warning: Reference `ch: calculation' on page 44 undefined on input line 1
+19.
 
-
-LaTeX Warning: Marginpar on page 40 moved.
-
-[40]
-
-LaTeX Warning: Reference `ch: calculation' on page 41 undefined on input line 1
-36.
-
-[41] [42]
+[44] [45] [46]
 Package epstopdf Info: Source file: <figures/all_contained_bubble_diagrams.eps>
 
 (epstopdf)                    date: 2018-05-16 19:49:03
@@ -2389,21 +2443,21 @@ Package epstopdf Info: Source file: <figures/all_contained_bubble_diagrams.eps>
 converted-to.pdf>
 (epstopdf)                    date: 2018-05-16 19:49:45
 (epstopdf)                    size: 11592 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/all_contained_bubbl
-e_diagrams-eps-converted-to.pdf figures/all_contained_bubble_diagrams.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             Command: <repstopdf --outfile=figures/all_contained_bubb
+le_diagrams-eps-converted-to.pdf figures/all_contained_bubble_diagrams.eps>
+(epstopdf)             \includegraphics on input line 261.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/all_contained_bubble_diagrams-eps-converted-to.pdf, id=737, 521.95pt x
+<figures/all_contained_bubble_diagrams-eps-converted-to.pdf, id=769, 521.95pt x
  241.90375pt>
 File: figures/all_contained_bubble_diagrams-eps-converted-to.pdf Graphic file (
 type pdf)
  <use figures/all_contained_bubble_diagrams-eps-converted-to.pdf>
 Package pdftex.def Info: figures/all_contained_bubble_diagrams-eps-converted-to
-.pdf used on input line 278.
+.pdf used on input line 261.
 (pdftex.def)             Requested size: 408.2971pt x 189.23045pt.
 
-[43]
+[47 <./figures/all_contained_bubble_diagrams-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/bubble_diagram.eps>
 (epstopdf)                    date: 2018-05-14 20:12:38
 (epstopdf)                    size: 215039 bytes
@@ -2411,194 +2465,41 @@ Package epstopdf Info: Source file: <figures/bubble_diagram.eps>
 f>
 (epstopdf)                    date: 2018-05-14 20:13:22
 (epstopdf)                    size: 11831 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/bubble_diagram-eps-
-converted-to.pdf figures/bubble_diagram.eps>
-(epstopdf)             \includegraphics on input line 324.
+(epstopdf)             Command: <repstopdf --outfile=figures/bubble_diagram-eps
+-converted-to.pdf figures/bubble_diagram.eps>
+(epstopdf)             \includegraphics on input line 307.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/bubble_diagram-eps-converted-to.pdf, id=752, 337.26pt x 234.8775pt>
+<figures/bubble_diagram-eps-converted-to.pdf, id=792, 337.26pt x 234.8775pt>
 File: figures/bubble_diagram-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/bubble_diagram-eps-converted-to.pdf>
 Package pdftex.def Info: figures/bubble_diagram-eps-converted-to.pdf used on in
-put line 324.
+put line 307.
 (pdftex.def)             Requested size: 204.14854pt x 142.17838pt.
- [44 <./figures/all_contained_bubble_diagrams-eps-converted-to.pdf>]
+ [48 <./figures/bubble_diagram-eps-converted-to.pdf>]
 
-LaTeX Warning: Reference `ch: spin fermion model' on page 45 undefined on input
- line 356.
+LaTeX Warning: Reference `ch: spin fermion model' on page 49 undefined on input
+ line 339.
 
-[45 <./figures/bubble_diagram-eps-converted-to.pdf>] [46] [47]
+[49] [50] [51]
 
-LaTeX Warning: Reference `ch: calculation' on page 48 undefined on input line 5
-23.
-
-
-LaTeX Warning: Reference `eq: Kramer-Kronig relation' on page 48 undefined on i
-nput line 526.
-
-[48]
-
-LaTeX Warning: Reference `eq: Kramer-Kronig relation' on page 49 undefined on i
-nput line 537.
-
-) [49] [50
+LaTeX Warning: Reference `ch: calculation' on page 52 undefined on input line 5
+06.
 
 
-] (./chapters/conclusion.tex
-Chapter 7.
-) [51
+LaTeX Warning: Reference `eq: Kramer-Kronig relation' on page 52 undefined on i
+nput line 509.
 
 
-] [52
+LaTeX Warning: Reference `eq: Kramer-Kronig relation' on page 52 undefined on i
+nput line 520.
 
-
-] (./chapters/appendix_calculation.tex
-Appendix A.
-
-LaTeX Warning: Reference `ch: spin fermion model' on page 53 undefined on input
- line 18.
-
-[53
-
-
-
-
-]
-
-LaTeX Warning: Reference `ch: spin fermion model' on page 54 undefined on input
- line 91.
-
-[54]
-File: figures/conductivity_delta_peak.pdf Graphic file (type pdf)
- <use figures/conductivity_delta_peak.pdf>
-Package pdftex.def Info: figures/conductivity_delta_peak.pdf used on input line
- 121.
-(pdftex.def)             Requested size: 183.73244pt x 127.31464pt.
-File: figures/conductivity_drude_peak.pdf Graphic file (type pdf)
-
-<use figures/conductivity_drude_peak.pdf>
-Package pdftex.def Info: figures/conductivity_drude_peak.pdf used on input line
- 122.
-(pdftex.def)             Requested size: 183.73244pt x 127.31464pt.
- [55]
-
-LaTeX Warning: Marginpar on page 56 moved.
-
-[56]
-
-LaTeX Warning: Marginpar on page 57 moved.
-
-[57] [58]
-
-LaTeX Warning: Reference `ch: spin fermion model' on page 59 undefined on input
- line 328.
-
-[59]
-Package epstopdf Info: Source file: <figures/spin_wave_bubble.eps>
-(epstopdf)                    date: 2018-05-15 16:59:29
-(epstopdf)                    size: 185898 bytes
-(epstopdf)             Output file: <figures/spin_wave_bubble-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2018-05-15 17:03:19
-(epstopdf)                    size: 10373 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/spin_wave_bubble-ep
-s-converted-to.pdf figures/spin_wave_bubble.eps>
-(epstopdf)             \includegraphics on input line 369.
-Package epstopdf Info: Output file is already uptodate.
-File: figures/spin_wave_bubble-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/spin_wave_bubble-eps-converted-to.pdf>
-Package pdftex.def Info: figures/spin_wave_bubble-eps-converted-to.pdf used on 
-input line 369.
-(pdftex.def)             Requested size: 204.14854pt x 149.7766pt.
- [60]
-<figures/contour_branch_cut.pdf, id=956, 660.41666pt x 317.9014pt>
-File: figures/contour_branch_cut.pdf Graphic file (type pdf)
-
-<use figures/contour_branch_cut.pdf>
-Package pdftex.def Info: figures/contour_branch_cut.pdf used on input line 428.
-
-(pdftex.def)             Requested size: 408.2971pt x 196.53899pt.
- [61 <./figures/contour_branch_cut.pdf>]
-[62] [63] [64] <figures/x-dependence.pdf, id=1004, 338.58401pt x 198.52498pt>
-File: figures/x-dependence.pdf Graphic file (type pdf)
-
-<use figures/x-dependence.pdf>
-Package pdftex.def Info: figures/x-dependence.pdf used on input line 674.
-(pdftex.def)             Requested size: 285.80672pt x 167.58682pt.
- [65]
-<figures/original_vs_approx1.pdf, id=1016, 310.51671pt x 183.45967pt>
-File: figures/original_vs_approx1.pdf Graphic file (type pdf)
-
-<use figures/original_vs_approx1.pdf>
-Package pdftex.def Info: figures/original_vs_approx1.pdf used on input line 733
-.
-(pdftex.def)             Requested size: 285.80672pt x 168.86891pt.
- [66 <./figures/x-dependence.pdf>]
-<figures/original_vs_powercounting.pdf, id=1029, 322.2444pt x 190.79704pt>
-File: figures/original_vs_powercounting.pdf Graphic file (type pdf)
-
-<use figures/original_vs_powercounting.pdf>
-Package pdftex.def Info: figures/original_vs_powercounting.pdf used on input li
-ne 775.
-(pdftex.def)             Requested size: 285.80672pt x 169.23528pt.
- [67 <./figures/original_vs_approx1.pdf>] <figures/dependence_integrand.pdf, id
-=1045, 289.06915pt x 171.80968pt>
-File: figures/dependence_integrand.pdf Graphic file (type pdf)
-
-<use figures/dependence_integrand.pdf>
-Package pdftex.def Info: figures/dependence_integrand.pdf used on input line 82
-2.
-(pdftex.def)             Requested size: 285.80672pt x 169.87187pt.
- [68 <./figures/original_vs_powercounting.pdf>] [69 <./figures/dependence_integ
-rand.pdf>]
-
-LaTeX Warning: Marginpar on page 70 moved.
-
-
-LaTeX Warning: Reference `fig: static susceptibility' on page 70 undefined on i
-nput line 909.
-
-Package epstopdf Info: Source file: <figures/static_susceptibility.eps>
-(epstopdf)                    date: 2018-05-15 19:27:10
-(epstopdf)                    size: 173525 bytes
-(epstopdf)             Output file: <figures/static_susceptibility-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2018-05-15 19:27:27
-(epstopdf)                    size: 9004 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/static_susceptibili
-ty-eps-converted-to.pdf figures/static_susceptibility.eps>
-(epstopdf)             \includegraphics on input line 913.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/static_susceptibility-eps-converted-to.pdf, id=1070, 501.875pt x 112.4
-2pt>
-File: figures/static_susceptibility-eps-converted-to.pdf Graphic file (type pdf
-)
- <use figures/static_susceptibility-eps-converted-to.pdf>
-Package pdftex.def Info: figures/static_susceptibility-eps-converted-to.pdf use
-d on input line 913.
-(pdftex.def)             Requested size: 326.63892pt x 73.1699pt.
- [70 <./figures/static_susceptibility-eps-converted-to.pdf>]
-
-LaTeX Warning: Marginpar on page 71 moved.
-
-<figures/contour_simple_poles.pdf, id=1091, 562.32974pt x 278.69394pt>
-File: figures/contour_simple_poles.pdf Graphic file (type pdf)
-
-<use figures/contour_simple_poles.pdf>
-Package pdftex.def Info: figures/contour_simple_poles.pdf used on input line 99
-6.
-(pdftex.def)             Requested size: 326.63892pt x 161.88498pt.
- [71] [72 <./figures/contour_simple_poles.pdf>]) (./chapters/appendix_propertie
-s_Kubo_relaxation_function.tex [73]
-[74
+[52]) (./chapters/appendix_conversion_expectation_value.tex [53] [54
 
 
 ]
 Appendix B.
-[75]) (./chapters/appendix_conversion_expectation_value.tex [76]
-Appendix C.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
@@ -3051,109 +2952,117 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
-) (./chapters/appendix_fierz_identity.tex [77
-
-
-] [78
+) (./chapters/appendix_properties_Kubo_relaxation_function.tex [55] [56
 
 
 ]
+Appendix C.
+[57]) (./chapters/appendix_fierz_identity.tex [58]
 Appendix D.
 
-LaTeX Warning: Reference `eq: second order correction of propagator' on page 79
+LaTeX Warning: Reference `eq: second order correction of propagator' on page 59
  undefined on input line 29.
 
-[79]
+[59
 
-LaTeX Warning: Reference `eq: second order correction of propagator' on page 80
+
+]
+
+LaTeX Warning: Reference `eq: second order correction of propagator' on page 60
  undefined on input line 94.
 
-) [80] (./main.tdo [81
-
-
-
-
-])
+) [60] (./main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [82]
-Overfull \hbox (2.7459pt too wide) in paragraph at lines 221--221
-\OT1/cmr/m/it/10.95 High En-ergy Physics - The-ory e-prints \OT1/cmr/m/n/10.95 
-(2002). \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : [][]$\OT1/cmtt/m/n/10.95 ar
-Xiv : hep -[] th / 0204003$[][]\OT1/cmr/m/n/10.95 . 
+ [61
+
+
+
+
+] [62
+
+
+]
+Overfull \hbox (4.60324pt too wide) in paragraph at lines 225--225
+[]\OT1/cmr/m/n/10.95 H. Mori. []  Trans-port, Col-lec-tive Mo-tion, and Brow-n-
+ian Mo-tion\. In: \OT1/cmr/m/it/10.95 Progress
  []
 
+[63
 
-Overfull \hbox (31.14565pt too wide) in paragraph at lines 221--221
-[]\OT1/cmr/m/n/10.95 E. Noether. []  In-vari-ante Vari-a-tion-sproibleme\. In: 
-\OT1/cmr/m/it/10.95 Nachrichten von der Gesellschaft
+
+]
+Overfull \hbox (0.24837pt too wide) in paragraph at lines 225--225
+\OT1/cmr/m/it/10.95 Gesellschaft der Wis-senschaften zu G^^?ottin-gen, Mathemat
+isch-Physikalische
  []
 
-
-Overfull \hbox (5.86806pt too wide) in paragraph at lines 221--221
-\OT1/cmr/m/it/10.95 der Wis-senschaften zu G^^?ottin-gen, Mathematisch-Physikal
-ische Klasse \OT1/cmr/m/n/10.95 (1918),
- []
-
-[83
-
-
-
-
-] [84]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+[64]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F3AF51F5BAA06300BFFC40830FD4DA15;2507.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D384E18E686AA71274920D34635A9CA8;2020
+(rerunfilecheck)             After:  243EAFD1D689AAD48846DADDBB3F8517;2023.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32490 strings out of 494347
- 608345 string characters out of 6168810
- 1076102 words of memory out of 5000000
- 34748 multiletter control sequences out of 15000+600000
+ 32255 strings out of 494347
+ 602861 string characters out of 6168810
+ 1076103 words of memory out of 5000000
+ 34622 multiletter control sequences out of 15000+600000
  29399 words of font info for 113 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,18n,76p,10534b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (92 pages, 773753 bytes).
+pdfTeX warning (dest): name{section*.29} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (72 pages, 626720 bytes).
 PDF statistics:
- 1460 PDF objects out of 1728 (max. 8388607)
- 1253 compressed objects within 13 object streams
- 425 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1177 PDF objects out of 1200 (max. 8388607)
+ 995 compressed objects within 10 object streams
+ 323 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 

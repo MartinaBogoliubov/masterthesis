@@ -1,54 +1,37 @@
 %
 %
 %
-\chapter{The Damped Propagator of Spin Density Waves}
-\label{ch: propagator}
+\chapter{Computation of the Damped Spin Density Propagator}
+\label{appch:propagator}
 %
 %
 %
-In the present chapter the propagator of spin density waves should be computed up to the first order in pertubation theory.
-The main goal of this masterthesis is the determination of the conductivity for the spin fermion model pertubated via umklapp scattering.
-These processes are determined by spin density waves, see section \dots \todo{link to umklapp scattering}, why the propagator of them is needed in the calculation of the conductivity.
-
-Firstly the free spin density wave propagtor is computed.
-Therefore the equation of motion of Green functions is used. 
-An good introduction of this method can be find in every textbook about quantum field theory in many body physics, but the book by Elk and Gasser \cite{Elk&Gasser} is recommended.
-Afterwards the damped propagator is calculated using pertubation theory up the first order.
-Finally the obtained propagator is transformed into the Matsubara frequency space.
-An easy way to do this is using the Kramer-Kronig relations \eqref{eq: Kramer-Kronig relation}.
+In the present appendix, the propagator of damped spin density fluctuations is computed, considering the first order in pertubation theory.
+Our approach is seperated in two parts.
+Firstly, the free spin density propagator is determined, using the equation of motion for Green functions, as suggested in \cite{Elk&Gasser} or many other textbooks.
+The damped propagator is then calculated, using the diagrammatic pertubation theory.
+The obtained propagator is transformed into Matsubara frquency space, since the computation of the conductivity is treated into there.
 %
 %
-\section{The Free Spin Density Wave Propagator}
-\label{sec: free propagator}
+\section{Computation of the Free Propagator}
+\label{sec:free propagator}
 %
 %
-In \ref{sec: linear response theory} the linear response theory is established and the retarded susceptibility is introduced this way.
-A susceptibility describes the dynamical behaviour of an operator dependent on an external pertubation.
-This quantity is close related with the Green function of particles which is called propagator.
-The only difference is that the operators and the expectation value of the Green function are represented in the Heisenberg picture comparing to the susceptibility, where they are represented with respect to the unpertubated system.
-
-The Green function's equation of motion is easy to get.
-Therefore the Green function has only to be derivated with respect to the time.
-The amazing result is that the equation of motion is equally for all typs (retarded, advanced and causal) of Green functions.
-Only the boundary conditions are different.
-The obtained equation of motion and the boundary conditions are transformed in Fourier space.
+Free propagators are easily computed, using the equation of motion of Green functions.
+The equation of motion is obtained, derivating the Green function with respect to the time $t$.
+In Fourier space the equation of motion is given by
 %
 \begin{align}
-	\omega \green{\mt{A}}{\mt{B}}_{\omega}^{j} = \expval*{\comm{\mt{A}}{\mt{B}}_{\eta}} + \green{\comm{\mt{A}}{\mt{H}}_{-}}{\mt{B}}_{\omega}^{j}
+	\omega \green{\mt{A}}{\mt{B}}_{\omega}^{j} = \expval*{\comm{\mt{A}}{\mt{B}}_{\eta}} + \green{\comm{\mt{A}}{\mt{H}}_{-}}{\mt{B}}_{\omega}^{j},
 	\label{eq: algebraic equation chain}
 \end{align}
 %
-where $j$ labels the typ of the Green function (retarded, advanced and causal) and $\omega$ represented that the Green function is in frequency space.
-The double angle brackets symbolized the Green function of the operators A and B.
-This equation is an algebraic equation or more precisely an infinite algebraic equation chain for the green function.
-On the right hand side in general a new more complicated Green function appears.
-For this one exists a new equation chain with a more complicted Green function on the right hand side and so on.
-In the case of free propagators we are mostly lucky.
-The appearing Green function isn't really complicated, so that the initial Green function appears after one or two interativ steps.
-Naturally the same procedure can be done for the Green function in Matsubara time representation.
-The result is similar to the one above, only the frequency $\omega$ is replaced with the Matsubara frequancy $i\omega_{n}$.
-The simplicity and advantage of this method instead of other ones is that only commutator relations of the (field) operators are needed.
-Equation \eqref{eq: algebraic equation chain} is all we need to compute the free propagator of spin density waves.
+where the typ of the Green function (retarded, advanced and causal) is denoted with $j$ and the frequency dependence of the Green function is represented with an index $\omega$.
+The Green function itself is symbolized by double angle brackets.
+This equation is an algebraic equation or more precisely an infinite algebraic equation chain for Green functions.
+A new more complicated Green function appears on the right hand side.
+For this one exists a new equation chain with a more complicted Green function, and so on.
+Nevertheless, the equation chain is not infinity in the case of free propagators.
 
 The dynamic of free spin density waves is described by the Hamiltonian $\mt{H}_{\Phi}$, introduced in chapter \ref{ch: spin fermion model}.
 Inserting $\mt{H}_{\Phi}$ and bosonic field operators $\Phi_{\mu}$ for A and B in equation \eqref{eq: algebraic equation chain} is the starting point of the following calculation.
