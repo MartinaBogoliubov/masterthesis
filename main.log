@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  23 MAY 2018 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  24 MAY 2018 01:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2417,47 +2417,12 @@ Chapter 6.
 
 ] (./chapters/appendix_propagator.tex
 Appendix A.
-
-LaTeX Warning: Reference `ch: spin fermion model' on page 43 undefined on input
- line 36.
-
-
-LaTeX Warning: Marginpar on page 43 moved.
-
 [43
 
 
 
 
-]
-
-LaTeX Warning: Reference `ch: calculation' on page 44 undefined on input line 1
-19.
-
-[44] [45] [46]
-Package epstopdf Info: Source file: <figures/all_contained_bubble_diagrams.eps>
-
-(epstopdf)                    date: 2018-05-16 19:49:03
-(epstopdf)                    size: 174284 bytes
-(epstopdf)             Output file: <figures/all_contained_bubble_diagrams-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2018-05-16 19:49:45
-(epstopdf)                    size: 11592 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/all_contained_bubb
-le_diagrams-eps-converted-to.pdf figures/all_contained_bubble_diagrams.eps>
-(epstopdf)             \includegraphics on input line 261.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/all_contained_bubble_diagrams-eps-converted-to.pdf, id=769, 521.95pt x
- 241.90375pt>
-File: figures/all_contained_bubble_diagrams-eps-converted-to.pdf Graphic file (
-type pdf)
- <use figures/all_contained_bubble_diagrams-eps-converted-to.pdf>
-Package pdftex.def Info: figures/all_contained_bubble_diagrams-eps-converted-to
-.pdf used on input line 261.
-(pdftex.def)             Requested size: 408.2971pt x 189.23045pt.
-
-[47 <./figures/all_contained_bubble_diagrams-eps-converted-to.pdf>]
+] [44] [45]
 Package epstopdf Info: Source file: <figures/bubble_diagram.eps>
 (epstopdf)                    date: 2018-05-14 20:12:38
 (epstopdf)                    size: 215039 bytes
@@ -2467,35 +2432,25 @@ f>
 (epstopdf)                    size: 11831 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/bubble_diagram-eps
 -converted-to.pdf figures/bubble_diagram.eps>
-(epstopdf)             \includegraphics on input line 307.
+(epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/bubble_diagram-eps-converted-to.pdf, id=792, 337.26pt x 234.8775pt>
+<figures/bubble_diagram-eps-converted-to.pdf, id=746, 337.26pt x 234.8775pt>
 File: figures/bubble_diagram-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/bubble_diagram-eps-converted-to.pdf>
 Package pdftex.def Info: figures/bubble_diagram-eps-converted-to.pdf used on in
-put line 307.
+put line 244.
 (pdftex.def)             Requested size: 204.14854pt x 142.17838pt.
- [48 <./figures/bubble_diagram-eps-converted-to.pdf>]
+ [46] [47 <./figures/bubble_diagram-eps-converted-to.pdf>] [48] [49]
+Overfull \hbox (53.94217pt too wide) in paragraph at lines 419--422
+[]\OT1/cmr/m/n/10.95 In our ob-served case, the ar-gu-ment of $\OML/cmm/m/it/10
+.95 ^^N\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g\OT1/cmr/m/n/10.95 (\OML/cmm/m/
+it/10.95 #\OT1/cmr/m/n/10.95 ))$ con-tains only one zero at $\OML/cmm/m/it/10.9
+5 #[] \OT1/cmr/m/n/10.95 = [][][][]$
+ []
 
-LaTeX Warning: Reference `ch: spin fermion model' on page 49 undefined on input
- line 339.
-
-[49] [50] [51]
-
-LaTeX Warning: Reference `ch: calculation' on page 52 undefined on input line 5
-06.
-
-
-LaTeX Warning: Reference `eq: Kramer-Kronig relation' on page 52 undefined on i
-nput line 509.
-
-
-LaTeX Warning: Reference `eq: Kramer-Kronig relation' on page 52 undefined on i
-nput line 520.
-
-[52]) (./chapters/appendix_conversion_expectation_value.tex [53] [54
+[50]) (./chapters/appendix_conversion_expectation_value.tex [51] [52
 
 
 ]
@@ -2952,26 +2907,59 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 3.
 
-) (./chapters/appendix_properties_Kubo_relaxation_function.tex [55] [56
+) (./chapters/appendix_calculation_susceptibility.tex [53] [54
 
 
 ]
 Appendix C.
-[57]) (./chapters/appendix_fierz_identity.tex [58]
+
+LaTeX Warning: Reference `eq:relation between C, Phi and chi' on page 55 undefi
+ned on input line 9.
+
+
+LaTeX Warning: Reference `eq:Kubo relaxation function' on page 55 undefined on 
+input line 9.
+
+
+LaTeX Warning: Reference `fig: static susceptibility' on page 55 undefined on i
+nput line 35.
+
+Package epstopdf Info: Source file: <figures/static_susceptibility.eps>
+(epstopdf)                    date: 2018-05-15 19:27:10
+(epstopdf)                    size: 173525 bytes
+(epstopdf)             Output file: <figures/static_susceptibility-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2018-05-15 19:27:27
+(epstopdf)                    size: 9004 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/static_susceptibil
+ity-eps-converted-to.pdf figures/static_susceptibility.eps>
+(epstopdf)             \includegraphics on input line 39.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/static_susceptibility-eps-converted-to.pdf, id=884, 501.875pt x 112.42
+pt>
+File: figures/static_susceptibility-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use figures/static_susceptibility-eps-converted-to.pdf>
+Package pdftex.def Info: figures/static_susceptibility-eps-converted-to.pdf use
+d on input line 39.
+(pdftex.def)             Requested size: 326.63892pt x 73.1699pt.
+ [55]
+<figures/contour_simple_poles.pdf, id=892, 562.32974pt x 278.69394pt>
+File: figures/contour_simple_poles.pdf Graphic file (type pdf)
+
+<use figures/contour_simple_poles.pdf>
+Package pdftex.def Info: figures/contour_simple_poles.pdf used on input line 12
+2.
+(pdftex.def)             Requested size: 326.63892pt x 161.88498pt.
+ [56 <./figures/static_susceptibility-eps-converted-to.pdf>] [57 <./figures/con
+tour_simple_poles.pdf>])
+(./chapters/appendix_properties_Kubo_relaxation_function.tex [58]
 Appendix D.
-
-LaTeX Warning: Reference `eq: second order correction of propagator' on page 59
- undefined on input line 29.
-
 [59
 
 
-]
-
-LaTeX Warning: Reference `eq: second order correction of propagator' on page 60
- undefined on input line 94.
-
-) [60] (./main.tdo)
+]) [60] (./main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
@@ -2992,47 +2980,35 @@ ian Mo-tion\. In: \OT1/cmr/m/it/10.95 Progress
 [63
 
 
-]
-Overfull \hbox (0.24837pt too wide) in paragraph at lines 225--225
-\OT1/cmr/m/it/10.95 Gesellschaft der Wis-senschaften zu G^^?ottin-gen, Mathemat
-isch-Physikalische
- []
-
-[64]
+] [64]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5DB5A6BB7788F6574D4A548E95031D0D;2056.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D384E18E686AA71274920D34635A9CA8;2020
-(rerunfilecheck)             After:  243EAFD1D689AAD48846DADDBB3F8517;2023.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32255 strings out of 494347
- 602861 string characters out of 6168810
- 1076103 words of memory out of 5000000
- 34622 multiletter control sequences out of 15000+600000
- 29399 words of font info for 113 fonts, out of 8000000 for 9000
+ 32239 strings out of 494347
+ 602519 string characters out of 6168810
+ 1076102 words of memory out of 5000000
+ 34606 multiletter control sequences out of 15000+600000
+ 29207 words of font info for 111 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,18n,76p,10534b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.29} has been referenced but does not exi
+pdfTeX warning (dest): name{section*.27} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.26} has been referenced but does not exist
+, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
@@ -3054,15 +3030,15 @@ s/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (72 pages, 626720 bytes).
+cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
+>
+Output written on main.pdf (72 pages, 626807 bytes).
 PDF statistics:
- 1177 PDF objects out of 1200 (max. 8388607)
- 995 compressed objects within 10 object streams
- 323 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1160 PDF objects out of 1200 (max. 8388607)
+ 978 compressed objects within 10 object streams
+ 322 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
