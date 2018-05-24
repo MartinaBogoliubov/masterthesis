@@ -1,0 +1,118 @@
+%
+%
+%
+\chapter{Commutator relation}
+\label{appch:commutator}
+%
+%
+%
+The time derivative of the momentum and current operator are designated for the case of non-pertubation and pertubation in chapter \ref{ch:spin fermion model}.
+In this appendix, the explicit computation is demonstrated of them.
+Our starting point is the Lagrange density $\mathcal{L} = \mathcal{L}_{\Psi} + \mathcal{L}_{\Phi} + \mathcal{L}_{\Psi\Phi}$, as suggested in \cite{Patel&Sachdev}.
+In Matsubara time $\tau = it$, the single Lagrange densities are given by
+%
+\begin{align}
+	\mathcal{L}_{\Psi} = 
+		\vb{\Psi}^{\dag}(\vb{x},\tau) 
+		\twoTwoMatrix{\sigma_{0} (\partial_{\tau}-\mu_{0}+\xi_{a})}{0}{0}{\sigma_{0} (\partial_{\tau}-\mu_{0}+\xi_{b})}
+		\vb{\Psi}(\vb{x},\tau)
+\end{align}
+%
+\begin{align}
+	\mathcal{L}_{\Phi} &= 
+		\frac{1}{2} \big(\partial_{i}\Phi_{\mu}(\vb{x},\tau)\big) \big(\partial_{i}\Phi_{\mu}(\vb{x},\tau)\big) 
+		+ 
+		\frac{\epsilon}{2} \big(\partial_{\tau}\Phi_{\mu}(\vb{x},\tau)\big) \big(\partial_{\tau}\Phi_{\mu}(\vb{x},\tau)\big) 
+		\notag \\&+
+		\frac{u}{6} \big(\Phi_{\mu}(\vb{x},\tau) \Phi_{\mu}(\vb{x},\tau) + \frac{3}{g}\big)^{2}
+\end{align}
+\begin{align}
+	\mathcal{L}_{\Psi\Phi} =
+		\lambda\Phi_{\mu}(\vb{x},\tau) \Big[\Psi_{\mt{a}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \Psi_{\mt{b}}(\vb{x},\tau) + \Psi_{\mt{b}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \Psi_{\mt{a}}(\vb{x},\tau)\Big]
+\end{align}
+Here $\vb{\Psi} = (\Psi_{\mt{a}}, \Psi_{\mt{b}})$ and $\Psi_{\mt{a}}$, $\Psi_{\mt{b}}$ are two-component spinors and $\Phi_{\mu}$ is a SO(3) vector boson order parameter.
+The chemical potential is denoted with $\mu_0$ and the Pauli matrix are labeled with $\sigma_{0}$ and $\sigma_{\mu}$.
+$\epsilon$ is the squared inverse spin velocity $v_{\mt{S}}^{-2}$.
+In the Lagrangian $\mathcal{L}_{\Phi}$, the last term is neglectable in the low-energy theory of the spin fermion model and is therefore dropped in the following.
+The anisotropic parabolical dispersion relations $\xi_{\mt{a}}$ and $\xi_{\mt{b}}$ are given by 
+%
+\begin{align}
+	\xi_{\mt{a}} = - \frac{\partial_{x}^{2}}{2m_{1}} - \frac{\partial_{y}^{2}}{2m_{2}} \qquad \xi_{\mt{b}} = - \frac{\partial_{x}^{2}}{2m_{2}} - \frac{\partial_{y}^{2}}{2m_{1}}
+\end{align}
+%
+The Lagrangian for umklapp scattering is assumed to be 
+%
+\begin{align}
+	\mathcal{L}_{\mt{umklapp}}= -\mt{J}(\vb{R}) \Phi_{\mu}(\vb{x},\tau) \Phi_{\mu}(\vb{x},\tau)
+\end{align}
+%
+where $\mt{J}(\vb{R})$ is a coupling parameter and $\vb{R}$ is a lattice vector.
+The following treatment is now to compute the Hamiltonian, momentum and current, using the energy-momentum-tensor
+%
+\begin{align}
+	\mathcal{T}_{\mu\nu} = 
+		\frac{1}{2} \sum\limits_{\{\zeta_{n}\}} \bigg[ 
+		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\zeta_{n})}\Big) (\partial_{\nu}\zeta_{n}) 
+		+
+		(\partial_{\nu}\zeta_{n})^{\dag} \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\zeta_{n})}\Big)^{\dag}
+		\bigg]
+\end{align}
+%
+and the formula for the current density
+%
+\begin{align}
+	\mathcal{J}_{\mu} = -i \sum\limits_{\{\zeta_{n}\}} \epsilon(\zeta_{n}) \bigg[
+		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\zeta_{n})}\Big) \zeta_{n}
+		-
+		\zeta_{n}^{\dag} \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\zeta_{n})}\Big)^{\dag}
+		\bigg],
+\end{align}
+%
+where $\{\zeta_{n}\} = \{\Psi_{\mt{a}},\Psi_{\mt{b}}, \Phi_{\mu}\}$ and $\epsilon(\zeta_{n})$ is 0 in the case of real fields and 1 in the case of complex fields.
+The energy and the $j$-component of the momentum is represented by $\mathcal{T}_{00}$ and $\mathcal{T}_{0j}$ of the energy-momentum-tensor, respectivily.
+The $j$-component of the current is represented by $\mathcal{J}_{j}$.
+In the spin-fermion-model, the bosonic field operator is considered as real, so that $\Phi_{\mu}^{\dag} = \Phi_{\mu}$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

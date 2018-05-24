@@ -128,9 +128,9 @@
 
 % Vectors and matricies
 %\newcommand{\bvec}[1]{\textbf{#1}} 															% vector bold letter
-%\newcommand{\oneTwoVec}[2]{\begin{pmatrix}#1 & #2\end{pmatrix}} 							% two componand row vector
-%\newcommand{\twoOneVec}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}} 								% two componand column vector
-%\newcommand{\twoTwoMatrix}[4]{\begin{pmatrix}#1 & #2\\#3 & #4\end{pmatrix}} 				% 2x2 matrix
+\newcommand{\oneTwoVec}[2]{\begin{pmatrix}#1 & #2\end{pmatrix}} 							% two componand row vector
+\newcommand{\twoOneVec}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}} 								% two componand column vector
+\newcommand{\twoTwoMatrix}[4]{\begin{pmatrix}#1 & #2\\#3 & #4\end{pmatrix}} 				% 2x2 matrix
 
 % Fourier transformation
 %\newcommand{\fouriertrafo}[4]{\int \frac{\mathrm{d}^{#4}{#3}}{(2\pi)^{#4}}\, {#1}({#3},\tau) e^{#2}} % Fouriertrafo into momentum space (#1: function; #2: argument of e; #3: momentum letter; #4: dimension)
@@ -207,10 +207,11 @@
 \appendix							% appendix is starting
 \cleardoublepage
 \input{chapters/appendix_propagator} %done
-%\input{chapters/appendix_commutator}
+\input{chapters/appendix_commutator}
 \input{chapters/appendix_conversion_expectation_value}
-\input{chapters/appendix_calculation_susceptibility}
-%\input{chapters/appendix_calculation_green}
+\input{chapters/appendix_calculation_susceptibility} %done
+\input{chapters/appendix_calculation}
+%\input{chapters/appendix_calculation_green} %done
 \input{chapters/appendix_properties_Kubo_relaxation_function}
 %\input{chapters/appendix_fierz_identity}
 
