@@ -632,8 +632,110 @@ This means that $i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}}$ is always zero,
 \label{sec:formula static conductivity}
 %
 %
+In this section, the formula for the static electrical conductivity is derivated.
+The considered system is the spin-fermion-model, described by the Hamiltonain H, pertubated by umklapp scattering $\mt{H}_{\mt{umklapp}}$.
+Both Hamiltonias are denoted in \ref{ch:spin fermion model}.
+The static electrical conductivity is given by the current current correlation function, as shown in \eqref{eq:general static condictivity}.
+To get the correlation function in the memory-matrix-formalism, equation \eqref{eq:algebraic equation correlation function} has to be solved.
 
+Equally to the discussion in chapter \ref{ch:infinite conductivity}, momentum P and current J are chosen as the subspace operators of the projection operator.
+Again, J and P possesses the same sign and the Hamiltian is still invariant unter time reversal symmetry.
+as a consequnce the quantity $\Omega_{il}$ in equation \eqref{eq:algebraic equation correlation function} vanishes.
+In comparsion to the discussion in chapter \ref{ch:infinite conductivity}, momentum is now unconserved.
+The time derivatives with respect to P in $\Sigma_{il}(\omega)$ do not vanishes.
+The condition that $\mt{Q}\toket{\dot{J}}$ vanishes is still valid as discussed in chapter \ref{ch:infinite conductivity}.
+Since the time derivative of P does not vanish, the object $\mt{Q}\toket{\dot{P}}$ occurs.
+The J-P subspace is defined with respect to the unpertubated Hamiltonian H, where momentum is conserved.
+The value of the time derivative of P is only determined by the pertubation and lies completly out of the J-P subspace
+Therefore, $\mt{Q}\toket{\dot{P}} = \toket{\dot{P}}$ is valid.
+For the same reason, the reduced Liouville operator QLQ is assumed to be as L.
+All other discussed conditions in chapter \ref{ch:infinite conductivity} are still valid.
+The algebraic matrix equation for the correlation function is given by
+%
+\begin{align}
+	\begin{pmatrix}
+	\omega & 0 \\
+	-i\Sigma_{\mt{PJ}}(\omega) & \omega - i\Sigma_{\mt{PP}}(\omega)
+	\end{pmatrix}
+	\cdot
+	\begin{pmatrix}
+	\mathcal{C}_{\mt{JJ}}(\omega) &  \mathcal{C}_{\mt{JP}}(\omega) \\
+	\mathcal{C}_{\mt{PJ}}(\omega) &  \mathcal{C}_{\mt{PP}}(\omega)
+	\end{pmatrix}
+	=
+	\frac{i}{\beta}
+	\begin{pmatrix}
+	\chi_{\mt{JJ}}(0) &  \chi_{\mt{JP}}(0) \\
+	\chi_{\mt{PJ}}(0) &  \chi_{\mt{PP}}(0)
+	\end{pmatrix}
+	\label{eq:matric equation correlation function unconserved momentum}
+\end{align}
+%
+The current current correlation function is needed for computing the electrical conductivity.
+In the memory-matrix-formalism, the definition of this correlation function is given by the following formula in frequancy space.
+%
+\begin{align}
+	\mathcal{C}_{\mt{JJ}}(\omega) = \obra{\mt{J}} \frac{i}{\omega - \mt{L}} \oket{\mt{J}}
+\end{align}
+%
+Equally to the procedure in chapter \ref{ch:infinite conductivity} the current operator is expressed as an parallel and perpendicular component.
+The parallel component is still identified with the projection from $\toket{J}$ onto $\toket{P}$.
+The current operator is seperated in the expression above, producing for new correlation functions.
+Two of them are zero, since $\toket{\mt{J}_{\mid\mid}}$ and $\toket{\mt{J}_{\bot}}$ are orthogonal.
+As discussed in chapter \ref{ch:infinite conductivity}, the correlation function containing the perpendicular part represents the noisy background.
+In the further calculation this term is dropped, since the origin is chosen at this value.
+A detailed discussion is given in \cite{Jung}.
+The current curent correlation function is therefore given by
+%
+\begin{align}
+	\mathcal{C}_{\mt{JJ}}(\omega) = \obra{\mt{J}_{\mid\mid}} \frac{i}{\omega - \mt{L}} \oket{\mt{J}_{\mid\mid}} = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert^{2}} \mathcal{C}_{\mt{PP}}(\omega)
+	\label{eq:JJ correlation function}
+\end{align}
+%
+Equation \eqref{eq:parallel current as projection} is used in the second step.
+The momentum momentum correlation function is readed out of equation \eqref{eq:matric equation correlation function unconserved momentum}.
+Therefore the inverse of the memory matrix is multiplied from the left.
+The following expression is obtained for the momentum momentum correlation function
+%
+\begin{align}
+	\mathcal{C}_{\mt{PP}}(\omega) = \frac{i}{\beta} \cdot \frac{i \Sigma_{\mt{PJ}}(\omega)  \chi_{\mt{JP}}(0)}{\omega\big(\omega - i\Sigma_{\mt{PP}}(\omega)\big)} + \frac{i}{\beta} \cdot \frac{\chi_{\mt{PP}}(0)}{\omega - i\Sigma_{\mt{PP}}(\omega)} \approx \frac{i}{\beta} \cdot \frac{i \chi_{\mt{PP}}(0)}{\Sigma_{\mt{PP}}(\omega)}
+\end{align}
+%
+In the last step, the limit of small frequencies $\omega$ is made.
+The first term is proportional to $\omega^{-2}$ and is therefore assmued to be small, comparing to the second one.
+This equation is inserted in \eqref{eq:JJ correlation function}, while this one is then again inserted in \eqref{eq:general static condictivity}.
+This yields the following formula for the static electrical conductivity:
+%
+\begin{align}
+	\sigma_{\mt{dc}} = \lim\limits_{\omega \to 0} \beta \mathcal{C}_{\mt{JJ}}(\omega) = \frac{i}{\beta} \lim\limits_{\omega \to 0} \vert\chi_{\mt{PJ}}\vert^{2} \obra{\dot{\mt{P}}} \frac{1}{\omega - \mt{L_{0}}} \oket{\dot{\mt{P}}}^{-1} = -\beta^{-1} \lim\limits_{\omega \to 0} \vert\chi_{\mt{PJ}}\vert^{2} \mathcal{C}_{\dot{\mt{P}} \dot{\mt{P}}}^{-1}(\omega).
+\end{align}
+%
+Here the definition \eqref{eq:Sigma(z)} of the memory function $\Sigma_{\mt{PP}}(\omega)$ and the definition of the correlation function in fequency space \eqref{eq:correlation function frequency space} is used.
+Above, it is discussed that the replacing of QLQ by L is valid.
+The $\dot{\mt{P}}$-$\dot{\mt{P}}$ correlation function is now transformed in an integral equation.
+In this representation the use of diagrammatic pertubation theory is possible.
+%
+\begin{align}
+	\mathcal{C}_{\dot{\mt{P}} \dot{\mt{P}}}(\omega) &= \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \mathcal{C}_{\dot{\mt{P}} \dot{\mt{P}}}(t) = \beta^{-1} \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \int\limits_{0}^{\beta} \dd{\lambda} \expval{\dot{\mt{P}}^{\dag}(t) \dot{\mt{P}}(0)}
+	\notag \\
+	\Leftrightarrow\ \mathcal{C}_{\dot{\mt{P}} \dot{\mt{P}}}(\omega) &= \beta^{-1} \Phi_{\dot{\mt{P}} \dot{\mt{P}}}(\omega) = \frac{i\omega^{-1}}{\beta} \bigg[\chi_{\dot{\mt{P}} \dot{\mt{P}}}(\omega) - \underbrace{\chi_{\dot{\mt{P}} \dot{\mt{P}}}(\omega=0)}_{=0}\bigg]
+	\notag \\
+	\Leftrightarrow\ \mathcal{C}_{\dot{\mt{P}} \dot{\mt{P}}}(\omega) &= -\frac{\omega^{-1}}{\beta} \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{0}
+\end{align}
+%
+The correlation function is transformed into time space and the definition of the scalar product \eqref{eq:scalar product Liouville space2.0} is used.
+This expression is equivalent to the Fourier transformed Kubo relaxation function.
+In frequency space, the Kubo relaxation function is connected with the susceptibility by relation \eqref{eq:relation 2 between Phi and chi}.
+Since the time derivative of P is zero at $t=0$, the static susceptibility vanishes.
+The susceptibility is again transformed into time space and the definition \eqref{eq:dynamical susceptibilty} is used.
 
+Inserting this expression in our obtained equation for the static electrical conductivity, the final form of their is given by
+%
+\begin{align}
+	\sigma_{\mt{dc}} = \lim\limits_{\omega \to 0} \frac{\omega \vert \chi_{\mt{JP}}(\omega = 0) \vert^{2}}{\int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \expval{\comm{\dot{\mt{P}}(t)}{\dot{\mt{P}}(0)}}_{0}},
+	\label{eq:formula static conductivity}
+\end{align}
+%
 
 
 

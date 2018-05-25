@@ -331,6 +331,26 @@
       \field{title}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
       \field{year}{2005}
     \endentry
+    \entry{Jung}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{hash=e6d88a5667a1c9c7e5c5cd83e5e8910f}{Jung}{J\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e6d88a5667a1c9c7e5c5cd83e5e8910f}{Jung}{J\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Universit\"{a}t zu K\"{o}n}%
+      }
+      \strng{namehash}{e6d88a5667a1c9c7e5c5cd83e5e8910f}
+      \strng{fullhash}{e6d88a5667a1c9c7e5c5cd83e5e8910f}
+      \field{labelalpha}{Jun07}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Transport and Approximate Conservation Laws in Low Dimensional Systems}
+      \field{title}{Transport and Approximate Conservation Laws in Low Dimensional Systems}
+      \field{type}{dissertation}
+      \field{year}{2007}
+    \endentry
     \entry{Elk&Gasser}{book}{}
       \name{labelname}{2}{}{%
         {{hash=af8d4a1d2dc7384af1c8dcfb99a0b45e}{Elk}{E\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
@@ -371,26 +391,6 @@
       \field{isbn}{978-3-540-71930-4}
       \field{title}{Fundamentals of many-body physics : principles and methods}
       \field{year}{2009}
-    \endentry
-    \entry{Jung}{thesis}{}
-      \name{labelname}{1}{}{%
-        {{hash=e6d88a5667a1c9c7e5c5cd83e5e8910f}{Jung}{J\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=e6d88a5667a1c9c7e5c5cd83e5e8910f}{Jung}{J\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {Universit\"{a}t zu K\"{o}n}%
-      }
-      \strng{namehash}{e6d88a5667a1c9c7e5c5cd83e5e8910f}
-      \strng{fullhash}{e6d88a5667a1c9c7e5c5cd83e5e8910f}
-      \field{labelalpha}{Jun07}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Transport and Approximate Conservation Laws in Low Dimensional Systems}
-      \field{title}{Transport and Approximate Conservation Laws in Low Dimensional Systems}
-      \field{type}{dissertation}
-      \field{year}{2007}
     \endentry
   \endsortlist
 \endrefsection

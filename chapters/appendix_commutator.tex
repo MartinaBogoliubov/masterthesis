@@ -13,7 +13,8 @@ In Matsubara time $\tau = it$, the single Lagrange densities are given by
 %
 \begin{align}
 	\mathcal{L}_{\Psi} = 
-		\vb{\Psi}^{\dag}(\vb{x},\tau) 
+		\vb{\Psi}^{\dag}(\vb{x},\tau)
+		%\twoOneVec{\Psi_{\mt{a}}^{\dag}(\vb{x},\tau)}{\Psi_{\mt{b}}^{\dag}(\vb{x},\tau)}^{-1}
 		\twoTwoMatrix{\sigma_{0} (\partial_{\tau}-\mu_{0}+\xi_{a})}{0}{0}{\sigma_{0} (\partial_{\tau}-\mu_{0}+\xi_{b})}
 		\vb{\Psi}(\vb{x},\tau)
 \end{align}
@@ -47,7 +48,7 @@ The Lagrangian for umklapp scattering is assumed to be
 \end{align}
 %
 where $\mt{J}(\vb{R})$ is a coupling parameter and $\vb{R}$ is a lattice vector.
-The following treatment is now to compute the Hamiltonian, momentum and current, using the energy-momentum-tensor
+The following treatment is now to compute the Hamiltonian, momentum and current, using the energy-momentum-tensor and the current-tensor
 %
 \begin{align}
 	\mathcal{T}_{\mu\nu} = 
@@ -58,7 +59,6 @@ The following treatment is now to compute the Hamiltonian, momentum and current,
 		\bigg]
 \end{align}
 %
-and the formula for the current density
 %
 \begin{align}
 	\mathcal{J}_{\mu} = -i \sum\limits_{\{\zeta_{n}\}} \epsilon(\zeta_{n}) \bigg[
@@ -75,11 +75,468 @@ In the spin-fermion-model, the bosonic field operator is considered as real, so 
 
 
 
+%
+\begin{align}
+	\Psi^{\dag} \big(\partial_{i}^{2} \Psi\big) = -\big(\partial_{i} \Psi^{\dag}\big) \big(\partial_{i} \Psi\big)
+\end{align}
+%
 
 
 
 
 
+
+
+%
+\begin{align}
+	&\mathcal{H} = 
+		\frac{1}{2} \sum\limits_{\{\zeta_{n}\}} \bigg[
+		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big) (\partial_{\tau}\zeta_{n}) 
+		-
+		(\partial_{\tau}\zeta_{n}^{\dag}) \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big)^{\dag}
+		\bigg]
+		-
+		\mathcal{L}
+		\notag \\
+	\Leftrightarrow\ &\mathcal{H} = 
+		\frac{1}{2} \bigg[ 
+		\Big(\psi_{\mathrm{a}}^{\dag}\Big) (\partial_{\tau}\psi_{\mathrm{a}}) 
+		-
+		(\partial_{\tau}\psi_{\mathrm{a}}^{\dag}) \Big(\psi_{\mathrm{a}}^{\dag}\Big)^{\dag}
+		+
+		\Big(\psi_{\mathrm{b}}^{\dag}\Big) (\partial_{\tau}\psi_{\mathrm{b}}) 
+		-
+		(\partial_{\tau}\psi_{\mathrm{b}}^{\dag}) \Big(\psi_{\mathrm{b}}^{\dag}\Big)^{\dag}
+		\notag \\
+		&\hspace{1.05cm}+
+		\Big(\epsilon  \partial_{\tau}\Phi_{\mu}\Big) (\partial_{\tau}\Phi_{\mu}) 
+		-
+		(\partial_{\tau}\Phi_{\mu}) \Big(\epsilon \partial_{\tau} \Phi_{\mu}\Big)^{\dag}
+		\bigg]
+		-\mathcal{L}
+		\notag \\
+	\Leftrightarrow\ &\mathcal{H} = 
+		\psi_{\mathrm{a}}^{\dag} (\partial_{\tau}\psi_{\mathrm{a}}) 
+		+
+		\psi_{\mathrm{b}}^{\dag} (\partial_{\tau}\psi_{\mathrm{b}}) 
+		+
+		\epsilon  (\partial_{\tau} \Phi_{\mu}) (\partial_{\tau} \Phi_{\mu}) 
+		-
+		\mathcal{L}
+		\notag \\
+	\Leftrightarrow\ &\mathcal{H} = 
+		\psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau) \big( \mu_{0} + \frac{\partial_{x}^{2}}{2m_{1}} + \frac{\partial_{y}^{2}}{2m_{2}} \big) \psi_{\mathrm{a}}(\bvec{x},\tau)
+		\notag \\&
+		+ 
+		\psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau) \big( \mu_{0} + \frac{\partial_{x}^{2}}{2m_{2}} + \frac{\partial_{y}^{2}}{2m_{1}} \big) \psi_{\mathrm{b}}(\bvec{x},\tau)
+		\notag \\&
+		- 
+		\frac{1}{2} \big(\partial_{i} \Phi_{\mu}(\bvec{x},\tau)\big) \big(\partial_{i} \Phi_{\mu}(\bvec{x},\tau)\big)
+		+ 
+		\frac{1}{2\epsilon} \pi_{\mu}(\bvec{x},\tau) \pi_{\mu}(\bvec{x},\tau)
+		\notag \\&
+		-	
+		\lambda \Phi_{\mu}(\bvec{x},\tau) \big(\psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau) \sigma_{\mu} \psi_{\mathrm{b}}(\bvec{x},\tau) + \psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau) \sigma_{\mu} \psi_{\mathrm{a}}(\bvec{x},\tau)\big)
+\end{align}
+%
+
+
+
+
+%
+\begin{align}
+	\pi_{\mu}(\bvec{x},\tau) = \frac{\partial \mathcal{L}}{\partial(\partial_{\tau} \Phi_{\mu}(\bvec{x},\tau))} = \epsilon \partial_{\tau} \Phi_{\mu}(\bvec{x},\tau)
+\end{align}
+%
+
+
+
+
+
+
+%
+\begin{align}
+	\mathcal{P}_{j} &= 
+		\frac{-i}{2} \sum\limits_{\{\zeta_{n}\}} \bigg[ 
+		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big) (\partial_{j}\zeta_{n}) 
+		-
+		(\partial_{j}\zeta_{n})^{\dag} \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big)^{\dag}
+		\bigg]
+		-
+		\eta_{0j}\mathcal{L}
+		\notag \\
+	\Leftrightarrow\ \mathcal{P}_{j} &= 
+		\frac{-i}{2} \bigg[
+			\psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau) \big(\partial_{j} \psi_{\mathrm{a}}(\bvec{x},\tau)\big)
+			- 
+			\big(\partial_{j} \psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau)\big) \psi_{\mathrm{a}}(\bvec{x},\tau)
+			\\&
+			+
+			\psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau) \big(\partial_{j} \psi_{\mathrm{b}}(\bvec{x},\tau)\big)
+			- 
+			\big(\partial_{j} \psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau)\big) \psi_{\mathrm{b}}(\bvec{x},\tau)
+		\bigg]
+	\\&
+	- 
+	i\pi_{\mu}(\bvec{x},\tau)) \big(\partial_{j} \phi_{\mu}(\bvec{x},\tau)\big)
+\end{align}
+%
+
+$\big(\partial_{j} \phi_{\mu}(\bvec{x},\tau)\big) \big(\partial_{t}\Phi_{\mu}(\bvec{x},\tau)\big)$
+
+
+
+%
+\begin{align}
+	\mathcal{J}_{j} &= 
+		-i \sum\limits_{\{\zeta_{n}\}} \epsilon(\zeta_{n}) \bigg[
+			\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{j}\zeta_{n})}\Big) \zeta_{n}
+			-
+			\zeta_{n}^{\dag} \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{j}\zeta_{n})}\Big)^{\dag}
+		\bigg]
+	\notag \\
+	\Leftrightarrow\ \mathcal{J}_{x} &=
+		\frac{-i}{2} \bigg[
+		\frac{1}{m_{1}} \Big[
+			\big(\partial_{x} \psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau)\big) \psi_{\mathrm{a}}(\bvec{x},\tau)
+			-
+			\psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau) \big(\partial_{x} \psi_{\mathrm{a}}(\bvec{x},\tau)\big)
+		\Big]
+		\notag \\&
+		+
+		\frac{1}{m_{2}} \Big[
+			\big(\partial_{x} \psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau)\big) \psi_{\mathrm{b}}(\bvec{x},\tau)
+			-
+			\psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau) \big(\partial_{x} \psi_{\mathrm{b}}(\bvec{x},\tau)\big)
+		\Big]
+		\bigg]
+\end{align}
+%
+
+
+
+%
+\begin{align}
+	H &= 
+	 	\int \frac{\mathrm{d}^{2}\bvec{k}}{(2\pi)^{2}}\,
+	 	\Bigg[
+	 		\epsilon_{\mathrm{a}}(\bvec{k})
+	 		\psi_{\mathrm{a}}^{\dag}(\bvec{k},\tau)
+	 		\psi_{\mathrm{a}}(\bvec{k},\tau)
+	 		+
+	 		\epsilon_{\mathrm{b}}(\bvec{k})
+	 		\psi_{\mathrm{b}}^{\dag}(\bvec{k},\tau)
+	 		\psi_{\mathrm{b}}(\bvec{k},\tau)
+		\\ &
+		-
+		\frac{\bvec{k}^{2}}{2} \Phi_{\mu}(\bvec{k},\tau) \Phi_{\mu}(-\bvec{k},\tau)
+		+
+		\frac{1}{2\epsilon} \pi_{\mu}(\bvec{k},\tau) \pi_{\mu}(-\bvec{k},\tau)
+		\\ &
+		-
+		\lambda \int \frac{\mathrm{d}^{2}\bvec{q}}{(2\pi)^{2}}\, \Phi_{\mu}(\bvec{k}-\bvec{q},\tau)
+		\bigg[
+			\psi_{\mathrm{a}}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\mathrm{b}}(\bvec{q},\tau)
+			+
+			\psi_{\mathrm{b}}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\mathrm{a}}(\bvec{q},\tau)
+		\bigg]
+		\Bigg]
+\end{align}
+%
+
+
+$\epsilon_{\mathrm{a}}(\bvec{p}) = \mu_{0} - \frac{p_{x}^{2}}{2m_{1}} - \frac{p_{y}^{2}}{2m_{2}}$ und $\epsilon_{\mathrm{b}}(\bvec{p}) = \mu_{0} - \frac{p_{x}^{2}}{2m_{2}} - \frac{p_{y}^{2}}{2m_{1}}$
+
+
+
+%
+\begin{align}
+	P_{j} &= \int \frac{\mathrm{d}^{2}\bvec{k}}{(2\pi)^{2}}\, k_{j}\Bigg[
+	 	\psi_{\mathrm{a}}^{\dag}(\bvec{k})
+	 	\psi_{\mathrm{a}}(\bvec{k})
+	 	+
+	 	\psi_{\mathrm{b}}^{\dag}(\bvec{k})
+	 	\psi_{\mathrm{b}}(\bvec{k})
+	 	-
+	 	\pi_{\mu}(\bvec{k})
+	 	\Phi_{\mu}(-\bvec{k})
+	\Bigg]
+\end{align}
+%
+
+
+%
+\begin{align}
+	J_{x} &= \int \frac{\mathrm{d}^{2}\bvec{k}}{(2\pi)^{2}}\, \Bigg[
+		-
+		\frac{k_{x}}{m_{1}}
+		\psi_{\mathrm{a}}^{\dag}(\bvec{k},\tau)
+		\psi_{\mathrm{a}}(\bvec{k},\tau)
+		-
+		\frac{k_{x}}{m_{2}}
+		\psi_{\mathrm{b}}^{\dag}(\bvec{k},\tau)
+		\psi_{\mathrm{b}}(\bvec{k},\tau)
+	\Bigg]
+\end{align}
+%
+
+%
+\begin{align}
+	&\antikom{\psi_{\mathrm{\alpha}}(\bvec{k},t)}{\psi_{\mathrm{\beta}}^{\dag}(\bvec{p},t)} = (2\pi)^{2}\delta(\bvec{p}-\bvec{k})\delta_{\mathrm{\alpha}\mathrm{\beta}}
+	\\
+	&\antikom{\psi_{\mathrm{\alpha}}(\bvec{k},t)}{\psi_{\mathrm{\beta}}(\bvec{p},t)} = 0
+	\\
+	&\antikom{\psi_{\mathrm{\alpha}}^{\dag}(\bvec{k},t)}{\psi_{\mathrm{\beta}}^{\dag}(\bvec{p},t)} = 0
+\end{align}
+%
+
+
+%
+\begin{align}
+	&\kom{\Phi_{\mu}(\bvec{k},\tau)}{\Phi_{\lambda}(\bvec{p},\tau)} = 0
+	\\
+	&\kom{\Phi_{\mu}(\bvec{k},\tau)}{\pi_{\lambda}(\bvec{p},\tau)} = (2\pi)^{2} \delta_{\mu\lambda} \delta(\bvec{p}+\bvec{k})
+	\\
+	&\kom{\pi_{\mu}(\bvec{k},\tau)}{\pi_{\lambda}(\bvec{p},\tau)} = 0
+\end{align}
+%
+
+
+
+%
+\begin{align}
+	\kom{\psi_{\alpha}^{\dag}(\bvec{k},\tau) \psi_{\alpha}(\bvec{k},\tau)}{\psi_{\beta}^{\dag}(\bvec{p},\tau) \psi_{\beta}(\bvec{p},\tau)} &=
+	(2\pi)^{2} \delta(\bvec{p}-\bvec{k}) \Big[
+		\psi_{\alpha}^{\dag}(\bvec{k},\tau) \psi_{\alpha}(\bvec{p},\tau)
+		- 
+		\psi_{\alpha}^{\dag}(\bvec{p},\tau) \psi_{\alpha}(\bvec{k},\tau)
+	\Big]
+	\label{eq:Kommutator 1}
+	\\
+	\kom{\Phi_{\mu}(\bvec{k},\tau) \Phi_{\mu}(-\bvec{k},\tau)}{\pi_{\lambda}(\bvec{p},\tau) \Phi_{\lambda}(-\bvec{p},\tau)} &=
+	(2\pi)^{2} \Big[
+		\Phi_{\mu}(\bvec{k},\tau)
+		\Phi_{\mu}(-\bvec{p},\tau)	
+		\delta(\bvec{p}-\bvec{k})
+		\notag \\& \hspace{2cm} 
+		+ 
+		\Phi_{\mu}(-\bvec{p},\tau) 
+		\Phi_{\mu}(-\bvec{k},\tau) 
+		\delta(\bvec{p}+\bvec{k})
+	\Big]
+	\label{eq:Kommutator 2}
+	\\
+	\kom{\pi_{\mu}(\bvec{k},\tau) \pi_{\mu}(-\bvec{k},\tau)}{\pi_{\lambda}(\bvec{p},\tau) \Phi_{\lambda}(-\bvec{p},\tau)} &=
+	-(2\pi)^{2} \Big[
+		\pi_{\mu}(\bvec{k},\tau) 
+		\pi_{\mu}(\bvec{p},\tau) 
+		\delta(\bvec{p}+\bvec{k}) 
+		\notag \\& \hspace{2cm}
+		+ 
+		\pi_{\mu}(\bvec{p},\tau) 
+		\pi_{\mu}(-\bvec{k},\tau) 
+		\delta(\bvec{p}-\bvec{k})
+	\Big]
+	\label{eq:Kommutator 3}
+	\\
+	\kom{\psi_{\alpha}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\beta}(\bvec{q},\tau)}{\psi_{\gamma}^{\dag}(\bvec{p},t) \psi_{\gamma}(\bvec{p},\tau)} &=
+	(2\pi)^{2} \Big[
+		\psi_{\alpha}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\beta}(\bvec{p},\tau) \delta(\bvec{p}-\bvec{q})
+		\notag \\& \hspace{2cm}
+		- 
+		\psi_{\alpha}^{\dag}(\bvec{p},\tau) \sigma_{\mu} \psi_{\beta}(\bvec{q},\tau) \delta(\bvec{p}-\bvec{k})
+	\Big]
+	\label{eq:Kommutator 4}
+	\\
+	\kom{\Phi_{\mu}(\bvec{k}-\bvec{q},\tau)}{\pi_{\lambda}(\bvec{p},\tau) \Phi_{\lambda}(-\bvec{p},\tau)} &=
+	(2\pi)^{2} \delta(\bvec{p}+\bvec{k}-\bvec{q}) \Phi_{\mu}(-\bvec{p},\tau),
+	\label{eq:Kommutator 5}
+\end{align}
+%
+
+
+
+%
+\begin{align}
+	\kom{H}{P_{x}} &= 
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{p}}{(2\pi)^{4}}\,
+		p_{x}
+		\sum\limits_{\alpha,\beta} 
+		\epsilon_{\alpha}(\bvec{k})
+		\kom{\psi_{\alpha}^{\dag}(\bvec{k},\tau) \psi_{\alpha}(\bvec{k},\tau)}{\psi_{\beta}^{\dag}(\bvec{k},\tau) \psi_{\beta}(\bvec{k},\tau)}
+		\notag \\&
+		+
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{p}}{(2\pi)^{4}}\,
+		p_{x}
+		\bigg[
+			\frac{k^{2}}{2}
+			\kom{\Phi_{\mu}(\bvec{k},\tau) \Phi_{\mu}(-\bvec{k},\tau)}{\pi_{\lambda}(\bvec{p},t) \Phi_{\lambda}(-\bvec{p},t)}
+			\notag \\& \hspace{2cm}
+			-
+			\frac{1}{2\epsilon}
+			\kom{\pi_{\mu}(\bvec{k},\tau) \pi_{\mu}(-\bvec{k},\tau)}{\pi_{\lambda}(\bvec{p},t) \Phi_{\lambda}(-\bvec{p},t)}
+		\bigg]
+		\notag \\&
+		-
+		\lambda
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{q} \mathrm{d}^{2}\bvec{p}}{(2\pi)^{6}}\,
+		p_{x}
+		\Phi_{\mu}(\bvec{k}-\bvec{q},\tau)
+		\sum\limits_{\alpha\neq\beta}
+		\sum\limits_{\gamma}
+		\kom{\psi_{\alpha}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\beta}(\bvec{q},\tau)}{\psi_{\gamma}^{\dag}(\bvec{p},t) \psi_{\gamma}(\bvec{p},t)}
+		\notag \\&
+		+
+		\lambda
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{q} \mathrm{d}^{2}\bvec{p}}{(2\pi)^{6}}\,
+		p_{x}
+		\sum\limits_{\alpha\neq\beta}
+		\psi_{\alpha}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\beta}(\bvec{q},\tau)
+		\kom{\Phi_{\mu}(\bvec{k}-\bvec{q},\tau)}{\pi_{\lambda}(\bvec{p},t) \Phi_{\lambda}(-\bvec{p},t)}
+	\Leftrightarrow\ \kom{H}{P_{x}} &=	
+		-
+		\lambda
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{q}}{(2\pi)^{4}}\,
+		(q_{x}-k_{x})
+		\Phi_{\mu}(\bvec{k}-\bvec{q},\tau)
+		\sum\limits_{\alpha\neq\beta}
+		\psi_{\alpha}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\beta}(\bvec{q},t)
+		\notag \\&
+		+
+		\lambda
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{q}}{(2\pi)^{4}}\,
+		(q_{x}-k_{x})
+		\Phi_{\mu}(\bvec{k}-\bvec{q},t)
+		\sum\limits_{\alpha\neq\beta}
+		\psi_{\alpha}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\beta}(\bvec{q},\tau)
+	\notag \\
+	\Leftrightarrow\ \kom{H}{P_{x}} &= 0
+\end{align}
+%
+
+
+
+
+%
+\begin{align}
+	\kom{H}{J_{x}} &=
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{p}}{(2\pi)^{4}}\,
+		\frac{p_{x}}{m_{1}}
+		\sum\limits_{\alpha} 
+		\epsilon_{\alpha}(\bvec{k})
+		\kom{
+			\psi_{\alpha}^{\dag}(\bvec{k},\tau) 
+			\psi_{\alpha}(\bvec{k},\tau)
+		}{	
+			\psi_{\mathrm{a}}^{\dag}(\bvec{p},\tau)	
+			\psi_{\mathrm{a}}(\bvec{p},\tau)
+		}
+		\notag \\&
+		+
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{p}}{(2\pi)^{4}}\,
+		\frac{p_{x}}{m_{2}}
+		\sum\limits_{\alpha} 
+		\epsilon_{\alpha}(\bvec{k})
+		\kom{
+			\psi_{\alpha}^{\dag}(\bvec{k},\tau) 
+			\psi_{\alpha}(\bvec{k},\tau)
+		}{	
+			\psi_{\mathrm{b}}^{\dag}(\bvec{p},\tau)
+			\psi_{\mathrm{b}}(\bvec{p},\tau)
+		}
+		\notag \\&
+		+
+		\lambda
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{q} \mathrm{d}^{2}\bvec{p}}{(2\pi)^{6}}\,
+		\Phi_{\mu}(\bvec{k}-\bvec{q},\tau)
+		\frac{p_{x}}{m_{1}}
+		\sum\limits_{\alpha\neq\beta}
+		\kom{
+			\psi_{\alpha}^{\dag}(\bvec{k},\tau) 
+			\sigma_{\mu} 
+			\psi_{\beta}(\bvec{q},t)
+		}{
+			\psi_{\mathrm{a}}^{\dag}(\bvec{p},\tau)	
+			\psi_{\mathrm{a}}(\bvec{p},\tau)
+		}
+		\notag \\&
+		+
+		\lambda
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{q} \mathrm{d}^{2}\bvec{p}}{(2\pi)^{6}}\,
+		\Phi_{\mu}(\bvec{k}-\bvec{q},\tau)
+		\frac{p_{x}}{m_{2}}
+		\sum\limits_{\alpha\neq\beta}
+		\kom{
+			\psi_{\alpha}^{\dag}(\bvec{k},\tau) 
+			\sigma_{\mu} 
+			\psi_{\beta}(\bvec{q},t)
+		}{
+			\psi_{\mathrm{b}}^{\dag}(\bvec{p},\tau)
+			\psi_{\mathrm{b}}(\bvec{p},\tau)
+		}
+	\Leftrightarrow \kom{H}{J_{x}} &=
+		\lambda
+		\int \frac{\mathrm{d}^{2}\bvec{k} \mathrm{d}^{2}\bvec{q}}{(2\pi)^{4}}\,
+		\Phi_{\mu}(\bvec{k}-\bvec{q},\tau) 
+		\notag \\&
+		\times \Big[
+			\Big(\frac{q_{x}}{m_{1}} - \frac{k_{x}}{m_{2}}\Big)
+			\psi_{\mathrm{b}}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\mathrm{a}}(\bvec{q},\tau)
+			+
+			\Big(\frac{q_{x}}{m_{2}} - \frac{k_{x}}{m_{1}}\Big)
+			\psi_{\mathrm{a}}^{\dag}(\bvec{k},\tau) \sigma_{\mu} \psi_{\mathrm{b}}(\bvec{q},\tau)
+		\Big]
+\end{align}
+%
+
+
+
+
+
+
+%
+\begin{align}
+	\dot{P}_{j} &= \frac{i}{\hbar} \kom{H_{\text{umklapp}}}{P_{j}}
+	\notag \\
+	&= -\frac{i}{\hbar} \sum\limits_{G} \mathrm{J}_{\bvec{G}} 
+		\int\limits_{BZ} \frac{\text{d}^{2}k \text{d}^{2}p}{(2\pi)^{4}} \, 
+		p_{j}
+		\kom{\Phi_{\mu}(k) \Phi_{\mu}(-k+G)}{\pi_{\lambda}(p) \Phi_{\lambda}(-p)}
+	\notag \\
+	&= -\frac{i}{\hbar} \sum\limits_{G} \mathrm{J}_{\bvec{G}} 
+		\int\limits_{BZ} \frac{\text{d}^{2}k \text{d}^{2}p}{(2\pi)^{4}} \, 
+		p_{j}
+		\kom{\Phi_{\mu}(k) \Phi_{\mu}(-k+G)}{\pi_{\lambda}(p)} \Phi_{\lambda}(-p)
+	\notag \\
+	&= -\frac{i}{\hbar} \sum\limits_{G} \mathrm{J}_{\bvec{G}} 
+		\int\limits_{BZ} \frac{\text{d}^{2}k \text{d}^{2}p}{(2\pi)^{4}} \, 
+		p_{j} \bigg[
+			\Phi_{\mu}(k) \kom{\Phi_{\mu}(-k+G)}{\pi_{\lambda}(p)} \Phi_{\lambda}(-p)
+			+
+			\kom{\Phi_{\mu}(k)}{\pi_{\lambda}(p)} \Phi_{\mu}(-k+G) \Phi_{\lambda}(-p)
+		\bigg]
+	\notag \\
+	&= -\frac{i}{\hbar} \sum\limits_{G} \mathrm{J}_{\bvec{G}} 
+		\int\limits_{BZ} \frac{\text{d}^{2}k \text{d}^{2}p}{(2\pi)^{2}} \, 
+		p_{j} \bigg[
+			\Phi_{\mu}(k) \Phi_{\mu}(-p) \delta(p-k+G)
+			+
+			\Phi_{\mu}(-k+G) \Phi_{\mu}(-p) \delta(p+k)
+		\bigg]
+	\notag \\
+	&= -\frac{i}{\hbar} \sum\limits_{G} \mathrm{J}_{\bvec{G}} 
+		\int\limits_{BZ} \frac{\text{d}^{2}k}{(2\pi)^{2}} \, 
+		\bigg[
+			(k_{j} - G_{j}) \Phi_{\mu}(k) \Phi_{\mu}(-k+G)
+			-
+			k_{j} \Phi_{\mu}(-k+G) \Phi_{\mu}(k)
+		\bigg]
+	\notag \\
+	&= \frac{i}{\hbar} \sum\limits_{G} \mathrm{J}_{\bvec{G}} 
+		\int\limits_{BZ} \frac{\text{d}^{2}k}{(2\pi)^{2}} \, 
+			G_{j} \Phi_{\mu}(k) \Phi_{\mu}(-k+G)
+\end{align}
+%
 
 
 
