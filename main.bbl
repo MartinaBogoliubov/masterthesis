@@ -42,6 +42,146 @@
       \verb 10.1002/andp.19003060312
       \endverb
     \endentry
+    \entry{Bruus&Flensberg}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=a31baedb6f1a266da6533a6842618b2d}{Bruus}{B\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=c4db376c08b023e0a8897cc1fa4b8ebd}{Flensberg}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=a31baedb6f1a266da6533a6842618b2d}{Bruus}{B\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=c4db376c08b023e0a8897cc1fa4b8ebd}{Flensberg}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Univ. Press}%
+      }
+      \strng{namehash}{34eef7d628da507ddc594ea73d2a0715}
+      \strng{fullhash}{34eef7d628da507ddc594ea73d2a0715}
+      \field{labelalpha}{BF10}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Many-body quantum theory in condensed matter physics: an introduction}
+      \field{edition}{Repr.}
+      \field{isbn}{978-0-19-856633-5}
+      \field{title}{Many-body quantum theory in condensed matter physics: an introduction}
+      \field{year}{2010}
+    \endentry
+    \entry{Bader}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=6dd96a3716c1b7d81e64cfe8e1ac3eb3}{Baber}{B\bibinitperiod}{W.\bibnamedelimi G.}{W\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=6dd96a3716c1b7d81e64cfe8e1ac3eb3}{Baber}{B\bibinitperiod}{W.\bibnamedelimi G.}{W\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{6dd96a3716c1b7d81e64cfe8e1ac3eb3}
+      \strng{fullhash}{6dd96a3716c1b7d81e64cfe8e1ac3eb3}
+      \field{labelalpha}{Bab37}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{The Contribution to the Electrical Resistance of Metals from Collisions between Electrons}
+      \field{issn}{00804630}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Mathematical and Physical Sciences}
+      \field{number}{894}
+      \field{title}{The Contribution to the Electrical Resistance of Metals from Collisions between Electrons}
+      \field{volume}{158}
+      \field{year}{1937}
+      \field{pages}{383\bibrangedash 396}
+      \verb{url}
+      \verb http://www.jstor.org/stable/96825
+      \endverb
+    \endentry
+    \entry{Pal}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=88cec6546bd3116a8de6086c5ebbc320}{Pal}{P\bibinitperiod}{H.\bibnamedelimi K.}{H\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=23ea8b51971ef5d7470bf6c58cc581a4}{Yudson}{Y\bibinitperiod}{V.\bibnamedelimi I.}{V\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=7cac22a5d0f32ed891ba0859892b003b}{Maslov}{M\bibinitperiod}{D.\bibnamedelimi L.}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=88cec6546bd3116a8de6086c5ebbc320}{Pal}{P\bibinitperiod}{H.\bibnamedelimi K.}{H\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=23ea8b51971ef5d7470bf6c58cc581a4}{Yudson}{Y\bibinitperiod}{V.\bibnamedelimi I.}{V\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=7cac22a5d0f32ed891ba0859892b003b}{Maslov}{M\bibinitperiod}{D.\bibnamedelimi L.}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b79759507950b57768c685ea5c2ae443}
+      \strng{fullhash}{b79759507950b57768c685ea5c2ae443}
+      \field{labelalpha}{PYM12}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{{Resistivity of non-Galilean-invariant Fermi- and non-Fermi liquids}}
+      \field{eprintclass}{cond-mat.str-el}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Lithuanian Journal of Physics and Technical Sciences}
+      \field{title}{{Resistivity of non-Galilean-invariant Fermi- and non-Fermi liquids}}
+      \field{volume}{52}
+      \field{year}{2012}
+      \field{pages}{142\bibrangedash 164}
+      \verb{doi}
+      \verb 10.3952/lithjphys.52207
+      \endverb
+      \verb{eprint}
+      \verb 1204.3591
+      \endverb
+    \endentry
+    \entry{Altshuler}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=b9f63f593c2f198af42368377ba9ad9a}{Altshuler}{A\bibinitperiod}{B.\bibnamedelimi L.}{B\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=384c23b2eb6a6224bdff348e88701216}{Khmel'nitzkii}{K\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=635108bf890a3f9824069e2d52e3c38d}{Larkin}{L\bibinitperiod}{A.\bibnamedelimi I.}{A\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=1b29480291bc4542bec9879fe27fdedf}{Lee}{L\bibinitperiod}{P.\bibnamedelimi A.}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=b9f63f593c2f198af42368377ba9ad9a}{Altshuler}{A\bibinitperiod}{B.\bibnamedelimi L.}{B\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=384c23b2eb6a6224bdff348e88701216}{Khmel'nitzkii}{K\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=635108bf890a3f9824069e2d52e3c38d}{Larkin}{L\bibinitperiod}{A.\bibnamedelimi I.}{A\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=1b29480291bc4542bec9879fe27fdedf}{Lee}{L\bibinitperiod}{P.\bibnamedelimi A.}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{46237a1b8aad19fa5db233b202d0199d}
+      \strng{fullhash}{3cbfbbdadab1537f7e810d7859a44181}
+      \field{labelalpha}{Alt+80}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Magnetoresistance and Hall effect in a disordered two-dimensional electron gas}
+      \field{issue}{11}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{12}
+      \field{title}{Magnetoresistance and Hall effect in a disordered two-dimensional electron gas}
+      \field{volume}{22}
+      \field{year}{1980}
+      \field{pages}{5142\bibrangedash 5153}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.22.5142
+      \endverb
+    \endentry
+    \entry{Kondo}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=126869d1a9cb35569a0921ac80b1610c}{Kondo}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=126869d1a9cb35569a0921ac80b1610c}{Kondo}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{126869d1a9cb35569a0921ac80b1610c}
+      \strng{fullhash}{126869d1a9cb35569a0921ac80b1610c}
+      \field{labelalpha}{Kon64}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Resistance Minimum in Dilute Magnetic Alloys}
+      \field{journaltitle}{Progress of Theoretical Physics}
+      \field{number}{1}
+      \field{title}{Resistance Minimum in Dilute Magnetic Alloys}
+      \field{volume}{32}
+      \field{year}{1964}
+      \field{pages}{37\bibrangedash 49}
+      \verb{doi}
+      \verb 10.1143/PTP.32.37
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1143/PTP.32.37
+      \endverb
+    \endentry
     \entry{Mori}{article}{}
       \name{labelname}{1}{}{%
         {{hash=08384e01dbbdf087ca5ba2fc6b231aa4}{Mori}{M\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
