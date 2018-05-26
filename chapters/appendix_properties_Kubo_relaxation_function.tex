@@ -4,14 +4,14 @@
 \label{app:properties of the Kubo relaxation function}
 %
 %
-In section \ref{sec:kubo relaxation function} the Kubo relaxation function 
+The Kubo relaxation function 
 %
 \begin{align}
 	\Phi_{\mt{AB}}(t) = \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{t}^{\infty} \dd{\tau} \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{0} e^{-s\tau}.
 	\label{appeq:Kubo relaxation function}
 \end{align}
 %
-and the three relations 
+is introduced in section \ref{sec:kubo relaxation function} and the three relations below are still supposed.
 %
 \begin{enumerate}
 	\item $\begin{aligned}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{appeq:relation 1 between Phi and chi}
@@ -19,48 +19,37 @@ and the three relations
 	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{appeq:relation 3 between Phi and chi}
 \end{enumerate}
 %
-connecting the dynamical susceptibility $\chi_{\mt{AB}}$ with $\Phi_{\mt{AB}}$ are introduced.
-In the following we want to proof these three relations.
-
-The first one is easly gotten by derivating the Kubo relaxation function with respect to $t$ and comparing the result with the definition of the dynamical susceptibility \eqref{eq:dynamical susceptibilty}.
+The evidence of these three relation is proven in this appendix.
+The Kubo relaxation function is derivated with respect to the time $t$.
+This yields immediatly the first relation, comparing the obtained derivative with the definition of the dynamical susceptibility \eqref{eq:dynamical susceptibilty}.
 %
 \begin{align}
 	-\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) = \frac{i}{\hbar} \Theta(t) \expval{\comm{\mt{A}_{\mt{I}}(t)}{\mt{B}_{\mt{I}}(0)}}_{0} = \chi_{\mt{AB}}(t)
+	\label{eq:proof relation 1}
 \end{align}
 %
-The second relation is found with the aim of the Laplace transformation of the Kubo relaxation function.
-%
-\begin{align}
-	\Phi_{\mt{AB}}(\omega) = \int\limits_{0}^{\infty} \dd{t} \Phi_{\mt{AB}}(t) e^{i\omega t}
-	\label{appeq:Laplace transformation imaginary axis}
-\end{align}
-%
-In this definition of the Laplace transformation we set $s = -i\omega$ which correspond to a rotation of $\frac{\pi}{2}$ of the definition space.
-Using \eqref{appeq:Laplace transformation imaginary axis} after setting $t = 0$ in \eqref{appeq:Kubo relaxation function} yield
+For the evidence of the second relation, the kubo relaxation function is evaluated for the time $t=0$.
+The limit $\lim_{\omega\to0} \exp(i\omega \tau)$ is inserted and the lower limit of the integral is set to minus infinity, introducing the $\theta$-distribution $\theta(\tau)$.
+In the last step equation \eqref{eq:proof relation 1} and the Laplace transformation are used.
 %
 \begin{align}
 	\Phi_{\mt{AB}}(t=0) &= \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{0}^{\infty} \dd{\tau} \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{0} e^{-s\tau}
 	\notag \\
 	\Leftrightarrow\ \Phi_{\mt{AB}}(t=0) &= \frac{i}{\hbar} \lim\limits_{\substack{s \to 0 \\ \omega \to 0}}\ \int\limits_{-\infty}^{\infty} \dd{\tau} \Theta(\tau) \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{0} e^{i\omega \tau} e^{-s\tau}
 	\notag \\
-	\Leftrightarrow\ \Phi_{\mt{AB}}(t=0) &= \lim\limits_{\omega \to 0}\ \int\limits_{-\infty}^{\infty} \dd{\tau} \chi_{\mt{AB}}(\tau) e^{i\omega \tau}
-	\notag \\
-	\Leftrightarrow\ \Phi_{\mt{AB}}(t=0) &= \chi_{\mt{AB}}(\omega = 0),
+	\Leftrightarrow\ \Phi_{\mt{AB}}(t=0) &= \lim\limits_{\omega \to 0}\ \int\limits_{-\infty}^{\infty} \dd{\tau} \chi_{\mt{AB}}(\tau) e^{i\omega \tau} = \chi_{\mt{AB}}(\omega = 0)
 \end{align}
 %
-where it is assumed the susceptibility is a good function in the sense they decay fast enough and the convergence generating faktor is negligible.
-The third relation is computated with the aim of the first and second relation.
-Therefore relation one is multiplied with $e^{i\omega t}$ and is integrated with respect to $t$.
+Furthermore, the susceptibility is assumed to be good function in the sence of convergence and the limit respective to $s$ is hence taken with no doubt.
+The thrid relation follows in combination of the first and second relation
+Relation one is multiplied by $\exp(i\omega t)$ and is intgrated with respect to time $t$ from $0$ to $\infty$.
+The definition of the Laplace transformation and integration by parts is used on the left and right hand side, respectively.
 %
 \begin{align}
-	\int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \chi_{\mt{AB}}(t)  &= - \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \dv{t} \Phi_{\mt{AB}}(t)
+	\int\limits_{0}^{\infty} \dd{t} \chi_{\mt{AB}}(t)\: e^{i\omega t} &= - \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \dv{t} \Phi_{\mt{AB}}(t)
 	\notag \\
 	\overset{\mt{PI}}{\Leftrightarrow}\ \chi_{\mt{AB}}(\omega) &= \eval{-e^{i\omega t} \Phi_{\mt{AB}}(t)}_{0}^{\infty} + i\omega \int\limits_{0}^{\infty} \dd{t} e^{i\omega t} \Phi_{\mt{AB}}(t)
-	\notag \\
-	\Leftrightarrow\ \chi_{\mt{AB}}(\omega) &= \Phi_{\mt{AB}}(t=0) + i\omega \Phi_{\mt{AB}}(\omega)
 	\notag \\
 	\Leftrightarrow\ \Phi_{\mt{AB}}(\omega) &= \frac{1}{i\omega} \big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega=0)\big]
 \end{align}
 %
-In the first step the right hand side is integrated by parts and in last step the first relation and \eqref{appeq:Laplace transformation imaginary axis} is used.
-So the third relation gives us the dependence between the Kubo relaxation function and the dynamical susceptibility in frequency space. 

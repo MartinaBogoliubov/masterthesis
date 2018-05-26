@@ -71,7 +71,7 @@
         <string>y</string>
         <void method="set">
          <object idref="Point1"/>
-         <int>112</int>
+         <int>122</int>
         </void>
        </void>
       </void>
