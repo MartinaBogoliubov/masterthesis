@@ -27,10 +27,12 @@ In Matsubara time $\tau = it$, the single Lagrange densities are given by
 		\notag \\&+
 		\frac{u}{6} \big(\Phi_{\mu}(\vb{x},\tau) \Phi_{\mu}(\vb{x},\tau) + \frac{3}{g}\big)^{2}
 \end{align}
+%
 \begin{align}
 	\mathcal{L}_{\Psi\Phi} =
 		\lambda\Phi_{\mu}(\vb{x},\tau) \Big[\Psi_{\mt{a}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \Psi_{\mt{b}}(\vb{x},\tau) + \Psi_{\mt{b}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \Psi_{\mt{a}}(\vb{x},\tau)\Big]
 \end{align}
+%
 Here $\vb{\Psi} = (\Psi_{\mt{a}}, \Psi_{\mt{b}})$ and $\Psi_{\mt{a}}$, $\Psi_{\mt{b}}$ are two-component spinors and $\Phi_{\mu}$ is a SO(3) vector boson order parameter.
 The chemical potential is denoted with $\mu_0$ and the Pauli matrix are labeled with $\sigma_{0}$ and $\sigma_{\mu}$.
 $\epsilon$ is the squared inverse spin velocity $v_{\mt{S}}^{-2}$.
@@ -76,9 +78,9 @@ In the spin-fermion-model, the bosonic field operator is considered as real, so 
 
 
 %
-\begin{align}
-	\Psi^{\dag} \big(\partial_{i}^{2} \Psi\big) = -\big(\partial_{i} \Psi^{\dag}\big) \big(\partial_{i} \Psi\big)
-\end{align}
+%\begin{align}
+	%\Psi^{\dag} \big(\partial_{i}^{2} \Psi\big) = -\big(\partial_{i} \Psi^{\dag}\big) \big(\partial_{i} \Psi\big)
+%\end{align}
 %
 
 
@@ -88,56 +90,56 @@ In the spin-fermion-model, the bosonic field operator is considered as real, so 
 
 
 %
-\begin{align}
-	&\mathcal{H} = 
-		\frac{1}{2} \sum\limits_{\{\zeta_{n}\}} \bigg[
-		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big) (\partial_{\tau}\zeta_{n}) 
-		-
-		(\partial_{\tau}\zeta_{n}^{\dag}) \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big)^{\dag}
-		\bigg]
-		-
-		\mathcal{L}
-		\notag \\
-	\Leftrightarrow\ &\mathcal{H} = 
-		\frac{1}{2} \bigg[ 
-		\Big(\psi_{\mathrm{a}}^{\dag}\Big) (\partial_{\tau}\psi_{\mathrm{a}}) 
-		-
-		(\partial_{\tau}\psi_{\mathrm{a}}^{\dag}) \Big(\psi_{\mathrm{a}}^{\dag}\Big)^{\dag}
-		+
-		\Big(\psi_{\mathrm{b}}^{\dag}\Big) (\partial_{\tau}\psi_{\mathrm{b}}) 
-		-
-		(\partial_{\tau}\psi_{\mathrm{b}}^{\dag}) \Big(\psi_{\mathrm{b}}^{\dag}\Big)^{\dag}
-		\notag \\
-		&\hspace{1.05cm}+
-		\Big(\epsilon  \partial_{\tau}\Phi_{\mu}\Big) (\partial_{\tau}\Phi_{\mu}) 
-		-
-		(\partial_{\tau}\Phi_{\mu}) \Big(\epsilon \partial_{\tau} \Phi_{\mu}\Big)^{\dag}
-		\bigg]
-		-\mathcal{L}
-		\notag \\
-	\Leftrightarrow\ &\mathcal{H} = 
-		\psi_{\mathrm{a}}^{\dag} (\partial_{\tau}\psi_{\mathrm{a}}) 
-		+
-		\psi_{\mathrm{b}}^{\dag} (\partial_{\tau}\psi_{\mathrm{b}}) 
-		+
-		\epsilon  (\partial_{\tau} \Phi_{\mu}) (\partial_{\tau} \Phi_{\mu}) 
-		-
-		\mathcal{L}
-		\notag \\
-	\Leftrightarrow\ &\mathcal{H} = 
-		\psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau) \big( \mu_{0} + \frac{\partial_{x}^{2}}{2m_{1}} + \frac{\partial_{y}^{2}}{2m_{2}} \big) \psi_{\mathrm{a}}(\bvec{x},\tau)
-		\notag \\&
-		+ 
-		\psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau) \big( \mu_{0} + \frac{\partial_{x}^{2}}{2m_{2}} + \frac{\partial_{y}^{2}}{2m_{1}} \big) \psi_{\mathrm{b}}(\bvec{x},\tau)
-		\notag \\&
-		- 
-		\frac{1}{2} \big(\partial_{i} \Phi_{\mu}(\bvec{x},\tau)\big) \big(\partial_{i} \Phi_{\mu}(\bvec{x},\tau)\big)
-		+ 
-		\frac{1}{2\epsilon} \pi_{\mu}(\bvec{x},\tau) \pi_{\mu}(\bvec{x},\tau)
-		\notag \\&
-		-	
-		\lambda \Phi_{\mu}(\bvec{x},\tau) \big(\psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau) \sigma_{\mu} \psi_{\mathrm{b}}(\bvec{x},\tau) + \psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau) \sigma_{\mu} \psi_{\mathrm{a}}(\bvec{x},\tau)\big)
-\end{align}
+%\begin{align}
+%	&\mathcal{H} = 
+%		\frac{1}{2} \sum\limits_{\{\zeta_{n}\}} \bigg[
+%		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big) (\partial_{\tau}\zeta_{n}) 
+%		-
+%		(\partial_{\tau}\zeta_{n}^{\dag}) \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big)^{\dag}
+%		\bigg]
+%		-
+%		\mathcal{L}
+%		\notag \\
+%	\Leftrightarrow\ &\mathcal{H} = 
+%		\frac{1}{2} \bigg[ 
+%		\Big(\psi_{\mathrm{a}}^{\dag}\Big) (\partial_{\tau}\psi_{\mathrm{a}}) 
+%		-
+%		(\partial_{\tau}\psi_{\mathrm{a}}^{\dag}) \Big(\psi_{\mathrm{a}}^{\dag}\Big)^{\dag}
+%		+
+%		\Big(\psi_{\mathrm{b}}^{\dag}\Big) (\partial_{\tau}\psi_{\mathrm{b}}) 
+%		-
+%		(\partial_{\tau}\psi_{\mathrm{b}}^{\dag}) \Big(\psi_{\mathrm{b}}^{\dag}\Big)^{\dag}
+%		\notag \\
+%		&\hspace{1.05cm}+
+%		\Big(\epsilon  \partial_{\tau}\Phi_{\mu}\Big) (\partial_{\tau}\Phi_{\mu}) 
+%		-
+%		(\partial_{\tau}\Phi_{\mu}) \Big(\epsilon \partial_{\tau} \Phi_{\mu}\Big)^{\dag}
+%		\bigg]
+%		-\mathcal{L}
+%		\notag \\
+%	\Leftrightarrow\ &\mathcal{H} = 
+%		\psi_{\mathrm{a}}^{\dag} (\partial_{\tau}\psi_{\mathrm{a}}) 
+%		+
+%		\psi_{\mathrm{b}}^{\dag} (\partial_{\tau}\psi_{\mathrm{b}}) 
+%		+
+%		\epsilon  (\partial_{\tau} \Phi_{\mu}) (\partial_{\tau} \Phi_{\mu}) 
+%		-
+%		\mathcal{L}
+%		\notag \\
+%	\Leftrightarrow\ &\mathcal{H} = 
+%		\psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau) \big( \mu_{0} + \frac{\partial_{x}^{2}}{2m_{1}} + \frac{\partial_{y}^{2}}{2m_{2}} \big) \psi_{\mathrm{a}}(\bvec{x},\tau)
+%		\notag \\&
+%		+ 
+%		\psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau) \big( \mu_{0} + \frac{\partial_{x}^{2}}{2m_{2}} + \frac{\partial_{y}^{2}}{2m_{1}} \big) \psi_{\mathrm{b}}(\bvec{x},\tau)
+%		\notag \\&
+%		- 
+%		\frac{1}{2} \big(\partial_{i} \Phi_{\mu}(\bvec{x},\tau)\big) \big(\partial_{i} \Phi_{\mu}(\bvec{x},\tau)\big)
+%		+ 
+%		\frac{1}{2\epsilon} \pi_{\mu}(\bvec{x},\tau) \pi_{\mu}(\bvec{x},\tau)
+%		\notag \\&
+%		-	
+%		\lambda \Phi_{\mu}(\bvec{x},\tau) \big(\psi_{\mathrm{a}}^{\dag}(\bvec{x},\tau) \sigma_{\mu} \psi_{\mathrm{b}}(\bvec{x},\tau) + \psi_{\mathrm{b}}^{\dag}(\bvec{x},\tau) %\sigma_{\mu} \psi_{\mathrm{a}}(\bvec{x},\tau)\big)
+%\end{align}
 %
 
 

@@ -9,7 +9,7 @@
 The static electrical conductivity $\sigma_{\mt{dc}}$ is computed in this chapter, using the memory-matrix-formalsim.
 The underlying model is the spin-fermion-model (see chapter \ref{ch:spin fermion model}), including umklapp scattering as a translation symmetry breaking pertubation.
 In this chapter, our attention is focused on the physical analysis of the obtained expression for the conductivity.
-An explicite computation is demonstrated in appendix \ref{app:calculation}
+An explicite computation is demonstrated in appendix \ref{appch:green function} and \ref{appch:static susceptibility}.
 %
 %
 %\section{Static Conductivity's Derivation}
@@ -45,10 +45,9 @@ Here, the interaction between fermions and spin fluctuations is included.
 The time derivative of momentum is given by equation \eqref{eq:time derivative momentum finite}.
 
 The Green function $\mathcal{G}_{\dot{\mt{P}}\dot{\mt{P}}}(\vb{k}, z)$ and the static susceptibiliy $\chi_{\mt{JP}}(\omega = 0)$ are investigated, due to their possible temperature dependence.
-The latter is expected to be temperature independent.
-\todo{Why? -> P and J are explicitely time independent}
-This is computed in detail in the appendix \ref{app:calculation}, using the diagrammatic pertubation technique.
-The considered diagrams are the electron-pair bubble for each species of fermions, depicted in figure \ref{fig:bubble electrons}.
+The latter is expected to be temperature independent, since both quantities are not explicitly time dependent.\todo{right or wrong?}
+This is computed in detail in the appendix \ref{appch:static susceptibility}, using the diagrammatic pertubation technique.
+The considered diagrams are the electron-pair bubble for each species of fermions, depicted in figure \ref{fig:static susceptibility}.
 Therefore, the obtained expression of the susceptibility is given by
 %
 \begin{align}
@@ -65,7 +64,11 @@ The chemical potential is assumed as temperature independent in the observed reg
 \begin{figure}
 	\centering
 	\includegraphics[width=0.4\textwidth]{spin_wave_bubble.eps}
-	\caption{caption}
+	\caption{
+The zeroth order bubble diagram is shown for spin density fluctuations.
+The wavy lines symbolizes the spin density wave, denoted as $\mathcal{D}_{\mu}(\vb{k},i\omega_{n})$.
+The momentum of lower line is modified by the vector $\vb{G}$, originated from umklapp scattering.
+	}
 	\label{fig:spin wave bubble}
 \end{figure}
 %
@@ -74,11 +77,11 @@ Only the free bubble diagram is considered computing the Green function with dia
 Higher order terms in the diagrammatic treatment are corrections of the bubble diagram and since spin fluctuations are the observing objects only bubble diagrams occur.
 Therefore the conductivity or resistance is only determined by spin fluctuations.
 Resistance is a consequence of fermionic coupling to other degrees of freedom, obtained as finite fermionic lifetime.
-The resistance is thus proportional to the imaginary part of the retarded Green function $\mathcal{G}_{\dot{\mt{P}}\dot{\mt{P}}}^{\mt{ret}}(\vb{k}, z)$.
-Appendix \ref{app:calculation} is shown the detailed computation of the expression of the retarded Green function.
+The resistance is thus proportional to the imaginary part of the retarded Green function $\mathcal{G}_{\dot{\mt{P}}\dot{\mt{P}}}^{\mt{ret}}(\vb{k}, \omega)$.
+Appendix \ref{appch:green function} is shown the detailed computation of the expression of the retarded Green function.
 %
 \begin{align}
-	\Im{\mathcal{G}_{\dot{\mt{P}}\dot{\mt{P}}}^{\mt{ret}}(\vb{k}, z)} &= 
+	\Im{\mathcal{G}_{\dot{\mt{P}}\dot{\mt{P}}}^{\mt{ret}}(\vb{k}, \omega)} &= 
 		-\frac{4 \gamma^{2} \beta \omega}{\pi}
 		\sum\limits_{\vb{Q}_{1}, \vb{Q}_{2}}
 		\sum\limits_{\vb{G}}
@@ -92,7 +95,7 @@ Appendix \ref{app:calculation} is shown the detailed computation of the expressi
 		\frac{1}{(\vb{k} + \vb{Q}_{2})^{4} + \gamma^{2} \epsilon^{2}}
 \end{align}
 %
-Here the term under the momentum integral is given by the imaginary part of the damped spin density propagator, denoted in \eqref{eq:damped spin propagator real axis}.
+Here, the term under the momentum integral is given by the imaginary part of the damped spin density propagator, denoted in \eqref{appeq:damped spin density propagator with real omega}
 The integral itself is extended over the first Brillouin zone.
 The periodicity of the spin susceptibility and pertubation is considered by the sums over $\vb{Q}_{i}$ ($i=1,2$) and $\vb{G}$, respectivily.
 In both cases these are reciprocal lattice vectors.
@@ -220,7 +223,6 @@ The behaviour of the integrand is depicted on left hand side in figure \ref{fig:
 	\caption{caption}
 	\label{fig:behaviour integrand}
 \end{figure}
-\todo{rechtes Bild korrigieren}
 %
 A solution of the integral is evaluated determining the behaviour of the expression in squared brackets.
 For large values of $x$, a linear $r$-dependence is given by the power of $-\flatfrac{2}{3}$.

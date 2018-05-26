@@ -4,25 +4,25 @@
 \label{app:properties of the Kubo relaxation function}
 %
 %
-In section \ref{subsec: Kubo relaxation function} the Kubo relaxation function 
+In section \ref{sec:kubo relaxation function} the Kubo relaxation function 
 %
 \begin{align}
 	\Phi_{\mt{AB}}(t) = \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{t}^{\infty} \dd{\tau} \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{0} e^{-s\tau}.
-	\label{appeq: Kubo relaxation function}
+	\label{appeq:Kubo relaxation function}
 \end{align}
 %
 and the three relations 
 %
 \begin{enumerate}
-	\item $\begin{aligned}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{appeq: relation 1 between Phi and chi}
-	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega = 0) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{appeq: relation 2 between Phi and chi}
-	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{appeq: relation 3 between Phi and chi}
+	\item $\begin{aligned}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{appeq:relation 1 between Phi and chi}
+	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega = 0) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{appeq:relation 2 between Phi and chi}
+	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{appeq:relation 3 between Phi and chi}
 \end{enumerate}
 %
 connecting the dynamical susceptibility $\chi_{\mt{AB}}$ with $\Phi_{\mt{AB}}$ are introduced.
 In the following we want to proof these three relations.
 
-The first one is easly gotten by derivating the Kubo relaxation function with respect to $t$ and comparing the result with the definition of the dynamical susceptibility \eqref{eq: dynamical susceptibilty}.
+The first one is easly gotten by derivating the Kubo relaxation function with respect to $t$ and comparing the result with the definition of the dynamical susceptibility \eqref{eq:dynamical susceptibilty}.
 %
 \begin{align}
 	-\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) = \frac{i}{\hbar} \Theta(t) \expval{\comm{\mt{A}_{\mt{I}}(t)}{\mt{B}_{\mt{I}}(0)}}_{0} = \chi_{\mt{AB}}(t)
@@ -32,11 +32,11 @@ The second relation is found with the aim of the Laplace transformation of the K
 %
 \begin{align}
 	\Phi_{\mt{AB}}(\omega) = \int\limits_{0}^{\infty} \dd{t} \Phi_{\mt{AB}}(t) e^{i\omega t}
-	\label{appeq: Laplace transformation imaginary axis}
+	\label{appeq:Laplace transformation imaginary axis}
 \end{align}
 %
-In this definition of the Laplace transformation compared to \eqref{eq: Laplace transformation real axis} we set $s = -i\omega$ which correspond to a rotation of $\frac{\pi}{2}$ of the definition space \todo{reference to a book of laplace transformation}.
-Using \eqref{appeq: Laplace transformation imaginary axis} after setting $t = 0$ in \eqref{appeq: Kubo relaxation function} yield
+In this definition of the Laplace transformation we set $s = -i\omega$ which correspond to a rotation of $\frac{\pi}{2}$ of the definition space.
+Using \eqref{appeq:Laplace transformation imaginary axis} after setting $t = 0$ in \eqref{appeq:Kubo relaxation function} yield
 %
 \begin{align}
 	\Phi_{\mt{AB}}(t=0) &= \frac{i}{\hbar} \lim\limits_{s \to 0} \int\limits_{0}^{\infty} \dd{\tau} \expval{\comm{\mt{A}_{\mt{I}}(\tau)}{\mt{B}_{\mt{I}}(0)}}_{0} e^{-s\tau}
@@ -62,5 +62,5 @@ Therefore relation one is multiplied with $e^{i\omega t}$ and is integrated with
 	\Leftrightarrow\ \Phi_{\mt{AB}}(\omega) &= \frac{1}{i\omega} \big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega=0)\big]
 \end{align}
 %
-In the first step the right hand side is integrated by parts and in last step the first relation and \eqref{appeq: Laplace transformation imaginary axis} is used.
+In the first step the right hand side is integrated by parts and in last step the first relation and \eqref{appeq:Laplace transformation imaginary axis} is used.
 So the third relation gives us the dependence between the Kubo relaxation function and the dynamical susceptibility in frequency space. 

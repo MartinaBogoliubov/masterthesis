@@ -13,7 +13,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Kopf- und Fusszeile
-\usepackage[manualmark]{scrpage2} 	% Package scrpage2 erlaubt es die Kopf- und Fußzeile zu gestalten. Optionen sind automark oder manualmark
+\usepackage[automark]{scrpage2} 	% Package scrpage2 erlaubt es die Kopf- und Fußzeile zu gestalten. Optionen sind automark oder manualmark
 \pagestyle{scrplain}				% Nur Seitenzahl in Fußzeile. Sonst bleibt Kopf- und Fußzeile leer. Mit "headings" wird Kopf- und Fußzeile eingebunden
 \ofoot[]{} 							% Seitenzahl am Rand wird nur gesetzt wenn \pagemark eingefügt wird. Wenn es leer bleibt wird nichts geschrieben
 \cfoot[\pagemark]{\pagemark} 		% Seitenzahlen in der Seitenmitte, wenn \pagemark eingefügt. Ansonsten keine Seite
@@ -195,7 +195,7 @@
 \input{chapters/calculation} %done
 %
 \cleardoublepage
-\input{chapters/memory-matrix-formalism}
+\input{chapters/memory-matrix-formalism} %done
 %
 %\cleardoublepage
 %\input{chapters/propagator}
@@ -207,15 +207,16 @@
 \appendix							% appendix is starting
 \cleardoublepage
 \input{chapters/appendix_propagator} %done
-\input{chapters/appendix_commutator}
-\input{chapters/appendix_conversion_expectation_value}
+\input{chapters/appendix_time_derivatives} %done
+%\input{chapters/appendix_conversion_expectation_value}
 \input{chapters/appendix_calculation_susceptibility} %done
-\input{chapters/appendix_calculation}
-%\input{chapters/appendix_calculation_green} %done
+\input{chapters/appendix_calculation_green} %done
 \input{chapters/appendix_properties_Kubo_relaxation_function}
 %\input{chapters/appendix_fierz_identity}
 
 \endgroup
+%
+\backmatter
 %
 \cleardoublepage
 \listoftodos
@@ -223,5 +224,4 @@
 \cleardoublepage
 \printbibliography
 %
-\backmatter
 \end{document}

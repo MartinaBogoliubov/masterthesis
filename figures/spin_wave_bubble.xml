@@ -197,7 +197,7 @@
       <object idref="PointArray2"/>
      </void>
      <void property="textString">
-      <string>\mathbf{k}+\mathbf{K}, i\omega_{l}-i\omega_{n}</string>
+      <string>\mathbf{k}+\mathbf{G}, i\omega_{l}-i\omega_{n}</string>
      </void>
     </object>
    </void>
@@ -260,14 +260,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point8"/>
-         <int>95</int>
+         <int>59</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point8"/>
-         <int>151</int>
+         <int>152</int>
         </void>
        </void>
       </void>
@@ -276,7 +276,7 @@
       <object idref="PointArray4"/>
      </void>
      <void property="textString">
-      <string>\mathcal{G}_{jj}(i\omega_{l}) = </string>
+      <string>\mathcal{G}_{\dot{\mathrm{P}}\dot{\mathrm{P}}}(\mathbf{k}, i\omega_{l}) = </string>
      </void>
     </object>
    </void>

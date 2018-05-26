@@ -1,0 +1,518 @@
+%
+%
+%
+\chapter{Time Derivative of momentum P and current J}
+\label{appch:time derivative P and J}
+%
+%
+%
+The time derivative of the momentum and current operator are designated for the case of non-pertubation and pertubation in chapter \ref{ch:spin fermion model}.
+In this appendix, the computation is outlined of them.
+Our further approach is to compute Hamiltonian, momentum and current operator, using the energy-momentum-tensor and current-tensor \cite{Iliev}.
+The time derivative of momentum and current is then calculated, using the Heisenberg equation of motion.
+In the end, umklapp scattering is observed and the effect to momentum and current are discussed.
+
+Our starting point is the Lagrangian $\mathcal{L} = \mathcal{L}_{\Psi} + \mathcal{L}_{\Phi} + \mathcal{L}_{\Psi\Phi}$, as suggested in \cite{Patel&Sachdev} of the spin-fermion-model.
+In Matsubara time $\tau = it$, the single Lagrangians are given by
+%
+\begin{align}
+	\mathcal{L}_{\Psi} = 
+		\vb{\Psi}^{\dag}(\vb{x},\tau)
+		\twoTwoMatrix{\sigma_{0} (\partial_{\tau}+\mu_{0}+\xi_{a})}{0}{0}{\sigma_{0} (\partial_{\tau}+\mu_{0}+\xi_{b})}
+		\vb{\Psi}(\vb{x},\tau)
+\end{align}
+%
+\begin{align}
+	\mathcal{L}_{\Phi} &= 
+		\frac{1}{2} \big[\partial_{i}\Phi_{\mu}(\vb{x},\tau)\big] \big[\partial_{i}\Phi_{\mu}(\vb{x},\tau)\big] 
+		+ 
+		\frac{\epsilon}{2} \big[\partial_{\tau}\Phi_{\mu}(\vb{x},\tau)\big] \big[\partial_{\tau}\Phi_{\mu}(\vb{x},\tau)\big] 
+		\notag \\&+
+		\frac{u}{6} \Big[\Phi_{\mu}(\vb{x},\tau) \Phi_{\mu}(\vb{x},\tau) + \frac{3}{g}\Big]^{2}
+\end{align}
+%
+\begin{align}
+	\mathcal{L}_{\Psi\Phi} =
+		\lambda\Phi_{\mu}(\vb{x},\tau) \Big[\Psi_{\mt{a}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \Psi_{\mt{b}}(\vb{x},\tau) + \Psi_{\mt{b}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \Psi_{\mt{a}}(\vb{x},\tau)\Big]
+\end{align}
+%
+Here $\vb{\Psi} = (\Psi_{\mt{a}}, \Psi_{\mt{b}})$ is a vector containing the two-component spinors $\Psi_{\mt{a}}$, $\Psi_{\mt{b}}$.
+$\Phi_{\mu}$ is the three component bosnoic field operator and describes the spin fluctuations in the spin-fermion-model.
+Since the spin fluctuations arise at the phase transition, $\Phi_{\mu}$ is order parameter as well.
+The chemical potential is denoted with $\mu_{0}$ and the Pauli matrix are labeled with $\sigma_{0}$ and $\sigma_{\mu}$.
+The abbreviation $\epsilon = v_{\mt{S}}^{-2}$ is introduced, where $v_{\mt{S}}$ is the spin velocity.
+In the Lagrangian $\mathcal{L}_{\Phi}$, the term in the second line is neglectable in the low-energy theory of the spin fermion model.
+The anisotropic parabolical dispersion relations $\xi_{\mt{a}}$ and $\xi_{\mt{b}}$ are given by 
+%
+\begin{align}
+	\xi_{\mt{a}} = \frac{\partial_{x}^{2}}{2m_{1}} + \frac{\partial_{y}^{2}}{2m_{2}} \qquad \xi_{\mt{b}} = \frac{\partial_{x}^{2}}{2m_{2}} + \frac{\partial_{y}^{2}}{2m_{1}}
+\end{align}
+%
+The Hamiltonian for umklapp scattering is assumed to be 
+%
+\begin{align}
+	\mathcal{H}_{\mt{umklapp}}= \mt{J}(\vb{R}) \Phi_{\mu}(\vb{x},\tau) \Phi_{\mu}(\vb{x},\tau)
+\end{align}
+%
+where $\mt{J}(\vb{R})$ is a coupling parameter and $\vb{R}$ is a lattice vector.
+In a first step, the Hamiltonian for the unpertubated spin-fermion-model is calulated using the energy-momentum-tensor and current-tensor \cite{Iliev}.
+%
+\begin{align}
+	\mathcal{T}_{\mu\nu} = 
+		\frac{1}{2} \sum\limits_{\zeta_{n}} \bigg[ 
+		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\zeta_{n})}\Big) (\partial_{\nu}\zeta_{n}) 
+		+
+		(\partial_{\nu}\zeta_{n})^{\dag} \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\zeta_{n})}\Big)^{\dag}
+		\bigg]
+		-\eta_{\mu\nu}\mathcal{L}
+\end{align}
+%
+%
+\begin{align}
+	\mathcal{J}_{\mu} = -i \sum\limits_{\{\zeta_{n}\}} \epsilon(\zeta_{n}) \bigg[
+		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\zeta_{n})}\Big) \zeta_{n}
+		-
+		\zeta_{n}^{\dag} \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\zeta_{n})}\Big)^{\dag}
+		\bigg],
+\end{align}
+%
+Here, $\zeta_{n}$ is the set of all contributing operator fields, which is in our case $\{\Psi_{\mt{a}},\Psi_{\mt{b}}, \Phi_{\mu}\}$.
+The function $\epsilon(\zeta_{n})$ attains the values 0 of 1 in the case of real or complex fields, respectively.
+$\eta_{\mu\nu}$ is the Minkowski metric, where the definition $(1,-1,-1,-1)$ is used here.
+In chapter \ref{ch:spin fermion model}, the concept of hot spots is introduced.
+Fermions on different Fermi surfaces interact via spin fluctations, described by $\Phi_{\mu}$.
+The bosonic field operators are supposed to be real quantities, since the interaction is assumed to be on the hot spots and not in a vicinity regime around them.
+Furthermore, the spatial derivative in $\mathcal{L}_{\Psi}$ is rewriten. using relation $\Psi^{\dag} (\partial_{i}^{2} \Psi) = -(\partial_{i} \Psi^{\dag}) (\partial_{i} \Psi)$.
+This relation is evaluated, integrating the left hand side by parts.
+
+The (00)-component of the energy-momnetum-tensor represents the Hamiltonian of a system.
+This quantity is computed in the following.
+%
+\begin{align}
+	\mathcal{H} &= 
+		\frac{1}{2} \sum\limits_{\zeta_{n}} \bigg[
+		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big) (\partial_{\tau}\zeta_{n}) 
+		-
+		(\partial_{\tau}\zeta_{n}^{\dag}) \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big)^{\dag}
+		\bigg]
+		-
+		\mathcal{L}
+		\notag \\
+	\Leftrightarrow\ \mathcal{H} &= 
+		\psi_{\mt{a}}^{\dag} (\partial_{\tau}\psi_{\mt{a}}) 
+		+
+		\psi_{\mt{b}}^{\dag} (\partial_{\tau}\psi_{\mt{b}}) 
+		+
+		\epsilon  (\partial_{\tau} \Phi_{\mu}) (\partial_{\tau} \Phi_{\mu}) 
+		-
+		\mathcal{L}
+	\notag \\
+	\Leftrightarrow\ \mathcal{H} &= 
+		-
+		\psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\frac{\partial_{x}^{2}}{2m_{1}} + \frac{\partial_{y}^{2}}{2m_{2}} + \mu_{0}\big) \psi_{\mt{a}}(\vb{x},\tau)
+		\notag \\&
+		- 
+		\psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\frac{\partial_{x}^{2}}{2m_{2}} + \frac{\partial_{y}^{2}}{2m_{1}} + \mu_{0}\big) \psi_{\mt{b}}(\vb{x},\tau)
+		\notag \\&
+		- 
+		\frac{1}{2} \big(\partial_{i} \Phi_{\mu}(\vb{x},\tau)\big) \big(\partial_{i} \Phi_{\mu}(\vb{x},\tau)\big)
+		+ 
+		\frac{1}{2\epsilon} \pi_{\mu}(\vb{x},\tau) \pi_{\mu}(\vb{x},\tau)
+		\notag \\&
+		-	
+		\lambda \Phi_{\mu}(\vb{x},\tau) \big(\psi_{\mt{a}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \psi_{\mt{b}}(\vb{x},\tau) + \psi_{\mt{b}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \psi_{\mt{a}}(\vb{x},\tau)\big)
+\end{align}
+%
+Here, the usual time derivative is transformed into the Matsubara time, using $\partial_{t} = -i\partial_{\tau}$.
+The Hermitain of the $\tau$-derivative is given by $(\partial_{\tau})^{\dag} = -\partial_{\tau}$, which is also used.
+The canonical momentum of $\Phi_{\mu}$, given by $\pi_{\mu}(\vb{x},\tau) = \epsilon \partial_{\tau} \Phi_{\mu}(\vb{x},\tau)$, is used in the last step.
+The $\mathcal{T}_{0j}$-component is identified with the $j$-component of the momentum operator, which is calculated as next.
+%
+\begin{align}
+	\mathcal{P}_{j} &= 
+		\frac{-i}{2} \sum\limits_{\zeta_{n}} \bigg[ 
+		\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big) (\partial_{j}\zeta_{n}) 
+		+
+		(\partial_{j}\zeta_{n})^{\dag} \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}\zeta_{n})}\Big)^{\dag}
+		\bigg]
+		-
+		\eta_{0j}\mathcal{L}
+		\notag \\
+	\Leftrightarrow\ \mathcal{P}_{j} &= 
+		\frac{-i}{2} \bigg[
+			\psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\partial_{j} \psi_{\mt{a}}(\vb{x},\tau)\big)
+			- 
+			\big(\partial_{j} \psi_{\mt{a}}^{\dag}(\vb{x},\tau)\big) \psi_{\mt{a}}(\vb{x},\tau)
+			\notag \\&
+			+
+			\psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\partial_{j} \psi_{\mt{b}}(\vb{x},\tau)\big)
+			- 
+			\big(\partial_{j} \psi_{\mt{b}}^{\dag}(\vb{x},\tau)\big) \psi_{\mt{b}}(\vb{x},\tau)
+		\bigg]
+		- 
+		i\pi_{\mu}(\vb{x},\tau)) \big(\partial_{j} \phi_{\mu}(\vb{x},\tau)\big)
+	\notag \\
+	\Rightarrow\ \vb{\mathcal{P}} &= 
+		\frac{-i}{2} \bigg[
+			\vb{\Psi}^{\dag}(\vb{x},\tau) \big(\nabla \vb{\Psi}(\vb{x},\tau)\big)
+			- 
+			\big(\nabla \vb{\Psi}^{\dag}(\vb{x},\tau)\big) \vb{\Psi}(\vb{x},\tau)
+		\bigg]
+		-
+		i \pi_{\mu}(\vb{x},\tau) \big(\nabla \phi_{\mu}(\vb{x},\tau)\big)
+\end{align}
+%
+The Hermitian of the $\tau$-derivative and the canonical momentum is again used at this computation.
+The two-component vector $\vb{\Psi}$ is inserted to write the vector components as vector.
+Now, the $x$-component of the current is caluclated.
+%
+\begin{align}
+	\mathcal{J}_{x} &= 
+		-i \sum\limits_{\zeta_{n}} \epsilon(\zeta_{n}) \bigg[
+			\Big(\frac{\partial\mathcal{L}}{\partial(\partial_{x}\zeta_{n})}\Big) \zeta_{n}
+			-
+			\zeta_{n}^{\dag} \Big(\frac{\partial\mathcal{L}}{\partial(\partial_{x}\zeta_{n})}\Big)^{\dag}
+		\bigg]
+	\notag \\
+	\Leftrightarrow\ \mathcal{J}_{x} &=
+		\frac{-i}{2} \bigg[
+		\frac{1}{m_{1}} \Big[
+			\big(\partial_{x} \psi_{\mt{a}}^{\dag}(\vb{x},\tau)\big) \psi_{\mt{a}}(\vb{x},\tau)
+			-
+			\psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\partial_{x} \psi_{\mt{a}}(\vb{x},\tau)\big)
+		\Big]
+		\notag \\&
+		+
+		\frac{1}{m_{2}} \Big[
+			\big(\partial_{x} \psi_{\mt{b}}^{\dag}(\vb{x},\tau)\big) \psi_{\mt{b}}(\vb{x},\tau)
+			-
+			\psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\partial_{x} \psi_{\mt{b}}(\vb{x},\tau)\big)
+		\Big]
+		\bigg]
+\end{align}
+%
+The $x$-component of the current is compted analogical, where an interchange of the mass $(m_1 \leftrightarrow m_2)$ is the only difference. 
+These three quantities are now transformed into momentum space, since all of them contains spatial derivatives.
+This is obstructive in the later caluclation of the time derivative of P and J, since commutator relations of fermionic and bosonic fields are therefore used.
+%
+\begin{align}
+	\mt{H} &= 
+	 	\int_{\vb{k}}
+	 	\Bigg[ \sum\limits_{\alpha} \epsilon_{\alpha}(\vb{k}) \psi_{\alpha}^{\dag}(\vb{k},\tau) \psi_{\alpha}(\vb{k},\tau)
+		-
+		\frac{\vb{k}^{2}}{2} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},\tau)
+		+
+		\frac{1}{2\epsilon} \pi_{\mu}(\vb{k},\tau) \pi_{\mu}(-\vb{k},\tau)
+		\notag \\ &
+		-
+		\lambda \int_{\vb{q}} \Phi_{\mu}(\vb{k}-\vb{q},\tau)
+		\bigg[
+			\psi_{\mt{a}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\mt{b}}(\vb{q},\tau)
+			+
+			\psi_{\mt{b}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\mt{a}}(\vb{q},\tau)
+		\bigg]
+		\Bigg]
+\end{align}
+%
+%
+\begin{align}
+	\mt{P}_{j} &= \int_{\vb{k}}
+		k_{j} \Bigg[ \sum\limits_{\alpha} \psi_{\alpha}^{\dag}(\vb{k},\tau) \psi_{\alpha}(\vb{k},\tau)
+	 	-
+	 	\pi_{\mu}(\vb{k},\tau)
+	 	\Phi_{\mu}(-\vb{k},\tau)
+	\Bigg]
+\end{align}
+%
+%
+\begin{align}
+	\mt{J}_{x} &= - \int_{\vb{k}} \Bigg[
+		\frac{k_{x}}{m_{1}}
+		\psi_{\mt{a}}^{\dag}(\vb{k},\tau)
+		\psi_{\mt{a}}(\vb{k},\tau)
+		+
+		\frac{k_{x}}{m_{2}}
+		\psi_{\mt{b}}^{\dag}(\vb{k},\tau)
+		\psi_{\mt{b}}(\vb{k},\tau)
+	\Bigg]
+\end{align}
+%
+The sum over $\alpha$ summarizes over the two species of fermions a and b.
+Their dispersion relations are given by $\epsilon_{\mt{a}}(\vb{k}) = \frac{k_{x}^{2}}{2m_{1}} + \frac{k_{y}^{2}}{2m_{2}} - \mu_{0}$ und $\epsilon_{\mt{b}}(\vb{k}) = \frac{k_{x}^{2}}{2m_{2}} + \frac{k_{y}^{2}}{2m_{1}} - \mu_{0}$ in momentum space.
+All integrals are extended over the first Brillouin zone.
+
+Now, the time derivative of momentum P and current J is computed.
+The Heisenberg equation of motion is the usual way to calculate the derivative of an operator in quantum mechanics.
+The simplicity of this method is, that only the commutator between the Hamiltonian and the observed operator has to be computed.
+For the further approach, the commutator relations for bosonic and fermionic fields are required.
+Beside these two ones, all other commutator relations yield zero.
+%
+\begin{align}
+	\acomm{\psi_{\mt{\alpha}}(\vb{k},\tau)}{\psi_{\mt{\beta}}^{\dag}(\vb{p},\tau)} &= (2\pi)^{2} \delta_{\mt{\alpha}\mt{\beta}} \delta(\vb{p}-\vb{k})
+	\\
+	\comm{\Phi_{\mu}(\vb{k},\tau)}{\pi_{\lambda}(\vb{p},\tau)} &= (2\pi)^{2} \delta_{\mu\lambda} \delta(\vb{p}+\vb{k})
+\end{align}
+%
+At first the commutator between the Hamiltonian H and the $x$-component of P is computed.
+All integrals are extended over the first Brillouin zone, while the sums over greek letters runs over the fermionic species a and b.
+The condition $\alpha \neq \beta$ means that in this case both greek latters has to be different.
+The commutator has to be transformed into component representation, if Pauli matricies $\sigma_{\mu}$ connects to fermionic field operators.
+The above commutator relations are also valid in this representation.
+%
+\begin{align}
+	\comm{\mt{H}}{\mt{P}_{x}} &= 
+		\int_{\vb{k}} \int_{\vb{p}}
+		p_{x}
+		\sum\limits_{\alpha,\beta} 
+		\epsilon_{\alpha}(\vb{k})
+		\comm{\psi_{\alpha}^{\dag}(\vb{k},\tau) \psi_{\alpha}(\vb{k},\tau)}{\psi_{\beta}^{\dag}(\vb{k},\tau) \psi_{\beta}(\vb{k},\tau)}
+		\notag \\&
+		+
+		\int_{\vb{k}} \int_{\vb{p}}
+		p_{x}
+		\bigg[
+			\frac{k^{2}}{2}
+			\comm{\Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},\tau)}{\pi_{\lambda}(\vb{p},t) \Phi_{\lambda}(-\vb{p},t)}
+			\notag \\& \hspace{2cm}
+			-
+			\frac{1}{2\epsilon}
+			\comm{\pi_{\mu}(\vb{k},\tau) \pi_{\mu}(-\vb{k},\tau)}{\pi_{\lambda}(\vb{p},t) \Phi_{\lambda}(-\vb{p},t)}
+		\bigg]
+		\notag \\&
+		-
+		\lambda
+		\int_{\vb{k}} \int_{\vb{p}} \int_{\vb{q}}
+		p_{x}
+		\Phi_{\mu}(\vb{k}-\vb{q},\tau)
+		\sum\limits_{\alpha\neq\beta}
+		\sum\limits_{\gamma}
+		\comm{\psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\beta}(\vb{q},\tau)}{\psi_{\gamma}^{\dag}(\vb{p},t) \psi_{\gamma}(\vb{p},t)}
+		\notag \\&
+		+
+		\lambda
+		\int_{\vb{k}} \int_{\vb{p}} \int_{\vb{q}}
+		p_{x}
+		\sum\limits_{\alpha\neq\beta}
+		\psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\beta}(\vb{q},\tau)
+		\comm{\Phi_{\mu}(\vb{k}-\vb{q},\tau)}{\pi_{\lambda}(\vb{p},t) \Phi_{\lambda}(-\vb{p},t)}
+	\notag \\
+	\Leftrightarrow\ \comm{\mt{H}}{\mt{P}_{x}} &=	
+		-
+		\lambda
+		\int_{\vb{k}} \int_{\vb{q}}
+		(q_{x}-k_{x})
+		\Phi_{\mu}(\vb{k}-\vb{q},\tau)
+		\sum\limits_{\alpha\neq\beta}
+		\psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\beta}(\vb{q},t)
+		\notag \\&
+		+
+		\lambda
+		\int_{\vb{k}} \int_{\vb{q}}
+		(q_{x}-k_{x})
+		\Phi_{\mu}(\vb{k}-\vb{q},t)
+		\sum\limits_{\alpha\neq\beta}
+		\psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\beta}(\vb{q},\tau)
+	\notag \\
+	\Leftrightarrow\ \comm{\mt{H}}{\mt{P}_{x}} &= 0
+\end{align}
+%
+This result is also obtained for the $y$-direction of the momentum.
+As consequence, the time derivative of momentum is zero, $\dot{\mt{P}} = 0$.
+In the spin-fermion-model, described by the Hamiltonian H, momentum is a conserved quantity.
+This implies a unbroken translation symmetry.
+At next, the time derivative of the current in $x$-direction is calculated.
+The notation is equal to this used by the momentum above.
+%
+\begin{align}
+	\comm{H}{J_{x}} &=
+		\int_{\vb{k}} \int_{\vb{p}}
+		\frac{p_{x}}{m_{1}}
+		\sum\limits_{\alpha} 
+		\epsilon_{\alpha}(\vb{k})
+		\comm{
+			\psi_{\alpha}^{\dag}(\vb{k},\tau) 
+			\psi_{\alpha}(\vb{k},\tau)
+		}{	
+			\psi_{\mt{a}}^{\dag}(\vb{p},\tau)	
+			\psi_{\mt{a}}(\vb{p},\tau)
+		}
+		\notag \\&
+		+
+		\int_{\vb{k}} \int_{\vb{p}}
+		\frac{p_{x}}{m_{2}}
+		\sum\limits_{\alpha} 
+		\epsilon_{\alpha}(\vb{k})
+		\comm{
+			\psi_{\alpha}^{\dag}(\vb{k},\tau) 
+			\psi_{\alpha}(\vb{k},\tau)
+		}{	
+			\psi_{\mt{b}}^{\dag}(\vb{p},\tau)
+			\psi_{\mt{b}}(\vb{p},\tau)
+		}
+		\notag \\&
+		+
+		\lambda
+		\int_{\vb{k}} \int_{\vb{p}} \int_{\vb{q}}
+		\Phi_{\mu}(\vb{k}-\vb{q},\tau)
+		\frac{p_{x}}{m_{1}}
+		\sum\limits_{\alpha\neq\beta}
+		\comm{
+			\psi_{\alpha}^{\dag}(\vb{k},\tau) 
+			\sigma_{\mu} 
+			\psi_{\beta}(\vb{q},t)
+		}{
+			\psi_{\mt{a}}^{\dag}(\vb{p},\tau)	
+			\psi_{\mt{a}}(\vb{p},\tau)
+		}
+		\notag \\&
+		+
+		\lambda
+		\int_{\vb{k}} \int_{\vb{p}} \int_{\vb{q}}
+		\Phi_{\mu}(\vb{k}-\vb{q},\tau)
+		\frac{p_{x}}{m_{2}}
+		\sum\limits_{\alpha\neq\beta}
+		\comm{
+			\psi_{\alpha}^{\dag}(\vb{k},\tau) 
+			\sigma_{\mu} 
+			\psi_{\beta}(\vb{q},t)
+		}{
+			\psi_{\mt{b}}^{\dag}(\vb{p},\tau)
+			\psi_{\mt{b}}(\vb{p},\tau)
+		}
+	\notag \\
+	\Leftrightarrow \comm{H}{J_{x}} &=
+		\lambda
+		\int_{\vb{k}} \int_{\vb{q}}
+		\Phi_{\mu}(\vb{k}-\vb{q},\tau) 
+		\notag \\&
+		\times \Big[
+			\Big(\frac{q_{x}}{m_{1}} - \frac{k_{x}}{m_{2}}\Big)
+			\psi_{\mt{b}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\mt{a}}(\vb{q},\tau)
+			+
+			\Big(\frac{q_{x}}{m_{2}} - \frac{k_{x}}{m_{1}}\Big)
+			\psi_{\mt{a}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\mt{b}}(\vb{q},\tau)
+		\Big]
+\end{align}
+%
+In the investigated spin-fermion-model, the time derivative of the current is non-zero and as a consequence the current is unconserved.
+This property of the model is important for the calculation of the static conductivity.
+The effect of umklapp scatering respective the time derivative of P and J is following computed.
+The Hamiltonian $\mt{H}_{\mt{umklapp}}$ is given by
+%
+\begin{align}
+	\mt{H}_{\mt{umklapp}}= \sum\limits_{\vb{G}} \mt{J}_{\vb{G}} \int_{\vb{k}} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k}+\vb{G},\tau)
+\end{align}
+%
+in momentum space.
+The intergal is extended over the first Brillouin zone and the sum runs over all reciprocal lattice vectors.
+The quantities P and J are not altered considering Umklapp scattering, since momentum and current only emerged, if the Hamiltonian possesses time or spatial derivatives, respectiviely.
+Both are not existing in the Hamiltonian $\mt{H}_{\mt{umklapp}}$.
+Nevertheless, the time derivative of P and J are possible modified.
+The contribution of umklapp scattering to the latter is zero. 
+The field operators of the current are of fermionic nature, while these of the Hamiltonian $\mt{H}_{\mt{umklapp}}$ are of bosonic nature.
+The time derivative of P is in contrast non-zero.
+%
+\begin{align}
+	\dot{P}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
+		\int_{\vb{k}} \int_{\vb{p}}
+		p_{j}
+		\comm{\Phi_{\mu}(k) \Phi_{\mu}(-k+G)}{\pi_{\lambda}(p) \Phi_{\lambda}(-p)}
+	\notag \\
+	\dot{P}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
+		\int_{\vb{k}} \int_{\vb{p}} 
+		p_{j} \bigg[
+			\Phi_{\mu}(k) \comm{\Phi_{\mu}(-k+G)}{\pi_{\lambda}(p)} \Phi_{\lambda}(-p)
+			\notag \\ &\hspace{4.05cm}+
+			\comm{\Phi_{\mu}(k)}{\pi_{\lambda}(p)} \Phi_{\mu}(-k+G) \Phi_{\lambda}(-p)
+		\bigg]
+	\notag \\
+	\dot{P}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
+		\int_{\vb{k}} 
+		\bigg[
+			(k_{j} - G_{j}) \Phi_{\mu}(k) \Phi_{\mu}(-k+G)
+			-
+			k_{j} \Phi_{\mu}(-k+G) \Phi_{\mu}(k)
+		\bigg]
+	\notag \\
+	\dot{P}_{j} &= i \sum\limits_{G} \mt{J}_{\vb{G}} 
+		\int_{\vb{k}} G_{j} \Phi_{\mu}(k) \Phi_{\mu}(-k+G)
+	\label{appeq:time derivative momentum}
+\end{align}
+%
+Considering umklapp scattering the time derivative of P is determined to an finite value.
+As a consequence the momentum is not conserved any longer.
+The characteristic of the considered pertubation to change momentum and leave current unchange is important for the compuation of the static electrical conductivity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

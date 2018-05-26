@@ -12,7 +12,7 @@ At each scattering event, the electrons transfer momentum to the lattice atoms, 
 In the case of conserved momentum, if an electrical field is exemplary applied, it accelerates electrons up to an infinite velocity, causing infinite conductivity.
 
 In the following section, a momentum conserving system is considered and the electrical conductivity is computed using the memory-matrix-formalism, where an infinite conductivity is expected.
-Beforehand, a short overview\todo{overview oder review?} over the memory-matrix-formalism is given, followed by detailed and explicite deviations in chapter \ref{ch: memory matrix formalism}.
+Beforehand, a short overview over the memory-matrix-formalism is given, followed by detailed and explicite deviations in chapter \ref{ch:memory matrix formalism}.
 %
 %
 \section{An Overview over the Memory-Matrix-Formalsim}
@@ -26,9 +26,9 @@ The latter represent processes like fluctuations or initial transient processes,
 The dynamic and time evolution of $\mt{A}(t)$ is therefore dominated by secular processes.
 
 This seperation enables a simple but clever geometrical interpretation, where dynamical variables are considered to be vectors in a vector space.
-The variables of the unpertubated system represent the basis vectors of this vector space, denoting in the case of the variable $\mt{A}(t)$ as A-axis.\todo{besser formulieren}
-Due to pertubation the direction of the variable $\mt{A}(t)$ changes with respect to the A-axis.
-The projection of $\mt{A}(t)$ onto the A-axis corresponds to the secular part, whereas the perpendicular component represents the non-secular parts.
+The direction of the variable $\mt{A}(t)$ is denoted as the A-axis, considering a unpertubated system in equilibrium.
+Switching on a pertubation, the system is moved out of the equilibrium state and as a consequence the direction of $\mt{A}(t)$ is modified.
+The projection of $\mt{A}(t)$ onto the A-axis is identified with the secular part, while the non-secular part is the part perpendicular to the projection 
 
 First of all, the mathematical framework for this vector space has to be established.
 In quantum mechanics, the Liouville space, also called as operator space, is the respective vector space of the memory-matrix-formalism.
@@ -51,7 +51,7 @@ In quantum mechanics, the dynamic of an operator is ususally described by the He
 	\label{eq:HEM in LS}
 \end{align}
 %
-Here the Hermitian Liouville operator, ${\mt{L} = \hbar^{-1} \comm{\mt{H}}{\mt{\bullet}}}$, is introduced, which is defined by acting onto an arbitrary operator. \todo{zweiter Hauptsatz verbessern}
+Here the Hermitian Liouville operator, ${\mt{L} = \hbar^{-1} \comm{\mt{H}}{\mt{\bullet}}}$, is introduced, which is defined by his action onto an arbitrary operator.
 The formal solution of this equation is given by $\toket{\mt{A}_{i}(t)} = \exp(it\mt{L}) \cdot \toket{\mt{A}_{i}(0)}$, where the time evolution of an operator is therefore given by the Liouville operator.
 For our approach a further operator is required in the Liouville space, namely the projection operator.
 A set of arbitrary operators $\{\mt{C}_{i}\}$ is therefore defined.
@@ -116,6 +116,23 @@ The coupling to the bath is characterizied by the vector $\mt{Q}\toket{\dot{\mt{
 \label{sec:conductivity conserved momentum}
 %
 %
+%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.9\textwidth]{conductivity.pdf}
+	%\subfigure[infinite conductivity considering unbroken translation symmetry]{\includegraphics[width=0.45\textwidth]{conductivity_delta_peak.pdf}}
+	%\subfigure[finite conductivity considering broken translation symmetry]{\includegraphics[width=0.45\textwidth]{conductivity_drude_peak.pdf}}
+	\caption{
+Figure a) and b) shown the static electrical conductivity in a un-pertubated and pertubated system, respectively.
+In a system with unbroken translation symmetry, the relaxation of momentum is impossible to other degrees of freedom. 
+As a consequence, the static conductivity is infinite. This is illustrated in a).
+Switching on a pertubation as umklapp scattering, the translation symmetry is broken.
+The static conductivity becomes finite due to the relaxation of momentum to other degrees of freedom.
+In both figures, the regular conductivity, caused by fluctuation e.\,g., is denoted as $\sigma_{\mt{dc}}$.
+	}
+	\label{fig:conductivity broken and unbroken translation symmetry}
+\end{figure}
+%
 In the following section, the electrical conductivity is computed for a system, where momentum is conserved, using the memory-matrix-formalism.
 An infinite conductivity is expected due to the fact that electrons do not transfer any momentum to other degrees of freedom.
 Besides conserving momentum, the observed system has to satisfy some additional requirements.
@@ -152,7 +169,7 @@ The obtained matrix equation has a very simple form and the current-current corr
 	\label{eq:correlation function unpertubated system}
 \end{align}
 %
-where relation \eqref{eq: relation between C, Phi and chi} is being used.
+where relation \eqref{eq:relation between C, Phi and chi} is being used.
 The correlation function at time $t = 0$ is given by the scalar product $\tobraket{\mt{J}(0)}{\mt{J}(0)}$ (see \eqref{eq:correlation function in LS}).
 Due to the fact that current and momentum are two closely connected quantities, this is also valid for their correlation functions
 For this reason, the current-current correlation function is expresed with respect to the momentum-momentum correlation function.
@@ -182,16 +199,8 @@ Inserting the obtained expression for the current-current correlation function i
 	\sigma (\omega) = \frac{\vert\chi_{\mt{PJ}}\vert^{2}}{\vert\chi_{\mt{PP}}\vert} \frac{i}{\omega}  + \sigma_{\mt{reg}}(\omega),
 \end{align}
 %
-where the momentum-momentum correlation function is expressed as static susceptibility (see \eqref{eq: relation between C, Phi and chi}), and the regular conductivity $\sigma_{\mt{reg}}(\omega) = i(\omega \beta)^{-1} \tobraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced, which representes the noise (see figure \ref{fig:conductivity broken and unbroken translation symmetry}).
+where the momentum-momentum correlation function is expressed as static susceptibility (see \eqref{eq:relation between C, Phi and chi}), and the regular conductivity $\sigma_{\mt{reg}}(\omega) = i(\omega \beta)^{-1} \tobraket{\mt{J}_{\bot}}{\mt{J}_{\bot}}$ is introduced, which representes the noise (see figure \ref{fig:conductivity broken and unbroken translation symmetry}).
 
-%
-\begin{figure}[t]
-	\subfigure[conductivity in a system with unbroken translation symmetry]{\includegraphics[width=0.45\textwidth]{conductivity_delta_peak.pdf}}
-	\subfigure[conductivity in a system with broken translation symmetry]{\includegraphics[width=0.45\textwidth]{conductivity_drude_peak.pdf}}
-	\caption{caption}
-	\label{fig:conductivity broken and unbroken translation symmetry}
-\end{figure}
-%
 In the above equation the quantity $\omega$ is a complex number.
 Since $\omega$ has to be a real number for a physical interpetation, it is transformed on the real axis using analytical continuation.
 The conductivity is then given by
