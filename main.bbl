@@ -182,6 +182,66 @@
       \verb http://dx.doi.org/10.1143/PTP.32.37
       \endverb
     \endentry
+    \entry{Kouwenhoven&Glazman}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=06e21374c9c2ad46d7ff950486f261d2}{Kouwenhoven}{K\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=69193377e7ffedd5415fb745156c1625}{Glazman}{G\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=06e21374c9c2ad46d7ff950486f261d2}{Kouwenhoven}{K\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=69193377e7ffedd5415fb745156c1625}{Glazman}{G\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{91dc78ce52aac3afe2efe77ec91331c1}
+      \strng{fullhash}{91dc78ce52aac3afe2efe77ec91331c1}
+      \field{labelalpha}{KG01}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{{Revival of the Kondo effect}}
+      \field{journaltitle}{eprint arXiv:cond-mat/0104100}
+      \field{month}{04}
+      \field{title}{{Revival of the Kondo effect}}
+      \field{year}{2001}
+      \verb{eprint}
+      \verb cond-mat/0104100
+      \endverb
+      \keyw{Condensed Matter - Mesoscopic Systems and Quantum Hall Effect,Condensed Matter - Strongly Correlated Electrons}
+    \endentry
+    \entry{Loehneysen}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=cb718db18a0b2906208ebdfdd3f4f118}{L\"{o}hneysen}{L\bibinitperiod}{H.}{H\bibinitperiod}{v.}{v\bibinitperiod}{}{}}%
+        {{hash=4ea4ce4335d7ef5e69d5dab02c372a25}{Rosch}{R\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d9d57a544c3ae22211561335677e0e67}{Vojta}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=cb718db18a0b2906208ebdfdd3f4f118}{L\"{o}hneysen}{L\bibinitperiod}{H.}{H\bibinitperiod}{v.}{v\bibinitperiod}{}{}}%
+        {{hash=4ea4ce4335d7ef5e69d5dab02c372a25}{Rosch}{R\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d9d57a544c3ae22211561335677e0e67}{Vojta}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{4e51ef24a3b66c8060a313b565e30aa5}
+      \strng{fullhash}{83928ac0fef0db3e7eae1e8da18af454}
+      \field{labelalpha}{L\"{o}h+07}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Fermi-liquid instabilities at magnetic quantum phase transitions}
+      \field{issue}{3}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{month}{08}
+      \field{title}{Fermi-liquid instabilities at magnetic quantum phase transitions}
+      \field{volume}{79}
+      \field{year}{2007}
+      \field{pages}{1015\bibrangedash 1075}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.79.1015
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.79.1015
+      \endverb
+    \endentry
     \entry{Mori}{article}{}
       \name{labelname}{1}{}{%
         {{hash=08384e01dbbdf087ca5ba2fc6b231aa4}{Mori}{M\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
@@ -363,42 +423,6 @@
       \field{year}{2002}
       \verb{url}
       \verb arXiv:hep-th/0204003
-      \endverb
-    \endentry
-    \entry{Loehneysen}{article}{}
-      \name{labelname}{4}{}{%
-        {{hash=cb718db18a0b2906208ebdfdd3f4f118}{L\"{o}hneysen}{L\bibinitperiod}{H.}{H\bibinitperiod}{v.}{v\bibinitperiod}{}{}}%
-        {{hash=4ea4ce4335d7ef5e69d5dab02c372a25}{Rosch}{R\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=d9d57a544c3ae22211561335677e0e67}{Vojta}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{4}{}{%
-        {{hash=cb718db18a0b2906208ebdfdd3f4f118}{L\"{o}hneysen}{L\bibinitperiod}{H.}{H\bibinitperiod}{v.}{v\bibinitperiod}{}{}}%
-        {{hash=4ea4ce4335d7ef5e69d5dab02c372a25}{Rosch}{R\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=d9d57a544c3ae22211561335677e0e67}{Vojta}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{4e51ef24a3b66c8060a313b565e30aa5}
-      \strng{fullhash}{83928ac0fef0db3e7eae1e8da18af454}
-      \field{labelalpha}{L\"{o}h+07}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Fermi-liquid instabilities at magnetic quantum phase transitions}
-      \field{issue}{3}
-      \field{journaltitle}{Rev. Mod. Phys.}
-      \field{month}{08}
-      \field{title}{Fermi-liquid instabilities at magnetic quantum phase transitions}
-      \field{volume}{79}
-      \field{year}{2007}
-      \field{pages}{1015\bibrangedash 1075}
-      \verb{doi}
-      \verb 10.1103/RevModPhys.79.1015
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/RevModPhys.79.1015
       \endverb
     \endentry
     \entry{Forster}{book}{}
