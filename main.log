@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  27 MAY 2018 00:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.8)  27 MAY 2018 17:34
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **main.tex -clean
 (./main.tex
@@ -2091,8 +2091,8 @@ Package epstopdf Info: Source file: <figures/logos/KITlogo_transparent.eps>
 erted-to.pdf>
 (epstopdf)                    date: 2017-12-18 11:20:03
 (epstopdf)                    size: 33816 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/logos/KITlogo_tran
-sparent-eps-converted-to.pdf figures/logos/KITlogo_transparent.eps>
+(epstopdf)             Command: <epstopdf --outfile=figures/logos/KITlogo_trans
+parent-eps-converted-to.pdf figures/logos/KITlogo_transparent.eps>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -2190,77 +2190,99 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 15.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 \cleardoublepage
-                       [1
+l.33 
+      [1
 
 
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
+]
+Overfull \hbox (0.58485pt too wide) in paragraph at lines 34--40
+\OT1/cmr/m/n/10.95 Abanov et.al. [[][]ACS03[][]] in the two di-men-sional spin-
+fermion-model con-tain-ing fermionic
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 \cleardoublepage
-                       [2
+l.74 
+      [2] [3]) [4
 
 
 ] (./chapters/infinite_conductivity.tex
 Chapter 2.
-[3
+[5
 
 
-] [4] <figures/conductivity.pdf, id=224, 469.47034pt x 171.78206pt>
+] [6] <figures/conductivity.pdf, id=265, 469.47034pt x 171.78206pt>
 File: figures/conductivity.pdf Graphic file (type pdf)
 
 <use figures/conductivity.pdf>
 Package pdftex.def Info: figures/conductivity.pdf used on input line 122.
 (pdftex.def)             Requested size: 367.46489pt x 134.45602pt.
- [5] [6 <./figures/conductivity.pdf>] [7])
-[8] (./chapters/spin-fermion-model.tex
+ [7] [8 <./figures/conductivity.pdf>] [9])
+[10] (./chapters/spin-fermion-model.tex
 Chapter 3.
-<figures/phase_diagram.pdf, id=271, 394.12627pt x 285.72058pt>
+<figures/phase_diagram.pdf, id=312, 394.12627pt x 285.72058pt>
 File: figures/phase_diagram.pdf Graphic file (type pdf)
 
 <use figures/phase_diagram.pdf>
 Package pdftex.def Info: figures/phase_diagram.pdf used on input line 32.
 (pdftex.def)             Requested size: 244.98074pt x 177.59398pt.
- [9
+ [11
 
 
 
 
-] [10 <./figures/phase_diagram.pdf>]
+] [12 <./figures/phase_diagram.pdf>]
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [11]
-<figures/hotspots.pdf, id=309, 565.43503pt x 298.75392pt>
+ [13]
+<figures/hotspots.pdf, id=347, 565.43503pt x 298.75392pt>
 File: figures/hotspots.pdf Graphic file (type pdf)
 
 <use figures/hotspots.pdf>
 Package pdftex.def Info: figures/hotspots.pdf used on input line 183.
 (pdftex.def)             Requested size: 244.98074pt x 129.43723pt.
- [12]
+ [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [13 <./figures/hotspots.pdf>] [14])
+ [15 <./figures/hotspots.pdf>] [16])
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [15]
-[16
+ [17]
+[18
 
 
 ] (./chapters/calculation.tex
 Chapter 4.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 50.
-[17
+[19
 
 
 ]
@@ -2271,27 +2293,19 @@ Package epstopdf Info: Source file: <figures/spin_wave_bubble.eps>
 pdf>
 (epstopdf)                    date: 2018-05-25 23:09:30
 (epstopdf)                    size: 11411 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/spin_wave_bubble-e
-ps-converted-to.pdf figures/spin_wave_bubble.eps>
+(epstopdf)             Command: <epstopdf --outfile=figures/spin_wave_bubble-ep
+s-converted-to.pdf figures/spin_wave_bubble.eps>
 (epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/spin_wave_bubble-eps-converted-to.pdf, id=370, 265.99374pt x 168.63pt>
+<figures/spin_wave_bubble-eps-converted-to.pdf, id=407, 265.99374pt x 168.63pt>
 File: figures/spin_wave_bubble-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/spin_wave_bubble-eps-converted-to.pdf>
 Package pdftex.def Info: figures/spin_wave_bubble-eps-converted-to.pdf used on 
 input line 68.
 (pdftex.def)             Requested size: 163.31635pt x 103.53828pt.
- [18 <./figures/spin_wave_bubble-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `eq:integral1' on page 19 undefined on input line 137.
-
-
-[19]
-
-LaTeX Warning: Reference `integral1' on page 20 undefined on input line 194.
-
-<figures/behaviour_integrand.pdf, id=420, 302.33632pt x 175.60829pt>
+ [20 <./figures/spin_wave_bubble-eps-converted-to.pdf>] [21]
+<figures/behaviour_integrand.pdf, id=460, 302.33632pt x 175.60829pt>
 File: figures/behaviour_integrand.pdf Graphic file (type pdf)
 
 <use figures/behaviour_integrand.pdf>
@@ -2299,66 +2313,69 @@ Package pdftex.def Info: figures/behaviour_integrand.pdf used on input line 218
 .
 (pdftex.def)             Requested size: 200.06781pt x 116.20729pt.
 
-<figures/dependence_integrand.pdf, id=422, 348.90244pt x 198.74pt>
+<figures/dependence_integrand.pdf, id=462, 348.90244pt x 198.74pt>
 File: figures/dependence_integrand.pdf Graphic file (type pdf)
 
 <use figures/dependence_integrand.pdf>
 Package pdftex.def Info: figures/dependence_integrand.pdf used on input line 21
 9.
 (pdftex.def)             Requested size: 200.06781pt x 113.96225pt.
- [20]
-<figures/original_vs_powercounting.pdf, id=441, 357.34389pt x 211.57901pt>
+ [22]
+<figures/original_vs_powercounting.pdf, id=481, 357.34389pt x 211.57901pt>
 File: figures/original_vs_powercounting.pdf Graphic file (type pdf)
 
 <use figures/original_vs_powercounting.pdf>
 Package pdftex.def Info: figures/original_vs_powercounting.pdf used on input li
 ne 258.
 (pdftex.def)             Requested size: 244.98074pt x 145.05342pt.
- [21 <./figures/behaviour_integrand.pdf> <./figures/dependence_integrand.pdf
+
+Underfull \vbox (badness 4954) has occurred while \output is active []
+
+ [23 <./figures/behaviour_integrand.pdf> <./figures/dependence_integrand.pdf
 
 pdfTeX warning: pdflatex (file ./figures/dependence_integrand.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] [22 <./figures/original_vs_powercounting.pdf>]) [23] [24
+>] [24 <./figures/original_vs_powercounting.pdf>]) [25] [26
 
 
 ]
 (./chapters/memory-matrix-formalism.tex
 Chapter 5.
-[25
+[27
 
 
-] [26] [27] [28]
+] [28] [29] [30]
 Underfull \hbox (badness 4279) in paragraph at lines 244--250
 \OT1/cmr/m/n/10.95 as our scalar prod-uct, where the nor-mal time evo-lu-tion o
 f an op-er-a-tor
  []
 
-[29] [30] [31] [32] [33] [34]
+[31] [32] [33] [34] [35] [36]
 LaTeX Font Info:    Try loading font information for U+dsrom on input line 526.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [35] [36]
-[37] [38]) [39] [40
+) [37] [38]
+[39] [40]) [41] [42
 
 
 ] (./chapters/conclusion.tex
 Chapter 6.
-) [41
+) [43
 
 
-] [42
+] [44
 
 
 ] (./chapters/appendix_propagator.tex
 Appendix A.
-[43
+[45
 
 
 
 
-] [44] [45]
+] [46] [47]
 Package epstopdf Info: Source file: <figures/bubble_diagram.eps>
 (epstopdf)                    date: 2018-05-26 09:09:51
 (epstopdf)                    size: 185020 bytes
@@ -2366,31 +2383,31 @@ Package epstopdf Info: Source file: <figures/bubble_diagram.eps>
 f>
 (epstopdf)                    date: 2018-05-26 09:09:58
 (epstopdf)                    size: 10475 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/bubble_diagram-eps
--converted-to.pdf figures/bubble_diagram.eps>
+(epstopdf)             Command: <epstopdf --outfile=figures/bubble_diagram-eps-
+converted-to.pdf figures/bubble_diagram.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/bubble_diagram-eps-converted-to.pdf, id=737, 519.9425pt x 241.90375pt>
+<figures/bubble_diagram-eps-converted-to.pdf, id=777, 519.9425pt x 241.90375pt>
 File: figures/bubble_diagram-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/bubble_diagram-eps-converted-to.pdf>
 Package pdftex.def Info: figures/bubble_diagram-eps-converted-to.pdf used on in
 put line 244.
 (pdftex.def)             Requested size: 204.14854pt x 94.98064pt.
- [46] [47 <./figures/bubble_diagram-eps-converted-to.pdf>] [48] [49]
+ [48] [49 <./figures/bubble_diagram-eps-converted-to.pdf>] [50] [51]
 Underfull \hbox (badness 2503) in paragraph at lines 422--425
 []\OT1/cmr/m/n/10.95 In our ob-served case, the ar-gu-ment of $\OML/cmm/m/it/10
 .95 ^^N\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g\OT1/cmr/m/n/10.95 (\OML/cmm/m/
 it/10.95 #\OT1/cmr/m/n/10.95 ))$ con-tains only one zero at
  []
 
-[50]) (./chapters/appendix_time_derivatives.tex [51] [52
+[52]) (./chapters/appendix_time_derivatives.tex [53] [54
 
 
 ]
 Appendix B.
-[53] [54] [55] [56]) (./chapters/appendix_calculation_susceptibility.tex
-[57] [58
+[55] [56] [57] [58]) (./chapters/appendix_calculation_susceptibility.tex
+[59] [60
 
 
 ]
@@ -2402,12 +2419,12 @@ Package epstopdf Info: Source file: <figures/static_susceptibility.eps>
 d-to.pdf>
 (epstopdf)                    date: 2018-05-26 00:59:46
 (epstopdf)                    size: 9081 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/static_susceptibil
-ity-eps-converted-to.pdf figures/static_susceptibility.eps>
+(epstopdf)             Command: <epstopdf --outfile=figures/static_susceptibili
+ty-eps-converted-to.pdf figures/static_susceptibility.eps>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/static_susceptibility-eps-converted-to.pdf, id=865, 608.2725pt x 112.4
+<figures/static_susceptibility-eps-converted-to.pdf, id=905, 608.2725pt x 112.4
 2pt>
 File: figures/static_susceptibility-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2415,22 +2432,22 @@ File: figures/static_susceptibility-eps-converted-to.pdf Graphic file (type pdf
 Package pdftex.def Info: figures/static_susceptibility-eps-converted-to.pdf use
 d on input line 32.
 (pdftex.def)             Requested size: 326.63892pt x 60.36967pt.
- [59]
-<figures/contour_simple_poles.pdf, id=877, 562.32974pt x 278.69394pt>
+ [61]
+<figures/contour_simple_poles.pdf, id=917, 562.32974pt x 278.69394pt>
 File: figures/contour_simple_poles.pdf Graphic file (type pdf)
 
 <use figures/contour_simple_poles.pdf>
 Package pdftex.def Info: figures/contour_simple_poles.pdf used on input line 10
 6.
 (pdftex.def)             Requested size: 326.63892pt x 161.88498pt.
- [60 <./figures/static_susceptibility-eps-converted-to.pdf>] [61 <./figures/con
+ [62 <./figures/static_susceptibility-eps-converted-to.pdf>] [63 <./figures/con
 tour_simple_poles.pdf>])
-(./chapters/appendix_calculation_green.tex [62]
+(./chapters/appendix_calculation_green.tex [64]
 Appendix D.
-[63
+[65
 
 
-] <figures/contour_branch_cut.pdf, id=924, 660.41666pt x 317.9014pt>
+] <figures/contour_branch_cut.pdf, id=964, 660.41666pt x 317.9014pt>
 File: figures/contour_branch_cut.pdf Graphic file (type pdf)
 
 <use figures/contour_branch_cut.pdf>
@@ -2440,31 +2457,36 @@ Package pdftex.def Info: figures/contour_branch_cut.pdf used on input line 116.
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [64]
-[65 <./figures/contour_branch_cut.pdf>]
-Overfull \vbox (10.2pt too high) has occurred while \output is active []
-
  [66]
-[67]) (./chapters/appendix_properties_Kubo_relaxation_function.tex
+[67 <./figures/contour_branch_cut.pdf>]
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
  [68]
+[69]) (./chapters/appendix_properties_Kubo_relaxation_function.tex
+Overfull \vbox (10.2pt too high) has occurred while \output is active []
+
+ [70]
 Appendix E.
-[69
+[71
 
 
-]) [70] (./main.tdo)
+]) [72] (./main.tdo
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [71
+ [73
 
 
 
 
 
 
-] [72
+] [74
 
 
 ]
@@ -2473,16 +2495,34 @@ Overfull \hbox (3.44969pt too wide) in paragraph at lines 227--227
 . Rev. B \OT1/cmr/m/n/10.95 22 (11 Dec. 1980), pp. 5142{
  []
 
+[75
 
+
+]
 Overfull \hbox (4.60324pt too wide) in paragraph at lines 227--227
 []\OT1/cmr/m/n/10.95 H. Mori. []  Trans-port, Col-lec-tive Mo-tion, and Brow-n-
 ian Mo-tion\. In: \OT1/cmr/m/it/10.95 Progress
  []
 
-[73
+! Misplaced alignment tab character &.
+<argument> ...a-Lehrmittel Nourney, Vollmer GmbH &
+                                                   Co. KG
+l.227 \end
+          {document}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 
-] [74]
+Overfull \hbox (5.05797pt too wide) in paragraph at lines 227--227
+\OT1/cmr/m/n/10.95 fasserIn] Se-mend-jaev, Ger-hard [Ver-fasserIn] Mu-siol, and
+ Heiner [Ver-fasserIn]
+ []
+
+[76] [77]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
  (./main.aux)
@@ -2490,19 +2530,15 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B58D80E853C1B86A6C100617F27DD451;1983.
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32158 strings out of 494347
- 600022 string characters out of 6168810
- 1063613 words of memory out of 5000000
- 34502 multiletter control sequences out of 15000+600000
+ 32195 strings out of 494347
+ 600787 string characters out of 6168810
+ 1069614 words of memory out of 5000000
+ 34522 multiletter control sequences out of 15000+600000
  26453 words of font info for 99 fonts, out of 8000000 for 9000
  499 hyphenation exceptions out of 8191
  73i,18n,76p,10534b,2660s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2531,10 +2567,10 @@ cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on main.pdf (82 pages, 712380 bytes).
+Output written on main.pdf (85 pages, 723505 bytes).
 PDF statistics:
- 1194 PDF objects out of 1200 (max. 8388607)
- 1049 compressed objects within 11 object streams
- 343 named destinations out of 1000 (max. 500000)
+ 1250 PDF objects out of 1440 (max. 8388607)
+ 1101 compressed objects within 12 object streams
+ 360 named destinations out of 1000 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

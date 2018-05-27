@@ -12,18 +12,104 @@ As a consequence of scattering, the electrons are assumed to possess a finite re
 This characteristical variable denotes the passing time between to scattering events.
 At low temperatures, the electrical conductivity is determined by scattering between electrons and impurities.
 Drude's theory demonstrates the fact, that non-conservation of momentum due to relaxation and a finite electrical conductivity are directly associated.
-The results of this phenomenological theory are exactly confirmed by using the technique of quantum field theory without considering quantum correction to describe the electrons \cite{Bruus&Flensberg}.
+The results of this phenomenological theory are exactly confirmed by using the technique of quantum field theory without considering quantum correction \todo{Ist es verst\"andlich, das QFT verwendet wird ohne Quantenkorrekturen zu berücksichtigen?} das to describe the electrons \cite{Bruus&Flensberg}.
 Landau's Fermi liquid theory is the well proven quantum mechanical describtion for metals.
 %Metals are well described by Landau's Fermi liquid theory in quantum mechanics.
 Electron-electron interaction and the consideration of umklapp scattering generates a quadratic temperature dependence of the resistance $\rho(T) = \rho_{0} + A \cdot T^{2}$, where $\rho_{0}$ is the saturation resistance from impurity scattering at low temperatures \cite{Bader,Pal}.
 Quantum mechanical corrections, like weak localization \cite{Altshuler} and the Kondo effect \cite{Kondo}, modify the temperature dependence.
 The latter describes a logarithmical increase of the resistance at small temperatures $T < T_{\mt{K}} \approx 1-10\,\mt{K}$ \cite{Kouwenhoven&Glazman} due to electron scattering with localizied magnetic impurities.
 Landau's Fermi liquid theory can be described these modifications in the temperature dependence of the resistance.
-In contrast, alloys, like $\mt{CeCu}_{6-x}\mt{Au}_{x}$ and $\mt{CeCu}_{6-x}\mt{Ag}_{x}$ at a concentration of $x=0.1$ and $x=0.2$, respectively, exhibit a non-Fermi liquid behaviour, that is characterizied in a linear temperature dependence of the resistance $\rho(T) = \rho_{0} + A \cdot T$ \cite{Loehneysen}. 
+In contrast, alloys, like $\mt{CeCu}_{5.9}\mt{Au}_{0.1}$ and $\mt{CeCu}_{5.8}\mt{Ag}_{0.2}$, exhibit a non-Fermi liquid behaviour, that is characterizied in a linear temperature dependence of the resistance $\rho(T) = \rho_{0} + A \cdot T$ \cite{Loehneysen}. 
 
-The origin of this strange and unexpected behaviour is an antiferromagnetic quantum phase transition of second order.
+The origin of this strange and unexpected behaviour is a quantum phase transition of second order.
 In comparison to normal phase transiotion, quantum phase transitions are governed by quantum fluctuations instead of thermal fluctuation.
-The spin-fermion-model describes those metals at the vinicty of an quantum critical point.
+Their phase diagrams are characterizied due to a quantum critical point at temperature $T=0$ and a critical tuning parameter $\mt{g}=\mt{g}_{\mt{c}}$.
+This tuning parameter has to be a physical parameter, like outer \todo{Ist es klar das Druck von Außen gemeint ist? Innerer Druck soll ausgeschlossen werden mit dieser Formulierung.} pressure, an external applied field or the chemical composition.
+Since it is impossible to reach the absolute zero, this does not signify, that the existence of the quantum critical point and the corresponding quantum fluctuations can not be measured.
+At temperatures of several mK, the magnitude of quantum fluctuations are similar to their of thermal fluctuations.
+The interplay between fermionic Landau quasiparticles and bosonic fluctuations constitute the physical origin of these quantum fluctuations.
+The quasiparticles obtain a critical behaviour and acting back to the bosonic fluctuations.
+Between fermions emerge consequently a strong coupling, carried by bosonic fluctuations \cite{Abrahams&Schmalian&Woelfle}.
+
+The heavy-fermion compounds $\mt{CeCu}_{5.9}\mt{Au}_{0.1}$ and $\mt{CeCu}_{5.8}\mt{Ag}_{0.2}$ exhibit an antiferromagnetic quantum phase transition.
+A microscopical description is presented by Abanov et.\,al. \cite{Abanov&Chubukov&Schmalian} in the two dimensional spin-fermion-model containing fermionic quasiparticles and spin density waves.
+Spin fluctuations emerge at the vicinity of the quantum critical point as a result of permanent particle-holes excitations.
+The propagation of these fluctuations is described by the dynamical magnetic susceptibility and its spectrum exhibits a sharp peak at a large momentum vector $\vb{Q}$.
+Therefore, spin fluctuations cause a strong interaction between fermions on the Fermi surface seperated by this vector.
+These certain points on the Fermi surface are called hot spots.
+
+Patel and Sachdev \cite{Patel&Sachdev} make use of the spin-fermion-model modified with an \linebreak anisotropic parapolical fermionic dispersion to discribe the linear temperature dependence of the resistance.
+Their computation base on the memory-matrix-formalism that was firstly pupblished by Mori \cite{Mori} in the year 1965.
+The memory-matrix-formalism originates two fundamental aspect: 
+1) The ensemble density can be seperated into two parts.
+One of them contains all the \emph{relevant} amounts determining the mean value of specific observables, while the remaining amounts are denoted as \emph{irrelevant} \cite{Zwanzig}.
+2) The memory function $\mt{M}(z)$ decays exponential like $\exp(-\flatfrac{t}{\tau_{\mt{c}}})$, where $\tau_{\mt{c}}$ is the correlation time.
+The time evolution of an autocorrelation function is determined by the memory function containing the history of the correlation function \cite{Berne&Boob&Rice}.
+In this manner the memory-matrix-formalism desribes the time evolution for small time scales.
+In the case of conserved quantities, the memory function decays very slow to zero and the time evolution is consequently detemined for large times or small frequencies.
+Patel and Sachdev use this circumstance to compute the static electrical conductivity in the spin-fermion-model pertubated by a random potential term for fermions and a random-mass term for the bosonic field \cite{Patel&Sachdev}.
+This treament shows a linear resistance in both cases.
+
+Beside these two effect, umklapp scattering has also to be taken into account as a possible origin for the linear temperature behaviour of the resistance.
+The calculation of the static electrical conductivity similar to the treatment of Patel and Sachdev is presented in this masterthesis.
+
+\paragraph{Outline of this thesis}$\:$\vspace{3.5ex}
+
+In chapter \ref{ch:infinite conductivity} we demonstrate that the static electrical conductivity is generally infinite in a system that conserve momentum and non-conserve current. 
+A short review over the basic aspects of the memory-matrix-formalism is given since its is used for our calculation.
+We impose therefore two fundamental conditions: 
+1) The Hamiltonian is invariant with respect to time reversal symmetry.
+2) The corresponing variables are momentum and current.
+Both quantities are assumed to have the same sign unter time reversal symmetry.
+
+The spin-fermion-model is introduced in chapter \ref{ch:spin fermion model} since our later calculation is based on it.
+Therefore, an overview over the principles of quantum phase transitions and appearing characteristic parameters is given.
+The temperature dependence of one of them, namely correlation length, is indicated.
+A detailed discussion over the spin-fermion-model is led afterwards.
+The propagator of spin fluctuations and the appearance of damping is explained in detail.
+Furthermore, the basic concepts of the hot spots theory is presented.
+The conservation of momentum and current is illustarted for the spin-fermion model in two cases:
+1) unpertubated and 
+2) pertubated by umklapp scattering.
+
+In chapter \ref{ch:calculation}, the computation of the static electrical conductivity is presentet for the spin-fermion-model pertubated by umklapp scattering.
+This is splitted into two parts.
+The temperature dependence of the $\chi_{\mt{JP}}$ susceptibility is determined and the Green function $\mathcal{G}_{\dot{\mt{P}}\dot{\mt{P}}}(\vb{k},z)$ is calculated.
+In both cases, the diagrammatic pertubation theory is utilizied, whereas in the latter the integral is analyzied in different point of views.
+
+Chapter \ref{ch:memory matrix formalism} gives a detailed overview over the memory-matrix-formalism.
+The mathematical framework is defined by introducing the Liouville space.
+Afterwards, an explicite expression of the autocorrelation function is derivated depending on the memory function $\mt{M}(z)$.
+We prove that dissipative effect in $\mt{M}(z)$ disappaer under the conditions assumed in chapter \ref{ch:infinite conductivity} (see above) \todo{soll ich die lieber nochmal nennen? Ich finde das eher bl\"od.}
+Finally, we demonstrate the derivation of the expression for the static electrical conductivity used in chapter \ref{ch:calculation}.
+
+\paragraph{Notation}$\:$\vspace{3.5ex}
+
+In this masterthesis, we chose units where $\hbar = k_{\mt{B}} = 1$ and with that $\beta = T^{-1}$.
+The intergation over the first two dimensional Brillouin zone and the sums over spatial directions or the fermion species a and b is abbreviated with the symbols:
+%
+\begin{align}
+	&\int_{\vb{k}} := \int\limits_{\mt{BZ}} \frac{\dd[2]{\vb{k}}}{(2\pi)^{2}}
+	\\
+	&\sum\limits_{\mu} := \sum\limits_{\mu = 1}^{3} \qq{equally} \lambda
+	\\
+	&\sum\limits_{\alpha} := \sum\limits_{\alpha = a,b} \qq{equally} \beta \qq{and} \gamma
+	\\
+	&\sum\limits_{\alpha\neq\beta} := \sum\limits_{\substack{\alpha = a,b \\ \alpha\neq\beta}} \sum_{\beta = a,b}
+\end{align}
+%
+Furthermore, these integrals are usefull in our calculation \cite{Bronstein}:
+%
+\begin{align}
+	\int \dd{x} \frac{1}{(z^{2} + 1)^{2}} = \frac{1}{2}\Big[\frac{z}{z^2 + 1} + \tan[-1](z)\Big]
+	\label{eq:integral1}
+	\\
+	\int\limits_{0}^{\infty} \dd{x} \frac{x}{a^{2} + x^{2}} \cdot \frac{x}{y^{2} + x^{2}} = \frac{\pi}{2} \frac{1}{a + |y|}
+	\label{eq:integral2}
+\end{align}
+%
+
+
 
 
 

@@ -242,6 +242,92 @@
       \verb https://link.aps.org/doi/10.1103/RevModPhys.79.1015
       \endverb
     \endentry
+    \entry{Abrahams&Schmalian&Woelfle}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=dd2b592d8232be7527f69244282d9d39}{Abrahams}{A\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=dd2b592d8232be7527f69244282d9d39}{Abrahams}{A\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{08d03005d42335b672cbf026ed5451b8}
+      \strng{fullhash}{08d03005d42335b672cbf026ed5451b8}
+      \field{labelalpha}{ASW14}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Strong-coupling theory of heavy-fermion criticality}
+      \field{issue}{4}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{07}
+      \field{title}{Strong-coupling theory of heavy-fermion criticality}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{pages}{045105}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.90.045105
+      \endverb
+    \endentry
+    \entry{Abanov&Chubukov&Schmalian}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=b93b300629b923a44364565d3a18fe9c}{Abanov}{A\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=afd8f5b22baa593b7ce24af456969c8e}{Chubukov}{C\bibinitperiod}{A.\bibnamedelimi V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=b93b300629b923a44364565d3a18fe9c}{Abanov}{A\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=afd8f5b22baa593b7ce24af456969c8e}{Chubukov}{C\bibinitperiod}{A.\bibnamedelimi V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c887a9ac97257b261b7bde11861c6738}
+      \strng{fullhash}{c887a9ac97257b261b7bde11861c6738}
+      \field{labelalpha}{ACS03}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Quantum-Critical Theory of the Spin-Fermion Model and its Application to Cuprates: Normal State Analysis}
+      \field{journaltitle}{Advances in Physics}
+      \field{number}{3}
+      \field{title}{Quantum-Critical Theory of the Spin-Fermion Model and its Application to Cuprates: Normal State Analysis}
+      \field{volume}{52}
+      \field{year}{2003}
+      \field{pages}{119\bibrangedash 218}
+      \verb{doi}
+      \verb 10.1080/0001873021000057123
+      \endverb
+    \endentry
+    \entry{Patel&Sachdev}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=03540a578795a12264fe94142888d3c6}{Patel}{P\bibinitperiod}{A.\bibnamedelimi A.}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=03540a578795a12264fe94142888d3c6}{Patel}{P\bibinitperiod}{A.\bibnamedelimi A.}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{d46eef80478249dae98d298e10058c70}
+      \strng{fullhash}{d46eef80478249dae98d298e10058c70}
+      \field{labelalpha}{PS14}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{DC Resistivity at the Onset of Spin Density Wave Order in Two-Dimensional Metals}
+      \field{issue}{16}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{title}{DC Resistivity at the Onset of Spin Density Wave Order in Two-Dimensional Metals}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{pages}{165146}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.90.165146
+      \endverb
+    \endentry
     \entry{Mori}{article}{}
       \name{labelname}{1}{}{%
         {{hash=08384e01dbbdf087ca5ba2fc6b231aa4}{Mori}{M\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
@@ -264,6 +350,83 @@
       \verb{doi}
       \verb 10.1143/PTP.33.423
       \endverb
+    \endentry
+    \entry{Zwanzig}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=ed6aa55d6cc1189bbebfa51a0152a7a6}{Zwanzig}{Z\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ed6aa55d6cc1189bbebfa51a0152a7a6}{Zwanzig}{Z\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{ed6aa55d6cc1189bbebfa51a0152a7a6}
+      \strng{fullhash}{ed6aa55d6cc1189bbebfa51a0152a7a6}
+      \field{labelalpha}{Zwa60}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Ensemble Method in the Theory of Irreversibility}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{5}
+      \field{title}{Ensemble Method in the Theory of Irreversibility}
+      \field{volume}{33}
+      \field{year}{1960}
+      \field{pages}{1338\bibrangedash 1341}
+      \verb{doi}
+      \verb 10.1063/1.1731409
+      \endverb
+    \endentry
+    \entry{Berne&Boob&Rice}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=b95730746c063ba7e1d92636503efad6}{Berne}{B\bibinitperiod}{B.\bibnamedelimi J.}{B\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=feaa739d67a44ef0d933b43e34527779}{Boon}{B\bibinitperiod}{J.\bibnamedelimi P.}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=15e9febd0e28f314aa311bb5915d87fd}{Rice}{R\bibinitperiod}{S.\bibnamedelimi A.}{S\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=b95730746c063ba7e1d92636503efad6}{Berne}{B\bibinitperiod}{B.\bibnamedelimi J.}{B\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=feaa739d67a44ef0d933b43e34527779}{Boon}{B\bibinitperiod}{J.\bibnamedelimi P.}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=15e9febd0e28f314aa311bb5915d87fd}{Rice}{R\bibinitperiod}{S.\bibnamedelimi A.}{S\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a948511dd337b2a4a481d927b14946d6}
+      \strng{fullhash}{a948511dd337b2a4a481d927b14946d6}
+      \field{labelalpha}{BBR66}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{On the Calculation of Autocorrelation Functions of Dynamical Variables}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{4}
+      \field{title}{On the Calculation of Autocorrelation Functions of Dynamical Variables}
+      \field{volume}{45}
+      \field{year}{1966}
+      \field{pages}{1086\bibrangedash 1096}
+      \verb{doi}
+      \verb 10.1063/1.1727719
+      \endverb
+    \endentry
+    \entry{Bronstein}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=c3a7f7d8c0b6fda20a63a4ac195b17a4}{Bron\v{s}tejn}{B\bibinitperiod}{I.\bibnamedelimi N.}{I\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=c3a7f7d8c0b6fda20a63a4ac195b17a4}{Bron\v{s}tejn}{B\bibinitperiod}{I.\bibnamedelimi N.}{I\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=20fae22ec974e9b0de55d256b44b3912}{Semendjaev}{S\bibinitperiod}{Konstantin\bibnamedelimb A.\bibnamedelimi [VerfasserIn]}{K\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%
+        {{hash=aaee19f7aab9c315c23e1de5afaa6b9b}{Musiol}{M\bibinitperiod}{Gerhard\bibnamedelima [VerfasserIn]}{G\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%
+        {{hash=f0b29f413307aafa3e90b2054483b383}{M\"{u}hlig}{M\bibinitperiod}{Heiner\bibnamedelima [VerfasserIn]}{H\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Verlag Europa-Lehrmittel Nourney, Vollmer GmbH & Co. KG}%
+      }
+      \strng{namehash}{c3a7f7d8c0b6fda20a63a4ac195b17a4}
+      \strng{fullhash}{c3a7f7d8c0b6fda20a63a4ac195b17a4}
+      \field{labelalpha}{Bro16}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Taschenbuch der Mathematik}
+      \field{edition}{10., \"{u}berarbeitete Auflage}
+      \field{isbn}{978-3-8085-5790-7; 978-3-8085-5789-1}
+      \field{series}{Edition Harri Deutsch}
+      \field{title}{Taschenbuch der Mathematik}
+      \field{year}{[2016]}
     \endentry
     \entry{Chycholl2}{book}{}
       \name{labelname}{1}{}{%
@@ -309,33 +472,6 @@
       \field{title}{Festk\"{o}rperphysik}
       \field{year}{2014}
     \endentry
-    \entry{Abanov&Chubukov&Schmalian}{article}{}
-      \name{labelname}{3}{}{%
-        {{hash=b93b300629b923a44364565d3a18fe9c}{Abanov}{A\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=afd8f5b22baa593b7ce24af456969c8e}{Chubukov}{C\bibinitperiod}{A.\bibnamedelimi V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
-        {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{3}{}{%
-        {{hash=b93b300629b923a44364565d3a18fe9c}{Abanov}{A\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=afd8f5b22baa593b7ce24af456969c8e}{Chubukov}{C\bibinitperiod}{A.\bibnamedelimi V.}{A\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
-        {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{c887a9ac97257b261b7bde11861c6738}
-      \strng{fullhash}{c887a9ac97257b261b7bde11861c6738}
-      \field{labelalpha}{ACS03}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{Quantum-Critical Theory of the Spin-Fermion Model and its Application to Cuprates: Normal State Analysis}
-      \field{journaltitle}{Advances in Physics}
-      \field{number}{3}
-      \field{title}{Quantum-Critical Theory of the Spin-Fermion Model and its Application to Cuprates: Normal State Analysis}
-      \field{volume}{52}
-      \field{year}{2003}
-      \field{pages}{119\bibrangedash 218}
-      \verb{doi}
-      \verb 10.1080/0001873021000057123
-      \endverb
-    \endentry
     \entry{SachdevQCP}{book}{}
       \name{labelname}{1}{}{%
         {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
@@ -356,34 +492,6 @@
       \field{isbn}{978-0-521-51468-2; 0-521-51468-1}
       \field{title}{Quantum phase transitions}
       \field{year}{2011}
-    \endentry
-    \entry{Patel&Sachdev}{article}{}
-      \name{labelname}{2}{}{%
-        {{hash=03540a578795a12264fe94142888d3c6}{Patel}{P\bibinitperiod}{A.\bibnamedelimi A.}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
-        {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{hash=03540a578795a12264fe94142888d3c6}{Patel}{P\bibinitperiod}{A.\bibnamedelimi A.}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
-        {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{d46eef80478249dae98d298e10058c70}
-      \strng{fullhash}{d46eef80478249dae98d298e10058c70}
-      \field{labelalpha}{PS14}
-      \field{sortinit}{0}
-      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{DC Resistivity at the Onset of Spin Density Wave Order in Two-Dimensional Metals}
-      \field{issue}{16}
-      \field{journaltitle}{Phys. Rev. B}
-      \field{title}{DC Resistivity at the Onset of Spin Density Wave Order in Two-Dimensional Metals}
-      \field{volume}{90}
-      \field{year}{2014}
-      \field{pages}{165146}
-      \verb{doi}
-      \verb 10.1103/PhysRevB.90.165146
-      \endverb
     \endentry
     \entry{Weiss}{thesis}{}
       \name{labelname}{1}{}{%
