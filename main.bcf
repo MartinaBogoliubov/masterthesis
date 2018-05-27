@@ -1983,18 +1983,16 @@
     <bcf:citekey order="35">Mori</bcf:citekey>
     <bcf:citekey order="36">Audretsch</bcf:citekey>
     <bcf:citekey order="37">Jung</bcf:citekey>
-    <bcf:citekey order="38">Elk&amp;Gasser</bcf:citekey>
-    <bcf:citekey order="39">Nolting</bcf:citekey>
-    <bcf:citekey order="40">Schwabl</bcf:citekey>
-    <bcf:citekey order="41">Iliev</bcf:citekey>
-    <bcf:citekey order="42">Patel&amp;Sachdev</bcf:citekey>
-    <bcf:citekey order="43">Iliev</bcf:citekey>
+    <bcf:citekey order="38">Abanov&amp;Chubukov&amp;Schmalian</bcf:citekey>
+    <bcf:citekey order="39">Mori</bcf:citekey>
+    <bcf:citekey order="40">Forster</bcf:citekey>
+    <bcf:citekey order="41">Patel&amp;Sachdev</bcf:citekey>
+    <bcf:citekey order="42">Loehneysen</bcf:citekey>
+    <bcf:citekey order="43">Elk&amp;Gasser</bcf:citekey>
+    <bcf:citekey order="44">Nolting</bcf:citekey>
+    <bcf:citekey order="45">Schwabl</bcf:citekey>
+    <bcf:citekey order="46">Iliev</bcf:citekey>
+    <bcf:citekey order="47">Patel&amp;Sachdev</bcf:citekey>
+    <bcf:citekey order="48">Iliev</bcf:citekey>
   </bcf:section>
-  <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
-  <bcf:sorting>
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">citeorder</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sorting>
-  </bcf:sortlist>
 </bcf:controlfile>

@@ -13,7 +13,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Kopf- und Fusszeile
-\usepackage[automark]{scrpage2} 	% Package scrpage2 erlaubt es die Kopf- und Fußzeile zu gestalten. Optionen sind automark oder manualmark
+\usepackage[automark,headsepline,]{scrpage2} 	% Package scrpage2 erlaubt es die Kopf- und Fußzeile zu gestalten. Optionen sind automark oder manualmark
 \pagestyle{scrplain}				% Nur Seitenzahl in Fußzeile. Sonst bleibt Kopf- und Fußzeile leer. Mit "headings" wird Kopf- und Fußzeile eingebunden
 \ofoot[]{} 							% Seitenzahl am Rand wird nur gesetzt wenn \pagemark eingefügt wird. Wenn es leer bleibt wird nichts geschrieben
 \cfoot[\pagemark]{\pagemark} 		% Seitenzahlen in der Seitenmitte, wenn \pagemark eingefügt. Ansonsten keine Seite
@@ -222,6 +222,6 @@
 \listoftodos
 %
 \cleardoublepage
-\printbibliography
+%\printbibliography
 %
 \end{document}
