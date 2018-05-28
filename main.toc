@@ -8,9 +8,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Outline of this thesis}{2}{section*.5}
+\contentsline {paragraph}{\nonumberline Outline of this thesis}{2}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Notation}{3}{section*.7}
+\contentsline {paragraph}{\nonumberline Notation}{3}{section*.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Infinite Conductivity in Translation Invariant Systems}{5}{chapter.2}
 \defcounter {refsection}{0}\relax 
@@ -36,9 +36,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Time Reversal Symmetry}{36}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{38}{section*.9}
+\contentsline {paragraph}{\nonumberline 1. case:}{38}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{39}{section*.10}
+\contentsline {paragraph}{\nonumberline 2. case:}{39}{section*.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}The Formula of the Static Conductivity}{39}{section.5.3}
 \defcounter {refsection}{0}\relax 
@@ -50,9 +50,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.2}Consideration of Damping in the Spin Density Propagator}{46}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 1. case:}{50}{section*.11}
+\contentsline {paragraph}{\nonumberline 1. case:}{50}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline 2. case:}{51}{section*.12}
+\contentsline {paragraph}{\nonumberline 2. case:}{51}{section*.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.3}Transformation into Matsubara Frequency Space}{52}{section.A.3}
 \defcounter {refsection}{0}\relax 

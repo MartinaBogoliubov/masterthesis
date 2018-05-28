@@ -18,7 +18,7 @@
 \ofoot[]{} 							% Seitenzahl am Rand wird nur gesetzt wenn \pagemark eingefügt wird. Wenn es leer bleibt wird nichts geschrieben
 \cfoot[\pagemark]{\pagemark} 		% Seitenzahlen in der Seitenmitte, wenn \pagemark eingefügt. Ansonsten keine Seite
 
-\setlength{\parindent}{0pt} 		% Indent ist set to the given value
+\setlength{\parindent}{2em} 		% Indent ist set to the given value
 
 % Sprache
 \usepackage[english, german]{babel}
@@ -44,7 +44,7 @@
 
 \usepackage{enumitem} 				% change the level in enumerate-envirement
 
-\usepackage[draft]{todonotes}   	% draft: notes showed, disable: not showed
+\usepackage[disable]{todonotes}   	% draft: notes showed, disable: not showed
 
 % feynman and wick stuff
 \usepackage{simplewick}				% drawing wick contractions above or below a set of operators. See http://ftp.riken.jp/tex-archive/macros/latex/contrib/simplewick/simplewick.pdf
@@ -53,14 +53,14 @@
 \usepackage[
 	backend = biber, 
 	bibencoding = utf8,
-	style = alphabetic, 
+	style = numeric, 
 	sorting = none, 
 	autocite = plain, 
 	language = autobib,
 ]{biblatex} 
 \addbibresource{bibliography/masterthesis.bib}
 \usepackage{csquotes}
-\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue]{hyperref}
+\usepackage[colorlinks=false, linkcolor=black, citecolor=black, urlcolor=blue, pdfborder={0 0 0}]{hyperref}
 %\usepackage{hyperref}
 %\usepackage[figure,table]{hypcap}               % to correct a problem with hyperref
 %\hypersetup{
@@ -222,6 +222,6 @@
 \listoftodos
 %
 \cleardoublepage
-%\printbibliography
+\printbibliography
 %
 \end{document}
