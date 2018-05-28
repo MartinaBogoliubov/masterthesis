@@ -28,7 +28,6 @@
       }
       \strng{namehash}{b7c2b8d260757b72f285c54fb0fdfd68}
       \strng{fullhash}{b7c2b8d260757b72f285c54fb0fdfd68}
-      \field{labelalpha}{Dru00}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Zur Elektronentheorie der Metalle}
@@ -56,12 +55,10 @@
       }
       \strng{namehash}{34eef7d628da507ddc594ea73d2a0715}
       \strng{fullhash}{34eef7d628da507ddc594ea73d2a0715}
-      \field{labelalpha}{BF10}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Many-body quantum theory in condensed matter physics: an introduction}
       \field{edition}{Repr.}
-      \field{isbn}{978-0-19-856633-5}
       \field{title}{Many-body quantum theory in condensed matter physics: an introduction}
       \field{year}{2010}
     \endentry
@@ -72,25 +69,17 @@
       \name{author}{1}{}{%
         {{hash=6dd96a3716c1b7d81e64cfe8e1ac3eb3}{Baber}{B\bibinitperiod}{W.\bibnamedelimi G.}{W\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {The Royal Society}%
-      }
       \strng{namehash}{6dd96a3716c1b7d81e64cfe8e1ac3eb3}
       \strng{fullhash}{6dd96a3716c1b7d81e64cfe8e1ac3eb3}
-      \field{labelalpha}{Bab37}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{The Contribution to the Electrical Resistance of Metals from Collisions between Electrons}
-      \field{issn}{00804630}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Mathematical and Physical Sciences}
       \field{number}{894}
       \field{title}{The Contribution to the Electrical Resistance of Metals from Collisions between Electrons}
       \field{volume}{158}
       \field{year}{1937}
       \field{pages}{383\bibrangedash 396}
-      \verb{url}
-      \verb http://www.jstor.org/stable/96825
-      \endverb
     \endentry
     \entry{Pal}{article}{}
       \name{labelname}{3}{}{%
@@ -105,12 +94,9 @@
       }
       \strng{namehash}{b79759507950b57768c685ea5c2ae443}
       \strng{fullhash}{b79759507950b57768c685ea5c2ae443}
-      \field{labelalpha}{PYM12}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{{Resistivity of non-Galilean-invariant Fermi- and non-Fermi liquids}}
-      \field{eprintclass}{cond-mat.str-el}
-      \field{eprinttype}{arXiv}
       \field{journaltitle}{Lithuanian Journal of Physics and Technical Sciences}
       \field{title}{{Resistivity of non-Galilean-invariant Fermi- and non-Fermi liquids}}
       \field{volume}{52}
@@ -118,9 +104,6 @@
       \field{pages}{142\bibrangedash 164}
       \verb{doi}
       \verb 10.3952/lithjphys.52207
-      \endverb
-      \verb{eprint}
-      \verb 1204.3591
       \endverb
     \endentry
     \entry{Altshuler}{article}{}
@@ -136,18 +119,13 @@
         {{hash=635108bf890a3f9824069e2d52e3c38d}{Larkin}{L\bibinitperiod}{A.\bibnamedelimi I.}{A\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
         {{hash=1b29480291bc4542bec9879fe27fdedf}{Lee}{L\bibinitperiod}{P.\bibnamedelimi A.}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
       \strng{namehash}{46237a1b8aad19fa5db233b202d0199d}
       \strng{fullhash}{3cbfbbdadab1537f7e810d7859a44181}
-      \field{labelalpha}{Alt+80}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Magnetoresistance and Hall effect in a disordered two-dimensional electron gas}
       \field{issue}{11}
       \field{journaltitle}{Phys. Rev. B}
-      \field{month}{12}
       \field{title}{Magnetoresistance and Hall effect in a disordered two-dimensional electron gas}
       \field{volume}{22}
       \field{year}{1980}
@@ -165,7 +143,6 @@
       }
       \strng{namehash}{126869d1a9cb35569a0921ac80b1610c}
       \strng{fullhash}{126869d1a9cb35569a0921ac80b1610c}
-      \field{labelalpha}{Kon64}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Resistance Minimum in Dilute Magnetic Alloys}
@@ -177,9 +154,6 @@
       \field{pages}{37\bibrangedash 49}
       \verb{doi}
       \verb 10.1143/PTP.32.37
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1143/PTP.32.37
       \endverb
     \endentry
     \entry{Kouwenhoven&Glazman}{article}{}
@@ -193,18 +167,15 @@
       }
       \strng{namehash}{91dc78ce52aac3afe2efe77ec91331c1}
       \strng{fullhash}{91dc78ce52aac3afe2efe77ec91331c1}
-      \field{labelalpha}{KG01}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
-      \field{labeltitle}{{Revival of the Kondo effect}}
-      \field{journaltitle}{eprint arXiv:cond-mat/0104100}
-      \field{month}{04}
-      \field{title}{{Revival of the Kondo effect}}
+      \field{labeltitle}{Revival of the Kondo effect}
+      \field{journaltitle}{Physics World}
+      \field{number}{1}
+      \field{title}{Revival of the Kondo effect}
+      \field{volume}{14}
       \field{year}{2001}
-      \verb{eprint}
-      \verb cond-mat/0104100
-      \endverb
-      \keyw{Condensed Matter - Mesoscopic Systems and Quantum Hall Effect,Condensed Matter - Strongly Correlated Electrons}
+      \field{pages}{33}
     \endentry
     \entry{Loehneysen}{article}{}
       \name{labelname}{4}{}{%
@@ -219,27 +190,19 @@
         {{hash=d9d57a544c3ae22211561335677e0e67}{Vojta}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
         {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
       \strng{namehash}{4e51ef24a3b66c8060a313b565e30aa5}
       \strng{fullhash}{83928ac0fef0db3e7eae1e8da18af454}
-      \field{labelalpha}{L\"{o}h+07}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Fermi-liquid instabilities at magnetic quantum phase transitions}
       \field{issue}{3}
       \field{journaltitle}{Rev. Mod. Phys.}
-      \field{month}{08}
       \field{title}{Fermi-liquid instabilities at magnetic quantum phase transitions}
       \field{volume}{79}
       \field{year}{2007}
       \field{pages}{1015\bibrangedash 1075}
       \verb{doi}
       \verb 10.1103/RevModPhys.79.1015
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/RevModPhys.79.1015
       \endverb
     \endentry
     \entry{Abrahams&Schmalian&Woelfle}{article}{}
@@ -253,18 +216,13 @@
         {{hash=8aeb08ab811b519f5f99364809942735}{Schmalian}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
         {{hash=2a23f52dd294961b368ba8c85d3a6ac1}{W\"{o}lfle}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
       \strng{namehash}{08d03005d42335b672cbf026ed5451b8}
       \strng{fullhash}{08d03005d42335b672cbf026ed5451b8}
-      \field{labelalpha}{ASW14}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Strong-coupling theory of heavy-fermion criticality}
       \field{issue}{4}
       \field{journaltitle}{Phys. Rev. B}
-      \field{month}{07}
       \field{title}{Strong-coupling theory of heavy-fermion criticality}
       \field{volume}{90}
       \field{year}{2014}
@@ -286,7 +244,6 @@
       }
       \strng{namehash}{c887a9ac97257b261b7bde11861c6738}
       \strng{fullhash}{c887a9ac97257b261b7bde11861c6738}
-      \field{labelalpha}{ACS03}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Quantum-Critical Theory of the Spin-Fermion Model and its Application to Cuprates: Normal State Analysis}
@@ -309,12 +266,8 @@
         {{hash=03540a578795a12264fe94142888d3c6}{Patel}{P\bibinitperiod}{A.\bibnamedelimi A.}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
         {{hash=b6799630f7921f86ddc2b77f5c832a12}{Sachdev}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
       \strng{namehash}{d46eef80478249dae98d298e10058c70}
       \strng{fullhash}{d46eef80478249dae98d298e10058c70}
-      \field{labelalpha}{PS14}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{DC Resistivity at the Onset of Spin Density Wave Order in Two-Dimensional Metals}
@@ -337,7 +290,6 @@
       }
       \strng{namehash}{08384e01dbbdf087ca5ba2fc6b231aa4}
       \strng{fullhash}{08384e01dbbdf087ca5ba2fc6b231aa4}
-      \field{labelalpha}{Mor65}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Transport, Collective Motion, and Brownian Motion}
@@ -360,7 +312,6 @@
       }
       \strng{namehash}{ed6aa55d6cc1189bbebfa51a0152a7a6}
       \strng{fullhash}{ed6aa55d6cc1189bbebfa51a0152a7a6}
-      \field{labelalpha}{Zwa60}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Ensemble Method in the Theory of Irreversibility}
@@ -387,7 +338,6 @@
       }
       \strng{namehash}{a948511dd337b2a4a481d927b14946d6}
       \strng{fullhash}{a948511dd337b2a4a481d927b14946d6}
-      \field{labelalpha}{BBR66}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{On the Calculation of Autocorrelation Functions of Dynamical Variables}
@@ -408,22 +358,15 @@
       \name{author}{1}{}{%
         {{hash=c3a7f7d8c0b6fda20a63a4ac195b17a4}{Bron\v{s}tejn}{B\bibinitperiod}{I.\bibnamedelimi N.}{I\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
       }
-      \name{editor}{3}{}{%
-        {{hash=20fae22ec974e9b0de55d256b44b3912}{Semendjaev}{S\bibinitperiod}{Konstantin\bibnamedelimb A.\bibnamedelimi [VerfasserIn]}{K\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%
-        {{hash=aaee19f7aab9c315c23e1de5afaa6b9b}{Musiol}{M\bibinitperiod}{Gerhard\bibnamedelima [VerfasserIn]}{G\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%
-        {{hash=f0b29f413307aafa3e90b2054483b383}{M\"{u}hlig}{M\bibinitperiod}{Heiner\bibnamedelima [VerfasserIn]}{H\bibinitperiod\bibinitdelim [\bibinitperiod}{}{}{}{}}%
-      }
       \list{publisher}{1}{%
         {Verlag Europa-Lehrmittel Nourney, Vollmer GmbH \& Co. KG}%
       }
       \strng{namehash}{c3a7f7d8c0b6fda20a63a4ac195b17a4}
       \strng{fullhash}{c3a7f7d8c0b6fda20a63a4ac195b17a4}
-      \field{labelalpha}{Bro16}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Taschenbuch der Mathematik}
       \field{edition}{10., \"{u}berarbeitete Auflage}
-      \field{isbn}{978-3-8085-5790-7; 978-3-8085-5789-1}
       \field{series}{Edition Harri Deutsch}
       \field{title}{Taschenbuch der Mathematik}
       \field{year}{[2016]}
@@ -440,12 +383,10 @@
       }
       \strng{namehash}{d3bf62c400d4f3290d70a5facc5f2f14}
       \strng{fullhash}{d3bf62c400d4f3290d70a5facc5f2f14}
-      \field{labelalpha}{Czy17}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Theoretische Festk\"{o}rperphysik Band 2 : Anwendungen: Nichtgleichgewicht, Verhalten in \"{a}u{\ss}eren Feldern, kollektive Ph\"{a}nomene}
       \field{edition}{4. Aufl. 2017}
-      \field{isbn}{978-3-662-53701-5}
       \field{title}{Theoretische Festk\"{o}rperphysik Band 2 : Anwendungen: Nichtgleichgewicht, Verhalten in \"{a}u{\ss}eren Feldern, kollektive Ph\"{a}nomene}
       \field{year}{2017}
     \endentry
@@ -463,12 +404,10 @@
       }
       \strng{namehash}{7e7ceccf499d95ee7c21f6685219a922}
       \strng{fullhash}{7e7ceccf499d95ee7c21f6685219a922}
-      \field{labelalpha}{GM14}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Festk\"{o}rperphysik}
       \field{edition}{2., aktualisierte Aufl.}
-      \field{isbn}{978-3-11-035870-4; 978-3-11-039687-4}
       \field{title}{Festk\"{o}rperphysik}
       \field{year}{2014}
     \endentry
@@ -484,12 +423,10 @@
       }
       \strng{namehash}{b6799630f7921f86ddc2b77f5c832a12}
       \strng{fullhash}{b6799630f7921f86ddc2b77f5c832a12}
-      \field{labelalpha}{Sac11}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Quantum phase transitions}
       \field{edition}{2. ed., 1. publ.}
-      \field{isbn}{978-0-521-51468-2; 0-521-51468-1}
       \field{title}{Quantum phase transitions}
       \field{year}{2011}
     \endentry
@@ -505,7 +442,6 @@
       }
       \strng{namehash}{49d97f994e53acc009ccc245f84283a4}
       \strng{fullhash}{49d97f994e53acc009ccc245f84283a4}
-      \field{labelalpha}{Wei15}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Interference of quantum critical excitations and soft diffusive modes in a disordered antiferromagnetic metal}
@@ -522,15 +458,14 @@
       }
       \strng{namehash}{7b0556eba138aef20d319de4814b80b8}
       \strng{fullhash}{7b0556eba138aef20d319de4814b80b8}
-      \field{labelalpha}{Ili02}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{On the Action Principle in Quantum Field Theory}
       \field{journaltitle}{ArXiv High Energy Physics - Theory e-prints}
       \field{title}{On the Action Principle in Quantum Field Theory}
       \field{year}{2002}
-      \verb{url}
-      \verb arXiv:hep-th/0204003
+      \verb{doi}
+      \verb 10.1103/PhysRevB.90.165146
       \endverb
     \endentry
     \entry{Forster}{book}{}
@@ -540,9 +475,11 @@
       \name{author}{1}{}{%
         {{hash=0fed2fd7deda4a7b7b1fb72b8adf18b2}{Forster}{F\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
       }
+      \list{publisher}{1}{%
+        {Perseus Books}%
+      }
       \strng{namehash}{0fed2fd7deda4a7b7b1fb72b8adf18b2}
       \strng{fullhash}{0fed2fd7deda4a7b7b1fb72b8adf18b2}
-      \field{labelalpha}{For90}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Hydrodynamic, Fluctuations, Broken Symmetry, and Correlation Functions}
@@ -556,9 +493,11 @@
       \name{author}{1}{}{%
         {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
       }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
       \strng{namehash}{06b4aecc4ef33989cab7b7bf99b832ad}
       \strng{fullhash}{06b4aecc4ef33989cab7b7bf99b832ad}
-      \field{labelalpha}{Sch08}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Advanced Quantum Mechanics}
@@ -573,9 +512,11 @@
       \name{author}{1}{}{%
         {{hash=06b4aecc4ef33989cab7b7bf99b832ad}{Schwabl}{S\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
       }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
       \strng{namehash}{06b4aecc4ef33989cab7b7bf99b832ad}
       \strng{fullhash}{06b4aecc4ef33989cab7b7bf99b832ad}
-      \field{labelalpha}{Sch06}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Statistische Mechanik}
@@ -595,11 +536,9 @@
       }
       \strng{namehash}{4e2721043c992be6ef9e92fd4f144a74}
       \strng{fullhash}{4e2721043c992be6ef9e92fd4f144a74}
-      \field{labelalpha}{Aud05}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
-      \field{isbn}{3-527-40452-X; 978-3-527-40452-0978-325-40452-0}
       \field{title}{Verschr\"{a}nkte Systeme: die Quantenphysik auf neuen Wegen}
       \field{year}{2005}
     \endentry
@@ -615,7 +554,6 @@
       }
       \strng{namehash}{e6d88a5667a1c9c7e5c5cd83e5e8910f}
       \strng{fullhash}{e6d88a5667a1c9c7e5c5cd83e5e8910f}
-      \field{labelalpha}{Jun07}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Transport and Approximate Conservation Laws in Low Dimensional Systems}
@@ -637,7 +575,6 @@
       }
       \strng{namehash}{8c0bea4fb94c7c1fb42aa6ceedb2bd5c}
       \strng{fullhash}{8c0bea4fb94c7c1fb42aa6ceedb2bd5c}
-      \field{labelalpha}{EG79}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Die Methode der Greenschen Funktionen in der Festk\"{o}rperphysik}
@@ -656,11 +593,9 @@
       }
       \strng{namehash}{2d783319c73287a266d2bc0cb2929f91}
       \strng{fullhash}{2d783319c73287a266d2bc0cb2929f91}
-      \field{labelalpha}{Nol09}
       \field{sortinit}{0}
       \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
       \field{labeltitle}{Fundamentals of many-body physics : principles and methods}
-      \field{isbn}{978-3-540-71930-4}
       \field{title}{Fundamentals of many-body physics : principles and methods}
       \field{year}{2009}
     \endentry

@@ -1,23 +1,23 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Infinite Conductivity in Translation Invariant Systems}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Infinite Static Conductivity in Translation Invariant Systems}{}% 2
 \BOOKMARK [1][-]{section.2.1}{An Overview over the Memory-Matrix-Formalsim}{chapter.2}% 3
 \BOOKMARK [1][-]{section.2.2}{Electrical Conductivity in a Momentum Conserving System}{chapter.2}% 4
 \BOOKMARK [0][-]{chapter.3}{Spin-Fermion-Model}{}% 5
 \BOOKMARK [1][-]{section.3.1}{The Spin-Fermion-Model at the Onset of the Antiferromagnetic Quantum Phase Transition}{chapter.3}% 6
-\BOOKMARK [1][-]{section.3.2}{Momentum Conservation in the Spin-Fermion-Model and the Consequence of Umklapp Scattering}{chapter.3}% 7
-\BOOKMARK [0][-]{chapter.4}{The Static Conductivity in the Spin Fermion Model including Umklapp Scattering}{}% 8
+\BOOKMARK [1][-]{section.3.2}{Momentum Conservation in the Spin-Fermion-Model without and with Umklapp Scattering}{chapter.3}% 7
+\BOOKMARK [0][-]{chapter.4}{Static Conductivity in the Spin Fermion Model considering Umklapp Scattering}{}% 8
 \BOOKMARK [0][-]{chapter.5}{Memory-Matrix-Formalism}{}% 9
-\BOOKMARK [1][-]{section.5.1}{Kubo relaxation function}{chapter.5}% 10
-\BOOKMARK [2][-]{subsection.5.1.1}{Spectral representation}{section.5.1}% 11
-\BOOKMARK [1][-]{section.5.2}{Deviation of the Memory-Matrix-Formalism}{chapter.5}% 12
+\BOOKMARK [1][-]{section.5.1}{Kubo Relaxation Function}{chapter.5}% 10
+\BOOKMARK [2][-]{subsection.5.1.1}{Spectral Representation}{section.5.1}% 11
+\BOOKMARK [1][-]{section.5.2}{Correlation functions in the Memory-Matrix-Formalism}{chapter.5}% 12
 \BOOKMARK [2][-]{subsection.5.2.1}{Time Reversal Symmetry}{section.5.2}% 13
-\BOOKMARK [1][-]{section.5.3}{The Formula of the Static Conductivity}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.3}{Formula of the Static Conductivity}{chapter.5}% 14
 \BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 15
-\BOOKMARK [0][-]{appendix.A}{Computation of the Damped Spin Density Propagator}{}% 16
-\BOOKMARK [1][-]{section.A.1}{Computation of the Free Propagator}{appendix.A}% 17
-\BOOKMARK [1][-]{section.A.2}{Consideration of Damping in the Spin Density Propagator}{appendix.A}% 18
+\BOOKMARK [0][-]{appendix.A}{Computation of the Spin Density Propagator}{}% 16
+\BOOKMARK [1][-]{section.A.1}{The Free Spin Density Propagator}{appendix.A}% 17
+\BOOKMARK [1][-]{section.A.2}{The Damped Spin Density Propagator}{appendix.A}% 18
 \BOOKMARK [1][-]{section.A.3}{Transformation into Matsubara Frequency Space}{appendix.A}% 19
-\BOOKMARK [0][-]{appendix.B}{Time Derivative of momentum P and current J}{}% 20
+\BOOKMARK [0][-]{appendix.B}{Time Derivative of Momentum P and Current J}{}% 20
 \BOOKMARK [0][-]{appendix.C}{Computation of the Static Susceptibility}{}% 21
-\BOOKMARK [0][-]{appendix.D}{Finite Conductivity because of Breaking the Translation Symmetry via Umklapp Scattering}{}% 22
+\BOOKMARK [0][-]{appendix.D}{Compuation of the retarded Green Function}{}% 22
 \BOOKMARK [0][-]{appendix.E}{Properties of the Kubo Relaxation Function}{}% 23

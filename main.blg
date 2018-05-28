@@ -1,19 +1,19 @@
-[1] Config.pm:321> INFO - This is Biber 1.9
-[1] Config.pm:324> INFO - Logfile is 'main.blg'
-[57] biber:277> INFO - === Mon May 28, 2018, 02:18:31
-[57] Biber.pm:334> INFO - Reading 'main.bcf'
-[173] Biber.pm:636> INFO - Found 27 citekeys in bib section 0
-[219] Biber.pm:3052> INFO - Processing section 0
-[248] Biber.pm:3190> INFO - Looking for bibtex format file 'bibliography/masterthesis.bib' for section 0
-[256] bibtex.pm:979> INFO - Decoding LaTeX character macros into UTF-8
-[262] bibtex.pm:853> INFO - Found BibTeX data source 'bibliography/masterthesis.bib'
-[317] Utils.pm:144> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[317] Utils.pm:144> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[714] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[714] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[714] Biber.pm:2929> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
-[714] Biber.pm:2933> INFO - No sort tailoring available for locale 'de-DE'
-[778] bbl.pm:517> INFO - Writing 'main.bbl' with encoding 'ascii'
-[779] bbl.pm:518> INFO - Converting UTF-8 to TeX macros on output to .bbl
-[805] bbl.pm:606> INFO - Output to main.bbl
-[812] Biber.pm:107> INFO - WARNINGS: 2
+[0] Config.pm:321> INFO - This is Biber 1.9
+[0] Config.pm:324> INFO - Logfile is 'main.blg'
+[55] biber:277> INFO - === Mon May 28, 2018, 06:12:23
+[55] Biber.pm:334> INFO - Reading 'main.bcf'
+[169] Biber.pm:636> INFO - Found 27 citekeys in bib section 0
+[195] Biber.pm:3052> INFO - Processing section 0
+[224] Biber.pm:3190> INFO - Looking for bibtex format file 'bibliography/masterthesis.bib' for section 0
+[228] bibtex.pm:979> INFO - Decoding LaTeX character macros into UTF-8
+[231] bibtex.pm:853> INFO - Found BibTeX data source 'bibliography/masterthesis.bib'
+[262] Utils.pm:144> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[262] Utils.pm:144> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[630] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[630] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[630] Biber.pm:2929> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
+[631] Biber.pm:2933> INFO - No sort tailoring available for locale 'de-DE'
+[696] bbl.pm:517> INFO - Writing 'main.bbl' with encoding 'ascii'
+[696] bbl.pm:518> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[720] bbl.pm:606> INFO - Output to main.bbl
+[727] Biber.pm:107> INFO - WARNINGS: 2

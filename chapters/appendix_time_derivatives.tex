@@ -1,7 +1,7 @@
 %
 %
 %
-\chapter{Time Derivative of momentum P and current J}
+\chapter{Time Derivative of Momentum P and Current J}
 \label{appch:time derivative P and J}
 %
 %
@@ -99,9 +99,9 @@ This quantity is computed in the following.
 		\mathcal{L}
 		\notag \\
 	\Leftrightarrow\ \mathcal{H} &= 
-		\psi_{\mt{a}}^{\dag} (\partial_{\tau}\psi_{\mt{a}}) 
+		\Psi_{\mt{a}}^{\dag} (\partial_{\tau}\Psi_{\mt{a}}) 
 		+
-		\psi_{\mt{b}}^{\dag} (\partial_{\tau}\psi_{\mt{b}}) 
+		\Psi_{\mt{b}}^{\dag} (\partial_{\tau}\Psi_{\mt{b}}) 
 		+
 		\epsilon  (\partial_{\tau} \Phi_{\mu}) (\partial_{\tau} \Phi_{\mu}) 
 		-
@@ -109,10 +109,10 @@ This quantity is computed in the following.
 	\notag \\
 	\Leftrightarrow\ \mathcal{H} &= 
 		-
-		\psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\frac{\partial_{x}^{2}}{2m_{1}} + \frac{\partial_{y}^{2}}{2m_{2}} + \mu_{0}\big) \psi_{\mt{a}}(\vb{x},\tau)
+		\Psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\frac{\partial_{x}^{2}}{2m_{1}} + \frac{\partial_{y}^{2}}{2m_{2}} + \mu_{0}\big) \Psi_{\mt{a}}(\vb{x},\tau)
 		\notag \\&
 		- 
-		\psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\frac{\partial_{x}^{2}}{2m_{2}} + \frac{\partial_{y}^{2}}{2m_{1}} + \mu_{0}\big) \psi_{\mt{b}}(\vb{x},\tau)
+		\Psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\frac{\partial_{x}^{2}}{2m_{2}} + \frac{\partial_{y}^{2}}{2m_{1}} + \mu_{0}\big) \Psi_{\mt{b}}(\vb{x},\tau)
 		\notag \\&
 		- 
 		\frac{1}{2} \big(\partial_{i} \Phi_{\mu}(\vb{x},\tau)\big) \big(\partial_{i} \Phi_{\mu}(\vb{x},\tau)\big)
@@ -120,7 +120,7 @@ This quantity is computed in the following.
 		\frac{1}{2\epsilon} \pi_{\mu}(\vb{x},\tau) \pi_{\mu}(\vb{x},\tau)
 		\notag \\&
 		-	
-		\lambda \Phi_{\mu}(\vb{x},\tau) \big(\psi_{\mt{a}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \psi_{\mt{b}}(\vb{x},\tau) + \psi_{\mt{b}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \psi_{\mt{a}}(\vb{x},\tau)\big)
+		\lambda \Phi_{\mu}(\vb{x},\tau) \big(\Psi_{\mt{a}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \Psi_{\mt{b}}(\vb{x},\tau) + \Psi_{\mt{b}}^{\dag}(\vb{x},\tau) \sigma_{\mu} \Psi_{\mt{a}}(\vb{x},\tau)\big)
 \end{align}
 %
 Here, the usual time derivative is transformed into the Matsubara time, using $\partial_{t} = -i\partial_{\tau}$.
@@ -140,17 +140,17 @@ The $\mathcal{T}_{0j}$-component is identified with the $j$-component of the mom
 		\notag \\
 	\Leftrightarrow\ \mathcal{P}_{j} &= 
 		\frac{-i}{2} \bigg[
-			\psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\partial_{j} \psi_{\mt{a}}(\vb{x},\tau)\big)
+			\Psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\partial_{j} \Psi_{\mt{a}}(\vb{x},\tau)\big)
 			- 
-			\big(\partial_{j} \psi_{\mt{a}}^{\dag}(\vb{x},\tau)\big) \psi_{\mt{a}}(\vb{x},\tau)
+			\big(\partial_{j} \Psi_{\mt{a}}^{\dag}(\vb{x},\tau)\big) \Psi_{\mt{a}}(\vb{x},\tau)
 			\notag \\&
 			+
-			\psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\partial_{j} \psi_{\mt{b}}(\vb{x},\tau)\big)
+			\Psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\partial_{j} \Psi_{\mt{b}}(\vb{x},\tau)\big)
 			- 
-			\big(\partial_{j} \psi_{\mt{b}}^{\dag}(\vb{x},\tau)\big) \psi_{\mt{b}}(\vb{x},\tau)
+			\big(\partial_{j} \Psi_{\mt{b}}^{\dag}(\vb{x},\tau)\big) \Psi_{\mt{b}}(\vb{x},\tau)
 		\bigg]
 		- 
-		i\pi_{\mu}(\vb{x},\tau)) \big(\partial_{j} \phi_{\mu}(\vb{x},\tau)\big)
+		i\pi_{\mu}(\vb{x},\tau)) \big(\partial_{j} \Phi_{\mu}(\vb{x},\tau)\big)
 	\notag \\
 	\Rightarrow\ \vb{\mathcal{P}} &= 
 		\frac{-i}{2} \bigg[
@@ -159,7 +159,7 @@ The $\mathcal{T}_{0j}$-component is identified with the $j$-component of the mom
 			\big(\nabla \vb{\Psi}^{\dag}(\vb{x},\tau)\big) \vb{\Psi}(\vb{x},\tau)
 		\bigg]
 		-
-		i \pi_{\mu}(\vb{x},\tau) \big(\nabla \phi_{\mu}(\vb{x},\tau)\big)
+		i \pi_{\mu}(\vb{x},\tau) \big(\nabla \Phi_{\mu}(\vb{x},\tau)\big)
 \end{align}
 %
 The Hermitian of the $\tau$-derivative and the canonical momentum is again used at this computation.
@@ -177,16 +177,16 @@ Now, the $x$-component of the current is caluclated.
 	\Leftrightarrow\ \mathcal{J}_{x} &=
 		\frac{-i}{2} \bigg[
 		\frac{1}{m_{1}} \Big[
-			\big(\partial_{x} \psi_{\mt{a}}^{\dag}(\vb{x},\tau)\big) \psi_{\mt{a}}(\vb{x},\tau)
+			\big(\partial_{x} \Psi_{\mt{a}}^{\dag}(\vb{x},\tau)\big) \Psi_{\mt{a}}(\vb{x},\tau)
 			-
-			\psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\partial_{x} \psi_{\mt{a}}(\vb{x},\tau)\big)
+			\Psi_{\mt{a}}^{\dag}(\vb{x},\tau) \big(\partial_{x} \Psi_{\mt{a}}(\vb{x},\tau)\big)
 		\Big]
 		\notag \\&
 		+
 		\frac{1}{m_{2}} \Big[
-			\big(\partial_{x} \psi_{\mt{b}}^{\dag}(\vb{x},\tau)\big) \psi_{\mt{b}}(\vb{x},\tau)
+			\big(\partial_{x} \Psi_{\mt{b}}^{\dag}(\vb{x},\tau)\big) \Psi_{\mt{b}}(\vb{x},\tau)
 			-
-			\psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\partial_{x} \psi_{\mt{b}}(\vb{x},\tau)\big)
+			\Psi_{\mt{b}}^{\dag}(\vb{x},\tau) \big(\partial_{x} \Psi_{\mt{b}}(\vb{x},\tau)\big)
 		\Big]
 		\bigg]
 \end{align}
@@ -198,7 +198,7 @@ This is obstructive in the later caluclation of the time derivative of P and J, 
 \begin{align}
 	\mt{H} &= 
 	 	\int_{\vb{k}}
-	 	\Bigg[ \sum\limits_{\alpha} \epsilon_{\alpha}(\vb{k}) \psi_{\alpha}^{\dag}(\vb{k},\tau) \psi_{\alpha}(\vb{k},\tau)
+	 	\Bigg[ \sum\limits_{\alpha} \epsilon_{\alpha}(\vb{k}) \Psi_{\alpha}^{\dag}(\vb{k},\tau) \Psi_{\alpha}(\vb{k},\tau)
 		-
 		\frac{\vb{k}^{2}}{2} \Phi_{\mu}(\vb{k},\tau) \Phi_{\mu}(-\vb{k},\tau)
 		+
@@ -207,9 +207,9 @@ This is obstructive in the later caluclation of the time derivative of P and J, 
 		-
 		\lambda \int_{\vb{q}} \Phi_{\mu}(\vb{k}-\vb{q},\tau)
 		\bigg[
-			\psi_{\mt{a}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\mt{b}}(\vb{q},\tau)
+			\Psi_{\mt{a}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \Psi_{\mt{b}}(\vb{q},\tau)
 			+
-			\psi_{\mt{b}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\mt{a}}(\vb{q},\tau)
+			\Psi_{\mt{b}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \Psi_{\mt{a}}(\vb{q},\tau)
 		\bigg]
 		\Bigg]
 \end{align}
@@ -217,7 +217,7 @@ This is obstructive in the later caluclation of the time derivative of P and J, 
 %
 \begin{align}
 	\mt{P}_{j} &= \int_{\vb{k}}
-		k_{j} \Bigg[ \sum\limits_{\alpha} \psi_{\alpha}^{\dag}(\vb{k},\tau) \psi_{\alpha}(\vb{k},\tau)
+		k_{j} \Bigg[ \sum\limits_{\alpha} \Psi_{\alpha}^{\dag}(\vb{k},\tau) \Psi_{\alpha}(\vb{k},\tau)
 	 	-
 	 	\pi_{\mu}(\vb{k},\tau)
 	 	\Phi_{\mu}(-\vb{k},\tau)
@@ -228,12 +228,12 @@ This is obstructive in the later caluclation of the time derivative of P and J, 
 \begin{align}
 	\mt{J}_{x} &= - \int_{\vb{k}} \Bigg[
 		\frac{k_{x}}{m_{1}}
-		\psi_{\mt{a}}^{\dag}(\vb{k},\tau)
-		\psi_{\mt{a}}(\vb{k},\tau)
+		\Psi_{\mt{a}}^{\dag}(\vb{k},\tau)
+		\Psi_{\mt{a}}(\vb{k},\tau)
 		+
 		\frac{k_{x}}{m_{2}}
-		\psi_{\mt{b}}^{\dag}(\vb{k},\tau)
-		\psi_{\mt{b}}(\vb{k},\tau)
+		\Psi_{\mt{b}}^{\dag}(\vb{k},\tau)
+		\Psi_{\mt{b}}(\vb{k},\tau)
 	\Bigg]
 \end{align}
 %
@@ -248,7 +248,7 @@ For the further approach, the commutator relations for bosonic and fermionic fie
 Beside these two ones, all other commutator relations yield zero.
 %
 \begin{align}
-	\acomm{\psi_{\mt{\alpha}}(\vb{k},\tau)}{\psi_{\mt{\beta}}^{\dag}(\vb{p},\tau)} &= (2\pi)^{2} \delta_{\mt{\alpha}\mt{\beta}} \delta(\vb{p}-\vb{k})
+	\acomm{\Psi_{\mt{\alpha}}(\vb{k},\tau)}{\Psi_{\mt{\beta}}^{\dag}(\vb{p},\tau)} &= (2\pi)^{2} \delta_{\mt{\alpha}\mt{\beta}} \delta(\vb{p}-\vb{k})
 	\\
 	\comm{\Phi_{\mu}(\vb{k},\tau)}{\pi_{\lambda}(\vb{p},\tau)} &= (2\pi)^{2} \delta_{\mu\lambda} \delta(\vb{p}+\vb{k})
 \end{align}
@@ -265,7 +265,7 @@ The above commutator relations are also valid in this representation.
 		p_{x}
 		\sum\limits_{\alpha,\beta} 
 		\epsilon_{\alpha}(\vb{k})
-		\comm{\psi_{\alpha}^{\dag}(\vb{k},\tau) \psi_{\alpha}(\vb{k},\tau)}{\psi_{\beta}^{\dag}(\vb{k},\tau) \psi_{\beta}(\vb{k},\tau)}
+		\comm{\Psi_{\alpha}^{\dag}(\vb{k},\tau) \Psi_{\alpha}(\vb{k},\tau)}{\Psi_{\beta}^{\dag}(\vb{k},\tau) \Psi_{\beta}(\vb{k},\tau)}
 		\notag \\&
 		+
 		\int_{\vb{k}} \int_{\vb{p}}
@@ -286,14 +286,14 @@ The above commutator relations are also valid in this representation.
 		\Phi_{\mu}(\vb{k}-\vb{q},\tau)
 		\sum\limits_{\alpha\neq\beta}
 		\sum\limits_{\gamma}
-		\comm{\psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\beta}(\vb{q},\tau)}{\psi_{\gamma}^{\dag}(\vb{p},t) \psi_{\gamma}(\vb{p},t)}
+		\comm{\Psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \Psi_{\beta}(\vb{q},\tau)}{\Psi_{\gamma}^{\dag}(\vb{p},t) \Psi_{\gamma}(\vb{p},t)}
 		\notag \\&
 		+
 		\lambda
 		\int_{\vb{k}} \int_{\vb{p}} \int_{\vb{q}}
 		p_{x}
 		\sum\limits_{\alpha\neq\beta}
-		\psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\beta}(\vb{q},\tau)
+		\Psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \Psi_{\beta}(\vb{q},\tau)
 		\comm{\Phi_{\mu}(\vb{k}-\vb{q},\tau)}{\pi_{\lambda}(\vb{p},t) \Phi_{\lambda}(-\vb{p},t)}
 	\notag \\
 	\Leftrightarrow\ \comm{\mt{H}}{\mt{P}_{x}} &=	
@@ -303,7 +303,7 @@ The above commutator relations are also valid in this representation.
 		(q_{x}-k_{x})
 		\Phi_{\mu}(\vb{k}-\vb{q},\tau)
 		\sum\limits_{\alpha\neq\beta}
-		\psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\beta}(\vb{q},t)
+		\Psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \Psi_{\beta}(\vb{q},t)
 		\notag \\&
 		+
 		\lambda
@@ -311,7 +311,7 @@ The above commutator relations are also valid in this representation.
 		(q_{x}-k_{x})
 		\Phi_{\mu}(\vb{k}-\vb{q},t)
 		\sum\limits_{\alpha\neq\beta}
-		\psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\beta}(\vb{q},\tau)
+		\Psi_{\alpha}^{\dag}(\vb{k},\tau) \sigma_{\mu} \Psi_{\beta}(\vb{q},\tau)
 	\notag \\
 	\Leftrightarrow\ \comm{\mt{H}}{\mt{P}_{x}} &= 0
 \end{align}
@@ -324,17 +324,17 @@ At next, the time derivative of the current in $x$-direction is calculated.
 The notation is equal to this used by the momentum above.
 %
 \begin{align}
-	\comm{H}{J_{x}} &=
+	\comm{\mt{H}}{\mt{J}_{x}} &=
 		\int_{\vb{k}} \int_{\vb{p}}
 		\frac{p_{x}}{m_{1}}
 		\sum\limits_{\alpha} 
 		\epsilon_{\alpha}(\vb{k})
 		\comm{
-			\psi_{\alpha}^{\dag}(\vb{k},\tau) 
-			\psi_{\alpha}(\vb{k},\tau)
+			\Psi_{\alpha}^{\dag}(\vb{k},\tau) 
+			\Psi_{\alpha}(\vb{k},\tau)
 		}{	
-			\psi_{\mt{a}}^{\dag}(\vb{p},\tau)	
-			\psi_{\mt{a}}(\vb{p},\tau)
+			\Psi_{\mt{a}}^{\dag}(\vb{p},\tau)	
+			\Psi_{\mt{a}}(\vb{p},\tau)
 		}
 		\notag \\&
 		+
@@ -343,11 +343,11 @@ The notation is equal to this used by the momentum above.
 		\sum\limits_{\alpha} 
 		\epsilon_{\alpha}(\vb{k})
 		\comm{
-			\psi_{\alpha}^{\dag}(\vb{k},\tau) 
-			\psi_{\alpha}(\vb{k},\tau)
+			\Psi_{\alpha}^{\dag}(\vb{k},\tau) 
+			\Psi_{\alpha}(\vb{k},\tau)
 		}{	
-			\psi_{\mt{b}}^{\dag}(\vb{p},\tau)
-			\psi_{\mt{b}}(\vb{p},\tau)
+			\Psi_{\mt{b}}^{\dag}(\vb{p},\tau)
+			\Psi_{\mt{b}}(\vb{p},\tau)
 		}
 		\notag \\&
 		+
@@ -357,12 +357,12 @@ The notation is equal to this used by the momentum above.
 		\frac{p_{x}}{m_{1}}
 		\sum\limits_{\alpha\neq\beta}
 		\comm{
-			\psi_{\alpha}^{\dag}(\vb{k},\tau) 
+			\Psi_{\alpha}^{\dag}(\vb{k},\tau) 
 			\sigma_{\mu} 
-			\psi_{\beta}(\vb{q},t)
+			\Psi_{\beta}(\vb{q},t)
 		}{
-			\psi_{\mt{a}}^{\dag}(\vb{p},\tau)	
-			\psi_{\mt{a}}(\vb{p},\tau)
+			\Psi_{\mt{a}}^{\dag}(\vb{p},\tau)	
+			\Psi_{\mt{a}}(\vb{p},\tau)
 		}
 		\notag \\&
 		+
@@ -372,25 +372,25 @@ The notation is equal to this used by the momentum above.
 		\frac{p_{x}}{m_{2}}
 		\sum\limits_{\alpha\neq\beta}
 		\comm{
-			\psi_{\alpha}^{\dag}(\vb{k},\tau) 
+			\Psi_{\alpha}^{\dag}(\vb{k},\tau) 
 			\sigma_{\mu} 
-			\psi_{\beta}(\vb{q},t)
+			\Psi_{\beta}(\vb{q},t)
 		}{
-			\psi_{\mt{b}}^{\dag}(\vb{p},\tau)
-			\psi_{\mt{b}}(\vb{p},\tau)
+			\Psi_{\mt{b}}^{\dag}(\vb{p},\tau)
+			\Psi_{\mt{b}}(\vb{p},\tau)
 		}
 	\notag \\
-	\Leftrightarrow \comm{H}{J_{x}} &=
+	\Leftrightarrow \comm{\mt{H}}{\mt{J}_{x}} &=
 		\lambda
 		\int_{\vb{k}} \int_{\vb{q}}
 		\Phi_{\mu}(\vb{k}-\vb{q},\tau) 
 		\notag \\&
 		\times \Big[
 			\Big(\frac{q_{x}}{m_{1}} - \frac{k_{x}}{m_{2}}\Big)
-			\psi_{\mt{b}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\mt{a}}(\vb{q},\tau)
+			\Psi_{\mt{b}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \Psi_{\mt{a}}(\vb{q},\tau)
 			+
 			\Big(\frac{q_{x}}{m_{2}} - \frac{k_{x}}{m_{1}}\Big)
-			\psi_{\mt{a}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \psi_{\mt{b}}(\vb{q},\tau)
+			\Psi_{\mt{a}}^{\dag}(\vb{k},\tau) \sigma_{\mu} \Psi_{\mt{b}}(\vb{q},\tau)
 		\Big]
 \end{align}
 %
@@ -413,12 +413,12 @@ The field operators of the current are of fermionic nature, while these of the H
 The time derivative of P is in contrast non-zero.
 %
 \begin{align}
-	\dot{P}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
+	\dot{\mt{P}}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
 		\int_{\vb{k}} \int_{\vb{p}}
 		p_{j}
 		\comm{\Phi_{\mu}(k) \Phi_{\mu}(-k+G)}{\pi_{\lambda}(p) \Phi_{\lambda}(-p)}
 	\notag \\
-	\dot{P}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
+	\dot{\mt{P}}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
 		\int_{\vb{k}} \int_{\vb{p}} 
 		p_{j} \bigg[
 			\Phi_{\mu}(k) \comm{\Phi_{\mu}(-k+G)}{\pi_{\lambda}(p)} \Phi_{\lambda}(-p)
@@ -426,7 +426,7 @@ The time derivative of P is in contrast non-zero.
 			\comm{\Phi_{\mu}(k)}{\pi_{\lambda}(p)} \Phi_{\mu}(-k+G) \Phi_{\lambda}(-p)
 		\bigg]
 	\notag \\
-	\dot{P}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
+	\dot{\mt{P}}_{j} &= -i \sum\limits_{G} \mt{J}_{\vb{G}} 
 		\int_{\vb{k}} 
 		\bigg[
 			(k_{j} - G_{j}) \Phi_{\mu}(k) \Phi_{\mu}(-k+G)
@@ -434,7 +434,7 @@ The time derivative of P is in contrast non-zero.
 			k_{j} \Phi_{\mu}(-k+G) \Phi_{\mu}(k)
 		\bigg]
 	\notag \\
-	\dot{P}_{j} &= i \sum\limits_{G} \mt{J}_{\vb{G}} 
+	\dot{\mt{P}}_{j} &= i \sum\limits_{G} \mt{J}_{\vb{G}} 
 		\int_{\vb{k}} G_{j} \Phi_{\mu}(k) \Phi_{\mu}(-k+G)
 	\label{appeq:time derivative momentum}
 \end{align}
@@ -442,68 +442,6 @@ The time derivative of P is in contrast non-zero.
 Considering umklapp scattering the time derivative of P is determined to an finite value.
 As a consequence the momentum is not conserved any longer.
 The characteristic of the considered pertubation to change momentum and leave current unchange is important for the compuation of the static electrical conductivity.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

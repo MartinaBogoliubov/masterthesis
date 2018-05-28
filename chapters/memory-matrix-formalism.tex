@@ -6,14 +6,20 @@
 %
 %
 %
-The memory-matrix-formalism is a technique to determine the correlation function between two observables.
-In difference to other methods the Liouville space is considered.
+The memory-matrix-formalism is a technique to determine autocorrelation functions.
+These correlation functions are defined in the Liouville space and are directly connected to their own history by the memory function $\mt{M}(z)$. 
+The time evolution of correlation functions decays therefore exponentially in time, $\mt{M}(z) \sim \exp(-\flatfrac{t}{\tau_{\mt{c}}})$, where $\tau_{\mt{c}}$ denotes the correlation or relaxation time.
+Considering a conserved quantity, the relaxation time is infinite and the time evolution is consequently determined for large time scales or small frequencies.
+The time evolution is only slightly modified, if a pertubation is taken into account in this case.
+The correlation function is correctly predicted.
+
 The derivation of the memory-matrix-formalism is exhaustively demonstrated in this chapter, as suggested in \cite{Forster}.
-At the beginning Kubo's relaxation function is introduced, since the correlation function is based on it in memory-matrix-formalism.
-After the derivation the formula for the static electrical conductivity is determined for the spin-fermion-model pertubated by umklapp scattering.
+Kubo's relaxation function is firtly introduced, since the correlation function is based on it.
+In main part of this chapter a explicit formula for correlation function is derivated.
+Finally, this formula is used to find an expression for the static electrical conductivity which is applicable to diagrammatic pertubation theory.
 %
 %
-\section{Kubo relaxation function}
+\section{Kubo Relaxation Function}
 \label{sec:kubo relaxation function}
 %
 %
@@ -52,11 +58,11 @@ The lower limit of the integral is determined to $t$ due to the $\theta$-distrib
 For a more detailed derivation of the Kubo relaxation function see \cite{Schwabl} or \cite{Schwabl2}.
 Between the Kubo relaxation function and the Kubo formula exist three very important relations used during the derivation of the correlation function and the formula of the conductivity.
 %
-\begin{enumerate}
-	\item $\begin{aligned}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq:relation 1 between Phi and chi}
-	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega = 0) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq:relation 2 between Phi and chi}
-	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq:relation 3 between Phi and chi}
-\end{enumerate}
+%\begin{enumerate}
+%	\item $\begin{aligned}[t] \chi_{\mt{AB}}(t) = -\Theta(t) \dv{t} \Phi_{\mt{AB}}(t) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq:relation 1 between Phi and chi}
+%	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(t = 0) = \chi_{\mt{AB}}(\omega = 0) \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq:relation 2 between Phi and chi}
+%	\item $\begin{aligned}[t] \Phi_{\mt{AB}}(\omega) = \frac{1}{i\omega}\big[\chi_{\mt{AB}}(\omega) - \chi_{\mt{AB}}(\omega = 0)\big]. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)\label{eq:relation 3 between Phi and chi}
+%\end{enumerate}
 %
 The evidence of these tree relations are shown in the appendix \ref{app:properties of the Kubo relaxation function}.
 The Kubo relaxation function is now transfered into a commutator independent form, using two identies.
@@ -102,7 +108,7 @@ This structure of the Kubo relaxation function is similar to the later chosen sc
 
 %
 %
-\subsection{Spectral representation}
+\subsection{Spectral Representation}
 \label{subsec:spectral representation}
 %
 %
@@ -159,7 +165,7 @@ After this introduction about the Kubo relaxation function, the next chapter is 
 %
 %
 %
-\section{Deviation of the Memory-Matrix-Formalism}
+\section{Correlation functions in the Memory-Matrix-Formalism}
 \label{sec:deviation of the memory-matrix-formalism}
 %
 %
@@ -228,12 +234,12 @@ The basis of our Liouville space is denoted with $\{\toket{\mt{A}_{i}}\}$ where 
 The corresponding basis of the dual space is given by $\{\tobra{\mt{A}_{i}}\}$, similarily to the Hilbert space.
 The last needed element of our Liouville space is a scalar product which has to fulfil the following three condictions.
 %
-\begin{enumerate}
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \obraket{\mt{A}_{j}}{\mt{A}_{i}}^{*} \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{B}} = c_{1} \obraket{\mt{A}_{i}}{\mt{A}_{j}} + c_{2} \obraket{\mt{A}_{i}}{\mt{A}_{k}}, \end{aligned}$
-	\item[] $\begin{aligned} \text{where\ \ \ } \mt{B} = c_{1} \mt{A_{j}} + c_{2} \mt{A_{k}} \qq{and} c_{1}, c_{2} \in \mathbb{C} \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
-	\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{i}}\geq 0 \qq{, where equallity is fulfilled if} \mt{A}_{i} = 0. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
-\end{enumerate}
+%\begin{enumerate}
+	%\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{j}} = \obraket{\mt{A}_{j}}{\mt{A}_{i}}^{*} \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
+	%\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{B}} = c_{1} \obraket{\mt{A}_{i}}{\mt{A}_{j}} + c_{2} \obraket{\mt{A}_{i}}{\mt{A}_{k}}, \end{aligned}$
+	%\item[] $\begin{aligned} \text{where\ \ \ } \mt{B} = c_{1} \mt{A_{j}} + c_{2} \mt{A_{k}} \qq{and} c_{1}, c_{2} \in \mathbb{C} \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
+	%\item $\begin{aligned} \obraket{\mt{A}_{i}}{\mt{A}_{i}}\geq 0 \qq{, where equallity is fulfilled if} \mt{A}_{i} = 0. \end{aligned}$\hfill \refstepcounter{equation}(\theequation)
+%\end{enumerate}
 %
 Beside these the choice of the scalar product is arbitrary.
 For the moment let us choose 
@@ -628,7 +634,7 @@ This means that $i \beta \obraket{\dot{\mt{A}}_{i}}{\mt{A}_{k}}$ is always zero,
 
 %
 %
-\section{The Formula of the Static Conductivity}
+\section{Formula of the Static Conductivity}
 \label{sec:formula static conductivity}
 %
 %
